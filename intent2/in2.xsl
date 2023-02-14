@@ -17,7 +17,7 @@
    </head>
    <body>
     <h1>Intent Examples (Deyan/Core Sheet)</h1>
-    <p><a href="https://docs.google.com/spreadsheets/d/1EsWou1K5nxBdLPvQapdoA9h-s8lg_qjn8fJH64g9izQ/edit#gid=1358098730">Orginal Google Docs spreadsheet</a>.</p>
+    <p><a href="https://docs.google.com/spreadsheets/d/1EsWou1K5nxBdLPvQapdoA9h-s8lg_qjn8fJH64g9izQ/edit#gid=1358098730">Original Google Docs spreadsheet</a>.</p>
     <table>
      <colgroup>
       <col style="background-color:beige"/>
