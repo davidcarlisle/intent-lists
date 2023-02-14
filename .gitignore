@@ -1,0 +1,7 @@
+local
+*.xml
+*~
+*/resources
+*.zip
+intent1/*.html
+intent2/*.html

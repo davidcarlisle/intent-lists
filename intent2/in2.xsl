@@ -1,0 +1,792 @@
+<xsl:stylesheet version="3.0"
+		xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+		>
+ <xsl:output method="html" version="5"/>
+
+ 
+ <xsl:template match="/">
+  <html>
+   <head>
+    <title>Intent Examples (Deyan/Core Sheet)</title>
+    <style>
+     .tex{font-family: monospace; width:15em}
+     tbody th {width:2em;}
+     math{font-size:120%;margin:.2em;}
+     mfrac[numalign="left"] >*:first-child {margin-right:90%;}
+    </style>
+   </head>
+   <body>
+    <h1>Intent Examples (Deyan/Core Sheet)</h1>
+    <p><a href="https://docs.google.com/spreadsheets/d/1EsWou1K5nxBdLPvQapdoA9h-s8lg_qjn8fJH64g9izQ/edit#gid=1358098730">Orginal Google Docs spreadsheet</a>.</p>
+    <table>
+     <colgroup>
+      <col style="background-color:beige"/>
+      <col style="background-color:#DFD"/>
+      <col style="background-color:beige;"/>
+      <col style="background-color:beige"/>
+      <col style="background-color:#EEE; font-family:monospace;"/>
+      <col style="background-color:#DFD"/>
+      <col style="background-color:#DDF"/>
+      <col style="background-color:beige"/>
+      </colgroup>     
+     <thead>
+      <th> # </th>
+      <th>intent</th>
+      <th>form</th>
+      <th>example</th>
+      <th>MathML+intent Source</th>
+      <th>MathML</th>
+      <th>MathML+intent</th>
+      <th>Speech Hints</th>
+     </thead>
+     <xsl:for-each select="//tbody/tr[position() gt 2][not(*[2]='' and *[5]='')]">
+      <xsl:variable name="nn"  select="normalize-space(*[1])"/>
+      <xsl:variable name="intent" select="replace(
+					  if(*[2]/node())
+					  then normalize-space(*[2])
+					  else normalize-space((preceding-sibling::tr/*[2][string()])[last()])
+					  ,'\?.*','')
+					  "/>
+      <xsl:variable name="form" select="normalize-space(*[4])"/>
+      <xsl:choose>
+       <xsl:when test="$intent='annotation'">
+	  <tr>
+	   <th><xsl:value-of select="$nn"/>-1</th>
+	   <td><xsl:value-of select="$intent"/></td>
+	   <td>munder</td>
+	   <td>munder</td>
+<xsl:variable name="m" xml:space="preserve">
+<munder intent="{$intent}">
+ <munder>
+  <mi>a</mi>
+  <mo>&#x23DF;</mo>
+ </munder>
+ <mi>b</mi>
+</munder>
+</xsl:variable>
+	   <td><pre><xsl:value-of select="serialize($m)"/></pre></td>
+	   <td><math display="block"><xsl:copy-of select="$m"/></math></td>
+	   <td><math display="block"><xsl:apply-templates mode="no-intent" select="$m"/></math></td>
+	   <td><xsl:copy-of select="*[7]/node()"/></td>
+	  </tr>
+	  <tr>
+	   <th><xsl:value-of select="$nn"/>-2</th>
+	   <td><xsl:value-of select="$intent"/></td>
+	   <td>mover</td>
+	   <td>mover</td>
+<xsl:variable name="m" xml:space="preserve">
+<mover intent="{$intent}">
+ <mover>
+  <mi>a</mi>
+  <mo>&#x23DE;</mo>
+ </mover>
+ <mi>b</mi>
+</mover>
+</xsl:variable>
+	   <td><pre><xsl:value-of select="serialize($m)"/></pre></td>
+	   <td><math display="block"><xsl:copy-of select="$m"/></math></td>
+	   <td><math display="block"><xsl:apply-templates mode="no-intent" select="$m"/></math></td>
+	   <td><xsl:copy-of select="*[7]/node()"/></td>
+	  </tr>
+       </xsl:when>
+       <xsl:when test="$form='infixprefix'">
+	<xsl:variable name="example" select="*[5]/node()"/>
+	  <tr>
+	   <th><xsl:value-of select="$nn"/>-1</th>
+	   <td><xsl:value-of select="$intent"/></td>
+	   <td>infix</td>
+	   <td>infix</td>
+<xsl:variable name="m" xml:space="preserve">
+<mrow>
+ <mi>a</mi>
+ <mo intent="{$intent}"><xsl:value-of select="substring-after($example,'mo ')"/></mo>
+ <mi>b</mi>
+</mrow>
+</xsl:variable>
+	   <td><pre><xsl:value-of select="serialize($m)"/></pre></td>
+	   <td><math display="block"><xsl:copy-of select="$m"/></math></td>
+	   <td><math display="block"><xsl:apply-templates mode="no-intent" select="$m"/></math></td>
+	   <td><xsl:copy-of select="*[7]/node()"/></td>
+	  </tr>
+	  <tr>
+	   <th><xsl:value-of select="$nn"/>-2</th>
+	   <td><xsl:value-of select="$intent"/></td>
+	   <td>prefix</td>
+	   <td>prefix</td>
+<xsl:variable name="m" xml:space="preserve">
+<mrow>
+ <mo intent="{$intent}"><xsl:value-of select="substring-after($example,'mo ')"/></mo>
+ <mi>a</mi>
+</mrow>
+</xsl:variable>
+	   <td><pre><xsl:value-of select="serialize($m)"/></pre></td>
+	   <td><math display="block"><xsl:copy-of select="$m"/></math></td>
+	   <td><math display="block"><xsl:apply-templates mode="no-intent" select="$m"/></math></td>
+	   <td><xsl:copy-of select="*[7]/node()"/></td>
+	  </tr>
+       </xsl:when>       
+       <xsl:when test="*[5]/br">
+	<xsl:for-each-group group-adjacent="exists(self::br)" select="*[5]/node()">
+	 <xsl:if test="not(self::br)">
+	  <tr>
+	   <th><xsl:value-of select="$nn"/>-<xsl:value-of select="count(preceding-sibling::br)+1"/></th>
+	   <td><xsl:value-of select="$intent"/></td>
+	   <td><xsl:copy-of select="$form"/></td>
+	   <td><xsl:copy-of select="current-group()"/></td>
+	   <xsl:variable name="m">
+	    <xsl:call-template name="example">
+	     <xsl:with-param name="intent" select="$intent"/>
+	     <xsl:with-param name="form" select="$form"/>
+	     <xsl:with-param name="example" select="current-group()"/>
+	    </xsl:call-template>
+	   </xsl:variable>
+	   <td><pre><xsl:value-of select="serialize($m)"/></pre></td>
+	   <td><math display="block"><xsl:copy-of select="$m"/></math></td>
+	   <td><math display="block"><xsl:apply-templates mode="no-intent" select="$m"/></math></td>
+	   <td><xsl:copy-of select="../../*[7]/node()"/></td>
+	  </tr>
+	 </xsl:if>
+	</xsl:for-each-group>
+       </xsl:when>
+       <xsl:otherwise>
+	<tr>
+	 <th><xsl:value-of select="$nn"/></th>
+	 <td><xsl:value-of select="$intent"/></td>
+	 <td><xsl:copy-of select="$form"/></td>
+	 <td><xsl:copy-of select="*[5]/node()"/></td>
+	   <xsl:variable name="m">
+	    <xsl:call-template name="example">
+	     <xsl:with-param name="intent" select="$intent"/>
+	     <xsl:with-param name="form" select="$form"/>
+	     <xsl:with-param name="example" select="*[5]/node()"/>
+	    </xsl:call-template>
+	   </xsl:variable>
+	   <td><pre><xsl:value-of select="serialize($m)"/></pre></td>
+	   <td><math display="block"><xsl:copy-of select="$m"/></math></td>
+	   <td><math display="block"><xsl:apply-templates mode="no-intent" select="$m"/></math></td>
+	   <td><xsl:copy-of select="*[7]/node()"/></td>
+	</tr>
+       </xsl:otherwise>
+      </xsl:choose>
+     </xsl:for-each>
+    </table>
+
+
+   </body>
+
+  </html>
+ </xsl:template>
+
+<xsl:template name="example">
+	     <xsl:param name="intent"/>
+	     <xsl:param name="form"/>
+	     <xsl:param name="example"/>
+	     <xsl:choose>
+
+<xsl:when test="$form='infix' and matches($example,'^mo ')">
+<xsl:sequence  xml:space="preserve">
+<mrow>
+ <mi>a</mi>
+ <mo intent="{$intent}"><xsl:value-of select="substring-after($example,'mo ')"/></mo>
+ <mi>b</mi>
+</mrow>
+</xsl:sequence>
+</xsl:when>
+
+<xsl:when test="$form='infixindexed operator' and matches($example,'^mo [∩∪]')">
+<xsl:sequence  xml:space="preserve">
+<mrow>
+ <mi>A</mi>  
+ <mo intent="{$intent}"><xsl:value-of select="substring-after($example,'mo ')"/></mo>
+ <mi>B</mi>
+</mrow>
+</xsl:sequence>
+</xsl:when>
+
+<xsl:when test="$form='infixindexed operator' and matches($example,'^mo ')">
+<xsl:sequence  xml:space="preserve">
+<munderover>
+ <mo intent="{$intent}"><xsl:value-of select="substring-after($example,'mo ')"/></mo>
+ <mn>0</mn>
+ <mi>n</mi>
+</munderover>
+</xsl:sequence>
+</xsl:when>
+
+<xsl:when test="$form='infix' and matches($example,'^mi ')">
+<xsl:sequence  xml:space="preserve">
+<mrow>
+ <mi>a</mi>
+ <mi mathvariant="normal" intent="{$intent}"><xsl:value-of select="substring-after($example,'mi ')"/></mi>
+ <mi>b</mi>
+</mrow>
+</xsl:sequence>
+</xsl:when>
+<xsl:when test="$form='infix' and matches($example,'^mtext ')">
+<xsl:sequence  xml:space="preserve">
+<mrow>
+ <mi>a</mi>
+ <mtext intent="{$intent}"><xsl:value-of select="substring-after($example,'mtext ')"/></mtext>
+ <mi>b</mi>
+</mrow>
+</xsl:sequence>
+</xsl:when>
+
+<xsl:when test="$intent='system-of-equations' and $form='prefix' and matches($example,'^mo ')">
+<xsl:sequence  xml:space="preserve">
+<mrow>
+ <mo intent="{$intent}"><xsl:value-of select="substring-after($example,'mo ')"/></mo>
+ <mtable>
+  <mtr>
+   <mtd><mi>x</mi><mo>+</mo><mi>y</mi></mtd>
+   <mtd><mo>=</mo><mn>2</mn></mtd>
+  </mtr>
+  <mtr>
+   <mtd><mi>x</mi><mo>−</mo><mi>y</mi></mtd>
+   <mtd><mo>=</mo><mn>0</mn></mtd>
+  </mtr>
+ </mtable>
+</mrow>
+</xsl:sequence>
+</xsl:when>
+
+<xsl:when test="$form='prefix' and matches($example,'^mo ')">
+<xsl:sequence  xml:space="preserve">
+<mrow>
+ <mo intent="{$intent}"><xsl:value-of select="substring-after($example,'mo ')"/></mo>
+ <mi>a</mi>
+</mrow>
+</xsl:sequence>
+</xsl:when>
+
+
+<xsl:when test="$intent='piecewise' and $form='mtable'">
+<xsl:sequence  xml:space="preserve">
+<mrow>
+ <mrow><mi>f</mi><mo>(</mo><mi>x</mi><mo>)</mo></mrow>
+ <mo>=</mo>
+ <mo intent="{$intent}">{</mo>
+ <mtable>
+  <mtr>
+   <mtd><mn>1</mn></mtd>
+   <mtd><mtext>if&#xA0;</mtext> <mi>x</mi><mo>&gt;</mo><mn>0</mn></mtd>
+  </mtr>
+  <mtr>
+   <mtd><mn>0</mn></mtd>
+   <mtd><mtext>if&#xA0;</mtext> <mi>x</mi><mo>=</mo><mn>0</mn></mtd>
+  </mtr>
+  <mtr>
+   <mtd><mn>−1</mn></mtd>
+   <mtd><mtext>if&#xA0;</mtext> <mi>x</mi><mo>&lt;</mo><mn>0</mn></mtd>
+  </mtr>
+ </mtable>
+</mrow>
+</xsl:sequence>
+</xsl:when>
+
+<xsl:when test="$form='symbol / function' and matches($example,'^mi ')">
+<xsl:sequence  xml:space="preserve">
+<mi intent="{$intent}"><xsl:value-of select="substring-after($example,'mi ')"/></mi>
+</xsl:sequence>
+</xsl:when>
+
+<xsl:when test="$form='symbol' and matches($example,'^mo ')">
+ <xsl:choose>
+  <xsl:when test="$intent='blank'">
+<xsl:sequence  xml:space="preserve">
+<mrow>
+ <m>1</m>
+ <mo>+</mo>
+ <mo intent="{$intent}"><xsl:value-of select="substring-after($example,'mo ')"/></mo>
+ <mo>=</mo>
+ <mo>2</mo>
+</mrow>
+</xsl:sequence>
+  </xsl:when>
+  <xsl:otherwise>
+<mo intent="{$intent}"><xsl:value-of select="substring-after($example,'mo ')"/></mo>
+  </xsl:otherwise>
+ </xsl:choose>
+</xsl:when>
+
+<xsl:when test="$form='symbol' and matches($example,'^mn ')">
+ <xsl:choose>
+  <xsl:when test="$intent='blank'">
+<xsl:sequence  xml:space="preserve">
+<mrow>
+ <m>1</m>
+ <mo>+</mo>
+ <mn intent="{$intent}"><xsl:value-of select="substring-after($example,'mn ')"/></mn>
+ <mo>=</mo>
+ <mo>2</mo>
+</mrow>
+</xsl:sequence>
+  </xsl:when>
+  <xsl:otherwise>
+<mn intent="{$intent}"><xsl:value-of select="substring-after($example,'mn ')"/></mn>
+  </xsl:otherwise>
+ </xsl:choose>
+</xsl:when>
+
+<xsl:when test="$form='constant' and matches($example,'^mi ')">
+<xsl:sequence  xml:space="preserve">
+<mi intent="{$intent}"><xsl:value-of select="substring-after($example,'mi ')"/></mi>
+</xsl:sequence>
+</xsl:when>
+
+<xsl:when test="$form='symbol' and matches($example,'^mi ')">
+ <xsl:choose>
+  <xsl:when test="$intent='blank'">
+<xsl:sequence  xml:space="preserve">
+<mrow>
+ <m>1</m>
+ <mo>+</mo>
+ <mi intent="{$intent}"><xsl:value-of select="substring-after($example,'mi ')"/></mi>
+ <mo>=</mo>
+ <mo>2</mo>
+</mrow>
+</xsl:sequence>
+  </xsl:when>
+  <xsl:otherwise>
+<mi intent="{$intent}"><xsl:value-of select="substring-after($example,'mi ')"/></mi>
+  </xsl:otherwise>
+ </xsl:choose>
+</xsl:when>
+
+<xsl:when test="$form='symbol' and matches($example,'^mspace *$')">
+<xsl:sequence  xml:space="preserve">
+<mrow>
+ <m>1</m>
+ <mo>+</mo>
+ <mspace intent="{$intent}" width="2em"/>
+ <mo>=</mo>
+ <mo>2</mo>
+</mrow>
+</xsl:sequence>
+</xsl:when>
+
+
+<xsl:when test="$form='symbol' and matches($example,'^menclose ')">
+<xsl:sequence  xml:space="preserve">
+<mrow>
+ <m>1</m>
+ <mo>+</mo>
+ <menclose notation="box" intent="{$intent}">
+  <mspace intent="{$intent}" width="2em"/>
+ </menclose>
+ <mo>=</mo>
+ <mo>2</mo>
+</mrow>
+</xsl:sequence>
+</xsl:when>
+
+<xsl:when test="($form='postfix unit' or $form='postfix unitmsup') and matches($example,'^mi ')">
+<xsl:sequence  xml:space="preserve">
+<mrow>
+ <mn>1</mn>
+ <mi mathvariant="normal" intent="{$intent}"><xsl:value-of select="substring-after($example,'mi ')"/></mi>
+</mrow>
+</xsl:sequence>
+</xsl:when>
+
+<xsl:when test="matches($example,'^msup [^a-z ] *$')">
+<xsl:sequence  xml:space="preserve">
+<msup>
+ <mn>X</mn>
+ <mo intent="{$intent}"><xsl:value-of select="substring-after($example,'msup ')"/></mo>
+</msup>
+</xsl:sequence>
+</xsl:when>
+
+<xsl:when test="matches($example,'^mover  * \$1 *[^a-z ] *$')">
+<xsl:analyze-string select="$example" regex="^mover  * \$1 *([^a-z ]) *$">
+<xsl:matching-substring>
+<xsl:sequence  xml:space="preserve">
+<mover>
+ <mn>X</mn>
+ <mo intent="{$intent}"><xsl:value-of select="regex-group(1)"/></mo>
+</mover>
+</xsl:sequence>
+</xsl:matching-substring>
+</xsl:analyze-string>
+</xsl:when>
+
+<xsl:when test="$form='postfix unitmsup' and matches($example,'^msup [^a-z]')">
+<xsl:sequence  xml:space="preserve">
+<msup>
+ <mn>1</mn>
+ <mo intent="{$intent}"><xsl:value-of select="substring-after($example,'msup ')"/></mo>
+</msup>
+</xsl:sequence>
+</xsl:when>
+
+<xsl:when test="$form='postfix' and matches($example,'^mo ')">
+<xsl:sequence  xml:space="preserve">
+<mrow intent="{$intent}">
+ <mi>a</mi>
+ <mo intent="{$intent}"><xsl:value-of select="substring-after($example,'mo ')"/></mo>
+</mrow>
+</xsl:sequence>
+</xsl:when>
+
+<xsl:when test="$form='msup' and $example='msup $1 $2'">
+<xsl:sequence  xml:space="preserve">
+<msup intent="{$intent}">
+ <mi>a</mi>
+ <mi>b</mi>
+</msup>
+</xsl:sequence>
+</xsl:when>
+
+<xsl:when test="$form='msup' and $example='msup $1 -1'">
+<xsl:sequence  xml:space="preserve">
+<msup>
+ <mi>a</mi>
+ <mn intent="{$intent}">−1</mn>
+</msup>
+</xsl:sequence>
+</xsl:when>
+
+<xsl:when test="$form='fenced' and matches($example,'mrow *[^a-z]\$1 *[^a-z] *\$2 *[^a-z] *$')">
+<xsl:analyze-string select="$example" regex="mrow *([^a-z])\$1 *([^a-z]) *\$2 *([^a-z]) *$">
+<xsl:matching-substring>  
+<xsl:sequence  xml:space="preserve">
+<mrow intent="{$intent}">
+ <mo><xsl:value-of select="regex-group(1)"/></mo>  
+ <mi>a</mi>
+ <mo><xsl:value-of select="regex-group(2)"/></mo>
+ <mi>b</mi>
+ <mo><xsl:value-of select="regex-group(3)"/></mo>
+</mrow>
+</xsl:sequence>
+</xsl:matching-substring>
+</xsl:analyze-string>
+</xsl:when>
+
+
+<xsl:when test="$form='fenced' and matches($example,'mrow *[^a-z] *\.\.\. *[^a-z] *$')">
+<xsl:analyze-string select="$example" regex="mrow *([^a-z]) *\.\.\. *([^a-z]) *$">
+<xsl:matching-substring>  
+<xsl:sequence  xml:space="preserve">
+<mrow intent="{$intent}">
+ <mo><xsl:value-of select="regex-group(1)"/></mo>  
+ <mi>a</mi>
+ <mo>,</mo>
+ <mi>b</mi>
+ <mo>,</mo>
+ <mo>&#x22EF;</mo>
+ <mo><xsl:value-of select="regex-group(2)"/></mo>
+</mrow>
+</xsl:sequence>
+</xsl:matching-substring>
+</xsl:analyze-string>
+</xsl:when>
+
+<xsl:when test="$intent='matrix' and matches($example,'^mrow *([^a-z ]) *mtable *([^a-z]) *$')">
+<xsl:analyze-string select="$example" regex="^mrow *([^a-z ]) *mtable *([^a-z]) *$">
+<xsl:matching-substring>  
+<xsl:sequence  xml:space="preserve">
+<mrow intent="{$intent}">
+ <mo><xsl:value-of select="regex-group(1)"/></mo>  
+ <mtable>
+  <mtr><mtd><mi>a</mi></mtd><mtd><mi>b</mi></mtd></mtr>
+  <mtr><mtd><mi>x</mi></mtd><mtd><mi>y</mi></mtd></mtr>
+ </mtable>
+ <mo><xsl:value-of select="regex-group(2)"/></mo>
+</mrow>
+</xsl:sequence>
+</xsl:matching-substring>
+</xsl:analyze-string>
+</xsl:when>
+
+<xsl:when test="($form='msup' or $form='msupmoverfunction') and matches($example,'msup *\$1 *[^a-z]$')">
+<xsl:analyze-string select="$example" regex="msup *\$1 *([^a-z])$">
+<xsl:matching-substring>  
+<xsl:sequence  xml:space="preserve">
+<msup intent="{$intent}">
+ <mi>a</mi>
+ <mo><xsl:value-of select="regex-group(1)"/></mo>  
+</msup>
+</xsl:sequence>
+</xsl:matching-substring>
+</xsl:analyze-string>
+</xsl:when>
+
+<xsl:when test="($form='mover' or $form='msupmoverfunction') and matches($example,'mover *\$1 *[^a-z]$')">
+<xsl:analyze-string select="$example" regex="mover *\$1 *([^a-z])$">
+<xsl:matching-substring>  
+<xsl:sequence  xml:space="preserve">
+<mover intent="{$intent}">
+ <mi>a</mi>
+ <mo><xsl:value-of select="regex-group(1)"/></mo>  
+</mover>
+</xsl:sequence>
+</xsl:matching-substring>
+</xsl:analyze-string>
+</xsl:when>
+
+<xsl:when test="$form='mover' and matches($example,'mover *[^a-z]$')">
+<xsl:analyze-string select="$example" regex="mover *([^a-z])$">
+<xsl:matching-substring>  
+<xsl:sequence  xml:space="preserve">
+<mover intent="{$intent}">
+ <mrow><mi>a</mi><mi>b</mi></mrow>
+ <mo><xsl:value-of select="regex-group(1)"/></mo>  
+</mover>
+</xsl:sequence>
+</xsl:matching-substring>
+</xsl:analyze-string>
+</xsl:when>
+
+
+<xsl:when test="$form='mover' and matches($example,'mover *\$1 *\$2$')">
+<xsl:sequence  xml:space="preserve">
+<mover intent="{$intent}">
+ <mi>a</mi>
+ <mi>b</mi>
+</mover>
+</xsl:sequence>
+</xsl:when>
+
+<xsl:when test="($form='fenced' or $form='fencedfunction') and matches($example,'^mrow *([^a-z ]) *\$1 *([^a-z ]) *$')">
+ <xsl:analyze-string select="$example" regex="mrow *([^a-z ]) *\$1 *([^a-z ]) *$">
+<xsl:matching-substring>  
+<xsl:sequence  xml:space="preserve">
+<mrow intent="{$intent}">
+ <mo><xsl:value-of select="regex-group(1)"/></mo> 
+ <mi>a</mi>
+ <mo><xsl:value-of select="regex-group(2)"/></mo>
+</mrow>
+</xsl:sequence>
+</xsl:matching-substring>
+ </xsl:analyze-string>
+</xsl:when>
+
+<xsl:when test="($form='function' or $form='fencedfunction') and matches($example,'^mi ')">
+<xsl:sequence  xml:space="preserve">
+<mrow>
+ <mi mathvariant="normal" intent="{$intent}"><xsl:value-of select="substring-after($example,'mi ')"/></mi>
+ <mi>a</mi>
+</mrow>
+</xsl:sequence>
+</xsl:when>
+
+
+
+<xsl:when test="$form='postfix' and matches($example,'\$1 *\([^ ]*\)$')">
+<xsl:analyze-string select="$example" regex="\$1 *\(([^ ]*)\)$">
+<xsl:matching-substring>  
+<xsl:sequence  xml:space="preserve">
+<mrow intent="{$intent}">
+ <mi>X</mi>
+ <mrow>
+  <mo>(</mo>
+  <mi mathvariant="normal"><xsl:value-of select="regex-group(1)"/></mi>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</xsl:sequence>
+</xsl:matching-substring>
+</xsl:analyze-string>
+</xsl:when>
+
+<xsl:when test="$form='mixfix' and $example='mrow $1($2,$3)'">
+<xsl:sequence  xml:space="preserve">
+<mrow intent="{$intent}">
+ <mi>P</mi>
+ <mrow>
+  <mo>(</mo>
+  <mi>a</mi>
+  <mo>,</mo>
+  <mi>b</mi>
+  <mo>)</mo>
+ </mrow>
+</mrow>
+</xsl:sequence>
+</xsl:when>
+
+
+<xsl:when test="$form='msqrt' and $example='msqrt'">
+<xsl:sequence  xml:space="preserve">
+<msqrt intent="{$intent}">
+ <mi>a</mi>
+</msqrt>
+</xsl:sequence>
+</xsl:when>
+
+
+<xsl:when test="$form='mroot' and $example='mroot'">
+<xsl:sequence  xml:space="preserve">
+<mroot intent="{$intent}">
+ <mi>a</mi>
+ <mn>3</mn>
+</mroot>
+</xsl:sequence>
+</xsl:when>
+
+
+
+<xsl:when test="$form='prefix' and matches($example,'mrow *[^a-z] *\$1\$2\$3 *$')">
+<xsl:analyze-string select="$example" regex="mrow *([^a-z]) *\$1\$2\$3 *$">
+<xsl:matching-substring>  
+<xsl:sequence  xml:space="preserve">
+<mrow intent="{$intent}">
+ <mo><xsl:value-of select="regex-group(1)"/></mo>   
+ <mrow>
+  <mi>a</mi><mi>b</mi><mi>c</mi>
+ </mrow>
+</mrow>
+</xsl:sequence>
+</xsl:matching-substring>
+</xsl:analyze-string>
+</xsl:when>
+
+<xsl:when test="$form='prefix' and matches($example,'mrow *[^a-z] *\$1\$2\$3\$4 *$')">
+<xsl:analyze-string select="$example" regex="mrow *([^a-z]) *\$1\$2\$3\$4 *$">
+<xsl:matching-substring>  
+<xsl:sequence  xml:space="preserve">
+<mrow intent="{$intent}">
+ <mo><xsl:value-of select="regex-group(1)"/></mo>   
+ <mrow>
+  <mi>a</mi><mi>b</mi><mi>c</mi><mi>d</mi>
+ </mrow>
+</mrow>
+</xsl:sequence>
+</xsl:matching-substring>
+</xsl:analyze-string>
+</xsl:when>
+
+
+<xsl:when test="matches($example,'(m[a-z]*) *\$1 *\$2 *$')">
+<xsl:analyze-string select="$example" regex="(m[a-z]*) *\$1 *\$2 *$">
+<xsl:matching-substring>  
+<xsl:sequence  xml:space="preserve">
+<xsl:element name="{regex-group(1)}"><xsl:attribute name="intent" select="$intent"/>
+ <mi>A</mi><mi>B</mi>
+</xsl:element>
+</xsl:sequence>
+</xsl:matching-substring>
+</xsl:analyze-string>
+</xsl:when>
+
+
+
+<xsl:when test="matches($example,'(m[a-z]*) *\$1 *\$2 *\$3 *$')">
+<xsl:analyze-string select="$example" regex="(m[a-z]*) *\$1 *\$2 *\$3 *$">
+<xsl:matching-substring>  
+<xsl:sequence  xml:space="preserve">
+<xsl:element name="{regex-group(1)}"><xsl:attribute name="intent" select="$intent"/>
+ <mi>X</mi><mi>a</mi><mi>b</mi>
+</xsl:element>
+</xsl:sequence>
+</xsl:matching-substring>
+</xsl:analyze-string>
+</xsl:when>
+
+<xsl:when test="matches($example,'mtext *([a-z]+) *$')">
+<xsl:analyze-string select="$example" regex="mtext *([a-z]+) *">
+<xsl:matching-substring>  
+<xsl:sequence  xml:space="preserve">
+<mtext intent="{$intent}"><xsl:value-of select="regex-group(1)"/></mtext>
+</xsl:sequence>
+</xsl:matching-substring>
+</xsl:analyze-string>
+</xsl:when>
+
+<xsl:when test="$intent='continued-fraction'">
+<xsl:sequence  xml:space="preserve">
+<mfrac numalign="left" intent="continued-fraction">
+ <mn>1</mn>
+ <mrow>
+  <mn>1</mn>
+  <mo>+</mo>
+  <mfrac numalign="left" intent="continued-fraction">
+   <mn>1</mn>
+   <mrow>
+    <mn>1</mn>
+    <mo>+</mo>
+    <mfrac numalign="left" intent="continued-fraction">
+     <mn>1</mn>
+     <mo>&#x22F1;</mo>
+    </mfrac>
+   </mrow>
+  </mfrac>
+ </mrow>
+</mfrac>
+</xsl:sequence>
+</xsl:when>
+
+<xsl:when test="$intent='rate' and $example='mfrac'">
+<xsl:sequence  xml:space="preserve">
+<mfrac intent="{$intent}">
+ <mi intent="unit">m</mi>
+ <mi intent="unit">s</mi>
+</mfrac>
+</xsl:sequence>
+</xsl:when>
+
+
+<xsl:when test="$intent='rate' and $example='$1p$2'">
+<xsl:sequence  xml:space="preserve">
+<mrow intent="{$intent}">
+ <mi intent="unit">m</mi>
+ <mo>/</mo>
+ <mi intent="unit">s</mi>
+</mrow>
+</xsl:sequence>
+</xsl:when>
+
+
+<xsl:when test="$intent='shape' and $form='n-ary concat'">
+<xsl:sequence  xml:space="preserve">
+<mrow intent="{$intent}">
+ <mi>A</mi><mi>B</mi><mi>C</mi><mi>D</mi>
+</mrow>
+</xsl:sequence>
+</xsl:when>
+
+
+<xsl:when test="$intent='binomial-coefficient'">
+<xsl:sequence  xml:space="preserve">
+<mrow intent="{$intent}($a,$b)">
+ <mi>(</mi>
+ <mfrac linethickness="0pt">
+  <mi arg="a">a</mi>
+  <mi arg="b">b</mi>
+ </mfrac>
+ <mi>)</mi>
+</mrow>
+</xsl:sequence>
+</xsl:when>
+
+<xsl:when test="$intent='transpose' and normalize-space($example)=''">
+<xsl:sequence  xml:space="preserve">
+<msup><mi>a</mi><mi intent="transpose" mathvariant="normal">T</mi></msup>
+</xsl:sequence>
+</xsl:when>
+
+<xsl:when test="$intent='angular-description' and normalize-space($example)='mrow $1-$2-$3'">
+<xsl:sequence  xml:space="preserve">
+<mrow intent="angular-description">
+ <mi>A</mi><mo>−</mo><mi>B</mi><mo>−</mo><mi>C</mi>
+</mrow>
+</xsl:sequence>
+</xsl:when>
+
+<xsl:otherwise>
+<xsl:sequence  xml:space="preserve">
+ <mtext style="color:red"><xsl:value-of select="$intent"/></mtext>
+</xsl:sequence>
+</xsl:otherwise>
+</xsl:choose>
+</xsl:template>
+
+
+<xsl:template mode="no-intent" match="node()">
+ <xsl:copy>
+  <xsl:copy-of select="@* except @intent"/>
+  <xsl:apply-templates mode="no-intent"/>
+ </xsl:copy>
+</xsl:template>
+
+</xsl:stylesheet>

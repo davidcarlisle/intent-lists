@@ -1,0 +1,22 @@
+#!/bin/bash
+set -e
+
+
+mv '/c/users/davidc/Downloads/List of intent values (under development).zip' x2.zip
+
+unzip -o x2.zip
+
+echo "<html>" > in2.xml
+sed -e 's/<br>/<br\/>/g' \
+    -e 's/<link [^<>]*>//g' \
+    -e 's/<meta [^<>]*>//g' \
+    'Intent Core.html' >> in2.xml
+echo "</html>" >> in2.xml
+
+rxp -sx in2.xml
+
+
+saxon10 -o:../docs/intent2.html in2.xml in2.xsl
+
+
+# scp ../docs/intent2.html david@texlive.net:/var/www/html/david/

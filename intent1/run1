@@ -1,0 +1,29 @@
+#!/bin/bash
+set -e
+
+
+mv '/c/users/davidc/Downloads/Notation which often needs intent in order to pronounce correctly in English.zip' x.zip
+
+unzip -o x.zip
+
+echo "<html>" > in.xml
+sed -e 's/<br>/<br\/>/g' \
+    -e 's/<link [^<>]*>//g' \
+    -e 's/<meta [^<>]*>//g' \
+    Sheet1.html >> in.xml
+echo "</html>" >> in.xml
+
+rxp -sx in.xml
+
+
+saxon10 -o:../docs/intent1.html in.xml in.xsl
+
+
+grep -o 'intent="[^"]*' ../docs/intent1.html | \
+     sed -e 's/intent="//' \
+         -e 's/\$[a-zA-Z]*//g' \
+	 -e 's/[(),][0-9]*//g' \
+	 -e 's/@[a-z]*//g' \
+	 | sort | uniq
+
+

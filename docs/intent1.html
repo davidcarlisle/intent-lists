@@ -1,0 +1,2779 @@
+<!DOCTYPE HTML><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Intent Examples</title>
+      <style>
+     .tex{font-family: monospace; width:15em}
+     tbody th {width:2em;}
+     math{font-size:120%;margin:.2em;}
+    </style>
+   </head>
+   <body>
+      <h1>Intent Examples</h1>
+      <p><a href="https://docs.google.com/spreadsheets/d/1PhjYFEz3PhRTsE5U4RiPH84pnTTTwilh0wx-ujnprqg/edit#gid=0">Orginal Google Docs spreadsheet</a>.</p>
+      <p>
+         <div class="softmerge-inner" style="width:697px;left:-1px">These are primarily K-14 in the US, with some more advanced examples</div>
+      </p>
+      <table>
+         <colgroup>
+            <col style="background-color:beige">
+            <col style="background-color:#EEE">
+            <col style="background-color:#DDF">
+            <col style="background-color:#DFD">
+            <col style="background-color:#EEE; font-family:monospace;">
+            <col style="background-color:beige">
+            <col style="background-color:beige">
+         </colgroup>
+         <thead>
+            <th> # </th>
+            <th>TeX</th>
+            <th>MathML</th>
+            <th>MathML+intent</th>
+            <th>MathML+intent Source</th>
+            <th>English</th>
+            <th>French</th>
+         </thead>
+         <tr>
+            <th>5</th>
+            <td class="tex">a \times b</td>
+            <td>
+               <math display="block">
+                  <mrow>
+                     <mi>a</mi>
+                     <mo>×</mo>
+                     <mi>b</mi>
+                  </mrow></math>
+               </td>
+            <td>
+               <math style="display:block">
+                  <mrow>  
+                     <mi>a</mi>  
+                     <mo intent="times">×</mo>  
+                     <mi>b</mi>
+                  </mrow></math>
+               
+               <math style="display:block">
+                  <mrow intent="$prod($a,$b)">  
+                     <mi arg="a">a</mi>  
+                     <mo arg="prod" intent="cross-product">×</mo>  
+                     <mi arg="b">b</mi>
+                  </mrow></math>
+               </td>
+            <td>
+               <pre>&lt;mrow&gt;<br>  &lt;mi&gt;a&lt;/mi&gt;<br>  &lt;mo intent="times"&gt;×&lt;/mo&gt;<br>  &lt;mi&gt;b&lt;/mi&gt;<br>&lt;/mrow&gt;<br> <br>&lt;mrow intent="$prod($a,$b)"&gt;<br>  &lt;mi arg="a"&gt;a&lt;/mi&gt;<br>  &lt;mo arg="prod" intent="cross-product"&gt;×&lt;/mo&gt;<br>  &lt;mi arg="b"&gt;b&lt;/mi&gt;<br>&lt;/mrow&gt;</pre>
+            </td>
+            <td class="s4" dir="ltr">a times b<br>a cross b<br>a by b<br>[cartesian] product of a and b<br>a [external] direct product b</td>
+            <td class="s0 softmerge" dir="ltr">
+               <div class="softmerge-inner" style="width:198px;left:-1px">a fois b<br>a croix b<br>a par b<br>[cartesian] produit de a et b<br>a [external] produit direct avec b</div>
+            </td>
+         </tr>
+         <tr>
+            <th>6</th>
+            <td class="tex">a \times b</td>
+            <td>
+               <math display="block">
+                  <mrow> 
+                     <mi>a</mi> 
+                     <mo>⨯<!--U+2A2F--></mo> 
+                     <mi>b</mi>
+                  </mrow></math>
+               </td>
+            <td>
+               <math style="display:block">
+                  <mrow intent="$prod($a,$b)">  
+                     <mi arg="a">a</mi>  
+                     <mo arg="prod" intent="cross-product">⨯</mo>  
+                     <mi arg="b">b</mi>
+                  </mrow></math>
+               </td>
+            <td>
+               <pre>&lt;mrow intent="$prod($a,$b)"&gt;<br>  &lt;mi arg="a"&gt;a&lt;/mi&gt;<br>  &lt;mo arg="prod" intent="cross-product"&gt;⨯&lt;/mo&gt;<br>  &lt;mi arg="b"&gt;b&lt;/mi&gt;<br>&lt;/mrow&gt;</pre>
+            </td>
+            <td class="s4" dir="ltr">a cross b<br>[cartesian] product of a and b<br>a [external] direct product b</td>
+            <td class="s0 softmerge" dir="ltr">
+               <div class="softmerge-inner" style="width:198px;left:-1px">a croix b<br>a par b<br>[cartesian] produit de a et b<br>a [external] produit direct avec b</div>
+            </td>
+         </tr>
+         <tr>
+            <th>7</th>
+            <td class="tex">a \cdot b</td>
+            <td>
+               <math display="block">
+                  <mrow>
+                     <mi>a</mi>
+                     <mo>·</mo>
+                     <mi>b</mi>
+                  </mrow></math>
+               </td>
+            <td>
+               <math style="display:block">
+                  <mrow>  
+                     <mi>a</mi>  
+                     <mo intent="times">·</mo>  
+                     <mi>b</mi>
+                  </mrow></math>
+               </td>
+            <td>
+               <pre>&lt;mrow&gt;<br>  &lt;mi&gt;a&lt;/mi&gt;<br>  &lt;mo intent="times"&gt;·&lt;/mo&gt;<br>  &lt;mi&gt;b&lt;/mi&gt;<br>&lt;/mrow&gt;</pre>
+            </td>
+            <td class="s4" dir="ltr">a times b<br>a dot b</td>
+            <td class="s4" dir="ltr">a fois b<br>a fois b</td>
+         </tr>
+         <tr>
+            <th>8</th>
+            <td class="tex">a * b  or a \star b</td>
+            <td>
+               <math display="block">
+                  <mrow>
+                     <mi>a</mi>
+                     <mo>⋆</mo>
+                     <mi>b</mi>
+                  </mrow></math>
+               </td>
+            <td>
+               <math style="display:block">
+                  <mrow>  
+                     <mi>a</mi>  
+                     <mo intent="convolution">⋆</mo>  
+                     <mi>b</mi>
+                  </mrow></math>
+               </td>
+            <td>
+               <pre>&lt;mrow&gt;<br>  &lt;mi&gt;a&lt;/mi&gt;<br>  &lt;mo intent="convolution"&gt;⋆&lt;/mo&gt;<br>  &lt;mi&gt;b&lt;/mi&gt;<br>&lt;/mrow&gt;</pre>
+            </td>
+            <td class="s4" dir="ltr">a times b<br>a convolved with b<br>a star b</td>
+            <td class="s0 softmerge" dir="ltr">
+               <div class="softmerge-inner" style="width:198px;left:-1px">a fois b<br>la convoluton de a et b<br>a étoile b</div>
+            </td>
+         </tr>
+         <tr>
+            <th>9</th>
+            <td class="tex">a b</td>
+            <td>
+               <math display="block">
+                  <mrow>  
+                     <mi>a</mi>  
+                     <mo>⁢</mo>  
+                     <mi>b</mi> </mrow></math>
+               </td>
+            <td>
+               <math style="display:block">
+                  <mrow>  
+                     <mi>a</mi>  
+                     <mo intent="times">⁢</mo>  
+                     <mi>b</mi>
+                  </mrow></math>
+               </td>
+            <td>
+               <pre>&lt;mrow&gt;<br>  &lt;mi&gt;a&lt;/mi&gt;<br>  &lt;mo intent="times"&gt;&amp;#x2062;&lt;/mo&gt;<br>  &lt;mi&gt;b&lt;/mi&gt;<br>&lt;/mrow&gt;</pre>
+            </td>
+            <td class="s4 softmerge" dir="ltr">
+               <div class="softmerge-inner" style="width:242px;left:-1px">a times b<br>a b<br>a of b (sometimes the parentheses are implied)<br>left coset a of b<br>right coset b of a</div>
+            </td>
+            <td class="s0 softmerge" dir="ltr">
+               <div class="softmerge-inner" style="width:329px;left:-1px">a fois b<br>a b<br>a de b<br>la classe d'équivalence à gauche de a selon b<br>la classe d'équivalence à droite de a selon b</div>
+            </td>
+         </tr>
+         <tr>
+            <th>10</th>
+            <td class="tex">|a|</td>
+            <td>
+               <math display="block">
+                  <mrow>  
+                     <mo>|</mo>  
+                     <mi>a</mi>  
+                     <mo>|</mo> </mrow></math>
+               </td>
+            <td>
+               <math style="display:block">
+                  <mrow intent="absolute-value($a)">  
+                     <mo>|</mo>  
+                     <mi arg="a">a</mi>  
+                     <mo>|</mo>
+                  </mrow></math>
+               </td>
+            <td>
+               <pre>&lt;mrow intent="absolute-value($a)"&gt;<br>  &lt;mo&gt;|&lt;/mo&gt;<br>  &lt;mi arg="a"&gt;a&lt;/mi&gt;<br>  &lt;mo&gt;|&lt;/mo&gt;<br>&lt;/mrow&gt;</pre>
+            </td>
+            <td class="s4" dir="ltr">absolute value of a<br>cardinality of a<br>determinant of a<br>length of a<br>order of a<br>magnitude of a<br>modulus of a</td>
+            <td class="s0 softmerge" dir="ltr">
+               <div class="softmerge-inner" style="width:198px;left:-1px">valeur absolue de a<br>cardinalité de a<br>déterminant de a<br>longueur de a<br>ordre de a<br>magnitude de a<br>module de a</div>
+            </td>
+         </tr>
+         <tr>
+            <th>11</th>
+            <td class="tex">#a</td>
+            <td>
+               <math display="block">
+                  <mrow>
+                     <mo>#</mo>
+                     <mi>a</mi>
+                  </mrow></math>
+               </td>
+            <td>
+               <math style="display:block">
+                  <mrow>  
+                     <mo intent="cardinality">#</mo>  
+                     <mi>a</mi>
+                  </mrow></math>
+               </td>
+            <td>
+               <pre>&lt;mrow&gt;<br>  &lt;mo intent="cardinality"&gt;#&lt;/mo&gt;<br>  &lt;mi&gt;a&lt;/mi&gt;<br>&lt;/mrow&gt;</pre>
+            </td>
+            <td class="s4" dir="ltr">number a<br>cardinality of a</td>
+            <td class="s4" dir="ltr">nombre de a<br>cardinalité de a</td>
+         </tr>
+         <tr>
+            <th>12</th>
+            <td class="tex">a#b</td>
+            <td>
+               <math display="block">
+                  <mrow>  
+                     <mi>a</mi>  
+                     <mo>#</mo>  
+                     <mi>b</mi> </mrow></math>
+               </td>
+            <td>
+               <math style="display:block">
+                  <mrow>  
+                     <mi>a</mi>  
+                     <mo intent="connected-sum">#</mo>  
+                     <mi>b</mi>
+                  </mrow></math>
+               </td>
+            <td>
+               <pre>&lt;mrow&gt;<br>  &lt;mi&gt;a&lt;/mi&gt;<br>  &lt;mo intent="connected-sum"&gt;#&lt;/mo&gt;<br>  &lt;mi&gt;b&lt;/mi&gt;<br>&lt;/mrow&gt;</pre>
+            </td>
+            <td class="s4" dir="ltr">connected sum of a and b</td>
+            <td class="s0 softmerge" dir="ltr">
+               <div class="softmerge-inner" style="width:198px;left:-1px">somme connexe de a et b</div>
+            </td>
+         </tr>
+         <tr>
+            <th>13</th>
+            <td class="tex">[a]</td>
+            <td>
+               <math display="block">
+                  <mrow>  
+                     <mo>[</mo>  
+                     <mi>a</mi>  
+                     <mo>]</mo> </mrow></math>
+               </td>
+            <td>
+               <math style="display:block">
+                  <mrow intent="floor($a)">  
+                     <mo>[</mo>  
+                     <mi arg="a">a</mi>  
+                     <mo>]</mo>
+                  </mrow></math>
+               </td>
+            <td>
+               <pre>&lt;mrow intent="floor($a)"&gt;<br>  &lt;mo&gt;[&lt;/mo&gt;<br>  &lt;mi arg="a"&gt;a&lt;/mi&gt;<br>  &lt;mo&gt;]&lt;/mo&gt;<br>&lt;/mrow&gt;<br> </pre>
+            </td>
+            <td class="s4" dir="ltr">floor of a<br>integer part of a<br>equivalence class of a</td>
+            <td class="s0 softmerge" dir="ltr">
+               <div class="softmerge-inner" style="width:198px;left:-1px">partie entière de a<br>a arrondi<br>clase d'équivalence de a</div>
+            </td>
+         </tr>
+         <tr>
+            <th>14</th>
+            <td class="tex">-a</td>
+            <td>
+               <math display="block">
+                  <mrow>
+                     <mo>−</mo>
+                     <mi>a</mi>
+                  </mrow></math>
+               </td>
+            <td>
+               <math style="display:block">
+                  <mrow>  
+                     <mo intent="unary-minus">−</mo>  
+                     <mi>a</mi>
+                  </mrow></math>
+               </td>
+            <td>
+               <pre>&lt;mrow&gt;<br>  &lt;mo intent="unary-minus"&gt;−&lt;/mo&gt;<br>  &lt;mi&gt;a&lt;/mi&gt;<br>&lt;/mrow&gt;</pre>
+            </td>
+            <td class="s4" dir="ltr">negative a<br>minus a</td>
+            <td class="s4" dir="ltr">a négatif<br>moins a</td>
+         </tr>
+         <tr>
+            <th>15</th>
+            <td class="tex">a^b</td>
+            <td>
+               <math display="block">
+                  <msup>
+                     <mi>a</mi>
+                     <mi>b</mi>
+                  </msup></math>
+               </td>
+            <td>
+               <math style="display:block">
+                  <msup intent="power($a,$n)">  
+                     <mi arg="a">a</mi>  
+                     <mi arg="n">b</mi>
+                  </msup></math>
+               </td>
+            <td>
+               <pre>&lt;msup intent="power($a,$n)"&gt;<br>  &lt;mi arg="a"&gt;a&lt;/mi&gt;<br>  &lt;mi arg="n"&gt;b&lt;/mi&gt;<br>&lt;/msup&gt;<br> </pre>
+            </td>
+            <td class="s4" dir="ltr">a to the b<br>a b</td>
+            <td class="s4" dir="ltr">a à la b<br>a b</td>
+         </tr>
+         <tr>
+            <th>16</th>
+            <td class="tex">a^2</td>
+            <td>
+               <math display="block">
+                  <msup>
+                     <mi>a</mi>
+                     <mn>2</mn>
+                  </msup></math>
+               </td>
+            <td>
+               <math style="display:block">
+                  <msup intent="power($a,$n)">  
+                     <mi arg="a">a</mi>  
+                     <mn arg="n">2</mn>
+                  </msup></math>
+               </td>
+            <td>
+               <pre>&lt;msup intent="power($a,$n)"&gt;<br>  &lt;mi arg="a"&gt;a&lt;/mi&gt;<br>  &lt;mn arg="n"&gt;2&lt;/mn&gt;<br>&lt;/msup&gt;</pre>
+            </td>
+            <td class="s4 softmerge" dir="ltr">
+               <div class="softmerge-inner" style="width:242px;left:-1px">a squared<br>a two<br>(not sure how to pronounce it when a is a function and this means a(a(.)) )</div>
+            </td>
+            <td class="s4" dir="ltr">a carré<br>a 2</td>
+         </tr>
+         <tr>
+            <th>17</th>
+            <td class="tex">a^3</td>
+            <td>
+               <math display="block">
+                  <msup>
+                     <mi>a</mi>
+                     <mn>3</mn>
+                  </msup></math>
+               </td>
+            <td>
+               <math style="display:block">
+                  <msup intent="power($a,$n)">  
+                     <mi arg="a">a</mi>  
+                     <mn arg="n">3</mn>
+                  </msup></math>
+               </td>
+            <td>
+               <pre>&lt;msup intent="power($a,$n)"&gt;<br>  &lt;mi arg="a"&gt;a&lt;/mi&gt;<br>  &lt;mn arg="n"&gt;3&lt;/mn&gt;<br>&lt;/msup&gt;</pre>
+            </td>
+            <td class="s4" dir="ltr">a cubed<br>a three</td>
+            <td class="s4" dir="ltr">a cube<br>a 3</td>
+         </tr>
+         <tr>
+            <th>18</th>
+            <td class="tex">a^T</td>
+            <td>
+               <math display="block">
+                  <msup>  
+                     <mi>a</mi>  
+                     <mi mathvariant="normal">T</mi> </msup></math>
+               </td>
+            <td>
+               <math style="display:block">
+                  <msup intent="$op($arg)">  
+                     <mi arg="arg">a</mi>  
+                     <mi arg="op" intent="transpose" mathvariant="normal">T</mi>
+                  </msup></math>
+               </td>
+            <td>
+               <pre><div class="softmerge-inner" style="width:447px;left:-1px">&lt;msup intent="$op($arg)"&gt;<br>  &lt;mi arg="arg"&gt;a&lt;/mi&gt;<br>  &lt;mi arg="op" intent="transpose" mathvariant="normal"&gt;T&lt;/mi&gt;<br>&lt;/msup&gt;</div></pre>
+            </td>
+            <td class="s4" dir="ltr">a transpose or transpose a<br>(T is not an exponent or an index)</td>
+            <td class="s4" dir="ltr">a transposée</td>
+         </tr>
+         <tr>
+            <th>19</th>
+            <td class="tex">{}^Ta</td>
+            <td>
+               <math display="block">
+                  <mmultiscripts> 
+                     <mi>a</mi> 
+                     <mprescripts></mprescripts> 
+                     <mrow></mrow> 
+                     <mi mathvariant="normal">T</mi>
+                  </mmultiscripts></math>
+               </td>
+            <td>
+               <math style="display:block">
+                  <mmultiscripts intent="$op($arg)"> 
+                     <mi arg="arg">a</mi> 
+                     <mprescripts></mprescripts> 
+                     <mrow></mrow> 
+                     <mi arg="op" intent="transpose" mathvariant="normal">T</mi>
+                  </mmultiscripts></math>
+               </td>
+            <td>
+               <pre><div class="softmerge-inner" style="width:447px;left:-1px">&lt;mmultiscripts intent="$op($arg)"&gt;<br> &lt;mi arg="arg"&gt;a&lt;/mi&gt;<br> &lt;mprescripts/&gt;<br> &lt;mrow/&gt;<br> &lt;mi arg="op" intent="transpose" mathvariant="normal"&gt;T&lt;/mi&gt;<br>&lt;/mmultiscripts&gt;</div></pre>
+            </td>
+            <td class="s4" dir="ltr">a transpose or transpose a<br>(T is not an exponent or an index)</td>
+            <td class="s4" dir="ltr">a transposée</td>
+         </tr>
+         <tr>
+            <th>20</th>
+            <td class="tex">a^{-1}</td>
+            <td>
+               <math display="block">
+                  <msup>  
+                     <mi>a</mi>  
+                     <mrow>
+                        <mo>−</mo>
+                        <mn>1</mn>
+                     </mrow>
+                  </msup></math>
+               </td>
+            <td>
+               <math style="display:block">
+                  <msup intent="inverse($a)">  
+                     <mi arg="a">a</mi>  
+                     <mrow>
+                        <mo>−</mo>
+                        <mn>1</mn>
+                     </mrow>
+                  </msup></math>
+               </td>
+            <td>
+               <pre>&lt;msup intent="inverse($a)"&gt;<br>  &lt;mi arg="a"&gt;a&lt;/mi&gt;<br>  &lt;mrow&gt;&lt;mo&gt;−&lt;/mo&gt;&lt;mn&gt;1&lt;/mn&gt;&lt;/mrow&gt;<br>&lt;/msup&gt;</pre>
+            </td>
+            <td class="s4" dir="ltr">a inverse<br>one over a</td>
+            <td class="s4" dir="ltr">a inverse</td>
+         </tr>
+         <tr>
+            <th>21</th>
+            <td class="tex">a^+</td>
+            <td>
+               <math display="block">
+                  <msup>  
+                     <mi>a</mi>  
+                     <mo>+</mo>
+                  </msup></math>
+               </td>
+            <td>
+               <math style="display:block">
+                  <msup intent="limit-from-right($a)">  
+                     <mi arg="a">a</mi>  
+                     <mo>+</mo>
+                  </msup></math>
+               </td>
+            <td>
+               <pre>&lt;msup intent="limit-from-right($a)"&gt;<br>  &lt;mi arg="a"&gt;a&lt;/mi&gt;<br>  &lt;mo&gt;+&lt;/mo&gt;<br>&lt;/msup&gt;</pre>
+            </td>
+            <td class="s4 softmerge" dir="ltr">
+               <div class="softmerge-inner" style="width:242px;left:-1px">a from the right<br><br>(as in \lim_{x \to a^+} "the limit as x goes to a from the right")<br>[not sure about chemistry pronunciation]</div>
+            </td>
+            <td class="s0 softmerge" dir="ltr">
+               <div class="softmerge-inner" style="width:198px;left:-1px">a depuis la droite</div>
+            </td>
+         </tr>
+         <tr>
+            <th>22</th>
+            <td class="tex">a^-</td>
+            <td>
+               <math display="block">
+                  <msup>  
+                     <mi>a</mi>  
+                     <mo>−</mo>
+                  </msup></math>
+               </td>
+            <td>
+               <math style="display:block">
+                  <msup intent="limit-from-left($a)">  
+                     <mi arg="a">a</mi>  
+                     <mo>-</mo>
+                  </msup></math>
+               </td>
+            <td>
+               <pre>&lt;msup intent="limit-from-left($a)"&gt;<br>  &lt;mi arg="a"&gt;a&lt;/mi&gt;<br>  &lt;mo&gt;-&lt;/mo&gt;<br>&lt;/msup&gt;</pre>
+            </td>
+            <td class="s4 softmerge" dir="ltr">
+               <div class="softmerge-inner" style="width:242px;left:-1px">a from the left<br><br>(as in \lim_{x \to a^+} "the limit as x goes to a from the right")<br>[not sure about chemistry pronunciation]</div>
+            </td>
+            <td class="s0 softmerge" dir="ltr">
+               <div class="softmerge-inner" style="width:198px;left:-1px"><br>a depuis la gauche</div>
+            </td>
+         </tr>
+         <tr>
+            <th>23</th>
+            <td class="tex">a_b</td>
+            <td>
+               <math display="block">
+                  <msub> 
+                     <mi>a</mi> 
+                     <mi>b</mi>
+                  </msub></math>
+               </td>
+            <td>
+               <math style="display:block">
+                  <msub intent="index-of($base,$index)"> 
+                     <mi arg="base">a</mi> 
+                     <mi arg="index">b</mi>
+                  </msub></math>
+               </td>
+            <td>
+               <pre>&lt;msub intent="index-of($base,$index)"&gt;<br> &lt;mi arg="base"&gt;a&lt;/mi&gt;<br> &lt;mi arg="index"&gt;b&lt;/mi&gt;<br>&lt;/msub&gt;</pre>
+            </td>
+            <td class="s4" dir="ltr">a sub b<br>a b</td>
+            <td class="s4" dir="ltr">a indice b<br>a b</td>
+         </tr>
+         <tr>
+            <th>24</th>
+            <td class="tex">{a_b}</td>
+            <td>
+               <math display="block">
+                  <mrow> 
+                     <mo>{</mo> 
+                     <msub>  
+                        <mi>a</mi>  
+                        <mi>b</mi> </msub> 
+                     <mo>}</mo>
+                  </mrow></math>
+               </td>
+            <td>
+               <math style="display:block">
+                  <mrow intent="sequence($ai)"> 
+                     <mo>{</mo> 
+                     <msub arg="ai">  
+                        <mi>a</mi>  
+                        <mi>b</mi> </msub> 
+                     <mo>}</mo>
+                  </mrow></math>
+               </td>
+            <td>
+               <pre>&lt;mrow intent="sequence($ai)"&gt;<br> &lt;mo&gt;{&lt;/mo&gt;<br> &lt;msub arg="ai"&gt;<br>  &lt;mi&gt;a&lt;/mi&gt;<br>  &lt;mi&gt;b&lt;/mi&gt;<br> &lt;/msub&gt;<br> &lt;mo&gt;}&lt;/mo&gt;<br>&lt;/mrow&gt;</pre>
+            </td>
+            <td class="s4" dir="ltr">sequence a b</td>
+            <td class="s4" dir="ltr">couple a b</td>
+         </tr>
+         <tr>
+            <th>25</th>
+            <td class="tex">(a_b)</td>
+            <td>
+               <math display="block">
+                  <mrow> 
+                     <mo>(</mo> 
+                     <msub>  
+                        <mi>a</mi>  
+                        <mi>b</mi> </msub> 
+                     <mo>)</mo>
+                  </mrow></math>
+               </td>
+            <td>
+               <math style="display:block">
+                  <mrow intent="sequence($ai)"> 
+                     <mo>(</mo> 
+                     <msub arg="ai">  
+                        <mi>a</mi>  
+                        <mi>b</mi> </msub> 
+                     <mo>)</mo>
+                  </mrow></math>
+               </td>
+            <td>
+               <pre>&lt;mrow intent="sequence($ai)"&gt;<br> &lt;mo&gt;(&lt;/mo&gt;<br> &lt;msub arg="ai"&gt;<br>  &lt;mi&gt;a&lt;/mi&gt;<br>  &lt;mi&gt;b&lt;/mi&gt;<br> &lt;/msub&gt;<br> &lt;mo&gt;)&lt;/mo&gt;<br>&lt;/mrow&gt;</pre>
+            </td>
+            <td class="s4" dir="ltr">sequence a b</td>
+            <td class="s4" dir="ltr">couple a b</td>
+         </tr>
+         <tr>
+            <th>26</th>
+            <td class="tex">{a}</td>
+            <td>
+               <math display="block">
+                  <mrow> 
+                     <mo>{</mo>
+                     <mi>a</mi>
+                     <mo>}</mo>
+                  </mrow></math>
+               </td>
+            <td>
+               <math style="display:block">
+                  <mrow intent="set($a)"> 
+                     <mo>{</mo>
+                     <mi arg="a">a</mi>
+                     <mo>}</mo>
+                  </mrow></math>
+               </td>
+            <td>
+               <pre>&lt;mrow intent="set($a)"&gt;<br> &lt;mo&gt;{&lt;/mo&gt;&lt;mi arg="a"&gt;a&lt;/mi&gt;&lt;mo&gt;}&lt;/mo&gt;<br>&lt;/mrow&gt;</pre>
+            </td>
+            <td class="s4" dir="ltr">set a</td>
+            <td class="s4" dir="ltr">ensemble a</td>
+         </tr>
+         <tr>
+            <th>27</th>
+            <td class="tex">a \subset b</td>
+            <td>
+               <math display="block">
+                  <mrow>
+                     <mi>a</mi>
+                     <mo>⊂</mo>
+                     <mi>b</mi>
+                  </mrow></math>
+               </td>
+            <td>
+               <math style="display:block">
+                  <mrow> 
+                     <mi>a</mi> 
+                     <mo intent="subset">⊂</mo> 
+                     <mi>b</mi>
+                  </mrow></math>
+               </td>
+            <td>
+               <pre>&lt;mrow&gt;<br> &lt;mi&gt;a&lt;/mi&gt;<br> &lt;mo intent="subset"&gt;⊂&lt;/mo&gt;<br> &lt;mi&gt;b&lt;/mi&gt;<br>&lt;/mrow&gt;</pre>
+            </td>
+            <td class="s4" dir="ltr">a is a subset of b<br>a is included in b</td>
+            <td class="s0 softmerge" dir="ltr">
+               <div class="softmerge-inner" style="width:198px;left:-1px">a est un sous ensemble de b<br>a est inclus dans b</div>
+            </td>
+         </tr>
+         <tr>
+            <th>28</th>
+            <td class="tex">a \subseteq b</td>
+            <td>
+               <math display="block">
+                  <mrow>
+                     <mi>a</mi>
+                     <mo>⊆</mo>
+                     <mi>b</mi>
+                  </mrow></math>
+               </td>
+            <td>
+               <math style="display:block">
+                  <mrow> 
+                     <mi>a</mi> 
+                     <mo intent="subset-or-equal">⊆</mo> 
+                     <mi>b</mi>
+                  </mrow></math>
+               </td>
+            <td>
+               <pre>&lt;mrow&gt;<br> &lt;mi&gt;a&lt;/mi&gt;<br> &lt;mo intent="subset-or-equal"&gt;⊆&lt;/mo&gt;<br> &lt;mi&gt;b&lt;/mi&gt;<br>&lt;/mrow&gt;</pre>
+            </td>
+            <td class="s4" dir="ltr">a is a subset of  or equal to b</td>
+            <td class="s0 softmerge" dir="ltr">
+               <div class="softmerge-inner" style="width:198px;left:-1px">a est un sous ensemble de b<br> ??</div>
+            </td>
+         </tr>
+         <tr>
+            <th>29</th>
+            <td class="tex">a \supset b</td>
+            <td>
+               <math display="block">
+                  <mrow>
+                     <mi>a</mi>
+                     <mo>⊃</mo>
+                     <mi>b</mi>
+                  </mrow></math>
+               </td>
+            <td>
+               <math style="display:block">
+                  <mrow> 
+                     <mi>a</mi> 
+                     <mo intent="superset">⊃</mo> 
+                     <mi>b</mi>
+                  </mrow></math>
+               </td>
+            <td>
+               <pre>&lt;mrow&gt;<br> &lt;mi&gt;a&lt;/mi&gt;<br> &lt;mo intent="superset"&gt;⊃&lt;/mo&gt;<br> &lt;mi&gt;b&lt;/mi&gt;<br>&lt;/mrow&gt;</pre>
+            </td>
+            <td class="s4" dir="ltr">a is a superset of b</td>
+            <td class="s4" dir="ltr">a contient b</td>
+         </tr>
+         <tr>
+            <th>30</th>
+            <td class="tex">a \supseteq b</td>
+            <td>
+               <math display="block">
+                  <mrow>
+                     <mi>a</mi>
+                     <mo>⊇</mo>
+                     <mi>b</mi>
+                  </mrow></math>
+               </td>
+            <td>
+               <math style="display:block">
+                  <mrow> 
+                     <mi>a</mi> 
+                     <mo intent="superset-or-equal">⊇</mo> 
+                     <mi>b</mi>
+                  </mrow></math>
+               </td>
+            <td>
+               <pre>&lt;mrow&gt;<br> &lt;mi&gt;a&lt;/mi&gt;<br> &lt;mo intent="superset-or-equal"&gt;⊇&lt;/mo&gt;<br> &lt;mi&gt;b&lt;/mi&gt;<br>&lt;/mrow&gt;</pre>
+            </td>
+            <td class="s4" dir="ltr">a is a superset of or equal to b</td>
+            <td class="s4" dir="ltr">a contient b ??</td>
+         </tr>
+         <tr>
+            <th>31</th>
+            <td class="tex">a \in b</td>
+            <td>
+               <math display="block">
+                  <mrow>
+                     <mi>a</mi>
+                     <mo>∈</mo>
+                     <mi>b</mi>
+                  </mrow></math>
+               </td>
+            <td>
+               <math style="display:block">
+                  <mrow intent="$op($a,$b)">  
+                     <mi arg="a">a</mi>  
+                     <mo arg="op" intent="member">∈</mo>  
+                     <mi arg="b">b</mi> </mrow></math>
+               </td>
+            <td>
+               <pre>&lt;mrow intent="$op($a,$b)"&gt;<br>  &lt;mi arg="a"&gt;a&lt;/mi&gt;<br>  &lt;mo arg="op" intent="member"&gt;∈&lt;/mo&gt;<br>  &lt;mi arg="b"&gt;b&lt;/mi&gt;<br> &lt;/mrow&gt;</pre>
+            </td>
+            <td class="s4" dir="ltr">a is in b<br>a is a member of b</td>
+            <td class="s4" dir="ltr">a est dans b</td>
+         </tr>
+         <tr>
+            <th>32</th>
+            <td class="tex">(a,b)</td>
+            <td>
+               <math display="block">
+                  <mrow> 
+                     <mo>(</mo>
+                     <mi>a</mi>
+                     <mo>,</mo>
+                     <mi>b</mi>
+                     <mo>)</mo>
+                  </mrow></math>
+               </td>
+            <td>
+               <math style="display:block">
+                  <mrow intent="open-interval($a,$b)">  
+                     <mo>(</mo>  
+                     <mi arg="a">a</mi>  
+                     <mo>,</mo>  
+                     <mi arg="b">b</mi>  
+                     <mo>)</mo> </mrow></math>
+               
+               <math style="display:block">
+                  <mrow intent="coordinate($a,$b)">  
+                     <mo>(</mo>  
+                     <mi arg="a">a</mi>  
+                     <mo>,</mo>  
+                     <mi arg="b">b</mi>  
+                     <mo>)</mo> </mrow></math>
+               
+               <math style="display:block">
+                  <mrow intent="gcd($a,$b)">  
+                     <mo>(</mo>  
+                     <mi arg="a">a</mi>  
+                     <mo>,</mo>  
+                     <mi arg="b">b</mi>  
+                     <mo>)</mo> </mrow></math>
+               
+               <math style="display:block">
+                  <mrow intent="pair($a,$b)">  
+                     <mo>(</mo>  
+                     <mi arg="a">a</mi>  
+                     <mo>,</mo>  
+                     <mi arg="b">b</mi>  
+                     <mo>)</mo> </mrow></math>
+               </td>
+            <td>
+               <pre> &lt;mrow intent="open-interval($a,$b)"&gt;<br>  &lt;mo&gt;(&lt;/mo&gt;<br>  &lt;mi arg="a"&gt;a&lt;/mi&gt;<br>  &lt;mo&gt;,&lt;/mo&gt;<br>  &lt;mi arg="b"&gt;b&lt;/mi&gt;<br>  &lt;mo&gt;)&lt;/mo&gt;<br> &lt;/mrow&gt;<br><br> &lt;mrow intent="coordinate($a,$b)"&gt;<br>  &lt;mo&gt;(&lt;/mo&gt;<br>  &lt;mi arg="a"&gt;a&lt;/mi&gt;<br>  &lt;mo&gt;,&lt;/mo&gt;<br>  &lt;mi arg="b"&gt;b&lt;/mi&gt;<br>  &lt;mo&gt;)&lt;/mo&gt;<br> &lt;/mrow&gt;<br><br><br> &lt;mrow intent="gcd($a,$b)"&gt;<br>  &lt;mo&gt;(&lt;/mo&gt;<br>  &lt;mi arg="a"&gt;a&lt;/mi&gt;<br>  &lt;mo&gt;,&lt;/mo&gt;<br>  &lt;mi arg="b"&gt;b&lt;/mi&gt;<br>  &lt;mo&gt;)&lt;/mo&gt;<br> &lt;/mrow&gt;<br><br> &lt;mrow intent="pair($a,$b)"&gt;<br>  &lt;mo&gt;(&lt;/mo&gt;<br>  &lt;mi arg="a"&gt;a&lt;/mi&gt;<br>  &lt;mo&gt;,&lt;/mo&gt;<br>  &lt;mi arg="b"&gt;b&lt;/mi&gt;<br>  &lt;mo&gt;)&lt;/mo&gt;<br> &lt;/mrow&gt;</pre>
+            </td>
+            <td class="s4" dir="ltr">open interval a [to] b<br>Cartesian coordinate a [comma] b<br>GCD of a and b<br>ordered pair a [comma] b</td>
+            <td class="s0 softmerge" dir="ltr">
+               <div class="softmerge-inner" style="width:198px;left:-1px">intervalle ouvert entre a et b<br>point a b<br>pgcd de a et b<br>couple a b</div>
+            </td>
+         </tr>
+         <tr>
+            <th>33</th>
+            <td class="tex">(a\,b)</td>
+            <td>
+               <math display="block">
+                  <mrow> 
+                     <mo>(</mo> 
+                     <mi>a</mi> 
+                     <mo> </mo> 
+                     <mi>b</mi> 
+                     <mo>)</mo>
+                  </mrow></math>
+               </td>
+            <td>
+               <math style="display:block">
+                  <mrow intent="vector($a,$b,$c)"> 
+                     <mo>(</mo> 
+                     <mi arg="a">a</mi> 
+                     <mo> </mo> 
+                     <mi arg="b">b</mi> 
+                     <mo>)</mo>
+                  </mrow></math>
+               
+               <math style="display:block">
+                  <mrow intent="cycle($a,$b,$c)"> 
+                     <mo>(</mo> 
+                     <mi arg="a">a</mi> 
+                     <mo> </mo> 
+                     <mi arg="b">b</mi> 
+                     <mo>)</mo>
+                  </mrow></math>
+               </td>
+            <td>
+               <pre>&lt;mrow intent="vector($a,$b,$c)"&gt;<br> &lt;mo&gt;(&lt;/mo&gt;<br> &lt;mi arg="a"&gt;a&lt;/mi&gt;<br> &lt;mo&gt;&amp;#x2009;&lt;/mo&gt;<br> &lt;mi arg="b"&gt;b&lt;/mi&gt;<br> &lt;mo&gt;)&lt;/mo&gt;<br>&lt;/mrow&gt;<br><br>&lt;mrow intent="cycle($a,$b,$c)"&gt;<br> &lt;mo&gt;(&lt;/mo&gt;<br> &lt;mi arg="a"&gt;a&lt;/mi&gt;<br> &lt;mo&gt;&amp;#x2009;&lt;/mo&gt;<br> &lt;mi arg="b"&gt;b&lt;/mi&gt;<br> &lt;mo&gt;)&lt;/mo&gt;<br>&lt;/mrow&gt;</pre>
+            </td>
+            <td class="s4" dir="ltr">vector a b<br>cycle a b</td>
+            <td class="s4" dir="ltr">vecteur a b<br>cycle a b</td>
+         </tr>
+         <tr>
+            <th>34</th>
+            <td class="tex">(a\,b\,c\,d)</td>
+            <td>
+               <math display="block">
+                  <mrow> 
+                     <mo>(</mo> 
+                     <mi>a</mi> 
+                     <mo> </mo> 
+                     <mi>b</mi> 
+                     <mo> </mo> 
+                     <mi>c</mi> 
+                     <mo> </mo> 
+                     <mi>d</mi> 
+                     <mo>)</mo>
+                  </mrow></math>
+               </td>
+            <td>
+               <math style="display:block">
+                  <mrow intent="vector($a,$b,$c)"> 
+                     <mo>(</mo> 
+                     <mi arg="a">a</mi> 
+                     <mo> </mo> 
+                     <mi arg="b">b</mi> 
+                     <mo> </mo> 
+                     <mi arg="c">c</mi> 
+                     <mo> </mo> 
+                     <mi arg="d">d</mi> 
+                     <mo>)</mo>
+                  </mrow></math>
+               
+               <math style="display:block">
+                  <mrow intent="cycle($a,$b,$c)"> 
+                     <mo>(</mo> 
+                     <mi arg="a">a</mi> 
+                     <mo> </mo> 
+                     <mi arg="b">b</mi> 
+                     <mo> </mo> 
+                     <mi arg="c">c</mi> 
+                     <mo> </mo> 
+                     <mi arg="d">d</mi> 
+                     <mo>)</mo>
+                  </mrow></math>
+               </td>
+            <td>
+               <pre>&lt;mrow intent="vector($a,$b,$c)"&gt;<br> &lt;mo&gt;(&lt;/mo&gt;<br> &lt;mi arg="a"&gt;a&lt;/mi&gt;<br> &lt;mo&gt;&amp;#x2009;&lt;/mo&gt;<br> &lt;mi arg="b"&gt;b&lt;/mi&gt;<br> &lt;mo&gt;&amp;#x2009;&lt;/mo&gt;<br> &lt;mi arg="c"&gt;c&lt;/mi&gt;<br> &lt;mo&gt;&amp;#x2009;&lt;/mo&gt;<br> &lt;mi arg="d"&gt;d&lt;/mi&gt;<br> &lt;mo&gt;)&lt;/mo&gt;<br>&lt;/mrow&gt;<br><br>&lt;mrow intent="cycle($a,$b,$c)"&gt;<br> &lt;mo&gt;(&lt;/mo&gt;<br> &lt;mi arg="a"&gt;a&lt;/mi&gt;<br> &lt;mo&gt;&amp;#x2009;&lt;/mo&gt;<br> &lt;mi arg="b"&gt;b&lt;/mi&gt;<br> &lt;mo&gt;&amp;#x2009;&lt;/mo&gt;<br> &lt;mi arg="c"&gt;c&lt;/mi&gt;<br> &lt;mo&gt;&amp;#x2009;&lt;/mo&gt;<br> &lt;mi arg="d"&gt;d&lt;/mi&gt;<br> &lt;mo&gt;)&lt;/mo&gt;<br>&lt;/mrow&gt;</pre>
+            </td>
+            <td class="s4" dir="ltr">vector a b c d<br>cycle a b c d</td>
+            <td class="s4" dir="ltr">vecteur a b c d<br>cycle a b c d</td>
+         </tr>
+         <tr>
+            <th>35</th>
+            <td class="tex">(a,b]</td>
+            <td>
+               <math display="block">
+                  <mrow>  
+                     <mo>(</mo>  
+                     <mi>a</mi>  
+                     <mo>,</mo>  
+                     <mi>b</mi>  
+                     <mo>]</mo>
+                  </mrow></math>
+               </td>
+            <td>
+               <math style="display:block">
+                  <mrow intent="open-closed-interval($a,$b)">  
+                     <mo>(</mo>  
+                     <mi arg="a">a</mi>  
+                     <mo>,</mo>  
+                     <mi arg="b">b</mi>  
+                     <mo>)</mo> </mrow></math>
+               </td>
+            <td>
+               <pre> &lt;mrow intent="open-closed-interval($a,$b)"&gt;<br>  &lt;mo&gt;(&lt;/mo&gt;<br>  &lt;mi arg="a"&gt;a&lt;/mi&gt;<br>  &lt;mo&gt;,&lt;/mo&gt;<br>  &lt;mi arg="b"&gt;b&lt;/mi&gt;<br>  &lt;mo&gt;)&lt;/mo&gt;<br> &lt;/mrow&gt;</pre>
+            </td>
+            <td class="s4 softmerge" dir="ltr">
+               <div class="softmerge-inner" style="width:242px;left:-1px">(half open intervals, not sure of most common pronunciation)</div>
+            </td>
+            <td class="s0 softmerge" dir="ltr">
+               <div class="softmerge-inner" style="width:329px;left:-1px">intervalle ouvert entre a inclus et b non inclus<br>commutateur de a et b<br>ppcm de a et b<br>crochet de a et b</div>
+            </td>
+         </tr>
+         <tr>
+            <th>36</th>
+            <td class="tex">[a,b)</td>
+            <td>
+               <math display="block">
+                  <mrow>  
+                     <mo>[</mo>  
+                     <mi>a</mi>  
+                     <mo>,</mo>  
+                     <mi>b</mi>  
+                     <mo>)</mo>
+                  </mrow></math>
+               </td>
+            <td>
+               <math style="display:block">
+                  <mrow intent="closed-open-interval($a,$b)">  
+                     <mo>(</mo>  
+                     <mi arg="a">a</mi>  
+                     <mo>,</mo>  
+                     <mi arg="b">b</mi>  
+                     <mo>)</mo> </mrow></math>
+               </td>
+            <td>
+               <pre> &lt;mrow intent="closed-open-interval($a,$b)"&gt;<br>  &lt;mo&gt;(&lt;/mo&gt;<br>  &lt;mi arg="a"&gt;a&lt;/mi&gt;<br>  &lt;mo&gt;,&lt;/mo&gt;<br>  &lt;mi arg="b"&gt;b&lt;/mi&gt;<br>  &lt;mo&gt;)&lt;/mo&gt;<br> &lt;/mrow&gt;</pre>
+            </td>
+            <td class="s4 softmerge" dir="ltr">
+               <div class="softmerge-inner" style="width:242px;left:-1px">(half open intervals, not sure of most common pronunciation)</div>
+            </td>
+            <td class="s0 softmerge" dir="ltr">
+               <div class="softmerge-inner" style="width:329px;left:-1px">intervalle ouvert entre a inclus et b non inclus<br>commutateur de a et b<br>ppcm de a et b<br>crochet de a et b</div>
+            </td>
+         </tr>
+         <tr>
+            <th>37</th>
+            <td class="tex">[a,b]</td>
+            <td>
+               <math display="block">
+                  <mrow> 
+                     <mo>[</mo>
+                     <mi>a</mi>
+                     <mo>,</mo>
+                     <mi>b</mi>
+                     <mo>]</mo>
+                  </mrow></math>
+               </td>
+            <td>
+               <math style="display:block">
+                  <mrow intent="closed-interval($a,$b)">  
+                     <mo>(</mo>  
+                     <mi arg="a">a</mi>  
+                     <mo>,</mo>  
+                     <mi arg="b">b</mi>  
+                     <mo>)</mo> </mrow></math>
+               
+               <math style="display:block">
+                  <mrow intent="commutator($a,$b)">  
+                     <mo>(</mo>  
+                     <mi arg="a">a</mi>  
+                     <mo>,</mo>  
+                     <mi arg="b">b</mi>  
+                     <mo>)</mo> </mrow></math>
+               
+               <math style="display:block">
+                  <mrow intent="lcm($a,$b)">  
+                     <mo>(</mo>  
+                     <mi arg="a">a</mi>  
+                     <mo>,</mo>  
+                     <mi arg="b">b</mi>  
+                     <mo>)</mo> </mrow></math>
+               
+               <math style="display:block">
+                  <mrow intent="lie-bracket($a,$b)">  
+                     <mo>(</mo>  
+                     <mi arg="a">a</mi>  
+                     <mo>,</mo>  
+                     <mi arg="b">b</mi>  
+                     <mo>)</mo> </mrow></math>
+               </td>
+            <td>
+               <pre> &lt;mrow intent="closed-interval($a,$b)"&gt;<br>  &lt;mo&gt;(&lt;/mo&gt;<br>  &lt;mi arg="a"&gt;a&lt;/mi&gt;<br>  &lt;mo&gt;,&lt;/mo&gt;<br>  &lt;mi arg="b"&gt;b&lt;/mi&gt;<br>  &lt;mo&gt;)&lt;/mo&gt;<br> &lt;/mrow&gt;<br><br> &lt;mrow intent="commutator($a,$b)"&gt;<br>  &lt;mo&gt;(&lt;/mo&gt;<br>  &lt;mi arg="a"&gt;a&lt;/mi&gt;<br>  &lt;mo&gt;,&lt;/mo&gt;<br>  &lt;mi arg="b"&gt;b&lt;/mi&gt;<br>  &lt;mo&gt;)&lt;/mo&gt;<br> &lt;/mrow&gt;<br><br> &lt;mrow intent="lcm($a,$b)"&gt;<br>  &lt;mo&gt;(&lt;/mo&gt;<br>  &lt;mi arg="a"&gt;a&lt;/mi&gt;<br>  &lt;mo&gt;,&lt;/mo&gt;<br>  &lt;mi arg="b"&gt;b&lt;/mi&gt;<br>  &lt;mo&gt;)&lt;/mo&gt;<br> &lt;/mrow&gt;<br><br> &lt;mrow intent="lie-bracket($a,$b)"&gt;<br>  &lt;mo&gt;(&lt;/mo&gt;<br>  &lt;mi arg="a"&gt;a&lt;/mi&gt;<br>  &lt;mo&gt;,&lt;/mo&gt;<br>  &lt;mi arg="b"&gt;b&lt;/mi&gt;<br>  &lt;mo&gt;)&lt;/mo&gt;<br> &lt;/mrow&gt;</pre>
+            </td>
+            <td class="s4" dir="ltr">closed interval a [to] b<br>commutator of a and b<br>lcm of a and b<br>[Lie] bracket of a [and] b</td>
+            <td class="s0 softmerge" dir="ltr">
+               <div class="softmerge-inner" style="width:198px;left:-1px">intervalle fermé entre a et b<br>commutateur de a et b<br>ppcm de a et b<br>crochet de a et b</div>
+            </td>
+         </tr>
+         <tr>
+            <th>38</th>
+            <td class="tex">[a:b]</td>
+            <td>
+               <math display="block">
+                  <mrow> 
+                     <mo>[</mo>
+                     <mi>a</mi>
+                     <mo>:</mo>
+                     <mi>b</mi>
+                     <mo>]</mo>
+                  </mrow></math>
+               </td>
+            <td>
+               <math style="display:block">
+                  <mrow intent="index-of($a,$b)"> 
+                     <mo>[</mo> 
+                     <mi arg="a">a</mi> 
+                     <mo>:</mo> 
+                     <mi arg="b">b</mi> 
+                     <mo>]</mo>
+                  </mrow></math>
+               
+               <math style="display:block">
+                  <mrow intent="dimension-over($a,$b)"> 
+                     <mo>[</mo> 
+                     <mi arg="a">a</mi> 
+                     <mo>:</mo> 
+                     <mi arg="b">b</mi> 
+                     <mo>]</mo>
+                  </mrow></math>
+               </td>
+            <td>
+               <pre>&lt;mrow intent="index-of($a,$b)"&gt;<br> &lt;mo&gt;[&lt;/mo&gt;<br> &lt;mi arg="a"&gt;a&lt;/mi&gt;<br> &lt;mo&gt;:&lt;/mo&gt;<br> &lt;mi arg="b"&gt;b&lt;/mi&gt;<br> &lt;mo&gt;]&lt;/mo&gt;<br>&lt;/mrow&gt;<br><br>&lt;mrow intent="dimension-over($a,$b)"&gt;<br> &lt;mo&gt;[&lt;/mo&gt;<br> &lt;mi arg="a"&gt;a&lt;/mi&gt;<br> &lt;mo&gt;:&lt;/mo&gt;<br> &lt;mi arg="b"&gt;b&lt;/mi&gt;<br> &lt;mo&gt;]&lt;/mo&gt;<br>&lt;/mrow&gt;</pre>
+            </td>
+            <td class="s4" dir="ltr">index of b in a<br>dimension of a over b</td>
+            <td class="s0 softmerge" dir="ltr">
+               <div class="softmerge-inner" style="width:198px;left:-1px">indice de b dans a<br>dimension a au dessus de b</div>
+            </td>
+         </tr>
+         <tr>
+            <th>39</th>
+            <td class="tex">P(a,b)</td>
+            <td>
+               <math display="block">
+                  <mrow> 
+                     <mi>P</mi> 
+                     <mrow>  
+                        <mo>(</mo>  
+                        <mi>a</mi>  
+                        <mo>,</mo>  
+                        <mi>b</mi>  
+                        <mo>)</mo> </mrow>
+                  </mrow></math>
+               </td>
+            <td>
+               <math style="display:block">
+                  <mrow intent="point-at($P,$a,$b)"> 
+                     <mi arg="P">P</mi> 
+                     <mrow>  
+                        <mo>(</mo>  
+                        <mi arg="a">a</mi>  
+                        <mo>,</mo>  
+                        <mi arg="b">b</mi>  
+                        <mo>)</mo> </mrow>
+                  </mrow></math>
+               </td>
+            <td>
+               <pre>&lt;mrow intent="point-at($P,$a,$b)"&gt;<br> &lt;mi arg="P"&gt;P&lt;/mi&gt;<br> &lt;mrow&gt;<br>  &lt;mo&gt;(&lt;/mo&gt;<br>  &lt;mi arg="a"&gt;a&lt;/mi&gt;<br>  &lt;mo&gt;,&lt;/mo&gt;<br>  &lt;mi arg="b"&gt;b&lt;/mi&gt;<br>  &lt;mo&gt;)&lt;/mo&gt;<br> &lt;/mrow&gt;<br>&lt;/mrow&gt;</pre>
+            </td>
+            <td class="s4" dir="ltr">the point P at a [comma] b</td>
+            <td class="s0 softmerge" dir="ltr">
+               <div class="softmerge-inner" style="width:198px;left:-1px">le point P de coordonnées a b</div>
+            </td>
+         </tr>
+         <tr>
+            <th>40</th>
+            <td class="tex">P(a,b)</td>
+            <td>
+               <math display="block">
+                  <mrow> 
+                     <mi>P</mi> 
+                     <mo>⁡</mo> 
+                     <mrow>  
+                        <mo>(</mo>  
+                        <mi>a</mi>  
+                        <mo>,</mo>  
+                        <mi>b</mi>  
+                        <mo>)</mo> </mrow>
+                  </mrow></math>
+               </td>
+            <td>
+               <math style="display:block">
+                  <mrow intent="$P($a,$b)"> 
+                     <mi arg="P">P</mi> 
+                     <mo>⁡</mo> 
+                     <mrow>  
+                        <mo>(</mo>  
+                        <mi arg="a">a</mi>  
+                        <mo>,</mo>  
+                        <mi arg="b">b</mi>  
+                        <mo>)</mo> </mrow>
+                  </mrow></math>
+               
+               <math style="display:block">
+                  <mrow intent="permutations($a,$b)"> 
+                     <mi>P</mi> 
+                     <mo>⁡</mo> 
+                     <mrow>  
+                        <mo>(</mo>  
+                        <mi arg="a">a</mi>  
+                        <mo>,</mo>  
+                        <mi arg="b">b</mi>  
+                        <mo>)</mo> </mrow>
+                  </mrow></math>
+               </td>
+            <td>
+               <pre>&lt;mrow intent="$P($a,$b)"&gt;<br> &lt;mi arg="P"&gt;P&lt;/mi&gt;<br> &lt;mo&gt;&amp;#x2061;&lt;/mo&gt;<br> &lt;mrow&gt;<br>  &lt;mo&gt;(&lt;/mo&gt;<br>  &lt;mi arg="a"&gt;a&lt;/mi&gt;<br>  &lt;mo&gt;,&lt;/mo&gt;<br>  &lt;mi arg="b"&gt;b&lt;/mi&gt;<br>  &lt;mo&gt;)&lt;/mo&gt;<br> &lt;/mrow&gt;<br>&lt;/mrow&gt;<br><br>&lt;mrow intent="permutations($a,$b)"&gt;<br> &lt;mi&gt;P&lt;/mi&gt;<br> &lt;mo&gt;&amp;#x2061;&lt;/mo&gt;<br> &lt;mrow&gt;<br>  &lt;mo&gt;(&lt;/mo&gt;<br>  &lt;mi arg="a"&gt;a&lt;/mi&gt;<br>  &lt;mo&gt;,&lt;/mo&gt;<br>  &lt;mi arg="b"&gt;b&lt;/mi&gt;<br>  &lt;mo&gt;)&lt;/mo&gt;<br> &lt;/mrow&gt;<br>&lt;/mrow&gt;</pre>
+            </td>
+            <td class="s4" dir="ltr">P of a [comma] b<br>b permutations of a</td>
+            <td class="s0 softmerge" dir="ltr">
+               <div class="softmerge-inner" style="width:198px;left:-1px">P de a b<br>permutations de a dans b</div>
+            </td>
+         </tr>
+         <tr>
+            <th>41</th>
+            <td class="tex">\binom{a}{b}</td>
+            <td>
+               <math display="block">
+                  <mrow> 
+                     <mi>(</mi> 
+                     <mfrac linethickness="0pt">  
+                        <mi>a</mi>  
+                        <mi>b</mi> </mfrac> 
+                     <mi>)</mi>
+                  </mrow></math>
+               </td>
+            <td>
+               <math style="display:block">
+                  <mrow intent="choose($a,$b)"> 
+                     <mi>(</mi> 
+                     <mfrac linethickness="0pt">  
+                        <mi arg="a">a</mi>  
+                        <mi arg="b">b</mi> </mfrac> 
+                     <mi>)</mi>
+                  </mrow></math>
+               </td>
+            <td>
+               <pre>&lt;mrow intent="choose($a,$b)"&gt;<br> &lt;mi&gt;(&lt;/mi&gt;<br> &lt;mfrac linethickness="0pt"&gt;<br>  &lt;mi arg="a"&gt;a&lt;/mi&gt;<br>  &lt;mi arg="b"&gt;b&lt;/mi&gt;<br> &lt;/mfrac&gt;<br> &lt;mi&gt;)&lt;/mi&gt;<br>&lt;/mrow&gt;</pre>
+            </td>
+            <td class="s4" dir="ltr">a choose b</td>
+            <td class="s0 softmerge" dir="ltr">
+               <div class="softmerge-inner" style="width:198px;left:-1px">combinaisons de a dans b</div>
+            </td>
+         </tr>
+         <tr>
+            <th>42</th>
+            <td class="tex">{}^aC_b</td>
+            <td>
+               <math display="block">
+                  <mmultiscripts> 
+                     <mi>C</mi>  
+                     <mi>b</mi>  
+                     <mrow></mrow>  
+                     <mprescripts></mprescripts>  
+                     <mrow></mrow>  
+                     <mi>a</mi>
+                  </mmultiscripts></math>
+               </td>
+            <td>
+               <math style="display:block">
+                  <mmultiscripts intent="choose($a,$b)"> 
+                     <mi>C</mi>  
+                     <mi arg="b">b</mi>  
+                     <mrow></mrow>  
+                     <mprescripts></mprescripts>  
+                     <mrow></mrow>  
+                     <mi arg="a">a</mi>
+                  </mmultiscripts></math>
+               </td>
+            <td>
+               <pre>&lt;mmultiscripts intent="choose($a,$b)"&gt;<br> &lt;mi&gt;C&lt;/mi&gt;<br>  &lt;mi arg="b"&gt;b&lt;/mi&gt;<br>  &lt;mrow/&gt;<br>  &lt;mprescripts/&gt;<br>  &lt;mrow/&gt;<br>  &lt;mi arg="a"&gt;a&lt;/mi&gt;<br>&lt;/mmultiscripts&gt;</pre>
+            </td>
+            <td class="s4" dir="ltr">a choose b</td>
+            <td class="s0 softmerge" dir="ltr">
+               <div class="softmerge-inner" style="width:198px;left:-1px">combinaisons de a dans b</div>
+            </td>
+         </tr>
+         <tr>
+            <th>43</th>
+            <td class="tex">C(a,b)</td>
+            <td>
+               <math display="block">
+                  <mrow> 
+                     <mi>C</mi> 
+                     <mo>⁡</mo> 
+                     <mrow>  
+                        <mo>(</mo>  
+                        <mi>a</mi>  
+                        <mo>,</mo>  
+                        <mi>b</mi>  
+                        <mo>)</mo> </mrow>
+                  </mrow></math>
+               </td>
+            <td>
+               <math style="display:block">
+                  <mrow intent="choose($a,$b)"> 
+                     <mi>C</mi> 
+                     <mo>⁡</mo> 
+                     <mrow>  
+                        <mo>(</mo>  
+                        <mi arg="a">a</mi>  
+                        <mo>,</mo>  
+                        <mi arg="b">b</mi>  
+                        <mo>)</mo> </mrow>
+                  </mrow></math>
+               
+               <math style="display:block">
+                  <mrow intent="$C($a,$b)"> 
+                     <mi arg="C">C</mi> 
+                     <mo>⁡</mo> 
+                     <mrow>  
+                        <mo>(</mo>  
+                        <mi arg="a">a</mi>  
+                        <mo>,</mo>  
+                        <mi arg="b">b</mi>  
+                        <mo>)</mo> </mrow>
+                  </mrow></math>
+               </td>
+            <td>
+               <pre>&lt;mrow intent="choose($a,$b)"&gt;<br> &lt;mi&gt;C&lt;/mi&gt;<br> &lt;mo&gt;&amp;#x2061;&lt;/mo&gt;<br> &lt;mrow&gt;<br>  &lt;mo&gt;(&lt;/mo&gt;<br>  &lt;mi arg="a"&gt;a&lt;/mi&gt;<br>  &lt;mo&gt;,&lt;/mo&gt;<br>  &lt;mi arg="b"&gt;b&lt;/mi&gt;<br>  &lt;mo&gt;)&lt;/mo&gt;<br> &lt;/mrow&gt;<br>&lt;/mrow&gt;<br><br>&lt;mrow intent="$C($a,$b)"&gt;<br> &lt;mi arg="C"&gt;C&lt;/mi&gt;<br> &lt;mo&gt;&amp;#x2061;&lt;/mo&gt;<br> &lt;mrow&gt;<br>  &lt;mo&gt;(&lt;/mo&gt;<br>  &lt;mi arg="a"&gt;a&lt;/mi&gt;<br>  &lt;mo&gt;,&lt;/mo&gt;<br>  &lt;mi arg="b"&gt;b&lt;/mi&gt;<br>  &lt;mo&gt;)&lt;/mo&gt;<br> &lt;/mrow&gt;<br>&lt;/mrow&gt;</pre>
+            </td>
+            <td class="s4" dir="ltr">a choose b<br>C of a [comma] b</td>
+            <td class="s0 softmerge" dir="ltr">
+               <div class="softmerge-inner" style="width:198px;left:-1px">combinaisons de a dans b<br>C de a b</div>
+            </td>
+         </tr>
+         <tr>
+            <th>44</th>
+            <td class="tex">N(a,b)</td>
+            <td>
+               <math display="block">
+                  <mrow> 
+                     <mi>N</mi> 
+                     <mo>⁡</mo> 
+                     <mrow>  
+                        <mo>(</mo>  
+                        <mi>a</mi>  
+                        <mo>,</mo>  
+                        <mi>b</mi>  
+                        <mo>)</mo> </mrow>
+                  </mrow></math>
+               </td>
+            <td>
+               <math style="display:block">
+                  <mrow intent="normal-distribution($a,$b)"> 
+                     <mi>N</mi> 
+                     <mo>⁡</mo> 
+                     <mrow>  
+                        <mo>(</mo>  
+                        <mi arg="a">a</mi>  
+                        <mo>,</mo>  
+                        <mi arg="b">b</mi>  
+                        <mo>)</mo> </mrow>
+                  </mrow></math>
+               </td>
+            <td>
+               <pre>&lt;mrow intent="normal-distribution($a,$b)"&gt;<br> &lt;mi&gt;N&lt;/mi&gt;<br> &lt;mo&gt;&amp;#x2061;&lt;/mo&gt;<br> &lt;mrow&gt;<br>  &lt;mo&gt;(&lt;/mo&gt;<br>  &lt;mi arg="a"&gt;a&lt;/mi&gt;<br>  &lt;mo&gt;,&lt;/mo&gt;<br>  &lt;mi arg="b"&gt;b&lt;/mi&gt;<br>  &lt;mo&gt;)&lt;/mo&gt;<br> &lt;/mrow&gt;<br>&lt;/mrow&gt;</pre>
+            </td>
+            <td class="s4" dir="ltr">normal distribution a b</td>
+            <td class="s0 softmerge" dir="ltr">
+               <div class="softmerge-inner" style="width:329px;left:-1px">distribution normal de moyenne a et variance b</div>
+            </td>
+         </tr>
+         <tr>
+            <th>45</th>
+            <td class="tex">P(a)</td>
+            <td>
+               <math display="block">
+                  <mrow> 
+                     <mi>P</mi> 
+                     <mo>⁡</mo> 
+                     <mrow>
+                        <mo>(</mo>
+                        <mi>a</mi>
+                        <mo>)</mo>
+                     </mrow>
+                  </mrow></math>
+               </td>
+            <td>
+               <math style="display:block">
+                  <mrow intent="$P($a)"> 
+                     <mi arg="P">P</mi> 
+                     <mo>⁡</mo> 
+                     <mrow>  
+                        <mo>(</mo>  
+                        <mi arg="a">a</mi>  
+                        <mo>)</mo> </mrow>
+                  </mrow></math>
+               
+               <math style="display:block">
+                  <mrow intent="$P($a)"> 
+                     <mi arg="P" intent="probablity">P</mi> 
+                     <mo>⁡</mo> 
+                     <mrow>  
+                        <mo>(</mo>  
+                        <mi arg="a">a</mi>  
+                        <mo>)</mo> </mrow>
+                  </mrow></math>
+               </td>
+            <td>
+               <pre>&lt;mrow intent="$P($a)"&gt;<br> &lt;mi arg="P"&gt;P&lt;/mi&gt;<br> &lt;mo&gt;&amp;#x2061;&lt;/mo&gt;<br> &lt;mrow&gt;<br>  &lt;mo&gt;(&lt;/mo&gt;<br>  &lt;mi arg="a"&gt;a&lt;/mi&gt;<br>  &lt;mo&gt;)&lt;/mo&gt;<br> &lt;/mrow&gt;<br>&lt;/mrow&gt;<br><br>&lt;mrow intent="$P($a)"&gt;<br> &lt;mi arg="P" intent="probablity"&gt;P&lt;/mi&gt;<br> &lt;mo&gt;&amp;#x2061;&lt;/mo&gt;<br> &lt;mrow&gt;<br>  &lt;mo&gt;(&lt;/mo&gt;<br>  &lt;mi arg="a"&gt;a&lt;/mi&gt;<br>  &lt;mo&gt;)&lt;/mo&gt;<br> &lt;/mrow&gt;<br>&lt;/mrow&gt;</pre>
+            </td>
+            <td class="s4" dir="ltr">p of a<br>probability of a</td>
+            <td class="s4" dir="ltr">p de a<br>probabilité de a</td>
+         </tr>
+         <tr>
+            <th>46</th>
+            <td class="tex">p(a)</td>
+            <td>
+               <math display="block">
+                  <mrow> 
+                     <mi>p</mi> 
+                     <mo>⁡</mo> 
+                     <mrow>
+                        <mo>(</mo>
+                        <mi>a</mi>
+                        <mo>)</mo>
+                     </mrow>
+                  </mrow></math>
+               </td>
+            <td>
+               <math style="display:block">
+                  <mrow intent="$P($a)"> 
+                     <mi arg="P">p</mi> 
+                     <mo>⁡</mo> 
+                     <mrow>  
+                        <mo>(</mo>  
+                        <mi arg="a">a</mi>  
+                        <mo>)</mo> </mrow>
+                  </mrow></math>
+               
+               <math style="display:block">
+                  <mrow intent="$P($a)"> 
+                     <mi arg="P" intent="probablity">p</mi> 
+                     <mo>⁡</mo> 
+                     <mrow>  
+                        <mo>(</mo>  
+                        <mi arg="a">a</mi>  
+                        <mo>)</mo> </mrow>
+                  </mrow></math>
+               </td>
+            <td>
+               <pre>&lt;mrow intent="$P($a)"&gt;<br> &lt;mi arg="P"&gt;p&lt;/mi&gt;<br> &lt;mo&gt;&amp;#x2061;&lt;/mo&gt;<br> &lt;mrow&gt;<br>  &lt;mo&gt;(&lt;/mo&gt;<br>  &lt;mi arg="a"&gt;a&lt;/mi&gt;<br>  &lt;mo&gt;)&lt;/mo&gt;<br> &lt;/mrow&gt;<br>&lt;/mrow&gt;<br><br>&lt;mrow intent="$P($a)"&gt;<br> &lt;mi arg="P" intent="probablity"&gt;p&lt;/mi&gt;<br> &lt;mo&gt;&amp;#x2061;&lt;/mo&gt;<br> &lt;mrow&gt;<br>  &lt;mo&gt;(&lt;/mo&gt;<br>  &lt;mi arg="a"&gt;a&lt;/mi&gt;<br>  &lt;mo&gt;)&lt;/mo&gt;<br> &lt;/mrow&gt;<br>&lt;/mrow&gt;</pre>
+            </td>
+            <td class="s4" dir="ltr">p of a<br>probability of a</td>
+            <td class="s4" dir="ltr">p de a<br>probabilité de a</td>
+         </tr>
+         <tr>
+            <th>47</th>
+            <td class="tex">a(b)</td>
+            <td>
+               <math display="block">
+                  <mrow> 
+                     <mi>a</mi> 
+                     <mrow>
+                        <mo>(</mo>
+                        <mi>b</mi>
+                        <mo>)</mo>
+                     </mrow>
+                  </mrow></math>
+               </td>
+            <td>
+               <math style="display:block">
+                  <mrow intent="$a($b)"> 
+                     <mi arg="a">a</mi> 
+                     <mrow>  
+                        <mo>(</mo>  
+                        <mi arg="b">b</mi>  
+                        <mo>)</mo> </mrow>
+                  </mrow></math>
+               
+               <math style="display:block">
+                  <mrow intent="times($a,$b)"> 
+                     <mi arg="a">a</mi> 
+                     <mrow>  
+                        <mo>(</mo>  
+                        <mi arg="b">b</mi>  
+                        <mo>)</mo> </mrow>
+                  </mrow></math>
+               </td>
+            <td>
+               <pre>&lt;mrow intent="$a($b)"&gt;<br> &lt;mi arg="a"&gt;a&lt;/mi&gt;<br> &lt;mrow&gt;<br>  &lt;mo&gt;(&lt;/mo&gt;<br>  &lt;mi arg="b"&gt;b&lt;/mi&gt;<br>  &lt;mo&gt;)&lt;/mo&gt;<br> &lt;/mrow&gt;<br>&lt;/mrow&gt;<br><br>&lt;mrow intent="times($a,$b)"&gt;<br> &lt;mi arg="a"&gt;a&lt;/mi&gt;<br> &lt;mrow&gt;<br>  &lt;mo&gt;(&lt;/mo&gt;<br>  &lt;mi arg="b"&gt;b&lt;/mi&gt;<br>  &lt;mo&gt;)&lt;/mo&gt;<br> &lt;/mrow&gt;<br>&lt;/mrow&gt;</pre>
+            </td>
+            <td class="s4" dir="ltr">a of b<br>a times b</td>
+            <td class="s4" dir="ltr">a de b<br>a fois b</td>
+         </tr>
+         <tr>
+            <th>48</th>
+            <td class="tex">a(b)</td>
+            <td>
+               <math display="block">
+                  <mrow> 
+                     <mi>a</mi> 
+                     <mo>⁡</mo> 
+                     <mrow>
+                        <mo>(</mo>
+                        <mi>b</mi>
+                        <mo>)</mo>
+                     </mrow>
+                  </mrow></math>
+               </td>
+            <td>
+               <math style="display:block">
+                  <mrow intent="$a($b)"> 
+                     <mi arg="a">a</mi> 
+                     <mo>⁡</mo> 
+                     <mrow>  
+                        <mo>(</mo>  
+                        <mi arg="b">b</mi>  
+                        <mo>)</mo> </mrow>
+                  </mrow></math>
+               </td>
+            <td>
+               <pre>&lt;mrow intent="$a($b)"&gt;<br> &lt;mi arg="a"&gt;a&lt;/mi&gt;<br> &lt;mo&gt;&amp;#x2061;&lt;/mo&gt;<br> &lt;mrow&gt;<br>  &lt;mo&gt;(&lt;/mo&gt;<br>  &lt;mi arg="b"&gt;b&lt;/mi&gt;<br>  &lt;mo&gt;)&lt;/mo&gt;<br> &lt;/mrow&gt;<br>&lt;/mrow&gt;</pre>
+            </td>
+            <td class="s4" dir="ltr">a of b</td>
+            <td class="s4" dir="ltr">a de b</td>
+         </tr>
+         <tr>
+            <th>49</th>
+            <td class="tex">a(b)</td>
+            <td>
+               <math display="block">
+                  <mrow> 
+                     <mi>a</mi> 
+                     <mo>⁢</mo> 
+                     <mrow>
+                        <mo>(</mo>
+                        <mi>b</mi>
+                        <mo>)</mo>
+                     </mrow>
+                  </mrow></math>
+               </td>
+            <td>
+               <math style="display:block">
+                  <mrow intent="times($a,$b)"> 
+                     <mi arg="a">a</mi> 
+                     <mo>⁢</mo> 
+                     <mrow>  
+                        <mo>(</mo>  
+                        <mi arg="b">b</mi>  
+                        <mo>)</mo> </mrow>
+                  </mrow></math>
+               </td>
+            <td>
+               <pre>&lt;mrow intent="times($a,$b)"&gt;<br> &lt;mi arg="a"&gt;a&lt;/mi&gt;<br> &lt;mo&gt;&amp;#x2062;&lt;/mo&gt;<br> &lt;mrow&gt;<br>  &lt;mo&gt;(&lt;/mo&gt;<br>  &lt;mi arg="b"&gt;b&lt;/mi&gt;<br>  &lt;mo&gt;)&lt;/mo&gt;<br> &lt;/mrow&gt;<br>&lt;/mrow&gt;</pre>
+            </td>
+            <td class="s4" dir="ltr">a times b</td>
+            <td class="s4" dir="ltr"><br>a fois b</td>
+         </tr>
+         <tr>
+            <th>50</th>
+            <td class="tex">a[b]</td>
+            <td>
+               <math display="block">
+                  <mrow> 
+                     <mi>a</mi> 
+                     <mrow>
+                        <mo>[</mo>
+                        <mi>b</mi>
+                        <mo>]</mo>
+                     </mrow>
+                  </mrow></math>
+               </td>
+            <td>
+               <math style="display:block">
+                  <mrow intent="$a($b)"> 
+                     <mi arg="a">a</mi> 
+                     <mrow>  
+                        <mo>[</mo>  
+                        <mi arg="b">b</mi>  
+                        <mo>]</mo> </mrow>
+                  </mrow></math>
+               
+               <math style="display:block">
+                  <mrow intent="adjoin($a,$b)"> 
+                     <mi arg="a">a</mi> 
+                     <mrow>  
+                        <mo>[</mo>  
+                        <mi arg="b">b</mi>  
+                        <mo>]</mo> </mrow>
+                  </mrow></math>
+               </td>
+            <td>
+               <pre>&lt;mrow intent="$a($b)"&gt;<br> &lt;mi arg="a"&gt;a&lt;/mi&gt;<br> &lt;mrow&gt;<br>  &lt;mo&gt;[&lt;/mo&gt;<br>  &lt;mi arg="b"&gt;b&lt;/mi&gt;<br>  &lt;mo&gt;]&lt;/mo&gt;<br> &lt;/mrow&gt;<br>&lt;/mrow&gt;<br><br>&lt;mrow intent="adjoin($a,$b)"&gt;<br> &lt;mi arg="a"&gt;a&lt;/mi&gt;<br> &lt;mrow&gt;<br>  &lt;mo&gt;[&lt;/mo&gt;<br>  &lt;mi arg="b"&gt;b&lt;/mi&gt;<br>  &lt;mo&gt;]&lt;/mo&gt;<br> &lt;/mrow&gt;<br>&lt;/mrow&gt;</pre>
+            </td>
+            <td class="s4" dir="ltr">a of b<br>a adjoin b<br>group algebra of a ??</td>
+            <td class="s4" dir="ltr">a de b<br>a fois b<br>algèbre de a ??</td>
+         </tr>
+         <tr>
+            <th>51</th>
+            <td class="tex">a[b]</td>
+            <td>
+               <math display="block">
+                  <mrow> 
+                     <mi>a</mi> 
+                     <mo>⁡</mo> 
+                     <mrow>
+                        <mo>[</mo>
+                        <mi>b</mi>
+                        <mo>]</mo>
+                     </mrow>
+                  </mrow></math>
+               </td>
+            <td>
+               <math style="display:block">
+                  <mrow intent="$a($b)"> 
+                     <mi arg="a">a</mi> 
+                     <mo>⁡</mo> 
+                     <mrow>  
+                        <mo>[</mo>  
+                        <mi arg="b">b</mi>  
+                        <mo>]</mo> </mrow>
+                  </mrow></math>
+               </td>
+            <td>
+               <pre>&lt;mrow intent="$a($b)"&gt;<br> &lt;mi arg="a"&gt;a&lt;/mi&gt;<br> &lt;mo&gt;&amp;#x2061;&lt;/mo&gt;<br> &lt;mrow&gt;<br>  &lt;mo&gt;[&lt;/mo&gt;<br>  &lt;mi arg="b"&gt;b&lt;/mi&gt;<br>  &lt;mo&gt;]&lt;/mo&gt;<br> &lt;/mrow&gt;<br>&lt;/mrow&gt;</pre>
+            </td>
+            <td class="s4" dir="ltr">a of b</td>
+            <td class="s4" dir="ltr">a de b</td>
+         </tr>
+         <tr>
+            <th>52</th>
+            <td class="tex">O(a)</td>
+            <td>
+               <math display="block">
+                  <mrow> 
+                     <mi>O</mi> 
+                     <mo>⁡</mo> 
+                     <mrow>
+                        <mo>(</mo>
+                        <mi>a</mi>
+                        <mo>)</mo>
+                     </mrow>
+                  </mrow></math>
+               </td>
+            <td>
+               <math style="display:block">
+                  <mrow> 
+                     <mi intent="O">O</mi> 
+                     <mo>⁡</mo> 
+                     <mrow>  
+                        <mo>(</mo>  
+                        <mi>a</mi>  
+                        <mo>)</mo> </mrow>
+                  </mrow></math>
+               </td>
+            <td>
+               <pre>&lt;mrow&gt;<br> &lt;mi intent="O"&gt;O&lt;/mi&gt;<br> &lt;mo&gt;&amp;#x2061;&lt;/mo&gt;<br> &lt;mrow&gt;<br>  &lt;mo&gt;(&lt;/mo&gt;<br>  &lt;mi&gt;a&lt;/mi&gt;<br>  &lt;mo&gt;)&lt;/mo&gt;<br> &lt;/mrow&gt;<br>&lt;/mrow&gt;</pre>
+            </td>
+            <td class="s4" dir="ltr">big Oh of a<br>Oh of a</td>
+            <td class="s4" dir="ltr">O de a</td>
+         </tr>
+         <tr>
+            <th>53</th>
+            <td class="tex">o(a)</td>
+            <td>
+               <math display="block">
+                  <mrow> 
+                     <mi>o</mi> 
+                     <mo>⁡</mo> 
+                     <mrow>
+                        <mo>(</mo>
+                        <mi>a</mi>
+                        <mo>)</mo>
+                     </mrow>
+                  </mrow></math>
+               </td>
+            <td>
+               <math style="display:block">
+                  <mrow> 
+                     <mi intent="o">o</mi> 
+                     <mo>⁡</mo> 
+                     <mrow>  
+                        <mo>(</mo>  
+                        <mi>a</mi>  
+                        <mo>)</mo> </mrow>
+                  </mrow></math>
+               </td>
+            <td>
+               <pre>&lt;mrow&gt;<br> &lt;mi intent="o"&gt;o&lt;/mi&gt;<br> &lt;mo&gt;&amp;#x2061;&lt;/mo&gt;<br> &lt;mrow&gt;<br>  &lt;mo&gt;(&lt;/mo&gt;<br>  &lt;mi&gt;a&lt;/mi&gt;<br>  &lt;mo&gt;)&lt;/mo&gt;<br> &lt;/mrow&gt;<br>&lt;/mrow&gt;</pre>
+            </td>
+            <td class="s4" dir="ltr">little oh of a</td>
+            <td class="s4" dir="ltr">petit o de a</td>
+         </tr>
+         <tr>
+            <th>54</th>
+            <td class="tex">a:b</td>
+            <td>
+               <math display="block">
+                  <mrow>
+                     <mi>a</mi>
+                     <mo>:</mo>
+                     <mi>b</mi>
+                  </mrow></math>
+               </td>
+            <td>
+               <math style="display:block">
+                  <mrow> 
+                     <mi>a</mi> 
+                     <mo intent="ratio">:</mo> 
+                     <mi>b</mi>
+                  </mrow></math>
+               </td>
+            <td>
+               <pre>&lt;mrow&gt;<br> &lt;mi&gt;a&lt;/mi&gt;<br> &lt;mo intent="ratio"&gt;:&lt;/mo&gt;<br> &lt;mi&gt;b&lt;/mi&gt;<br>&lt;/mrow&gt;</pre>
+            </td>
+            <td class="s4" dir="ltr">ratio of a to b</td>
+            <td class="s4" dir="ltr">a divisé par b</td>
+         </tr>
+         <tr>
+            <th>55</th>
+            <td class="tex">a:b \to c</td>
+            <td>
+               <math display="block">
+                  <mrow> 
+                     <mi>a</mi> 
+                     <mo>:</mo> 
+                     <mrow>  
+                        <mi>b</mi>  
+                        <mo>→</mo>  
+                        <mi>c</mi> </mrow>
+                  </mrow></math>
+               </td>
+            <td>
+               <math style="display:block">
+                  <mrow intent="function-from-to($a,$b,$c)"> 
+                     <mi arg="a">a</mi> 
+                     <mo>:</mo> 
+                     <mrow>  
+                        <mi arg="b">b</mi>  
+                        <mo>→</mo>  
+                        <mi arg="c">c</mi> </mrow>
+                  </mrow></math>
+               </td>
+            <td>
+               <pre>&lt;mrow intent="function-from-to($a,$b,$c)"&gt;<br> &lt;mi arg="a"&gt;a&lt;/mi&gt;<br> &lt;mo&gt;:&lt;/mo&gt;<br> &lt;mrow&gt;<br>  &lt;mi arg="b"&gt;b&lt;/mi&gt;<br>  &lt;mo&gt;→&lt;/mo&gt;<br>  &lt;mi arg="c"&gt;c&lt;/mi&gt;<br> &lt;/mrow&gt;<br>&lt;/mrow&gt;</pre>
+            </td>
+            <td class="s4" dir="ltr">a is a function from b to c</td>
+            <td class="s0 softmerge" dir="ltr">
+               <div class="softmerge-inner" style="width:198px;left:-1px">a une fonction de b à c</div>
+            </td>
+         </tr>
+         <tr>
+            <th>56</th>
+            <td class="tex">{a:b}</td>
+            <td>
+               <math display="block">
+                  <mrow>  
+                     <mo>{</mo>  
+                     <mi>a</mi>  
+                     <mo>:</mo>  
+                     <mi>b</mi>  
+                     <mo>}</mo>
+                  </mrow></math>
+               </td>
+            <td>
+               <math style="display:block">
+                  <mrow intent="such-that($a,$b)">  
+                     <mo>{</mo>  
+                     <mi arg="a">a</mi>  
+                     <mo>:</mo>  
+                     <mi arg="b">b</mi>  
+                     <mo>}</mo>
+                  </mrow></math>
+               </td>
+            <td>
+               <pre>&lt;mrow intent="such-that($a,$b)"&gt;<br>  &lt;mo&gt;{&lt;/mo&gt;<br>  &lt;mi arg="a"&gt;a&lt;/mi&gt;<br>  &lt;mo&gt;:&lt;/mo&gt;<br>  &lt;mi arg="b"&gt;b&lt;/mi&gt;<br>  &lt;mo&gt;}&lt;/mo&gt;<br>&lt;/mrow&gt;</pre>
+            </td>
+            <td class="s4" dir="ltr">the set of a such that b</td>
+            <td class="s0 softmerge" dir="ltr">
+               <div class="softmerge-inner" style="width:198px;left:-1px">l'ensemble des a tels que b</div>
+            </td>
+         </tr>
+         <tr>
+            <th>57</th>
+            <td class="tex">\langle a:b \rangle</td>
+            <td>
+               <math display="block">
+                  <mrow>  
+                     <mo>⟨</mo>  
+                     <mi>a</mi>  
+                     <mo>:</mo>  
+                     <mi>b</mi>  
+                     <mo>⟩</mo>
+                  </mrow></math>
+               </td>
+            <td>
+               <math style="display:block">
+                  <mrow intent="group-generated-with($a,$b)">  
+                     <mo>⟨</mo>  
+                     <mi arg="a">a</mi>  
+                     <mo>:</mo>  
+                     <mi arg="b">b</mi>  
+                     <mo>⟩</mo>
+                  </mrow></math>
+               </td>
+            <td>
+               <pre>&lt;mrow intent="group-generated-with($a,$b)"&gt;<br>  &lt;mo&gt;⟨&lt;/mo&gt;<br>  &lt;mi arg="a"&gt;a&lt;/mi&gt;<br>  &lt;mo&gt;:&lt;/mo&gt;<br>  &lt;mi arg="b"&gt;b&lt;/mi&gt;<br>  &lt;mo&gt;⟩&lt;/mo&gt;<br>&lt;/mrow&gt;</pre>
+            </td>
+            <td class="s4" dir="ltr">group generated by a with relations b</td>
+            <td class="s0 softmerge" dir="ltr">
+               <div class="softmerge-inner" style="width:329px;left:-1px">groupe engendré par a avec les relations b</div>
+            </td>
+         </tr>
+         <tr>
+            <th>58</th>
+            <td class="tex">\langle a|b \rangle</td>
+            <td>
+               <math display="block">
+                  <mrow>  
+                     <mo>⟨</mo>  
+                     <mi>a</mi>  
+                     <mo>|</mo>  
+                     <mi>b</mi>  
+                     <mo>⟩</mo>
+                  </mrow></math>
+               </td>
+            <td>
+               <math style="display:block">
+                  <mrow intent="group-generated-with($a,$b)">  
+                     <mo>⟨</mo>  
+                     <mi arg="a">a</mi>  
+                     <mo>|</mo>  
+                     <mi arg="b">b</mi>  
+                     <mo>⟩</mo>
+                  </mrow></math>
+               
+               <math style="display:block">
+                  <mrow intent="bra-ket($a,$b)">  
+                     <mo>⟨</mo>  
+                     <mi arg="a">a</mi>  
+                     <mo>|</mo>  
+                     <mi arg="b">b</mi>  
+                     <mo>⟩</mo>
+                  </mrow></math>
+               </td>
+            <td>
+               <pre>&lt;mrow intent="group-generated-with($a,$b)"&gt;<br>  &lt;mo&gt;⟨&lt;/mo&gt;<br>  &lt;mi arg="a"&gt;a&lt;/mi&gt;<br>  &lt;mo&gt;|&lt;/mo&gt;<br>  &lt;mi arg="b"&gt;b&lt;/mi&gt;<br>  &lt;mo&gt;⟩&lt;/mo&gt;<br>&lt;/mrow&gt;<br><br>&lt;mrow intent="bra-ket($a,$b)"&gt;<br>  &lt;mo&gt;⟨&lt;/mo&gt;<br>  &lt;mi arg="a"&gt;a&lt;/mi&gt;<br>  &lt;mo&gt;|&lt;/mo&gt;<br>  &lt;mi arg="b"&gt;b&lt;/mi&gt;<br>  &lt;mo&gt;⟩&lt;/mo&gt;<br>&lt;/mrow&gt;</pre>
+            </td>
+            <td class="s4" dir="ltr">group generated by a with relations b<br><span style="text-decoration:line-through;">inner product of a and b</span><br>(also the bra-ket of a and b in physics)</td>
+            <td class="s0 softmerge" dir="ltr">
+               <div class="softmerge-inner" style="width:329px;left:-1px">groupe engendré par avec les relations b<br><span style="text-decoration:line-through;">produit scalaire de a et b</span><br>crochet de a et b</div>
+            </td>
+         </tr>
+         <tr>
+            <th>59</th>
+            <td class="tex">\langle a, b \rangle</td>
+            <td>
+               <math display="block">
+                  <mrow>  
+                     <mo>⟨</mo>  
+                     <mi>a</mi>  
+                     <mo>,</mo>  
+                     <mi>b</mi>  
+                     <mo>⟩</mo>
+                  </mrow></math>
+               </td>
+            <td>
+               <math style="display:block">
+                  <mrow intent="inner-product($a,$b)">  
+                     <mo>⟨</mo>  
+                     <mi arg="a">a</mi>  
+                     <mo>,</mo>  
+                     <mi arg="b">b</mi>  
+                     <mo>⟩</mo>
+                  </mrow></math>
+               
+               <math style="display:block">
+                  <mrow intent="vector($a,$b)">  
+                     <mo>⟨</mo>  
+                     <mi arg="a">a</mi>  
+                     <mo>,</mo>  
+                     <mi arg="b">b</mi>  
+                     <mo>⟩</mo>
+                  </mrow></math>
+               </td>
+            <td>
+               <pre>&lt;mrow intent="inner-product($a,$b)"&gt;<br>  &lt;mo&gt;⟨&lt;/mo&gt;<br>  &lt;mi arg="a"&gt;a&lt;/mi&gt;<br>  &lt;mo&gt;,&lt;/mo&gt;<br>  &lt;mi arg="b"&gt;b&lt;/mi&gt;<br>  &lt;mo&gt;⟩&lt;/mo&gt;<br>&lt;/mrow&gt;<br><br>&lt;mrow intent="vector($a,$b)"&gt;<br>  &lt;mo&gt;⟨&lt;/mo&gt;<br>  &lt;mi arg="a"&gt;a&lt;/mi&gt;<br>  &lt;mo&gt;,&lt;/mo&gt;<br>  &lt;mi arg="b"&gt;b&lt;/mi&gt;<br>  &lt;mo&gt;⟩&lt;/mo&gt;<br>&lt;/mrow&gt;</pre>
+            </td>
+            <td class="s4" dir="ltr">inner product of a and b<br>vector a [comma] b</td>
+            <td class="s0 softmerge" dir="ltr">
+               <div class="softmerge-inner" style="width:198px;left:-1px">produit scalaire de a et b<br>vecteur a b</div>
+            </td>
+         </tr>
+         <tr>
+            <th>60</th>
+            <td class="tex">\langle a \rangle</td>
+            <td>
+               <math display="block">
+                  <mrow>
+                     <mo>⟨</mo>
+                     <mi>a</mi>
+                     <mo>⟩</mo>
+                  </mrow></math>
+               </td>
+            <td>
+               <math style="display:block">
+                  <mrow intent="span($a)"> 
+                     <mo>⟨</mo> 
+                     <mi arg="a">a</mi> 
+                     <mo>⟩</mo>
+                  </mrow></math>
+               
+               <math style="display:block">
+                  <mrow intent="group-generated ($a)"> 
+                     <mo>⟨</mo> 
+                     <mi arg="a">a</mi> 
+                     <mo>⟩</mo>
+                  </mrow></math>
+               
+               <math style="display:block">
+                  <mrow intent="ideal-generated ($a)"> 
+                     <mo>⟨</mo> 
+                     <mi arg="a">a</mi> 
+                     <mo>⟩</mo>
+                  </mrow></math>
+               </td>
+            <td>
+               <pre>&lt;mrow intent="span($a)"&gt;<br> &lt;mo&gt;⟨&lt;/mo&gt;<br> &lt;mi arg="a"&gt;a&lt;/mi&gt;<br> &lt;mo&gt;⟩&lt;/mo&gt;<br>&lt;/mrow&gt;<br><br>&lt;mrow intent="group-generated ($a)"&gt;<br> &lt;mo&gt;⟨&lt;/mo&gt;<br> &lt;mi arg="a"&gt;a&lt;/mi&gt;<br> &lt;mo&gt;⟩&lt;/mo&gt;<br>&lt;/mrow&gt;<br><br>&lt;mrow intent="ideal-generated ($a)"&gt;<br> &lt;mo&gt;⟨&lt;/mo&gt;<br> &lt;mi arg="a"&gt;a&lt;/mi&gt;<br> &lt;mo&gt;⟩&lt;/mo&gt;<br>&lt;/mrow&gt;</pre>
+            </td>
+            <td class="s4" dir="ltr">span of a<br>group generated by a<br>ideal generated by a</td>
+            <td class="s0 softmerge" dir="ltr">
+               <div class="softmerge-inner" style="width:198px;left:-1px">sous-espace engendré par a<br>groupe engendré par a<br>idéal engendré par a</div>
+            </td>
+         </tr>
+         <tr>
+            <th>61</th>
+            <td class="tex">a|b</td>
+            <td>
+               <math display="block">
+                  <mrow> 
+                     <mi>a</mi>
+                     <mo>|</mo>
+                     <mi>b</mi>
+                  </mrow></math>
+               </td>
+            <td>
+               <math style="display:block">
+                  <mrow> 
+                     <mi>a</mi> 
+                     <mo intent="divides">|</mo> 
+                     <mi>b</mi>
+                  </mrow></math>
+               
+               <math style="display:block">
+                  <mrow> 
+                     <mi>a</mi> 
+                     <mo intent="given">|</mo> 
+                     <mi>b</mi>
+                  </mrow></math>
+               
+               <math style="display:block">
+                  <mrow> 
+                     <mi>a</mi> 
+                     <mo intent="or">|</mo> 
+                     <mi>b</mi>
+                  </mrow></math>
+               </td>
+            <td>
+               <pre>&lt;mrow&gt;<br> &lt;mi&gt;a&lt;/mi&gt;<br> &lt;mo intent="divides"&gt;|&lt;/mo&gt;<br> &lt;mi&gt;b&lt;/mi&gt;<br>&lt;/mrow&gt;<br><br>&lt;mrow&gt;<br> &lt;mi&gt;a&lt;/mi&gt;<br> &lt;mo intent="given"&gt;|&lt;/mo&gt;<br> &lt;mi&gt;b&lt;/mi&gt;<br>&lt;/mrow&gt;<br><br>&lt;mrow&gt;<br> &lt;mi&gt;a&lt;/mi&gt;<br> &lt;mo intent="or"&gt;|&lt;/mo&gt;<br> &lt;mi&gt;b&lt;/mi&gt;<br>&lt;/mrow&gt;</pre>
+            </td>
+            <td class="s4" dir="ltr">a divides b<br>a given b<br>a or b</td>
+            <td class="s4" dir="ltr">a divise b<br>a étant donné b<br>a ou b</td>
+         </tr>
+         <tr>
+            <th>62</th>
+            <td class="tex">{a|b}</td>
+            <td>
+               <math display="block">
+                  <mrow>  
+                     <mo>{</mo>  
+                     <mrow>    
+                        <mi>a</mi>
+                        <mo>|</mo>
+                        <mi>b</mi>  </mrow>  
+                     <mo>}</mo>
+                  </mrow></math>
+               </td>
+            <td>
+               <math style="display:block">
+                  <mrow intent="such-that($a,$b)">  
+                     <mo>{</mo>  
+                     <mrow>   
+                        <mi arg="a">a</mi>   
+                        <mo>|</mo>   
+                        <mi arg="b">b</mi>  </mrow>  
+                     <mo>}</mo>
+                  </mrow></math>
+               </td>
+            <td>
+               <pre>&lt;mrow intent="such-that($a,$b)"&gt;<br>  &lt;mo&gt;{&lt;/mo&gt;<br>  &lt;mrow&gt;<br>   &lt;mi arg="a"&gt;a&lt;/mi&gt;<br>   &lt;mo&gt;|&lt;/mo&gt;<br>   &lt;mi arg="b"&gt;b&lt;/mi&gt;<br>  &lt;/mrow&gt;<br>  &lt;mo&gt;}&lt;/mo&gt;<br>&lt;/mrow&gt;</pre>
+            </td>
+            <td class="s4" dir="ltr">the set of a such that b</td>
+            <td class="s0 softmerge" dir="ltr">
+               <div class="softmerge-inner" style="width:198px;left:-1px">l'ensemble des a tels que b</div>
+            </td>
+         </tr>
+         <tr>
+            <th>63</th>
+            <td class="tex">[a|b]</td>
+            <td>
+               <math display="block">
+                  <mrow>  
+                     <mo>[</mo>  
+                     <mrow>    
+                        <mi>a</mi>
+                        <mo>|</mo>
+                        <mi>b</mi>  </mrow>  
+                     <mo>]</mo>
+                  </mrow></math>
+               </td>
+            <td>
+               <math style="display:block">
+                  <mrow intent="augmented($a,$b)">  
+                     <mo>[</mo>  
+                     <mrow>   
+                        <mi arg="a">a</mi>   
+                        <mo>|</mo>   
+                        <mi arg="b">b</mi>  </mrow>  
+                     <mo>]</mo>
+                  </mrow></math>
+               </td>
+            <td>
+               <pre>&lt;mrow intent="augmented($a,$b)"&gt;<br>  &lt;mo&gt;[&lt;/mo&gt;<br>  &lt;mrow&gt;<br>   &lt;mi arg="a"&gt;a&lt;/mi&gt;<br>   &lt;mo&gt;|&lt;/mo&gt;<br>   &lt;mi arg="b"&gt;b&lt;/mi&gt;<br>  &lt;/mrow&gt;<br>  &lt;mo&gt;]&lt;/mo&gt;<br>&lt;/mrow&gt;</pre>
+            </td>
+            <td class="s4" dir="ltr">a augmented by b</td>
+            <td class="s4" dir="ltr">a augmenté de b</td>
+         </tr>
+         <tr>
+            <th>64</th>
+            <td class="tex">a|_b</td>
+            <td>
+               <math display="block">
+                  <mrow>  
+                     <mi>a</mi>  
+                     <msub> 
+                        <mo>|</mo> 
+                        <mi>b</mi> </msub>
+                  </mrow></math>
+               </td>
+            <td>
+               <math style="display:block">
+                  <mrow intent="evaluated-at($a,$b)">  
+                     <mi arg="a">a</mi>  
+                     <msub>   
+                        <mo>|</mo>   
+                        <mi arg="b">b</mi>  </msub>
+                  </mrow></math>
+               
+               <math style="display:block">
+                  <mrow intent="restricted-to($a,$b)">  
+                     <mi arg="a">a</mi>  
+                     <msub>   
+                        <mo>|</mo>   
+                        <mi arg="b">b</mi>  </msub>
+                  </mrow></math>
+               </td>
+            <td>
+               <pre>&lt;mrow intent="evaluated-at($a,$b)"&gt;<br>  &lt;mi arg="a"&gt;a&lt;/mi&gt;<br>  &lt;msub&gt;<br>   &lt;mo&gt;|&lt;/mo&gt;<br>   &lt;mi arg="b"&gt;b&lt;/mi&gt;<br>  &lt;/msub&gt;<br>&lt;/mrow&gt;<br><br>&lt;mrow intent="restricted-to($a,$b)"&gt;<br>  &lt;mi arg="a"&gt;a&lt;/mi&gt;<br>  &lt;msub&gt;<br>   &lt;mo&gt;|&lt;/mo&gt;<br>   &lt;mi arg="b"&gt;b&lt;/mi&gt;<br>  &lt;/msub&gt;<br>&lt;/mrow&gt;</pre>
+            </td>
+            <td class="s4" dir="ltr">a evaluated at b<br>a restricted to b</td>
+            <td class="s4" dir="ltr">a en b<br>a restreint à b</td>
+         </tr>
+         <tr>
+            <th>65</th>
+            <td class="tex">a\|b</td>
+            <td>
+               <math display="block">
+                  <mrow> 
+                     <mi>a</mi>
+                     <mo>‖</mo>
+                     <mi>b</mi>
+                  </mrow></math>
+               </td>
+            <td>
+               <math style="display:block">
+                  <mrow> 
+                     <mi>a</mi> 
+                     <mo intent="parallel">‖</mo> 
+                     <mi>b</mi>
+                  </mrow></math>
+               
+               <math style="display:block">
+                  <mrow> 
+                     <mi>a</mi> 
+                     <mo intent="exactly-divides">‖</mo> 
+                     <mi>b</mi>
+                  </mrow></math>
+               </td>
+            <td>
+               <pre>&lt;mrow&gt;<br> &lt;mi&gt;a&lt;/mi&gt;<br> &lt;mo intent="parallel"&gt;‖&lt;/mo&gt;<br> &lt;mi&gt;b&lt;/mi&gt;<br>&lt;/mrow&gt;<br><br>&lt;mrow&gt;<br> &lt;mi&gt;a&lt;/mi&gt;<br> &lt;mo intent="exactly-divides"&gt;‖&lt;/mo&gt;<br> &lt;mi&gt;b&lt;/mi&gt;<br>&lt;/mrow&gt;</pre>
+            </td>
+            <td class="s4" dir="ltr">a is parallel to b<br>a exactly divides b</td>
+            <td class="s0 softmerge" dir="ltr">
+               <div class="softmerge-inner" style="width:198px;left:-1px">a est parallèle à b<br>a divise exactement b</div>
+            </td>
+         </tr>
+         <tr>
+            <th>66</th>
+            <td class="tex">\lVert a\rVert</td>
+            <td>
+               <math display="block">
+                  <mrow> 
+                     <mo>‖</mo>
+                     <mi>a</mi>
+                     <mo>‖</mo>
+                  </mrow></math>
+               </td>
+            <td>
+               <math style="display:block">
+                  <mrow intent="magnitude($a)"> 
+                     <mo>‖</mo> 
+                     <mi arg="a">a</mi> 
+                     <mo>‖</mo>
+                  </mrow></math>
+               
+               <math style="display:block">
+                  <mrow intent="norm($a)"> 
+                     <mo>‖</mo> 
+                     <mi arg="a">a</mi> 
+                     <mo>‖</mo>
+                  </mrow></math>
+               </td>
+            <td>
+               <pre>&lt;mrow intent="magnitude($a)"&gt;<br> &lt;mo&gt;‖&lt;/mo&gt;<br> &lt;mi arg="a"&gt;a&lt;/mi&gt;<br> &lt;mo&gt;‖&lt;/mo&gt;<br>&lt;/mrow&gt;<br><br>&lt;mrow intent="norm($a)"&gt;<br> &lt;mo&gt;‖&lt;/mo&gt;<br> &lt;mi arg="a"&gt;a&lt;/mi&gt;<br> &lt;mo&gt;‖&lt;/mo&gt;<br>&lt;/mrow&gt;</pre>
+            </td>
+            <td class="s4" dir="ltr">magnitude of a<br>norm of a</td>
+            <td class="s4" dir="ltr">amplitude de a<br>norme de a</td>
+         </tr>
+         <tr>
+            <th>67</th>
+            <td class="tex">a \equiv b</td>
+            <td>
+               <math display="block">
+                  <mrow> 
+                     <mi>a</mi>
+                     <mo>≡</mo>
+                     <mi>b</mi>
+                  </mrow></math>
+               </td>
+            <td>
+               <math style="display:block">
+                  <mrow intent="$op($a,$b)"> 
+                     <mi arg="a">a</mi> 
+                     <mo arg="op" intent="equivalent">≡</mo> 
+                     <mi arg="b">b</mi>
+                  </mrow></math>
+               </td>
+            <td>
+               <pre>&lt;mrow intent="$op($a,$b)"&gt;<br> &lt;mi arg="a"&gt;a&lt;/mi&gt;<br> &lt;mo arg="op" intent="equivalent"&gt;≡&lt;/mo&gt;<br> &lt;mi arg="b"&gt;b&lt;/mi&gt;<br>&lt;/mrow&gt;</pre>
+            </td>
+            <td class="s4" dir="ltr">a is equivalent to b</td>
+            <td class="s0 softmerge" dir="ltr">
+               <div class="softmerge-inner" style="width:198px;left:-1px">a est équivalent à b</div>
+            </td>
+         </tr>
+         <tr>
+            <th>68</th>
+            <td class="tex">a \cong b</td>
+            <td>
+               <math display="block">
+                  <mrow> 
+                     <mi>a</mi>
+                     <mo>≅</mo>
+                     <mi>b</mi>
+                  </mrow></math>
+               </td>
+            <td>
+               <math style="display:block">
+                  <mrow intent="$op($a,$b)"> 
+                     <mi arg="a">a</mi> 
+                     <mo arg="op" intent="isomorphic">≅</mo> 
+                     <mi arg="b">b</mi>
+                  </mrow></math>
+               </td>
+            <td>
+               <pre>&lt;mrow intent="$op($a,$b)"&gt;<br> &lt;mi arg="a"&gt;a&lt;/mi&gt;<br> &lt;mo arg="op" intent="isomorphic"&gt;≅&lt;/mo&gt;<br> &lt;mi arg="b"&gt;b&lt;/mi&gt;<br>&lt;/mrow&gt;</pre>
+            </td>
+            <td class="s4" dir="ltr">a is isomorphic to b</td>
+            <td class="s0 softmerge" dir="ltr">
+               <div class="softmerge-inner" style="width:198px;left:-1px">a est isomorphe à b</div>
+            </td>
+         </tr>
+         <tr>
+            <th>69</th>
+            <td class="tex">a \simeq b</td>
+            <td>
+               <math display="block">
+                  <mrow> 
+                     <mi>a</mi>
+                     <mo>≃</mo>
+                     <mi>b</mi>
+                  </mrow></math>
+               </td>
+            <td>
+               <math style="display:block">
+                  <mrow intent="$op($a,$b)"> 
+                     <mi arg="a">a</mi> 
+                     <mo arg="op" intent="similar">≃</mo> 
+                     <mi arg="b">b</mi>
+                  </mrow></math>
+               </td>
+            <td>
+               <pre>&lt;mrow intent="$op($a,$b)"&gt;<br> &lt;mi arg="a"&gt;a&lt;/mi&gt;<br> &lt;mo arg="op" intent="similar"&gt;≃&lt;/mo&gt;<br> &lt;mi arg="b"&gt;b&lt;/mi&gt;<br>&lt;/mrow&gt;</pre>
+            </td>
+            <td class="s4" dir="ltr">a is similar to b</td>
+            <td class="s0 softmerge" dir="ltr">
+               <div class="softmerge-inner" style="width:198px;left:-1px">a est similaire à b<br></div>
+            </td>
+         </tr>
+         <tr>
+            <th>70</th>
+            <td class="tex">\overline{a}</td>
+            <td>
+               <math display="block">
+                  <mover>  
+                     <mi>a</mi>  
+                     <mo accent="true">¯</mo>
+                  </mover></math>
+               </td>
+            <td>
+               <math style="display:block">
+                  <mover intent="$op($a)">  
+                     <mi arg="a">a</mi>  
+                     <mo arg="op" intent="conjugate" accent="true">¯</mo>
+                  </mover></math>
+               
+               <math style="display:block">
+                  <mover intent="$op($a)">  
+                     <mi arg="a">a</mi>  
+                     <mo arg="op" intent="complement" accent="true">¯</mo>
+                  </mover></math>
+               
+               <math style="display:block">
+                  <mover intent="$op($a)">  
+                     <mi arg="a">a</mi>  
+                     <mo arg="op" intent="" accent="true">¯</mo>
+                  </mover></math>
+               
+               <math style="display:block">
+                  <mover intent="$op($a)">  
+                     <mi arg="a">a</mi>  
+                     <mo arg="op" intent="negation" accent="true">¯</mo>
+                  </mover></math>
+               
+               <math style="display:block">
+                  <mover intent="$op($a)">  
+                     <mi arg="a">a</mi>  
+                     <mo arg="op" intent="mean" accent="true">¯</mo>
+                  </mover></math>
+               
+               <math style="display:block">
+                  <mover intent="$op($a)">  
+                     <mi arg="a">a</mi>  
+                     <mo arg="op" intent="center-of-mass" accent="true">¯</mo>
+                  </mover></math>
+               
+               <math style="display:block">
+                  <mover intent="$op($a)">  
+                     <mi arg="a">a</mi>  
+                     <mo arg="op" intent="repeated" accent="true">¯</mo>
+                  </mover></math>
+               
+               <math style="display:block">
+                  <mover intent="$op($a)">  
+                     <mi arg="a">a</mi>  
+                     <mo arg="op" intent="closure" accent="true">¯</mo>
+                  </mover></math>
+               
+               <math style="display:block">
+                  <mover intent="$op($a)">  
+                     <mi arg="a">a</mi>  
+                     <mo arg="op" intent="antiparticle" accent="true">¯</mo>
+                  </mover></math>
+               </td>
+            <td>
+               <pre><div class="softmerge-inner" style="width:447px;left:-1px">&lt;mover intent="$op($a)"&gt;<br>  &lt;mi arg="a"&gt;a&lt;/mi&gt;<br>  &lt;mo arg="op" intent="conjugate" accent='true'&gt;¯&lt;/mo&gt;<br>&lt;/mover&gt;<br><br>&lt;mover intent="$op($a)"&gt;<br>  &lt;mi arg="a"&gt;a&lt;/mi&gt;<br>  &lt;mo arg="op" intent="complement" accent='true'&gt;¯&lt;/mo&gt;<br>&lt;/mover&gt;<br><br>&lt;mover intent="$op($a)"&gt;<br>  &lt;mi arg="a"&gt;a&lt;/mi&gt;<br>  &lt;mo arg="op" intent="" accent='true'&gt;¯&lt;/mo&gt;<br>&lt;/mover&gt;<br><br>&lt;mover intent="$op($a)"&gt;<br>  &lt;mi arg="a"&gt;a&lt;/mi&gt;<br>  &lt;mo arg="op" intent="negation" accent='true'&gt;¯&lt;/mo&gt;<br>&lt;/mover&gt;<br><br>&lt;mover intent="$op($a)"&gt;<br>  &lt;mi arg="a"&gt;a&lt;/mi&gt;<br>  &lt;mo arg="op" intent="mean" accent='true'&gt;¯&lt;/mo&gt;<br>&lt;/mover&gt;<br><br>&lt;mover intent="$op($a)"&gt;<br>  &lt;mi arg="a"&gt;a&lt;/mi&gt;<br>  &lt;mo arg="op" intent="center-of-mass" accent='true'&gt;¯&lt;/mo&gt;<br>&lt;/mover&gt;<br><br>&lt;mover intent="$op($a)"&gt;<br>  &lt;mi arg="a"&gt;a&lt;/mi&gt;<br>  &lt;mo arg="op" intent="repeated" accent='true'&gt;¯&lt;/mo&gt;<br>&lt;/mover&gt;<br><br>&lt;mover intent="$op($a)"&gt;<br>  &lt;mi arg="a"&gt;a&lt;/mi&gt;<br>  &lt;mo arg="op" intent="closure" accent='true'&gt;¯&lt;/mo&gt;<br>&lt;/mover&gt;<br><br>&lt;mover intent="$op($a)"&gt;<br>  &lt;mi arg="a"&gt;a&lt;/mi&gt;<br>  &lt;mo arg="op" intent="antiparticle" accent='true'&gt;¯&lt;/mo&gt;<br>&lt;/mover&gt;</div></pre>
+            </td>
+            <td class="s4 softmerge" dir="ltr">
+               <div class="softmerge-inner" style="width:242px;left:-1px">conjugate of a (or: a conjugate)<br>complement of a<br>negation of a<br>a bar<br>mean of a (or average of a)<br>center of mass of a<br>a repeated (as in repeated digits)<br>closure of a (could be algebraic or topological closure)<br>antiparticle of a [from physics, not sure of pronunciation]</div>
+            </td>
+            <td class="s0 softmerge" dir="ltr">
+               <div class="softmerge-inner" style="width:198px;left:-1px">conjugué de a<br>complément de a<br>négation de a<br>a barre<br>moyenne de a<br>barycentre de a<br>a périodique<br>clôture de a<br>antiparticule de a</div>
+            </td>
+         </tr>
+         <tr>
+            <th>71</th>
+            <td class="tex">\overline{ab}</td>
+            <td>
+               <math display="block">
+                  <mover>  
+                     <mrow>    
+                        <mi>a</mi>    
+                        <mi>b</mi>  </mrow>  
+                     <mo accent="true">¯</mo>
+                  </mover></math>
+               </td>
+            <td>
+               <math style="display:block">
+                  <mover intent="line($a,$b)">  
+                     <mrow>    
+                        <mi arg="a">a</mi>    
+                        <mi arg="b">b</mi>  </mrow>  
+                     <mo accent="true">¯</mo>
+                  </mover></math>
+               </td>
+            <td>
+               <pre>&lt;mover intent="line($a,$b)"&gt;<br>  &lt;mrow&gt;<br>    &lt;mi arg="a"&gt;a&lt;/mi&gt;<br>    &lt;mi arg="b"&gt;b&lt;/mi&gt;<br>  &lt;/mrow&gt;<br>  &lt;mo accent='true'&gt;¯&lt;/mo&gt;<br>&lt;/mover&gt;</pre>
+            </td>
+            <td class="s4" dir="ltr">line a b</td>
+            <td class="s4" dir="ltr">droite a b</td>
+         </tr>
+         <tr>
+            <th>72</th>
+            <td class="tex">a^*</td>
+            <td>
+               <math display="block">
+                  <msup>  
+                     <mi>a</mi>  
+                     <mo>∗<!-- U+2217--></mo>
+                  </msup></math>
+               </td>
+            <td>
+               <math style="display:block">
+                  <msup intent="a-star">  
+                     <mi>a</mi>  
+                     <mo>∗<!-- U+2217--></mo>
+                  </msup></math>
+               
+               <math style="display:block">
+                  <msup intent="$op($a)">  
+                     <mi arg="a">a</mi>  
+                     <mo arg="op" intent="conjugate">∗<!-- U+2217--></mo>
+                  </msup></math>
+               
+               <math style="display:block">
+                  <msup intent="$op($a)">  
+                     <mi arg="a">a</mi>  
+                     <mo arg="op" intent="dual">∗<!-- U+2217--></mo>
+                  </msup></math>
+               
+               <math style="display:block">
+                  <msup intent="$op($a)">  
+                     <mi arg="a">a</mi>  
+                     <mo arg="op" intent="multiplicative-subgroup">∗<!-- U+2217--></mo>
+                  </msup></math>
+               
+               <math style="display:block">
+                  <msup intent="$op($a)">  
+                     <mi arg="a">a</mi>  
+                     <mo arg="op" intent="units">∗<!-- U+2217--></mo>
+                  </msup></math>
+               </td>
+            <td>
+               <pre><div class="softmerge-inner" style="width:447px;left:-1px">&lt;msup intent="a-star"&gt;<br>  &lt;mi&gt;a&lt;/mi&gt;<br>  &lt;mo&gt;∗&lt;!-- U+2217--&gt;&lt;/mo&gt;<br>&lt;/msup&gt;<br><br>&lt;msup intent="$op($a)"&gt;<br>  &lt;mi arg="a"&gt;a&lt;/mi&gt;<br>  &lt;mo arg="op" intent="conjugate"&gt;∗&lt;!-- U+2217--&gt;&lt;/mo&gt;<br>&lt;/msup&gt;<br><br>&lt;msup intent="$op($a)"&gt;<br>  &lt;mi arg="a"&gt;a&lt;/mi&gt;<br>  &lt;mo arg="op" intent="dual"&gt;∗&lt;!-- U+2217--&gt;&lt;/mo&gt;<br>&lt;/msup&gt;<br><br>&lt;msup intent="$op($a)"&gt;<br>  &lt;mi arg="a"&gt;a&lt;/mi&gt;<br>  &lt;mo arg="op" intent="multiplicative-subgroup"&gt;∗&lt;!-- U+2217--&gt;&lt;/mo&gt;<br>&lt;/msup&gt;<br><br>&lt;msup intent="$op($a)"&gt;<br>  &lt;mi arg="a"&gt;a&lt;/mi&gt;<br>  &lt;mo arg="op" intent="units"&gt;∗&lt;!-- U+2217--&gt;&lt;/mo&gt;<br>&lt;/msup&gt;</div></pre>
+            </td>
+            <td class="s4" dir="ltr">a star<br>a conjugate<br>a dual<br>multiplicative subgroup of a<br>units of a</td>
+            <td class="s0 softmerge" dir="ltr">
+               <div class="softmerge-inner" style="width:198px;left:-1px">a étoile<br>a conjugué<br>a dual<br>sous-groupe multiplicatif de a<br>unités de a</div>
+            </td>
+         </tr>
+         <tr>
+            <th>73</th>
+            <td class="tex">a^\dagger</td>
+            <td>
+               <math display="block">
+                  <msup>  
+                     <mi>a</mi>  
+                     <mo>†<!-- U+2020--></mo>
+                  </msup></math>
+               </td>
+            <td>
+               <math style="display:block">
+                  <msup intent="a-dagger">  
+                     <mi>a</mi>  
+                     <mo>†<!-- U+2020--></mo>
+                  </msup></math>
+               
+               <math style="display:block">
+                  <msup intent="$op($a)">  
+                     <mi arg="a">a</mi>  
+                     <mo arg="op" intent="adjoint">†<!-- U+2020--></mo>
+                  </msup></math>
+               
+               <math style="display:block">
+                  <msup intent="$op($a)">  
+                     <mi arg="a">a</mi>  
+                     <mo arg="op" intent="hermitian-conjugate">†<!-- U+2020--></mo>
+                  </msup></math>
+               </td>
+            <td>
+               <pre><div class="softmerge-inner" style="width:447px;left:-1px">&lt;msup intent="a-dagger"&gt;<br>  &lt;mi&gt;a&lt;/mi&gt;<br>  &lt;mo&gt;†&lt;!-- U+2020--&gt;&lt;/mo&gt;<br>&lt;/msup&gt;<br><br>&lt;msup intent="$op($a)"&gt;<br>  &lt;mi arg="a"&gt;a&lt;/mi&gt;<br>  &lt;mo arg="op" intent="adjoint"&gt;†&lt;!-- U+2020--&gt;&lt;/mo&gt;<br>&lt;/msup&gt;<br><br>&lt;msup intent="$op($a)"&gt;<br>  &lt;mi arg="a"&gt;a&lt;/mi&gt;<br>  &lt;mo arg="op" intent="hermitian-conjugate"&gt;†&lt;!-- U+2020--&gt;&lt;/mo&gt;<br>&lt;/msup&gt;</div></pre>
+            </td>
+            <td class="s4" dir="ltr">a dagger<br>a adjoint<br>a hermitian conjugate</td>
+            <td class="s4" dir="ltr">a adjoint</td>
+         </tr>
+         <tr>
+            <th>74</th>
+            <td class="tex">a/b</td>
+            <td>
+               <math display="block">
+                  <mrow> 
+                     <mi>a</mi> 
+                     <mo>/</mo> 
+                     <mi>b</mi>
+                  </mrow></math>
+               </td>
+            <td>
+               <math style="display:block">
+                  <mrow intent="$op($a,$b)"> 
+                     <mi arg="a">a</mi> 
+                     <mo arg="op" intent="divided-by">/</mo> 
+                     <mi arg="b">b</mi>
+                  </mrow></math>
+               </td>
+            <td>
+               <pre>&lt;mrow intent="$op($a,$b)"&gt;<br> &lt;mi arg="a"&gt;a&lt;/mi&gt;<br> &lt;mo arg="op" intent="divided-by"&gt;/&lt;/mo&gt;<br> &lt;mi arg="b"&gt;b&lt;/mi&gt;<br>&lt;/mrow&gt;</pre>
+            </td>
+            <td class="s4" dir="ltr">a divided by b</td>
+            <td class="s4" dir="ltr">a divisé par b</td>
+         </tr>
+         <tr>
+            <th>75</th>
+            <td class="tex">\frac{a}{b}</td>
+            <td>
+               <math display="block">
+                  <mfrac>  
+                     <mi>a</mi>  
+                     <mi>b</mi>
+                  </mfrac></math>
+               </td>
+            <td>
+               <math style="display:block">
+                  <mfrac intent="divided-by($a,$b)">  
+                     <mi arg="a">a</mi>  
+                     <mi arg="b">b</mi>
+                  </mfrac></math>
+               </td>
+            <td>
+               <pre>&lt;mfrac intent="divided-by($a,$b)"&gt;<br>  &lt;mi arg="a"&gt;a&lt;/mi&gt;<br>  &lt;mi arg="b"&gt;b&lt;/mi&gt;<br>&lt;/mfrac&gt;</pre>
+            </td>
+            <td class="s4 softmerge" dir="ltr">
+               <div class="softmerge-inner" style="width:242px;left:-1px">a over b<br>a divided by b<br>a b (as in \frac{d}{dx} is pronounced "d dx")</div>
+            </td>
+            <td class="s4" dir="ltr">a sur b<br>a divisé par b<br>a b</td>
+         </tr>
+         <tr>
+            <th>76</th>
+            <td class="tex">(\frac{a}{b})</td>
+            <td>
+               <math display="block">
+                  <mrow>  
+                     <mo>(</mo>  
+                     <mfrac>    
+                        <mi>a</mi>    
+                        <mi>b</mi>  </mfrac>  
+                     <mo>)</mo>
+                  </mrow></math>
+               </td>
+            <td>
+               <math style="display:block">
+                  <mrow intent="legendre($a,$b)">  
+                     <mo>(</mo>  
+                     <mfrac>    
+                        <mi arg="a">a</mi>    
+                        <mi arg="b">b</mi>  </mfrac>  
+                     <mo>)</mo>
+                  </mrow></math>
+               
+               <math style="display:block">
+                  <mrow intent="jacobi($a,$b)">  
+                     <mo>(</mo>  
+                     <mfrac>    
+                        <mi arg="a">a</mi>    
+                        <mi arg="b">b</mi>  </mfrac>  
+                     <mo>)</mo>
+                  </mrow></math>
+               
+               <math style="display:block">
+                  <mrow intent="kronecker($a,$b)">  
+                     <mo>(</mo>  
+                     <mfrac>    
+                        <mi arg="a">a</mi>    
+                        <mi arg="b">b</mi>  </mfrac>  
+                     <mo>)</mo>
+                  </mrow></math>
+               </td>
+            <td>
+               <pre>&lt;mrow intent="legendre($a,$b)"&gt;<br>  &lt;mo&gt;(&lt;/mo&gt;<br>  &lt;mfrac&gt;<br>    &lt;mi arg="a"&gt;a&lt;/mi&gt;<br>    &lt;mi arg="b"&gt;b&lt;/mi&gt;<br>  &lt;/mfrac&gt;<br>  &lt;mo&gt;)&lt;/mo&gt;<br>&lt;/mrow&gt;<br><br>&lt;mrow intent="jacobi($a,$b)"&gt;<br>  &lt;mo&gt;(&lt;/mo&gt;<br>  &lt;mfrac&gt;<br>    &lt;mi arg="a"&gt;a&lt;/mi&gt;<br>    &lt;mi arg="b"&gt;b&lt;/mi&gt;<br>  &lt;/mfrac&gt;<br>  &lt;mo&gt;)&lt;/mo&gt;<br>&lt;/mrow&gt;<br><br>&lt;mrow intent="kronecker($a,$b)"&gt;<br>  &lt;mo&gt;(&lt;/mo&gt;<br>  &lt;mfrac&gt;<br>    &lt;mi arg="a"&gt;a&lt;/mi&gt;<br>    &lt;mi arg="b"&gt;b&lt;/mi&gt;<br>  &lt;/mfrac&gt;<br>  &lt;mo&gt;)&lt;/mo&gt;<br>&lt;/mrow&gt;</pre>
+            </td>
+            <td class="s4" dir="ltr">Legendre symbol a over b<br>Jacobi symbol a over b<br>Kronecker symbol a over b</td>
+            <td class="s0 softmerge" dir="ltr">
+               <div class="softmerge-inner" style="width:329px;left:-1px">symbole de Legendre de a sur b<br>symbole de Jacobi de a sur b<br>symbole de Kronecker de a sur b</div>
+            </td>
+         </tr>
+         <tr>
+            <th>77</th>
+            <td class="tex">a \string~ b</td>
+            <td>
+               <math display="block">
+                  <mrow> 
+                     <mi>a</mi>
+                     <mo>~</mo>
+                     <mi>b</mi>
+                  </mrow></math>
+               </td>
+            <td>
+               <math style="display:block">
+                  <mrow> 
+                     <mi>a</mi> 
+                     <mo intent="similar">~</mo> 
+                     <mi>b</mi>
+                  </mrow></math>
+               
+               <math style="display:block">
+                  <mrow> 
+                     <mi>a</mi> 
+                     <mo intent="equivalent">~</mo> 
+                     <mi>b</mi>
+                  </mrow></math>
+               
+               <math style="display:block">
+                  <mrow> 
+                     <mi>a</mi> 
+                     <mo intent="asymptotic">~</mo> 
+                     <mi>b</mi>
+                  </mrow></math>
+               
+               <math style="display:block">
+                  <mrow> 
+                     <mi>a</mi> 
+                     <mo intent="distribution">~</mo> 
+                     <mi>b</mi>
+                  </mrow></math>
+               </td>
+            <td>
+               <pre>&lt;mrow&gt;<br> &lt;mi&gt;a&lt;/mi&gt;<br> &lt;mo intent="similar"&gt;~&lt;/mo&gt;<br> &lt;mi&gt;b&lt;/mi&gt;<br>&lt;/mrow&gt;<br><br>&lt;mrow&gt;<br> &lt;mi&gt;a&lt;/mi&gt;<br> &lt;mo intent="equivalent"&gt;~&lt;/mo&gt;<br> &lt;mi&gt;b&lt;/mi&gt;<br>&lt;/mrow&gt;<br><br>&lt;mrow&gt;<br> &lt;mi&gt;a&lt;/mi&gt;<br> &lt;mo intent="asymptotic"&gt;~&lt;/mo&gt;<br> &lt;mi&gt;b&lt;/mi&gt;<br>&lt;/mrow&gt;<br><br>&lt;mrow&gt;<br> &lt;mi&gt;a&lt;/mi&gt;<br> &lt;mo intent="distribution"&gt;~&lt;/mo&gt;<br> &lt;mi&gt;b&lt;/mi&gt;<br>&lt;/mrow&gt;</pre>
+            </td>
+            <td class="s4" dir="ltr">a is similar to b<br>a is equivalent to b<br>a is asymptotic to b<br>a has the same distribution as b</td>
+            <td class="s0 softmerge" dir="ltr">
+               <div class="softmerge-inner" style="width:329px;left:-1px">a est similaire à b<br>a est équivalent à b<br>a est équivalent asympotiquement à b<br>a a la distribution xx</div>
+            </td>
+         </tr>
+         <tr>
+            <th>78</th>
+            <td class="tex">a \sim b</td>
+            <td>
+               <math display="block">
+                  <mrow> 
+                     <mi>a</mi>
+                     <mo>∼</mo>
+                     <mi>b</mi>
+                  </mrow></math>
+               </td>
+            <td>
+               <math style="display:block">
+                  <mrow> 
+                     <mi>a</mi> 
+                     <mo intent="similar">∼</mo> 
+                     <mi>b</mi>
+                  </mrow></math>
+               
+               <math style="display:block">
+                  <mrow> 
+                     <mi>a</mi> 
+                     <mo intent="equivalent">∼</mo> 
+                     <mi>b</mi>
+                  </mrow></math>
+               
+               <math style="display:block">
+                  <mrow> 
+                     <mi>a</mi> 
+                     <mo intent="asymptotic">∼</mo> 
+                     <mi>b</mi>
+                  </mrow></math>
+               
+               <math style="display:block">
+                  <mrow> 
+                     <mi>a</mi> 
+                     <mo intent="distribution">∼</mo> 
+                     <mi>b</mi>
+                  </mrow></math>
+               </td>
+            <td>
+               <pre>&lt;mrow&gt;<br> &lt;mi&gt;a&lt;/mi&gt;<br> &lt;mo intent="similar"&gt;∼&lt;/mo&gt;<br> &lt;mi&gt;b&lt;/mi&gt;<br>&lt;/mrow&gt;<br><br>&lt;mrow&gt;<br> &lt;mi&gt;a&lt;/mi&gt;<br> &lt;mo intent="equivalent"&gt;∼&lt;/mo&gt;<br> &lt;mi&gt;b&lt;/mi&gt;<br>&lt;/mrow&gt;<br><br>&lt;mrow&gt;<br> &lt;mi&gt;a&lt;/mi&gt;<br> &lt;mo intent="asymptotic"&gt;∼&lt;/mo&gt;<br> &lt;mi&gt;b&lt;/mi&gt;<br>&lt;/mrow&gt;<br><br>&lt;mrow&gt;<br> &lt;mi&gt;a&lt;/mi&gt;<br> &lt;mo intent="distribution"&gt;∼&lt;/mo&gt;<br> &lt;mi&gt;b&lt;/mi&gt;<br>&lt;/mrow&gt;</pre>
+            </td>
+            <td class="s4" dir="ltr">a is similar to b<br>a is equivalent to b<br>a is asymptotic to b<br>a has the same distribution as b</td>
+            <td class="s0 softmerge" dir="ltr">
+               <div class="softmerge-inner" style="width:329px;left:-1px">a est similaire à b<br>a est équivalent à b<br>a est équivalent asympotiquement à b<br>a a la distribution xx</div>
+            </td>
+         </tr>
+         <tr>
+            <th>79</th>
+            <td class="tex">a \to b</td>
+            <td>
+               <math display="block">
+                  <mrow> 
+                     <mi>a</mi>
+                     <mo>→</mo>
+                     <mi>b</mi>
+                  </mrow></math>
+               </td>
+            <td>
+               <math style="display:block">
+                  <mrow> 
+                     <mi>a</mi> 
+                     <mo intent="to">→</mo> 
+                     <mi>b</mi>
+                  </mrow></math>
+               </td>
+            <td>
+               <pre>&lt;mrow&gt;<br> &lt;mi&gt;a&lt;/mi&gt;<br> &lt;mo intent="to"&gt;→&lt;/mo&gt;<br> &lt;mi&gt;b&lt;/mi&gt;<br>&lt;/mrow&gt;</pre>
+            </td>
+            <td class="s4" dir="ltr">a to b<br>as a goes to b (as in \lim_{a \to b})</td>
+            <td class="s0 softmerge" dir="ltr">
+               <div class="softmerge-inner" style="width:198px;left:-1px">a à b<br>lorsque a va vers b</div>
+            </td>
+         </tr>
+         <tr>
+            <th>80</th>
+            <td class="tex">a \gg b</td>
+            <td>
+               <math display="block">
+                  <mrow> 
+                     <mi>a</mi>
+                     <mo>≫<!--U+226B--></mo>
+                     <mi>b</mi>
+                  </mrow></math>
+               </td>
+            <td>
+               <math style="display:block">
+                  <mrow> 
+                     <mi>a</mi> 
+                     <mo intent="much-greater">≫<!--U+226B--></mo> 
+                     <mi>b</mi>
+                  </mrow></math>
+               </td>
+            <td>
+               <pre>&lt;mrow&gt;<br> &lt;mi&gt;a&lt;/mi&gt;<br> &lt;mo intent="much-greater"&gt;≫&lt;!--U+226B--&gt;&lt;/mo&gt;<br> &lt;mi&gt;b&lt;/mi&gt;<br>&lt;/mrow&gt;</pre>
+            </td>
+            <td class="s4" dir="ltr">a much greater than b</td>
+            <td class="s4" dir="ltr"></td>
+         </tr>
+         <tr>
+            <th>81</th>
+            <td class="tex">a \ll b</td>
+            <td>
+               <math display="block">
+                  <mrow> 
+                     <mi>a</mi>
+                     <mo>≪<!--U+226A--></mo>
+                     <mi>b</mi>
+                  </mrow></math>
+               </td>
+            <td>
+               <math style="display:block">
+                  <mrow> 
+                     <mi>a</mi> 
+                     <mo intent="much-less">≪<!--U+226A--></mo> 
+                     <mi>b</mi>
+                  </mrow></math>
+               
+               <math style="display:block">
+                  <mrow> 
+                     <mi>a</mi> 
+                     <mo intent="absolutely-continuous">≪<!--U+226A--></mo> 
+                     <mi>b</mi>
+                  </mrow></math>
+               </td>
+            <td>
+               <pre>&lt;mrow&gt;<br> &lt;mi&gt;a&lt;/mi&gt;<br> &lt;mo intent="much-less"&gt;≪&lt;!--U+226A--&gt;&lt;/mo&gt;<br> &lt;mi&gt;b&lt;/mi&gt;<br>&lt;/mrow&gt;<br><br>&lt;mrow&gt;<br> &lt;mi&gt;a&lt;/mi&gt;<br> &lt;mo intent="absolutely-continuous"&gt;≪&lt;!--U+226A--&gt;&lt;/mo&gt;<br> &lt;mi&gt;b&lt;/mi&gt;<br>&lt;/mrow&gt;</pre>
+            </td>
+            <td class="s4 softmerge" dir="ltr">
+               <div class="softmerge-inner" style="width:242px;left:-1px">a much smaller than b<br>a less than less than b<br>a is absolutely continuous with respect to b</div>
+            </td>
+            <td class="s0 softmerge" dir="ltr">
+               <div class="softmerge-inner" style="width:329px;left:-1px">a est beaucoup plus petit que b<br>a est absolument continue par rapport à b</div>
+            </td>
+         </tr>
+         <tr>
+            <th>82</th>
+            <td class="tex">\sqrt{a}</td>
+            <td>
+               <math display="block">
+                  <msqrt>
+                     <mi>a</mi>
+                  </msqrt></math>
+               </td>
+            <td>
+               <math style="display:block">
+                  <msqrt intent="root($a,2)"> 
+                     <mi arg="a">a</mi>
+                  </msqrt></math>
+               </td>
+            <td>
+               <pre>&lt;msqrt intent="root($a,2)"&gt;<br> &lt;mi arg="a"&gt;a&lt;/mi&gt;<br>&lt;/msqrt&gt;</pre>
+            </td>
+            <td class="s4" dir="ltr">square root of a<br>radical of a<br>(cube root is also special)</td>
+            <td class="s0 softmerge" dir="ltr">
+               <div class="softmerge-inner" style="width:198px;left:-1px">racine carrée de a<br>radical de a</div>
+            </td>
+         </tr>
+         <tr>
+            <th>83</th>
+            <td class="tex">\sqrt[n]{a}</td>
+            <td>
+               <math display="block">
+                  <mroot>
+                     <mi>n</mi>
+                     <mi>a</mi>
+                  </mroot></math>
+               </td>
+            <td>
+               <math style="display:block">
+                  <mroot intent="root($a,$)"> 
+                     <mi arg="n">n</mi> 
+                     <mi arg="a">a</mi>
+                  </mroot></math>
+               </td>
+            <td>
+               <pre>&lt;mroot intent="root($a,$)"&gt;<br> &lt;mi arg="n"&gt;n&lt;/mi&gt;<br> &lt;mi arg="a"&gt;a&lt;/mi&gt;<br>&lt;/mroot&gt;</pre>
+            </td>
+            <td class="s4" dir="ltr">n-th root of a</td>
+            <td class="s4" dir="ltr"></td>
+         </tr>
+         <tr>
+            <th>84</th>
+            <td class="tex">∂ a</td>
+            <td>
+               <math display="block">
+                  <mrow> 
+                     <mo>∂</mo>
+                     <mi>a</mi>
+                  </mrow></math>
+               </td>
+            <td>
+               <math style="display:block">
+                  <mrow> 
+                     <mo intent="partial-derivatve">∂</mo> 
+                     <mi>a</mi>
+                  </mrow></math>
+               
+               <math style="display:block">
+                  <mrow> 
+                     <mo intent="boundary">∂</mo> 
+                     <mi>a</mi>
+                  </mrow></math>
+               </td>
+            <td>
+               <pre>&lt;mrow&gt;<br> &lt;mo intent="partial-derivatve"&gt;∂&lt;/mo&gt;<br> &lt;mi&gt;a&lt;/mi&gt;<br>&lt;/mrow&gt;<br><br>&lt;mrow&gt;<br> &lt;mo intent="boundary"&gt;∂&lt;/mo&gt;<br> &lt;mi&gt;a&lt;/mi&gt;<br>&lt;/mrow&gt;</pre>
+            </td>
+            <td class="s4" dir="ltr">partial a<br>boundary of a</td>
+            <td class="s0 softmerge" dir="ltr">
+               <div class="softmerge-inner" style="width:198px;left:-1px">dérivée partielle de a<br>bord de a</div>
+            </td>
+         </tr>
+         <tr>
+            <th>85</th>
+            <td class="tex">\varnothing</td>
+            <td>
+               <math display="block">
+                  <mi>∅</mi></math>
+               </td>
+            <td>
+               <math style="display:block">
+                  <mi intent="empty-set">∅</mi></math>
+               </td>
+            <td>
+               <pre>&lt;mi intent="empty-set"&gt;∅&lt;/mi&gt;</pre>
+            </td>
+            <td class="s4" dir="ltr">empty set </td>
+            <td class="s4" dir="ltr">ensemble vide</td>
+         </tr>
+         <tr>
+            <th>86</th>
+            <td class="tex">\phi</td>
+            <td>
+               <math display="block">
+                  <mi>ϕ</mi></math>
+               </td>
+            <td>
+               <math style="display:block">
+                  <mi>ϕ</mi></math>
+               </td>
+            <td>
+               <pre>&lt;mi&gt;ϕ&lt;/mi&gt;</pre>
+            </td>
+            <td class="s4 softmerge" dir="ltr">
+               <div class="softmerge-inner" style="width:242px;left:-1px">phi (the greek letter)<br><span style="text-decoration:line-through;">empty set (can we be sure the correct character is used?</span>)</div>
+            </td>
+            <td class="s4" dir="ltr">phi<br><span style="text-decoration:line-through;">ensemble vide</span></td>
+         </tr>
+         <tr>
+            <th>87</th>
+            <td class="tex">\Delta</td>
+            <td>
+               <math display="block">
+                  <mi>Δ</mi></math>
+               </td>
+            <td>
+               <math style="display:block">
+                  <mi intent="Delta">Δ</mi></math>
+               
+               <math style="display:block">
+                  <mi intent="discriminant">Δ</mi></math>
+               </td>
+            <td>
+               <pre>&lt;mi intent="Delta"&gt;Δ&lt;/mi&gt;<br><br>&lt;mi intent="discriminant"&gt;Δ&lt;/mi&gt;</pre>
+            </td>
+            <td class="s4" dir="ltr">delta<br>discriminant</td>
+            <td class="s4" dir="ltr">delta<br>discriminant</td>
+         </tr>
+      </table>
+      <p></p>
+      <p>
+         <div class="softmerge-inner" style="width:269px;left:-1px">Can someone suggest geometry examples?</div>Angle, measure of angle (m∠ or ∡), triangle, volume, segment, perpendicular, not parallel,
+         line, line segment, ray, similar, congruent</p>
+      <p></p>
+      <p>
+         <div class="softmerge-inner" style="width:697px;left:-1px">Multi-letter items which in English are usually pronounced letter-by-letter</div>
+      </p>
+      <p>lcm, gcd, dx, GF, ppm (is that a unit?)</p>
+      <p>
+         <div class="softmerge-inner" style="width:697px;left:-1px">SL, GL, PSL, PGL, SU, SO, Sp, GSp, PGSp, GUE, CUE, GOE, COE, GSE, CSE, Cl</div>
+      </p>
+      <p></p>
+      <p>
+         <div class="softmerge-inner" style="width:697px;left:-1px">Multi-letter items which in English are usually pronounced as if they were a word</div>
+      </p>
+      <p>
+         <div class="softmerge-inner" style="width:697px;left:-1px">arg, lim, log, mod, min, max, span, null, rank, ord, cis, Aut, Hom, grad, Inn, Out</div>
+      </p>
+      <p>sym, ext</p>
+      <p></p>
+      <p>
+         <div class="softmerge-inner" style="width:697px;left:-1px">Multi-letter items which in English are usually pronounced differently than their
+            spelling</div>
+      </p>
+      <p>
+         <div class="softmerge-inner" style="width:697px;left:-1px">ln, lb (log base 2), rad, vol, exp, Re, Im, diag, inf, sup, det, tr, var, Gal, sgn,
+            meas,</div>
+      </p>
+      <p>
+         <div class="softmerge-inner" style="width:908px;left:-1px">dim, ker, rk, deg, diag, id, inn, char, proj, comp, adj, var, cov, corr, Res</div>
+      </p>
+      <p>
+         <div class="softmerge-inner" style="width:697px;left:-1px">sin, cos, tan, csc, sec, cot (and their arc- counterparts)</div>
+      </p>
+      <p>
+         <div class="softmerge-inner" style="width:697px;left:-1px">sinh, cosh, tanh (and their ar- (usually not arc-) and complementary counterparts)</div>
+      </p>
+      <p></p>
+      <p>
+         <div class="softmerge-inner" style="width:697px;left:-1px">Omitted from this list are many single-letter items which AT needs to know how to
+            pronounce</div>
+      </p>
+      <p></p>
+      <p>
+         <div class="softmerge-inner" style="width:697px;left:-1px">Also omitted are units, chemical elements, and special functions</div>
+      </p>
+      <p></p>
+      <p>
+         <div class="softmerge-inner" style="width:697px;left:-1px">Also omitted are many other multi-character expressions which AT needs to know how
+            to pronounce.</div>
+      </p>
+      <p>
+         <div class="softmerge-inner" style="width:697px;left:-1px">(but which typically have only one common pronunciation)</div>
+      </p>
+   </body>
+</html>
