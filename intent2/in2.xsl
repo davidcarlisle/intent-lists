@@ -22,7 +22,7 @@
      <colgroup>
       <col style="background-color:beige"/>
       <col style="background-color:#DFD"/>
-      <col style="background-color:beige;"/>
+      <col style="width:35%;background-color:beige;"/>
       <col style="background-color:beige"/>
       <col style="background-color:#EEE; font-family:monospace;"/>
       <col style="background-color:#DFD"/>
@@ -131,7 +131,7 @@
 	  <tr>
 	   <th><xsl:value-of select="$nn"/>-<xsl:value-of select="count(preceding-sibling::br)+1"/></th>
 	   <td><xsl:value-of select="$intent"/></td>
-	   <td><xsl:copy-of select="$form"/></td>
+	   <td><xsl:copy-of select="*[4]"/></td>
 	   <td><xsl:copy-of select="current-group()"/></td>
 	   <xsl:variable name="m">
 	    <xsl:call-template name="example">
@@ -565,7 +565,8 @@
 <xsl:when test="($form='function' or $form='fencedfunction') and matches($example,'^mi ')">
 <xsl:sequence  xml:space="preserve">
 <mrow>
- <mi mathvariant="normal" intent="{$intent}"><xsl:value-of select="substring-after($example,'mi ')"/></mi>
+ <mi mathvariant="normal"
+     intent="{$intent}"><xsl:value-of select="substring-after($example,'mi ')"/></mi>
  <mi>a</mi>
 </mrow>
 </xsl:sequence>
@@ -766,7 +767,10 @@
 
 <xsl:when test="$intent='transpose' and normalize-space($example)=''">
 <xsl:sequence  xml:space="preserve">
-<msup><mi>a</mi><mi intent="transpose" mathvariant="normal">T</mi></msup>
+<msup>
+ <mi>a</mi>
+ <mi intent="transpose" mathvariant="normal">T</mi>
+</msup>
 </xsl:sequence>
 </xsl:when>
 
