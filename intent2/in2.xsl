@@ -22,7 +22,7 @@
      <colgroup>
       <col style="background-color:beige"/>
       <col style="background-color:#DFD"/>
-      <col style="width:35%;background-color:beige;"/>
+      <col style="background-color:beige;"/>
       <col style="background-color:beige"/>
       <col style="background-color:#EEE; font-family:monospace;"/>
       <col style="background-color:#DFD"/>
