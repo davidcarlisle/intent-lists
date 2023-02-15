@@ -111,16 +111,35 @@
             <td>$1_{&gt;0}</td>
             <td>
                <pre>
- &lt;mtext style="color:red"&gt;more-than&lt;/mtext&gt;
+&lt;msub intent="more-than($N,$z)"&gt;&lt;!--positive?--&gt;
+ &lt;mi arg="N"&gt;ℕ&lt;/mi&gt;
+ &lt;mrow&gt;&lt;mo&gt;&amp;gt;&lt;/mo&gt;&lt;mn&gt;0&lt;/mn&gt;&lt;/mrow&gt;
+&lt;/msub&gt;
 </pre>
             </td>
             <td><math display="block">
                   
-                  <mtext style="color:red">more-than</mtext>
+                  <msub intent="more-than($N,$z)"><!--positive?-->
+                     
+                     <mi arg="N">ℕ</mi>
+                     
+                     <mrow>
+                        <mo>&gt;</mo>
+                        <mn>0</mn>
+                     </mrow>
+                     </msub>
                   </math></td>
             <td><math display="block">
                   
-                  <mtext style="color:red">more-than</mtext>
+                  <msub><!--positive?-->
+                     
+                     <mi arg="N">ℕ</mi>
+                     
+                     <mrow>
+                        <mo>&gt;</mo>
+                        <mn>0</mn>
+                     </mrow>
+                     </msub>
                   </math></td>
             <td>positive $1</td>
          </tr>
@@ -131,16 +150,34 @@
             <td>$1 &gt; 0</td>
             <td>
                <pre>
- &lt;mtext style="color:red"&gt;more-than&lt;/mtext&gt;
+&lt;mrow intent="more-than($a,$z)"&gt;
+ &lt;mi arg="a"&gt;a&lt;/mi&gt;
+ &lt;mo&gt;&amp;gt;&lt;/mo&gt;
+ &lt;mn&gt;0&lt;/mn&gt;
+&lt;/mrow&gt;
 </pre>
             </td>
             <td><math display="block">
                   
-                  <mtext style="color:red">more-than</mtext>
+                  <mrow intent="more-than($a,$z)">
+                     
+                     <mi arg="a">a</mi>
+                     
+                     <mo>&gt;</mo>
+                     
+                     <mn>0</mn>
+                     </mrow>
                   </math></td>
             <td><math display="block">
                   
-                  <mtext style="color:red">more-than</mtext>
+                  <mrow>
+                     
+                     <mi arg="a">a</mi>
+                     
+                     <mo>&gt;</mo>
+                     
+                     <mn>0</mn>
+                     </mrow>
                   </math></td>
             <td>$1 is positive</td>
          </tr>
@@ -151,16 +188,34 @@
             <td>M &gt; 0</td>
             <td>
                <pre>
- &lt;mtext style="color:red"&gt;more-than&lt;/mtext&gt;
+&lt;mrow intent="more-than($M,$z)"&gt;&lt;!--positive-definite?--&gt;
+ &lt;mi arg="M"&gt;M&lt;/mi&gt;
+ &lt;mo&gt;&amp;gt;&lt;/mo&gt;
+ &lt;mn&gt;0&lt;/mn&gt;
+&lt;/mrow&gt;
 </pre>
             </td>
             <td><math display="block">
                   
-                  <mtext style="color:red">more-than</mtext>
+                  <mrow intent="more-than($M,$z)"><!--positive-definite?-->
+                     
+                     <mi arg="M">M</mi>
+                     
+                     <mo>&gt;</mo>
+                     
+                     <mn>0</mn>
+                     </mrow>
                   </math></td>
             <td><math display="block">
                   
-                  <mtext style="color:red">more-than</mtext>
+                  <mrow><!--positive-definite?-->
+                     
+                     <mi arg="M">M</mi>
+                     
+                     <mo>&gt;</mo>
+                     
+                     <mn>0</mn>
+                     </mrow>
                   </math></td>
             <td>M is positive definite</td>
          </tr>
@@ -171,16 +226,34 @@
             <td></td>
             <td>
                <pre>
- &lt;mtext style="color:red"&gt;less-than&lt;/mtext&gt;
+&lt;mrow&gt;
+ &lt;mi arg="a"&gt;a&lt;/mi&gt;
+ &lt;mo intent="less-than"&gt;&amp;lt;&lt;/mo&gt;
+ &lt;mi arg="b"&gt;b&lt;/mi&gt;
+&lt;/mrow&gt;
 </pre>
             </td>
             <td><math display="block">
                   
-                  <mtext style="color:red">less-than</mtext>
+                  <mrow>
+                     
+                     <mi arg="a">a</mi>
+                     
+                     <mo intent="less-than">&lt;</mo>
+                     
+                     <mi arg="b">b</mi>
+                     </mrow>
                   </math></td>
             <td><math display="block">
                   
-                  <mtext style="color:red">less-than</mtext>
+                  <mrow>
+                     
+                     <mi arg="a">a</mi>
+                     
+                     <mo>&lt;</mo>
+                     
+                     <mi arg="b">b</mi>
+                     </mrow>
                   </math></td>
             <td>$1 less-than $2<br>$1 is less-than $2</td>
          </tr>
@@ -338,16 +411,75 @@
             <td>mtable</td>
             <td>
                <pre>
- &lt;mtext style="color:red"&gt;array&lt;/mtext&gt;
+&lt;mrow intent="array"&gt;
+ &lt;mo&gt;(&lt;/mo&gt;  
+ &lt;mtable&gt;
+  &lt;mtr&gt;&lt;mtd&gt;&lt;mi&gt;a&lt;/mi&gt;&lt;/mtd&gt;&lt;mtd&gt;&lt;mi&gt;b&lt;/mi&gt;&lt;/mtd&gt;&lt;/mtr&gt;
+  &lt;mtr&gt;&lt;mtd&gt;&lt;mi&gt;x&lt;/mi&gt;&lt;/mtd&gt;&lt;mtd&gt;&lt;mi&gt;y&lt;/mi&gt;&lt;/mtd&gt;&lt;/mtr&gt;
+ &lt;/mtable&gt;
+ &lt;mo&gt;)&lt;/mo&gt;
+&lt;/mrow&gt;
 </pre>
             </td>
             <td><math display="block">
                   
-                  <mtext style="color:red">array</mtext>
+                  <mrow intent="array">
+                     
+                     <mo>(</mo>  
+                     
+                     <mtable>
+                        
+                        <mtr>
+                           <mtd>
+                              <mi>a</mi>
+                           </mtd>
+                           <mtd>
+                              <mi>b</mi>
+                           </mtd>
+                        </mtr>
+                        
+                        <mtr>
+                           <mtd>
+                              <mi>x</mi>
+                           </mtd>
+                           <mtd>
+                              <mi>y</mi>
+                           </mtd>
+                        </mtr>
+                        </mtable>
+                     
+                     <mo>)</mo>
+                     </mrow>
                   </math></td>
             <td><math display="block">
                   
-                  <mtext style="color:red">array</mtext>
+                  <mrow>
+                     
+                     <mo>(</mo>  
+                     
+                     <mtable>
+                        
+                        <mtr>
+                           <mtd>
+                              <mi>a</mi>
+                           </mtd>
+                           <mtd>
+                              <mi>b</mi>
+                           </mtd>
+                        </mtr>
+                        
+                        <mtr>
+                           <mtd>
+                              <mi>x</mi>
+                           </mtd>
+                           <mtd>
+                              <mi>y</mi>
+                           </mtd>
+                        </mtr>
+                        </mtable>
+                     
+                     <mo>)</mo>
+                     </mrow>
                   </math></td>
             <td></td>
          </tr>
@@ -429,16 +561,29 @@
             <td>mo $</td>
             <td>
                <pre>
- &lt;mtext style="color:red"&gt;dollar&lt;/mtext&gt;
+&lt;mrow&gt;
+ &lt;mi intent="dollar"&gt;$&lt;/mi&gt;
+ &lt;mn&gt;1&lt;/mn&gt;
+&lt;/mrow&gt;
 </pre>
             </td>
             <td><math display="block">
                   
-                  <mtext style="color:red">dollar</mtext>
+                  <mrow>
+                     
+                     <mi intent="dollar">$</mi>
+                     
+                     <mn>1</mn>
+                     </mrow>
                   </math></td>
             <td><math display="block">
                   
-                  <mtext style="color:red">dollar</mtext>
+                  <mrow>
+                     
+                     <mi>$</mi>
+                     
+                     <mn>1</mn>
+                     </mrow>
                   </math></td>
             <td></td>
          </tr>
@@ -1220,7 +1365,7 @@
  &lt;m&gt;1&lt;/m&gt;
  &lt;mo&gt;+&lt;/mo&gt;
  &lt;menclose notation="box" intent="blank"&gt;
-  &lt;mspace intent="blank" width="2em"/&gt;
+  &lt;mspace width="2em"/&gt;
  &lt;/menclose&gt;
  &lt;mo&gt;=&lt;/mo&gt;
  &lt;mo&gt;2&lt;/mo&gt;
@@ -1237,7 +1382,7 @@
                      
                      <menclose notation="box" intent="blank">
                         
-                        <mspace intent="blank" width="2em"></mspace>
+                        <mspace width="2em"></mspace>
                         </menclose>
                      
                      <mo>=</mo>
@@ -1386,16 +1531,29 @@
             <td>mfrac</td>
             <td>
                <pre>
- &lt;mtext style="color:red"&gt;fraction&lt;/mtext&gt;
+&lt;mfrac intent="fraction($a,$b)"&gt;
+ &lt;mi arg="a"&gt;a&lt;/mi&gt;
+ &lt;mi arg="b"&gt;b&lt;/mi&gt;
+&lt;/mfrac&gt;
 </pre>
             </td>
             <td><math display="block">
                   
-                  <mtext style="color:red">fraction</mtext>
+                  <mfrac intent="fraction($a,$b)">
+                     
+                     <mi arg="a">a</mi>
+                     
+                     <mi arg="b">b</mi>
+                     </mfrac>
                   </math></td>
             <td><math display="block">
                   
-                  <mtext style="color:red">fraction</mtext>
+                  <mfrac>
+                     
+                     <mi arg="a">a</mi>
+                     
+                     <mi arg="b">b</mi>
+                     </mfrac>
                   </math></td>
             <td>$1 over $2<br>$1 divided by $2<br>the ratio of $1 and $2</td>
          </tr>
@@ -1807,16 +1965,24 @@
             <td>menclose notation="box"</td>
             <td>
                <pre>
- &lt;mtext style="color:red"&gt;focus&lt;/mtext&gt;
+&lt;menclose notation="box" intent="focus"&gt;
+ &lt;mspace width="2em"/&gt;
+&lt;/menclose&gt;
 </pre>
             </td>
             <td><math display="block">
                   
-                  <mtext style="color:red">focus</mtext>
+                  <menclose notation="box" intent="focus">
+                     
+                     <mspace width="2em"></mspace>
+                     </menclose>
                   </math></td>
             <td><math display="block">
                   
-                  <mtext style="color:red">focus</mtext>
+                  <menclose notation="box">
+                     
+                     <mspace width="2em"></mspace>
+                     </menclose>
                   </math></td>
             <td></td>
          </tr>
@@ -1827,16 +1993,29 @@
             <td>msup th</td>
             <td>
                <pre>
- &lt;mtext style="color:red"&gt;ordinal-mark&lt;/mtext&gt;
+&lt;msup&gt;
+ &lt;mn&gt;4&lt;/mn&gt;
+ &lt;mi intent="ordinal-mark"&gt;th&lt;/mi&gt;
+&lt;/msup&gt;
 </pre>
             </td>
             <td><math display="block">
                   
-                  <mtext style="color:red">ordinal-mark</mtext>
+                  <msup>
+                     
+                     <mn>4</mn>
+                     
+                     <mi intent="ordinal-mark">th</mi>
+                     </msup>
                   </math></td>
             <td><math display="block">
                   
-                  <mtext style="color:red">ordinal-mark</mtext>
+                  <msup>
+                     
+                     <mn>4</mn>
+                     
+                     <mi>th</mi>
+                     </msup>
                   </math></td>
             <td></td>
          </tr>
@@ -1847,16 +2026,29 @@
             <td>msup rd</td>
             <td>
                <pre>
- &lt;mtext style="color:red"&gt;ordinal-mark&lt;/mtext&gt;
+&lt;msup&gt;
+ &lt;mn&gt;3&lt;/mn&gt;
+ &lt;mi intent="ordinal-mark"&gt;rd&lt;/mi&gt;
+&lt;/msup&gt;
 </pre>
             </td>
             <td><math display="block">
                   
-                  <mtext style="color:red">ordinal-mark</mtext>
+                  <msup>
+                     
+                     <mn>3</mn>
+                     
+                     <mi intent="ordinal-mark">rd</mi>
+                     </msup>
                   </math></td>
             <td><math display="block">
                   
-                  <mtext style="color:red">ordinal-mark</mtext>
+                  <msup>
+                     
+                     <mn>3</mn>
+                     
+                     <mi>rd</mi>
+                     </msup>
                   </math></td>
             <td></td>
          </tr>
@@ -1867,16 +2059,29 @@
             <td>msup nd</td>
             <td>
                <pre>
- &lt;mtext style="color:red"&gt;ordinal-mark&lt;/mtext&gt;
+&lt;msup&gt;
+ &lt;mn&gt;2&lt;/mn&gt;
+ &lt;mi intent="ordinal-mark"&gt;nd&lt;/mi&gt;
+&lt;/msup&gt;
 </pre>
             </td>
             <td><math display="block">
                   
-                  <mtext style="color:red">ordinal-mark</mtext>
+                  <msup>
+                     
+                     <mn>2</mn>
+                     
+                     <mi intent="ordinal-mark">nd</mi>
+                     </msup>
                   </math></td>
             <td><math display="block">
                   
-                  <mtext style="color:red">ordinal-mark</mtext>
+                  <msup>
+                     
+                     <mn>2</mn>
+                     
+                     <mi>nd</mi>
+                     </msup>
                   </math></td>
             <td></td>
          </tr>
@@ -2279,16 +2484,49 @@
             <td>LCM</td>
             <td>
                <pre>
- &lt;mtext style="color:red"&gt;least-common-denominator&lt;/mtext&gt;
+&lt;mrow&gt;
+ &lt;mi intent="least-common-denominator"&gt;lcm&lt;/mi&gt;
+ &lt;mo&gt;(&lt;/mo&gt;
+ &lt;mi&gt;a&lt;/mi&gt;
+ &lt;mo&gt;,&lt;/mo&gt;
+ &lt;mi&gt;b&lt;/mi&gt;
+ &lt;mo&gt;)&lt;/mo&gt;
+&lt;/mrow&gt;
 </pre>
             </td>
             <td><math display="block">
                   
-                  <mtext style="color:red">least-common-denominator</mtext>
+                  <mrow>
+                     
+                     <mi intent="least-common-denominator">lcm</mi>
+                     
+                     <mo>(</mo>
+                     
+                     <mi>a</mi>
+                     
+                     <mo>,</mo>
+                     
+                     <mi>b</mi>
+                     
+                     <mo>)</mo>
+                     </mrow>
                   </math></td>
             <td><math display="block">
                   
-                  <mtext style="color:red">least-common-denominator</mtext>
+                  <mrow>
+                     
+                     <mi>lcm</mi>
+                     
+                     <mo>(</mo>
+                     
+                     <mi>a</mi>
+                     
+                     <mo>,</mo>
+                     
+                     <mi>b</mi>
+                     
+                     <mo>)</mo>
+                     </mrow>
                   </math></td>
             <td></td>
          </tr>
@@ -4117,16 +4355,57 @@
             <td>msub T ($1, $2)</td>
             <td>
                <pre>
- &lt;mtext style="color:red"&gt;translation&lt;/mtext&gt;
+&lt;msub intent="translation($a,$b)"&gt;
+ &lt;mi mathvariant="normal"&gt;T&lt;/mi&gt;
+ &lt;mrow&gt;
+  &lt;mo&gt;(&lt;/mo&gt;
+  &lt;mi&gt;a&lt;/mi&gt;
+  &lt;mo&gt;,&lt;/mo&gt;
+  &lt;mi&gt;b&lt;/mi&gt;
+  &lt;mo&gt;)&lt;/mo&gt;
+ &lt;/mrow&gt;
+&lt;/msub&gt;
 </pre>
             </td>
             <td><math display="block">
                   
-                  <mtext style="color:red">translation</mtext>
+                  <msub intent="translation($a,$b)">
+                     
+                     <mi mathvariant="normal">T</mi>
+                     
+                     <mrow>
+                        
+                        <mo>(</mo>
+                        
+                        <mi>a</mi>
+                        
+                        <mo>,</mo>
+                        
+                        <mi>b</mi>
+                        
+                        <mo>)</mo>
+                        </mrow>
+                     </msub>
                   </math></td>
             <td><math display="block">
                   
-                  <mtext style="color:red">translation</mtext>
+                  <msub>
+                     
+                     <mi mathvariant="normal">T</mi>
+                     
+                     <mrow>
+                        
+                        <mo>(</mo>
+                        
+                        <mi>a</mi>
+                        
+                        <mo>,</mo>
+                        
+                        <mi>b</mi>
+                        
+                        <mo>)</mo>
+                        </mrow>
+                     </msub>
                   </math></td>
             <td>T $1 comma $2<br>translation by $1 comma $2</td>
          </tr>
@@ -4137,16 +4416,16 @@
             <td>mo +</td>
             <td>
                <pre>
- &lt;mtext style="color:red"&gt;positive&lt;/mtext&gt;
+&lt;mo intent="positive"&gt;+&lt;/mo&gt;
 </pre>
             </td>
             <td><math display="block">
                   
-                  <mtext style="color:red">positive</mtext>
+                  <mo intent="positive">+</mo>
                   </math></td>
             <td><math display="block">
                   
-                  <mtext style="color:red">positive</mtext>
+                  <mo>+</mo>
                   </math></td>
             <td></td>
          </tr>
@@ -4157,16 +4436,16 @@
             <td>mo -</td>
             <td>
                <pre>
- &lt;mtext style="color:red"&gt;negative&lt;/mtext&gt;
+&lt;mo intent="negative"&gt;−&lt;/mo&gt;
 </pre>
             </td>
             <td><math display="block">
                   
-                  <mtext style="color:red">negative</mtext>
+                  <mo intent="negative">−</mo>
                   </math></td>
             <td><math display="block">
                   
-                  <mtext style="color:red">negative</mtext>
+                  <mo>−</mo>
                   </math></td>
             <td></td>
          </tr>
@@ -5865,16 +6144,42 @@
             <td>msubsup { $1 } mrow $2=$3 mrow $4</td>
             <td>
                <pre>
- &lt;mtext style="color:red"&gt;sequence-range&lt;/mtext&gt;
+&lt;msubsup intent="sequence-range"&gt;
+ &lt;mi&gt;x&lt;/mi&gt;
+ &lt;mrow&gt;&lt;mi&gt;i&lt;/mi&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mn&gt;0&lt;/mn&gt;&lt;/mrow&gt;
+ &lt;mi&gt;n&lt;/mi&gt;
+&lt;/msubsup&gt;
 </pre>
             </td>
             <td><math display="block">
                   
-                  <mtext style="color:red">sequence-range</mtext>
+                  <msubsup intent="sequence-range">
+                     
+                     <mi>x</mi>
+                     
+                     <mrow>
+                        <mi>i</mi>
+                        <mo>=</mo>
+                        <mn>0</mn>
+                     </mrow>
+                     
+                     <mi>n</mi>
+                     </msubsup>
                   </math></td>
             <td><math display="block">
                   
-                  <mtext style="color:red">sequence-range</mtext>
+                  <msubsup>
+                     
+                     <mi>x</mi>
+                     
+                     <mrow>
+                        <mi>i</mi>
+                        <mo>=</mo>
+                        <mn>0</mn>
+                     </mrow>
+                     
+                     <mi>n</mi>
+                     </msubsup>
                   </math></td>
             <td>$1 for $2 going from $3 to $4</td>
          </tr>
@@ -5885,16 +6190,42 @@
             <td>munderover { $1 } mrow $2=$3 mrow $4</td>
             <td>
                <pre>
- &lt;mtext style="color:red"&gt;sequence-range&lt;/mtext&gt;
+&lt;munderover intent="sequence-range"&gt;
+ &lt;mi&gt;x&lt;/mi&gt;
+ &lt;mrow&gt;&lt;mi&gt;i&lt;/mi&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mn&gt;0&lt;/mn&gt;&lt;/mrow&gt;
+ &lt;mi&gt;n&lt;/mi&gt;
+&lt;/munderover&gt;
 </pre>
             </td>
             <td><math display="block">
                   
-                  <mtext style="color:red">sequence-range</mtext>
+                  <munderover intent="sequence-range">
+                     
+                     <mi>x</mi>
+                     
+                     <mrow>
+                        <mi>i</mi>
+                        <mo>=</mo>
+                        <mn>0</mn>
+                     </mrow>
+                     
+                     <mi>n</mi>
+                     </munderover>
                   </math></td>
             <td><math display="block">
                   
-                  <mtext style="color:red">sequence-range</mtext>
+                  <munderover>
+                     
+                     <mi>x</mi>
+                     
+                     <mrow>
+                        <mi>i</mi>
+                        <mo>=</mo>
+                        <mn>0</mn>
+                     </mrow>
+                     
+                     <mi>n</mi>
+                     </munderover>
                   </math></td>
             <td>$1 for $2 going from $3 to $4</td>
          </tr>
@@ -5905,16 +6236,44 @@
             <td>{ $1, $2 ... $n }</td>
             <td>
                <pre>
- &lt;mtext style="color:red"&gt;progression&lt;/mtext&gt;
+&lt;mrow intent="progression"&gt;
+ &lt;mi&gt;a&lt;/mi&gt;
+ &lt;mo&gt;,&lt;/mo&gt;
+ &lt;mi&gt;b&lt;/mi&gt;
+ &lt;mo&gt;,&lt;/mo&gt;
+ &lt;mi&gt;c&lt;/mi&gt;
+&lt;/mrow&gt;
 </pre>
             </td>
             <td><math display="block">
                   
-                  <mtext style="color:red">progression</mtext>
+                  <mrow intent="progression">
+                     
+                     <mi>a</mi>
+                     
+                     <mo>,</mo>
+                     
+                     <mi>b</mi>
+                     
+                     <mo>,</mo>
+                     
+                     <mi>c</mi>
+                     </mrow>
                   </math></td>
             <td><math display="block">
                   
-                  <mtext style="color:red">progression</mtext>
+                  <mrow>
+                     
+                     <mi>a</mi>
+                     
+                     <mo>,</mo>
+                     
+                     <mi>b</mi>
+                     
+                     <mo>,</mo>
+                     
+                     <mi>c</mi>
+                     </mrow>
                   </math></td>
             <td></td>
          </tr>
@@ -5925,16 +6284,47 @@
             <td>( msub $1 $2 )</td>
             <td>
                <pre>
- &lt;mtext style="color:red"&gt;progression&lt;/mtext&gt;
+&lt;mrow intent="progression"&gt;
+ &lt;mo&gt;(&lt;/mo&gt;  
+ &lt;msub&gt;
+  &lt;mi&gt;X&lt;/mi&gt;
+  &lt;mi&gt;i&lt;/mi&gt;
+ &lt;/msub&gt;
+ &lt;mo&gt;)&lt;/mo&gt;
+&lt;/mrow&gt;
 </pre>
             </td>
             <td><math display="block">
                   
-                  <mtext style="color:red">progression</mtext>
+                  <mrow intent="progression">
+                     
+                     <mo>(</mo>  
+                     
+                     <msub>
+                        
+                        <mi>X</mi>
+                        
+                        <mi>i</mi>
+                        </msub>
+                     
+                     <mo>)</mo>
+                     </mrow>
                   </math></td>
             <td><math display="block">
                   
-                  <mtext style="color:red">progression</mtext>
+                  <mrow>
+                     
+                     <mo>(</mo>  
+                     
+                     <msub>
+                        
+                        <mi>X</mi>
+                        
+                        <mi>i</mi>
+                        </msub>
+                     
+                     <mo>)</mo>
+                     </mrow>
                   </math></td>
             <td></td>
          </tr>
@@ -6122,16 +6512,37 @@
             <td>munder $1 ⏟  </td>
             <td>
                <pre>
- &lt;mtext style="color:red"&gt;braced-group&lt;/mtext&gt;
+&lt;munder intent="braced-group"&gt;
+ &lt;mrow&gt;&lt;mi&gt;x&lt;/mi&gt;&lt;mi&gt;y&lt;/mi&gt;&lt;mi&gt;z&lt;/mi&gt;&lt;/mrow&gt;
+ &lt;mo&gt;⏟&lt;/mo&gt;
+&lt;/munder&gt;
 </pre>
             </td>
             <td><math display="block">
                   
-                  <mtext style="color:red">braced-group</mtext>
+                  <munder intent="braced-group">
+                     
+                     <mrow>
+                        <mi>x</mi>
+                        <mi>y</mi>
+                        <mi>z</mi>
+                     </mrow>
+                     
+                     <mo>⏟</mo>
+                     </munder>
                   </math></td>
             <td><math display="block">
                   
-                  <mtext style="color:red">braced-group</mtext>
+                  <munder>
+                     
+                     <mrow>
+                        <mi>x</mi>
+                        <mi>y</mi>
+                        <mi>z</mi>
+                     </mrow>
+                     
+                     <mo>⏟</mo>
+                     </munder>
                   </math></td>
             <td>start-braced-group $1 end-braced-group?</td>
          </tr>
@@ -6142,16 +6553,37 @@
             <td>mover $1 ⏞ </td>
             <td>
                <pre>
- &lt;mtext style="color:red"&gt;braced-group&lt;/mtext&gt;
+&lt;mover intent="braced-group"&gt;
+ &lt;mrow&gt;&lt;mi&gt;x&lt;/mi&gt;&lt;mi&gt;y&lt;/mi&gt;&lt;mi&gt;z&lt;/mi&gt;&lt;/mrow&gt;
+ &lt;mo&gt;⏞&lt;/mo&gt;
+&lt;/mover&gt;
 </pre>
             </td>
             <td><math display="block">
                   
-                  <mtext style="color:red">braced-group</mtext>
+                  <mover intent="braced-group">
+                     
+                     <mrow>
+                        <mi>x</mi>
+                        <mi>y</mi>
+                        <mi>z</mi>
+                     </mrow>
+                     
+                     <mo>⏞</mo>
+                     </mover>
                   </math></td>
             <td><math display="block">
                   
-                  <mtext style="color:red">braced-group</mtext>
+                  <mover>
+                     
+                     <mrow>
+                        <mi>x</mi>
+                        <mi>y</mi>
+                        <mi>z</mi>
+                     </mrow>
+                     
+                     <mo>⏞</mo>
+                     </mover>
                   </math></td>
             <td>start-braced-group $1 end-braced-group?</td>
          </tr>

@@ -372,7 +372,7 @@
  <m>1</m>
  <mo>+</mo>
  <menclose notation="box" intent="{$intent}">
-  <mspace intent="{$intent}" width="2em"/>
+  <mspace width="2em"/>
  </menclose>
  <mo>=</mo>
  <mo>2</mo>
@@ -781,6 +781,231 @@
 </mrow>
 </xsl:sequence>
 </xsl:when>
+
+
+<xsl:when test="$intent='more-than' and normalize-space($example)='$1_{>0}'">
+<xsl:sequence  xml:space="preserve">
+<msub intent="more-than($N,$z)"><xsl:comment select="'positive?'"/>
+ <mi arg="N">ℕ</mi>
+ <mrow><mo>&gt;</mo><mn>0</mn></mrow>
+</msub>
+</xsl:sequence>
+</xsl:when>
+
+<xsl:when test="$intent='more-than' and normalize-space($example)='$1 > 0'">
+<xsl:sequence  xml:space="preserve">
+<mrow intent="more-than($a,$z)">
+ <mi arg="a">a</mi>
+ <mo>&gt;</mo>
+ <mn>0</mn>
+</mrow>
+</xsl:sequence>
+</xsl:when>
+
+<xsl:when test="$intent='more-than' and normalize-space($example)='M > 0'">
+<xsl:sequence  xml:space="preserve">
+<mrow intent="more-than($M,$z)"><xsl:comment select="'positive-definite?'"/>
+ <mi arg="M">M</mi>
+ <mo>&gt;</mo>
+ <mn>0</mn>
+</mrow>
+</xsl:sequence>
+</xsl:when>
+
+
+<xsl:when test="$intent='less-than' and $form='infix'">
+<xsl:sequence  xml:space="preserve">
+<mrow>
+ <mi arg="a">a</mi>
+ <mo intent="less-than">&lt;</mo>
+ <mi arg="b">b</mi>
+</mrow>
+</xsl:sequence>
+</xsl:when>
+
+
+<xsl:when test="$intent='array' and $form='tabular'">
+<xsl:sequence  xml:space="preserve">
+<mrow intent="{$intent}">
+ <mo>(</mo>  
+ <mtable>
+  <mtr><mtd><mi>a</mi></mtd><mtd><mi>b</mi></mtd></mtr>
+  <mtr><mtd><mi>x</mi></mtd><mtd><mi>y</mi></mtd></mtr>
+ </mtable>
+ <mo>)</mo>
+</mrow>
+</xsl:sequence>
+</xsl:when>
+
+
+<xsl:when test="$intent='dollar' and $form='prefix unit'">
+<xsl:sequence  xml:space="preserve">
+<mrow>
+ <mi intent="dollar">$</mi>
+ <mn>1</mn>
+</mrow>
+</xsl:sequence>
+</xsl:when>
+
+
+<xsl:when test="$intent='fraction' and $form='2D'">
+<xsl:sequence  xml:space="preserve">
+<mfrac intent="fraction($a,$b)">
+ <mi arg="a">a</mi>
+ <mi arg="b">b</mi>
+</mfrac>
+</xsl:sequence>
+</xsl:when>
+
+
+<xsl:when test="$intent='focus' and $form='enclosed'">
+<xsl:sequence  xml:space="preserve">
+<menclose notation="box" intent="{$intent}">
+ <mspace width="2em"/>
+</menclose>
+</xsl:sequence>
+</xsl:when>
+
+
+<xsl:when test="$intent='ordinal-mark' and $example='msup th'">
+<xsl:sequence  xml:space="preserve">
+<msup>
+ <mn>4</mn>
+ <mi intent="{$intent}">th</mi>
+</msup>
+</xsl:sequence>
+</xsl:when>
+
+<xsl:when test="$intent='ordinal-mark' and $example='msup rd'">
+<xsl:sequence  xml:space="preserve">
+<msup>
+ <mn>3</mn>
+ <mi intent="{$intent}">rd</mi>
+</msup>
+</xsl:sequence>
+</xsl:when>
+
+<xsl:when test="$intent='ordinal-mark' and $example='msup nd'">
+<xsl:sequence  xml:space="preserve">
+<msup>
+ <mn>2</mn>
+ <mi intent="{$intent}">nd</mi>
+</msup>
+</xsl:sequence>
+</xsl:when>
+
+
+<xsl:when test="$intent='least-common-denominator' and $example='LCM'">
+<xsl:sequence  xml:space="preserve">
+<mrow>
+ <mi intent="{$intent}">lcm</mi>
+ <mo>(</mo>
+ <mi>a</mi>
+ <mo>,</mo>
+ <mi>b</mi>
+ <mo>)</mo>
+</mrow>
+</xsl:sequence>
+</xsl:when>
+
+
+<xsl:when test="$intent='translation' and $example='msub T ($1, $2)'">
+<xsl:sequence  xml:space="preserve">
+<msub intent="{$intent}($a,$b)">
+ <mi mathvariant="normal">T</mi>
+ <mrow>
+  <mo>(</mo>
+  <mi>a</mi>
+  <mo>,</mo>
+  <mi>b</mi>
+  <mo>)</mo>
+ </mrow>
+</msub>
+</xsl:sequence>
+</xsl:when>
+
+
+<xsl:when test="$intent='positive' and $form='prefixatom'">
+<xsl:sequence  xml:space="preserve">
+<mo intent="{$intent}">+</mo>
+</xsl:sequence>
+</xsl:when>
+
+<xsl:when test="$intent='negative' and $form='prefixatom'">
+<xsl:sequence  xml:space="preserve">
+<mo intent="{$intent}">−</mo>
+</xsl:sequence>
+</xsl:when>
+
+
+<xsl:when test="$intent='sequence-range' and starts-with($example,'msubsup')">
+<xsl:sequence  xml:space="preserve">
+<msubsup intent="{$intent}">
+ <mi>x</mi>
+ <mrow><mi>i</mi><mo>=</mo><mn>0</mn></mrow>
+ <mi>n</mi>
+</msubsup>
+</xsl:sequence>
+</xsl:when>
+
+<xsl:when test="$intent='sequence-range' and starts-with($example,'munderover')">
+<xsl:sequence  xml:space="preserve">
+<munderover intent="{$intent}">
+ <mi>x</mi>
+ <mrow><mi>i</mi><mo>=</mo><mn>0</mn></mrow>
+ <mi>n</mi>
+</munderover>
+</xsl:sequence>
+</xsl:when>
+
+
+<xsl:when test="$intent='progression' and $example='{ $1, $2 ... $n }'">
+<xsl:sequence  xml:space="preserve">
+<mrow intent="{$intent}">
+ <mi>a</mi>
+ <mo>,</mo>
+ <mi>b</mi>
+ <mo>,</mo>
+ <mi>c</mi>
+</mrow>
+</xsl:sequence>
+</xsl:when>
+
+
+<xsl:when test="$intent='progression' and $example='( msub $1 $2 )'">
+<xsl:sequence  xml:space="preserve">
+<mrow intent="{$intent}">
+ <mo>(</mo>  
+ <msub>
+  <mi>X</mi>
+  <mi>i</mi>
+ </msub>
+ <mo>)</mo>
+</mrow>
+</xsl:sequence>
+</xsl:when>
+
+
+<xsl:when test="$intent='braced-group' and starts-with($example,'munder')">
+<xsl:sequence  xml:space="preserve">
+<munder intent="{$intent}">
+ <mrow><mi>x</mi><mi>y</mi><mi>z</mi></mrow>
+ <mo>&#x23DF;</mo>
+</munder>
+</xsl:sequence>
+</xsl:when>
+
+
+<xsl:when test="$intent='braced-group' and starts-with($example,'mover')">
+<xsl:sequence  xml:space="preserve">
+<mover intent="{$intent}">
+ <mrow><mi>x</mi><mi>y</mi><mi>z</mi></mrow>
+ <mo>&#x23DE;</mo>
+</mover>
+</xsl:sequence>
+</xsl:when>
+
+
 
 <xsl:otherwise>
 <xsl:sequence  xml:space="preserve">
