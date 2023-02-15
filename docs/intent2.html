@@ -908,32 +908,32 @@
             <td>mrow ( ... ) </td>
             <td>
                <pre>
-&lt;mrow intent="delimited-subexpression"&gt;
+&lt;mrow intent="delimited-subexpression($a,$b,$dots)"&gt;
  &lt;mo&gt;(&lt;/mo&gt;  
- &lt;mi&gt;a&lt;/mi&gt;
+ &lt;mi arg="a"&gt;a&lt;/mi&gt;
  &lt;mo&gt;,&lt;/mo&gt;
- &lt;mi&gt;b&lt;/mi&gt;
+ &lt;mi arg="b"&gt;b&lt;/mi&gt;
  &lt;mo&gt;,&lt;/mo&gt;
- &lt;mo&gt;⋯&lt;/mo&gt;
+ &lt;mo arg="dots"&gt;⋯&lt;/mo&gt;
  &lt;mo&gt;)&lt;/mo&gt;
 &lt;/mrow&gt;
 </pre>
             </td>
             <td><math display="block">
                   
-                  <mrow intent="delimited-subexpression">
+                  <mrow intent="delimited-subexpression($a,$b,$dots)">
                      
                      <mo>(</mo>  
                      
-                     <mi>a</mi>
+                     <mi arg="a">a</mi>
                      
                      <mo>,</mo>
                      
-                     <mi>b</mi>
+                     <mi arg="b">b</mi>
                      
                      <mo>,</mo>
                      
-                     <mo>⋯</mo>
+                     <mo arg="dots">⋯</mo>
                      
                      <mo>)</mo>
                      </mrow>
@@ -944,15 +944,15 @@
                      
                      <mo>(</mo>  
                      
-                     <mi>a</mi>
+                     <mi arg="a">a</mi>
                      
                      <mo>,</mo>
                      
-                     <mi>b</mi>
+                     <mi arg="b">b</mi>
                      
                      <mo>,</mo>
                      
-                     <mo>⋯</mo>
+                     <mo arg="dots">⋯</mo>
                      
                      <mo>)</mo>
                      </mrow>
@@ -966,32 +966,32 @@
             <td>mrow [ ... ]</td>
             <td>
                <pre>
-&lt;mrow intent="delimited-subexpression"&gt;
+&lt;mrow intent="delimited-subexpression($a,$b,$dots)"&gt;
  &lt;mo&gt;[&lt;/mo&gt;  
- &lt;mi&gt;a&lt;/mi&gt;
+ &lt;mi arg="a"&gt;a&lt;/mi&gt;
  &lt;mo&gt;,&lt;/mo&gt;
- &lt;mi&gt;b&lt;/mi&gt;
+ &lt;mi arg="b"&gt;b&lt;/mi&gt;
  &lt;mo&gt;,&lt;/mo&gt;
- &lt;mo&gt;⋯&lt;/mo&gt;
+ &lt;mo arg="dots"&gt;⋯&lt;/mo&gt;
  &lt;mo&gt;]&lt;/mo&gt;
 &lt;/mrow&gt;
 </pre>
             </td>
             <td><math display="block">
                   
-                  <mrow intent="delimited-subexpression">
+                  <mrow intent="delimited-subexpression($a,$b,$dots)">
                      
                      <mo>[</mo>  
                      
-                     <mi>a</mi>
+                     <mi arg="a">a</mi>
                      
                      <mo>,</mo>
                      
-                     <mi>b</mi>
+                     <mi arg="b">b</mi>
                      
                      <mo>,</mo>
                      
-                     <mo>⋯</mo>
+                     <mo arg="dots">⋯</mo>
                      
                      <mo>]</mo>
                      </mrow>
@@ -1002,15 +1002,15 @@
                      
                      <mo>[</mo>  
                      
-                     <mi>a</mi>
+                     <mi arg="a">a</mi>
                      
                      <mo>,</mo>
                      
-                     <mi>b</mi>
+                     <mi arg="b">b</mi>
                      
                      <mo>,</mo>
                      
-                     <mo>⋯</mo>
+                     <mo arg="dots">⋯</mo>
                      
                      <mo>]</mo>
                      </mrow>
@@ -2299,17 +2299,17 @@
             <td>msup $1 °</td>
             <td>
                <pre>
-&lt;msup intent="degrees"&gt;
- &lt;mi&gt;a&lt;/mi&gt;
+&lt;msup intent="degrees($a)"&gt;
+ &lt;mi arg="a"&gt;a&lt;/mi&gt;
  &lt;mo&gt;°&lt;/mo&gt;  
 &lt;/msup&gt;
 </pre>
             </td>
             <td><math display="block">
                   
-                  <msup intent="degrees">
+                  <msup intent="degrees($a)">
                      
-                     <mi>a</mi>
+                     <mi arg="a">a</mi>
                      
                      <mo>°</mo>  
                      </msup>
@@ -2318,7 +2318,7 @@
                   
                   <msup>
                      
-                     <mi>a</mi>
+                     <mi arg="a">a</mi>
                      
                      <mo>°</mo>  
                      </msup>
@@ -2748,25 +2748,28 @@
             <td>mrow $1 $2</td>
             <td>
                <pre>
-&lt;mrow intent="line-segment"&gt;
- &lt;mi&gt;A&lt;/mi&gt;&lt;mi&gt;B&lt;/mi&gt;
+&lt;mrow intent="line-segment($A,$B)"&gt;
+  &lt;mi arg="A"&gt;A&lt;/mi&gt;
+  &lt;mi arg="B"&gt;B&lt;/mi&gt;
 &lt;/mrow&gt;
 </pre>
             </td>
             <td><math display="block">
                   
-                  <mrow intent="line-segment">
+                  <mrow intent="line-segment($A,$B)">
                      
-                     <mi>A</mi>
-                     <mi>B</mi>
+                     <mi arg="A">A</mi>
+                     
+                     <mi arg="B">B</mi>
                      </mrow>
                   </math></td>
             <td><math display="block">
                   
                   <mrow>
                      
-                     <mi>A</mi>
-                     <mi>B</mi>
+                     <mi arg="A">A</mi>
+                     
+                     <mi arg="B">B</mi>
                      </mrow>
                   </math></td>
             <td>$1<br>segment $1<br><br>$1 $2<br>segment $1 $2<br>side $1 $2</td>
@@ -2778,28 +2781,28 @@
             <td>msup $1 $2</td>
             <td>
                <pre>
-&lt;msup intent="power"&gt;
- &lt;mi&gt;a&lt;/mi&gt;
- &lt;mi&gt;b&lt;/mi&gt;
+&lt;msup intent="power($a,$b)"&gt;
+ &lt;mi arg="a"&gt;a&lt;/mi&gt;
+ &lt;mi arg="b"&gt;b&lt;/mi&gt;
 &lt;/msup&gt;
 </pre>
             </td>
             <td><math display="block">
                   
-                  <msup intent="power">
+                  <msup intent="power($a,$b)">
                      
-                     <mi>a</mi>
+                     <mi arg="a">a</mi>
                      
-                     <mi>b</mi>
+                     <mi arg="b">b</mi>
                      </msup>
                   </math></td>
             <td><math display="block">
                   
                   <msup>
                      
-                     <mi>a</mi>
+                     <mi arg="a">a</mi>
                      
-                     <mi>b</mi>
+                     <mi arg="b">b</mi>
                      </msup>
                   </math></td>
             <td>$1 to the $2<br>$1 to the $2 power<br>$1 and then that raised to the $2 power</td>
@@ -2811,26 +2814,26 @@
             <td>mrow ($1, $2)</td>
             <td>
                <pre>
-&lt;mrow intent="point"&gt;
+&lt;mrow intent="point($a,$b)"&gt;
  &lt;mo&gt;(&lt;/mo&gt;  
- &lt;mi&gt;a&lt;/mi&gt;
+ &lt;mi arg="a"&gt;a&lt;/mi&gt;
  &lt;mo&gt;,&lt;/mo&gt;
- &lt;mi&gt;b&lt;/mi&gt;
+ &lt;mi arg="b"&gt;b&lt;/mi&gt;
  &lt;mo&gt;)&lt;/mo&gt;
 &lt;/mrow&gt;
 </pre>
             </td>
             <td><math display="block">
                   
-                  <mrow intent="point">
+                  <mrow intent="point($a,$b)">
                      
                      <mo>(</mo>  
                      
-                     <mi>a</mi>
+                     <mi arg="a">a</mi>
                      
                      <mo>,</mo>
                      
-                     <mi>b</mi>
+                     <mi arg="b">b</mi>
                      
                      <mo>)</mo>
                      </mrow>
@@ -2841,11 +2844,11 @@
                      
                      <mo>(</mo>  
                      
-                     <mi>a</mi>
+                     <mi arg="a">a</mi>
                      
                      <mo>,</mo>
                      
-                     <mi>b</mi>
+                     <mi arg="b">b</mi>
                      
                      <mo>)</mo>
                      </mrow>
@@ -2859,26 +2862,26 @@
             <td>mrow ($1 ; $2 )</td>
             <td>
                <pre>
-&lt;mrow intent="point"&gt;
+&lt;mrow intent="point($a,$b)"&gt;
  &lt;mo&gt;(&lt;/mo&gt;  
- &lt;mi&gt;a&lt;/mi&gt;
+ &lt;mi arg="a"&gt;a&lt;/mi&gt;
  &lt;mo&gt;;&lt;/mo&gt;
- &lt;mi&gt;b&lt;/mi&gt;
+ &lt;mi arg="b"&gt;b&lt;/mi&gt;
  &lt;mo&gt;)&lt;/mo&gt;
 &lt;/mrow&gt;
 </pre>
             </td>
             <td><math display="block">
                   
-                  <mrow intent="point">
+                  <mrow intent="point($a,$b)">
                      
                      <mo>(</mo>  
                      
-                     <mi>a</mi>
+                     <mi arg="a">a</mi>
                      
                      <mo>;</mo>
                      
-                     <mi>b</mi>
+                     <mi arg="b">b</mi>
                      
                      <mo>)</mo>
                      </mrow>
@@ -2889,11 +2892,11 @@
                      
                      <mo>(</mo>  
                      
-                     <mi>a</mi>
+                     <mi arg="a">a</mi>
                      
                      <mo>;</mo>
                      
-                     <mi>b</mi>
+                     <mi arg="b">b</mi>
                      
                      <mo>)</mo>
                      </mrow>
@@ -2978,28 +2981,28 @@
             <td>mfrac</td>
             <td>
                <pre>
-&lt;mfrac intent="rate"&gt;
- &lt;mi intent="unit"&gt;m&lt;/mi&gt;
- &lt;mi intent="unit"&gt;s&lt;/mi&gt;
+&lt;mfrac intent="rate($m,$s)"&gt;
+ &lt;mi arg="m" intent="unit"&gt;m&lt;/mi&gt;
+ &lt;mi arg="s" intent="unit"&gt;s&lt;/mi&gt;
 &lt;/mfrac&gt;
 </pre>
             </td>
             <td><math display="block">
                   
-                  <mfrac intent="rate">
+                  <mfrac intent="rate($m,$s)">
                      
-                     <mi intent="unit">m</mi>
+                     <mi arg="m" intent="unit">m</mi>
                      
-                     <mi intent="unit">s</mi>
+                     <mi arg="s" intent="unit">s</mi>
                      </mfrac>
                   </math></td>
             <td><math display="block">
                   
                   <mfrac>
                      
-                     <mi>m</mi>
+                     <mi arg="m">m</mi>
                      
-                     <mi>s</mi>
+                     <mi arg="s">s</mi>
                      </mfrac>
                   </math></td>
             <td>$1 per $2</td>
@@ -3011,33 +3014,33 @@
             <td>$1p$2</td>
             <td>
                <pre>
-&lt;mrow intent="rate"&gt;
- &lt;mi intent="unit"&gt;m&lt;/mi&gt;
+&lt;mrow intent="rate($m,$s)"&gt;
+ &lt;mi arg="m" intent="unit"&gt;m&lt;/mi&gt;
  &lt;mo&gt;/&lt;/mo&gt;
- &lt;mi intent="unit"&gt;s&lt;/mi&gt;
+ &lt;mi arg="s" intent="unit"&gt;s&lt;/mi&gt;
 &lt;/mrow&gt;
 </pre>
             </td>
             <td><math display="block">
                   
-                  <mrow intent="rate">
+                  <mrow intent="rate($m,$s)">
                      
-                     <mi intent="unit">m</mi>
+                     <mi arg="m" intent="unit">m</mi>
                      
                      <mo>/</mo>
                      
-                     <mi intent="unit">s</mi>
+                     <mi arg="s" intent="unit">s</mi>
                      </mrow>
                   </math></td>
             <td><math display="block">
                   
                   <mrow>
                      
-                     <mi>m</mi>
+                     <mi arg="m">m</mi>
                      
                      <mo>/</mo>
                      
-                     <mi>s</mi>
+                     <mi arg="s">s</mi>
                      </mrow>
                   </math></td>
             <td>$1 per $2</td>
@@ -3049,17 +3052,17 @@
             <td>mo %</td>
             <td>
                <pre>
-&lt;mrow intent="percent"&gt;
- &lt;mi&gt;a&lt;/mi&gt;
+&lt;mrow intent="percent@postfix($a)"&gt;
+ &lt;mi arg="a"&gt;a&lt;/mi&gt;
  &lt;mo intent="percent"&gt;%&lt;/mo&gt;
 &lt;/mrow&gt;
 </pre>
             </td>
             <td><math display="block">
                   
-                  <mrow intent="percent">
+                  <mrow intent="percent@postfix($a)">
                      
-                     <mi>a</mi>
+                     <mi arg="a">a</mi>
                      
                      <mo intent="percent">%</mo>
                      </mrow>
@@ -3068,7 +3071,7 @@
                   
                   <mrow>
                      
-                     <mi>a</mi>
+                     <mi arg="a">a</mi>
                      
                      <mo>%</mo>
                      </mrow>
@@ -3082,20 +3085,20 @@
             <td>mrow | $1 |</td>
             <td>
                <pre>
-&lt;mrow intent="absolute-value"&gt;
+&lt;mrow intent="absolute-value($a)"&gt;
  &lt;mo&gt;|&lt;/mo&gt; 
- &lt;mi&gt;a&lt;/mi&gt;
+ &lt;mi arg="a"&gt;a&lt;/mi&gt;
  &lt;mo&gt;|&lt;/mo&gt;
 &lt;/mrow&gt;
 </pre>
             </td>
             <td><math display="block">
                   
-                  <mrow intent="absolute-value">
+                  <mrow intent="absolute-value($a)">
                      
                      <mo>|</mo> 
                      
-                     <mi>a</mi>
+                     <mi arg="a">a</mi>
                      
                      <mo>|</mo>
                      </mrow>
@@ -3106,7 +3109,7 @@
                      
                      <mo>|</mo> 
                      
-                     <mi>a</mi>
+                     <mi arg="a">a</mi>
                      
                      <mo>|</mo>
                      </mrow>
@@ -3390,13 +3393,13 @@
             <td>mrow $1($2,$3)</td>
             <td>
                <pre>
-&lt;mrow intent="point-at"&gt;
+&lt;mrow intent="point-at($a,$b)"&gt;
  &lt;mi&gt;P&lt;/mi&gt;
  &lt;mrow&gt;
   &lt;mo&gt;(&lt;/mo&gt;
-  &lt;mi&gt;a&lt;/mi&gt;
+  &lt;mi arg="a"&gt;a&lt;/mi&gt;
   &lt;mo&gt;,&lt;/mo&gt;
-  &lt;mi&gt;b&lt;/mi&gt;
+  &lt;mi arg="b"&gt;b&lt;/mi&gt;
   &lt;mo&gt;)&lt;/mo&gt;
  &lt;/mrow&gt;
 &lt;/mrow&gt;
@@ -3404,7 +3407,7 @@
             </td>
             <td><math display="block">
                   
-                  <mrow intent="point-at">
+                  <mrow intent="point-at($a,$b)">
                      
                      <mi>P</mi>
                      
@@ -3412,11 +3415,11 @@
                         
                         <mo>(</mo>
                         
-                        <mi>a</mi>
+                        <mi arg="a">a</mi>
                         
                         <mo>,</mo>
                         
-                        <mi>b</mi>
+                        <mi arg="b">b</mi>
                         
                         <mo>)</mo>
                         </mrow>
@@ -3432,11 +3435,11 @@
                         
                         <mo>(</mo>
                         
-                        <mi>a</mi>
+                        <mi arg="a">a</mi>
                         
                         <mo>,</mo>
                         
-                        <mi>b</mi>
+                        <mi arg="b">b</mi>
                         
                         <mo>)</mo>
                         </mrow>
@@ -3451,32 +3454,32 @@
             <td>mrow { ... }</td>
             <td>
                <pre>
-&lt;mrow intent="set"&gt;
+&lt;mrow intent="set($a,$b,$dots)"&gt;
  &lt;mo&gt;{&lt;/mo&gt;  
- &lt;mi&gt;a&lt;/mi&gt;
+ &lt;mi arg="a"&gt;a&lt;/mi&gt;
  &lt;mo&gt;,&lt;/mo&gt;
- &lt;mi&gt;b&lt;/mi&gt;
+ &lt;mi arg="b"&gt;b&lt;/mi&gt;
  &lt;mo&gt;,&lt;/mo&gt;
- &lt;mo&gt;⋯&lt;/mo&gt;
+ &lt;mo arg="dots"&gt;⋯&lt;/mo&gt;
  &lt;mo&gt;}&lt;/mo&gt;
 &lt;/mrow&gt;
 </pre>
             </td>
             <td><math display="block">
                   
-                  <mrow intent="set">
+                  <mrow intent="set($a,$b,$dots)">
                      
                      <mo>{</mo>  
                      
-                     <mi>a</mi>
+                     <mi arg="a">a</mi>
                      
                      <mo>,</mo>
                      
-                     <mi>b</mi>
+                     <mi arg="b">b</mi>
                      
                      <mo>,</mo>
                      
-                     <mo>⋯</mo>
+                     <mo arg="dots">⋯</mo>
                      
                      <mo>}</mo>
                      </mrow>
@@ -3487,15 +3490,15 @@
                      
                      <mo>{</mo>  
                      
-                     <mi>a</mi>
+                     <mi arg="a">a</mi>
                      
                      <mo>,</mo>
                      
-                     <mi>b</mi>
+                     <mi arg="b">b</mi>
                      
                      <mo>,</mo>
                      
-                     <mo>⋯</mo>
+                     <mo arg="dots">⋯</mo>
                      
                      <mo>}</mo>
                      </mrow>
@@ -3651,23 +3654,23 @@
             <td>msqrt</td>
             <td>
                <pre>
-&lt;msqrt intent="square-root"&gt;
- &lt;mi&gt;a&lt;/mi&gt;
+&lt;msqrt intent="square-root($a)"&gt;
+ &lt;mi arg="a"&gt;a&lt;/mi&gt;
 &lt;/msqrt&gt;
 </pre>
             </td>
             <td><math display="block">
                   
-                  <msqrt intent="square-root">
+                  <msqrt intent="square-root($a)">
                      
-                     <mi>a</mi>
+                     <mi arg="a">a</mi>
                      </msqrt>
                   </math></td>
             <td><math display="block">
                   
                   <msqrt>
                      
-                     <mi>a</mi>
+                     <mi arg="a">a</mi>
                      </msqrt>
                   </math></td>
             <td>square-root of $1<br>principle root of $1</td>
@@ -3679,28 +3682,28 @@
             <td>mroot</td>
             <td>
                <pre>
-&lt;mroot intent="root"&gt;
- &lt;mi&gt;a&lt;/mi&gt;
- &lt;mn&gt;3&lt;/mn&gt;
+&lt;mroot intent="root($a,$n)"&gt;
+ &lt;mi arg="a"&gt;a&lt;/mi&gt;
+ &lt;mn arg="n"&gt;3&lt;/mn&gt;
 &lt;/mroot&gt;
 </pre>
             </td>
             <td><math display="block">
                   
-                  <mroot intent="root">
+                  <mroot intent="root($a,$n)">
                      
-                     <mi>a</mi>
+                     <mi arg="a">a</mi>
                      
-                     <mn>3</mn>
+                     <mn arg="n">3</mn>
                      </mroot>
                   </math></td>
             <td><math display="block">
                   
                   <mroot>
                      
-                     <mi>a</mi>
+                     <mi arg="a">a</mi>
                      
-                     <mn>3</mn>
+                     <mn arg="n">3</mn>
                      </mroot>
                   </math></td>
             <td></td>
@@ -3773,25 +3776,29 @@
             <td>mrow △ $1$2$3 </td>
             <td>
                <pre>
-&lt;mrow intent="triangle"&gt;
+&lt;mrow intent="triangle($a,$b,$c)"&gt;
  &lt;mo&gt;△&lt;/mo&gt;   
  &lt;mrow&gt;
-  &lt;mi&gt;a&lt;/mi&gt;&lt;mi&gt;b&lt;/mi&gt;&lt;mi&gt;c&lt;/mi&gt;
+  &lt;mi arg="a"&gt;a&lt;/mi&gt;
+  &lt;mi arg="b"&gt;b&lt;/mi&gt;
+  &lt;mi arg="c"&gt;c&lt;/mi&gt;
  &lt;/mrow&gt;
 &lt;/mrow&gt;
 </pre>
             </td>
             <td><math display="block">
                   
-                  <mrow intent="triangle">
+                  <mrow intent="triangle($a,$b,$c)">
                      
                      <mo>△</mo>   
                      
                      <mrow>
                         
-                        <mi>a</mi>
-                        <mi>b</mi>
-                        <mi>c</mi>
+                        <mi arg="a">a</mi>
+                        
+                        <mi arg="b">b</mi>
+                        
+                        <mi arg="c">c</mi>
                         </mrow>
                      </mrow>
                   </math></td>
@@ -3803,9 +3810,11 @@
                      
                      <mrow>
                         
-                        <mi>a</mi>
-                        <mi>b</mi>
-                        <mi>c</mi>
+                        <mi arg="a">a</mi>
+                        
+                        <mi arg="b">b</mi>
+                        
+                        <mi arg="c">c</mi>
                         </mrow>
                      </mrow>
                   </math></td>
@@ -3964,26 +3973,26 @@
             <td>mrow ⟨$1, $2⟩</td>
             <td>
                <pre>
-&lt;mrow intent="ordered-pair"&gt;
+&lt;mrow intent="ordered-pair($a,$b)"&gt;
  &lt;mo&gt;⟨&lt;/mo&gt;  
- &lt;mi&gt;a&lt;/mi&gt;
+ &lt;mi arg="a"&gt;a&lt;/mi&gt;
  &lt;mo&gt;,&lt;/mo&gt;
- &lt;mi&gt;b&lt;/mi&gt;
+ &lt;mi arg="b"&gt;b&lt;/mi&gt;
  &lt;mo&gt;⟩&lt;/mo&gt;
 &lt;/mrow&gt;
 </pre>
             </td>
             <td><math display="block">
                   
-                  <mrow intent="ordered-pair">
+                  <mrow intent="ordered-pair($a,$b)">
                      
                      <mo>⟨</mo>  
                      
-                     <mi>a</mi>
+                     <mi arg="a">a</mi>
                      
                      <mo>,</mo>
                      
-                     <mi>b</mi>
+                     <mi arg="b">b</mi>
                      
                      <mo>⟩</mo>
                      </mrow>
@@ -3994,11 +4003,11 @@
                      
                      <mo>⟨</mo>  
                      
-                     <mi>a</mi>
+                     <mi arg="a">a</mi>
                      
                      <mo>,</mo>
                      
-                     <mi>b</mi>
+                     <mi arg="b">b</mi>
                      
                      <mo>⟩</mo>
                      </mrow>
@@ -4012,26 +4021,26 @@
             <td>mrow ($1, $2)</td>
             <td>
                <pre>
-&lt;mrow intent="ordered-pair"&gt;
+&lt;mrow intent="ordered-pair($a,$b)"&gt;
  &lt;mo&gt;(&lt;/mo&gt;  
- &lt;mi&gt;a&lt;/mi&gt;
+ &lt;mi arg="a"&gt;a&lt;/mi&gt;
  &lt;mo&gt;,&lt;/mo&gt;
- &lt;mi&gt;b&lt;/mi&gt;
+ &lt;mi arg="b"&gt;b&lt;/mi&gt;
  &lt;mo&gt;)&lt;/mo&gt;
 &lt;/mrow&gt;
 </pre>
             </td>
             <td><math display="block">
                   
-                  <mrow intent="ordered-pair">
+                  <mrow intent="ordered-pair($a,$b)">
                      
                      <mo>(</mo>  
                      
-                     <mi>a</mi>
+                     <mi arg="a">a</mi>
                      
                      <mo>,</mo>
                      
-                     <mi>b</mi>
+                     <mi arg="b">b</mi>
                      
                      <mo>)</mo>
                      </mrow>
@@ -4042,11 +4051,11 @@
                      
                      <mo>(</mo>  
                      
-                     <mi>a</mi>
+                     <mi arg="a">a</mi>
                      
                      <mo>,</mo>
                      
-                     <mi>b</mi>
+                     <mi arg="b">b</mi>
                      
                      <mo>)</mo>
                      </mrow>
@@ -4060,26 +4069,26 @@
             <td>mrow ($1 ; $2)</td>
             <td>
                <pre>
-&lt;mrow intent="ordered-pair"&gt;
+&lt;mrow intent="ordered-pair($a,$b)"&gt;
  &lt;mo&gt;(&lt;/mo&gt;  
- &lt;mi&gt;a&lt;/mi&gt;
+ &lt;mi arg="a"&gt;a&lt;/mi&gt;
  &lt;mo&gt;;&lt;/mo&gt;
- &lt;mi&gt;b&lt;/mi&gt;
+ &lt;mi arg="b"&gt;b&lt;/mi&gt;
  &lt;mo&gt;)&lt;/mo&gt;
 &lt;/mrow&gt;
 </pre>
             </td>
             <td><math display="block">
                   
-                  <mrow intent="ordered-pair">
+                  <mrow intent="ordered-pair($a,$b)">
                      
                      <mo>(</mo>  
                      
-                     <mi>a</mi>
+                     <mi arg="a">a</mi>
                      
                      <mo>;</mo>
                      
-                     <mi>b</mi>
+                     <mi arg="b">b</mi>
                      
                      <mo>)</mo>
                      </mrow>
@@ -4090,11 +4099,11 @@
                      
                      <mo>(</mo>  
                      
-                     <mi>a</mi>
+                     <mi arg="a">a</mi>
                      
                      <mo>;</mo>
                      
-                     <mi>b</mi>
+                     <mi arg="b">b</mi>
                      
                      <mo>)</mo>
                      </mrow>
@@ -4320,26 +4329,26 @@
             <td>mrow ($1,$2)</td>
             <td>
                <pre>
-&lt;mrow intent="open-interval"&gt;
+&lt;mrow intent="open-interval($a,$b)"&gt;
  &lt;mo&gt;(&lt;/mo&gt;  
- &lt;mi&gt;a&lt;/mi&gt;
+ &lt;mi arg="a"&gt;a&lt;/mi&gt;
  &lt;mo&gt;,&lt;/mo&gt;
- &lt;mi&gt;b&lt;/mi&gt;
+ &lt;mi arg="b"&gt;b&lt;/mi&gt;
  &lt;mo&gt;)&lt;/mo&gt;
 &lt;/mrow&gt;
 </pre>
             </td>
             <td><math display="block">
                   
-                  <mrow intent="open-interval">
+                  <mrow intent="open-interval($a,$b)">
                      
                      <mo>(</mo>  
                      
-                     <mi>a</mi>
+                     <mi arg="a">a</mi>
                      
                      <mo>,</mo>
                      
-                     <mi>b</mi>
+                     <mi arg="b">b</mi>
                      
                      <mo>)</mo>
                      </mrow>
@@ -4350,11 +4359,11 @@
                      
                      <mo>(</mo>  
                      
-                     <mi>a</mi>
+                     <mi arg="a">a</mi>
                      
                      <mo>,</mo>
                      
-                     <mi>b</mi>
+                     <mi arg="b">b</mi>
                      
                      <mo>)</mo>
                      </mrow>
@@ -4368,26 +4377,26 @@
             <td>mrow ]$1, $2[</td>
             <td>
                <pre>
-&lt;mrow intent="open-interval"&gt;
+&lt;mrow intent="open-interval($a,$b)"&gt;
  &lt;mo&gt;]&lt;/mo&gt;  
- &lt;mi&gt;a&lt;/mi&gt;
+ &lt;mi arg="a"&gt;a&lt;/mi&gt;
  &lt;mo&gt;,&lt;/mo&gt;
- &lt;mi&gt;b&lt;/mi&gt;
+ &lt;mi arg="b"&gt;b&lt;/mi&gt;
  &lt;mo&gt;[&lt;/mo&gt;
 &lt;/mrow&gt;
 </pre>
             </td>
             <td><math display="block">
                   
-                  <mrow intent="open-interval">
+                  <mrow intent="open-interval($a,$b)">
                      
                      <mo>]</mo>  
                      
-                     <mi>a</mi>
+                     <mi arg="a">a</mi>
                      
                      <mo>,</mo>
                      
-                     <mi>b</mi>
+                     <mi arg="b">b</mi>
                      
                      <mo>[</mo>
                      </mrow>
@@ -4398,11 +4407,11 @@
                      
                      <mo>]</mo>  
                      
-                     <mi>a</mi>
+                     <mi arg="a">a</mi>
                      
                      <mo>,</mo>
                      
-                     <mi>b</mi>
+                     <mi arg="b">b</mi>
                      
                      <mo>[</mo>
                      </mrow>
@@ -4416,26 +4425,26 @@
             <td>mrow ($1 ; $2)</td>
             <td>
                <pre>
-&lt;mrow intent="open-interval"&gt;
+&lt;mrow intent="open-interval($a,$b)"&gt;
  &lt;mo&gt;(&lt;/mo&gt;  
- &lt;mi&gt;a&lt;/mi&gt;
+ &lt;mi arg="a"&gt;a&lt;/mi&gt;
  &lt;mo&gt;;&lt;/mo&gt;
- &lt;mi&gt;b&lt;/mi&gt;
+ &lt;mi arg="b"&gt;b&lt;/mi&gt;
  &lt;mo&gt;)&lt;/mo&gt;
 &lt;/mrow&gt;
 </pre>
             </td>
             <td><math display="block">
                   
-                  <mrow intent="open-interval">
+                  <mrow intent="open-interval($a,$b)">
                      
                      <mo>(</mo>  
                      
-                     <mi>a</mi>
+                     <mi arg="a">a</mi>
                      
                      <mo>;</mo>
                      
-                     <mi>b</mi>
+                     <mi arg="b">b</mi>
                      
                      <mo>)</mo>
                      </mrow>
@@ -4446,11 +4455,11 @@
                      
                      <mo>(</mo>  
                      
-                     <mi>a</mi>
+                     <mi arg="a">a</mi>
                      
                      <mo>;</mo>
                      
-                     <mi>b</mi>
+                     <mi arg="b">b</mi>
                      
                      <mo>)</mo>
                      </mrow>
@@ -4464,26 +4473,26 @@
             <td>mrow [$1, $2]</td>
             <td>
                <pre>
-&lt;mrow intent="closed-interval"&gt;
+&lt;mrow intent="closed-interval($a,$b)"&gt;
  &lt;mo&gt;[&lt;/mo&gt;  
- &lt;mi&gt;a&lt;/mi&gt;
+ &lt;mi arg="a"&gt;a&lt;/mi&gt;
  &lt;mo&gt;,&lt;/mo&gt;
- &lt;mi&gt;b&lt;/mi&gt;
+ &lt;mi arg="b"&gt;b&lt;/mi&gt;
  &lt;mo&gt;]&lt;/mo&gt;
 &lt;/mrow&gt;
 </pre>
             </td>
             <td><math display="block">
                   
-                  <mrow intent="closed-interval">
+                  <mrow intent="closed-interval($a,$b)">
                      
                      <mo>[</mo>  
                      
-                     <mi>a</mi>
+                     <mi arg="a">a</mi>
                      
                      <mo>,</mo>
                      
-                     <mi>b</mi>
+                     <mi arg="b">b</mi>
                      
                      <mo>]</mo>
                      </mrow>
@@ -4494,11 +4503,11 @@
                      
                      <mo>[</mo>  
                      
-                     <mi>a</mi>
+                     <mi arg="a">a</mi>
                      
                      <mo>,</mo>
                      
-                     <mi>b</mi>
+                     <mi arg="b">b</mi>
                      
                      <mo>]</mo>
                      </mrow>
@@ -4512,26 +4521,26 @@
             <td>mrow [$1 ; $2]</td>
             <td>
                <pre>
-&lt;mrow intent="closed-interval"&gt;
+&lt;mrow intent="closed-interval($a,$b)"&gt;
  &lt;mo&gt;[&lt;/mo&gt;  
- &lt;mi&gt;a&lt;/mi&gt;
+ &lt;mi arg="a"&gt;a&lt;/mi&gt;
  &lt;mo&gt;;&lt;/mo&gt;
- &lt;mi&gt;b&lt;/mi&gt;
+ &lt;mi arg="b"&gt;b&lt;/mi&gt;
  &lt;mo&gt;]&lt;/mo&gt;
 &lt;/mrow&gt;
 </pre>
             </td>
             <td><math display="block">
                   
-                  <mrow intent="closed-interval">
+                  <mrow intent="closed-interval($a,$b)">
                      
                      <mo>[</mo>  
                      
-                     <mi>a</mi>
+                     <mi arg="a">a</mi>
                      
                      <mo>;</mo>
                      
-                     <mi>b</mi>
+                     <mi arg="b">b</mi>
                      
                      <mo>]</mo>
                      </mrow>
@@ -4542,11 +4551,11 @@
                      
                      <mo>[</mo>  
                      
-                     <mi>a</mi>
+                     <mi arg="a">a</mi>
                      
                      <mo>;</mo>
                      
-                     <mi>b</mi>
+                     <mi arg="b">b</mi>
                      
                      <mo>]</mo>
                      </mrow>
@@ -4560,26 +4569,26 @@
             <td>mrow ($1, $2]</td>
             <td>
                <pre>
-&lt;mrow intent="open-closed-interval"&gt;
+&lt;mrow intent="open-closed-interval($a,$b)"&gt;
  &lt;mo&gt;(&lt;/mo&gt;  
- &lt;mi&gt;a&lt;/mi&gt;
+ &lt;mi arg="a"&gt;a&lt;/mi&gt;
  &lt;mo&gt;,&lt;/mo&gt;
- &lt;mi&gt;b&lt;/mi&gt;
+ &lt;mi arg="b"&gt;b&lt;/mi&gt;
  &lt;mo&gt;]&lt;/mo&gt;
 &lt;/mrow&gt;
 </pre>
             </td>
             <td><math display="block">
                   
-                  <mrow intent="open-closed-interval">
+                  <mrow intent="open-closed-interval($a,$b)">
                      
                      <mo>(</mo>  
                      
-                     <mi>a</mi>
+                     <mi arg="a">a</mi>
                      
                      <mo>,</mo>
                      
-                     <mi>b</mi>
+                     <mi arg="b">b</mi>
                      
                      <mo>]</mo>
                      </mrow>
@@ -4590,11 +4599,11 @@
                      
                      <mo>(</mo>  
                      
-                     <mi>a</mi>
+                     <mi arg="a">a</mi>
                      
                      <mo>,</mo>
                      
-                     <mi>b</mi>
+                     <mi arg="b">b</mi>
                      
                      <mo>]</mo>
                      </mrow>
@@ -4608,26 +4617,26 @@
             <td>mrow ]$1, $2]</td>
             <td>
                <pre>
-&lt;mrow intent="open-closed-interval"&gt;
+&lt;mrow intent="open-closed-interval($a,$b)"&gt;
  &lt;mo&gt;]&lt;/mo&gt;  
- &lt;mi&gt;a&lt;/mi&gt;
+ &lt;mi arg="a"&gt;a&lt;/mi&gt;
  &lt;mo&gt;,&lt;/mo&gt;
- &lt;mi&gt;b&lt;/mi&gt;
+ &lt;mi arg="b"&gt;b&lt;/mi&gt;
  &lt;mo&gt;]&lt;/mo&gt;
 &lt;/mrow&gt;
 </pre>
             </td>
             <td><math display="block">
                   
-                  <mrow intent="open-closed-interval">
+                  <mrow intent="open-closed-interval($a,$b)">
                      
                      <mo>]</mo>  
                      
-                     <mi>a</mi>
+                     <mi arg="a">a</mi>
                      
                      <mo>,</mo>
                      
-                     <mi>b</mi>
+                     <mi arg="b">b</mi>
                      
                      <mo>]</mo>
                      </mrow>
@@ -4638,11 +4647,11 @@
                      
                      <mo>]</mo>  
                      
-                     <mi>a</mi>
+                     <mi arg="a">a</mi>
                      
                      <mo>,</mo>
                      
-                     <mi>b</mi>
+                     <mi arg="b">b</mi>
                      
                      <mo>]</mo>
                      </mrow>
@@ -4656,26 +4665,26 @@
             <td>mrow ($1 ; $2]</td>
             <td>
                <pre>
-&lt;mrow intent="open-closed-interval"&gt;
+&lt;mrow intent="open-closed-interval($a,$b)"&gt;
  &lt;mo&gt;(&lt;/mo&gt;  
- &lt;mi&gt;a&lt;/mi&gt;
+ &lt;mi arg="a"&gt;a&lt;/mi&gt;
  &lt;mo&gt;;&lt;/mo&gt;
- &lt;mi&gt;b&lt;/mi&gt;
+ &lt;mi arg="b"&gt;b&lt;/mi&gt;
  &lt;mo&gt;]&lt;/mo&gt;
 &lt;/mrow&gt;
 </pre>
             </td>
             <td><math display="block">
                   
-                  <mrow intent="open-closed-interval">
+                  <mrow intent="open-closed-interval($a,$b)">
                      
                      <mo>(</mo>  
                      
-                     <mi>a</mi>
+                     <mi arg="a">a</mi>
                      
                      <mo>;</mo>
                      
-                     <mi>b</mi>
+                     <mi arg="b">b</mi>
                      
                      <mo>]</mo>
                      </mrow>
@@ -4686,11 +4695,11 @@
                      
                      <mo>(</mo>  
                      
-                     <mi>a</mi>
+                     <mi arg="a">a</mi>
                      
                      <mo>;</mo>
                      
-                     <mi>b</mi>
+                     <mi arg="b">b</mi>
                      
                      <mo>]</mo>
                      </mrow>
@@ -4704,26 +4713,26 @@
             <td>mrow [$1, $2)</td>
             <td>
                <pre>
-&lt;mrow intent="closed-open-interval"&gt;
+&lt;mrow intent="closed-open-interval($a,$b)"&gt;
  &lt;mo&gt;[&lt;/mo&gt;  
- &lt;mi&gt;a&lt;/mi&gt;
+ &lt;mi arg="a"&gt;a&lt;/mi&gt;
  &lt;mo&gt;,&lt;/mo&gt;
- &lt;mi&gt;b&lt;/mi&gt;
+ &lt;mi arg="b"&gt;b&lt;/mi&gt;
  &lt;mo&gt;)&lt;/mo&gt;
 &lt;/mrow&gt;
 </pre>
             </td>
             <td><math display="block">
                   
-                  <mrow intent="closed-open-interval">
+                  <mrow intent="closed-open-interval($a,$b)">
                      
                      <mo>[</mo>  
                      
-                     <mi>a</mi>
+                     <mi arg="a">a</mi>
                      
                      <mo>,</mo>
                      
-                     <mi>b</mi>
+                     <mi arg="b">b</mi>
                      
                      <mo>)</mo>
                      </mrow>
@@ -4734,11 +4743,11 @@
                      
                      <mo>[</mo>  
                      
-                     <mi>a</mi>
+                     <mi arg="a">a</mi>
                      
                      <mo>,</mo>
                      
-                     <mi>b</mi>
+                     <mi arg="b">b</mi>
                      
                      <mo>)</mo>
                      </mrow>
@@ -4752,26 +4761,26 @@
             <td>mrow [$1, $2[</td>
             <td>
                <pre>
-&lt;mrow intent="closed-open-interval"&gt;
+&lt;mrow intent="closed-open-interval($a,$b)"&gt;
  &lt;mo&gt;[&lt;/mo&gt;  
- &lt;mi&gt;a&lt;/mi&gt;
+ &lt;mi arg="a"&gt;a&lt;/mi&gt;
  &lt;mo&gt;,&lt;/mo&gt;
- &lt;mi&gt;b&lt;/mi&gt;
+ &lt;mi arg="b"&gt;b&lt;/mi&gt;
  &lt;mo&gt;[&lt;/mo&gt;
 &lt;/mrow&gt;
 </pre>
             </td>
             <td><math display="block">
                   
-                  <mrow intent="closed-open-interval">
+                  <mrow intent="closed-open-interval($a,$b)">
                      
                      <mo>[</mo>  
                      
-                     <mi>a</mi>
+                     <mi arg="a">a</mi>
                      
                      <mo>,</mo>
                      
-                     <mi>b</mi>
+                     <mi arg="b">b</mi>
                      
                      <mo>[</mo>
                      </mrow>
@@ -4782,11 +4791,11 @@
                      
                      <mo>[</mo>  
                      
-                     <mi>a</mi>
+                     <mi arg="a">a</mi>
                      
                      <mo>,</mo>
                      
-                     <mi>b</mi>
+                     <mi arg="b">b</mi>
                      
                      <mo>[</mo>
                      </mrow>
@@ -4800,26 +4809,26 @@
             <td>mrow [$1 ; $2)</td>
             <td>
                <pre>
-&lt;mrow intent="closed-open-interval"&gt;
+&lt;mrow intent="closed-open-interval($a,$b)"&gt;
  &lt;mo&gt;[&lt;/mo&gt;  
- &lt;mi&gt;a&lt;/mi&gt;
+ &lt;mi arg="a"&gt;a&lt;/mi&gt;
  &lt;mo&gt;;&lt;/mo&gt;
- &lt;mi&gt;b&lt;/mi&gt;
+ &lt;mi arg="b"&gt;b&lt;/mi&gt;
  &lt;mo&gt;)&lt;/mo&gt;
 &lt;/mrow&gt;
 </pre>
             </td>
             <td><math display="block">
                   
-                  <mrow intent="closed-open-interval">
+                  <mrow intent="closed-open-interval($a,$b)">
                      
                      <mo>[</mo>  
                      
-                     <mi>a</mi>
+                     <mi arg="a">a</mi>
                      
                      <mo>;</mo>
                      
-                     <mi>b</mi>
+                     <mi arg="b">b</mi>
                      
                      <mo>)</mo>
                      </mrow>
@@ -4830,11 +4839,11 @@
                      
                      <mo>[</mo>  
                      
-                     <mi>a</mi>
+                     <mi arg="a">a</mi>
                      
                      <mo>;</mo>
                      
-                     <mi>b</mi>
+                     <mi arg="b">b</mi>
                      
                      <mo>)</mo>
                      </mrow>
@@ -4848,25 +4857,28 @@
             <td>msub $1 $2</td>
             <td>
                <pre>
-&lt;msub intent="particular-value-of "&gt;
- &lt;mi&gt;A&lt;/mi&gt;&lt;mi&gt;B&lt;/mi&gt;
+&lt;msub intent="particular-value-of ($A,$B)"&gt;
+  &lt;mi arg="A"&gt;A&lt;/mi&gt;
+  &lt;mi arg="B"&gt;B&lt;/mi&gt;
 &lt;/msub&gt;
 </pre>
             </td>
             <td><math display="block">
                   
-                  <msub intent="particular-value-of ">
+                  <msub intent="particular-value-of ($A,$B)">
                      
-                     <mi>A</mi>
-                     <mi>B</mi>
+                     <mi arg="A">A</mi>
+                     
+                     <mi arg="B">B</mi>
                      </msub>
                   </math></td>
             <td><math display="block">
                   
                   <msub>
                      
-                     <mi>A</mi>
-                     <mi>B</mi>
+                     <mi arg="A">A</mi>
+                     
+                     <mi arg="B">B</mi>
                      </msub>
                   </math></td>
             <td>$1 $2<br>$1 sub $2</td>
@@ -6496,25 +6508,28 @@
             <td>msub $1 $2</td>
             <td>
                <pre>
-&lt;msub intent="compound-name"&gt;
- &lt;mi&gt;A&lt;/mi&gt;&lt;mi&gt;B&lt;/mi&gt;
+&lt;msub intent="compound-name($A,$B)"&gt;
+  &lt;mi arg="A"&gt;A&lt;/mi&gt;
+  &lt;mi arg="B"&gt;B&lt;/mi&gt;
 &lt;/msub&gt;
 </pre>
             </td>
             <td><math display="block">
                   
-                  <msub intent="compound-name">
+                  <msub intent="compound-name($A,$B)">
                      
-                     <mi>A</mi>
-                     <mi>B</mi>
+                     <mi arg="A">A</mi>
+                     
+                     <mi arg="B">B</mi>
                      </msub>
                   </math></td>
             <td><math display="block">
                   
                   <msub>
                      
-                     <mi>A</mi>
-                     <mi>B</mi>
+                     <mi arg="A">A</mi>
+                     
+                     <mi arg="B">B</mi>
                      </msub>
                   </math></td>
             <td>$1 $2<br>$1 $2 $3</td>
@@ -6526,25 +6541,28 @@
             <td>msup $1 $2</td>
             <td>
                <pre>
-&lt;msup intent="compound-name"&gt;
- &lt;mi&gt;A&lt;/mi&gt;&lt;mi&gt;B&lt;/mi&gt;
+&lt;msup intent="compound-name($A,$B)"&gt;
+  &lt;mi arg="A"&gt;A&lt;/mi&gt;
+  &lt;mi arg="B"&gt;B&lt;/mi&gt;
 &lt;/msup&gt;
 </pre>
             </td>
             <td><math display="block">
                   
-                  <msup intent="compound-name">
+                  <msup intent="compound-name($A,$B)">
                      
-                     <mi>A</mi>
-                     <mi>B</mi>
+                     <mi arg="A">A</mi>
+                     
+                     <mi arg="B">B</mi>
                      </msup>
                   </math></td>
             <td><math display="block">
                   
                   <msup>
                      
-                     <mi>A</mi>
-                     <mi>B</mi>
+                     <mi arg="A">A</mi>
+                     
+                     <mi arg="B">B</mi>
                      </msup>
                   </math></td>
             <td>$1 $2<br>$1 $2 $3</td>
@@ -6556,27 +6574,33 @@
             <td>msubsup $1 $2 $3</td>
             <td>
                <pre>
-&lt;msubsup intent="compound-name"&gt;
- &lt;mi&gt;X&lt;/mi&gt;&lt;mi&gt;a&lt;/mi&gt;&lt;mi&gt;b&lt;/mi&gt;
+&lt;msubsup intent="compound-name($X,$a,$b)"&gt;
+  &lt;mi arg="X"&gt;X&lt;/mi&gt;
+  &lt;mi arg="a"&gt;a&lt;/mi&gt;
+  &lt;mi arg="a"&gt;b&lt;/mi&gt;
 &lt;/msubsup&gt;
 </pre>
             </td>
             <td><math display="block">
                   
-                  <msubsup intent="compound-name">
+                  <msubsup intent="compound-name($X,$a,$b)">
                      
-                     <mi>X</mi>
-                     <mi>a</mi>
-                     <mi>b</mi>
+                     <mi arg="X">X</mi>
+                     
+                     <mi arg="a">a</mi>
+                     
+                     <mi arg="a">b</mi>
                      </msubsup>
                   </math></td>
             <td><math display="block">
                   
                   <msubsup>
                      
-                     <mi>X</mi>
-                     <mi>a</mi>
-                     <mi>b</mi>
+                     <mi arg="X">X</mi>
+                     
+                     <mi arg="a">a</mi>
+                     
+                     <mi arg="a">b</mi>
                      </msubsup>
                   </math></td>
             <td>$1 $2<br>$1 $2 $3</td>
@@ -6588,25 +6612,28 @@
             <td>msub $1 $2</td>
             <td>
                <pre>
-&lt;msub intent="indexed-argument"&gt;
- &lt;mi&gt;A&lt;/mi&gt;&lt;mi&gt;B&lt;/mi&gt;
+&lt;msub intent="indexed-argument($A,$B)"&gt;
+  &lt;mi arg="A"&gt;A&lt;/mi&gt;
+  &lt;mi arg="B"&gt;B&lt;/mi&gt;
 &lt;/msub&gt;
 </pre>
             </td>
             <td><math display="block">
                   
-                  <msub intent="indexed-argument">
+                  <msub intent="indexed-argument($A,$B)">
                      
-                     <mi>A</mi>
-                     <mi>B</mi>
+                     <mi arg="A">A</mi>
+                     
+                     <mi arg="B">B</mi>
                      </msub>
                   </math></td>
             <td><math display="block">
                   
                   <msub>
                      
-                     <mi>A</mi>
-                     <mi>B</mi>
+                     <mi arg="A">A</mi>
+                     
+                     <mi arg="B">B</mi>
                      </msub>
                   </math></td>
             <td>$1 sub $2</td>
@@ -6618,25 +6645,28 @@
             <td>msub $1 $2</td>
             <td>
                <pre>
-&lt;msub intent="base"&gt;
- &lt;mi&gt;A&lt;/mi&gt;&lt;mi&gt;B&lt;/mi&gt;
+&lt;msub intent="base($A,$B)"&gt;
+  &lt;mi arg="A"&gt;A&lt;/mi&gt;
+  &lt;mi arg="B"&gt;B&lt;/mi&gt;
 &lt;/msub&gt;
 </pre>
             </td>
             <td><math display="block">
                   
-                  <msub intent="base">
+                  <msub intent="base($A,$B)">
                      
-                     <mi>A</mi>
-                     <mi>B</mi>
+                     <mi arg="A">A</mi>
+                     
+                     <mi arg="B">B</mi>
                      </msub>
                   </math></td>
             <td><math display="block">
                   
                   <msub>
                      
-                     <mi>A</mi>
-                     <mi>B</mi>
+                     <mi arg="A">A</mi>
+                     
+                     <mi arg="B">B</mi>
                      </msub>
                   </math></td>
             <td>$1 base $2</td>
@@ -7293,17 +7323,17 @@
             <td>msup $1 +</td>
             <td>
                <pre>
-&lt;msup intent="direction-of-approach"&gt;
- &lt;mi&gt;a&lt;/mi&gt;
+&lt;msup intent="direction-of-approach($a)"&gt;
+ &lt;mi arg="a"&gt;a&lt;/mi&gt;
  &lt;mo&gt;+&lt;/mo&gt;  
 &lt;/msup&gt;
 </pre>
             </td>
             <td><math display="block">
                   
-                  <msup intent="direction-of-approach">
+                  <msup intent="direction-of-approach($a)">
                      
-                     <mi>a</mi>
+                     <mi arg="a">a</mi>
                      
                      <mo>+</mo>  
                      </msup>
@@ -7312,7 +7342,7 @@
                   
                   <msup>
                      
-                     <mi>a</mi>
+                     <mi arg="a">a</mi>
                      
                      <mo>+</mo>  
                      </msup>
@@ -7326,17 +7356,17 @@
             <td>msup $1 -</td>
             <td>
                <pre>
-&lt;msup intent="direction-of-approach"&gt;
- &lt;mi&gt;a&lt;/mi&gt;
+&lt;msup intent="direction-of-approach($a)"&gt;
+ &lt;mi arg="a"&gt;a&lt;/mi&gt;
  &lt;mo&gt;-&lt;/mo&gt;  
 &lt;/msup&gt;
 </pre>
             </td>
             <td><math display="block">
                   
-                  <msup intent="direction-of-approach">
+                  <msup intent="direction-of-approach($a)">
                      
-                     <mi>a</mi>
+                     <mi arg="a">a</mi>
                      
                      <mo>-</mo>  
                      </msup>
@@ -7345,7 +7375,7 @@
                   
                   <msup>
                      
-                     <mi>a</mi>
+                     <mi arg="a">a</mi>
                      
                      <mo>-</mo>  
                      </msup>
@@ -7417,17 +7447,17 @@
             <td>mover $1 →</td>
             <td>
                <pre>
-&lt;mover intent="ray"&gt;
- &lt;mi&gt;a&lt;/mi&gt;
+&lt;mover intent="ray($a)"&gt;
+ &lt;mi arg="a"&gt;a&lt;/mi&gt;
  &lt;mo&gt;→&lt;/mo&gt;  
 &lt;/mover&gt;
 </pre>
             </td>
             <td><math display="block">
                   
-                  <mover intent="ray">
+                  <mover intent="ray($a)">
                      
-                     <mi>a</mi>
+                     <mi arg="a">a</mi>
                      
                      <mo>→</mo>  
                      </mover>
@@ -7436,7 +7466,7 @@
                   
                   <mover>
                      
-                     <mi>a</mi>
+                     <mi arg="a">a</mi>
                      
                      <mo>→</mo>  
                      </mover>
@@ -7508,28 +7538,28 @@
             <td>mover $1 $2</td>
             <td>
                <pre>
-&lt;mover intent="qualified-operator"&gt;
- &lt;mi&gt;a&lt;/mi&gt;
- &lt;mi&gt;b&lt;/mi&gt;
+&lt;mover intent="qualified-operator($a,$b)"&gt;
+ &lt;mi arg="a"&gt;a&lt;/mi&gt;
+ &lt;mi arg="b"&gt;b&lt;/mi&gt;
 &lt;/mover&gt;
 </pre>
             </td>
             <td><math display="block">
                   
-                  <mover intent="qualified-operator">
+                  <mover intent="qualified-operator($a,$b)">
                      
-                     <mi>a</mi>
+                     <mi arg="a">a</mi>
                      
-                     <mi>b</mi>
+                     <mi arg="b">b</mi>
                      </mover>
                   </math></td>
             <td><math display="block">
                   
                   <mover>
                      
-                     <mi>a</mi>
+                     <mi arg="a">a</mi>
                      
-                     <mi>b</mi>
+                     <mi arg="b">b</mi>
                      </mover>
                   </math></td>
             <td>by $2, $1</td>
@@ -7637,19 +7667,19 @@
             <td>mover  ⌒</td>
             <td>
                <pre>
-&lt;mover intent="arc"&gt;
- &lt;mrow&gt;&lt;mi&gt;a&lt;/mi&gt;&lt;mi&gt;b&lt;/mi&gt;&lt;/mrow&gt;
+&lt;mover intent="arc($a,$b)"&gt;
+ &lt;mrow&gt;&lt;mi arg="a"&gt;a&lt;/mi&gt;&lt;mi arg="b"&gt;b&lt;/mi&gt;&lt;/mrow&gt;
  &lt;mo&gt;⌒&lt;/mo&gt;  
 &lt;/mover&gt;
 </pre>
             </td>
             <td><math display="block">
                   
-                  <mover intent="arc">
+                  <mover intent="arc($a,$b)">
                      
                      <mrow>
-                        <mi>a</mi>
-                        <mi>b</mi>
+                        <mi arg="a">a</mi>
+                        <mi arg="b">b</mi>
                      </mrow>
                      
                      <mo>⌒</mo>  
@@ -7660,8 +7690,8 @@
                   <mover>
                      
                      <mrow>
-                        <mi>a</mi>
-                        <mi>b</mi>
+                        <mi arg="a">a</mi>
+                        <mi arg="b">b</mi>
                      </mrow>
                      
                      <mo>⌒</mo>  
@@ -7827,19 +7857,19 @@
             <td>mover ↔</td>
             <td>
                <pre>
-&lt;mover intent="line"&gt;
- &lt;mrow&gt;&lt;mi&gt;a&lt;/mi&gt;&lt;mi&gt;b&lt;/mi&gt;&lt;/mrow&gt;
+&lt;mover intent="line($a,$b)"&gt;
+ &lt;mrow&gt;&lt;mi arg="a"&gt;a&lt;/mi&gt;&lt;mi arg="b"&gt;b&lt;/mi&gt;&lt;/mrow&gt;
  &lt;mo&gt;↔&lt;/mo&gt;  
 &lt;/mover&gt;
 </pre>
             </td>
             <td><math display="block">
                   
-                  <mover intent="line">
+                  <mover intent="line($a,$b)">
                      
                      <mrow>
-                        <mi>a</mi>
-                        <mi>b</mi>
+                        <mi arg="a">a</mi>
+                        <mi arg="b">b</mi>
                      </mrow>
                      
                      <mo>↔</mo>  
@@ -7850,8 +7880,8 @@
                   <mover>
                      
                      <mrow>
-                        <mi>a</mi>
-                        <mi>b</mi>
+                        <mi arg="a">a</mi>
+                        <mi arg="b">b</mi>
                      </mrow>
                      
                      <mo>↔</mo>  
@@ -8252,17 +8282,17 @@
             <td>msup $1 *</td>
             <td>
                <pre>
-&lt;msup intent="conjugate"&gt;
- &lt;mi&gt;a&lt;/mi&gt;
+&lt;msup intent="conjugate($a)"&gt;
+ &lt;mi arg="a"&gt;a&lt;/mi&gt;
  &lt;mo&gt;*&lt;/mo&gt;  
 &lt;/msup&gt;
 </pre>
             </td>
             <td><math display="block">
                   
-                  <msup intent="conjugate">
+                  <msup intent="conjugate($a)">
                      
-                     <mi>a</mi>
+                     <mi arg="a">a</mi>
                      
                      <mo>*</mo>  
                      </msup>
@@ -8271,7 +8301,7 @@
                   
                   <msup>
                      
-                     <mi>a</mi>
+                     <mi arg="a">a</mi>
                      
                      <mo>*</mo>  
                      </msup>
@@ -8376,17 +8406,17 @@
             <td>mo !</td>
             <td>
                <pre>
-&lt;mrow intent="factorial"&gt;
- &lt;mi&gt;a&lt;/mi&gt;
+&lt;mrow intent="factorial@postfix($a)"&gt;
+ &lt;mi arg="a"&gt;a&lt;/mi&gt;
  &lt;mo intent="factorial"&gt;!&lt;/mo&gt;
 &lt;/mrow&gt;
 </pre>
             </td>
             <td><math display="block">
                   
-                  <mrow intent="factorial">
+                  <mrow intent="factorial@postfix($a)">
                      
-                     <mi>a</mi>
+                     <mi arg="a">a</mi>
                      
                      <mo intent="factorial">!</mo>
                      </mrow>
@@ -8395,7 +8425,7 @@
                   
                   <mrow>
                      
-                     <mi>a</mi>
+                     <mi arg="a">a</mi>
                      
                      <mo>!</mo>
                      </mrow>
@@ -8447,20 +8477,20 @@
             <td>mrow | $1 |</td>
             <td>
                <pre>
-&lt;mrow intent="magnitude"&gt;
+&lt;mrow intent="magnitude($a)"&gt;
  &lt;mo&gt;|&lt;/mo&gt; 
- &lt;mi&gt;a&lt;/mi&gt;
+ &lt;mi arg="a"&gt;a&lt;/mi&gt;
  &lt;mo&gt;|&lt;/mo&gt;
 &lt;/mrow&gt;
 </pre>
             </td>
             <td><math display="block">
                   
-                  <mrow intent="magnitude">
+                  <mrow intent="magnitude($a)">
                      
                      <mo>|</mo> 
                      
-                     <mi>a</mi>
+                     <mi arg="a">a</mi>
                      
                      <mo>|</mo>
                      </mrow>
@@ -8471,7 +8501,7 @@
                      
                      <mo>|</mo> 
                      
-                     <mi>a</mi>
+                     <mi arg="a">a</mi>
                      
                      <mo>|</mo>
                      </mrow>
@@ -8485,20 +8515,20 @@
             <td>mrow ǁ $1 ǁ</td>
             <td>
                <pre>
-&lt;mrow intent="magnitude"&gt;
+&lt;mrow intent="magnitude($a)"&gt;
  &lt;mo&gt;ǁ&lt;/mo&gt; 
- &lt;mi&gt;a&lt;/mi&gt;
+ &lt;mi arg="a"&gt;a&lt;/mi&gt;
  &lt;mo&gt;ǁ&lt;/mo&gt;
 &lt;/mrow&gt;
 </pre>
             </td>
             <td><math display="block">
                   
-                  <mrow intent="magnitude">
+                  <mrow intent="magnitude($a)">
                      
                      <mo>ǁ</mo> 
                      
-                     <mi>a</mi>
+                     <mi arg="a">a</mi>
                      
                      <mo>ǁ</mo>
                      </mrow>
@@ -8509,7 +8539,7 @@
                      
                      <mo>ǁ</mo> 
                      
-                     <mi>a</mi>
+                     <mi arg="a">a</mi>
                      
                      <mo>ǁ</mo>
                      </mrow>
@@ -8523,17 +8553,17 @@
             <td>mover $1 →</td>
             <td>
                <pre>
-&lt;mover intent="vector"&gt;
- &lt;mi&gt;a&lt;/mi&gt;
+&lt;mover intent="vector($a)"&gt;
+ &lt;mi arg="a"&gt;a&lt;/mi&gt;
  &lt;mo&gt;→&lt;/mo&gt;  
 &lt;/mover&gt;
 </pre>
             </td>
             <td><math display="block">
                   
-                  <mover intent="vector">
+                  <mover intent="vector($a)">
                      
-                     <mi>a</mi>
+                     <mi arg="a">a</mi>
                      
                      <mo>→</mo>  
                      </mover>
@@ -8542,7 +8572,7 @@
                   
                   <mover>
                      
-                     <mi>a</mi>
+                     <mi arg="a">a</mi>
                      
                      <mo>→</mo>  
                      </mover>
@@ -8556,17 +8586,17 @@
             <td>mover $1 ^</td>
             <td>
                <pre>
-&lt;mover intent="unit-vector"&gt;
- &lt;mi&gt;a&lt;/mi&gt;
+&lt;mover intent="unit-vector($a)"&gt;
+ &lt;mi arg="a"&gt;a&lt;/mi&gt;
  &lt;mo&gt;^&lt;/mo&gt;  
 &lt;/mover&gt;
 </pre>
             </td>
             <td><math display="block">
                   
-                  <mover intent="unit-vector">
+                  <mover intent="unit-vector($a)">
                      
-                     <mi>a</mi>
+                     <mi arg="a">a</mi>
                      
                      <mo>^</mo>  
                      </mover>
@@ -8575,7 +8605,7 @@
                   
                   <mover>
                      
-                     <mi>a</mi>
+                     <mi arg="a">a</mi>
                      
                      <mo>^</mo>  
                      </mover>
@@ -8836,25 +8866,28 @@
             <td>msub $1 $2</td>
             <td>
                <pre>
-&lt;msub intent="matrix-order"&gt;
- &lt;mi&gt;A&lt;/mi&gt;&lt;mi&gt;B&lt;/mi&gt;
+&lt;msub intent="matrix-order($A,$B)"&gt;
+  &lt;mi arg="A"&gt;A&lt;/mi&gt;
+  &lt;mi arg="B"&gt;B&lt;/mi&gt;
 &lt;/msub&gt;
 </pre>
             </td>
             <td><math display="block">
                   
-                  <msub intent="matrix-order">
+                  <msub intent="matrix-order($A,$B)">
                      
-                     <mi>A</mi>
-                     <mi>B</mi>
+                     <mi arg="A">A</mi>
+                     
+                     <mi arg="B">B</mi>
                      </msub>
                   </math></td>
             <td><math display="block">
                   
                   <msub>
                      
-                     <mi>A</mi>
-                     <mi>B</mi>
+                     <mi arg="A">A</mi>
+                     
+                     <mi arg="B">B</mi>
                      </msub>
                   </math></td>
             <td>$1, $2<br>a $2 matrix $1<br>$1 of order $2<br><br>$1, a matrix with $2<br></td>
@@ -8866,25 +8899,28 @@
             <td>munder $1 $2</td>
             <td>
                <pre>
-&lt;munder intent="matrix-order"&gt;
- &lt;mi&gt;A&lt;/mi&gt;&lt;mi&gt;B&lt;/mi&gt;
+&lt;munder intent="matrix-order($A,$B)"&gt;
+  &lt;mi arg="A"&gt;A&lt;/mi&gt;
+  &lt;mi arg="B"&gt;B&lt;/mi&gt;
 &lt;/munder&gt;
 </pre>
             </td>
             <td><math display="block">
                   
-                  <munder intent="matrix-order">
+                  <munder intent="matrix-order($A,$B)">
                      
-                     <mi>A</mi>
-                     <mi>B</mi>
+                     <mi arg="A">A</mi>
+                     
+                     <mi arg="B">B</mi>
                      </munder>
                   </math></td>
             <td><math display="block">
                   
                   <munder>
                      
-                     <mi>A</mi>
-                     <mi>B</mi>
+                     <mi arg="A">A</mi>
+                     
+                     <mi arg="B">B</mi>
                      </munder>
                   </math></td>
             <td>$1, $2<br>a $2 matrix $1<br>$1 of order $2<br><br>$1, a matrix with $2<br></td>
@@ -8910,20 +8946,20 @@
             <td>mrow | $1 |</td>
             <td>
                <pre>
-&lt;mrow intent="determinant"&gt;
+&lt;mrow intent="determinant($a)"&gt;
  &lt;mo&gt;|&lt;/mo&gt; 
- &lt;mi&gt;a&lt;/mi&gt;
+ &lt;mi arg="a"&gt;a&lt;/mi&gt;
  &lt;mo&gt;|&lt;/mo&gt;
 &lt;/mrow&gt;
 </pre>
             </td>
             <td><math display="block">
                   
-                  <mrow intent="determinant">
+                  <mrow intent="determinant($a)">
                      
                      <mo>|</mo> 
                      
-                     <mi>a</mi>
+                     <mi arg="a">a</mi>
                      
                      <mo>|</mo>
                      </mrow>
@@ -8934,7 +8970,7 @@
                      
                      <mo>|</mo> 
                      
-                     <mi>a</mi>
+                     <mi arg="a">a</mi>
                      
                      <mo>|</mo>
                      </mrow>
@@ -9275,17 +9311,17 @@
             <td>msup $1 ′</td>
             <td>
                <pre>
-&lt;msup intent="absolute-complement"&gt;
- &lt;mi&gt;a&lt;/mi&gt;
+&lt;msup intent="absolute-complement($a)"&gt;
+ &lt;mi arg="a"&gt;a&lt;/mi&gt;
  &lt;mo&gt;′&lt;/mo&gt;  
 &lt;/msup&gt;
 </pre>
             </td>
             <td><math display="block">
                   
-                  <msup intent="absolute-complement">
+                  <msup intent="absolute-complement($a)">
                      
-                     <mi>a</mi>
+                     <mi arg="a">a</mi>
                      
                      <mo>′</mo>  
                      </msup>
@@ -9294,7 +9330,7 @@
                   
                   <msup>
                      
-                     <mi>a</mi>
+                     <mi arg="a">a</mi>
                      
                      <mo>′</mo>  
                      </msup>
@@ -9308,17 +9344,17 @@
             <td>msup $1 C</td>
             <td>
                <pre>
-&lt;msup intent="absolute-complement"&gt;
- &lt;mi&gt;a&lt;/mi&gt;
+&lt;msup intent="absolute-complement($a)"&gt;
+ &lt;mi arg="a"&gt;a&lt;/mi&gt;
  &lt;mo&gt;C&lt;/mo&gt;  
 &lt;/msup&gt;
 </pre>
             </td>
             <td><math display="block">
                   
-                  <msup intent="absolute-complement">
+                  <msup intent="absolute-complement($a)">
                      
-                     <mi>a</mi>
+                     <mi arg="a">a</mi>
                      
                      <mo>C</mo>  
                      </msup>
@@ -9327,7 +9363,7 @@
                   
                   <msup>
                      
-                     <mi>a</mi>
+                     <mi arg="a">a</mi>
                      
                      <mo>C</mo>  
                      </msup>
@@ -9341,17 +9377,17 @@
             <td>mover $1 ¯</td>
             <td>
                <pre>
-&lt;mover intent="absolute-complement"&gt;
- &lt;mi&gt;a&lt;/mi&gt;
+&lt;mover intent="absolute-complement($a)"&gt;
+ &lt;mi arg="a"&gt;a&lt;/mi&gt;
  &lt;mo&gt;¯&lt;/mo&gt;  
 &lt;/mover&gt;
 </pre>
             </td>
             <td><math display="block">
                   
-                  <mover intent="absolute-complement">
+                  <mover intent="absolute-complement($a)">
                      
-                     <mi>a</mi>
+                     <mi arg="a">a</mi>
                      
                      <mo>¯</mo>  
                      </mover>
@@ -9360,7 +9396,7 @@
                   
                   <mover>
                      
-                     <mi>a</mi>
+                     <mi arg="a">a</mi>
                      
                      <mo>¯</mo>  
                      </mover>
@@ -9791,27 +9827,33 @@
             <td>msubsup $1 $2 $3</td>
             <td>
                <pre>
-&lt;msubsup intent="operator-range"&gt;
- &lt;mi&gt;X&lt;/mi&gt;&lt;mi&gt;a&lt;/mi&gt;&lt;mi&gt;b&lt;/mi&gt;
+&lt;msubsup intent="operator-range($X,$a,$b)"&gt;
+  &lt;mi arg="X"&gt;X&lt;/mi&gt;
+  &lt;mi arg="a"&gt;a&lt;/mi&gt;
+  &lt;mi arg="a"&gt;b&lt;/mi&gt;
 &lt;/msubsup&gt;
 </pre>
             </td>
             <td><math display="block">
                   
-                  <msubsup intent="operator-range">
+                  <msubsup intent="operator-range($X,$a,$b)">
                      
-                     <mi>X</mi>
-                     <mi>a</mi>
-                     <mi>b</mi>
+                     <mi arg="X">X</mi>
+                     
+                     <mi arg="a">a</mi>
+                     
+                     <mi arg="a">b</mi>
                      </msubsup>
                   </math></td>
             <td><math display="block">
                   
                   <msubsup>
                      
-                     <mi>X</mi>
-                     <mi>a</mi>
-                     <mi>b</mi>
+                     <mi arg="X">X</mi>
+                     
+                     <mi arg="a">a</mi>
+                     
+                     <mi arg="a">b</mi>
                      </msubsup>
                   </math></td>
             <td>$1 from $2 to $3<br><br>$1 with $2 going from $3 to $4</td>
@@ -9823,27 +9865,33 @@
             <td>munderover $1 $2 $3</td>
             <td>
                <pre>
-&lt;munderover intent="operator-range"&gt;
- &lt;mi&gt;X&lt;/mi&gt;&lt;mi&gt;a&lt;/mi&gt;&lt;mi&gt;b&lt;/mi&gt;
+&lt;munderover intent="operator-range($X,$a,$b)"&gt;
+  &lt;mi arg="X"&gt;X&lt;/mi&gt;
+  &lt;mi arg="a"&gt;a&lt;/mi&gt;
+  &lt;mi arg="a"&gt;b&lt;/mi&gt;
 &lt;/munderover&gt;
 </pre>
             </td>
             <td><math display="block">
                   
-                  <munderover intent="operator-range">
+                  <munderover intent="operator-range($X,$a,$b)">
                      
-                     <mi>X</mi>
-                     <mi>a</mi>
-                     <mi>b</mi>
+                     <mi arg="X">X</mi>
+                     
+                     <mi arg="a">a</mi>
+                     
+                     <mi arg="a">b</mi>
                      </munderover>
                   </math></td>
             <td><math display="block">
                   
                   <munderover>
                      
-                     <mi>X</mi>
-                     <mi>a</mi>
-                     <mi>b</mi>
+                     <mi arg="X">X</mi>
+                     
+                     <mi arg="a">a</mi>
+                     
+                     <mi arg="a">b</mi>
                      </munderover>
                   </math></td>
             <td>$1 from $2 to $3<br><br>$1 with $2 going from $3 to $4</td>
@@ -10487,8 +10535,8 @@
             <td>$1 (g)</td>
             <td>
                <pre>
-&lt;mrow intent="gas"&gt;
- &lt;mi&gt;X&lt;/mi&gt;
+&lt;mrow intent="gas($X)"&gt;
+ &lt;mi arg="X"&gt;X&lt;/mi&gt;
  &lt;mrow&gt;
   &lt;mo&gt;(&lt;/mo&gt;
   &lt;mi mathvariant="normal"&gt;g&lt;/mi&gt;
@@ -10499,9 +10547,9 @@
             </td>
             <td><math display="block">
                   
-                  <mrow intent="gas">
+                  <mrow intent="gas($X)">
                      
-                     <mi>X</mi>
+                     <mi arg="X">X</mi>
                      
                      <mrow>
                         
@@ -10517,7 +10565,7 @@
                   
                   <mrow>
                      
-                     <mi>X</mi>
+                     <mi arg="X">X</mi>
                      
                      <mrow>
                         
@@ -10538,8 +10586,8 @@
             <td>$1 (s)</td>
             <td>
                <pre>
-&lt;mrow intent="solid"&gt;
- &lt;mi&gt;X&lt;/mi&gt;
+&lt;mrow intent="solid($X)"&gt;
+ &lt;mi arg="X"&gt;X&lt;/mi&gt;
  &lt;mrow&gt;
   &lt;mo&gt;(&lt;/mo&gt;
   &lt;mi mathvariant="normal"&gt;s&lt;/mi&gt;
@@ -10550,9 +10598,9 @@
             </td>
             <td><math display="block">
                   
-                  <mrow intent="solid">
+                  <mrow intent="solid($X)">
                      
-                     <mi>X</mi>
+                     <mi arg="X">X</mi>
                      
                      <mrow>
                         
@@ -10568,7 +10616,7 @@
                   
                   <mrow>
                      
-                     <mi>X</mi>
+                     <mi arg="X">X</mi>
                      
                      <mrow>
                         
@@ -10589,8 +10637,8 @@
             <td>$1 (l)</td>
             <td>
                <pre>
-&lt;mrow intent="liquid"&gt;
- &lt;mi&gt;X&lt;/mi&gt;
+&lt;mrow intent="liquid($X)"&gt;
+ &lt;mi arg="X"&gt;X&lt;/mi&gt;
  &lt;mrow&gt;
   &lt;mo&gt;(&lt;/mo&gt;
   &lt;mi mathvariant="normal"&gt;l&lt;/mi&gt;
@@ -10601,9 +10649,9 @@
             </td>
             <td><math display="block">
                   
-                  <mrow intent="liquid">
+                  <mrow intent="liquid($X)">
                      
-                     <mi>X</mi>
+                     <mi arg="X">X</mi>
                      
                      <mrow>
                         
@@ -10619,7 +10667,7 @@
                   
                   <mrow>
                      
-                     <mi>X</mi>
+                     <mi arg="X">X</mi>
                      
                      <mrow>
                         
@@ -10640,8 +10688,8 @@
             <td>$1 (aq)</td>
             <td>
                <pre>
-&lt;mrow intent="aqueous"&gt;
- &lt;mi&gt;X&lt;/mi&gt;
+&lt;mrow intent="aqueous($X)"&gt;
+ &lt;mi arg="X"&gt;X&lt;/mi&gt;
  &lt;mrow&gt;
   &lt;mo&gt;(&lt;/mo&gt;
   &lt;mi mathvariant="normal"&gt;aq&lt;/mi&gt;
@@ -10652,9 +10700,9 @@
             </td>
             <td><math display="block">
                   
-                  <mrow intent="aqueous">
+                  <mrow intent="aqueous($X)">
                      
-                     <mi>X</mi>
+                     <mi arg="X">X</mi>
                      
                      <mrow>
                         
@@ -10670,7 +10718,7 @@
                   
                   <mrow>
                      
-                     <mi>X</mi>
+                     <mi arg="X">X</mi>
                      
                      <mrow>
                         

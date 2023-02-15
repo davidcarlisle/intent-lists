@@ -422,8 +422,8 @@
 
 <xsl:when test="$form='postfix' and matches($example,'^mo ')">
 <xsl:sequence  xml:space="preserve">
-<mrow intent="{$intent}">
- <mi>a</mi>
+<mrow intent="{$intent}@postfix($a)">
+ <mi arg="a">a</mi>
  <mo intent="{$intent}"><xsl:value-of select="substring-after($example,'mo ')"/></mo>
 </mrow>
 </xsl:sequence>
@@ -431,9 +431,9 @@
 
 <xsl:when test="$form='msup' and $example='msup $1 $2'">
 <xsl:sequence  xml:space="preserve">
-<msup intent="{$intent}">
- <mi>a</mi>
- <mi>b</mi>
+<msup intent="{$intent}($a,$b)">
+ <mi arg="a">a</mi>
+ <mi arg="b">b</mi>
 </msup>
 </xsl:sequence>
 </xsl:when>
@@ -451,11 +451,11 @@
 <xsl:analyze-string select="$example" regex="mrow *([^a-z])\$1 *([^a-z]) *\$2 *([^a-z]) *$">
 <xsl:matching-substring>  
 <xsl:sequence  xml:space="preserve">
-<mrow intent="{$intent}">
+<mrow intent="{$intent}($a,$b)">
  <mo><xsl:value-of select="regex-group(1)"/></mo>  
- <mi>a</mi>
+ <mi arg="a">a</mi>
  <mo><xsl:value-of select="regex-group(2)"/></mo>
- <mi>b</mi>
+ <mi arg="b">b</mi>
  <mo><xsl:value-of select="regex-group(3)"/></mo>
 </mrow>
 </xsl:sequence>
@@ -468,13 +468,13 @@
 <xsl:analyze-string select="$example" regex="mrow *([^a-z]) *\.\.\. *([^a-z]) *$">
 <xsl:matching-substring>  
 <xsl:sequence  xml:space="preserve">
-<mrow intent="{$intent}">
+<mrow intent="{$intent}($a,$b,$dots)">
  <mo><xsl:value-of select="regex-group(1)"/></mo>  
- <mi>a</mi>
+ <mi arg="a">a</mi>
  <mo>,</mo>
- <mi>b</mi>
+ <mi arg="b">b</mi>
  <mo>,</mo>
- <mo>&#x22EF;</mo>
+ <mo arg="dots">&#x22EF;</mo>
  <mo><xsl:value-of select="regex-group(2)"/></mo>
 </mrow>
 </xsl:sequence>
@@ -503,8 +503,8 @@
 <xsl:analyze-string select="$example" regex="msup *\$1 *([^a-z])$">
 <xsl:matching-substring>  
 <xsl:sequence  xml:space="preserve">
-<msup intent="{$intent}">
- <mi>a</mi>
+<msup intent="{$intent}($a)">
+ <mi arg="a">a</mi>
  <mo><xsl:value-of select="regex-group(1)"/></mo>  
 </msup>
 </xsl:sequence>
@@ -516,8 +516,8 @@
 <xsl:analyze-string select="$example" regex="mover *\$1 *([^a-z])$">
 <xsl:matching-substring>  
 <xsl:sequence  xml:space="preserve">
-<mover intent="{$intent}">
- <mi>a</mi>
+<mover intent="{$intent}($a)">
+ <mi arg="a">a</mi>
  <mo><xsl:value-of select="regex-group(1)"/></mo>  
 </mover>
 </xsl:sequence>
@@ -529,8 +529,8 @@
 <xsl:analyze-string select="$example" regex="mover *([^a-z])$">
 <xsl:matching-substring>  
 <xsl:sequence  xml:space="preserve">
-<mover intent="{$intent}">
- <mrow><mi>a</mi><mi>b</mi></mrow>
+<mover intent="{$intent}($a,$b)">
+ <mrow><mi arg="a">a</mi><mi arg="b">b</mi></mrow>
  <mo><xsl:value-of select="regex-group(1)"/></mo>  
 </mover>
 </xsl:sequence>
@@ -541,9 +541,9 @@
 
 <xsl:when test="$form='mover' and matches($example,'mover *\$1 *\$2$')">
 <xsl:sequence  xml:space="preserve">
-<mover intent="{$intent}">
- <mi>a</mi>
- <mi>b</mi>
+<mover intent="{$intent}($a,$b)">
+ <mi arg="a">a</mi>
+ <mi arg="b">b</mi>
 </mover>
 </xsl:sequence>
 </xsl:when>
@@ -552,9 +552,9 @@
  <xsl:analyze-string select="$example" regex="mrow *([^a-z ]) *\$1 *([^a-z ]) *$">
 <xsl:matching-substring>  
 <xsl:sequence  xml:space="preserve">
-<mrow intent="{$intent}">
+<mrow intent="{$intent}($a)">
  <mo><xsl:value-of select="regex-group(1)"/></mo> 
- <mi>a</mi>
+ <mi arg="a">a</mi>
  <mo><xsl:value-of select="regex-group(2)"/></mo>
 </mrow>
 </xsl:sequence>
@@ -577,8 +577,8 @@
 <xsl:analyze-string select="$example" regex="\$1 *\(([^ ]*)\)$">
 <xsl:matching-substring>  
 <xsl:sequence  xml:space="preserve">
-<mrow intent="{$intent}">
- <mi>X</mi>
+<mrow intent="{$intent}($X)">
+ <mi arg="X">X</mi>
  <mrow>
   <mo>(</mo>
   <mi mathvariant="normal"><xsl:value-of select="regex-group(1)"/></mi>
@@ -592,13 +592,13 @@
 
 <xsl:when test="$form='mixfix' and $example='mrow $1($2,$3)'">
 <xsl:sequence  xml:space="preserve">
-<mrow intent="{$intent}">
+<mrow intent="{$intent}($a,$b)">
  <mi>P</mi>
  <mrow>
   <mo>(</mo>
-  <mi>a</mi>
+  <mi arg="a">a</mi>
   <mo>,</mo>
-  <mi>b</mi>
+  <mi arg="b">b</mi>
   <mo>)</mo>
  </mrow>
 </mrow>
@@ -608,8 +608,8 @@
 
 <xsl:when test="$form='msqrt' and $example='msqrt'">
 <xsl:sequence  xml:space="preserve">
-<msqrt intent="{$intent}">
- <mi>a</mi>
+<msqrt intent="{$intent}($a)">
+ <mi arg="a">a</mi>
 </msqrt>
 </xsl:sequence>
 </xsl:when>
@@ -617,9 +617,9 @@
 
 <xsl:when test="$form='mroot' and $example='mroot'">
 <xsl:sequence  xml:space="preserve">
-<mroot intent="{$intent}">
- <mi>a</mi>
- <mn>3</mn>
+<mroot intent="{$intent}($a,$n)">
+ <mi arg="a">a</mi>
+ <mn arg="n">3</mn>
 </mroot>
 </xsl:sequence>
 </xsl:when>
@@ -630,10 +630,12 @@
 <xsl:analyze-string select="$example" regex="mrow *([^a-z]) *\$1\$2\$3 *$">
 <xsl:matching-substring>  
 <xsl:sequence  xml:space="preserve">
-<mrow intent="{$intent}">
+<mrow intent="{$intent}($a,$b,$c)">
  <mo><xsl:value-of select="regex-group(1)"/></mo>   
  <mrow>
-  <mi>a</mi><mi>b</mi><mi>c</mi>
+  <mi arg="a">a</mi>
+  <mi arg="b">b</mi>
+  <mi arg="c">c</mi>
  </mrow>
 </mrow>
 </xsl:sequence>
@@ -661,8 +663,9 @@
 <xsl:analyze-string select="$example" regex="(m[a-z]*) *\$1 *\$2 *$">
 <xsl:matching-substring>  
 <xsl:sequence  xml:space="preserve">
-<xsl:element name="{regex-group(1)}"><xsl:attribute name="intent" select="$intent"/>
- <mi>A</mi><mi>B</mi>
+<xsl:element name="{regex-group(1)}"><xsl:attribute name="intent" select="concat($intent,'($A,$B)')"/>
+  <mi arg="A">A</mi>
+  <mi arg="B">B</mi>
 </xsl:element>
 </xsl:sequence>
 </xsl:matching-substring>
@@ -675,8 +678,10 @@
 <xsl:analyze-string select="$example" regex="(m[a-z]*) *\$1 *\$2 *\$3 *$">
 <xsl:matching-substring>  
 <xsl:sequence  xml:space="preserve">
-<xsl:element name="{regex-group(1)}"><xsl:attribute name="intent" select="$intent"/>
- <mi>X</mi><mi>a</mi><mi>b</mi>
+<xsl:element name="{regex-group(1)}"><xsl:attribute name="intent" select="concat($intent,'($X,$a,$b)')"/>
+  <mi arg="X">X</mi>
+  <mi arg="a">a</mi>
+  <mi arg="a">b</mi>
 </xsl:element>
 </xsl:sequence>
 </xsl:matching-substring>
@@ -718,9 +723,9 @@
 
 <xsl:when test="$intent='rate' and $example='mfrac'">
 <xsl:sequence  xml:space="preserve">
-<mfrac intent="{$intent}">
- <mi intent="unit">m</mi>
- <mi intent="unit">s</mi>
+<mfrac intent="{$intent}($m,$s)">
+ <mi arg="m" intent="unit">m</mi>
+ <mi arg="s" intent="unit">s</mi>
 </mfrac>
 </xsl:sequence>
 </xsl:when>
@@ -728,10 +733,10 @@
 
 <xsl:when test="$intent='rate' and $example='$1p$2'">
 <xsl:sequence  xml:space="preserve">
-<mrow intent="{$intent}">
- <mi intent="unit">m</mi>
+<mrow intent="{$intent}($m,$s)">
+ <mi arg="m" intent="unit">m</mi>
  <mo>/</mo>
- <mi intent="unit">s</mi>
+ <mi arg="s" intent="unit">s</mi>
 </mrow>
 </xsl:sequence>
 </xsl:when>
