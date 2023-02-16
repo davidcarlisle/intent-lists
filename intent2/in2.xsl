@@ -755,12 +755,12 @@
 <xsl:when test="$intent='binomial-coefficient'">
 <xsl:sequence  xml:space="preserve">
 <mrow intent="{$intent}($a,$b)">
- <mi>(</mi>
+ <mo>(</mo>
  <mfrac linethickness="0pt">
   <mi arg="a">a</mi>
   <mi arg="b">b</mi>
  </mfrac>
- <mi>)</mi>
+ <mo>)</mo>
 </mrow>
 </xsl:sequence>
 </xsl:when>
