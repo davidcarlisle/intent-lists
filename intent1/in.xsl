@@ -32,8 +32,8 @@
      <colgroup>
       <col style="background-color:beige"/>
       <col style="background-color:#EEE"/>
-      <col style="background-color:#DDF"/>
-      <col style="background-color:#DFD"/>
+      <col style="background-color:#DDF;min-width:12em"/>
+      <col style="background-color:#DFD;min-width:12em"/>
       <col style="background-color:#EEE; font-family:monospace;"/>
       <col style="background-color:beige"/>
       <col style="background-color:beige"/>
