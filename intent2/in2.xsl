@@ -69,10 +69,10 @@
 <xsl:variable name="m" xml:space="preserve">
 <munder intent="{$intent}">
  <munder>
-  <mi>a</mi>
+  <mi>x</mi>
   <mo>&#x23DF;</mo>
  </munder>
- <mi>b</mi>
+ <mi>y</mi>
 </munder>
 </xsl:variable>
 	   <td><pre><xsl:value-of select="serialize($m)"/></pre></td>
@@ -88,10 +88,10 @@
 <xsl:variable name="m" xml:space="preserve">
 <mover intent="{$intent}">
  <mover>
-  <mi>a</mi>
+  <mi>x</mi>
   <mo>&#x23DE;</mo>
  </mover>
- <mi>b</mi>
+ <mi>y</mi>
 </mover>
 </xsl:variable>
 	   <td><pre><xsl:value-of select="serialize($m)"/></pre></td>
@@ -109,9 +109,9 @@
 	   <td>infix</td>
 <xsl:variable name="m" xml:space="preserve">
 <mrow>
- <mi>a</mi>
+ <mi>x</mi>
  <mo intent="{$intent}"><xsl:value-of select="substring-after($example,'mo ')"/></mo>
- <mi>b</mi>
+ <mi>y</mi>
 </mrow>
 </xsl:variable>
 	   <td><pre><xsl:value-of select="serialize($m)"/></pre></td>
@@ -127,7 +127,7 @@
 <xsl:variable name="m" xml:space="preserve">
 <mrow>
  <mo intent="{$intent}"><xsl:value-of select="substring-after($example,'mo ')"/></mo>
- <mi>a</mi>
+ <mi>x</mi>
 </mrow>
 </xsl:variable>
 	   <td><pre><xsl:value-of select="serialize($m)"/></pre></td>
@@ -197,9 +197,9 @@
 <xsl:when test="$form='infix' and matches($example,'^mo ')">
 <xsl:sequence  xml:space="preserve">
 <mrow>
- <mi>a</mi>
+ <mi>x</mi>
  <mo intent="{$intent}"><xsl:value-of select="substring-after($example,'mo ')"/></mo>
- <mi>b</mi>
+ <mi>y</mi>
 </mrow>
 </xsl:sequence>
 </xsl:when>
@@ -207,9 +207,9 @@
 <xsl:when test="$form='infixindexed operator' and matches($example,'^mo [∩∪]')">
 <xsl:sequence  xml:space="preserve">
 <mrow>
- <mi>A</mi>  
+ <mi>X</mi>  
  <mo intent="{$intent}"><xsl:value-of select="substring-after($example,'mo ')"/></mo>
- <mi>B</mi>
+ <mi>Y</mi>
 </mrow>
 </xsl:sequence>
 </xsl:when>
@@ -227,18 +227,18 @@
 <xsl:when test="$form='infix' and matches($example,'^mi ')">
 <xsl:sequence  xml:space="preserve">
 <mrow>
- <mi>a</mi>
+ <mi>x</mi>
  <mi mathvariant="normal" intent="{$intent}"><xsl:value-of select="substring-after($example,'mi ')"/></mi>
- <mi>b</mi>
+ <mi>y</mi>
 </mrow>
 </xsl:sequence>
 </xsl:when>
 <xsl:when test="$form='infix' and matches($example,'^mtext ')">
 <xsl:sequence  xml:space="preserve">
 <mrow>
- <mi>a</mi>
+ <mi>x</mi>
  <mtext intent="{$intent}"><xsl:value-of select="substring-after($example,'mtext ')"/></mtext>
- <mi>b</mi>
+ <mi>y</mi>
 </mrow>
 </xsl:sequence>
 </xsl:when>
@@ -265,7 +265,7 @@
 <xsl:sequence  xml:space="preserve">
 <mrow>
  <mo intent="{$intent}"><xsl:value-of select="substring-after($example,'mo ')"/></mo>
- <mi>a</mi>
+ <mi>x</mi>
 </mrow>
 </xsl:sequence>
 </xsl:when>
@@ -452,7 +452,7 @@
 <xsl:when test="$form='msup' and $example='msup $1 -1'">
 <xsl:sequence  xml:space="preserve">
 <msup>
- <mi>a</mi>
+ <mi>x</mi>
  <mn intent="{$intent}">−1</mn>
 </msup>
 </xsl:sequence>
@@ -578,7 +578,7 @@
 <mrow>
  <mi mathvariant="normal"
      intent="{$intent}"><xsl:value-of select="substring-after($example,'mi ')"/></mi>
- <mi>a</mi>
+ <mi>x</mi>
 </mrow>
 </xsl:sequence>
 </xsl:when>
@@ -779,7 +779,7 @@
 <xsl:when test="$intent='transpose' and normalize-space($example)=''">
 <xsl:sequence  xml:space="preserve">
 <msup>
- <mi>a</mi>
+ <mi>x</mi>
  <mi intent="transpose" mathvariant="normal">T</mi>
 </msup>
 </xsl:sequence>
@@ -788,7 +788,7 @@
 <xsl:when test="$intent='angular-description' and normalize-space($example)='mrow $1-$2-$3'">
 <xsl:sequence  xml:space="preserve">
 <mrow intent="angular-description">
- <mi>A</mi><mo>−</mo><mi>B</mi><mo>−</mo><mi>C</mi>
+ <mi>X</mi><mo>−</mo><mi>Y</mi><mo>−</mo><mi>Z</mi>
 </mrow>
 </xsl:sequence>
 </xsl:when>
@@ -808,8 +808,8 @@
 
 <xsl:when test="$intent='more-than' and normalize-space($example)='$1 > 0'">
 <xsl:sequence  xml:space="preserve">
-<mrow intent="more-than($a,$z)">
- <mi arg="a">a</mi>
+<mrow intent="more-than($x,$z)">
+ <mi arg="x">x</mi>
  <mo>&gt;</mo>
  <mn arg="z">0</mn>
 </mrow>
@@ -830,9 +830,9 @@
 <xsl:when test="$intent='less-than' and $form='infix'">
 <xsl:sequence  xml:space="preserve">
 <mrow>
- <mi arg="a">a</mi>
+ <mi>x</mi>
  <mo intent="less-than">&lt;</mo>
- <mi arg="b">b</mi>
+ <mi>y</mi>
 </mrow>
 </xsl:sequence>
 </xsl:when>
@@ -864,9 +864,9 @@
 
 <xsl:when test="$intent='fraction' and $form='2D'">
 <xsl:sequence  xml:space="preserve">
-<mfrac intent="fraction($a,$b)">
- <mi arg="a">a</mi>
- <mi arg="b">b</mi>
+<mfrac intent="fraction($x,$y)">
+ <mi arg="x">x</mi>
+ <mi arg="y">y</mi>
 </mfrac>
 </xsl:sequence>
 </xsl:when>
@@ -914,9 +914,9 @@
 <mrow>
  <mi intent="{$intent}">lcm</mi>
  <mo>(</mo>
- <mi>a</mi>
+ <mi>x</mi>
  <mo>,</mo>
- <mi>b</mi>
+ <mi>y</mi>
  <mo>)</mo>
 </mrow>
 </xsl:sequence>
@@ -976,9 +976,9 @@
 <xsl:when test="$intent='progression' and $example='{ $1, $2 ... $n }'">
 <xsl:sequence  xml:space="preserve">
 <mrow intent="{$intent}">
- <mi>a</mi>
+ <mi>x</mi>
  <mo>,</mo>
- <mi>b</mi>
+ <mi>y</mi>
  <mo>,</mo>
  <mi>c</mi>
 </mrow>
