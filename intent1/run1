@@ -2,7 +2,9 @@
 set -e
 
 
-mv '/c/users/davidc/Downloads/Notation which often needs intent in order to pronounce correctly in English.zip' x.zip
+mv '/c/users/davidc/Downloads/Notation which often needs intent in order to pronounce correctly in English.zip' x.zip \
+   2> /dev/null || \
+    echo "re-using download"
 
 unzip -o x.zip
 
