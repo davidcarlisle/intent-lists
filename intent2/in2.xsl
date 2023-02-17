@@ -403,8 +403,8 @@
 <xsl:when test="matches($example,'^msup [^a-z ] *$')">
 <xsl:sequence  xml:space="preserve">
 <msup>
- <mn>X</mn>
- <mo intent="{$intent}"><xsl:value-of select="substring-after($example,'msup ')"/></mo>
+ <mi>x</mi>
+ <mo intent="{$intent}"><xsl:value-of select="replace(substring-after($example,'msup '),'''','&#x2032;')"/></mo>
 </msup>
 </xsl:sequence>
 </xsl:when>
@@ -414,7 +414,7 @@
 <xsl:matching-substring>
 <xsl:sequence  xml:space="preserve">
 <mover>
- <mn>X</mn>
+ <mi>X</mi>
  <mo intent="{$intent}"><xsl:value-of select="regex-group(1)"/></mo>
 </mover>
 </xsl:sequence>
@@ -442,9 +442,9 @@
 
 <xsl:when test="$form='msup' and $example='msup $1 $2'">
 <xsl:sequence  xml:space="preserve">
-<msup intent="{$intent}($a,$b)">
- <mi arg="a">a</mi>
- <mi arg="b">b</mi>
+<msup intent="{$intent}($x,$y)">
+ <mi arg="x">x</mi>
+ <mi arg="y">y</mi>
 </msup>
 </xsl:sequence>
 </xsl:when>
