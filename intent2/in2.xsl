@@ -23,6 +23,8 @@
    <body>
     <h1>Intent Examples (Deyan/Core Sheet)</h1>
     <p><a href="https://docs.google.com/spreadsheets/d/1EsWou1K5nxBdLPvQapdoA9h-s8lg_qjn8fJH64g9izQ/edit#gid=1358098730">Original Google Docs spreadsheet</a>.</p>
+    <p><a href="intent1.html">Other list</a></p>
+    
     <table>
      <colgroup>
       <col style="background-color:beige"/>
@@ -30,8 +32,8 @@
       <col style="background-color:beige;"/>
       <col style="background-color:beige"/>
       <col style="background-color:#EEE; font-family:monospace;"/>
-      <col style="background-color:#DFD"/>
-      <col style="background-color:#DDF"/>
+      <col style="background-color:#DFD;min-width:12em"/>
+      <col style="background-color:#DDF;min-width:12em"/>
       <col style="background-color:beige"/>
       </colgroup>     
      <thead>
