@@ -1,7 +1,9 @@
 <xsl:stylesheet version="3.0"
 		xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
 		>
- <xsl:output method="html" encoding="US-ASCII" version="5" include-content-type="no"/>
+ <xsl:output xmlns:f="data,f" method="html" encoding="US-ASCII" version="5"
+	     include-content-type="no"
+	     exclude-result-prefixes="f"/>
 
  <xsl:variable name="max" select="//tbody/tr[position() gt 10][td[2]=''][1]/count(preceding-sibling::tr)+1"/>
  
@@ -18,7 +20,8 @@
      background-color:white;padding:.2em;
      margin:-.2em .1em 1em .1em;
      }
-
+     a.self {text-decoration:none;color:DarkBlue}
+     a.self::visited  {text-decoration:none;color:DarkBlue}
     </style>
    </head>
    <body>
@@ -50,7 +53,7 @@
      </thead>
      <xsl:for-each select="//tr[position() gt 5 and position() lt $max]">
       <tr>
-       <th><xsl:value-of select="th[1]"/></th>
+       <xsl:sequence xmlns:f="data,f" select="f:nn(normalize-space(th[1]))"/>
        <td class="tex"><xsl:value-of select="td[1]"/></td>
        <td>
 	<xsl:variable name="m" select="replace(replace(replace((td[2]),'&amp;lt;','&lt;'),'&amp;gt;','&gt;'),'&amp;quot;','&quot;')"/>
@@ -94,6 +97,11 @@
  </xsl:template>
 
 
+
+<xsl:function xmlns:f="data,f" name="f:nn" as="element()">
+ <xsl:param name="nn"/> 
+ <th id="id{$nn}"><a  class="self" href="#id{$nn}"><xsl:value-of select="$nn"/></a></th>
+</xsl:function>
 
 
 </xsl:stylesheet>

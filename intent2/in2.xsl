@@ -1,7 +1,9 @@
 <xsl:stylesheet version="3.0"
 		xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
 		>
- <xsl:output method="html" encoding="US-ASCII" version="5" include-content-type="no"/>
+ <xsl:output xmlns:f="data,f" method="html" encoding="US-ASCII" version="5"
+	     include-content-type="no"
+	     exclude-result-prefixes="f"/>
 
  
  <xsl:template match="/">
@@ -18,6 +20,8 @@
      background-color:white;padding:.2em;
      margin:-.2em .1em 1em .1em;
      }
+     a.self {text-decoration:none;color:DarkBlue}
+     a.self::visited  {text-decoration:none;color:DarkBlue}
     </style>
    </head>
    <body>
@@ -57,11 +61,11 @@
       <xsl:variable name="form" select="normalize-space(*[4])"/>
       <xsl:choose>
        <xsl:when test="$intent='annotation'">
-	  <tr>
-	   <th><xsl:value-of select="$nn"/>-1</th>
-	   <td><xsl:value-of select="$intent"/></td>
-	   <td>munder</td>
-	   <td>munder</td>
+	<tr>
+	 <xsl:sequence xmlns:f="data,f" select="f:nn(concat($nn,'-1'))"/>
+	 <td><xsl:value-of select="$intent"/></td>
+	 <td>munder</td>
+	 <td>munder</td>
 <xsl:variable name="m" xml:space="preserve">
 <munder intent="{$intent}">
  <munder>
@@ -77,7 +81,7 @@
 	   <td><xsl:copy-of select="*[7]/node()"/></td>
 	  </tr>
 	  <tr>
-	   <th><xsl:value-of select="$nn"/>-2</th>
+	   <xsl:sequence xmlns:f="data,f" select="f:nn(concat($nn,'-2'))"/>
 	   <td><xsl:value-of select="$intent"/></td>
 	   <td>mover</td>
 	   <td>mover</td>
@@ -99,7 +103,7 @@
        <xsl:when test="$form='infixprefix'">
 	<xsl:variable name="example" select="*[5]/node()"/>
 	  <tr>
-	   <th><xsl:value-of select="$nn"/>-1</th>
+	   <xsl:sequence xmlns:f="data,f" select="f:nn(concat($nn,'-1'))"/>
 	   <td><xsl:value-of select="$intent"/></td>
 	   <td>infix</td>
 	   <td>infix</td>
@@ -116,7 +120,7 @@
 	   <td><xsl:copy-of select="*[7]/node()"/></td>
 	  </tr>
 	  <tr>
-	   <th><xsl:value-of select="$nn"/>-2</th>
+	   <xsl:sequence xmlns:f="data,f" select="f:nn(concat($nn,'-2'))"/>
 	   <td><xsl:value-of select="$intent"/></td>
 	   <td>prefix</td>
 	   <td>prefix</td>
@@ -136,7 +140,7 @@
 	<xsl:for-each-group group-adjacent="exists(self::br)" select="*[5]/node()">
 	 <xsl:if test="not(self::br)">
 	  <tr>
-	   <th><xsl:value-of select="$nn"/>-<xsl:value-of select="count(preceding-sibling::br)+1"/></th>
+	   <xsl:sequence xmlns:f="data,f" select="f:nn(concat($nn,'-',count(preceding-sibling::br)+1))"/>
 	   <td><xsl:value-of select="$intent"/></td>
 	   <td><xsl:copy-of select="*[4]"/></td>
 	   <td><xsl:copy-of select="current-group()"/></td>
@@ -157,7 +161,7 @@
        </xsl:when>
        <xsl:otherwise>
 	<tr>
-	 <th><xsl:value-of select="$nn"/></th>
+	 <xsl:sequence xmlns:f="data,f" select="f:nn($nn)"/>
 	 <td><xsl:value-of select="$intent"/></td>
 	 <td><xsl:copy-of select="$form"/></td>
 	 <td><xsl:copy-of select="*[5]/node()"/></td>
@@ -1032,5 +1036,10 @@
   <xsl:apply-templates mode="no-intent"/>
  </xsl:copy>
 </xsl:template>
+
+<xsl:function xmlns:f="data,f" name="f:nn" as="element()">
+ <xsl:param name="nn"/> 
+ <th id="id{$nn}"><a  class="self" href="#id{$nn}"><xsl:value-of select="$nn"/></a></th>
+</xsl:function>
 
 </xsl:stylesheet>
