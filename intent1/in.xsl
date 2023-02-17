@@ -1,7 +1,7 @@
 <xsl:stylesheet version="3.0"
 		xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
 		>
- <xsl:output method="html" version="5"/>
+ <xsl:output method="html" encoding="US-ASCII" version="5" include-content-type="no"/>
 
  <xsl:variable name="max" select="//tbody/tr[position() gt 10][td[2]=''][1]/count(preceding-sibling::tr)+1"/>
  
@@ -9,10 +9,16 @@
   <html>
    <head>
     <title>Intent Examples</title>
+    <meta charset="UTF-8"/>
     <style>
      .tex{font-family: monospace; width:15em}
      tbody th {width:2em;}
      math{font-size:120%;margin:.2em;}
+     div.mathcat{
+     background-color:white;padding:.2em;
+     margin:-.2em .1em 1em .1em;
+     }
+
     </style>
    </head>
    <body>
@@ -53,6 +59,7 @@
 	 <xsl:text>&#10;</xsl:text>
 	 <math display="block">
 	  <xsl:copy-of select="."/>
+	  <xsl:text>&#10;</xsl:text>
 	 </math>
 	 <xsl:text>&#10;</xsl:text>
 	</xsl:for-each>
@@ -65,6 +72,7 @@
 	 <xsl:text>&#10;</xsl:text>
 	 <math style="display:block">
 	  <xsl:copy-of select="."/>
+	  <xsl:text>&#10;</xsl:text>
 	 </math>
 	 <xsl:text>&#10;</xsl:text>
 	</xsl:for-each>
