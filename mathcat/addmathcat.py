@@ -28,10 +28,8 @@ def SetMathCATPreferences():
       print("problem with setting a preference")
 
 def SetMathMLForMathCAT(mathml: str):
-  try:
     libmathcat.SetMathML(mathml)
-  except Exception as e:
-    print("problem with SetMathML")
+
 
 def GetSpeech():
   try:
@@ -55,9 +53,8 @@ for mml in mmls:
     i=i+1
     if(i % 2 == 0):
         try:
-            mathml = "<math><msup> <mi>x</mi> <mn>3</mn> </msup> </math>"
             SetMathMLForMathCAT(mml)
             print ("\n    <div class=\"mathcat\">{}</div>".format(GetSpeech()))
         except:
-            print ("\n    <div class=\"mathcat\">??OOOPS??</div>")
+            print ("\n    <div class=\"mathcat\">problem with SetMathML</div>")
 
