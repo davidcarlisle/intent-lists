@@ -687,7 +687,7 @@
 <xsl:element name="{regex-group(1)}"><xsl:attribute name="intent" select="concat($intent,'($X,$a,$b)')"/>
   <mi arg="X">X</mi>
   <mi arg="a">a</mi>
-  <mi arg="a">b</mi>
+  <mi arg="b">b</mi>
 </xsl:element>
 </xsl:sequence>
 </xsl:matching-substring>
@@ -792,7 +792,10 @@
 <xsl:sequence  xml:space="preserve">
 <msub intent="more-than($N,$z)"><xsl:comment select="'positive?'"/>
  <mi arg="N">ℕ</mi>
- <mrow><mo>&gt;</mo><mn>0</mn></mrow>
+ <mrow>
+  <mo>&gt;</mo>
+  <mn arg="z">0</mn>
+ </mrow>
 </msub>
 </xsl:sequence>
 </xsl:when>
@@ -802,7 +805,7 @@
 <mrow intent="more-than($a,$z)">
  <mi arg="a">a</mi>
  <mo>&gt;</mo>
- <mn>0</mn>
+ <mn arg="z">0</mn>
 </mrow>
 </xsl:sequence>
 </xsl:when>
@@ -812,7 +815,7 @@
 <mrow intent="more-than($M,$z)"><xsl:comment select="'positive-definite?'"/>
  <mi arg="M">M</mi>
  <mo>&gt;</mo>
- <mn>0</mn>
+ <mn arg="z">0</mn>
 </mrow>
 </xsl:sequence>
 </xsl:when>
@@ -920,9 +923,9 @@
  <mi mathvariant="normal">T</mi>
  <mrow>
   <mo>(</mo>
-  <mi>a</mi>
+  <mi arg="a">a</mi>
   <mo>,</mo>
-  <mi>b</mi>
+  <mi arg="b">b</mi>
   <mo>)</mo>
  </mrow>
 </msub>
