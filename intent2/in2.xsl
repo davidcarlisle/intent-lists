@@ -479,11 +479,11 @@
 <xsl:analyze-string select="$example" regex="mrow *([^a-z]) *\.\.\. *([^a-z]) *$">
 <xsl:matching-substring>  
 <xsl:sequence  xml:space="preserve">
-<mrow intent="{$intent}($a,$b,$dots)">
+<mrow intent="{$intent}($x,$y,$dots)">
  <mo><xsl:value-of select="regex-group(1)"/></mo>  
- <mi arg="a">a</mi>
+ <mi arg="x">x</mi>
  <mo>,</mo>
- <mi arg="b">b</mi>
+ <mi arg="y">y</mi>
  <mo>,</mo>
  <mo arg="dots">&#x22EF;</mo>
  <mo><xsl:value-of select="regex-group(2)"/></mo>
