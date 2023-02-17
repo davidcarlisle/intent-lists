@@ -8,3 +8,4 @@ intent2/*.html
 mathcat/*.html
 mathcat/Rules
 mathcat/libmathcat.pyd
+mathcat/test.py
