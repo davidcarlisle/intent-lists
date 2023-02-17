@@ -13,11 +13,11 @@ sed -e 's/<br>/<br\/>/g' \
     Sheet1.html >> in.xml
 echo "</html>" >> in.xml
 
-rxp -sx in.xml
 
+saxon10 -o:../mathcat/intent1.html in.xml in.xsl
 
-saxon10 -o:../docs/intent1.html in.xml in.xsl
-
+cd ../mathcat
+py addmathcat.py intent1.html > ../docs/intent1.html
 
 grep -o 'intent="[^"]*' ../docs/intent1.html | \
      sed -e 's/intent="//' \
