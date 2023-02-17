@@ -1,18 +1,23 @@
 <xsl:stylesheet version="3.0"
 		xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
 		>
- <xsl:output method="html" version="5"/>
+ <xsl:output method="html" encoding="US-ASCII" version="5" include-content-type="no"/>
 
  
  <xsl:template match="/">
   <html>
    <head>
     <title>Intent Examples (Deyan/Core Sheet)</title>
+    <meta charset="UTF-8"/>
     <style>
      .tex{font-family: monospace; width:15em}
      tbody th {width:2em;}
      math{font-size:120%;margin:.2em;}
      mfrac[numalign="left"] >*:first-child {margin-right:90%;}
+     div.mathcat{
+     background-color:white;padding:.2em;
+     margin:-.2em .1em 1em .1em;
+     }
     </style>
    </head>
    <body>
