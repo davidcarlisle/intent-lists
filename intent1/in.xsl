@@ -100,7 +100,14 @@
 
 <xsl:function xmlns:f="data,f" name="f:nn" as="element()">
  <xsl:param name="nn"/> 
- <th id="id{$nn}"><a  class="self" href="#id{$nn}"><xsl:value-of select="$nn"/></a></th>
+ <xsl:element name="th">
+  <xsl:attribute name="id" select="concat('id',$nn)"/>
+  <xsl:element name="a">
+   <xsl:attribute name="href" select="concat('#id',$nn)"/>
+   <xsl:attribute name="class" select="'self'"/>
+   <xsl:value-of select="$nn"/>
+  </xsl:element>
+ </xsl:element>
 </xsl:function>
 
 
