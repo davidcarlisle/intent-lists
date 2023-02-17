@@ -306,7 +306,7 @@
   <xsl:when test="$intent='blank'">
 <xsl:sequence  xml:space="preserve">
 <mrow>
- <m>1</m>
+ <mn>1</mn>
  <mo>+</mo>
  <mo intent="{$intent}"><xsl:value-of select="substring-after($example,'mo ')"/></mo>
  <mo>=</mo>
@@ -325,7 +325,7 @@
   <xsl:when test="$intent='blank'">
 <xsl:sequence  xml:space="preserve">
 <mrow>
- <m>1</m>
+ <mn>1</mn>
  <mo>+</mo>
  <mn intent="{$intent}"><xsl:value-of select="substring-after($example,'mn ')"/></mn>
  <mo>=</mo>
@@ -350,7 +350,7 @@
   <xsl:when test="$intent='blank'">
 <xsl:sequence  xml:space="preserve">
 <mrow>
- <m>1</m>
+ <mn>1</mn>
  <mo>+</mo>
  <mi intent="{$intent}"><xsl:value-of select="substring-after($example,'mi ')"/></mi>
  <mo>=</mo>
@@ -367,7 +367,7 @@
 <xsl:when test="$form='symbol' and matches($example,'^mspace *$')">
 <xsl:sequence  xml:space="preserve">
 <mrow>
- <m>1</m>
+ <mn>1</mn>
  <mo>+</mo>
  <mspace intent="{$intent}" width="2em"/>
  <mo>=</mo>
@@ -380,7 +380,7 @@
 <xsl:when test="$form='symbol' and matches($example,'^menclose ')">
 <xsl:sequence  xml:space="preserve">
 <mrow>
- <m>1</m>
+ <mn>1</mn>
  <mo>+</mo>
  <menclose notation="box" intent="{$intent}">
   <mspace width="2em"/>
