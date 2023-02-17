@@ -5,3 +5,6 @@ local
 *.zip
 intent1/*.html
 intent2/*.html
+mathcat/*.html
+mathcat/Rules
+mathcat/libmathcat.pyd
