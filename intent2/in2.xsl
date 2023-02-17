@@ -40,8 +40,8 @@
       <th>form</th>
       <th>example</th>
       <th>MathML+intent Source</th>
-      <th>MathML</th>
       <th>MathML+intent</th>
+      <th>MathML</th>
       <th>Speech Hints</th>
      </thead>
      <xsl:for-each select="//tbody/tr[position() gt 2][not(*[2]='' and *[5]='')]">
