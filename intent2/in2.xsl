@@ -261,6 +261,22 @@
 </xsl:sequence>
 </xsl:when>
 
+<xsl:when test="$form='prefix' and matches($example,'^mo ([^a-zA-Z]) *([a-zA-Z])([a-zA-Z])([a-zA-Z])')">
+<xsl:analyze-string select="$example" regex="^mo ([^a-zA-Z]) *([a-zA-Z])([a-zA-Z])([a-zA-Z]) *$">
+<xsl:matching-substring>
+<xsl:sequence  xml:space="preserve">
+<mrow>
+ <mo intent="{$intent}"><xsl:value-of select="regex-group(1)"/></mo>
+ <mi><xsl:value-of select="regex-group(2)"/></mi>
+ <mi><xsl:value-of select="regex-group(3)"/></mi>
+ <mi><xsl:value-of select="regex-group(4)"/></mi>
+</mrow>
+</xsl:sequence>
+</xsl:matching-substring>
+</xsl:analyze-string>
+</xsl:when>
+
+
 <xsl:when test="$form='prefix' and matches($example,'^mo ')">
 <xsl:sequence  xml:space="preserve">
 <mrow>
@@ -269,7 +285,6 @@
 </mrow>
 </xsl:sequence>
 </xsl:when>
-
 
 <xsl:when test="$intent='piecewise' and $form='mtable'">
 <xsl:sequence  xml:space="preserve">
@@ -700,11 +715,14 @@
 </xsl:analyze-string>
 </xsl:when>
 
-<xsl:when test="matches($example,'mtext *([a-z]+) *$')">
-<xsl:analyze-string select="$example" regex="mtext *([a-z]+) *">
+<xsl:when test="matches($example,'m(text|i) *([a-z][a-z]+) *$')">
+<xsl:analyze-string select="$example" regex="m(text|i) *([a-z][a-z]+) *">
 <xsl:matching-substring>  
-<xsl:sequence  xml:space="preserve">
-<mtext intent="{$intent}"><xsl:value-of select="regex-group(1)"/></mtext>
+<xsl:sequence>
+ <xsl:element name="m{regex-group(1)}">
+  <xsl:attribute name="intent" select="$intent"/>
+  <xsl:value-of select="regex-group(2)"/>
+ </xsl:element>
 </xsl:sequence>
 </xsl:matching-substring>
 </xsl:analyze-string>
@@ -1020,6 +1038,23 @@
 </xsl:when>
 
 
+<xsl:when test="matches($example,'msub *log *10')">
+<xsl:sequence xml:space="preserve">
+<msub intent="{$intent}">
+ <mi>log</mi>
+ <mn>10</mn>
+</msub>
+</xsl:sequence>
+</xsl:when>
+
+<xsl:when test="matches($example,'msub *log *e')">
+<xsl:sequence xml:space="preserve">
+<msub intent="{$intent}">
+ <mi>log</mi>
+ <mi>e</mi>
+</msub>
+</xsl:sequence>
+</xsl:when>
 
 <xsl:otherwise>
 <xsl:sequence  xml:space="preserve">
