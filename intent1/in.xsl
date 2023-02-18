@@ -74,7 +74,7 @@
 	<!--<xsl:message select="'I',parse-xml-fragment($m)"/>-->
 	<xsl:for-each select="parse-xml-fragment($m)/*">
 	 <xsl:text>&#10;</xsl:text>
-	 <math style="display:block">
+	 <math display="block">
 	  <xsl:copy-of select="."/>
 	  <xsl:text>&#10;</xsl:text>
 	 </math>
