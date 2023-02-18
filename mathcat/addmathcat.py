@@ -46,6 +46,7 @@ htmlstr = open(htmlfile,'r').read()
 
 
 mmls=re.split(r'(<math .*?</math>)', htmlstr, flags=re.DOTALL)
+
 sys.stdout.reconfigure(encoding='utf-8')
 
 i=0
@@ -55,7 +56,7 @@ for mml in mmls:
     if(i % 2 == 0):
         try:
             SetMathMLForMathCAT(mml)
-            print ("\n    <div class=\"mathcat\">{}</div>".format(GetSpeech().encode('utf8').decode() ))
+            print ("\n    <div class=\"mathcat\">{}</div>".format(GetSpeech() ))
         except:
             print ("\n    <div class=\"mathcat\">problem with SetMathML</div>")
 
