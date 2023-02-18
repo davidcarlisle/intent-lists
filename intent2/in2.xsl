@@ -907,7 +907,8 @@
 
 <xsl:when test="$intent='array' and $form='tabular'">
 <xsl:sequence  xml:space="preserve">
-<mrow intent="{$intent}">
+<mrow>
+ <mo intent="{$intent}"><xsl:comment>?</xsl:comment></mo>
  <mo>(</mo>  
  <mtable>
   <mtr><mtd><mi>a</mi></mtd><mtd><mi>b</mi></mtd></mtr>
