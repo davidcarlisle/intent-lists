@@ -7314,41 +7314,33 @@
             <td>mover $1 &#x23de; </td>
             <td>
                <pre>
-&lt;mover intent="braced-group"&gt;
- &lt;mrow&gt;&lt;mi&gt;x&lt;/mi&gt;&lt;mi&gt;y&lt;/mi&gt;&lt;mi&gt;z&lt;/mi&gt;&lt;/mrow&gt;
- &lt;mo&gt;&#x23de;&lt;/mo&gt;
+&lt;mover&gt;
+ &lt;mi&gt;X&lt;/mi&gt;
+ &lt;mo intent="braced-group"&gt;&#x23de;&lt;/mo&gt;
 &lt;/mover&gt;
 </pre>
             </td>
             <td><math display="block">
                   
-                  <mover intent="braced-group">
+                  <mover>
                      
-                     <mrow>
-                        <mi>x</mi>
-                        <mi>y</mi>
-                        <mi>z</mi>
-                     </mrow>
+                     <mi>X</mi>
                      
-                     <mo>&#x23de;</mo>
+                     <mo intent="braced-group">&#x23de;</mo>
                      </mover>
                   </math>
-    <div class="mathcat">braced group</div>
+    <div class="mathcat">x with braced group above</div>
 </td>
             <td><math display="block">
                   
                   <mover>
                      
-                     <mrow>
-                        <mi>x</mi>
-                        <mi>y</mi>
-                        <mi>z</mi>
-                     </mrow>
+                     <mi>X</mi>
                      
                      <mo>&#x23de;</mo>
                      </mover>
                   </math>
-    <div class="mathcat">x y z with top brace above</div>
+    <div class="mathcat">x with top brace above</div>
 </td>
             <td>start-braced-group $1 end-braced-group?</td>
          </tr>
@@ -8908,33 +8900,33 @@
             <td>mover $1 &#x2192;</td>
             <td>
                <pre>
-&lt;mover intent="ray($a)"&gt;
- &lt;mi arg="a"&gt;a&lt;/mi&gt;
- &lt;mo&gt;&#x2192;&lt;/mo&gt;  
+&lt;mover&gt;
+ &lt;mi&gt;X&lt;/mi&gt;
+ &lt;mo intent="ray"&gt;&#x2192;&lt;/mo&gt;
 &lt;/mover&gt;
 </pre>
             </td>
             <td><math display="block">
                   
-                  <mover intent="ray($a)">
+                  <mover>
                      
-                     <mi arg="a">a</mi>
+                     <mi>X</mi>
                      
-                     <mo>&#x2192;</mo>  
+                     <mo intent="ray">&#x2192;</mo>
                      </mover>
                   </math>
-    <div class="mathcat">problem with getting speech for MathML</div>
+    <div class="mathcat">x ray,</div>
 </td>
             <td><math display="block">
                   
                   <mover>
                      
-                     <mi arg="a">a</mi>
+                     <mi>X</mi>
                      
-                     <mo>&#x2192;</mo>  
+                     <mo>&#x2192;</mo>
                      </mover>
                   </math>
-    <div class="mathcat">vector eigh</div>
+    <div class="mathcat">vector   x</div>
 </td>
             <td></td>
          </tr>
@@ -9900,20 +9892,33 @@
             <td>mover $1 &#xaf;</td>
             <td>
                <pre>
- &lt;mtext style="color:red"&gt;conjugate&lt;/mtext&gt;
+&lt;mover&gt;
+ &lt;mi&gt;X&lt;/mi&gt;
+ &lt;mo intent="conjugate"&gt;&#xaf;&lt;/mo&gt;
+&lt;/mover&gt;
 </pre>
             </td>
             <td><math display="block">
                   
-                  <mtext style="color:red">conjugate</mtext>
+                  <mover>
+                     
+                     <mi>X</mi>
+                     
+                     <mo intent="conjugate">&#xaf;</mo>
+                     </mover>
                   </math>
-    <div class="mathcat">conjugate</div>
+    <div class="mathcat">x with conjugate above</div>
 </td>
             <td><math display="block">
                   
-                  <mtext style="color:red">conjugate</mtext>
+                  <mover>
+                     
+                     <mi>X</mi>
+                     
+                     <mo>&#xaf;</mo>
+                     </mover>
                   </math>
-    <div class="mathcat">conjugate</div>
+    <div class="mathcat">x with ¯ above</div>
 </td>
             <td></td>
          </tr>
@@ -9948,11 +9953,11 @@
             <td>mrow ( mfrac $1 $2 )</td>
             <td>
                <pre>
-&lt;mrow intent="binomial-coefficient($a,$b)"&gt;
+&lt;mrow intent="binomial-coefficient($n,$k)"&gt;
  &lt;mo&gt;(&lt;/mo&gt;
  &lt;mfrac linethickness="0pt"&gt;
-  &lt;mi arg="a"&gt;a&lt;/mi&gt;
-  &lt;mi arg="b"&gt;b&lt;/mi&gt;
+  &lt;mi arg="n"&gt;n&lt;/mi&gt;
+  &lt;mi arg="k"&gt;k&lt;/mi&gt;
  &lt;/mfrac&gt;
  &lt;mo&gt;)&lt;/mo&gt;
 &lt;/mrow&gt;
@@ -9960,21 +9965,21 @@
             </td>
             <td><math display="block">
                   
-                  <mrow intent="binomial-coefficient($a,$b)">
+                  <mrow intent="binomial-coefficient($n,$k)">
                      
                      <mo>(</mo>
                      
                      <mfrac linethickness="0pt">
                         
-                        <mi arg="a">a</mi>
+                        <mi arg="n">n</mi>
                         
-                        <mi arg="b">b</mi>
+                        <mi arg="k">k</mi>
                         </mfrac>
                      
                      <mo>)</mo>
                      </mrow>
                   </math>
-    <div class="mathcat">binomial coefficient of, eigh comma b</div>
+    <div class="mathcat">binomial coefficient of, n comma k</div>
 </td>
             <td><math display="block">
                   
@@ -9984,15 +9989,15 @@
                      
                      <mfrac linethickness="0pt">
                         
-                        <mi arg="a">a</mi>
+                        <mi arg="n">n</mi>
                         
-                        <mi arg="b">b</mi>
+                        <mi arg="k">k</mi>
                         </mfrac>
                      
                      <mo>)</mo>
                      </mrow>
                   </math>
-    <div class="mathcat">open paren eigh over b, close paren</div>
+    <div class="mathcat">open paren n over k, close paren</div>
 </td>
             <td>$1 choose $2</td>
          </tr>
@@ -10166,33 +10171,33 @@
             <td>mover $1 &#x2192;</td>
             <td>
                <pre>
-&lt;mover intent="vector($a)"&gt;
- &lt;mi arg="a"&gt;a&lt;/mi&gt;
- &lt;mo&gt;&#x2192;&lt;/mo&gt;  
+&lt;mover&gt;
+ &lt;mi&gt;X&lt;/mi&gt;
+ &lt;mo intent="vector"&gt;&#x2192;&lt;/mo&gt;
 &lt;/mover&gt;
 </pre>
             </td>
             <td><math display="block">
                   
-                  <mover intent="vector($a)">
+                  <mover>
                      
-                     <mi arg="a">a</mi>
+                     <mi>X</mi>
                      
-                     <mo>&#x2192;</mo>  
+                     <mo intent="vector">&#x2192;</mo>
                      </mover>
                   </math>
-    <div class="mathcat">vector of, eigh</div>
+    <div class="mathcat">x vector,</div>
 </td>
             <td><math display="block">
                   
                   <mover>
                      
-                     <mi arg="a">a</mi>
+                     <mi>X</mi>
                      
-                     <mo>&#x2192;</mo>  
+                     <mo>&#x2192;</mo>
                      </mover>
                   </math>
-    <div class="mathcat">vector eigh</div>
+    <div class="mathcat">vector   x</div>
 </td>
             <td></td>
          </tr>
@@ -10203,33 +10208,33 @@
             <td>mover $1 ^</td>
             <td>
                <pre>
-&lt;mover intent="unit-vector($a)"&gt;
- &lt;mi arg="a"&gt;a&lt;/mi&gt;
- &lt;mo&gt;^&lt;/mo&gt;  
+&lt;mover&gt;
+ &lt;mi&gt;X&lt;/mi&gt;
+ &lt;mo intent="unit-vector"&gt;^&lt;/mo&gt;
 &lt;/mover&gt;
 </pre>
             </td>
             <td><math display="block">
                   
-                  <mover intent="unit-vector($a)">
+                  <mover>
                      
-                     <mi arg="a">a</mi>
+                     <mi>X</mi>
                      
-                     <mo>^</mo>  
+                     <mo intent="unit-vector">^</mo>
                      </mover>
                   </math>
-    <div class="mathcat">unit vector of, eigh</div>
+    <div class="mathcat">x unit vector,</div>
 </td>
             <td><math display="block">
                   
                   <mover>
                      
-                     <mi arg="a">a</mi>
+                     <mi>X</mi>
                      
-                     <mo>^</mo>  
+                     <mo>^</mo>
                      </mover>
                   </math>
-    <div class="mathcat">eigh hat,</div>
+    <div class="mathcat">x hat,</div>
 </td>
             <td></td>
          </tr>
@@ -11089,33 +11094,33 @@
             <td>mover $1 &#xaf;</td>
             <td>
                <pre>
-&lt;mover intent="absolute-complement($a)"&gt;
- &lt;mi arg="a"&gt;a&lt;/mi&gt;
- &lt;mo&gt;&#xaf;&lt;/mo&gt;  
+&lt;mover&gt;
+ &lt;mi&gt;X&lt;/mi&gt;
+ &lt;mo intent="absolute-complement"&gt;&#xaf;&lt;/mo&gt;
 &lt;/mover&gt;
 </pre>
             </td>
             <td><math display="block">
                   
-                  <mover intent="absolute-complement($a)">
+                  <mover>
                      
-                     <mi arg="a">a</mi>
+                     <mi>X</mi>
                      
-                     <mo>&#xaf;</mo>  
+                     <mo intent="absolute-complement">&#xaf;</mo>
                      </mover>
                   </math>
-    <div class="mathcat">absolute complement of, eigh</div>
+    <div class="mathcat">x with absolute complement above</div>
 </td>
             <td><math display="block">
                   
                   <mover>
                      
-                     <mi arg="a">a</mi>
+                     <mi>X</mi>
                      
-                     <mo>&#xaf;</mo>  
+                     <mo>&#xaf;</mo>
                      </mover>
                   </math>
-    <div class="mathcat">eigh with ¯ above</div>
+    <div class="mathcat">x with ¯ above</div>
 </td>
             <td></td>
          </tr>
@@ -11476,20 +11481,33 @@
             <td>&#x25cc;&#x307;</td>
             <td>
                <pre>
- &lt;mtext style="color:red"&gt;first-derivative&lt;/mtext&gt;
+&lt;mover intent="first-derivative($x)"&gt;
+  &lt;mi arg="x"&gt;x&lt;/mi&gt;
+  &lt;mo&gt;&#x2d9;&lt;/mo&gt;
+&lt;/mover&gt;
 </pre>
             </td>
             <td><math display="block">
                   
-                  <mtext style="color:red">first-derivative</mtext>
+                  <mover intent="first-derivative($x)">
+                     
+                     <mi arg="x">x</mi>
+                     
+                     <mo>&#x2d9;</mo>
+                     </mover>
                   </math>
-    <div class="mathcat">first-derivative</div>
+    <div class="mathcat">first derivative of, x</div>
 </td>
             <td><math display="block">
                   
-                  <mtext style="color:red">first-derivative</mtext>
+                  <mover>
+                     
+                     <mi arg="x">x</mi>
+                     
+                     <mo>&#x2d9;</mo>
+                     </mover>
                   </math>
-    <div class="mathcat">first-derivative</div>
+    <div class="mathcat">x dot,</div>
 </td>
             <td>$1 prime<br>first derivative of $1</td>
          </tr>

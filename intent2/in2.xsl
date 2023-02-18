@@ -450,8 +450,8 @@
 </xsl:sequence>
 </xsl:when>
 
-<xsl:when test="matches($example,'^mover  * \$1 *[^a-z ] *$')">
-<xsl:analyze-string select="$example" regex="^mover  * \$1 *([^a-z ]) *$">
+<xsl:when test="matches($example,'^mover *\$1 *[^a-z ] *$')">
+<xsl:analyze-string select="$example" regex="^mover *\$1 *([^a-z ]) *$">
 <xsl:matching-substring>
 <xsl:sequence  xml:space="preserve">
 <mover>
@@ -832,11 +832,11 @@
 
 <xsl:when test="$intent='binomial-coefficient'">
 <xsl:sequence  xml:space="preserve">
-<mrow intent="{$intent}($a,$b)">
+<mrow intent="{$intent}($n,$k)">
  <mo>(</mo>
  <mfrac linethickness="0pt">
-  <mi arg="a">a</mi>
-  <mi arg="b">b</mi>
+  <mi arg="n">n</mi>
+  <mi arg="k">k</mi>
  </mfrac>
  <mo>)</mo>
 </mrow>
@@ -1129,6 +1129,14 @@
 </xsl:when>
 
 
+<xsl:when test="$intent='first-derivative' and matches($example,'&#x0307;')">
+<xsl:sequence  xml:space="preserve">
+<mover intent="{$intent}($x)">
+  <mi arg="x">x</mi>
+  <mo>&#x02D9;</mo>
+</mover>
+</xsl:sequence>
+</xsl:when>
 
 <xsl:otherwise>
 <xsl:sequence  xml:space="preserve">
