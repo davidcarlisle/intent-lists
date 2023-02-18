@@ -606,12 +606,35 @@
 <xsl:sequence  xml:space="preserve">
 <mrow intent="{$intent}($X)">
  <mi arg="X">X</mi>
- <mrow>
-  <mo>(</mo>
-  <mi mathvariant="normal"><xsl:value-of select="regex-group(1)"/></mi>
-  <mo>)</mo>
- </mrow>
+  <mi mathvariant="normal">(<xsl:value-of select="regex-group(1)"/>)</mi>
 </mrow>
+</xsl:sequence>
+</xsl:matching-substring>
+</xsl:analyze-string>
+</xsl:when>
+
+<xsl:when test="$form='msub postfix' and matches($example,'\$1 *\([^ ]*\)$')">
+<xsl:analyze-string select="$example" regex="\$1 *\(([^ ]*)\)$">
+<xsl:matching-substring>  
+<xsl:sequence  xml:space="preserve">
+<msub intent="{$intent}($X)">
+ <mi arg="X">X</mi>
+  <mi mathvariant="normal">(<xsl:value-of select="regex-group(1)"/>)</mi>
+</msub>
+</xsl:sequence>
+</xsl:matching-substring>
+</xsl:analyze-string>
+</xsl:when>
+
+
+<xsl:when test="$form='msub' and matches($example,'\([^ ]*\)$')">
+<xsl:analyze-string select="$example" regex="\(([^ ]*)\)$">
+<xsl:matching-substring>  
+<xsl:sequence  xml:space="preserve">
+<msub intent="{$intent}($X)">
+ <mi arg="X">X</mi>
+  <mi mathvariant="normal">(<xsl:value-of select="regex-group(1)"/>)</mi>
+</msub>
 </xsl:sequence>
 </xsl:matching-substring>
 </xsl:analyze-string>
