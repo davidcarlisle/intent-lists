@@ -448,8 +448,8 @@
 
 <xsl:when test="$form='postfix' and matches($example,'^mo ')">
 <xsl:sequence  xml:space="preserve">
-<mrow intent="{$intent}@postfix($a)">
- <mi arg="a">a</mi>
+<mrow intent="{$intent}@postfix($n)">
+ <mi arg="n">n</mi>
  <mo intent="{$intent}"><xsl:value-of select="substring-after($example,'mo ')"/></mo>
 </mrow>
 </xsl:sequence>
