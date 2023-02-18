@@ -529,8 +529,8 @@
 <xsl:analyze-string select="$example" regex="msup *\$1 *([^a-z])$">
 <xsl:matching-substring>  
 <xsl:sequence  xml:space="preserve">
-<msup intent="{$intent}($a)">
- <mi arg="a">a</mi>
+<msup intent="{$intent}($x)">
+ <mi arg="x">x</mi>
  <mo><xsl:value-of select="regex-group(1)"/></mo>  
 </msup>
 </xsl:sequence>
@@ -1053,6 +1053,16 @@
  <mi>log</mi>
  <mi>e</mi>
 </msub>
+</xsl:sequence>
+</xsl:when>
+
+<xsl:when test="matches($example,'unicode compose char for updiagonalstrike')">
+<xsl:sequence xml:space="preserve">
+<mrow>
+ <mi>x</mi>
+ <mo intent="not-much-less-than">&#x2AA1;&#x0338;</mo>
+ <mi>y</mi>
+</mrow>
 </xsl:sequence>
 </xsl:when>
 
