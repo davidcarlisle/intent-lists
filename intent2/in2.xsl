@@ -250,16 +250,42 @@
  <mtable>
   <mtr>
    <mtd><mi>x</mi><mo>+</mo><mi>y</mi></mtd>
-   <mtd><mo>=</mo><mn>2</mn></mtd>
+   <mtd><mo>=</mo></mtd>
+   <mtd><mn>2</mn></mtd>
   </mtr>
   <mtr>
    <mtd><mi>x</mi><mo>−</mo><mi>y</mi></mtd>
-   <mtd><mo>=</mo><mn>0</mn></mtd>
+   <mtd><mo>=</mo></mtd>
+   <mtd><mn>0</mn></mtd>
   </mtr>
  </mtable>
 </mrow>
 </xsl:sequence>
 </xsl:when>
+
+
+<xsl:when test="$intent='aligned-equation' and $form='mtable'">
+<xsl:sequence  xml:space="preserve">
+<mrow>
+ <mo intent="{$intent}"><xsl:comment>?</xsl:comment></mo>
+ <mtable>
+  <mtr>
+   <mtd><mi>x</mi><mo>+</mo><mi>y</mi></mtd>
+   <mtd><mo>=</mo></mtd>
+   <mtd><mn>2</mn></mtd>
+  </mtr>
+  <mtr>
+   <mtd><mi>x</mi><mo>−</mo><mi>y</mi></mtd>
+   <mtd><mo>=</mo></mtd>
+   <mtd><mn>0</mn></mtd>
+  </mtr>
+ </mtable>
+</mrow>
+</xsl:sequence>
+</xsl:when>
+
+
+
 
 <xsl:when test="$form='prefix' and matches($example,'^mo ([^a-zA-Z]) *([a-zA-Z])([a-zA-Z])([a-zA-Z])')">
 <xsl:analyze-string select="$example" regex="^mo ([^a-zA-Z]) *([a-zA-Z])([a-zA-Z])([a-zA-Z]) *$">
@@ -753,19 +779,19 @@
 
 <xsl:when test="$intent='continued-fraction'">
 <xsl:sequence  xml:space="preserve">
-<mfrac numalign="left" intent="continued-fraction">
- <mn>1</mn>
- <mrow>
+<mfrac numalign="left" intent="continued-fraction($n1,$d1)">
+ <mn arg="n1">1</mn>
+ <mrow arg="d1">
   <mn>1</mn>
   <mo>+</mo>
-  <mfrac numalign="left" intent="continued-fraction">
-   <mn>1</mn>
-   <mrow>
+  <mfrac numalign="left" intent="continued-fraction($n2,$d2)">
+   <mn arg="n2">1</mn>
+   <mrow arg="d2">
     <mn>1</mn>
     <mo>+</mo>
-    <mfrac numalign="left" intent="continued-fraction">
-     <mn>1</mn>
-     <mo>&#x22F1;</mo>
+    <mfrac numalign="left" intent="continued-fraction($n3,$d3)">
+     <mn arg="n3">1</mn>
+     <mo arg="d3">&#x22F1;</mo>
     </mfrac>
    </mrow>
   </mfrac>
@@ -963,6 +989,19 @@
 </xsl:sequence>
 </xsl:when>
 
+<xsl:when test="$intent='least-common-denominator' and $example='LCD'">
+<xsl:sequence  xml:space="preserve">
+<mrow>
+ <mi intent="{$intent}">lcd</mi>
+ <mo>(</mo>
+ <mi>x</mi>
+ <mo>,</mo>
+ <mi>y</mi>
+ <mo>)</mo>
+</mrow>
+</xsl:sequence>
+</xsl:when>
+
 
 <xsl:when test="$intent='translation' and $example='msub T ($1, $2)'">
 <xsl:sequence  xml:space="preserve">
@@ -1088,6 +1127,8 @@
 </mrow>
 </xsl:sequence>
 </xsl:when>
+
+
 
 <xsl:otherwise>
 <xsl:sequence  xml:space="preserve">
