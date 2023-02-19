@@ -1,0 +1,285 @@
+<!DOCTYPE HTML>
+<HTML>
+   <head>
+      <title>Intent Examples (David C)</title>
+      <meta charset="UTF-8"/>
+      <style>
+        th[colspan] {font-size:120%;font-weight:bold;
+                     background-color:white;
+                    padding-top:.5em}
+     tbody th {width:2em;}
+     math{font-size:120%;margin:.2em;}
+     div.mathcat{
+     background-color:white;padding:.2em;
+     margin:-.2em .1em 1em .1em;
+     }
+     a.self {text-decoration:none;color:DarkBlue}
+     a.self::visited  {text-decoration:none;color:DarkBlue}
+    </style>
+   </head>
+   <body>
+      <h1>Intent Examples</h1>
+      <table>
+        <colgroup>
+          <!--Xcol style="background-color:#EEE;font-family: monospace;"/X-->
+            <col style="background-color:#DDF;min-width:12em"/>
+          <!--Xcol style="background-color:#EEE;font-family: monospace;"/X-->
+            <col style="background-color:#DFD;min-width:12em"/>
+          <!--Xcol style="background-color:#EEE;font-family: monospace;"/X-->
+            <col style="background-color:#AEA;min-width:12em"/>
+            <col style="background-color:#AAA;font-family: monospace;"/>
+            <col style="background-color:beige"/>
+         </colgroup>
+         <thead>
+            <!--Xth>MathML</thX-->
+            <th>MathML</th>
+            <!--Xth>MathML+intent</thX-->
+            <th>MathML+intent</th>
+            <!--Xth>MathML+hints</thX-->
+            <th>MathML+hints</th>
+            <th>TeX</th>
+            <th>Comments</th>
+         </thead>
+<tr>
+  <th colspan="6">Numbers</th>
+</tr>
+<tr>
+  <td>
+    <math display="block">
+      <mn>1.234</mn>
+      <mo>+</mo>
+      <mn>1,234</mn>
+    </math>
+  </td>
+  <td>
+    <math display="block">
+      <mn>1.234</mn>
+      <mo>+</mo>
+      <mn>1,234</mn>
+    </math>
+  </td>
+  <td>
+    <math display="block">
+      <mn>1.234</mn>
+      <mo>+</mo>
+      <mn>1,234</mn>
+    </math>
+  </td>
+  <td>1,234+1{,}234</td>
+  <td>decimal comma</td>
+</tr>
+<tr>
+  <td>
+    <math display="block">
+      <mn>1,234</mn>
+      <mo>;</mo>
+      <mn>1,234</mn>
+      <mo>;</mo>
+      <mn>1,234,000</mn>
+    </math>
+  </td>
+  <td>
+    <math display="block">
+      <mn>1.234</mn>
+      <mo>;</mo>
+      <mn>1,234</mn>
+      <mo>;</mo>
+      <mn>1,234,000</mn>
+    </math>
+  </td>
+  <td>
+    <math display="block">
+      <mn>1.234</mn>
+      <mo>;</mo>
+      <mn>1,234</mn>
+      <mo>;</mo>
+      <mn>1,234,000</mn>
+    </math>
+  </td>
+  <td>1,234; 1,234; 1,234,000</td>
+  <td>grouping comma</td>
+</tr>
+<tr>
+  <th colspan="6">Super and Sub Scripts</th>
+</tr>
+<tr>
+  <td>
+    <math display="block">
+      <msup>
+        <mi>x</mi>
+        <mn>2</mn>
+      </msup>
+    </math>
+  </td>
+  <td>
+    <math display="block">
+      <msup>
+        <mi>x</mi>
+        <mn>2</mn>
+      </msup>
+    </math>
+  </td>
+  <td>
+    <math display="block">
+      <msup>
+        <mi>x</mi>
+        <mn>2</mn>
+      </msup>
+    </math>
+  </td>
+  <td>x^2</td>
+  <td>squared</td>
+</tr>
+<tr>
+  <td>
+    <math display="block">
+      <msup>
+        <mi>x</mi>
+        <mn>3</mn>
+      </msup>
+    </math>
+  </td>
+  <td>
+    <math display="block">
+      <msup>
+        <mi>x</mi>
+        <mn>3</mn>
+      </msup>
+    </math>
+  </td>
+  <td>
+    <math display="block">
+      <msup>
+        <mi>x</mi>
+        <mn>3</mn>
+      </msup>
+    </math>
+  </td>
+  <td>x^3</td>
+  <td>cubed</td>
+</tr>
+
+<tr>
+  <td>
+    <math display="block">
+      <msup>
+        <mi mathvariant="normal">H</mi>
+        <mn>2</mn>
+      </msup>
+    </math>
+  </td>
+  <td>
+    <math display="block">
+      <msup>
+        <mi mathvariant="normal">H</mi>
+        <mn>2</mn>
+      </msup>
+    </math>
+  </td>
+  <td>
+    <math display="block">
+      <msup>
+        <mi mathvariant="normal">H</mi>
+        <mn>2</mn>
+      </msup>
+    </math>
+  </td>
+  <td>\mathrm{H}^2</td>
+  <td>2nd Cohomology</td>
+</tr>
+
+<tr>
+  <td>
+    <math display="block">
+      <msup>
+        <mi>x</mi>
+        <mi>n</mi>
+      </msup>
+    </math>
+  </td>
+  <td>
+    <math display="block">
+      <msup>
+        <mi>x</mi>
+        <mi>n</mi>
+      </msup>
+    </math>
+  </td>
+  <td>
+    <math display="block">
+      <msup>
+        <mi>x</mi>
+        <mi>n</mi>
+      </msup>
+    </math>
+  </td>
+  <td>x^n</td>
+  <td>x to nth</td>
+</tr>
+
+<tr>
+ <td>
+  <math display="block">
+   <msup>  
+    <mi>x</mi>  
+    <mo>&#x2020;<!-- U+2020--></mo>
+   </msup>
+  </math>
+ </td>
+ <td>
+  <math display="block">
+   <msup intent="x-dagger">  
+    <mi>x</mi>  
+    <mo>&#x2020;<!-- U+2020--></mo>
+   </msup>
+  </math>
+ </td>
+ <td>
+  <math display="block">
+   <msup intent="x-dagger">  
+    <mi>x</mi>  
+    <mo>&#x2020;<!-- U+2020--></mo>
+   </msup>
+  </math>
+ </td>
+ <td>x^\dagger</td>
+ <td>dagger</td>
+</tr>
+
+<tr>
+  <th colspan="6">Infix</th>
+</tr>
+<tr>x
+ <td>
+  <math display="block">
+<mrow>
+ <mi>x</mi>
+ <mo>&#x2282;</mo>
+ <mi>y</mi>
+</mrow>
+  </math>
+ </td>
+ <td>
+  <math display="block">
+<mrow>
+ <mi>x</mi>
+ <mo intent="subset">&#x2282;</mo>
+ <mi>y</mi>
+</mrow>
+  </math>
+ </td>
+ <td>
+  <math display="block">
+<mrow intent="_is_a_subset_of@infix($x,$y)">
+ <mi arg="x">x</mi>
+ <mo>&#x2282;</mo>
+ <mi arg="y">y</mi>
+</mrow>
+  </math>
+ </td>
+ <td>x \subset y</td>
+ <td>subset</td>
+</tr>
+      </table>
+   </body>
+</HTML>
