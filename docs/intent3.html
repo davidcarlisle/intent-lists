@@ -18,7 +18,10 @@
     </style>
    </head>
    <body>
-      <h1>Intent Examples</h1>
+    <h1>Intent Examples</h1>
+    <p><a href="intent1.html">List 1 (David F)</a></p>
+    <p><a href="intent2.html">List 2 (Deyan G)</a></p>
+
       <table>
         <colgroup>
           <col style="background-color:#EEE;font-family: monospace;"/>
@@ -452,7 +455,7 @@
 <tr>
   <th colspan="6">Infix</th>
 </tr>
-<tr>x
+<tr>
  <td>
   <pre>
 &lt;math display="block">
@@ -518,11 +521,11 @@ Replacement
 ]
 ...due to matching the following MathML with the pattern
 x: "."
- &lt;math display=&apos;block&apos; id=&apos;Ma5aqgd3-0&apos; data-id-added=&apos;true&apos;>
-  &lt;mrow intent=&apos;_is_a_subset_of@infix($x,$y)&apos; id=&apos;Ma5aqgd3-1&apos; data-id-added=&apos;true&apos;>
-    &lt;mi arg=&apos;x&apos; id=&apos;Ma5aqgd3-2&apos; data-id-added=&apos;true&apos;>x&lt;/mi>
-    &lt;mo id=&apos;Ma5aqgd3-3&apos; data-id-added=&apos;true&apos;>⊂&lt;/mo>
-    &lt;mi arg=&apos;y&apos; id=&apos;Ma5aqgd3-4&apos; data-id-added=&apos;true&apos;>y&lt;/mi>
+ &lt;math display=&apos;block&apos; id=&apos;Mpj130bj-0&apos; data-id-added=&apos;true&apos;>
+  &lt;mrow intent=&apos;_is_a_subset_of@infix($x,$y)&apos; id=&apos;Mpj130bj-1&apos; data-id-added=&apos;true&apos;>
+    &lt;mi arg=&apos;x&apos; id=&apos;Mpj130bj-2&apos; data-id-added=&apos;true&apos;>x&lt;/mi>
+    &lt;mo id=&apos;Mpj130bj-3&apos; data-id-added=&apos;true&apos;>⊂&lt;/mo>
+    &lt;mi arg=&apos;y&apos; id=&apos;Mpj130bj-4&apos; data-id-added=&apos;true&apos;>y&lt;/mi>
   &lt;/mrow>
  &lt;/math>
 The patterns are in mathcat\Rules\intent.yaml.
@@ -533,10 +536,10 @@ Replacement
 [x: "process-intent(.)"]
 ...due to matching the following MathML with the pattern
 x: "@intent"
- &lt;mrow intent=&apos;_is_a_subset_of@infix($x,$y)&apos; id=&apos;Ma5aqgd3-1&apos; data-id-added=&apos;true&apos;>
-  &lt;mi arg=&apos;x&apos; id=&apos;Ma5aqgd3-2&apos; data-id-added=&apos;true&apos;>x&lt;/mi>
-  &lt;mo id=&apos;Ma5aqgd3-3&apos; data-id-added=&apos;true&apos;>⊂&lt;/mo>
-  &lt;mi arg=&apos;y&apos; id=&apos;Ma5aqgd3-4&apos; data-id-added=&apos;true&apos;>y&lt;/mi>
+ &lt;mrow intent=&apos;_is_a_subset_of@infix($x,$y)&apos; id=&apos;Mpj130bj-1&apos; data-id-added=&apos;true&apos;>
+  &lt;mi arg=&apos;x&apos; id=&apos;Mpj130bj-2&apos; data-id-added=&apos;true&apos;>x&lt;/mi>
+  &lt;mo id=&apos;Mpj130bj-3&apos; data-id-added=&apos;true&apos;>⊂&lt;/mo>
+  &lt;mi arg=&apos;y&apos; id=&apos;Mpj130bj-4&apos; data-id-added=&apos;true&apos;>y&lt;/mi>
  &lt;/mrow>
 The patterns are in mathcat\Rules\intent.yaml.
 
@@ -546,6 +549,98 @@ caused by: Illegal &apos;intent&apos; syntax: _is_a_subset_of
  </td>
  <td>x \subset y</td>
  <td id="subset"><a class="self" href="#subset">subset</a></td></tr>
-      </table>
+
+
+
+
+
+<tr>
+  <th colspan="6">Tables</th>
+</tr>
+<tr>
+<td>
+  <pre>
+&lt;math display="block">
+&lt;mrow>
+ &lt;mo>[&lt;/mo>  
+ &lt;mtable>
+  &lt;mtr>&lt;mtd>&lt;mi>a&lt;/mi>&lt;/mtd>&lt;mtd>&lt;mi>b&lt;/mi>&lt;/mtd>&lt;/mtr>
+  &lt;mtr>&lt;mtd>&lt;mi>x&lt;/mi>&lt;/mtd>&lt;mtd>&lt;mi>y&lt;/mi>&lt;/mtd>&lt;/mtr>
+ &lt;/mtable>
+ &lt;mo>]&lt;/mo>
+&lt;/mrow>
+  &lt;/math>
+</pre></td><td>
+<math display="block">
+    <mrow>
+ <mo>[</mo>  
+ <mtable>
+  <mtr><mtd><mi>a</mi></mtd><mtd><mi>b</mi></mtd></mtr>
+  <mtr><mtd><mi>x</mi></mtd><mtd><mi>y</mi></mtd></mtr>
+ </mtable>
+ <mo>]</mo>
+</mrow>
+  </math>
+    <div class="mathcat">the 2 by 2 matrix; column 1; eigh; column 2; b; column 1; x; column 2; y;</div>
+
+</td>
+<td>
+  <pre>
+&lt;math display="block">
+&lt;mrow intent="matrix">
+ &lt;mo>[&lt;/mo>  
+ &lt;mtable>
+  &lt;mtr>&lt;mtd>&lt;mi>a&lt;/mi>&lt;/mtd>&lt;mtd>&lt;mi>b&lt;/mi>&lt;/mtd>&lt;/mtr>
+  &lt;mtr>&lt;mtd>&lt;mi>x&lt;/mi>&lt;/mtd>&lt;mtd>&lt;mi>y&lt;/mi>&lt;/mtd>&lt;/mtr>
+ &lt;/mtable>
+ &lt;mo>]&lt;/mo>
+&lt;/mrow>
+  &lt;/math>
+</pre></td><td>
+<math display="block">
+    <mrow intent="matrix">
+ <mo>[</mo>  
+ <mtable>
+  <mtr><mtd><mi>a</mi></mtd><mtd><mi>b</mi></mtd></mtr>
+  <mtr><mtd><mi>x</mi></mtd><mtd><mi>y</mi></mtd></mtr>
+ </mtable>
+ <mo>]</mo>
+</mrow>
+  </math>
+    <div class="mathcat">matrix</div>
+
+</td>
+<td>
+  <pre>
+&lt;math display="block">
+&lt;mrow intent="matrix($r1,$r2)">
+ &lt;mo>[&lt;/mo>  
+ &lt;mtable>
+  &lt;mtr arg="r1">&lt;mtd>&lt;mi>a&lt;/mi>&lt;/mtd>&lt;mtd>&lt;mi>b&lt;/mi>&lt;/mtd>&lt;/mtr>
+  &lt;mtr arg="r2">&lt;mtd>&lt;mi>x&lt;/mi>&lt;/mtd>&lt;mtd>&lt;mi>y&lt;/mi>&lt;/mtd>&lt;/mtr>
+ &lt;/mtable>
+ &lt;mo>]&lt;/mo>
+&lt;/mrow>
+  &lt;/math>
+</pre></td><td>
+<math display="block">
+    <mrow intent="matrix($r1,$r2)">
+ <mo>[</mo>  
+ <mtable>
+  <mtr arg="r1"><mtd><mi>a</mi></mtd><mtd><mi>b</mi></mtd></mtr>
+  <mtr arg="r2"><mtd><mi>x</mi></mtd><mtd><mi>y</mi></mtd></mtr>
+ </mtable>
+ <mo>]</mo>
+</mrow>
+  </math>
+    <div class="mathcat">the 2 by 2 matrix; column 1; eigh; column 2; b; column 1; x; column 2; y;</div>
+
+</td>
+<td>\begin{bmatrix} a&amp;b\\ x&amp;y \end{bmatrix}</td>
+<td id="bmatrix"><a class="self" href="#bmatrix">bmatrix</a></td></tr>
+
+
+
+</table>
    </body>
 </HTML>

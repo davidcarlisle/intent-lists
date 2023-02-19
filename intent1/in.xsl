@@ -28,7 +28,8 @@
     <h1>Intent Examples</h1>
 
     <p><a href="https://docs.google.com/spreadsheets/d/1PhjYFEz3PhRTsE5U4RiPH84pnTTTwilh0wx-ujnprqg/edit#gid=0">Original Google Docs spreadsheet</a>.</p>
-    <p><a href="intent2.html">Other list</a></p>
+    <p><a href="intent1.html">List 2 (Deyan G)</a></p>
+    <p><a href="intent1.html">List 3 (David C)</a></p>
     
     <p><xsl:copy-of select="//tbody/tr[1]/*[2]/node()"/></p>
 

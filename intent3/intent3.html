@@ -18,7 +18,10 @@
     </style>
    </head>
    <body>
-      <h1>Intent Examples</h1>
+    <h1>Intent Examples</h1>
+    <p><a href="intent1.html">List 1 (David F)</a></p>
+    <p><a href="intent2.html">List 2 (Deyan G)</a></p>
+
       <table>
         <colgroup>
           <!--Xcol style="background-color:#EEE;font-family: monospace;"/X-->
@@ -249,7 +252,7 @@
 <tr>
   <th colspan="6">Infix</th>
 </tr>
-<tr>x
+<tr>
  <td>
   <math display="block">
 <mrow>
@@ -280,6 +283,57 @@
  <td>x \subset y</td>
  <td>subset</td>
 </tr>
-      </table>
+
+
+
+
+
+<tr>
+  <th colspan="6">Tables</th>
+</tr>
+<tr>
+<td>
+  <math display="block">
+    <mrow>
+ <mo>[</mo>  
+ <mtable>
+  <mtr><mtd><mi>a</mi></mtd><mtd><mi>b</mi></mtd></mtr>
+  <mtr><mtd><mi>x</mi></mtd><mtd><mi>y</mi></mtd></mtr>
+ </mtable>
+ <mo>]</mo>
+</mrow>
+  </math>
+</td>
+<td>
+  <math display="block">
+    <mrow intent="matrix">
+ <mo>[</mo>  
+ <mtable>
+  <mtr><mtd><mi>a</mi></mtd><mtd><mi>b</mi></mtd></mtr>
+  <mtr><mtd><mi>x</mi></mtd><mtd><mi>y</mi></mtd></mtr>
+ </mtable>
+ <mo>]</mo>
+</mrow>
+  </math>
+</td>
+<td>
+  <math display="block">
+    <mrow intent="matrix($r1,$r2)">
+ <mo>[</mo>  
+ <mtable>
+  <mtr arg="r1"><mtd><mi>a</mi></mtd><mtd><mi>b</mi></mtd></mtr>
+  <mtr arg="r2"><mtd><mi>x</mi></mtd><mtd><mi>y</mi></mtd></mtr>
+ </mtable>
+ <mo>]</mo>
+</mrow>
+  </math>
+</td>
+<td>\begin{bmatrix} a&amp;b\\ x&amp;y \end{bmatrix}</td>
+<td>bmatrix</td>
+</tr>
+
+
+
+</table>
    </body>
 </HTML>
