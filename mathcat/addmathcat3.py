@@ -55,14 +55,14 @@ def selflink(match):
   m2 = match.group(2)
   m3 = match.group(3)
   m3id = re.sub(r'[ \t()]','',m3)
-  return u"<t{}{} id=\"ID{}\"><a class=\"self\" href=\"#ID{}\">{}</a></{}></tr>".format(m1,m2,m3id,m3id,m3,m1)
+  return u"<t{}{} id=\"ID{}\"><a class=\"self\" href=\"#ID{}\">{}</a></t{}>\n </tr>".format(m1,m2,m3id,m3id,m3,m1)
 
 i=0
 for mml in mmls:
   i=i+1
   if(i % 2 == 0):
     print("<pre>",)
-    print(mml.replace('&','&amp;').replace('<','&lt;').replace('\n    ','\n'))
+    print(mml.replace('&','&amp;').replace('<','&lt;').replace('\n     ','\n'))
     print("</pre></td><td>")
     print (mml,end="")
     try:

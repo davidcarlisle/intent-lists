@@ -1,112 +1,114 @@
 <!DOCTYPE HTML>
 <HTML>
-   <head>
-      <title>Intent Examples (David C)</title>
-      <meta charset="UTF-8"/>
-      <style>
-        th[colspan] {font-size:120%;font-weight:bold;
-                     background-color:white;
-                    padding-top:.5em}
-     tbody th {width:2em;}
-     math{font-size:120%;margin:.2em;}
-     div.mathcat{
-     background-color:white;padding:.2em;
-     margin:-.2em .1em 1em .1em;
-     }
-     a.self {text-decoration:none;color:DarkBlue}
-     a.self::visited  {text-decoration:none;color:DarkBlue}
-    </style>
-   </head>
-   <body>
-    <h1>Intent Examples 3</h1>
-    
-    <p><a href="intent1.html">List 1 (David F)</a></p>
-    <p><a href="intent2.html">List 2 (Deyan G)</a></p>
-    <p>List 3 (David C) <a href="https://github.com/mathml-refresh/intent-lists/blob/main/intent3/intent3.html">GitHub source</a></p>
+ <head>
+  <title>Intent Examples (David C)</title>
+  <meta charset="UTF-8"/>
+  <style>
+   th[colspan] {font-size:120%;font-weight:bold;
+   background-color:white;
+   padding-top:.5em}
+   tbody th {width:2em;}
+   math{font-size:120%;margin:.2em;}
+   div.mathcat{
+   background-color:white;padding:.2em;
+   margin:-.2em .1em 1em .1em;
+   }
+   a.self {text-decoration:none;color:DarkBlue}
+   a.self::visited  {text-decoration:none;color:DarkBlue}
+  </style>
+ </head>
+ <body>
+  <h1>Intent Examples 3</h1>
+  
+  <p><a href="intent1.html">List 1 (David F)</a></p>
+  <p><a href="intent2.html">List 2 (Deyan G)</a></p>
+  <p>List 3 (David C) <a href="https://github.com/mathml-refresh/intent-lists/blob/main/intent3/intent3.html">GitHub source</a></p>
 
-      <table>
-        <colgroup>
-          <col style="background-color:#EEE;font-family: monospace;"/>
-            <col style="background-color:#DDF;min-width:12em"/>
-          <col style="background-color:#EEE;font-family: monospace;"/>
-            <col style="background-color:#DFD;min-width:12em"/>
-          <col style="background-color:#EEE;font-family: monospace;"/>
-            <col style="background-color:#AEA;min-width:12em"/>
-            <col style="background-color:#AAA;font-family: monospace;"/>
-            <col style="background-color:beige"/>
-         </colgroup>
-         <thead>
-            <th>MathML</th>
-            <th>MathML</th>
-            <th>MathML+intent</th>
-            <th>MathML+intent</th>
-            <th>MathML+hints</th>
-            <th>MathML+hints</th>
-            <th>TeX</th>
-            <th>Comments</th>
-         </thead>
-<tr>
-  <th colspan="6" id="IDNumbers"><a class="self" href="#IDNumbers">Numbers</a></h></tr>
-<tr>
-  <td>
-    <pre>
+  <table>
+   <colgroup>
+    <col style="background-color:#EEE;font-family: monospace;"/>
+    <col style="background-color:#DDF;min-width:12em"/>
+    <col style="background-color:#EEE;font-family: monospace;"/>
+    <col style="background-color:#DFD;min-width:12em"/>
+    <col style="background-color:#EEE;font-family: monospace;"/>
+    <col style="background-color:#AEA;min-width:12em"/>
+    <col style="background-color:#AAA;font-family: monospace;"/>
+    <col style="background-color:beige"/>
+   </colgroup>
+   <thead>
+    <th>MathML</th>
+    <th>MathML</th>
+    <th>MathML+intent</th>
+    <th>MathML+intent</th>
+    <th>MathML+hints</th>
+    <th>MathML+hints</th>
+    <th>TeX</th>
+    <th>Comments</th>
+   </thead>
+   <tr>
+    <th colspan="6" id="IDNumbers"><a class="self" href="#IDNumbers">Numbers</a></th>
+ </tr>
+   <tr>
+    <td>
+     <pre>
 &lt;math display="block">
-  &lt;mn>1.234&lt;/mn>
-  &lt;mo>+&lt;/mo>
-  &lt;mn>1,234&lt;/mn>
+ &lt;mn>1.234&lt;/mn>
+ &lt;mo>+&lt;/mo>
+ &lt;mn>1,234&lt;/mn>
 &lt;/math>
 </pre></td><td>
 <math display="block">
       <mn>1.234</mn>
       <mo>+</mo>
       <mn>1,234</mn>
-    </math>
+     </math>
     <div class="mathcat">1.234 plus 1,234</div>
 
-  </td>
-  <td>
-    <pre>
+    </td>
+    <td>
+     <pre>
 &lt;math display="block">
-  &lt;mn>1.234&lt;/mn>
-  &lt;mo>+&lt;/mo>
-  &lt;mn>1,234&lt;/mn>
+ &lt;mn>1.234&lt;/mn>
+ &lt;mo>+&lt;/mo>
+ &lt;mn>1,234&lt;/mn>
 &lt;/math>
 </pre></td><td>
 <math display="block">
       <mn>1.234</mn>
       <mo>+</mo>
       <mn>1,234</mn>
-    </math>
+     </math>
     <div class="mathcat">1.234 plus 1,234</div>
 
-  </td>
-  <td>
-    <pre>
+    </td>
+    <td>
+     <pre>
 &lt;math display="block">
-  &lt;mn>1.234&lt;/mn>
-  &lt;mo>+&lt;/mo>
-  &lt;mn>1,234&lt;/mn>
+ &lt;mn>1.234&lt;/mn>
+ &lt;mo>+&lt;/mo>
+ &lt;mn>1,234&lt;/mn>
 &lt;/math>
 </pre></td><td>
 <math display="block">
       <mn>1.234</mn>
       <mo>+</mo>
       <mn>1,234</mn>
-    </math>
+     </math>
     <div class="mathcat">1.234 plus 1,234</div>
 
-  </td>
-  <td>1,234+1{,}234</td>
-  <td id="IDdecimalcomma"><a class="self" href="#IDdecimalcomma">decimal comma</a></d></tr>
-<tr>
-  <td>
-    <pre>
+    </td>
+    <td>1,234+1{,}234</td>
+    <td id="IDdecimalcomma"><a class="self" href="#IDdecimalcomma">decimal comma</a></td>
+ </tr>
+   <tr>
+    <td>
+     <pre>
 &lt;math display="block">
-  &lt;mn>1,234&lt;/mn>
-  &lt;mo>;&lt;/mo>
-  &lt;mn>1,234&lt;/mn>
-  &lt;mo>;&lt;/mo>
-  &lt;mn>1,234,000&lt;/mn>
+ &lt;mn>1,234&lt;/mn>
+ &lt;mo>;&lt;/mo>
+ &lt;mn>1,234&lt;/mn>
+ &lt;mo>;&lt;/mo>
+ &lt;mn>1,234,000&lt;/mn>
 &lt;/math>
 </pre></td><td>
 <math display="block">
@@ -115,18 +117,18 @@
       <mn>1,234</mn>
       <mo>;</mo>
       <mn>1,234,000</mn>
-    </math>
+     </math>
     <div class="mathcat">1,234 semicolon 1,234 semicolon 1,234,000</div>
 
-  </td>
-  <td>
-    <pre>
+    </td>
+    <td>
+     <pre>
 &lt;math display="block">
-  &lt;mn>1.234&lt;/mn>
-  &lt;mo>;&lt;/mo>
-  &lt;mn>1,234&lt;/mn>
-  &lt;mo>;&lt;/mo>
-  &lt;mn>1,234,000&lt;/mn>
+ &lt;mn>1.234&lt;/mn>
+ &lt;mo>;&lt;/mo>
+ &lt;mn>1,234&lt;/mn>
+ &lt;mo>;&lt;/mo>
+ &lt;mn>1,234,000&lt;/mn>
 &lt;/math>
 </pre></td><td>
 <math display="block">
@@ -135,18 +137,18 @@
       <mn>1,234</mn>
       <mo>;</mo>
       <mn>1,234,000</mn>
-    </math>
+     </math>
     <div class="mathcat">1.234 semicolon 1,234 semicolon 1,234,000</div>
 
-  </td>
-  <td>
-    <pre>
+    </td>
+    <td>
+     <pre>
 &lt;math display="block">
-  &lt;mn>1.234&lt;/mn>
-  &lt;mo>;&lt;/mo>
-  &lt;mn>1,234&lt;/mn>
-  &lt;mo>;&lt;/mo>
-  &lt;mn>1,234,000&lt;/mn>
+ &lt;mn>1.234&lt;/mn>
+ &lt;mo>;&lt;/mo>
+ &lt;mn>1,234&lt;/mn>
+ &lt;mo>;&lt;/mo>
+ &lt;mn>1,234,000&lt;/mn>
 &lt;/math>
 </pre></td><td>
 <math display="block">
@@ -155,363 +157,371 @@
       <mn>1,234</mn>
       <mo>;</mo>
       <mn>1,234,000</mn>
-    </math>
+     </math>
     <div class="mathcat">1.234 semicolon 1,234 semicolon 1,234,000</div>
 
-  </td>
-  <td>1,234; 1,234; 1,234,000</td>
-  <td id="IDgroupingcomma"><a class="self" href="#IDgroupingcomma">grouping comma</a></d></tr>
-<tr>
-  <th colspan="6" id="IDSuperandSubScripts"><a class="self" href="#IDSuperandSubScripts">Super and Sub Scripts</a></h></tr>
-<tr>
-  <td>
-    <pre>
+    </td>
+    <td>1,234; 1,234; 1,234,000</td>
+    <td id="IDgroupingcomma"><a class="self" href="#IDgroupingcomma">grouping comma</a></td>
+ </tr>
+   <tr>
+    <th colspan="6" id="IDSuperandSubScripts"><a class="self" href="#IDSuperandSubScripts">Super and Sub Scripts</a></th>
+ </tr>
+   <tr>
+    <td>
+     <pre>
 &lt;math display="block">
-  &lt;msup>
-    &lt;mi>x&lt;/mi>
-    &lt;mn>2&lt;/mn>
-  &lt;/msup>
+ &lt;msup>
+  &lt;mi>x&lt;/mi>
+  &lt;mn>2&lt;/mn>
+ &lt;/msup>
 &lt;/math>
 </pre></td><td>
 <math display="block">
       <msup>
-        <mi>x</mi>
-        <mn>2</mn>
+       <mi>x</mi>
+       <mn>2</mn>
       </msup>
-    </math>
+     </math>
     <div class="mathcat">x squared</div>
 
-  </td>
-  <td>
-    <pre>
+    </td>
+    <td>
+     <pre>
 &lt;math display="block">
-  &lt;msup>
-    &lt;mi>x&lt;/mi>
-    &lt;mn>2&lt;/mn>
-  &lt;/msup>
+ &lt;msup>
+  &lt;mi>x&lt;/mi>
+  &lt;mn>2&lt;/mn>
+ &lt;/msup>
 &lt;/math>
 </pre></td><td>
 <math display="block">
       <msup>
-        <mi>x</mi>
-        <mn>2</mn>
+       <mi>x</mi>
+       <mn>2</mn>
       </msup>
-    </math>
+     </math>
     <div class="mathcat">x squared</div>
 
-  </td>
-  <td>
-    <pre>
+    </td>
+    <td>
+     <pre>
 &lt;math display="block">
-  &lt;msup>
-    &lt;mi>x&lt;/mi>
-    &lt;mn>2&lt;/mn>
-  &lt;/msup>
+ &lt;msup>
+  &lt;mi>x&lt;/mi>
+  &lt;mn>2&lt;/mn>
+ &lt;/msup>
 &lt;/math>
 </pre></td><td>
 <math display="block">
       <msup>
-        <mi>x</mi>
-        <mn>2</mn>
+       <mi>x</mi>
+       <mn>2</mn>
       </msup>
-    </math>
+     </math>
     <div class="mathcat">x squared</div>
 
-  </td>
-  <td>x^2</td>
-  <td id="IDsquared"><a class="self" href="#IDsquared">squared</a></d></tr>
-<tr>
-  <td>
-    <pre>
+    </td>
+    <td>x^2</td>
+    <td id="IDsquared"><a class="self" href="#IDsquared">squared</a></td>
+ </tr>
+   <tr>
+    <td>
+     <pre>
 &lt;math display="block">
-  &lt;msup>
-    &lt;mi>x&lt;/mi>
-    &lt;mn>3&lt;/mn>
-  &lt;/msup>
+ &lt;msup>
+  &lt;mi>x&lt;/mi>
+  &lt;mn>3&lt;/mn>
+ &lt;/msup>
 &lt;/math>
 </pre></td><td>
 <math display="block">
       <msup>
-        <mi>x</mi>
-        <mn>3</mn>
+       <mi>x</mi>
+       <mn>3</mn>
       </msup>
-    </math>
+     </math>
     <div class="mathcat">x cubed</div>
 
-  </td>
-  <td>
-    <pre>
+    </td>
+    <td>
+     <pre>
 &lt;math display="block">
-  &lt;msup>
-    &lt;mi>x&lt;/mi>
-    &lt;mn>3&lt;/mn>
-  &lt;/msup>
+ &lt;msup>
+  &lt;mi>x&lt;/mi>
+  &lt;mn>3&lt;/mn>
+ &lt;/msup>
 &lt;/math>
 </pre></td><td>
 <math display="block">
       <msup>
-        <mi>x</mi>
-        <mn>3</mn>
+       <mi>x</mi>
+       <mn>3</mn>
       </msup>
-    </math>
+     </math>
     <div class="mathcat">x cubed</div>
 
-  </td>
-  <td>
-    <pre>
+    </td>
+    <td>
+     <pre>
 &lt;math display="block">
-  &lt;msup>
-    &lt;mi>x&lt;/mi>
-    &lt;mn>3&lt;/mn>
-  &lt;/msup>
+ &lt;msup>
+  &lt;mi>x&lt;/mi>
+  &lt;mn>3&lt;/mn>
+ &lt;/msup>
 &lt;/math>
 </pre></td><td>
 <math display="block">
       <msup>
-        <mi>x</mi>
-        <mn>3</mn>
+       <mi>x</mi>
+       <mn>3</mn>
       </msup>
-    </math>
+     </math>
     <div class="mathcat">x cubed</div>
 
-  </td>
-  <td>x^3</td>
-  <td id="IDcubed"><a class="self" href="#IDcubed">cubed</a></d></tr>
+    </td>
+    <td>x^3</td>
+    <td id="IDcubed"><a class="self" href="#IDcubed">cubed</a></td>
+ </tr>
 
-<tr>
-  <td>
-    <pre>
+   <tr>
+    <td>
+     <pre>
 &lt;math display="block">
-  &lt;msup>
-    &lt;mi mathvariant="normal">H&lt;/mi>
-    &lt;mn>2&lt;/mn>
-  &lt;/msup>
+ &lt;msup>
+  &lt;mi mathvariant="normal">H&lt;/mi>
+  &lt;mn>2&lt;/mn>
+ &lt;/msup>
 &lt;/math>
 </pre></td><td>
 <math display="block">
       <msup>
-        <mi mathvariant="normal">H</mi>
-        <mn>2</mn>
+       <mi mathvariant="normal">H</mi>
+       <mn>2</mn>
       </msup>
-    </math>
+     </math>
     <div class="mathcat">h squared</div>
 
-  </td>
-  <td>
-    <pre>
+    </td>
+    <td>
+     <pre>
 &lt;math display="block">
-  &lt;msup>
-    &lt;mi mathvariant="normal">H&lt;/mi>
-    &lt;mn>2&lt;/mn>
-  &lt;/msup>
+ &lt;msup>
+  &lt;mi mathvariant="normal">H&lt;/mi>
+  &lt;mn>2&lt;/mn>
+ &lt;/msup>
 &lt;/math>
 </pre></td><td>
 <math display="block">
       <msup>
-        <mi mathvariant="normal">H</mi>
-        <mn>2</mn>
+       <mi mathvariant="normal">H</mi>
+       <mn>2</mn>
       </msup>
-    </math>
+     </math>
     <div class="mathcat">h squared</div>
 
-  </td>
-  <td>
-    <pre>
+    </td>
+    <td>
+     <pre>
 &lt;math display="block">
-  &lt;msup>
-    &lt;mi mathvariant="normal">H&lt;/mi>
-    &lt;mn>2&lt;/mn>
-  &lt;/msup>
+ &lt;msup>
+  &lt;mi mathvariant="normal">H&lt;/mi>
+  &lt;mn>2&lt;/mn>
+ &lt;/msup>
 &lt;/math>
 </pre></td><td>
 <math display="block">
       <msup>
-        <mi mathvariant="normal">H</mi>
-        <mn>2</mn>
+       <mi mathvariant="normal">H</mi>
+       <mn>2</mn>
       </msup>
-    </math>
+     </math>
     <div class="mathcat">h squared</div>
 
-  </td>
-  <td>\mathrm{H}^2</td>
-  <td id="ID2ndCohomology"><a class="self" href="#ID2ndCohomology">2nd Cohomology</a></d></tr>
+    </td>
+    <td>\mathrm{H}^2</td>
+    <td id="ID2ndCohomology"><a class="self" href="#ID2ndCohomology">2nd Cohomology</a></td>
+ </tr>
 
-<tr>
-  <td>
-    <pre>
+   <tr>
+    <td>
+     <pre>
 &lt;math display="block">
-  &lt;msup>
-    &lt;mi>x&lt;/mi>
-    &lt;mi>n&lt;/mi>
-  &lt;/msup>
+ &lt;msup>
+  &lt;mi>x&lt;/mi>
+  &lt;mi>n&lt;/mi>
+ &lt;/msup>
 &lt;/math>
 </pre></td><td>
 <math display="block">
       <msup>
-        <mi>x</mi>
-        <mi>n</mi>
+       <mi>x</mi>
+       <mi>n</mi>
       </msup>
-    </math>
+     </math>
     <div class="mathcat">x to the n-th</div>
 
-  </td>
-  <td>
-    <pre>
+    </td>
+    <td>
+     <pre>
 &lt;math display="block">
-  &lt;msup>
-    &lt;mi>x&lt;/mi>
-    &lt;mi>n&lt;/mi>
-  &lt;/msup>
+ &lt;msup>
+  &lt;mi>x&lt;/mi>
+  &lt;mi>n&lt;/mi>
+ &lt;/msup>
 &lt;/math>
 </pre></td><td>
 <math display="block">
       <msup>
-        <mi>x</mi>
-        <mi>n</mi>
+       <mi>x</mi>
+       <mi>n</mi>
       </msup>
-    </math>
+     </math>
     <div class="mathcat">x to the n-th</div>
 
-  </td>
-  <td>
-    <pre>
+    </td>
+    <td>
+     <pre>
 &lt;math display="block">
-  &lt;msup>
-    &lt;mi>x&lt;/mi>
-    &lt;mi>n&lt;/mi>
-  &lt;/msup>
+ &lt;msup>
+  &lt;mi>x&lt;/mi>
+  &lt;mi>n&lt;/mi>
+ &lt;/msup>
 &lt;/math>
 </pre></td><td>
 <math display="block">
       <msup>
-        <mi>x</mi>
-        <mi>n</mi>
+       <mi>x</mi>
+       <mi>n</mi>
       </msup>
-    </math>
+     </math>
     <div class="mathcat">x to the n-th</div>
 
-  </td>
-  <td>x^n</td>
-  <td id="IDxtonth"><a class="self" href="#IDxtonth">x to nth</a></d></tr>
+    </td>
+    <td>x^n</td>
+    <td id="IDxtonth"><a class="self" href="#IDxtonth">x to nth</a></td>
+ </tr>
 
-<tr>
- <td>
-  <pre>
+   <tr>
+    <td>
+     <pre>
 &lt;math display="block">
-   &lt;msup>  
-&lt;mi>x&lt;/mi>  
-&lt;mo>&amp;#x2020;&lt;!-- U+2020-->&lt;/mo>
-   &lt;/msup>
-  &lt;/math>
+ &lt;msup>  
+  &lt;mi>x&lt;/mi>  
+  &lt;mo>&amp;#x2020;&lt;!-- U+2020-->&lt;/mo>
+ &lt;/msup>
+&lt;/math>
 </pre></td><td>
 <math display="block">
-   <msup>  
-    <mi>x</mi>  
-    <mo>&#x2020;<!-- U+2020--></mo>
-   </msup>
-  </math>
+      <msup>  
+       <mi>x</mi>  
+       <mo>&#x2020;<!-- U+2020--></mo>
+      </msup>
+     </math>
     <div class="mathcat">x †,</div>
 
- </td>
- <td>
-  <pre>
+    </td>
+    <td>
+     <pre>
 &lt;math display="block">
-   &lt;msup intent="x-dagger">  
-&lt;mi>x&lt;/mi>  
-&lt;mo>&amp;#x2020;&lt;!-- U+2020-->&lt;/mo>
-   &lt;/msup>
-  &lt;/math>
+ &lt;msup intent="x-dagger">  
+  &lt;mi>x&lt;/mi>  
+  &lt;mo>&amp;#x2020;&lt;!-- U+2020-->&lt;/mo>
+ &lt;/msup>
+&lt;/math>
 </pre></td><td>
 <math display="block">
-   <msup intent="x-dagger">  
-    <mi>x</mi>  
-    <mo>&#x2020;<!-- U+2020--></mo>
-   </msup>
-  </math>
+      <msup intent="x-dagger">  
+       <mi>x</mi>  
+       <mo>&#x2020;<!-- U+2020--></mo>
+      </msup>
+     </math>
     <div class="mathcat">x dagger</div>
 
- </td>
- <td>
-  <pre>
+    </td>
+    <td>
+     <pre>
 &lt;math display="block">
-   &lt;msup intent="x-dagger">  
-&lt;mi>x&lt;/mi>  
-&lt;mo>&amp;#x2020;&lt;!-- U+2020-->&lt;/mo>
-   &lt;/msup>
-  &lt;/math>
+ &lt;msup intent="x-dagger">  
+  &lt;mi>x&lt;/mi>  
+  &lt;mo>&amp;#x2020;&lt;!-- U+2020-->&lt;/mo>
+ &lt;/msup>
+&lt;/math>
 </pre></td><td>
 <math display="block">
-   <msup intent="x-dagger">  
-    <mi>x</mi>  
-    <mo>&#x2020;<!-- U+2020--></mo>
-   </msup>
-  </math>
+      <msup intent="x-dagger">  
+       <mi>x</mi>  
+       <mo>&#x2020;<!-- U+2020--></mo>
+      </msup>
+     </math>
     <div class="mathcat">x dagger</div>
 
- </td>
- <td>x^\dagger</td>
- <td id="IDdagger"><a class="self" href="#IDdagger">dagger</a></d></tr>
+    </td>
+    <td>x^\dagger</td>
+    <td id="IDdagger"><a class="self" href="#IDdagger">dagger</a></td>
+ </tr>
 
-<tr>
-  <th colspan="6" id="IDInfix"><a class="self" href="#IDInfix">Infix</a></h></tr>
-<tr>
- <td>
-  <pre>
+   <tr>
+    <th colspan="6" id="IDInfix"><a class="self" href="#IDInfix">Infix</a></th>
+ </tr>
+   <tr>
+    <td>
+     <pre>
 &lt;math display="block">
-&lt;mrow>
- &lt;mi>x&lt;/mi>
- &lt;mo>&amp;#x2282;&lt;/mo>
- &lt;mi>y&lt;/mi>
-&lt;/mrow>
-  &lt;/math>
+ &lt;mrow>
+  &lt;mi>x&lt;/mi>
+  &lt;mo>&amp;#x2282;&lt;/mo>
+  &lt;mi>y&lt;/mi>
+ &lt;/mrow>
+&lt;/math>
 </pre></td><td>
 <math display="block">
-<mrow>
- <mi>x</mi>
- <mo>&#x2282;</mo>
- <mi>y</mi>
-</mrow>
-  </math>
+      <mrow>
+       <mi>x</mi>
+       <mo>&#x2282;</mo>
+       <mi>y</mi>
+      </mrow>
+     </math>
     <div class="mathcat">x is a subset of y</div>
 
- </td>
- <td>
-  <pre>
+    </td>
+    <td>
+     <pre>
 &lt;math display="block">
-&lt;mrow>
- &lt;mi>x&lt;/mi>
- &lt;mo intent="subset">&amp;#x2282;&lt;/mo>
- &lt;mi>y&lt;/mi>
-&lt;/mrow>
-  &lt;/math>
+ &lt;mrow>
+  &lt;mi>x&lt;/mi>
+  &lt;mo intent="subset">&amp;#x2282;&lt;/mo>
+  &lt;mi>y&lt;/mi>
+ &lt;/mrow>
+&lt;/math>
 </pre></td><td>
 <math display="block">
-<mrow>
- <mi>x</mi>
- <mo intent="subset">&#x2282;</mo>
- <mi>y</mi>
-</mrow>
-  </math>
+      <mrow>
+       <mi>x</mi>
+       <mo intent="subset">&#x2282;</mo>
+       <mi>y</mi>
+      </mrow>
+     </math>
     <div class="mathcat">x subset y</div>
 
- </td>
- <td>
-  <pre>
+    </td>
+    <td>
+     <pre>
 &lt;math display="block">
-&lt;mrow intent="_is_a_subset_of@infix($x,$y)">
- &lt;mi arg="x">x&lt;/mi>
- &lt;mo>&amp;#x2282;&lt;/mo>
- &lt;mi arg="y">y&lt;/mi>
-&lt;/mrow>
-  &lt;/math>
+ &lt;mrow intent="_is_a_subset_of@infix($x,$y)">
+  &lt;mi arg="x">x&lt;/mi>
+  &lt;mo>&amp;#x2282;&lt;/mo>
+  &lt;mi arg="y">y&lt;/mi>
+ &lt;/mrow>
+&lt;/math>
 </pre></td><td>
 <math display="block">
-<mrow intent="_is_a_subset_of@infix($x,$y)">
- <mi arg="x">x</mi>
- <mo>&#x2282;</mo>
- <mi arg="y">y</mi>
-</mrow>
-  </math>
+      <mrow intent="_is_a_subset_of@infix($x,$y)">
+       <mi arg="x">x</mi>
+       <mo>&#x2282;</mo>
+       <mi arg="y">y</mi>
+      </mrow>
+     </math>
     <div class="mathcat"><span title='Pattern match/replacement failure!
 caused by: attempting replacement pattern: "default" for "math".
 Replacement
@@ -520,11 +530,11 @@ Replacement
 ]
 ...due to matching the following MathML with the pattern
 x: "."
- &lt;math display=&apos;block&apos; id=&apos;M27r3yff-0&apos; data-id-added=&apos;true&apos;>
-  &lt;mrow intent=&apos;_is_a_subset_of@infix($x,$y)&apos; id=&apos;M27r3yff-1&apos; data-id-added=&apos;true&apos;>
-    &lt;mi arg=&apos;x&apos; id=&apos;M27r3yff-2&apos; data-id-added=&apos;true&apos;>x&lt;/mi>
-    &lt;mo id=&apos;M27r3yff-3&apos; data-id-added=&apos;true&apos;>⊂&lt;/mo>
-    &lt;mi arg=&apos;y&apos; id=&apos;M27r3yff-4&apos; data-id-added=&apos;true&apos;>y&lt;/mi>
+ &lt;math display=&apos;block&apos; id=&apos;Mvjb38k7-0&apos; data-id-added=&apos;true&apos;>
+  &lt;mrow intent=&apos;_is_a_subset_of@infix($x,$y)&apos; id=&apos;Mvjb38k7-1&apos; data-id-added=&apos;true&apos;>
+    &lt;mi arg=&apos;x&apos; id=&apos;Mvjb38k7-2&apos; data-id-added=&apos;true&apos;>x&lt;/mi>
+    &lt;mo id=&apos;Mvjb38k7-3&apos; data-id-added=&apos;true&apos;>⊂&lt;/mo>
+    &lt;mi arg=&apos;y&apos; id=&apos;Mvjb38k7-4&apos; data-id-added=&apos;true&apos;>y&lt;/mi>
   &lt;/mrow>
  &lt;/math>
 The patterns are in mathcat\Rules\intent.yaml.
@@ -535,422 +545,431 @@ Replacement
 [x: "process-intent(.)"]
 ...due to matching the following MathML with the pattern
 x: "@intent"
- &lt;mrow intent=&apos;_is_a_subset_of@infix($x,$y)&apos; id=&apos;M27r3yff-1&apos; data-id-added=&apos;true&apos;>
-  &lt;mi arg=&apos;x&apos; id=&apos;M27r3yff-2&apos; data-id-added=&apos;true&apos;>x&lt;/mi>
-  &lt;mo id=&apos;M27r3yff-3&apos; data-id-added=&apos;true&apos;>⊂&lt;/mo>
-  &lt;mi arg=&apos;y&apos; id=&apos;M27r3yff-4&apos; data-id-added=&apos;true&apos;>y&lt;/mi>
+ &lt;mrow intent=&apos;_is_a_subset_of@infix($x,$y)&apos; id=&apos;Mvjb38k7-1&apos; data-id-added=&apos;true&apos;>
+  &lt;mi arg=&apos;x&apos; id=&apos;Mvjb38k7-2&apos; data-id-added=&apos;true&apos;>x&lt;/mi>
+  &lt;mo id=&apos;Mvjb38k7-3&apos; data-id-added=&apos;true&apos;>⊂&lt;/mo>
+  &lt;mi arg=&apos;y&apos; id=&apos;Mvjb38k7-4&apos; data-id-added=&apos;true&apos;>y&lt;/mi>
  &lt;/mrow>
 The patterns are in mathcat\Rules\intent.yaml.
 
 caused by: Illegal &apos;intent&apos; syntax: _is_a_subset_of
 '>problem with getting speech for MathML (hover for trace)</span></div>
 
- </td>
- <td>x \subset y</td>
- <td id="IDsubset"><a class="self" href="#IDsubset">subset</a></d></tr>
+    </td>
+    <td>x \subset y</td>
+    <td id="IDsubset"><a class="self" href="#IDsubset">subset</a></td>
+ </tr>
 
 
 
 
 
-<tr>
-  <th colspan="6" id="IDTables"><a class="self" href="#IDTables">Tables</a></h></tr>
-<tr>
- <td>
-  <pre>
+   <tr>
+    <th colspan="6" id="IDTables"><a class="self" href="#IDTables">Tables</a></th>
+ </tr>
+   <tr>
+    <td>
+     <pre>
 &lt;math display="block">
-   &lt;mrow>
-&lt;mo>[&lt;/mo>  
-&lt;mtable>
- &lt;mtr>
-  &lt;mtd>&lt;mi>a&lt;/mi>&lt;/mtd>&lt;mtd>&lt;mi>b&lt;/mi>&lt;/mtd>
- &lt;/mtr>
- &lt;mtr>
-  &lt;mtd>&lt;mi>x&lt;/mi>&lt;/mtd>&lt;mtd>&lt;mi>y&lt;/mi>&lt;/mtd>
- &lt;/mtr>
-&lt;/mtable>
-&lt;mo>]&lt;/mo>
-   &lt;/mrow>
-  &lt;/math>
+ &lt;mrow>
+  &lt;mo>[&lt;/mo>  
+  &lt;mtable>
+   &lt;mtr>
+    &lt;mtd>&lt;mi>a&lt;/mi>&lt;/mtd>&lt;mtd>&lt;mi>b&lt;/mi>&lt;/mtd>
+   &lt;/mtr>
+   &lt;mtr>
+    &lt;mtd>&lt;mi>x&lt;/mi>&lt;/mtd>&lt;mtd>&lt;mi>y&lt;/mi>&lt;/mtd>
+   &lt;/mtr>
+  &lt;/mtable>
+  &lt;mo>]&lt;/mo>
+ &lt;/mrow>
+&lt;/math>
 </pre></td><td>
 <math display="block">
-   <mrow>
-    <mo>[</mo>  
-    <mtable>
-     <mtr>
-      <mtd><mi>a</mi></mtd><mtd><mi>b</mi></mtd>
-     </mtr>
-     <mtr>
-      <mtd><mi>x</mi></mtd><mtd><mi>y</mi></mtd>
-     </mtr>
-    </mtable>
-    <mo>]</mo>
-   </mrow>
-  </math>
+      <mrow>
+       <mo>[</mo>  
+       <mtable>
+        <mtr>
+         <mtd><mi>a</mi></mtd><mtd><mi>b</mi></mtd>
+        </mtr>
+        <mtr>
+         <mtd><mi>x</mi></mtd><mtd><mi>y</mi></mtd>
+        </mtr>
+       </mtable>
+       <mo>]</mo>
+      </mrow>
+     </math>
     <div class="mathcat">the 2 by 2 matrix; column 1; eigh; column 2; b; column 1; x; column 2; y;</div>
 
- </td>
- <td>
-  <pre>
+    </td>
+    <td>
+     <pre>
 &lt;math display="block">
-   &lt;mrow intent="matrix">
-&lt;mo>[&lt;/mo>  
-&lt;mtable>
- &lt;mtr>
-  &lt;mtd>&lt;mi>a&lt;/mi>&lt;/mtd>&lt;mtd>&lt;mi>b&lt;/mi>&lt;/mtd>
- &lt;/mtr>
- &lt;mtr>
-  &lt;mtd>&lt;mi>x&lt;/mi>&lt;/mtd>&lt;mtd>&lt;mi>y&lt;/mi>&lt;/mtd>
- &lt;/mtr>
-&lt;/mtable>
-&lt;mo>]&lt;/mo>
-   &lt;/mrow>
-  &lt;/math>
+ &lt;mrow intent="matrix">
+  &lt;mo>[&lt;/mo>  
+  &lt;mtable>
+   &lt;mtr>
+    &lt;mtd>&lt;mi>a&lt;/mi>&lt;/mtd>&lt;mtd>&lt;mi>b&lt;/mi>&lt;/mtd>
+   &lt;/mtr>
+   &lt;mtr>
+    &lt;mtd>&lt;mi>x&lt;/mi>&lt;/mtd>&lt;mtd>&lt;mi>y&lt;/mi>&lt;/mtd>
+   &lt;/mtr>
+  &lt;/mtable>
+  &lt;mo>]&lt;/mo>
+ &lt;/mrow>
+&lt;/math>
 </pre></td><td>
 <math display="block">
-   <mrow intent="matrix">
-    <mo>[</mo>  
-    <mtable>
-     <mtr>
-      <mtd><mi>a</mi></mtd><mtd><mi>b</mi></mtd>
-     </mtr>
-     <mtr>
-      <mtd><mi>x</mi></mtd><mtd><mi>y</mi></mtd>
-     </mtr>
-    </mtable>
-    <mo>]</mo>
-   </mrow>
-  </math>
+      <mrow intent="matrix">
+       <mo>[</mo>  
+       <mtable>
+        <mtr>
+         <mtd><mi>a</mi></mtd><mtd><mi>b</mi></mtd>
+        </mtr>
+        <mtr>
+         <mtd><mi>x</mi></mtd><mtd><mi>y</mi></mtd>
+        </mtr>
+       </mtable>
+       <mo>]</mo>
+      </mrow>
+     </math>
     <div class="mathcat">matrix</div>
 
- </td>
- <td>
-  <pre>
+    </td>
+    <td>
+     <pre>
 &lt;math display="block">
-   &lt;mrow intent="matrix($r1,$r2)">
-&lt;mo>[&lt;/mo>  
-&lt;mtable>
- &lt;mtr arg="r1">
-  &lt;mtd>&lt;mi>a&lt;/mi>&lt;/mtd>&lt;mtd>&lt;mi>b&lt;/mi>&lt;/mtd>
- &lt;/mtr>
- &lt;mtr arg="r2">
-  &lt;mtd>&lt;mi>x&lt;/mi>&lt;/mtd>&lt;mtd>&lt;mi>y&lt;/mi>&lt;/mtd>
- &lt;/mtr>
-&lt;/mtable>
-&lt;mo>]&lt;/mo>
-   &lt;/mrow>
-  &lt;/math>
+ &lt;mrow intent="matrix($r1,$r2)">
+  &lt;mo>[&lt;/mo>  
+  &lt;mtable>
+   &lt;mtr arg="r1">
+    &lt;mtd>&lt;mi>a&lt;/mi>&lt;/mtd>&lt;mtd>&lt;mi>b&lt;/mi>&lt;/mtd>
+   &lt;/mtr>
+   &lt;mtr arg="r2">
+    &lt;mtd>&lt;mi>x&lt;/mi>&lt;/mtd>&lt;mtd>&lt;mi>y&lt;/mi>&lt;/mtd>
+   &lt;/mtr>
+  &lt;/mtable>
+  &lt;mo>]&lt;/mo>
+ &lt;/mrow>
+&lt;/math>
 </pre></td><td>
 <math display="block">
-   <mrow intent="matrix($r1,$r2)">
-    <mo>[</mo>  
-    <mtable>
-     <mtr arg="r1">
-      <mtd><mi>a</mi></mtd><mtd><mi>b</mi></mtd>
-     </mtr>
-     <mtr arg="r2">
-      <mtd><mi>x</mi></mtd><mtd><mi>y</mi></mtd>
-     </mtr>
-    </mtable>
-    <mo>]</mo>
-   </mrow>
-  </math>
+      <mrow intent="matrix($r1,$r2)">
+       <mo>[</mo>  
+       <mtable>
+        <mtr arg="r1">
+         <mtd><mi>a</mi></mtd><mtd><mi>b</mi></mtd>
+        </mtr>
+        <mtr arg="r2">
+         <mtd><mi>x</mi></mtd><mtd><mi>y</mi></mtd>
+        </mtr>
+       </mtable>
+       <mo>]</mo>
+      </mrow>
+     </math>
     <div class="mathcat">the 2 by 2 matrix; column 1; eigh; column 2; b; column 1; x; column 2; y;</div>
 
- </td>
- <td>\begin{bmatrix} a&amp;b\\ x&amp;y \end{bmatrix}</td>
- <td id="IDbmatrix"><a class="self" href="#IDbmatrix">bmatrix</a></d></tr>
+    </td>
+    <td>\begin{bmatrix} a&amp;b\\ x&amp;y \end{bmatrix}</td>
+    <td id="IDbmatrix"><a class="self" href="#IDbmatrix">bmatrix</a></td>
+ </tr>
 
-<tr>
- <td>
-  <pre>
+   <tr>
+    <td>
+     <pre>
 &lt;math display="block">
-   &lt;mrow>
-&lt;mo>&lt;!--?-->&lt;/mo>
-&lt;mo>(&lt;/mo>  
-&lt;mtable>
- &lt;mtr>&lt;mtd>&lt;mi>a&lt;/mi>&lt;/mtd>&lt;mtd>&lt;mi>b&lt;/mi>&lt;/mtd>&lt;/mtr>
- &lt;mtr>&lt;mtd>&lt;mi>x&lt;/mi>&lt;/mtd>&lt;mtd>&lt;mi>y&lt;/mi>&lt;/mtd>&lt;/mtr>
-&lt;/mtable>
-&lt;mo>)&lt;/mo>
-   &lt;/mrow>
-  &lt;/math>
+ &lt;mrow>
+  &lt;mo>&lt;!--?-->&lt;/mo>
+  &lt;mo>(&lt;/mo>  
+  &lt;mtable>
+   &lt;mtr>&lt;mtd>&lt;mi>a&lt;/mi>&lt;/mtd>&lt;mtd>&lt;mi>b&lt;/mi>&lt;/mtd>&lt;/mtr>
+   &lt;mtr>&lt;mtd>&lt;mi>x&lt;/mi>&lt;/mtd>&lt;mtd>&lt;mi>y&lt;/mi>&lt;/mtd>&lt;/mtr>
+  &lt;/mtable>
+  &lt;mo>)&lt;/mo>
+ &lt;/mrow>
+&lt;/math>
 </pre></td><td>
 <math display="block">
-   <mrow>
-    <mo><!--?--></mo>
-    <mo>(</mo>  
-    <mtable>
-     <mtr><mtd><mi>a</mi></mtd><mtd><mi>b</mi></mtd></mtr>
-     <mtr><mtd><mi>x</mi></mtd><mtd><mi>y</mi></mtd></mtr>
-    </mtable>
-    <mo>)</mo>
-   </mrow>
-  </math>
+      <mrow>
+       <mo><!--?--></mo>
+       <mo>(</mo>  
+       <mtable>
+        <mtr><mtd><mi>a</mi></mtd><mtd><mi>b</mi></mtd></mtr>
+        <mtr><mtd><mi>x</mi></mtd><mtd><mi>y</mi></mtd></mtr>
+       </mtable>
+       <mo>)</mo>
+      </mrow>
+     </math>
     <div class="mathcat">the 2 by 2 matrix; column 1; eigh; column 2; b; column 1; x; column 2; y;</div>
 
- </td>
- <td>
-  <pre>
+    </td>
+    <td>
+     <pre>
 &lt;math display="block">
-   &lt;mrow>
-&lt;mo intent="array">&lt;!--?-->&lt;/mo>
-&lt;mo>(&lt;/mo>  
-&lt;mtable>
- &lt;mtr>&lt;mtd>&lt;mi>a&lt;/mi>&lt;/mtd>&lt;mtd>&lt;mi>b&lt;/mi>&lt;/mtd>&lt;/mtr>
- &lt;mtr>&lt;mtd>&lt;mi>x&lt;/mi>&lt;/mtd>&lt;mtd>&lt;mi>y&lt;/mi>&lt;/mtd>&lt;/mtr>
-&lt;/mtable>
-&lt;mo>)&lt;/mo>
-   &lt;/mrow>
-  &lt;/math>
+ &lt;mrow>
+  &lt;mo intent="array">&lt;!--?-->&lt;/mo>
+  &lt;mo>(&lt;/mo>  
+  &lt;mtable>
+   &lt;mtr>&lt;mtd>&lt;mi>a&lt;/mi>&lt;/mtd>&lt;mtd>&lt;mi>b&lt;/mi>&lt;/mtd>&lt;/mtr>
+   &lt;mtr>&lt;mtd>&lt;mi>x&lt;/mi>&lt;/mtd>&lt;mtd>&lt;mi>y&lt;/mi>&lt;/mtd>&lt;/mtr>
+  &lt;/mtable>
+  &lt;mo>)&lt;/mo>
+ &lt;/mrow>
+&lt;/math>
 </pre></td><td>
 <math display="block">
-   <mrow>
-    <mo intent="array"><!--?--></mo>
-    <mo>(</mo>  
-    <mtable>
-     <mtr><mtd><mi>a</mi></mtd><mtd><mi>b</mi></mtd></mtr>
-     <mtr><mtd><mi>x</mi></mtd><mtd><mi>y</mi></mtd></mtr>
-    </mtable>
-    <mo>)</mo>
-   </mrow>
-  </math>
+      <mrow>
+       <mo intent="array"><!--?--></mo>
+       <mo>(</mo>  
+       <mtable>
+        <mtr><mtd><mi>a</mi></mtd><mtd><mi>b</mi></mtd></mtr>
+        <mtr><mtd><mi>x</mi></mtd><mtd><mi>y</mi></mtd></mtr>
+       </mtable>
+       <mo>)</mo>
+      </mrow>
+     </math>
     <div class="mathcat">the 2 by 2 matrix; column 1; eigh; column 2; b; column 1; x; column 2; y;</div>
 
- </td>
-<td> - </dd>
-<td> - </td>
- <td>\begin{pmatrix} a&amp;b\\ x&amp;y \end{pmatrix}</td>
- <td id="IDpmatrix"><a class="self" href="#IDpmatrix">pmatrix</a></d></tr>
+    </td>
+    <td> - </dd>
+    <td> - </td>
+    <td>\begin{pmatrix} a&amp;b\\ x&amp;y \end{pmatrix}</td>
+    <td id="IDpmatrix"><a class="self" href="#IDpmatrix">pmatrix</a></td>
+ </tr>
 
-<tr>
- <td>
-  <pre>
+   <tr>
+    <td>
+     <pre>
 &lt;math display="block">
-   &lt;mrow>
-&lt;mo>{&lt;/mo>
-&lt;mtable>
- &lt;mtr>
-  &lt;mtd>&lt;mi>x&lt;/mi>&lt;mo>+&lt;/mo>&lt;mi>y&lt;/mi>&lt;/mtd>
-  &lt;mtd>&lt;mo>=&lt;/mo>&lt;/mtd>
-  &lt;mtd>&lt;mn>2&lt;/mn>&lt;/mtd>
- &lt;/mtr>
- &lt;mtr>
-  &lt;mtd>&lt;mi>x&lt;/mi>&lt;mo>&amp;#x2212;&lt;/mo>&lt;mi>y&lt;/mi>&lt;/mtd>
-  &lt;mtd>&lt;mo>=&lt;/mo>&lt;/mtd>
-  &lt;mtd>&lt;mn>0&lt;/mn>&lt;/mtd>
- &lt;/mtr>
-&lt;/mtable>
-   &lt;/mrow>
-  &lt;/math>
+ &lt;mrow>
+  &lt;mo>{&lt;/mo>
+  &lt;mtable>
+   &lt;mtr>
+    &lt;mtd>&lt;mi>x&lt;/mi>&lt;mo>+&lt;/mo>&lt;mi>y&lt;/mi>&lt;/mtd>
+    &lt;mtd>&lt;mo>=&lt;/mo>&lt;/mtd>
+    &lt;mtd>&lt;mn>2&lt;/mn>&lt;/mtd>
+   &lt;/mtr>
+   &lt;mtr>
+    &lt;mtd>&lt;mi>x&lt;/mi>&lt;mo>&amp;#x2212;&lt;/mo>&lt;mi>y&lt;/mi>&lt;/mtd>
+    &lt;mtd>&lt;mo>=&lt;/mo>&lt;/mtd>
+    &lt;mtd>&lt;mn>0&lt;/mn>&lt;/mtd>
+   &lt;/mtr>
+  &lt;/mtable>
+ &lt;/mrow>
+&lt;/math>
 </pre></td><td>
 <math display="block">
-   <mrow>
-    <mo>{</mo>
-    <mtable>
-     <mtr>
-      <mtd><mi>x</mi><mo>+</mo><mi>y</mi></mtd>
-      <mtd><mo>=</mo></mtd>
-      <mtd><mn>2</mn></mtd>
-     </mtr>
-     <mtr>
-      <mtd><mi>x</mi><mo>&#x2212;</mo><mi>y</mi></mtd>
-      <mtd><mo>=</mo></mtd>
-      <mtd><mn>0</mn></mtd>
-     </mtr>
-    </mtable>
-   </mrow>
-  </math>
+      <mrow>
+       <mo>{</mo>
+       <mtable>
+        <mtr>
+         <mtd><mi>x</mi><mo>+</mo><mi>y</mi></mtd>
+         <mtd><mo>=</mo></mtd>
+         <mtd><mn>2</mn></mtd>
+        </mtr>
+        <mtr>
+         <mtd><mi>x</mi><mo>&#x2212;</mo><mi>y</mi></mtd>
+         <mtd><mo>=</mo></mtd>
+         <mtd><mn>0</mn></mtd>
+        </mtr>
+       </mtable>
+      </mrow>
+     </math>
     <div class="mathcat">2 cases, case 1; x plus y, equals, 2; case 2; x minus y, equals, 0;</div>
 
- </td>
- <td>
-  <pre>
+    </td>
+    <td>
+     <pre>
 &lt;math display="block">
-   &lt;mrow>
-&lt;mo intent="system-of-equations">{&lt;/mo>
-&lt;mtable>
- &lt;mtr>
-  &lt;mtd>&lt;mi>x&lt;/mi>&lt;mo>+&lt;/mo>&lt;mi>y&lt;/mi>&lt;/mtd>
-  &lt;mtd>&lt;mo>=&lt;/mo>&lt;/mtd>
-  &lt;mtd>&lt;mn>2&lt;/mn>&lt;/mtd>
- &lt;/mtr>
- &lt;mtr>
-  &lt;mtd>&lt;mi>x&lt;/mi>&lt;mo>&amp;#x2212;&lt;/mo>&lt;mi>y&lt;/mi>&lt;/mtd>
-  &lt;mtd>&lt;mo>=&lt;/mo>&lt;/mtd>
-  &lt;mtd>&lt;mn>0&lt;/mn>&lt;/mtd>
- &lt;/mtr>
-&lt;/mtable>
-   &lt;/mrow>
-  &lt;/math>
+ &lt;mrow>
+  &lt;mo intent="system-of-equations">{&lt;/mo>
+  &lt;mtable>
+   &lt;mtr>
+    &lt;mtd>&lt;mi>x&lt;/mi>&lt;mo>+&lt;/mo>&lt;mi>y&lt;/mi>&lt;/mtd>
+    &lt;mtd>&lt;mo>=&lt;/mo>&lt;/mtd>
+    &lt;mtd>&lt;mn>2&lt;/mn>&lt;/mtd>
+   &lt;/mtr>
+   &lt;mtr>
+    &lt;mtd>&lt;mi>x&lt;/mi>&lt;mo>&amp;#x2212;&lt;/mo>&lt;mi>y&lt;/mi>&lt;/mtd>
+    &lt;mtd>&lt;mo>=&lt;/mo>&lt;/mtd>
+    &lt;mtd>&lt;mn>0&lt;/mn>&lt;/mtd>
+   &lt;/mtr>
+  &lt;/mtable>
+ &lt;/mrow>
+&lt;/math>
 </pre></td><td>
 <math display="block">
-   <mrow>
-    <mo intent="system-of-equations">{</mo>
-    <mtable>
-     <mtr>
-      <mtd><mi>x</mi><mo>+</mo><mi>y</mi></mtd>
-      <mtd><mo>=</mo></mtd>
-      <mtd><mn>2</mn></mtd>
-     </mtr>
-     <mtr>
-      <mtd><mi>x</mi><mo>&#x2212;</mo><mi>y</mi></mtd>
-      <mtd><mo>=</mo></mtd>
-      <mtd><mn>0</mn></mtd>
-     </mtr>
-    </mtable>
-   </mrow>
-  </math>
+      <mrow>
+       <mo intent="system-of-equations">{</mo>
+       <mtable>
+        <mtr>
+         <mtd><mi>x</mi><mo>+</mo><mi>y</mi></mtd>
+         <mtd><mo>=</mo></mtd>
+         <mtd><mn>2</mn></mtd>
+        </mtr>
+        <mtr>
+         <mtd><mi>x</mi><mo>&#x2212;</mo><mi>y</mi></mtd>
+         <mtd><mo>=</mo></mtd>
+         <mtd><mn>0</mn></mtd>
+        </mtr>
+       </mtable>
+      </mrow>
+     </math>
     <div class="mathcat">2 cases, case 1; x plus y, equals, 2; case 2; x minus y, equals, 0;</div>
 
- </td>
-<td> - </dd>
-<td> - </td>
- <td>\left\{\begin{aligned} x+y &amp;= 2 \\ x-y &amp;=0 \end{aligned}\right.</td>
- <td id="IDbracedsystemofequations"><a class="self" href="#IDbracedsystemofequations">braced system of equations</a></d></tr>
+    </td>
+    <td> - </dd>
+    <td> - </td>
+    <td>\left\{\begin{aligned} x+y &amp;= 2 \\ x-y &amp;=0 \end{aligned}\right.</td>
+    <td id="IDbracedsystemofequations"><a class="self" href="#IDbracedsystemofequations">braced system of equations</a></td>
+ </tr>
 
-<tr>
-  <th colspan="6" id="IDUnexpectedarity"><a class="self" href="#IDUnexpectedarity">Unexpected arity</a></h></tr>
-<tr>
-<td>
- <pre>
+   <tr>
+    <th colspan="6" id="IDUnexpectedarity"><a class="self" href="#IDUnexpectedarity">Unexpected arity</a></th>
+ </tr>
+   <tr>
+    <td>
+     <pre>
 &lt;math display="block">
-  &lt;mfrac>&lt;mi>x&lt;/mi>&lt;mi>y&lt;/mi>&lt;/mfrac>
- &lt;/math>
+ &lt;mfrac>&lt;mi>x&lt;/mi>&lt;mi>y&lt;/mi>&lt;/mfrac>
+&lt;/math>
 </pre></td><td>
 <math display="block">
-  <mfrac><mi>x</mi><mi>y</mi></mfrac>
- </math>
+      <mfrac><mi>x</mi><mi>y</mi></mfrac>
+     </math>
     <div class="mathcat">x over y,</div>
 
-</td>
-<td>
- <pre>
+    </td>
+    <td>
+     <pre>
 &lt;math display="block">
-  &lt;mfrac intent="divides">
-   &lt;mi>x&lt;/mi>
-   &lt;mi>y&lt;/mi>
-  &lt;/mfrac>
- &lt;/math>
+ &lt;mfrac intent="divides">
+  &lt;mi>x&lt;/mi>
+  &lt;mi>y&lt;/mi>
+ &lt;/mfrac>
+&lt;/math>
 </pre></td><td>
 <math display="block">
-  <mfrac intent="divides">
-   <mi>x</mi>
-   <mi>y</mi>
-  </mfrac>
- </math>
+      <mfrac intent="divides">
+       <mi>x</mi>
+       <mi>y</mi>
+      </mfrac>
+     </math>
     <div class="mathcat">divides</div>
 
-</td>
-<td> - </dd>
-<td> - </td>
-<td> - </td>
-<td id="ID0-arydivides"><a class="self" href="#ID0-arydivides">0-ary divides</a></d></tr>
-<tr>
-<td>
- <pre>
+    </td>
+    <td> - </dd>
+    <td> - </td>
+    <td> - </td>
+    <td id="ID0-arydivides"><a class="self" href="#ID0-arydivides">0-ary divides</a></td>
+ </tr>
+   <tr>
+    <td>
+     <pre>
 &lt;math display="block">
-  &lt;mfrac>&lt;mi>x&lt;/mi>&lt;mi>y&lt;/mi>&lt;/mfrac>
- &lt;/math>
+ &lt;mfrac>&lt;mi>x&lt;/mi>&lt;mi>y&lt;/mi>&lt;/mfrac>
+&lt;/math>
 </pre></td><td>
 <math display="block">
-  <mfrac><mi>x</mi><mi>y</mi></mfrac>
- </math>
+      <mfrac><mi>x</mi><mi>y</mi></mfrac>
+     </math>
     <div class="mathcat">x over y,</div>
 
-</td>
-<td>
- <pre>
+    </td>
+    <td>
+     <pre>
 &lt;math display="block">
-  &lt;mfrac intent="divides(z)">
-   &lt;mi>x&lt;/mi>
-   &lt;mi>y&lt;/mi>
-  &lt;/mfrac>
- &lt;/math>
+ &lt;mfrac intent="divides(z)">
+  &lt;mi>x&lt;/mi>
+  &lt;mi>y&lt;/mi>
+ &lt;/mfrac>
+&lt;/math>
 </pre></td><td>
 <math display="block">
-  <mfrac intent="divides(z)">
-   <mi>x</mi>
-   <mi>y</mi>
-  </mfrac>
- </math>
+      <mfrac intent="divides(z)">
+       <mi>x</mi>
+       <mi>y</mi>
+      </mfrac>
+     </math>
     <div class="mathcat">divides of, z</div>
 
-</td>
-<td> - </dd>
-<td> - </td>
-<td> - </td>
-<td id="ID2-arydivides"><a class="self" href="#ID2-arydivides">2-ary divides</a></d></tr>
-<tr>
-<td>
- <pre>
+    </td>
+    <td> - </dd>
+    <td> - </td>
+    <td> - </td>
+    <td id="ID2-arydivides"><a class="self" href="#ID2-arydivides">2-ary divides</a></td>
+ </tr>
+   <tr>
+    <td>
+     <pre>
 &lt;math display="block">
-  &lt;mfrac>&lt;mi>x&lt;/mi>&lt;mi>y&lt;/mi>&lt;/mfrac>
- &lt;/math>
+ &lt;mfrac>&lt;mi>x&lt;/mi>&lt;mi>y&lt;/mi>&lt;/mfrac>
+&lt;/math>
 </pre></td><td>
 <math display="block">
-  <mfrac><mi>x</mi><mi>y</mi></mfrac>
- </math>
+      <mfrac><mi>x</mi><mi>y</mi></mfrac>
+     </math>
     <div class="mathcat">x over y,</div>
 
-</td>
-<td>
- <pre>
+    </td>
+    <td>
+     <pre>
 &lt;math display="block">
-  &lt;mfrac intent="divides(w,x,y)">
-   &lt;mi>x&lt;/mi>
-   &lt;mi>y&lt;/mi>
-  &lt;/mfrac>
- &lt;/math>
+ &lt;mfrac intent="divides(w,x,y)">
+  &lt;mi>x&lt;/mi>
+  &lt;mi>y&lt;/mi>
+ &lt;/mfrac>
+&lt;/math>
 </pre></td><td>
 <math display="block">
-  <mfrac intent="divides(w,x,y)">
-   <mi>x</mi>
-   <mi>y</mi>
-  </mfrac>
- </math>
+      <mfrac intent="divides(w,x,y)">
+       <mi>x</mi>
+       <mi>y</mi>
+      </mfrac>
+     </math>
     <div class="mathcat">divides of, w comma x comma y</div>
 
-</td>
-<td> - </dd>
-<td> - </td>
-<td> - </td>
-<td id="ID3-arydivides"><a class="self" href="#ID3-arydivides">3-ary divides</a></d></tr>
+    </td>
+    <td> - </dd>
+    <td> - </td>
+    <td> - </td>
+    <td id="ID3-arydivides"><a class="self" href="#ID3-arydivides">3-ary divides</a></td>
+ </tr>
 
-<tr>
-<td>
- <pre>
+   <tr>
+    <td>
+     <pre>
 &lt;math display="block">
-  &lt;mover>
-   &lt;mi>X&lt;/mi>
-   &lt;mo>→&lt;/mo>
-  &lt;/mover>
- &lt;/math>
+ &lt;mover>
+  &lt;mi>X&lt;/mi>
+  &lt;mo>→&lt;/mo>
+ &lt;/mover>
+&lt;/math>
 </pre></td><td>
 <math display="block">
-  <mover>
-   <mi>X</mi>
-   <mo>→</mo>
-  </mover>
- </math>
+      <mover>
+       <mi>X</mi>
+       <mo>→</mo>
+      </mover>
+     </math>
     <div class="mathcat">vector   x</div>
 
-</td>
-<td>
- <pre>
+    </td>
+    <td>
+     <pre>
 &lt;math display="block">
-  &lt;mover intent="ray($x)">
-   &lt;mi arg="X">X&lt;/mi>
-   &lt;mo>→&lt;/mo>
-  &lt;/mover>
- &lt;/math>
+ &lt;mover intent="ray($x)">
+  &lt;mi arg="X">X&lt;/mi>
+  &lt;mo>→&lt;/mo>
+ &lt;/mover>
+&lt;/math>
 </pre></td><td>
 <math display="block">
-  <mover intent="ray($x)">
-   <mi arg="X">X</mi>
-   <mo>→</mo>
-  </mover>
- </math>
+      <mover intent="ray($x)">
+       <mi arg="X">X</mi>
+       <mo>→</mo>
+      </mover>
+     </math>
     <div class="mathcat"><span title='Pattern match/replacement failure!
 caused by: attempting replacement pattern: "default" for "math".
 Replacement
@@ -959,10 +978,10 @@ Replacement
 ]
 ...due to matching the following MathML with the pattern
 x: "."
- &lt;math display=&apos;block&apos; id=&apos;M288n4d1-0&apos; data-id-added=&apos;true&apos;>
-  &lt;mover intent=&apos;ray($x)&apos; id=&apos;M288n4d1-1&apos; data-id-added=&apos;true&apos;>
-    &lt;mi arg=&apos;X&apos; id=&apos;M288n4d1-2&apos; data-id-added=&apos;true&apos;>X&lt;/mi>
-    &lt;mo id=&apos;M288n4d1-3&apos; data-id-added=&apos;true&apos;>→&lt;/mo>
+ &lt;math display=&apos;block&apos; id=&apos;Mvjs2gm7-0&apos; data-id-added=&apos;true&apos;>
+  &lt;mover intent=&apos;ray($x)&apos; id=&apos;Mvjs2gm7-1&apos; data-id-added=&apos;true&apos;>
+    &lt;mi arg=&apos;X&apos; id=&apos;Mvjs2gm7-2&apos; data-id-added=&apos;true&apos;>X&lt;/mi>
+    &lt;mo id=&apos;Mvjs2gm7-3&apos; data-id-added=&apos;true&apos;>→&lt;/mo>
   &lt;/mover>
  &lt;/math>
 The patterns are in mathcat\Rules\intent.yaml.
@@ -973,9 +992,9 @@ Replacement
 [x: "process-intent(.)"]
 ...due to matching the following MathML with the pattern
 x: "@intent"
- &lt;mover intent=&apos;ray($x)&apos; id=&apos;M288n4d1-1&apos; data-id-added=&apos;true&apos;>
-  &lt;mi arg=&apos;X&apos; id=&apos;M288n4d1-2&apos; data-id-added=&apos;true&apos;>X&lt;/mi>
-  &lt;mo id=&apos;M288n4d1-3&apos; data-id-added=&apos;true&apos;>→&lt;/mo>
+ &lt;mover intent=&apos;ray($x)&apos; id=&apos;Mvjs2gm7-1&apos; data-id-added=&apos;true&apos;>
+  &lt;mi arg=&apos;X&apos; id=&apos;Mvjs2gm7-2&apos; data-id-added=&apos;true&apos;>X&lt;/mi>
+  &lt;mo id=&apos;Mvjs2gm7-3&apos; data-id-added=&apos;true&apos;>→&lt;/mo>
  &lt;/mover>
 The patterns are in mathcat\Rules\intent.yaml.
 
@@ -983,40 +1002,42 @@ caused by: in intent attribute value &apos;ray($x)&apos;
 caused by: intent arg &apos;$x&apos; not found
 '>problem with getting speech for MathML (hover for trace)</span></div>
 
-</td>
-<td> - </dd>
-<td> - </td>
-<td> - </td>
-<td id="ID1-aryray"><a class="self" href="#ID1-aryray">1-ary ray</a></d></tr>
+    </td>
+    <td> - </dd>
+    <td> - </td>
+    <td> - </td>
+    <td id="ID1-aryray"><a class="self" href="#ID1-aryray">1-ary ray</a></td>
+ </tr>
 
-<tr>
-  <th colspan="6" id="IDIntentGrammarErrors"><a class="self" href="#IDIntentGrammarErrors">Intent Grammar Errors</a></h></tr>
-<tr>
-<td>
- <pre>
+   <tr>
+    <th colspan="6" id="IDIntentGrammarErrors"><a class="self" href="#IDIntentGrammarErrors">Intent Grammar Errors</a></th>
+ </tr>
+   <tr>
+    <td>
+     <pre>
 &lt;math display="block">
-  &lt;mfrac>&lt;mi>x&lt;/mi>&lt;mi>y&lt;/mi>&lt;/mfrac>
- &lt;/math>
+ &lt;mfrac>&lt;mi>x&lt;/mi>&lt;mi>y&lt;/mi>&lt;/mfrac>
+&lt;/math>
 </pre></td><td>
 <math display="block">
-  <mfrac><mi>x</mi><mi>y</mi></mfrac>
- </math>
+      <mfrac><mi>x</mi><mi>y</mi></mfrac>
+     </math>
     <div class="mathcat">x over y,</div>
 
-</td>
-<td>
- <pre>
+    </td>
+    <td>
+     <pre>
 &lt;math display="block">
-  &lt;mfrac>&lt;mi intent="hmm)(">x&lt;/mi>
-  &lt;mi>y&lt;/mi>
-  &lt;/mfrac>
- &lt;/math>
+ &lt;mfrac>&lt;mi intent="hmm)(">x&lt;/mi>
+ &lt;mi>y&lt;/mi>
+ &lt;/mfrac>
+&lt;/math>
 </pre></td><td>
 <math display="block">
-  <mfrac><mi intent="hmm)(">x</mi>
-  <mi>y</mi>
-  </mfrac>
- </math>
+      <mfrac><mi intent="hmm)(">x</mi>
+      <mi>y</mi>
+      </mfrac>
+     </math>
     <div class="mathcat"><span title='Pattern match/replacement failure!
 caused by: attempting replacement pattern: "default" for "math".
 Replacement
@@ -1025,10 +1046,10 @@ Replacement
 ]
 ...due to matching the following MathML with the pattern
 x: "."
- &lt;math display=&apos;block&apos; id=&apos;M28ar5oj-0&apos; data-id-added=&apos;true&apos;>
-  &lt;mfrac id=&apos;M28ar5oj-1&apos; data-id-added=&apos;true&apos;>
-    &lt;mi intent=&apos;hmm)(&apos; id=&apos;M28ar5oj-2&apos; data-id-added=&apos;true&apos;>x&lt;/mi>
-    &lt;mi id=&apos;M28ar5oj-3&apos; data-id-added=&apos;true&apos;>y&lt;/mi>
+ &lt;math display=&apos;block&apos; id=&apos;Mvju7mgg-0&apos; data-id-added=&apos;true&apos;>
+  &lt;mfrac id=&apos;Mvju7mgg-1&apos; data-id-added=&apos;true&apos;>
+    &lt;mi intent=&apos;hmm)(&apos; id=&apos;Mvju7mgg-2&apos; data-id-added=&apos;true&apos;>x&lt;/mi>
+    &lt;mi id=&apos;Mvju7mgg-3&apos; data-id-added=&apos;true&apos;>y&lt;/mi>
   &lt;/mfrac>
  &lt;/math>
 The patterns are in mathcat\Rules\intent.yaml.
@@ -1043,9 +1064,9 @@ Replacement
 ]
 ...due to matching the following MathML with the pattern
 x: "."
- &lt;mfrac id=&apos;M28ar5oj-1&apos; data-id-added=&apos;true&apos;>
-  &lt;mi intent=&apos;hmm)(&apos; id=&apos;M28ar5oj-2&apos; data-id-added=&apos;true&apos;>x&lt;/mi>
-  &lt;mi id=&apos;M28ar5oj-3&apos; data-id-added=&apos;true&apos;>y&lt;/mi>
+ &lt;mfrac id=&apos;Mvju7mgg-1&apos; data-id-added=&apos;true&apos;>
+  &lt;mi intent=&apos;hmm)(&apos; id=&apos;Mvju7mgg-2&apos; data-id-added=&apos;true&apos;>x&lt;/mi>
+  &lt;mi id=&apos;Mvju7mgg-3&apos; data-id-added=&apos;true&apos;>y&lt;/mi>
  &lt;/mfrac>
 The patterns are in \\?\mathcat\Rules\Intent\general.yaml.
 
@@ -1055,56 +1076,57 @@ Replacement
 [x: "process-intent(.)"]
 ...due to matching the following MathML with the pattern
 x: "@intent"
- &lt;mi intent=&apos;hmm)(&apos; id=&apos;M28ar5oj-2&apos; data-id-added=&apos;true&apos;>x&lt;/mi>
+ &lt;mi intent=&apos;hmm)(&apos; id=&apos;Mvju7mgg-2&apos; data-id-added=&apos;true&apos;>x&lt;/mi>
 The patterns are in mathcat\Rules\intent.yaml.
 
 caused by: Error in intent value: extra unparsed intent &apos;(&apos; in intent attribute value &apos;hmm)(&apos;
 '>problem with getting speech for MathML (hover for trace)</span></div>
 
-</td>
-<td> - </dd>
-<td> - </td>
-<td> - </td>
-<td id="IDbadintentparen"><a class="self" href="#IDbadintentparen">bad intent paren</a></d></tr>
+    </td>
+    <td> - </dd>
+    <td> - </td>
+    <td> - </td>
+    <td id="IDbadintentparen"><a class="self" href="#IDbadintentparen">bad intent paren</a></td>
+ </tr>
 
-<tr>
- <td>
-  <pre>
+   <tr>
+    <td>
+     <pre>
 &lt;math display="block">
-   &lt;mrow>
-&lt;mn>1.234&lt;/mn>
-&lt;mo>+&lt;/mo>
-&lt;mi>x&lt;/mi>
-   &lt;/mrow>
-  &lt;/math>
+ &lt;mrow>
+  &lt;mn>1.234&lt;/mn>
+  &lt;mo>+&lt;/mo>
+  &lt;mi>x&lt;/mi>
+ &lt;/mrow>
+&lt;/math>
 </pre></td><td>
 <math display="block">
-   <mrow>
-    <mn>1.234</mn>
-    <mo>+</mo>
-    <mi>x</mi>
-   </mrow>
-  </math>
+      <mrow>
+       <mn>1.234</mn>
+       <mo>+</mo>
+       <mi>x</mi>
+      </mrow>
+     </math>
     <div class="mathcat">1.234 plus x</div>
 
- </td>
- <td>
-  <pre>
+    </td>
+    <td>
+     <pre>
 &lt;math display="block">
-   &lt;mrow intent="sum($a,$b)">
-&lt;mn>1.234&lt;/mn>
-&lt;mo>+&lt;/mo>
-&lt;mi>x&lt;/mi>
-   &lt;/mrow>
-  &lt;/math>
+ &lt;mrow intent="sum($a,$b)">
+  &lt;mn>1.234&lt;/mn>
+  &lt;mo>+&lt;/mo>
+  &lt;mi>x&lt;/mi>
+ &lt;/mrow>
+&lt;/math>
 </pre></td><td>
 <math display="block">
-   <mrow intent="sum($a,$b)">
-    <mn>1.234</mn>
-    <mo>+</mo>
-    <mi>x</mi>
-   </mrow>
-  </math>
+      <mrow intent="sum($a,$b)">
+       <mn>1.234</mn>
+       <mo>+</mo>
+       <mi>x</mi>
+      </mrow>
+     </math>
     <div class="mathcat"><span title='Pattern match/replacement failure!
 caused by: attempting replacement pattern: "default" for "math".
 Replacement
@@ -1113,11 +1135,11 @@ Replacement
 ]
 ...due to matching the following MathML with the pattern
 x: "."
- &lt;math display=&apos;block&apos; id=&apos;M28bakrc-0&apos; data-id-added=&apos;true&apos;>
-  &lt;mrow intent=&apos;sum($a,$b)&apos; id=&apos;M28bakrc-1&apos; data-id-added=&apos;true&apos;>
-    &lt;mn id=&apos;M28bakrc-2&apos; data-id-added=&apos;true&apos;>1.234&lt;/mn>
-    &lt;mo id=&apos;M28bakrc-3&apos; data-id-added=&apos;true&apos;>+&lt;/mo>
-    &lt;mi id=&apos;M28bakrc-4&apos; data-id-added=&apos;true&apos;>x&lt;/mi>
+ &lt;math display=&apos;block&apos; id=&apos;Mvjvahbc-0&apos; data-id-added=&apos;true&apos;>
+  &lt;mrow intent=&apos;sum($a,$b)&apos; id=&apos;Mvjvahbc-1&apos; data-id-added=&apos;true&apos;>
+    &lt;mn id=&apos;Mvjvahbc-2&apos; data-id-added=&apos;true&apos;>1.234&lt;/mn>
+    &lt;mo id=&apos;Mvjvahbc-3&apos; data-id-added=&apos;true&apos;>+&lt;/mo>
+    &lt;mi id=&apos;Mvjvahbc-4&apos; data-id-added=&apos;true&apos;>x&lt;/mi>
   &lt;/mrow>
  &lt;/math>
 The patterns are in mathcat\Rules\intent.yaml.
@@ -1128,10 +1150,10 @@ Replacement
 [x: "process-intent(.)"]
 ...due to matching the following MathML with the pattern
 x: "@intent"
- &lt;mrow intent=&apos;sum($a,$b)&apos; id=&apos;M28bakrc-1&apos; data-id-added=&apos;true&apos;>
-  &lt;mn id=&apos;M28bakrc-2&apos; data-id-added=&apos;true&apos;>1.234&lt;/mn>
-  &lt;mo id=&apos;M28bakrc-3&apos; data-id-added=&apos;true&apos;>+&lt;/mo>
-  &lt;mi id=&apos;M28bakrc-4&apos; data-id-added=&apos;true&apos;>x&lt;/mi>
+ &lt;mrow intent=&apos;sum($a,$b)&apos; id=&apos;Mvjvahbc-1&apos; data-id-added=&apos;true&apos;>
+  &lt;mn id=&apos;Mvjvahbc-2&apos; data-id-added=&apos;true&apos;>1.234&lt;/mn>
+  &lt;mo id=&apos;Mvjvahbc-3&apos; data-id-added=&apos;true&apos;>+&lt;/mo>
+  &lt;mi id=&apos;Mvjvahbc-4&apos; data-id-added=&apos;true&apos;>x&lt;/mi>
  &lt;/mrow>
 The patterns are in mathcat\Rules\intent.yaml.
 
@@ -1139,50 +1161,51 @@ caused by: in intent attribute value &apos;sum($a,$b)&apos;
 caused by: intent arg &apos;$a&apos; not found
 '>problem with getting speech for MathML (hover for trace)</span></div>
 
- </td>
-<td> - </dd>
-<td> - </td>
-<td> - </td>
-<td id="IDbadintentargref"><a class="self" href="#IDbadintentargref">bad intent argref</a></d></tr>
+    </td>
+    <td> - </dd>
+    <td> - </td>
+    <td> - </td>
+    <td id="IDbadintentargref"><a class="self" href="#IDbadintentargref">bad intent argref</a></td>
+ </tr>
 
-<tr>
- <td>
-  <pre>
+   <tr>
+    <td>
+     <pre>
 &lt;math display="block">
-   &lt;mrow>
-&lt;mn>1.234&lt;/mn>
-&lt;mo>+&lt;/mo>
-&lt;mi>x&lt;/mi>
-   &lt;/mrow>
-  &lt;/math>
+ &lt;mrow>
+  &lt;mn>1.234&lt;/mn>
+  &lt;mo>+&lt;/mo>
+  &lt;mi>x&lt;/mi>
+ &lt;/mrow>
+&lt;/math>
 </pre></td><td>
 <math display="block">
-   <mrow>
-    <mn>1.234</mn>
-    <mo>+</mo>
-    <mi>x</mi>
-   </mrow>
-  </math>
+      <mrow>
+       <mn>1.234</mn>
+       <mo>+</mo>
+       <mi>x</mi>
+      </mrow>
+     </math>
     <div class="mathcat">1.234 plus x</div>
 
- </td>
- <td>
-  <pre>
+    </td>
+    <td>
+     <pre>
 &lt;math display="block">
-   &lt;mrow intent="sum($1.234,$:x:)">
-&lt;mn arg="1.234">1.234&lt;/mn>
-&lt;mo>+&lt;/mo>
-&lt;mi arg=":x:">x&lt;/mi>
-   &lt;/mrow>
-  &lt;/math>
+ &lt;mrow intent="sum($1.234,$:x:)">
+  &lt;mn arg="1.234">1.234&lt;/mn>
+  &lt;mo>+&lt;/mo>
+  &lt;mi arg=":x:">x&lt;/mi>
+ &lt;/mrow>
+&lt;/math>
 </pre></td><td>
 <math display="block">
-   <mrow intent="sum($1.234,$:x:)">
-    <mn arg="1.234">1.234</mn>
-    <mo>+</mo>
-    <mi arg=":x:">x</mi>
-   </mrow>
-  </math>
+      <mrow intent="sum($1.234,$:x:)">
+       <mn arg="1.234">1.234</mn>
+       <mo>+</mo>
+       <mi arg=":x:">x</mi>
+      </mrow>
+     </math>
     <div class="mathcat"><span title='Pattern match/replacement failure!
 caused by: attempting replacement pattern: "default" for "math".
 Replacement
@@ -1191,11 +1214,11 @@ Replacement
 ]
 ...due to matching the following MathML with the pattern
 x: "."
- &lt;math display=&apos;block&apos; id=&apos;M28d8y2z-0&apos; data-id-added=&apos;true&apos;>
-  &lt;mrow intent=&apos;sum($1.234,$:x:)&apos; id=&apos;M28d8y2z-1&apos; data-id-added=&apos;true&apos;>
-    &lt;mn arg=&apos;1.234&apos; id=&apos;M28d8y2z-2&apos; data-id-added=&apos;true&apos;>1.234&lt;/mn>
-    &lt;mo id=&apos;M28d8y2z-3&apos; data-id-added=&apos;true&apos;>+&lt;/mo>
-    &lt;mi arg=&apos;:x:&apos; id=&apos;M28d8y2z-4&apos; data-id-added=&apos;true&apos;>x&lt;/mi>
+ &lt;math display=&apos;block&apos; id=&apos;Mvjxyxn0-0&apos; data-id-added=&apos;true&apos;>
+  &lt;mrow intent=&apos;sum($1.234,$:x:)&apos; id=&apos;Mvjxyxn0-1&apos; data-id-added=&apos;true&apos;>
+    &lt;mn arg=&apos;1.234&apos; id=&apos;Mvjxyxn0-2&apos; data-id-added=&apos;true&apos;>1.234&lt;/mn>
+    &lt;mo id=&apos;Mvjxyxn0-3&apos; data-id-added=&apos;true&apos;>+&lt;/mo>
+    &lt;mi arg=&apos;:x:&apos; id=&apos;Mvjxyxn0-4&apos; data-id-added=&apos;true&apos;>x&lt;/mi>
   &lt;/mrow>
  &lt;/math>
 The patterns are in mathcat\Rules\intent.yaml.
@@ -1206,10 +1229,10 @@ Replacement
 [x: "process-intent(.)"]
 ...due to matching the following MathML with the pattern
 x: "@intent"
- &lt;mrow intent=&apos;sum($1.234,$:x:)&apos; id=&apos;M28d8y2z-1&apos; data-id-added=&apos;true&apos;>
-  &lt;mn arg=&apos;1.234&apos; id=&apos;M28d8y2z-2&apos; data-id-added=&apos;true&apos;>1.234&lt;/mn>
-  &lt;mo id=&apos;M28d8y2z-3&apos; data-id-added=&apos;true&apos;>+&lt;/mo>
-  &lt;mi arg=&apos;:x:&apos; id=&apos;M28d8y2z-4&apos; data-id-added=&apos;true&apos;>x&lt;/mi>
+ &lt;mrow intent=&apos;sum($1.234,$:x:)&apos; id=&apos;Mvjxyxn0-1&apos; data-id-added=&apos;true&apos;>
+  &lt;mn arg=&apos;1.234&apos; id=&apos;Mvjxyxn0-2&apos; data-id-added=&apos;true&apos;>1.234&lt;/mn>
+  &lt;mo id=&apos;Mvjxyxn0-3&apos; data-id-added=&apos;true&apos;>+&lt;/mo>
+  &lt;mi arg=&apos;:x:&apos; id=&apos;Mvjxyxn0-4&apos; data-id-added=&apos;true&apos;>x&lt;/mi>
  &lt;/mrow>
 The patterns are in mathcat\Rules\intent.yaml.
 
@@ -1217,17 +1240,18 @@ caused by: in intent attribute value &apos;sum($1.234,$:x:)&apos;
 caused by: Illegal &apos;intent&apos; syntax: $1.234
 '>problem with getting speech for MathML (hover for trace)</span></div>
 
- </td>
-<td> - </dd>
-<td> - </td>
-<td> - </td>
-<td id="IDbadintentargnames"><a class="self" href="#IDbadintentargnames">bad intent arg names</a></d></tr>
+    </td>
+    <td> - </dd>
+    <td> - </td>
+    <td> - </td>
+    <td id="IDbadintentargnames"><a class="self" href="#IDbadintentargnames">bad intent arg names</a></td>
+ </tr>
 
 
 
-</table>
+  </table>
 
 
 
-   </body>
+ </body>
 </HTML>
