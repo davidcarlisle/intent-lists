@@ -521,11 +521,11 @@ Replacement
 ]
 ...due to matching the following MathML with the pattern
 x: "."
- &lt;math display=&apos;block&apos; id=&apos;Mrr0mzqq-0&apos; data-id-added=&apos;true&apos;>
-  &lt;mrow intent=&apos;_is_a_subset_of@infix($x,$y)&apos; id=&apos;Mrr0mzqq-1&apos; data-id-added=&apos;true&apos;>
-    &lt;mi arg=&apos;x&apos; id=&apos;Mrr0mzqq-2&apos; data-id-added=&apos;true&apos;>x&lt;/mi>
-    &lt;mo id=&apos;Mrr0mzqq-3&apos; data-id-added=&apos;true&apos;>⊂&lt;/mo>
-    &lt;mi arg=&apos;y&apos; id=&apos;Mrr0mzqq-4&apos; data-id-added=&apos;true&apos;>y&lt;/mi>
+ &lt;math display=&apos;block&apos; id=&apos;Msss05f4-0&apos; data-id-added=&apos;true&apos;>
+  &lt;mrow intent=&apos;_is_a_subset_of@infix($x,$y)&apos; id=&apos;Msss05f4-1&apos; data-id-added=&apos;true&apos;>
+    &lt;mi arg=&apos;x&apos; id=&apos;Msss05f4-2&apos; data-id-added=&apos;true&apos;>x&lt;/mi>
+    &lt;mo id=&apos;Msss05f4-3&apos; data-id-added=&apos;true&apos;>⊂&lt;/mo>
+    &lt;mi arg=&apos;y&apos; id=&apos;Msss05f4-4&apos; data-id-added=&apos;true&apos;>y&lt;/mi>
   &lt;/mrow>
  &lt;/math>
 The patterns are in mathcat\Rules\intent.yaml.
@@ -536,10 +536,10 @@ Replacement
 [x: "process-intent(.)"]
 ...due to matching the following MathML with the pattern
 x: "@intent"
- &lt;mrow intent=&apos;_is_a_subset_of@infix($x,$y)&apos; id=&apos;Mrr0mzqq-1&apos; data-id-added=&apos;true&apos;>
-  &lt;mi arg=&apos;x&apos; id=&apos;Mrr0mzqq-2&apos; data-id-added=&apos;true&apos;>x&lt;/mi>
-  &lt;mo id=&apos;Mrr0mzqq-3&apos; data-id-added=&apos;true&apos;>⊂&lt;/mo>
-  &lt;mi arg=&apos;y&apos; id=&apos;Mrr0mzqq-4&apos; data-id-added=&apos;true&apos;>y&lt;/mi>
+ &lt;mrow intent=&apos;_is_a_subset_of@infix($x,$y)&apos; id=&apos;Msss05f4-1&apos; data-id-added=&apos;true&apos;>
+  &lt;mi arg=&apos;x&apos; id=&apos;Msss05f4-2&apos; data-id-added=&apos;true&apos;>x&lt;/mi>
+  &lt;mo id=&apos;Msss05f4-3&apos; data-id-added=&apos;true&apos;>⊂&lt;/mo>
+  &lt;mi arg=&apos;y&apos; id=&apos;Msss05f4-4&apos; data-id-added=&apos;true&apos;>y&lt;/mi>
  &lt;/mrow>
 The patterns are in mathcat\Rules\intent.yaml.
 
@@ -558,89 +558,196 @@ caused by: Illegal &apos;intent&apos; syntax: _is_a_subset_of
   <th colspan="6">Tables</th>
 </tr>
 <tr>
-<td>
+ <td>
   <pre>
 &lt;math display="block">
-&lt;mrow>
- &lt;mo>[&lt;/mo>  
- &lt;mtable>
-  &lt;mtr>&lt;mtd>&lt;mi>a&lt;/mi>&lt;/mtd>&lt;mtd>&lt;mi>b&lt;/mi>&lt;/mtd>&lt;/mtr>
-  &lt;mtr>&lt;mtd>&lt;mi>x&lt;/mi>&lt;/mtd>&lt;mtd>&lt;mi>y&lt;/mi>&lt;/mtd>&lt;/mtr>
- &lt;/mtable>
- &lt;mo>]&lt;/mo>
-&lt;/mrow>
+   &lt;mrow>
+&lt;mo>[&lt;/mo>  
+&lt;mtable>
+ &lt;mtr>
+  &lt;mtd>&lt;mi>a&lt;/mi>&lt;/mtd>&lt;mtd>&lt;mi>b&lt;/mi>&lt;/mtd>
+ &lt;/mtr>
+ &lt;mtr>
+  &lt;mtd>&lt;mi>x&lt;/mi>&lt;/mtd>&lt;mtd>&lt;mi>y&lt;/mi>&lt;/mtd>
+ &lt;/mtr>
+&lt;/mtable>
+&lt;mo>]&lt;/mo>
+   &lt;/mrow>
   &lt;/math>
 </pre></td><td>
 <math display="block">
-    <mrow>
- <mo>[</mo>  
- <mtable>
-  <mtr><mtd><mi>a</mi></mtd><mtd><mi>b</mi></mtd></mtr>
-  <mtr><mtd><mi>x</mi></mtd><mtd><mi>y</mi></mtd></mtr>
- </mtable>
- <mo>]</mo>
-</mrow>
+   <mrow>
+    <mo>[</mo>  
+    <mtable>
+     <mtr>
+      <mtd><mi>a</mi></mtd><mtd><mi>b</mi></mtd>
+     </mtr>
+     <mtr>
+      <mtd><mi>x</mi></mtd><mtd><mi>y</mi></mtd>
+     </mtr>
+    </mtable>
+    <mo>]</mo>
+   </mrow>
   </math>
     <div class="mathcat">the 2 by 2 matrix; column 1; eigh; column 2; b; column 1; x; column 2; y;</div>
 
-</td>
-<td>
+ </td>
+ <td>
   <pre>
 &lt;math display="block">
-&lt;mrow intent="matrix">
- &lt;mo>[&lt;/mo>  
- &lt;mtable>
-  &lt;mtr>&lt;mtd>&lt;mi>a&lt;/mi>&lt;/mtd>&lt;mtd>&lt;mi>b&lt;/mi>&lt;/mtd>&lt;/mtr>
-  &lt;mtr>&lt;mtd>&lt;mi>x&lt;/mi>&lt;/mtd>&lt;mtd>&lt;mi>y&lt;/mi>&lt;/mtd>&lt;/mtr>
- &lt;/mtable>
- &lt;mo>]&lt;/mo>
-&lt;/mrow>
+   &lt;mrow intent="matrix">
+&lt;mo>[&lt;/mo>  
+&lt;mtable>
+ &lt;mtr>
+  &lt;mtd>&lt;mi>a&lt;/mi>&lt;/mtd>&lt;mtd>&lt;mi>b&lt;/mi>&lt;/mtd>
+ &lt;/mtr>
+ &lt;mtr>
+  &lt;mtd>&lt;mi>x&lt;/mi>&lt;/mtd>&lt;mtd>&lt;mi>y&lt;/mi>&lt;/mtd>
+ &lt;/mtr>
+&lt;/mtable>
+&lt;mo>]&lt;/mo>
+   &lt;/mrow>
   &lt;/math>
 </pre></td><td>
 <math display="block">
-    <mrow intent="matrix">
- <mo>[</mo>  
- <mtable>
-  <mtr><mtd><mi>a</mi></mtd><mtd><mi>b</mi></mtd></mtr>
-  <mtr><mtd><mi>x</mi></mtd><mtd><mi>y</mi></mtd></mtr>
- </mtable>
- <mo>]</mo>
-</mrow>
+   <mrow intent="matrix">
+    <mo>[</mo>  
+    <mtable>
+     <mtr>
+      <mtd><mi>a</mi></mtd><mtd><mi>b</mi></mtd>
+     </mtr>
+     <mtr>
+      <mtd><mi>x</mi></mtd><mtd><mi>y</mi></mtd>
+     </mtr>
+    </mtable>
+    <mo>]</mo>
+   </mrow>
   </math>
     <div class="mathcat">matrix</div>
 
-</td>
-<td>
+ </td>
+ <td>
   <pre>
 &lt;math display="block">
-&lt;mrow intent="matrix($r1,$r2)">
- &lt;mo>[&lt;/mo>  
- &lt;mtable>
-  &lt;mtr arg="r1">&lt;mtd>&lt;mi>a&lt;/mi>&lt;/mtd>&lt;mtd>&lt;mi>b&lt;/mi>&lt;/mtd>&lt;/mtr>
-  &lt;mtr arg="r2">&lt;mtd>&lt;mi>x&lt;/mi>&lt;/mtd>&lt;mtd>&lt;mi>y&lt;/mi>&lt;/mtd>&lt;/mtr>
- &lt;/mtable>
- &lt;mo>]&lt;/mo>
-&lt;/mrow>
+   &lt;mrow intent="matrix($r1,$r2)">
+&lt;mo>[&lt;/mo>  
+&lt;mtable>
+ &lt;mtr arg="r1">
+  &lt;mtd>&lt;mi>a&lt;/mi>&lt;/mtd>&lt;mtd>&lt;mi>b&lt;/mi>&lt;/mtd>
+ &lt;/mtr>
+ &lt;mtr arg="r2">
+  &lt;mtd>&lt;mi>x&lt;/mi>&lt;/mtd>&lt;mtd>&lt;mi>y&lt;/mi>&lt;/mtd>
+ &lt;/mtr>
+&lt;/mtable>
+&lt;mo>]&lt;/mo>
+   &lt;/mrow>
   &lt;/math>
 </pre></td><td>
 <math display="block">
-    <mrow intent="matrix($r1,$r2)">
- <mo>[</mo>  
- <mtable>
-  <mtr arg="r1"><mtd><mi>a</mi></mtd><mtd><mi>b</mi></mtd></mtr>
-  <mtr arg="r2"><mtd><mi>x</mi></mtd><mtd><mi>y</mi></mtd></mtr>
- </mtable>
- <mo>]</mo>
-</mrow>
+   <mrow intent="matrix($r1,$r2)">
+    <mo>[</mo>  
+    <mtable>
+     <mtr arg="r1">
+      <mtd><mi>a</mi></mtd><mtd><mi>b</mi></mtd>
+     </mtr>
+     <mtr arg="r2">
+      <mtd><mi>x</mi></mtd><mtd><mi>y</mi></mtd>
+     </mtr>
+    </mtable>
+    <mo>]</mo>
+   </mrow>
   </math>
     <div class="mathcat">the 2 by 2 matrix; column 1; eigh; column 2; b; column 1; x; column 2; y;</div>
 
-</td>
-<td>\begin{bmatrix} a&amp;b\\ x&amp;y \end{bmatrix}</td>
-<td id="bmatrix"><a class="self" href="#bmatrix">bmatrix</a></td></tr>
+ </td>
+ <td>\begin{bmatrix} a&amp;b\\ x&amp;y \end{bmatrix}</td>
+ <td id="bmatrix"><a class="self" href="#bmatrix">bmatrix</a></td></tr>
 
+
+
+<tr>
+  <th colspan="6">Intent Grammar Errors</th>
+</tr>
+<tr>
+<td>
+ <pre>
+&lt;math display="block">
+  &lt;mfrac>&lt;mi>x&lt;/mi>&lt;mi>y&lt;/mi>&lt;/mfrac>
+ &lt;/math>
+</pre></td><td>
+<math display="block">
+  <mfrac><mi>x</mi><mi>y</mi></mfrac>
+ </math>
+    <div class="mathcat">x over y,</div>
+
+</td>
+<td>
+ <pre>
+&lt;math display="block">
+  &lt;mfrac>&lt;mi intent="hmm)(">x&lt;/mi>
+  &lt;mi>y&lt;/mi>
+  &lt;/mfrac>
+ &lt;/math>
+</pre></td><td>
+<math display="block">
+  <mfrac><mi intent="hmm)(">x</mi>
+  <mi>y</mi>
+  </mfrac>
+ </math>
+    <div class="mathcat">problem with getting speech for MathML: <span title='Pattern match/replacement failure!
+caused by: attempting replacement pattern: "default" for "math".
+Replacement
+[test: [  if: &apos;x: "*"&apos; then:[intent:  name: math
+      children: [x: "*"]] else:[t: " "]]
+]
+...due to matching the following MathML with the pattern
+x: "."
+ &lt;math display=&apos;block&apos; id=&apos;Mssyvrxg-0&apos; data-id-added=&apos;true&apos;>
+  &lt;mfrac id=&apos;Mssyvrxg-1&apos; data-id-added=&apos;true&apos;>
+    &lt;mi intent=&apos;hmm)(&apos; id=&apos;Mssyvrxg-2&apos; data-id-added=&apos;true&apos;>x&lt;/mi>
+    &lt;mi id=&apos;Mssyvrxg-3&apos; data-id-added=&apos;true&apos;>y&lt;/mi>
+  &lt;/mfrac>
+ &lt;/math>
+The patterns are in mathcat\Rules\intent.yaml.
+
+caused by: replacing inside &apos;intent&apos;
+caused by: attempting replacement pattern: "default" for "mfrac".
+Replacement
+[intent:  name: fraction
+      children: 
+  - x: "*[1]"
+  - x: "*[2]"
+]
+...due to matching the following MathML with the pattern
+x: "."
+ &lt;mfrac id=&apos;Mssyvrxg-1&apos; data-id-added=&apos;true&apos;>
+  &lt;mi intent=&apos;hmm)(&apos; id=&apos;Mssyvrxg-2&apos; data-id-added=&apos;true&apos;>x&lt;/mi>
+  &lt;mi id=&apos;Mssyvrxg-3&apos; data-id-added=&apos;true&apos;>y&lt;/mi>
+ &lt;/mfrac>
+The patterns are in \\?\mathcat\Rules\Intent\general.yaml.
+
+caused by: replacing inside &apos;intent&apos;
+caused by: attempting replacement pattern: "intent-exists" for "!*".
+Replacement
+[x: "process-intent(.)"]
+...due to matching the following MathML with the pattern
+x: "@intent"
+ &lt;mi intent=&apos;hmm)(&apos; id=&apos;Mssyvrxg-2&apos; data-id-added=&apos;true&apos;>x&lt;/mi>
+The patterns are in mathcat\Rules\intent.yaml.
+
+caused by: Error in intent value: extra unparsed intent &apos;(&apos; in intent attribute value &apos;hmm)(&apos;
+'>trace</span></div>
+
+</td>
+<td> - </dd>
+<td> - </td>
+<td> - </td>
+<td id=" bad intent paren "><a class="self" href="# bad intent paren "> bad intent paren </a></td></tr>
 
 
 </table>
+
+
+
    </body>
 </HTML>

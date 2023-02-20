@@ -292,48 +292,86 @@
   <th colspan="6">Tables</th>
 </tr>
 <tr>
-<td>
+ <td>
   <math display="block">
-    <mrow>
- <mo>[</mo>  
- <mtable>
-  <mtr><mtd><mi>a</mi></mtd><mtd><mi>b</mi></mtd></mtr>
-  <mtr><mtd><mi>x</mi></mtd><mtd><mi>y</mi></mtd></mtr>
- </mtable>
- <mo>]</mo>
-</mrow>
+   <mrow>
+    <mo>[</mo>  
+    <mtable>
+     <mtr>
+      <mtd><mi>a</mi></mtd><mtd><mi>b</mi></mtd>
+     </mtr>
+     <mtr>
+      <mtd><mi>x</mi></mtd><mtd><mi>y</mi></mtd>
+     </mtr>
+    </mtable>
+    <mo>]</mo>
+   </mrow>
   </math>
-</td>
-<td>
+ </td>
+ <td>
   <math display="block">
-    <mrow intent="matrix">
- <mo>[</mo>  
- <mtable>
-  <mtr><mtd><mi>a</mi></mtd><mtd><mi>b</mi></mtd></mtr>
-  <mtr><mtd><mi>x</mi></mtd><mtd><mi>y</mi></mtd></mtr>
- </mtable>
- <mo>]</mo>
-</mrow>
+   <mrow intent="matrix">
+    <mo>[</mo>  
+    <mtable>
+     <mtr>
+      <mtd><mi>a</mi></mtd><mtd><mi>b</mi></mtd>
+     </mtr>
+     <mtr>
+      <mtd><mi>x</mi></mtd><mtd><mi>y</mi></mtd>
+     </mtr>
+    </mtable>
+    <mo>]</mo>
+   </mrow>
   </math>
-</td>
-<td>
+ </td>
+ <td>
   <math display="block">
-    <mrow intent="matrix($r1,$r2)">
- <mo>[</mo>  
- <mtable>
-  <mtr arg="r1"><mtd><mi>a</mi></mtd><mtd><mi>b</mi></mtd></mtr>
-  <mtr arg="r2"><mtd><mi>x</mi></mtd><mtd><mi>y</mi></mtd></mtr>
- </mtable>
- <mo>]</mo>
-</mrow>
+   <mrow intent="matrix($r1,$r2)">
+    <mo>[</mo>  
+    <mtable>
+     <mtr arg="r1">
+      <mtd><mi>a</mi></mtd><mtd><mi>b</mi></mtd>
+     </mtr>
+     <mtr arg="r2">
+      <mtd><mi>x</mi></mtd><mtd><mi>y</mi></mtd>
+     </mtr>
+    </mtable>
+    <mo>]</mo>
+   </mrow>
   </math>
-</td>
-<td>\begin{bmatrix} a&amp;b\\ x&amp;y \end{bmatrix}</td>
-<td>bmatrix</td>
+ </td>
+ <td>\begin{bmatrix} a&amp;b\\ x&amp;y \end{bmatrix}</td>
+ <td>bmatrix</td>
 </tr>
 
 
 
+<tr>
+  <th colspan="6">Intent Grammar Errors</th>
+</tr>
+<tr>
+<td>
+ <math display="block">
+  <mfrac><mi>x</mi><mi>y</mi></mfrac>
+ </math>
+</td>
+<td>
+ <math display="block">
+  <mfrac><mi intent="hmm)(">x</mi>
+  <mi>y</mi>
+  </mfrac>
+ </math>
+</td>
+<!--Xtd> - </ddX-->
+<td> - </td>
+<td> - </td>
+<td> bad intent paren </td>
+</tr>
+
+
 </table>
+
+
+
    </body>
 </HTML>
