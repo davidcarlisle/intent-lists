@@ -365,8 +365,59 @@
 <!--Xtd> - </ddX-->
 <td> - </td>
 <td> - </td>
-<td> bad intent paren </td>
+<td>bad intent paren</td>
 </tr>
+
+<tr>
+ <td>
+  <math display="block">
+   <mrow>
+    <mn>1.234</mn>
+    <mo>+</mo>
+    <mi>x</mi>
+   </mrow>
+  </math>
+ </td>
+ <td>
+  <math display="block">
+   <mrow intent="sum($a,$b)">
+    <mn>1.234</mn>
+    <mo>+</mo>
+    <mi>x</mi>
+   </mrow>
+  </math>
+ </td>
+<!--Xtd> - </ddX-->
+<td> - </td>
+<td> - </td>
+<td>bad intent argref</td>
+</tr>
+
+<tr>
+ <td>
+  <math display="block">
+   <mrow>
+    <mn>1.234</mn>
+    <mo>+</mo>
+    <mi>x</mi>
+   </mrow>
+  </math>
+ </td>
+ <td>
+  <math display="block">
+   <mrow intent="sum($1.234,$:x:)">
+    <mn arg="1.234">1.234</mn>
+    <mo>+</mo>
+    <mi arg=":x:">x</mi>
+   </mrow>
+  </math>
+ </td>
+<!--Xtd> - </ddX-->
+<td> - </td>
+<td> - </td>
+<td>bad intent arg names</td>
+</tr>
+
 
 
 </table>
