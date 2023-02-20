@@ -35,7 +35,7 @@ def GetSpeech():
   try:
     return libmathcat.GetSpokenText()
   except Exception as e:
-    return "<span title='" + re.sub('C:.*?mathcat','mathcat',str(e)).replace('&','&amp;').replace('<','&lt;').replace("'",'&apos;') + "'>problem with getting speech for MathML (hover for trace)</span>"
+    return "<span class='error' title='" + re.sub('C:.*?mathcat','mathcat',str(e)).replace('&','&amp;').replace('<','&lt;').replace("'",'&apos;') + "'>problem with getting speech for MathML (hover for trace)</span>"
 
 
 
@@ -44,7 +44,7 @@ SetMathCATPreferences()   # you only need to this once
 
 htmlstr = open(htmlfile,'r',encoding="utf-8").read()
 
-htmlstr = htmlstr.replace('<!--X','<').replace('X-->','>')
+htmlstr = htmlstr.replace('<!--X','<').replace('X-->','>').replace('\t','        ')
 
 mmls=re.split(r'(<math\b.*?</math>)', htmlstr, flags=re.DOTALL)
 
