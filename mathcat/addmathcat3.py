@@ -64,7 +64,7 @@ for mml in mmls:
     except:
       print ("\n    <div class=\"mathcat\">problem with SetMathML</div>")
   else:
-    mml=re.sub(r'<td>([^<>]*)</td>\s*</tr>',
-               r'<td id="\1"><a class="self" href="#\1">\1</a></td></tr>',
+    mml=re.sub(r'<t(d|h)([^<>]*)>([^<>]*)</t[dh]>\s*</tr>',
+               r'<t\1\2 id="\3"><a class="self" href="#\3">\3</a></\1></tr>',
                mml)
     print (mml,end="")
