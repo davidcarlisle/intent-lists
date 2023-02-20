@@ -50,6 +50,13 @@ mmls=re.split(r'(<math\b.*?</math>)', htmlstr, flags=re.DOTALL)
 
 sys.stdout.reconfigure(encoding='utf-8')
 
+def selflink(match):
+  m1 = match.group(1)
+  m2 = match.group(2)
+  m3 = match.group(3)
+  m3id = re.sub(r'[ \t()]','',m3)
+  return u"<t{}{} id=\"ID{}\"><a class=\"self\" href=\"#ID{}\">{}</a></{}></tr>".format(m1,m2,m3id,m3id,m3,m1)
+
 i=0
 for mml in mmls:
   i=i+1
@@ -65,6 +72,6 @@ for mml in mmls:
       print ("\n    <div class=\"mathcat\">problem with SetMathML</div>")
   else:
     mml=re.sub(r'<t(d|h)([^<>]*)>([^<>]*)</t[dh]>\s*</tr>',
-               r'<t\1\2 id="\3"><a class="self" href="#\3">\3</a></\1></tr>',
+               selflink,
                mml)
     print (mml,end="")
