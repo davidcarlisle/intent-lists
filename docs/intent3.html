@@ -523,11 +523,11 @@ Replacement
 ]
 ...due to matching the following MathML with the pattern
 x: "."
- &lt;math display=&apos;block&apos; id=&apos;Mtpxxuo9-0&apos; data-id-added=&apos;true&apos;>
-  &lt;mrow intent=&apos;_is_a_subset_of@infix($x,$y)&apos; id=&apos;Mtpxxuo9-1&apos; data-id-added=&apos;true&apos;>
-    &lt;mi arg=&apos;x&apos; id=&apos;Mtpxxuo9-2&apos; data-id-added=&apos;true&apos;>x&lt;/mi>
-    &lt;mo id=&apos;Mtpxxuo9-3&apos; data-id-added=&apos;true&apos;>⊂&lt;/mo>
-    &lt;mi arg=&apos;y&apos; id=&apos;Mtpxxuo9-4&apos; data-id-added=&apos;true&apos;>y&lt;/mi>
+ &lt;math display=&apos;block&apos; id=&apos;Mix6b6bd-0&apos; data-id-added=&apos;true&apos;>
+  &lt;mrow intent=&apos;_is_a_subset_of@infix($x,$y)&apos; id=&apos;Mix6b6bd-1&apos; data-id-added=&apos;true&apos;>
+    &lt;mi arg=&apos;x&apos; id=&apos;Mix6b6bd-2&apos; data-id-added=&apos;true&apos;>x&lt;/mi>
+    &lt;mo id=&apos;Mix6b6bd-3&apos; data-id-added=&apos;true&apos;>⊂&lt;/mo>
+    &lt;mi arg=&apos;y&apos; id=&apos;Mix6b6bd-4&apos; data-id-added=&apos;true&apos;>y&lt;/mi>
   &lt;/mrow>
  &lt;/math>
 The patterns are in mathcat\Rules\intent.yaml.
@@ -538,10 +538,10 @@ Replacement
 [x: "process-intent(.)"]
 ...due to matching the following MathML with the pattern
 x: "@intent"
- &lt;mrow intent=&apos;_is_a_subset_of@infix($x,$y)&apos; id=&apos;Mtpxxuo9-1&apos; data-id-added=&apos;true&apos;>
-  &lt;mi arg=&apos;x&apos; id=&apos;Mtpxxuo9-2&apos; data-id-added=&apos;true&apos;>x&lt;/mi>
-  &lt;mo id=&apos;Mtpxxuo9-3&apos; data-id-added=&apos;true&apos;>⊂&lt;/mo>
-  &lt;mi arg=&apos;y&apos; id=&apos;Mtpxxuo9-4&apos; data-id-added=&apos;true&apos;>y&lt;/mi>
+ &lt;mrow intent=&apos;_is_a_subset_of@infix($x,$y)&apos; id=&apos;Mix6b6bd-1&apos; data-id-added=&apos;true&apos;>
+  &lt;mi arg=&apos;x&apos; id=&apos;Mix6b6bd-2&apos; data-id-added=&apos;true&apos;>x&lt;/mi>
+  &lt;mo id=&apos;Mix6b6bd-3&apos; data-id-added=&apos;true&apos;>⊂&lt;/mo>
+  &lt;mi arg=&apos;y&apos; id=&apos;Mix6b6bd-4&apos; data-id-added=&apos;true&apos;>y&lt;/mi>
  &lt;/mrow>
 The patterns are in mathcat\Rules\intent.yaml.
 
@@ -922,6 +922,77 @@ caused by: Illegal &apos;intent&apos; syntax: _is_a_subset_of
 <td> - </td>
 <td id="3-ary divides"><a class="self" href="#3-ary divides">3-ary divides</a></td></tr>
 
+<tr>
+<td>
+ <pre>
+&lt;math display="block">
+  &lt;mover>
+   &lt;mi>X&lt;/mi>
+   &lt;mo>→&lt;/mo>
+  &lt;/mover>
+ &lt;/math>
+</pre></td><td>
+<math display="block">
+  <mover>
+   <mi>X</mi>
+   <mo>→</mo>
+  </mover>
+ </math>
+    <div class="mathcat">vector   x</div>
+
+</td>
+<td>
+ <pre>
+&lt;math display="block">
+  &lt;mover intent="ray($x)">
+   &lt;mi arg="X">X&lt;/mi>
+   &lt;mo>→&lt;/mo>
+  &lt;/mover>
+ &lt;/math>
+</pre></td><td>
+<math display="block">
+  <mover intent="ray($x)">
+   <mi arg="X">X</mi>
+   <mo>→</mo>
+  </mover>
+ </math>
+    <div class="mathcat"><span title='Pattern match/replacement failure!
+caused by: attempting replacement pattern: "default" for "math".
+Replacement
+[test: [  if: &apos;x: "*"&apos; then:[intent:  name: math
+      children: [x: "*"]] else:[t: " "]]
+]
+...due to matching the following MathML with the pattern
+x: "."
+ &lt;math display=&apos;block&apos; id=&apos;Mixnvnr1-0&apos; data-id-added=&apos;true&apos;>
+  &lt;mover intent=&apos;ray($x)&apos; id=&apos;Mixnvnr1-1&apos; data-id-added=&apos;true&apos;>
+    &lt;mi arg=&apos;X&apos; id=&apos;Mixnvnr1-2&apos; data-id-added=&apos;true&apos;>X&lt;/mi>
+    &lt;mo id=&apos;Mixnvnr1-3&apos; data-id-added=&apos;true&apos;>→&lt;/mo>
+  &lt;/mover>
+ &lt;/math>
+The patterns are in mathcat\Rules\intent.yaml.
+
+caused by: replacing inside &apos;intent&apos;
+caused by: attempting replacement pattern: "intent-exists" for "!*".
+Replacement
+[x: "process-intent(.)"]
+...due to matching the following MathML with the pattern
+x: "@intent"
+ &lt;mover intent=&apos;ray($x)&apos; id=&apos;Mixnvnr1-1&apos; data-id-added=&apos;true&apos;>
+  &lt;mi arg=&apos;X&apos; id=&apos;Mixnvnr1-2&apos; data-id-added=&apos;true&apos;>X&lt;/mi>
+  &lt;mo id=&apos;Mixnvnr1-3&apos; data-id-added=&apos;true&apos;>→&lt;/mo>
+ &lt;/mover>
+The patterns are in mathcat\Rules\intent.yaml.
+
+caused by: in intent attribute value &apos;ray($x)&apos;
+caused by: intent arg &apos;$x&apos; not found
+'>problem with getting speech for MathML (hover for trace)</span></div>
+
+</td>
+<td> - </dd>
+<td> - </td>
+<td> - </td>
+<td id="1-ary ray"><a class="self" href="#1-ary ray">1-ary ray</a></td></tr>
 
 <tr>
   <th colspan="6">Intent Grammar Errors</th>
@@ -960,10 +1031,10 @@ Replacement
 ]
 ...due to matching the following MathML with the pattern
 x: "."
- &lt;math display=&apos;block&apos; id=&apos;Mtqevqn6-0&apos; data-id-added=&apos;true&apos;>
-  &lt;mfrac id=&apos;Mtqevqn6-1&apos; data-id-added=&apos;true&apos;>
-    &lt;mi intent=&apos;hmm)(&apos; id=&apos;Mtqevqn6-2&apos; data-id-added=&apos;true&apos;>x&lt;/mi>
-    &lt;mi id=&apos;Mtqevqn6-3&apos; data-id-added=&apos;true&apos;>y&lt;/mi>
+ &lt;math display=&apos;block&apos; id=&apos;Mixo1gxj-0&apos; data-id-added=&apos;true&apos;>
+  &lt;mfrac id=&apos;Mixo1gxj-1&apos; data-id-added=&apos;true&apos;>
+    &lt;mi intent=&apos;hmm)(&apos; id=&apos;Mixo1gxj-2&apos; data-id-added=&apos;true&apos;>x&lt;/mi>
+    &lt;mi id=&apos;Mixo1gxj-3&apos; data-id-added=&apos;true&apos;>y&lt;/mi>
   &lt;/mfrac>
  &lt;/math>
 The patterns are in mathcat\Rules\intent.yaml.
@@ -978,9 +1049,9 @@ Replacement
 ]
 ...due to matching the following MathML with the pattern
 x: "."
- &lt;mfrac id=&apos;Mtqevqn6-1&apos; data-id-added=&apos;true&apos;>
-  &lt;mi intent=&apos;hmm)(&apos; id=&apos;Mtqevqn6-2&apos; data-id-added=&apos;true&apos;>x&lt;/mi>
-  &lt;mi id=&apos;Mtqevqn6-3&apos; data-id-added=&apos;true&apos;>y&lt;/mi>
+ &lt;mfrac id=&apos;Mixo1gxj-1&apos; data-id-added=&apos;true&apos;>
+  &lt;mi intent=&apos;hmm)(&apos; id=&apos;Mixo1gxj-2&apos; data-id-added=&apos;true&apos;>x&lt;/mi>
+  &lt;mi id=&apos;Mixo1gxj-3&apos; data-id-added=&apos;true&apos;>y&lt;/mi>
  &lt;/mfrac>
 The patterns are in \\?\mathcat\Rules\Intent\general.yaml.
 
@@ -990,7 +1061,7 @@ Replacement
 [x: "process-intent(.)"]
 ...due to matching the following MathML with the pattern
 x: "@intent"
- &lt;mi intent=&apos;hmm)(&apos; id=&apos;Mtqevqn6-2&apos; data-id-added=&apos;true&apos;>x&lt;/mi>
+ &lt;mi intent=&apos;hmm)(&apos; id=&apos;Mixo1gxj-2&apos; data-id-added=&apos;true&apos;>x&lt;/mi>
 The patterns are in mathcat\Rules\intent.yaml.
 
 caused by: Error in intent value: extra unparsed intent &apos;(&apos; in intent attribute value &apos;hmm)(&apos;
@@ -1048,11 +1119,11 @@ Replacement
 ]
 ...due to matching the following MathML with the pattern
 x: "."
- &lt;math display=&apos;block&apos; id=&apos;Mtqfhmmb-0&apos; data-id-added=&apos;true&apos;>
-  &lt;mrow intent=&apos;sum($a,$b)&apos; id=&apos;Mtqfhmmb-1&apos; data-id-added=&apos;true&apos;>
-    &lt;mn id=&apos;Mtqfhmmb-2&apos; data-id-added=&apos;true&apos;>1.234&lt;/mn>
-    &lt;mo id=&apos;Mtqfhmmb-3&apos; data-id-added=&apos;true&apos;>+&lt;/mo>
-    &lt;mi id=&apos;Mtqfhmmb-4&apos; data-id-added=&apos;true&apos;>x&lt;/mi>
+ &lt;math display=&apos;block&apos; id=&apos;Mixq7336-0&apos; data-id-added=&apos;true&apos;>
+  &lt;mrow intent=&apos;sum($a,$b)&apos; id=&apos;Mixq7336-1&apos; data-id-added=&apos;true&apos;>
+    &lt;mn id=&apos;Mixq7336-2&apos; data-id-added=&apos;true&apos;>1.234&lt;/mn>
+    &lt;mo id=&apos;Mixq7336-3&apos; data-id-added=&apos;true&apos;>+&lt;/mo>
+    &lt;mi id=&apos;Mixq7336-4&apos; data-id-added=&apos;true&apos;>x&lt;/mi>
   &lt;/mrow>
  &lt;/math>
 The patterns are in mathcat\Rules\intent.yaml.
@@ -1063,10 +1134,10 @@ Replacement
 [x: "process-intent(.)"]
 ...due to matching the following MathML with the pattern
 x: "@intent"
- &lt;mrow intent=&apos;sum($a,$b)&apos; id=&apos;Mtqfhmmb-1&apos; data-id-added=&apos;true&apos;>
-  &lt;mn id=&apos;Mtqfhmmb-2&apos; data-id-added=&apos;true&apos;>1.234&lt;/mn>
-  &lt;mo id=&apos;Mtqfhmmb-3&apos; data-id-added=&apos;true&apos;>+&lt;/mo>
-  &lt;mi id=&apos;Mtqfhmmb-4&apos; data-id-added=&apos;true&apos;>x&lt;/mi>
+ &lt;mrow intent=&apos;sum($a,$b)&apos; id=&apos;Mixq7336-1&apos; data-id-added=&apos;true&apos;>
+  &lt;mn id=&apos;Mixq7336-2&apos; data-id-added=&apos;true&apos;>1.234&lt;/mn>
+  &lt;mo id=&apos;Mixq7336-3&apos; data-id-added=&apos;true&apos;>+&lt;/mo>
+  &lt;mi id=&apos;Mixq7336-4&apos; data-id-added=&apos;true&apos;>x&lt;/mi>
  &lt;/mrow>
 The patterns are in mathcat\Rules\intent.yaml.
 
@@ -1126,11 +1197,11 @@ Replacement
 ]
 ...due to matching the following MathML with the pattern
 x: "."
- &lt;math display=&apos;block&apos; id=&apos;Mtqhdtod-0&apos; data-id-added=&apos;true&apos;>
-  &lt;mrow intent=&apos;sum($1.234,$:x:)&apos; id=&apos;Mtqhdtod-1&apos; data-id-added=&apos;true&apos;>
-    &lt;mn arg=&apos;1.234&apos; id=&apos;Mtqhdtod-2&apos; data-id-added=&apos;true&apos;>1.234&lt;/mn>
-    &lt;mo id=&apos;Mtqhdtod-3&apos; data-id-added=&apos;true&apos;>+&lt;/mo>
-    &lt;mi arg=&apos;:x:&apos; id=&apos;Mtqhdtod-4&apos; data-id-added=&apos;true&apos;>x&lt;/mi>
+ &lt;math display=&apos;block&apos; id=&apos;Mixrcz36-0&apos; data-id-added=&apos;true&apos;>
+  &lt;mrow intent=&apos;sum($1.234,$:x:)&apos; id=&apos;Mixrcz36-1&apos; data-id-added=&apos;true&apos;>
+    &lt;mn arg=&apos;1.234&apos; id=&apos;Mixrcz36-2&apos; data-id-added=&apos;true&apos;>1.234&lt;/mn>
+    &lt;mo id=&apos;Mixrcz36-3&apos; data-id-added=&apos;true&apos;>+&lt;/mo>
+    &lt;mi arg=&apos;:x:&apos; id=&apos;Mixrcz36-4&apos; data-id-added=&apos;true&apos;>x&lt;/mi>
   &lt;/mrow>
  &lt;/math>
 The patterns are in mathcat\Rules\intent.yaml.
@@ -1141,10 +1212,10 @@ Replacement
 [x: "process-intent(.)"]
 ...due to matching the following MathML with the pattern
 x: "@intent"
- &lt;mrow intent=&apos;sum($1.234,$:x:)&apos; id=&apos;Mtqhdtod-1&apos; data-id-added=&apos;true&apos;>
-  &lt;mn arg=&apos;1.234&apos; id=&apos;Mtqhdtod-2&apos; data-id-added=&apos;true&apos;>1.234&lt;/mn>
-  &lt;mo id=&apos;Mtqhdtod-3&apos; data-id-added=&apos;true&apos;>+&lt;/mo>
-  &lt;mi arg=&apos;:x:&apos; id=&apos;Mtqhdtod-4&apos; data-id-added=&apos;true&apos;>x&lt;/mi>
+ &lt;mrow intent=&apos;sum($1.234,$:x:)&apos; id=&apos;Mixrcz36-1&apos; data-id-added=&apos;true&apos;>
+  &lt;mn arg=&apos;1.234&apos; id=&apos;Mixrcz36-2&apos; data-id-added=&apos;true&apos;>1.234&lt;/mn>
+  &lt;mo id=&apos;Mixrcz36-3&apos; data-id-added=&apos;true&apos;>+&lt;/mo>
+  &lt;mi arg=&apos;:x:&apos; id=&apos;Mixrcz36-4&apos; data-id-added=&apos;true&apos;>x&lt;/mi>
  &lt;/mrow>
 The patterns are in mathcat\Rules\intent.yaml.
 
