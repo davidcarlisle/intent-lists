@@ -35,7 +35,7 @@ def GetSpeech():
   try:
     return libmathcat.GetSpokenText()
   except Exception as e:
-    return "problem with getting speech for MathML: " + "<span title='" + re.sub('C:.*?mathcat','mathcat',str(e)).replace('&','&amp;').replace('<','&lt;').replace("'",'&apos;') + "'>trace</span>"
+    return "<span title='" + re.sub('C:.*?mathcat','mathcat',str(e)).replace('&','&amp;').replace('<','&lt;').replace("'",'&apos;') + "'>problem with getting speech for MathML (hover for trace)</span>"
 
 
 

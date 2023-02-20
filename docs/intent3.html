@@ -513,7 +513,7 @@
  <mi arg="y">y</mi>
 </mrow>
   </math>
-    <div class="mathcat">problem with getting speech for MathML: <span title='Pattern match/replacement failure!
+    <div class="mathcat"><span title='Pattern match/replacement failure!
 caused by: attempting replacement pattern: "default" for "math".
 Replacement
 [test: [  if: &apos;x: "*"&apos; then:[intent:  name: math
@@ -521,11 +521,11 @@ Replacement
 ]
 ...due to matching the following MathML with the pattern
 x: "."
- &lt;math display=&apos;block&apos; id=&apos;M17blhy4-0&apos; data-id-added=&apos;true&apos;>
-  &lt;mrow intent=&apos;_is_a_subset_of@infix($x,$y)&apos; id=&apos;M17blhy4-1&apos; data-id-added=&apos;true&apos;>
-    &lt;mi arg=&apos;x&apos; id=&apos;M17blhy4-2&apos; data-id-added=&apos;true&apos;>x&lt;/mi>
-    &lt;mo id=&apos;M17blhy4-3&apos; data-id-added=&apos;true&apos;>⊂&lt;/mo>
-    &lt;mi arg=&apos;y&apos; id=&apos;M17blhy4-4&apos; data-id-added=&apos;true&apos;>y&lt;/mi>
+ &lt;math display=&apos;block&apos; id=&apos;Mts2nlok-0&apos; data-id-added=&apos;true&apos;>
+  &lt;mrow intent=&apos;_is_a_subset_of@infix($x,$y)&apos; id=&apos;Mts2nlok-1&apos; data-id-added=&apos;true&apos;>
+    &lt;mi arg=&apos;x&apos; id=&apos;Mts2nlok-2&apos; data-id-added=&apos;true&apos;>x&lt;/mi>
+    &lt;mo id=&apos;Mts2nlok-3&apos; data-id-added=&apos;true&apos;>⊂&lt;/mo>
+    &lt;mi arg=&apos;y&apos; id=&apos;Mts2nlok-4&apos; data-id-added=&apos;true&apos;>y&lt;/mi>
   &lt;/mrow>
  &lt;/math>
 The patterns are in mathcat\Rules\intent.yaml.
@@ -536,15 +536,15 @@ Replacement
 [x: "process-intent(.)"]
 ...due to matching the following MathML with the pattern
 x: "@intent"
- &lt;mrow intent=&apos;_is_a_subset_of@infix($x,$y)&apos; id=&apos;M17blhy4-1&apos; data-id-added=&apos;true&apos;>
-  &lt;mi arg=&apos;x&apos; id=&apos;M17blhy4-2&apos; data-id-added=&apos;true&apos;>x&lt;/mi>
-  &lt;mo id=&apos;M17blhy4-3&apos; data-id-added=&apos;true&apos;>⊂&lt;/mo>
-  &lt;mi arg=&apos;y&apos; id=&apos;M17blhy4-4&apos; data-id-added=&apos;true&apos;>y&lt;/mi>
+ &lt;mrow intent=&apos;_is_a_subset_of@infix($x,$y)&apos; id=&apos;Mts2nlok-1&apos; data-id-added=&apos;true&apos;>
+  &lt;mi arg=&apos;x&apos; id=&apos;Mts2nlok-2&apos; data-id-added=&apos;true&apos;>x&lt;/mi>
+  &lt;mo id=&apos;Mts2nlok-3&apos; data-id-added=&apos;true&apos;>⊂&lt;/mo>
+  &lt;mi arg=&apos;y&apos; id=&apos;Mts2nlok-4&apos; data-id-added=&apos;true&apos;>y&lt;/mi>
  &lt;/mrow>
 The patterns are in mathcat\Rules\intent.yaml.
 
 caused by: Illegal &apos;intent&apos; syntax: _is_a_subset_of
-'>trace</span></div>
+'>problem with getting speech for MathML (hover for trace)</span></div>
 
  </td>
  <td>x \subset y</td>
@@ -663,6 +663,153 @@ caused by: Illegal &apos;intent&apos; syntax: _is_a_subset_of
  <td>\begin{bmatrix} a&amp;b\\ x&amp;y \end{bmatrix}</td>
  <td id="bmatrix"><a class="self" href="#bmatrix">bmatrix</a></td></tr>
 
+<tr>
+ <td>
+  <pre>
+&lt;math display="block">
+   &lt;mrow>
+&lt;mo>&lt;!--?-->&lt;/mo>
+&lt;mo>(&lt;/mo>  
+&lt;mtable>
+ &lt;mtr>&lt;mtd>&lt;mi>a&lt;/mi>&lt;/mtd>&lt;mtd>&lt;mi>b&lt;/mi>&lt;/mtd>&lt;/mtr>
+ &lt;mtr>&lt;mtd>&lt;mi>x&lt;/mi>&lt;/mtd>&lt;mtd>&lt;mi>y&lt;/mi>&lt;/mtd>&lt;/mtr>
+&lt;/mtable>
+&lt;mo>)&lt;/mo>
+   &lt;/mrow>
+  &lt;/math>
+</pre></td><td>
+<math display="block">
+   <mrow>
+    <mo><!--?--></mo>
+    <mo>(</mo>  
+    <mtable>
+     <mtr><mtd><mi>a</mi></mtd><mtd><mi>b</mi></mtd></mtr>
+     <mtr><mtd><mi>x</mi></mtd><mtd><mi>y</mi></mtd></mtr>
+    </mtable>
+    <mo>)</mo>
+   </mrow>
+  </math>
+    <div class="mathcat">the 2 by 2 matrix; column 1; eigh; column 2; b; column 1; x; column 2; y;</div>
+
+ </td>
+ <td>
+  <pre>
+&lt;math display="block">
+   &lt;mrow>
+&lt;mo intent="array">&lt;!--?-->&lt;/mo>
+&lt;mo>(&lt;/mo>  
+&lt;mtable>
+ &lt;mtr>&lt;mtd>&lt;mi>a&lt;/mi>&lt;/mtd>&lt;mtd>&lt;mi>b&lt;/mi>&lt;/mtd>&lt;/mtr>
+ &lt;mtr>&lt;mtd>&lt;mi>x&lt;/mi>&lt;/mtd>&lt;mtd>&lt;mi>y&lt;/mi>&lt;/mtd>&lt;/mtr>
+&lt;/mtable>
+&lt;mo>)&lt;/mo>
+   &lt;/mrow>
+  &lt;/math>
+</pre></td><td>
+<math display="block">
+   <mrow>
+    <mo intent="array"><!--?--></mo>
+    <mo>(</mo>  
+    <mtable>
+     <mtr><mtd><mi>a</mi></mtd><mtd><mi>b</mi></mtd></mtr>
+     <mtr><mtd><mi>x</mi></mtd><mtd><mi>y</mi></mtd></mtr>
+    </mtable>
+    <mo>)</mo>
+   </mrow>
+  </math>
+    <div class="mathcat">the 2 by 2 matrix; column 1; eigh; column 2; b; column 1; x; column 2; y;</div>
+
+ </td>
+<td> - </dd>
+<td> - </td>
+ <td>\begin{pmatrix} a&amp;b\\ x&amp;y \end{pmatrix}</td>
+ <td id="pmatrix"><a class="self" href="#pmatrix">pmatrix</a></td></tr>
+
+<tr>
+ <td>
+  <pre>
+&lt;math display="block">
+   &lt;mrow>
+&lt;mo>{&lt;/mo>
+&lt;mtable>
+ &lt;mtr>
+  &lt;mtd>&lt;mi>x&lt;/mi>&lt;mo>+&lt;/mo>&lt;mi>y&lt;/mi>&lt;/mtd>
+  &lt;mtd>&lt;mo>=&lt;/mo>&lt;/mtd>
+  &lt;mtd>&lt;mn>2&lt;/mn>&lt;/mtd>
+ &lt;/mtr>
+ &lt;mtr>
+  &lt;mtd>&lt;mi>x&lt;/mi>&lt;mo>&amp;#x2212;&lt;/mo>&lt;mi>y&lt;/mi>&lt;/mtd>
+  &lt;mtd>&lt;mo>=&lt;/mo>&lt;/mtd>
+  &lt;mtd>&lt;mn>0&lt;/mn>&lt;/mtd>
+ &lt;/mtr>
+&lt;/mtable>
+   &lt;/mrow>
+  &lt;/math>
+</pre></td><td>
+<math display="block">
+   <mrow>
+    <mo>{</mo>
+    <mtable>
+     <mtr>
+      <mtd><mi>x</mi><mo>+</mo><mi>y</mi></mtd>
+      <mtd><mo>=</mo></mtd>
+      <mtd><mn>2</mn></mtd>
+     </mtr>
+     <mtr>
+      <mtd><mi>x</mi><mo>&#x2212;</mo><mi>y</mi></mtd>
+      <mtd><mo>=</mo></mtd>
+      <mtd><mn>0</mn></mtd>
+     </mtr>
+    </mtable>
+   </mrow>
+  </math>
+    <div class="mathcat">2 cases, case 1; x plus y, equals, 2; case 2; x minus y, equals, 0;</div>
+
+ </td>
+ <td>
+  <pre>
+&lt;math display="block">
+   &lt;mrow>
+&lt;mo intent="system-of-equations">{&lt;/mo>
+&lt;mtable>
+ &lt;mtr>
+  &lt;mtd>&lt;mi>x&lt;/mi>&lt;mo>+&lt;/mo>&lt;mi>y&lt;/mi>&lt;/mtd>
+  &lt;mtd>&lt;mo>=&lt;/mo>&lt;/mtd>
+  &lt;mtd>&lt;mn>2&lt;/mn>&lt;/mtd>
+ &lt;/mtr>
+ &lt;mtr>
+  &lt;mtd>&lt;mi>x&lt;/mi>&lt;mo>&amp;#x2212;&lt;/mo>&lt;mi>y&lt;/mi>&lt;/mtd>
+  &lt;mtd>&lt;mo>=&lt;/mo>&lt;/mtd>
+  &lt;mtd>&lt;mn>0&lt;/mn>&lt;/mtd>
+ &lt;/mtr>
+&lt;/mtable>
+   &lt;/mrow>
+  &lt;/math>
+</pre></td><td>
+<math display="block">
+   <mrow>
+    <mo intent="system-of-equations">{</mo>
+    <mtable>
+     <mtr>
+      <mtd><mi>x</mi><mo>+</mo><mi>y</mi></mtd>
+      <mtd><mo>=</mo></mtd>
+      <mtd><mn>2</mn></mtd>
+     </mtr>
+     <mtr>
+      <mtd><mi>x</mi><mo>&#x2212;</mo><mi>y</mi></mtd>
+      <mtd><mo>=</mo></mtd>
+      <mtd><mn>0</mn></mtd>
+     </mtr>
+    </mtable>
+   </mrow>
+  </math>
+    <div class="mathcat">2 cases, case 1; x plus y, equals, 2; case 2; x minus y, equals, 0;</div>
+
+ </td>
+<td> - </dd>
+<td> - </td>
+ <td>\left\{\begin{aligned} x+y &amp;= 2 \\ x-y &amp;=0 \end{aligned}\right.</td>
+ <td id="braced system of equations"><a class="self" href="#braced system of equations">braced system of equations</a></td></tr>
 
 
 <tr>
@@ -694,7 +841,7 @@ caused by: Illegal &apos;intent&apos; syntax: _is_a_subset_of
   <mi>y</mi>
   </mfrac>
  </math>
-    <div class="mathcat">problem with getting speech for MathML: <span title='Pattern match/replacement failure!
+    <div class="mathcat"><span title='Pattern match/replacement failure!
 caused by: attempting replacement pattern: "default" for "math".
 Replacement
 [test: [  if: &apos;x: "*"&apos; then:[intent:  name: math
@@ -702,10 +849,10 @@ Replacement
 ]
 ...due to matching the following MathML with the pattern
 x: "."
- &lt;math display=&apos;block&apos; id=&apos;M17h6ypz-0&apos; data-id-added=&apos;true&apos;>
-  &lt;mfrac id=&apos;M17h6ypz-1&apos; data-id-added=&apos;true&apos;>
-    &lt;mi intent=&apos;hmm)(&apos; id=&apos;M17h6ypz-2&apos; data-id-added=&apos;true&apos;>x&lt;/mi>
-    &lt;mi id=&apos;M17h6ypz-3&apos; data-id-added=&apos;true&apos;>y&lt;/mi>
+ &lt;math display=&apos;block&apos; id=&apos;Mtsf5fzk-0&apos; data-id-added=&apos;true&apos;>
+  &lt;mfrac id=&apos;Mtsf5fzk-1&apos; data-id-added=&apos;true&apos;>
+    &lt;mi intent=&apos;hmm)(&apos; id=&apos;Mtsf5fzk-2&apos; data-id-added=&apos;true&apos;>x&lt;/mi>
+    &lt;mi id=&apos;Mtsf5fzk-3&apos; data-id-added=&apos;true&apos;>y&lt;/mi>
   &lt;/mfrac>
  &lt;/math>
 The patterns are in mathcat\Rules\intent.yaml.
@@ -720,9 +867,9 @@ Replacement
 ]
 ...due to matching the following MathML with the pattern
 x: "."
- &lt;mfrac id=&apos;M17h6ypz-1&apos; data-id-added=&apos;true&apos;>
-  &lt;mi intent=&apos;hmm)(&apos; id=&apos;M17h6ypz-2&apos; data-id-added=&apos;true&apos;>x&lt;/mi>
-  &lt;mi id=&apos;M17h6ypz-3&apos; data-id-added=&apos;true&apos;>y&lt;/mi>
+ &lt;mfrac id=&apos;Mtsf5fzk-1&apos; data-id-added=&apos;true&apos;>
+  &lt;mi intent=&apos;hmm)(&apos; id=&apos;Mtsf5fzk-2&apos; data-id-added=&apos;true&apos;>x&lt;/mi>
+  &lt;mi id=&apos;Mtsf5fzk-3&apos; data-id-added=&apos;true&apos;>y&lt;/mi>
  &lt;/mfrac>
 The patterns are in \\?\mathcat\Rules\Intent\general.yaml.
 
@@ -732,11 +879,11 @@ Replacement
 [x: "process-intent(.)"]
 ...due to matching the following MathML with the pattern
 x: "@intent"
- &lt;mi intent=&apos;hmm)(&apos; id=&apos;M17h6ypz-2&apos; data-id-added=&apos;true&apos;>x&lt;/mi>
+ &lt;mi intent=&apos;hmm)(&apos; id=&apos;Mtsf5fzk-2&apos; data-id-added=&apos;true&apos;>x&lt;/mi>
 The patterns are in mathcat\Rules\intent.yaml.
 
 caused by: Error in intent value: extra unparsed intent &apos;(&apos; in intent attribute value &apos;hmm)(&apos;
-'>trace</span></div>
+'>problem with getting speech for MathML (hover for trace)</span></div>
 
 </td>
 <td> - </dd>
@@ -782,7 +929,7 @@ caused by: Error in intent value: extra unparsed intent &apos;(&apos; in intent 
     <mi>x</mi>
    </mrow>
   </math>
-    <div class="mathcat">problem with getting speech for MathML: <span title='Pattern match/replacement failure!
+    <div class="mathcat"><span title='Pattern match/replacement failure!
 caused by: attempting replacement pattern: "default" for "math".
 Replacement
 [test: [  if: &apos;x: "*"&apos; then:[intent:  name: math
@@ -790,11 +937,11 @@ Replacement
 ]
 ...due to matching the following MathML with the pattern
 x: "."
- &lt;math display=&apos;block&apos; id=&apos;M17jobfx-0&apos; data-id-added=&apos;true&apos;>
-  &lt;mrow intent=&apos;sum($a,$b)&apos; id=&apos;M17jobfx-1&apos; data-id-added=&apos;true&apos;>
-    &lt;mn id=&apos;M17jobfx-2&apos; data-id-added=&apos;true&apos;>1.234&lt;/mn>
-    &lt;mo id=&apos;M17jobfx-3&apos; data-id-added=&apos;true&apos;>+&lt;/mo>
-    &lt;mi id=&apos;M17jobfx-4&apos; data-id-added=&apos;true&apos;>x&lt;/mi>
+ &lt;math display=&apos;block&apos; id=&apos;Mtsg3qsb-0&apos; data-id-added=&apos;true&apos;>
+  &lt;mrow intent=&apos;sum($a,$b)&apos; id=&apos;Mtsg3qsb-1&apos; data-id-added=&apos;true&apos;>
+    &lt;mn id=&apos;Mtsg3qsb-2&apos; data-id-added=&apos;true&apos;>1.234&lt;/mn>
+    &lt;mo id=&apos;Mtsg3qsb-3&apos; data-id-added=&apos;true&apos;>+&lt;/mo>
+    &lt;mi id=&apos;Mtsg3qsb-4&apos; data-id-added=&apos;true&apos;>x&lt;/mi>
   &lt;/mrow>
  &lt;/math>
 The patterns are in mathcat\Rules\intent.yaml.
@@ -805,16 +952,16 @@ Replacement
 [x: "process-intent(.)"]
 ...due to matching the following MathML with the pattern
 x: "@intent"
- &lt;mrow intent=&apos;sum($a,$b)&apos; id=&apos;M17jobfx-1&apos; data-id-added=&apos;true&apos;>
-  &lt;mn id=&apos;M17jobfx-2&apos; data-id-added=&apos;true&apos;>1.234&lt;/mn>
-  &lt;mo id=&apos;M17jobfx-3&apos; data-id-added=&apos;true&apos;>+&lt;/mo>
-  &lt;mi id=&apos;M17jobfx-4&apos; data-id-added=&apos;true&apos;>x&lt;/mi>
+ &lt;mrow intent=&apos;sum($a,$b)&apos; id=&apos;Mtsg3qsb-1&apos; data-id-added=&apos;true&apos;>
+  &lt;mn id=&apos;Mtsg3qsb-2&apos; data-id-added=&apos;true&apos;>1.234&lt;/mn>
+  &lt;mo id=&apos;Mtsg3qsb-3&apos; data-id-added=&apos;true&apos;>+&lt;/mo>
+  &lt;mi id=&apos;Mtsg3qsb-4&apos; data-id-added=&apos;true&apos;>x&lt;/mi>
  &lt;/mrow>
 The patterns are in mathcat\Rules\intent.yaml.
 
 caused by: in intent attribute value &apos;sum($a,$b)&apos;
 caused by: intent arg &apos;$a&apos; not found
-'>trace</span></div>
+'>problem with getting speech for MathML (hover for trace)</span></div>
 
  </td>
 <td> - </dd>
@@ -860,7 +1007,7 @@ caused by: intent arg &apos;$a&apos; not found
     <mi arg=":x:">x</mi>
    </mrow>
   </math>
-    <div class="mathcat">problem with getting speech for MathML: <span title='Pattern match/replacement failure!
+    <div class="mathcat"><span title='Pattern match/replacement failure!
 caused by: attempting replacement pattern: "default" for "math".
 Replacement
 [test: [  if: &apos;x: "*"&apos; then:[intent:  name: math
@@ -868,11 +1015,11 @@ Replacement
 ]
 ...due to matching the following MathML with the pattern
 x: "."
- &lt;math display=&apos;block&apos; id=&apos;M17lg8ka-0&apos; data-id-added=&apos;true&apos;>
-  &lt;mrow intent=&apos;sum($1.234,$:x:)&apos; id=&apos;M17lg8ka-1&apos; data-id-added=&apos;true&apos;>
-    &lt;mn arg=&apos;1.234&apos; id=&apos;M17lg8ka-2&apos; data-id-added=&apos;true&apos;>1.234&lt;/mn>
-    &lt;mo id=&apos;M17lg8ka-3&apos; data-id-added=&apos;true&apos;>+&lt;/mo>
-    &lt;mi arg=&apos;:x:&apos; id=&apos;M17lg8ka-4&apos; data-id-added=&apos;true&apos;>x&lt;/mi>
+ &lt;math display=&apos;block&apos; id=&apos;Mtsink0p-0&apos; data-id-added=&apos;true&apos;>
+  &lt;mrow intent=&apos;sum($1.234,$:x:)&apos; id=&apos;Mtsink0p-1&apos; data-id-added=&apos;true&apos;>
+    &lt;mn arg=&apos;1.234&apos; id=&apos;Mtsink0p-2&apos; data-id-added=&apos;true&apos;>1.234&lt;/mn>
+    &lt;mo id=&apos;Mtsink0p-3&apos; data-id-added=&apos;true&apos;>+&lt;/mo>
+    &lt;mi arg=&apos;:x:&apos; id=&apos;Mtsink0p-4&apos; data-id-added=&apos;true&apos;>x&lt;/mi>
   &lt;/mrow>
  &lt;/math>
 The patterns are in mathcat\Rules\intent.yaml.
@@ -883,16 +1030,16 @@ Replacement
 [x: "process-intent(.)"]
 ...due to matching the following MathML with the pattern
 x: "@intent"
- &lt;mrow intent=&apos;sum($1.234,$:x:)&apos; id=&apos;M17lg8ka-1&apos; data-id-added=&apos;true&apos;>
-  &lt;mn arg=&apos;1.234&apos; id=&apos;M17lg8ka-2&apos; data-id-added=&apos;true&apos;>1.234&lt;/mn>
-  &lt;mo id=&apos;M17lg8ka-3&apos; data-id-added=&apos;true&apos;>+&lt;/mo>
-  &lt;mi arg=&apos;:x:&apos; id=&apos;M17lg8ka-4&apos; data-id-added=&apos;true&apos;>x&lt;/mi>
+ &lt;mrow intent=&apos;sum($1.234,$:x:)&apos; id=&apos;Mtsink0p-1&apos; data-id-added=&apos;true&apos;>
+  &lt;mn arg=&apos;1.234&apos; id=&apos;Mtsink0p-2&apos; data-id-added=&apos;true&apos;>1.234&lt;/mn>
+  &lt;mo id=&apos;Mtsink0p-3&apos; data-id-added=&apos;true&apos;>+&lt;/mo>
+  &lt;mi arg=&apos;:x:&apos; id=&apos;Mtsink0p-4&apos; data-id-added=&apos;true&apos;>x&lt;/mi>
  &lt;/mrow>
 The patterns are in mathcat\Rules\intent.yaml.
 
 caused by: in intent attribute value &apos;sum($1.234,$:x:)&apos;
 caused by: Illegal &apos;intent&apos; syntax: $1.234
-'>trace</span></div>
+'>problem with getting speech for MathML (hover for trace)</span></div>
 
  </td>
 <td> - </dd>
