@@ -18,7 +18,7 @@
     </style>
    </head>
    <body>
-    <h1>Intent Examples</h1>
+    <h1>Intent Examples (David C)</h1>
     <p><a href="intent1.html">List 1 (David F)</a></p>
     <p><a href="intent2.html">List 2 (Deyan G)</a></p>
 
@@ -420,6 +420,67 @@
 <td> - </td>
  <td>\left\{\begin{aligned} x+y &amp;= 2 \\ x-y &amp;=0 \end{aligned}\right.</td>
  <td>braced system of equations</td>
+</tr>
+
+<tr>
+  <th colspan="6">Unexpected arity</th>
+</tr>
+<tr>
+<td>
+ <math display="block">
+  <mfrac><mi>x</mi><mi>y</mi></mfrac>
+ </math>
+</td>
+<td>
+ <math display="block">
+  <mfrac intent="divides">
+   <mi>x</mi>
+   <mi>y</mi>
+  </mfrac>
+ </math>
+</td>
+<!--Xtd> - </ddX-->
+<td> - </td>
+<td> - </td>
+<td>0-ary divides</td>
+</tr>
+<tr>
+<td>
+ <math display="block">
+  <mfrac><mi>x</mi><mi>y</mi></mfrac>
+ </math>
+</td>
+<td>
+ <math display="block">
+  <mfrac intent="divides(z)">
+   <mi>x</mi>
+   <mi>y</mi>
+  </mfrac>
+ </math>
+</td>
+<!--Xtd> - </ddX-->
+<td> - </td>
+<td> - </td>
+<td>2-ary divides</td>
+</tr>
+<tr>
+<td>
+ <math display="block">
+  <mfrac><mi>x</mi><mi>y</mi></mfrac>
+ </math>
+</td>
+<td>
+ <math display="block">
+  <mfrac intent="divides(w,x,y)">
+   <mi>x</mi>
+   <mi>y</mi>
+  </mfrac>
+ </math>
+</td>
+<!--Xtd> - </ddX-->
+<td> - </td>
+<td> - </td>
+<td>3-ary divides</td>
 </tr>
 
 

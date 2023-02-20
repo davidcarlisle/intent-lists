@@ -42,7 +42,7 @@ def GetSpeech():
 SetMathCATPreferences()   # you only need to this once
 
 
-htmlstr = open(htmlfile,'r').read()
+htmlstr = open(htmlfile,'r',encoding="utf-8").read()
 
 
 mmls=re.split(r'(<math .*?</math>)', htmlstr, flags=re.DOTALL)
