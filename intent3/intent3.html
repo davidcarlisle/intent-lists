@@ -349,7 +349,16 @@
      <math display="block">
       <mrow>
        <mo>|</mo>
-       <mi>M</mi>
+       <mtable>
+	<mtr>
+	 <mtd><mi>a</mi></mtd>
+	 <mtd><mi>b</mi></mtd>
+	</mtr>
+	<mtr>
+	 <mtd><mi>c</mi></mtd>
+	 <mtd><mi>d</mi></mtd>
+	</mtr>
+       </mtable>
        <mo>|</mo>
       </mrow>
      </math>
@@ -443,9 +452,9 @@
     </td>
     <td>
      <math display="block">
-      <mrow intent="matrix">
+      <mrow intent="matrix($m)">
        <mo>[</mo>  
-       <mtable>
+       <mtable arg="m">
         <mtr>
          <mtd><mi>a</mi></mtd><mtd><mi>b</mi></mtd>
         </mtr>
@@ -457,22 +466,8 @@
       </mrow>
      </math>
     </td>
-    <td>
-     <math display="block">
-      <mrow intent="matrix($r1,$r2)">
-       <mo>[</mo>  
-       <mtable>
-        <mtr arg="r1">
-         <mtd><mi>a</mi></mtd><mtd><mi>b</mi></mtd>
-        </mtr>
-        <mtr arg="r2">
-         <mtd><mi>x</mi></mtd><mtd><mi>y</mi></mtd>
-        </mtr>
-       </mtable>
-       <mo>]</mo>
-      </mrow>
-     </math>
-    </td>
+    <!--Xtd> - </tdX-->
+    <td> - </td>
     <td>\begin{bmatrix} a&amp;b\\ x&amp;y \end{bmatrix}</td>
     <td>bmatrix</td>
    </tr>
