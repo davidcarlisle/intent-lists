@@ -15,7 +15,7 @@
    }
    a.self {text-decoration:none;color:DarkBlue}
    a.self::visited  {text-decoration:none;color:DarkBlue}
-   span.error {border: solid thin red}
+   span.error {border-left: solid thick red;padding-left:.1em}
   </style>
  </head>
  <body>
@@ -52,23 +52,23 @@
    <tr>
     <td>
      <math display="block">
-      <mn>1.234</mn>
+      <mn>1,234</mn>
       <mo>+</mo>
       <mn>1,234</mn>
      </math>
     </td>
     <td>
      <math display="block">
-      <mn>1.234</mn>
-      <mo>+</mo>
+      <mn>1,234</mn>
+      <mo intent="plus">+</mo>
       <mn>1,234</mn>
      </math>
     </td>
     <td>
      <math display="block">
-      <mn>1.234</mn>
-      <mo>+</mo>
-      <mn>1,234</mn>
+      <mn intent="1,234:decimal-comma">1,234</mn>
+      <mo intent="plus">+</mo>
+      <mn intent="1,234:decimal-comma">1,234</mn>
      </math>
     </td>
     <td>1,234+1{,}234</td>
@@ -86,7 +86,7 @@
     </td>
     <td>
      <math display="block">
-      <mn>1.234</mn>
+      <mn>1,234</mn>
       <mo>;</mo>
       <mn>1,234</mn>
       <mo>;</mo>
@@ -95,11 +95,11 @@
     </td>
     <td>
      <math display="block">
-      <mn>1.234</mn>
+      <mn intent="1,234:thousands-comma">1,234</mn>
       <mo>;</mo>
-      <mn>1,234</mn>
+      <mn intent="1,234:thousands-comma">1,234</mn>
       <mo>;</mo>
-      <mn>1,234,000</mn>
+      <mn intent="1,234:thousands-comma">1,234,000</mn>
      </math>
     </td>
     <td>1,234; 1,234; 1,234,000</td>
@@ -290,6 +290,136 @@
 
 
 
+   <tr>
+    <th colspan="6">Delimiters</th>
+   </tr>
+
+   <tr>
+    <td>
+     <math display="block">
+      <mrow>
+       <mo>|</mo>
+       <mi>x</mi>
+       <mo>|</mo>
+      </mrow>
+     </math>
+    </td>
+    <td>
+     <math display="block">
+      <mrow intent="absolute-value($x)">
+       <mo>|</mo>
+       <mi arg="x">x</mi>
+       <mo>|</mo>
+      </mrow>
+     </math>
+    </td>
+    <!--Xtd> - </ddX-->
+    <td> - </td>
+    <td>\lvert x\rvert</td>
+    <td>vert x abs</td>
+   </tr>
+
+   <tr>
+    <td>
+     <math display="block">
+      <mrow>
+       <mo>|</mo>
+       <mi>M</mi>
+       <mo>|</mo>
+      </mrow>
+     </math>
+    </td>
+    <td>
+     <math display="block">
+      <mrow intent="determinant($M)">
+       <mo>|</mo>
+       <mi arg="M">M</mi>
+       <mo>|</mo>
+      </mrow>
+     </math>
+    </td>
+    <!--Xtd> - </ddX-->
+    <td> - </td>
+    <td>\lvert M\rvert</td>
+    <td>vert M determinant</td>
+   </tr>
+   
+   <tr>
+    <td>
+     <math display="block">
+      <mrow>
+       <mo>|</mo>
+       <mi>M</mi>
+       <mo>|</mo>
+      </mrow>
+     </math>
+    </td>
+    <td>
+     <math display="block">
+      <mrow intent="determinant($M)">
+       <mo>|</mo>
+       <mtable arg="M">
+	<mtr>
+	 <mtd><mi>a</mi></mtd>
+	 <mtd><mi>b</mi></mtd>
+	</mtr>
+	<mtr>
+	 <mtd><mi>c</mi></mtd>
+	 <mtd><mi>d</mi></mtd>
+	</mtr>
+       </mtable>
+       <mo>|</mo>
+      </mrow>
+     </math>
+    </td>
+    <td>
+     <math display="block">
+      <mrow intent="determinant($M:matrix)">
+       <mo>|</mo>
+       <mtable arg="M">
+	<mtr>
+	 <mtd><mi>a</mi></mtd>
+	 <mtd><mi>b</mi></mtd>
+	</mtr>
+	<mtr>
+	 <mtd><mi>c</mi></mtd>
+	 <mtd><mi>d</mi></mtd>
+	</mtr>
+       </mtable>
+       <mo>|</mo>
+      </mrow>
+     </math>
+    </td>
+
+    <td>\begin{vmatrix}a&amp;b\\c&amp;d\end{vmatrix}</td>
+    <td>vert abcd determinant</td>
+   </tr>
+   
+   <tr>
+    <td>
+     <math display="block">
+      <mrow>
+       <mo>‖</mo> 
+       <mi>x</mi>
+       <mo>‖</mo>
+      </mrow>
+     </math>
+    </td>
+    <td>
+     <math display="block">
+      <mrow intent="magnitude($x)">
+       <mo>‖</mo> 
+       <mi arg="x">x</mi>
+       <mo>‖</mo>
+      </mrow>
+     </math>
+    </td>
+    <!--Xtd> - </ddX-->
+    <td> - </td>
+    <td>\lVert x\rVert</td>
+    <td>Vert x magnitude</td>
+   </tr>
+    
 
    <tr>
     <th colspan="6">Tables</th>
