@@ -67,7 +67,9 @@ for mml in mmls:
     print (mml,end="")
     try:
       SetMathMLForMathCAT(mml)
-      print ("\n    <div class=\"mathcat\">{}</div>".format(GetSpeech() ))
+      mcat=GetSpeech()
+      mcatl=re.sub(r'(line [0-9]+;)',r'<br/>\1',mcat)
+      print ("\n    <div class=\"mathcat\">{}</div>".format(mcatl))
     except:
       print ("\n    <div class=\"mathcat\">problem with SetMathML</div>")
   else:

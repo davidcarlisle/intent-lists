@@ -610,6 +610,185 @@ caused by: Error in intent value: extra unparsed intent &apos;234:thousands-comm
 
 
    <tr>
+    <th colspan="6" id="IDhints"><a class="self" href="#IDhints">hints</a></th>
+ </tr>
+
+   <tr>
+    <td>
+     <pre>
+&lt;math display="block">
+ &lt;mrow>
+  &lt;mo>&amp;#x1F407;&lt;/mo>
+  &lt;mi>X&lt;/mi>
+ &lt;/mrow>
+&lt;/math>
+</pre></td><td>
+<math display="block">
+      <mrow>
+       <mo>&#x1F407;</mo>
+       <mi>X</mi>
+      </mrow>
+     </math>
+    <div class="mathcat">🐇   x</div>
+
+    </td>
+    <td>
+     <pre>
+&lt;math display="block">
+ &lt;mrow>
+  &lt;mo intent="my-function">&amp;#x1F407;&lt;/mo>
+  &lt;mi>X&lt;/mi>
+ &lt;/mrow>
+&lt;/math>
+</pre></td><td>
+<math display="block">
+      <mrow>
+       <mo intent="my-function">&#x1F407;</mo>
+       <mi>X</mi>
+      </mrow>
+     </math>
+    <div class="mathcat">my function   x</div>
+
+    </td>
+    <td>
+     <pre>
+&lt;math display="block">
+&lt;mtable>
+ &lt;mtr>&lt;mtd>
+ &lt;mrow>
+  &lt;mo intent="my-function@function">&amp;#x1F407;&lt;/mo>
+  &lt;mi>X&lt;/mi>
+ &lt;/mrow>
+ &lt;/mtd>&lt;/mtr>&lt;mtr>&lt;mtd>
+ &lt;mrow>
+  &lt;mo intent="my-function@silent">&amp;#x1F407;&lt;/mo>
+  &lt;mi>X&lt;/mi>
+ &lt;/mrow>
+&lt;/mtd>&lt;/mtr>
+&lt;/mtable>
+&lt;/math>
+</pre></td><td>
+<math display="block">
+     <mtable>
+      <mtr><mtd>
+      <mrow>
+       <mo intent="my-function@function">&#x1F407;</mo>
+       <mi>X</mi>
+      </mrow>
+      </mtd></mtr><mtr><mtd>
+      <mrow>
+       <mo intent="my-function@silent">&#x1F407;</mo>
+       <mi>X</mi>
+      </mrow>
+     </mtd></mtr>
+     </mtable>
+     </math>
+    <div class="mathcat">2 lines, <br/>line 1; my function   x; <br/>line 2; my function   x;</div>
+
+    </td>
+    <td>&#x1F407;  X</td>
+    <td id="IDintentonprefixmo"><a class="self" href="#IDintentonprefixmo">intent on prefix mo</a></td>
+ </tr>
+
+   <tr>
+    <td>
+     <pre>
+&lt;math display="block">
+ &lt;mrow>
+  &lt;mo>&amp;#x1F407;&lt;/mo>
+  &lt;mi>X&lt;/mi>
+ &lt;/mrow>
+&lt;/math>
+</pre></td><td>
+<math display="block">
+      <mrow>
+       <mo>&#x1F407;</mo>
+       <mi>X</mi>
+      </mrow>
+     </math>
+    <div class="mathcat">🐇   x</div>
+
+    </td>
+    <td>
+     <pre>
+&lt;math display="block">
+ &lt;mrow intent="my-function($X)">
+  &lt;mo>&amp;#x1F407;&lt;/mo>
+  &lt;mi arg="X">X&lt;/mi>
+ &lt;/mrow>
+&lt;/math>
+</pre></td><td>
+<math display="block">
+      <mrow intent="my-function($X)">
+       <mo>&#x1F407;</mo>
+       <mi arg="X">X</mi>
+      </mrow>
+     </math>
+    <div class="mathcat">my function of,   x</div>
+
+    </td>
+    <td>
+     <pre>
+&lt;math display="block">
+&lt;mtable>
+ &lt;mtr>&lt;mtd>
+ &lt;mrow intent="my-function@function($X)">
+  &lt;mo>&amp;#x1F407;&lt;/mo>
+  &lt;mi arg="X">X&lt;/mi>
+ &lt;/mrow>
+ &lt;/mtd>&lt;/mtr>&lt;mtr>&lt;mtd>
+ &lt;mrow intent="my-function@prefix($X)">
+  &lt;mo>&amp;#x1F407;&lt;/mo>
+  &lt;mi arg="X">X&lt;/mi>
+ &lt;/mrow>
+ &lt;/mtd>&lt;/mtr>&lt;mtr>&lt;mtd>
+ &lt;mrow intent="my-function@postfix($X)">
+  &lt;mo>&amp;#x1F407;&lt;/mo>
+  &lt;mi arg="X">X&lt;/mi>
+ &lt;/mrow>
+ &lt;/mtd>&lt;/mtr>&lt;mtr>&lt;mtd>
+ &lt;mrow intent="my-function@silent(_rabbit_function_applied_to,$X)">
+  &lt;mo>&amp;#x1F407;&lt;/mo>
+  &lt;mi arg="X">X&lt;/mi>
+ &lt;/mrow>
+ &lt;/mtd>&lt;/mtr>
+&lt;/mtable>&lt;/math>
+</pre></td><td>
+<math display="block">
+     <mtable>
+      <mtr><mtd>
+      <mrow intent="my-function@function($X)">
+       <mo>&#x1F407;</mo>
+       <mi arg="X">X</mi>
+      </mrow>
+      </mtd></mtr><mtr><mtd>
+      <mrow intent="my-function@prefix($X)">
+       <mo>&#x1F407;</mo>
+       <mi arg="X">X</mi>
+      </mrow>
+      </mtd></mtr><mtr><mtd>
+      <mrow intent="my-function@postfix($X)">
+       <mo>&#x1F407;</mo>
+       <mi arg="X">X</mi>
+      </mrow>
+      </mtd></mtr><mtr><mtd>
+      <mrow intent="my-function@silent(_rabbit_function_applied_to,$X)">
+       <mo>&#x1F407;</mo>
+       <mi arg="X">X</mi>
+      </mrow>
+      </mtd></mtr>
+     </mtable></math>
+    <div class="mathcat">4 lines, <br/>line 1; my function of,   x; <br/>line 2; my function   x; <br/>line 3;   x my function; <br/>line 4;  rabbit function applied to   x;</div>
+
+    </td>
+    <td>&#x1F407;  X</td>
+    <td id="IDintentonmrowofprefixmo"><a class="self" href="#IDintentonmrowofprefixmo">intent on mrow of prefix mo</a></td>
+ </tr>
+
+
+
+
+   <tr>
     <th colspan="6" id="IDDelimiters"><a class="self" href="#IDDelimiters">Delimiters</a></th>
  </tr>
 
@@ -781,7 +960,7 @@ caused by: Error in intent value: extra unparsed intent &apos;234:thousands-comm
        <mo>|</mo>
       </mrow>
      </math>
-    <div class="mathcat">the determinant of 2 lines, line 1; eigh, b; line 2; c, d;</div>
+    <div class="mathcat">the determinant of 2 lines, <br/>line 1; eigh, b; <br/>line 2; c, d;</div>
 
     </td>
     <td>
@@ -819,7 +998,7 @@ caused by: Error in intent value: extra unparsed intent &apos;234:thousands-comm
        <mo>|</mo>
       </mrow>
      </math>
-    <div class="mathcat">the determinant of 2 lines, line 1; eigh, b; line 2; c, d;</div>
+    <div class="mathcat">the determinant of 2 lines, <br/>line 1; eigh, b; <br/>line 2; c, d;</div>
 
     </td>
 
@@ -999,7 +1178,7 @@ caused by: Error in intent value: extra unparsed intent &apos;234:thousands-comm
        <mo>]</mo>
       </mrow>
      </math>
-    <div class="mathcat">the 1 by 2 row matrix; line 1; eigh, b; line 2; x, y;</div>
+    <div class="mathcat">the 1 by 2 row matrix; <br/>line 1; eigh, b; <br/>line 2; x, y;</div>
 
     </td>
     <td> - </td>
