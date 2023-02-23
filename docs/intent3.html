@@ -752,7 +752,8 @@ caused by: Error in intent value: extra unparsed intent &apos;234:thousands-comm
   &lt;mi arg="X">X&lt;/mi>
  &lt;/mrow>
  &lt;/mtd>&lt;/mtr>
-&lt;/mtable>&lt;/math>
+&lt;/mtable>
+&lt;/math>
 </pre></td><td>
 <math display="block">
      <mtable>
@@ -777,15 +778,111 @@ caused by: Error in intent value: extra unparsed intent &apos;234:thousands-comm
        <mi arg="X">X</mi>
       </mrow>
       </mtd></mtr>
-     </mtable></math>
+     </mtable>
+     </math>
     <div class="mathcat">4 lines, <br/>line 1; my function of,   x; <br/>line 2; my function   x; <br/>line 3;   x my function; <br/>line 4;  rabbit function applied to   x;</div>
 
     </td>
     <td>&#x1F407;  X</td>
     <td id="IDintentonmrowofprefixmo"><a class="self" href="#IDintentonmrowofprefixmo">intent on mrow of prefix mo</a></td>
  </tr>
+   
+   <tr>
+    <td>
+     <pre>
+&lt;math display="block">
+ &lt;mrow>
+  &lt;mi arg="x">x&lt;/mi>
+  &lt;mo arg="prod" intent="cross-product">⨯&lt;/mo>
+  &lt;mi arg="y">y&lt;/mi>
+ &lt;/mrow>
+&lt;/math>
+</pre></td><td>
+<math display="block">
+      <mrow>
+       <mi arg="x">x</mi>
+       <mo arg="prod" intent="cross-product">⨯</mo>
+       <mi arg="y">y</mi>
+      </mrow>
+     </math>
+    <div class="mathcat">x cross product y</div>
 
+    </td>
+    <td>
+     <pre>
+&lt;math display="block">
+ &lt;mrow intent="$prod($x,$y)">
+  &lt;mi arg="x">x&lt;/mi>
+  &lt;mo arg="prod" intent="cross-product">⨯&lt;/mo>
+  &lt;mi arg="y">y&lt;/mi>
+ &lt;/mrow>
+&lt;/math>
+</pre></td><td>
+<math display="block">
+      <mrow intent="$prod($x,$y)">
+       <mi arg="x">x</mi>
+       <mo arg="prod" intent="cross-product">⨯</mo>
+       <mi arg="y">y</mi>
+      </mrow>
+     </math>
+    <div class="mathcat">cross product of, x comma y</div>
 
+    </td>
+    <td>
+     <pre>
+&lt;math display="block">
+&lt;mtable>
+ &lt;mtr>&lt;mtd>
+ &lt;mrow intent="$prod@infix($x,$y)">
+  &lt;mi arg="x">x&lt;/mi>
+  &lt;mo arg="prod" intent="cross-product">⨯&lt;/mo>
+  &lt;mi arg="y">y&lt;/mi>
+ &lt;/mrow>
+ &lt;/mtd>&lt;/mtr>&lt;mtr>&lt;mtd>
+ &lt;mrow intent="$prod@function($x,$y)">
+  &lt;mi arg="x">x&lt;/mi>
+  &lt;mo arg="prod" intent="cross-product">⨯&lt;/mo>
+  &lt;mi arg="y">y&lt;/mi>
+ &lt;/mrow>
+ &lt;/mtd>&lt;/mtr>&lt;mtr>&lt;mtd>
+ &lt;mrow intent="$prod@silent(_vector_product, _of, $x, _with, $y)">
+  &lt;mi arg="x">x&lt;/mi>
+  &lt;mo arg="prod" intent="cross-product">⨯&lt;/mo>
+  &lt;mi arg="y">y&lt;/mi>
+ &lt;/mrow>
+ &lt;/mtd>&lt;/mtr>
+&lt;/mtable>
+&lt;/math>
+</pre></td><td>
+<math display="block">
+     <mtable>
+      <mtr><mtd>
+      <mrow intent="$prod@infix($x,$y)">
+       <mi arg="x">x</mi>
+       <mo arg="prod" intent="cross-product">⨯</mo>
+       <mi arg="y">y</mi>
+      </mrow>
+      </mtd></mtr><mtr><mtd>
+      <mrow intent="$prod@function($x,$y)">
+       <mi arg="x">x</mi>
+       <mo arg="prod" intent="cross-product">⨯</mo>
+       <mi arg="y">y</mi>
+      </mrow>
+      </mtd></mtr><mtr><mtd>
+      <mrow intent="$prod@silent(_vector_product, _of, $x, _with, $y)">
+       <mi arg="x">x</mi>
+       <mo arg="prod" intent="cross-product">⨯</mo>
+       <mi arg="y">y</mi>
+      </mrow>
+      </mtd></mtr>
+     </mtable>
+     </math>
+    <div class="mathcat">3 lines, <br/>line 1; x cross product y; <br/>line 2; cross product of, x comma y; <br/>line 3;  vector product  of x  with y;</div>
+
+    </td>
+    <td>x \vectimes y</td>
+    <td id="IDvectimeshints"><a class="self" href="#IDvectimeshints">vectimes hints</a></td>
+ </tr>
 
 
    <tr>

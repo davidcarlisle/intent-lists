@@ -375,13 +375,60 @@
        <mi arg="X">X</mi>
       </mrow>
       </mtd></mtr>
-     </mtable></math>
+     </mtable>
+     </math>
     </td>
     <td>&#x1F407;  X</td>
     <td>intent on mrow of prefix mo</td>
    </tr>
-
-
+   
+   <tr>
+    <td>
+     <math display="block">
+      <mrow>
+       <mi arg="x">x</mi>
+       <mo arg="prod" intent="cross-product">⨯</mo>
+       <mi arg="y">y</mi>
+      </mrow>
+     </math>
+    </td>
+    <td>
+     <math display="block">
+      <mrow intent="$prod($x,$y)">
+       <mi arg="x">x</mi>
+       <mo arg="prod" intent="cross-product">⨯</mo>
+       <mi arg="y">y</mi>
+      </mrow>
+     </math>
+    </td>
+    <td>
+     <math display="block">
+     <mtable>
+      <mtr><mtd>
+      <mrow intent="$prod@infix($x,$y)">
+       <mi arg="x">x</mi>
+       <mo arg="prod" intent="cross-product">⨯</mo>
+       <mi arg="y">y</mi>
+      </mrow>
+      </mtd></mtr><mtr><mtd>
+      <mrow intent="$prod@function($x,$y)">
+       <mi arg="x">x</mi>
+       <mo arg="prod" intent="cross-product">⨯</mo>
+       <mi arg="y">y</mi>
+      </mrow>
+      </mtd></mtr><mtr><mtd>
+      <mrow intent="$prod@silent(_vector_product, _of, $x, _with, $y)">
+       <mi arg="x">x</mi>
+       <mo arg="prod" intent="cross-product">⨯</mo>
+       <mi arg="y">y</mi>
+      </mrow>
+      </mtd></mtr>
+     </mtable>
+     </math>
+    </td>
+    <td>x \vectimes y</td>
+    <td>vectimes hints</td>
+   </tr>
 
 
    <tr>
