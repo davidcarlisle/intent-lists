@@ -65,7 +65,7 @@
      </math>
     </td>
     <td>
-     <math display="block">
+     <math display="block" mathbackground="yellow">
       <mn intent="1,234:decimal-comma">1,234</mn>
       <mo intent="plus">+</mo>
       <mn intent="1,234:decimal-comma">1,234</mn>
@@ -94,7 +94,7 @@
      </math>
     </td>
     <td>
-     <math display="block">
+     <math display="block" mathbackground="yellow">
       <mn intent="1,234:thousands-comma">1,234</mn>
       <mo>;</mo>
       <mn intent="1,234:thousands-comma">1,234</mn>
@@ -137,6 +137,7 @@
     <td>-3</td>
     <td>mrow mo -3</td>
    </tr>
+
    <tr>
     <th colspan="6">Super and Sub Scripts</th>
    </tr>
@@ -196,16 +197,51 @@
     </td>
     <td>
      <math display="block">
+      <msup intent="index($H,$n)">
+       <mi arg="H" mathvariant="normal">H</mi>
+       <mn arg="n">2</mn>
+      </msup>
+     </math>
+    </td>
+    <td>
+     <math display="block">
+      <msup intent="index@silent($H,$n)">
+       <mi arg="H" mathvariant="normal">H</mi>
+       <mn arg="n">2</mn>
+      </msup>
+     </math>
+    </td>
+    <td>\mathrm{H}^2</td>
+    <td>2nd Cohomology</td>
+   </tr>
+
+   <tr>
+    <td>
+     <math>
       <msup>
-       <mi mathvariant="normal">H</mi>
+       <mi>&#x211D;</mi>
        <mn>2</mn>
       </msup>
      </math>
     </td>
-    <!--Xtd> - </tdX-->
-    <td> - </td>
-    <td>\mathrm{H}^2</td>
-    <td>2nd Cohomology</td>
+    <td>
+     <math>
+      <msup intent="vector-space-power($R,$n)">
+       <mi arg="R">&#x211D;</mi>
+       <mn arg="n">2</mn>
+      </msup>
+     </math>
+    </td>
+    <td>
+     <math>
+      <msup intent="vector-space-power@silent(_R,$n)">
+       <mi arg="R">&#x211D;</mi>
+       <mn arg="n">2</mn>
+      </msup>
+     </math>
+    </td>
+    <td>\mathbb{R}^2</td>
+    <td>R 2</td>
    </tr>
 
    <tr>
@@ -252,6 +288,90 @@
     <td> - </td>
     <td>x^\dagger</td>
     <td>dagger</td>
+   </tr>
+
+   <tr>
+    <td>
+     <math display="block">
+      <msup>
+       <mi>x</mi>
+       <mi mathvariant="normal">T</mi>
+      </msup>
+     </math>
+    </td>
+    <td>
+     <math display="block">
+      <msup intent="$op($arg)">
+       <mi arg="arg">x</mi>
+       <mi arg="op" intent="transpose" mathvariant="normal">T</mi>
+      </msup>
+     </math>
+    </td>
+    <td>
+     <math display="block" mathbackground="yellow">
+      <msup intent="$op@function($arg)">
+       <mi arg="arg">x</mi>
+       <mi arg="op" intent="transpose" mathvariant="normal">T</mi>
+      </msup>
+     </math>
+     <math display="block" mathbackground="yellow">
+      <msup intent="transpose@function($arg)">
+       <mi arg="arg">x</mi>
+       <mi arg="op" intent="transpose" mathvariant="normal">T</mi>
+      </msup>
+     </math>
+     <math display="block">
+      <msup intent="_($op, _of, $arg)">
+       <mi arg="arg">x</mi>
+       <mi arg="op" intent="transpose" mathvariant="normal">T</mi>
+      </msup>
+     </math>
+    </td>
+    <td>x^{\mathrm{T}}</td>
+    <td>x transpose</td>
+   </tr>
+
+   <tr>
+    <td>
+     <math display="block">
+      <mmultiscripts>
+       <mi>x</mi>
+       <mprescripts/>
+       <mrow/>
+       <mi mathvariant="normal">T</mi>
+      </mmultiscripts>
+     </math>
+    </td>
+    <td>
+     <math display="block">
+      <mmultiscripts intent="$op($arg)">
+       <mi arg="arg">x</mi>
+       <mprescripts/>
+       <mrow/>
+       <mi arg="op" intent="transpose" mathvariant="normal">T</mi>
+      </mmultiscripts>
+     </math>
+    </td>
+    <td>
+     <math display="block" mathbackground="yellow">
+      <mmultiscripts intent="$op@function($arg)">
+       <mi arg="arg">x</mi>
+       <mprescripts/>
+       <mrow/>
+       <mi arg="op" intent="transpose" mathvariant="normal">T</mi>
+      </mmultiscripts>
+     </math>
+     <math display="block">
+      <mmultiscripts intent="_($op, _of, $arg)">
+       <mi arg="arg">x</mi>
+       <mprescripts/>
+       <mrow/>
+       <mi arg="op" intent="transpose" mathvariant="normal">T</mi>
+      </mmultiscripts>
+     </math>
+    </td>
+    <td>{}^{\mathrm{T}}x</td>
+    <td>x transpose pre-sup</td>
    </tr>
 
    <tr>
@@ -315,19 +435,16 @@
     </td>
     <td>
      <math display="block">
-     <mtable>
-      <mtr><mtd>
       <mrow>
        <mo intent="my-function@function">&#x1F407;</mo>
        <mi>X</mi>
       </mrow>
-      </mtd></mtr><mtr><mtd>
+     </math>
+     <math display="block">
       <mrow>
        <mo intent="my-function@silent">&#x1F407;</mo>
        <mi>X</mi>
       </mrow>
-     </mtd></mtr>
-     </mtable>
      </math>
     </td>
     <td>&#x1F407;  X</td>
@@ -353,29 +470,28 @@
     </td>
     <td>
      <math display="block">
-     <mtable>
-      <mtr><mtd>
       <mrow intent="my-function@function($X)">
        <mo>&#x1F407;</mo>
        <mi arg="X">X</mi>
       </mrow>
-      </mtd></mtr><mtr><mtd>
+     </math>
+     <math display="block">
       <mrow intent="my-function@prefix($X)">
        <mo>&#x1F407;</mo>
        <mi arg="X">X</mi>
       </mrow>
-      </mtd></mtr><mtr><mtd>
+     </math>
+     <math display="block">
       <mrow intent="my-function@postfix($X)">
        <mo>&#x1F407;</mo>
        <mi arg="X">X</mi>
       </mrow>
-      </mtd></mtr><mtr><mtd>
+     </math>
+     <math display="block">
       <mrow intent="my-function@silent(_rabbit_function_applied_to,$X)">
        <mo>&#x1F407;</mo>
        <mi arg="X">X</mi>
       </mrow>
-      </mtd></mtr>
-     </mtable>
      </math>
     </td>
     <td>&#x1F407;  X</td>
@@ -799,7 +915,7 @@
      </math>
     </td>
     <td>
-     <math display="block">
+     <math display="block" mathbackground="yellow">
       <mover intent="ray($x)">
        <mi arg="X">X</mi>
        <mo>→</mo>
@@ -845,7 +961,7 @@
      </math>
     </td>
     <td>
-     <math display="block">
+     <math display="block" mathbackground="yellow">
       <mrow intent="sum($a,$b)">
        <mn>1.234</mn>
        <mo>+</mo>

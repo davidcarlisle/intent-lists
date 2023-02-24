@@ -50,15 +50,17 @@
     <th colspan="6" id="IDNumbers"><a class="self" href="#IDNumbers">Numbers</a></th>
  </tr>
    <tr>
-    <td>
-     <pre>
+    <td><pre>
+
 &lt;math display="block">
  &lt;mn>1,234&lt;/mn>
  &lt;mo>+&lt;/mo>
  &lt;mn>1,234&lt;/mn>
 &lt;/math>
+    
 </pre></td><td>
-<math display="block">
+
+     <math display="block">
       <mn>1,234</mn>
       <mo>+</mo>
       <mn>1,234</mn>
@@ -66,15 +68,18 @@
     <div class="mathcat">1,234 plus 1,234</div>
 
     </td>
-    <td>
-     <pre>
+
+    <td><pre>
+
 &lt;math display="block">
  &lt;mn>1,234&lt;/mn>
  &lt;mo intent="plus">+&lt;/mo>
  &lt;mn>1,234&lt;/mn>
 &lt;/math>
+    
 </pre></td><td>
-<math display="block">
+
+     <math display="block">
       <mn>1,234</mn>
       <mo intent="plus">+</mo>
       <mn>1,234</mn>
@@ -82,15 +87,18 @@
     <div class="mathcat">1,234 plus 1,234</div>
 
     </td>
-    <td>
-     <pre>
-&lt;math display="block">
+
+    <td><pre>
+
+&lt;math display="block" mathbackground="yellow">
  &lt;mn intent="1,234:decimal-comma">1,234&lt;/mn>
  &lt;mo intent="plus">+&lt;/mo>
  &lt;mn intent="1,234:decimal-comma">1,234&lt;/mn>
 &lt;/math>
+    
 </pre></td><td>
-<math display="block">
+
+     <math display="block" mathbackground="yellow">
       <mn intent="1,234:decimal-comma">1,234</mn>
       <mo intent="plus">+</mo>
       <mn intent="1,234:decimal-comma">1,234</mn>
@@ -103,7 +111,7 @@ Replacement
 ]
 ...due to matching the following MathML with the pattern
 x: "."
- &lt;math display=&apos;block&apos; id=&apos;M...&apos; data-id-added=&apos;true&apos;>
+ &lt;math display=&apos;block&apos; mathbackground=&apos;yellow&apos; id=&apos;M...&apos; data-id-added=&apos;true&apos;>
   &lt;mrow data-changed=&apos;added&apos; id=&apos;M...&apos; data-id-added=&apos;true&apos;>
     &lt;mn intent=&apos;1,234:decimal-comma&apos; id=&apos;M...&apos; data-id-added=&apos;true&apos;>1,234&lt;/mn>
     &lt;mo intent=&apos;plus&apos; id=&apos;M...&apos; data-id-added=&apos;true&apos;>+&lt;/mo>
@@ -144,12 +152,13 @@ caused by: Error in intent value: extra unparsed intent &apos;234:decimal-comma&
 '>problem with getting speech for MathML (hover for trace)</span></div>
 
     </td>
+
     <td>1,234+1{,}234</td>
     <td id="IDdecimalcomma"><a class="self" href="#IDdecimalcomma">decimal comma</a></td>
  </tr>
    <tr>
-    <td>
-     <pre>
+    <td><pre>
+
 &lt;math display="block">
  &lt;mn>1,234&lt;/mn>
  &lt;mo>;&lt;/mo>
@@ -157,8 +166,10 @@ caused by: Error in intent value: extra unparsed intent &apos;234:decimal-comma&
  &lt;mo>;&lt;/mo>
  &lt;mn>1,234,000&lt;/mn>
 &lt;/math>
+    
 </pre></td><td>
-<math display="block">
+
+     <math display="block">
       <mn>1,234</mn>
       <mo>;</mo>
       <mn>1,234</mn>
@@ -168,8 +179,9 @@ caused by: Error in intent value: extra unparsed intent &apos;234:decimal-comma&
     <div class="mathcat">1,234 semicolon 1,234 semicolon 1,234,000</div>
 
     </td>
-    <td>
-     <pre>
+
+    <td><pre>
+
 &lt;math display="block">
  &lt;mn>1,234&lt;/mn>
  &lt;mo>;&lt;/mo>
@@ -177,8 +189,10 @@ caused by: Error in intent value: extra unparsed intent &apos;234:decimal-comma&
  &lt;mo>;&lt;/mo>
  &lt;mn>1,234,000&lt;/mn>
 &lt;/math>
+    
 </pre></td><td>
-<math display="block">
+
+     <math display="block">
       <mn>1,234</mn>
       <mo>;</mo>
       <mn>1,234</mn>
@@ -188,17 +202,20 @@ caused by: Error in intent value: extra unparsed intent &apos;234:decimal-comma&
     <div class="mathcat">1,234 semicolon 1,234 semicolon 1,234,000</div>
 
     </td>
-    <td>
-     <pre>
-&lt;math display="block">
+
+    <td><pre>
+
+&lt;math display="block" mathbackground="yellow">
  &lt;mn intent="1,234:thousands-comma">1,234&lt;/mn>
  &lt;mo>;&lt;/mo>
  &lt;mn intent="1,234:thousands-comma">1,234&lt;/mn>
  &lt;mo>;&lt;/mo>
  &lt;mn intent="1,234:thousands-comma">1,234,000&lt;/mn>
 &lt;/math>
+    
 </pre></td><td>
-<math display="block">
+
+     <math display="block" mathbackground="yellow">
       <mn intent="1,234:thousands-comma">1,234</mn>
       <mo>;</mo>
       <mn intent="1,234:thousands-comma">1,234</mn>
@@ -213,7 +230,7 @@ Replacement
 ]
 ...due to matching the following MathML with the pattern
 x: "."
- &lt;math display=&apos;block&apos; id=&apos;M...&apos; data-id-added=&apos;true&apos;>
+ &lt;math display=&apos;block&apos; mathbackground=&apos;yellow&apos; id=&apos;M...&apos; data-id-added=&apos;true&apos;>
   &lt;mrow data-changed=&apos;added&apos; id=&apos;M...&apos; data-id-added=&apos;true&apos;>
     &lt;mn intent=&apos;1,234:thousands-comma&apos; id=&apos;M...&apos; data-id-added=&apos;true&apos;>1,234&lt;/mn>
     &lt;mo id=&apos;M...&apos; data-id-added=&apos;true&apos;>;&lt;/mo>
@@ -258,83 +275,99 @@ caused by: Error in intent value: extra unparsed intent &apos;234:thousands-comm
 '>problem with getting speech for MathML (hover for trace)</span></div>
 
     </td>
+
     <td>1,234; 1,234; 1,234,000</td>
     <td id="IDgroupingcomma"><a class="self" href="#IDgroupingcomma">grouping comma</a></td>
  </tr>
    <tr>
-    <td>
-     <pre>
+    <td><pre>
+
 &lt;math display="block">
  &lt;mn>−3&lt;/mn>
 &lt;/math>
+    
 </pre></td><td>
-<math display="block">
+
+     <math display="block">
       <mn>−3</mn>
      </math>
     <div class="mathcat">negative 3</div>
 
     </td>
-    <td>
-     <pre>
+
+    <td><pre>
+
 &lt;math display="block">
  &lt;mn intent="-3">−3&lt;/mn>
 &lt;/math>
+    
 </pre></td><td>
-<math display="block">
+
+     <math display="block">
       <mn intent="-3">−3</mn>
      </math>
     <div class="mathcat">negative 3</div>
 
     </td>
+
     <td> - </td>
     <td> - </td>
     <td>-3</td>
     <td id="IDmn-3"><a class="self" href="#IDmn-3">mn -3</a></td>
  </tr>
    <tr>
-    <td>
-     <pre>
+    <td><pre>
+
 &lt;math display="block">
  &lt;mrow>&lt;mo>−&lt;/mo>&lt;mn>3&lt;/mn>&lt;/mrow>
 &lt;/math>
+    
 </pre></td><td>
-<math display="block">
+
+     <math display="block">
       <mrow><mo>−</mo><mn>3</mn></mrow>
      </math>
     <div class="mathcat">negative 3</div>
 
     </td>
-    <td>
-     <pre>
+
+    <td><pre>
+
 &lt;math display="block">
  &lt;mrow intent="-3">&lt;mo>−&lt;/mo>&lt;mn>3&lt;/mn>&lt;/mrow>
 &lt;/math>
+    
 </pre></td><td>
-<math display="block">
+
+     <math display="block">
       <mrow intent="-3"><mo>−</mo><mn>3</mn></mrow>
      </math>
     <div class="mathcat">negative 3</div>
 
     </td>
+
     <td> - </td>
     <td> - </td>
     <td>-3</td>
     <td id="IDmrowmo-3"><a class="self" href="#IDmrowmo-3">mrow mo -3</a></td>
  </tr>
+
    <tr>
     <th colspan="6" id="IDSuperandSubScripts"><a class="self" href="#IDSuperandSubScripts">Super and Sub Scripts</a></th>
  </tr>
    <tr>
-    <td>
-     <pre>
+    <td><pre>
+
 &lt;math display="block">
  &lt;msup>
   &lt;mi>x&lt;/mi>
   &lt;mn>2&lt;/mn>
  &lt;/msup>
 &lt;/math>
+    
 </pre></td><td>
-<math display="block">
+
+     <math display="block">
       <msup>
        <mi>x</mi>
        <mn>2</mn>
@@ -343,16 +376,19 @@ caused by: Error in intent value: extra unparsed intent &apos;234:thousands-comm
     <div class="mathcat">x squared</div>
 
     </td>
-    <td>
-     <pre>
+
+    <td><pre>
+
 &lt;math display="block">
  &lt;msup>
   &lt;mi>x&lt;/mi>
   &lt;mn>2&lt;/mn>
  &lt;/msup>
 &lt;/math>
+    
 </pre></td><td>
-<math display="block">
+
+     <math display="block">
       <msup>
        <mi>x</mi>
        <mn>2</mn>
@@ -361,22 +397,25 @@ caused by: Error in intent value: extra unparsed intent &apos;234:thousands-comm
     <div class="mathcat">x squared</div>
 
     </td>
+
     <td> - </td>
     <td> - </td>
     <td>x^2</td>
     <td id="IDsquared"><a class="self" href="#IDsquared">squared</a></td>
  </tr>
    <tr>
-    <td>
-     <pre>
+    <td><pre>
+
 &lt;math display="block">
  &lt;msup>
   &lt;mi>x&lt;/mi>
   &lt;mn>3&lt;/mn>
  &lt;/msup>
 &lt;/math>
+    
 </pre></td><td>
-<math display="block">
+
+     <math display="block">
       <msup>
        <mi>x</mi>
        <mn>3</mn>
@@ -385,16 +424,19 @@ caused by: Error in intent value: extra unparsed intent &apos;234:thousands-comm
     <div class="mathcat">x cubed</div>
 
     </td>
-    <td>
-     <pre>
+
+    <td><pre>
+
 &lt;math display="block">
  &lt;msup>
   &lt;mi>x&lt;/mi>
   &lt;mn>3&lt;/mn>
  &lt;/msup>
 &lt;/math>
+    
 </pre></td><td>
-<math display="block">
+
+     <math display="block">
       <msup>
        <mi>x</mi>
        <mn>3</mn>
@@ -403,6 +445,7 @@ caused by: Error in intent value: extra unparsed intent &apos;234:thousands-comm
     <div class="mathcat">x cubed</div>
 
     </td>
+
     <td> - </td>
     <td> - </td>
     <td>x^3</td>
@@ -410,16 +453,18 @@ caused by: Error in intent value: extra unparsed intent &apos;234:thousands-comm
  </tr>
 
    <tr>
-    <td>
-     <pre>
+    <td><pre>
+
 &lt;math display="block">
  &lt;msup>
   &lt;mi mathvariant="normal">H&lt;/mi>
   &lt;mn>2&lt;/mn>
  &lt;/msup>
 &lt;/math>
+    
 </pre></td><td>
-<math display="block">
+
+     <math display="block">
       <msup>
        <mi mathvariant="normal">H</mi>
        <mn>2</mn>
@@ -428,41 +473,134 @@ caused by: Error in intent value: extra unparsed intent &apos;234:thousands-comm
     <div class="mathcat">h squared</div>
 
     </td>
-    <td>
-     <pre>
+
+    <td><pre>
+
 &lt;math display="block">
- &lt;msup>
-  &lt;mi mathvariant="normal">H&lt;/mi>
-  &lt;mn>2&lt;/mn>
+ &lt;msup intent="index($H,$n)">
+  &lt;mi arg="H" mathvariant="normal">H&lt;/mi>
+  &lt;mn arg="n">2&lt;/mn>
  &lt;/msup>
 &lt;/math>
+    
 </pre></td><td>
-<math display="block">
-      <msup>
-       <mi mathvariant="normal">H</mi>
-       <mn>2</mn>
+
+     <math display="block">
+      <msup intent="index($H,$n)">
+       <mi arg="H" mathvariant="normal">H</mi>
+       <mn arg="n">2</mn>
       </msup>
      </math>
-    <div class="mathcat">h squared</div>
+    <div class="mathcat">index of,   h comma 2</div>
 
     </td>
-    <td> - </td>
-    <td> - </td>
+
+    <td><pre>
+
+&lt;math display="block">
+ &lt;msup intent="index@silent($H,$n)">
+  &lt;mi arg="H" mathvariant="normal">H&lt;/mi>
+  &lt;mn arg="n">2&lt;/mn>
+ &lt;/msup>
+&lt;/math>
+    
+</pre></td><td>
+
+     <math display="block">
+      <msup intent="index@silent($H,$n)">
+       <mi arg="H" mathvariant="normal">H</mi>
+       <mn arg="n">2</mn>
+      </msup>
+     </math>
+    <div class="mathcat">h 2</div>
+
+    </td>
+
     <td>\mathrm{H}^2</td>
     <td id="ID2ndCohomology"><a class="self" href="#ID2ndCohomology">2nd Cohomology</a></td>
  </tr>
 
    <tr>
-    <td>
-     <pre>
+    <td><pre>
+
+&lt;math>
+ &lt;msup>
+  &lt;mi>&amp;#x211D;&lt;/mi>
+  &lt;mn>2&lt;/mn>
+ &lt;/msup>
+&lt;/math>
+    
+</pre></td><td>
+
+     <math>
+      <msup>
+       <mi>&#x211D;</mi>
+       <mn>2</mn>
+      </msup>
+     </math>
+    <div class="mathcat">R 2</div>
+
+    </td>
+
+    <td><pre>
+
+&lt;math>
+ &lt;msup intent="vector-space-power($R,$n)">
+  &lt;mi arg="R">&amp;#x211D;&lt;/mi>
+  &lt;mn arg="n">2&lt;/mn>
+ &lt;/msup>
+&lt;/math>
+    
+</pre></td><td>
+
+     <math>
+      <msup intent="vector-space-power($R,$n)">
+       <mi arg="R">&#x211D;</mi>
+       <mn arg="n">2</mn>
+      </msup>
+     </math>
+    <div class="mathcat">vector space power of, the real numbers comma 2</div>
+
+    </td>
+
+    <td><pre>
+
+&lt;math>
+ &lt;msup intent="vector-space-power@silent(_R,$n)">
+  &lt;mi arg="R">&amp;#x211D;&lt;/mi>
+  &lt;mn arg="n">2&lt;/mn>
+ &lt;/msup>
+&lt;/math>
+    
+</pre></td><td>
+
+     <math>
+      <msup intent="vector-space-power@silent(_R,$n)">
+       <mi arg="R">&#x211D;</mi>
+       <mn arg="n">2</mn>
+      </msup>
+     </math>
+    <div class="mathcat">R 2</div>
+
+    </td>
+
+    <td>\mathbb{R}^2</td>
+    <td id="IDR2"><a class="self" href="#IDR2">R 2</a></td>
+ </tr>
+
+   <tr>
+    <td><pre>
+
 &lt;math display="block">
  &lt;msup>
   &lt;mi>x&lt;/mi>
   &lt;mi>n&lt;/mi>
  &lt;/msup>
 &lt;/math>
+    
 </pre></td><td>
-<math display="block">
+
+     <math display="block">
       <msup>
        <mi>x</mi>
        <mi>n</mi>
@@ -471,16 +609,19 @@ caused by: Error in intent value: extra unparsed intent &apos;234:thousands-comm
     <div class="mathcat">x to the n-th</div>
 
     </td>
-    <td>
-     <pre>
+
+    <td><pre>
+
 &lt;math display="block">
  &lt;msup>
   &lt;mi>x&lt;/mi>
   &lt;mi>n&lt;/mi>
  &lt;/msup>
 &lt;/math>
+    
 </pre></td><td>
-<math display="block">
+
+     <math display="block">
       <msup>
        <mi>x</mi>
        <mi>n</mi>
@@ -489,6 +630,7 @@ caused by: Error in intent value: extra unparsed intent &apos;234:thousands-comm
     <div class="mathcat">x to the n-th</div>
 
     </td>
+
     <td> - </td>
     <td> - </td>
     <td>x^n</td>
@@ -496,16 +638,18 @@ caused by: Error in intent value: extra unparsed intent &apos;234:thousands-comm
  </tr>
 
    <tr>
-    <td>
-     <pre>
+    <td><pre>
+
 &lt;math display="block">
  &lt;msup>  
   &lt;mi>x&lt;/mi>  
   &lt;mo>&amp;#x2020;&lt;!-- U+2020-->&lt;/mo>
  &lt;/msup>
 &lt;/math>
+    
 </pre></td><td>
-<math display="block">
+
+     <math display="block">
       <msup>  
        <mi>x</mi>  
        <mo>&#x2020;<!-- U+2020--></mo>
@@ -514,16 +658,19 @@ caused by: Error in intent value: extra unparsed intent &apos;234:thousands-comm
     <div class="mathcat">x †,</div>
 
     </td>
-    <td>
-     <pre>
+
+    <td><pre>
+
 &lt;math display="block">
  &lt;msup intent="x-dagger">  
   &lt;mi>x&lt;/mi>  
   &lt;mo>&amp;#x2020;&lt;!-- U+2020-->&lt;/mo>
  &lt;/msup>
 &lt;/math>
+    
 </pre></td><td>
-<math display="block">
+
+     <math display="block">
       <msup intent="x-dagger">  
        <mi>x</mi>  
        <mo>&#x2020;<!-- U+2020--></mo>
@@ -532,6 +679,7 @@ caused by: Error in intent value: extra unparsed intent &apos;234:thousands-comm
     <div class="mathcat">x dagger</div>
 
     </td>
+
     <td> - </td>
     <td> - </td>
     <td>x^\dagger</td>
@@ -539,11 +687,205 @@ caused by: Error in intent value: extra unparsed intent &apos;234:thousands-comm
  </tr>
 
    <tr>
+    <td><pre>
+
+&lt;math display="block">
+ &lt;msup>
+  &lt;mi>x&lt;/mi>
+  &lt;mi mathvariant="normal">T&lt;/mi>
+ &lt;/msup>
+&lt;/math>
+    
+</pre></td><td>
+
+     <math display="block">
+      <msup>
+       <mi>x</mi>
+       <mi mathvariant="normal">T</mi>
+      </msup>
+     </math>
+    <div class="mathcat">x transpose</div>
+
+    </td>
+
+    <td><pre>
+
+&lt;math display="block">
+ &lt;msup intent="$op($arg)">
+  &lt;mi arg="arg">x&lt;/mi>
+  &lt;mi arg="op" intent="transpose" mathvariant="normal">T&lt;/mi>
+ &lt;/msup>
+&lt;/math>
+    
+</pre></td><td>
+
+     <math display="block">
+      <msup intent="$op($arg)">
+       <mi arg="arg">x</mi>
+       <mi arg="op" intent="transpose" mathvariant="normal">T</mi>
+      </msup>
+     </math>
+    <div class="mathcat">x transpose</div>
+
+    </td>
+
+    <td><pre>
+
+&lt;math display="block" mathbackground="yellow">
+ &lt;msup intent="$op@function($arg)">
+  &lt;mi arg="arg">x&lt;/mi>
+  &lt;mi arg="op" intent="transpose" mathvariant="normal">T&lt;/mi>
+ &lt;/msup>
+&lt;/math>
+&lt;math display="block" mathbackground="yellow">
+ &lt;msup intent="transpose@function($arg)">
+  &lt;mi arg="arg">x&lt;/mi>
+  &lt;mi arg="op" intent="transpose" mathvariant="normal">T&lt;/mi>
+ &lt;/msup>
+&lt;/math>
+&lt;math display="block">
+ &lt;msup intent="_($op, _of, $arg)">
+  &lt;mi arg="arg">x&lt;/mi>
+  &lt;mi arg="op" intent="transpose" mathvariant="normal">T&lt;/mi>
+ &lt;/msup>
+&lt;/math>
+    
+</pre></td><td>
+
+     <math display="block" mathbackground="yellow">
+      <msup intent="$op@function($arg)">
+       <mi arg="arg">x</mi>
+       <mi arg="op" intent="transpose" mathvariant="normal">T</mi>
+      </msup>
+     </math>
+    <div class="mathcat">x transpose</div>
+
+     <math display="block" mathbackground="yellow">
+      <msup intent="transpose@function($arg)">
+       <mi arg="arg">x</mi>
+       <mi arg="op" intent="transpose" mathvariant="normal">T</mi>
+      </msup>
+     </math>
+    <div class="mathcat">x transpose</div>
+
+     <math display="block">
+      <msup intent="_($op, _of, $arg)">
+       <mi arg="arg">x</mi>
+       <mi arg="op" intent="transpose" mathvariant="normal">T</mi>
+      </msup>
+     </math>
+    <div class="mathcat">transpose  of x</div>
+
+    </td>
+
+    <td>x^{\mathrm{T}}</td>
+    <td id="IDxtranspose"><a class="self" href="#IDxtranspose">x transpose</a></td>
+ </tr>
+
+   <tr>
+    <td><pre>
+
+&lt;math display="block">
+ &lt;mmultiscripts>
+  &lt;mi>x&lt;/mi>
+  &lt;mprescripts/>
+  &lt;mrow/>
+  &lt;mi mathvariant="normal">T&lt;/mi>
+ &lt;/mmultiscripts>
+&lt;/math>
+    
+</pre></td><td>
+
+     <math display="block">
+      <mmultiscripts>
+       <mi>x</mi>
+       <mprescripts/>
+       <mrow/>
+       <mi mathvariant="normal">T</mi>
+      </mmultiscripts>
+     </math>
+    <div class="mathcat">x pre-superscript   t,</div>
+
+    </td>
+
+    <td><pre>
+
+&lt;math display="block">
+ &lt;mmultiscripts intent="$op($arg)">
+  &lt;mi arg="arg">x&lt;/mi>
+  &lt;mprescripts/>
+  &lt;mrow/>
+  &lt;mi arg="op" intent="transpose" mathvariant="normal">T&lt;/mi>
+ &lt;/mmultiscripts>
+&lt;/math>
+    
+</pre></td><td>
+
+     <math display="block">
+      <mmultiscripts intent="$op($arg)">
+       <mi arg="arg">x</mi>
+       <mprescripts/>
+       <mrow/>
+       <mi arg="op" intent="transpose" mathvariant="normal">T</mi>
+      </mmultiscripts>
+     </math>
+    <div class="mathcat">x transpose</div>
+
+    </td>
+
+    <td><pre>
+
+&lt;math display="block" mathbackground="yellow">
+ &lt;mmultiscripts intent="$op@function($arg)">
+  &lt;mi arg="arg">x&lt;/mi>
+  &lt;mprescripts/>
+  &lt;mrow/>
+  &lt;mi arg="op" intent="transpose" mathvariant="normal">T&lt;/mi>
+ &lt;/mmultiscripts>
+&lt;/math>
+&lt;math display="block">
+ &lt;mmultiscripts intent="_($op, _of, $arg)">
+  &lt;mi arg="arg">x&lt;/mi>
+  &lt;mprescripts/>
+  &lt;mrow/>
+  &lt;mi arg="op" intent="transpose" mathvariant="normal">T&lt;/mi>
+ &lt;/mmultiscripts>
+&lt;/math>
+    
+</pre></td><td>
+
+     <math display="block" mathbackground="yellow">
+      <mmultiscripts intent="$op@function($arg)">
+       <mi arg="arg">x</mi>
+       <mprescripts/>
+       <mrow/>
+       <mi arg="op" intent="transpose" mathvariant="normal">T</mi>
+      </mmultiscripts>
+     </math>
+    <div class="mathcat">x transpose</div>
+
+     <math display="block">
+      <mmultiscripts intent="_($op, _of, $arg)">
+       <mi arg="arg">x</mi>
+       <mprescripts/>
+       <mrow/>
+       <mi arg="op" intent="transpose" mathvariant="normal">T</mi>
+      </mmultiscripts>
+     </math>
+    <div class="mathcat">transpose  of x</div>
+
+    </td>
+
+    <td>{}^{\mathrm{T}}x</td>
+    <td id="IDxtransposepre-sup"><a class="self" href="#IDxtransposepre-sup">x transpose pre-sup</a></td>
+ </tr>
+
+   <tr>
     <th colspan="6" id="IDInfix"><a class="self" href="#IDInfix">Infix</a></th>
  </tr>
    <tr>
-    <td>
-     <pre>
+    <td><pre>
+
 &lt;math display="block">
  &lt;mrow>
   &lt;mi>x&lt;/mi>
@@ -551,8 +893,10 @@ caused by: Error in intent value: extra unparsed intent &apos;234:thousands-comm
   &lt;mi>y&lt;/mi>
  &lt;/mrow>
 &lt;/math>
+    
 </pre></td><td>
-<math display="block">
+
+     <math display="block">
       <mrow>
        <mi>x</mi>
        <mo>&#x2282;</mo>
@@ -562,8 +906,9 @@ caused by: Error in intent value: extra unparsed intent &apos;234:thousands-comm
     <div class="mathcat">x is a subset of y</div>
 
     </td>
-    <td>
-     <pre>
+
+    <td><pre>
+
 &lt;math display="block">
  &lt;mrow>
   &lt;mi>x&lt;/mi>
@@ -571,8 +916,10 @@ caused by: Error in intent value: extra unparsed intent &apos;234:thousands-comm
   &lt;mi>y&lt;/mi>
  &lt;/mrow>
 &lt;/math>
+    
 </pre></td><td>
-<math display="block">
+
+     <math display="block">
       <mrow>
        <mi>x</mi>
        <mo intent="subset">&#x2282;</mo>
@@ -582,8 +929,9 @@ caused by: Error in intent value: extra unparsed intent &apos;234:thousands-comm
     <div class="mathcat">x subset y</div>
 
     </td>
-    <td>
-     <pre>
+
+    <td><pre>
+
 &lt;math display="block">
  &lt;mrow intent="_is_a_subset_of@infix($x,$y)">
   &lt;mi arg="x">x&lt;/mi>
@@ -591,8 +939,10 @@ caused by: Error in intent value: extra unparsed intent &apos;234:thousands-comm
   &lt;mi arg="y">y&lt;/mi>
  &lt;/mrow>
 &lt;/math>
+    
 </pre></td><td>
-<math display="block">
+
+     <math display="block">
       <mrow intent="_is_a_subset_of@infix($x,$y)">
        <mi arg="x">x</mi>
        <mo>&#x2282;</mo>
@@ -602,6 +952,7 @@ caused by: Error in intent value: extra unparsed intent &apos;234:thousands-comm
     <div class="mathcat">, x  is a subset of y,</div>
 
     </td>
+
     <td>x \subset y</td>
     <td id="IDsubset"><a class="self" href="#IDsubset">subset</a></td>
  </tr>
@@ -614,16 +965,18 @@ caused by: Error in intent value: extra unparsed intent &apos;234:thousands-comm
  </tr>
 
    <tr>
-    <td>
-     <pre>
+    <td><pre>
+
 &lt;math display="block">
  &lt;mrow>
   &lt;mo>&amp;#x1F407;&lt;/mo>
   &lt;mi>X&lt;/mi>
  &lt;/mrow>
 &lt;/math>
+    
 </pre></td><td>
-<math display="block">
+
+     <math display="block">
       <mrow>
        <mo>&#x1F407;</mo>
        <mi>X</mi>
@@ -632,16 +985,19 @@ caused by: Error in intent value: extra unparsed intent &apos;234:thousands-comm
     <div class="mathcat">🐇   x</div>
 
     </td>
-    <td>
-     <pre>
+
+    <td><pre>
+
 &lt;math display="block">
  &lt;mrow>
   &lt;mo intent="my-function">&amp;#x1F407;&lt;/mo>
   &lt;mi>X&lt;/mi>
  &lt;/mrow>
 &lt;/math>
+    
 </pre></td><td>
-<math display="block">
+
+     <math display="block">
       <mrow>
        <mo intent="my-function">&#x1F407;</mo>
        <mi>X</mi>
@@ -650,57 +1006,59 @@ caused by: Error in intent value: extra unparsed intent &apos;234:thousands-comm
     <div class="mathcat">my function   x</div>
 
     </td>
-    <td>
-     <pre>
+
+    <td><pre>
+
 &lt;math display="block">
-&lt;mtable>
- &lt;mtr>&lt;mtd>
  &lt;mrow>
   &lt;mo intent="my-function@function">&amp;#x1F407;&lt;/mo>
   &lt;mi>X&lt;/mi>
  &lt;/mrow>
- &lt;/mtd>&lt;/mtr>&lt;mtr>&lt;mtd>
+&lt;/math>
+&lt;math display="block">
  &lt;mrow>
   &lt;mo intent="my-function@silent">&amp;#x1F407;&lt;/mo>
   &lt;mi>X&lt;/mi>
  &lt;/mrow>
-&lt;/mtd>&lt;/mtr>
-&lt;/mtable>
 &lt;/math>
+    
 </pre></td><td>
-<math display="block">
-     <mtable>
-      <mtr><mtd>
+
+     <math display="block">
       <mrow>
        <mo intent="my-function@function">&#x1F407;</mo>
        <mi>X</mi>
       </mrow>
-      </mtd></mtr><mtr><mtd>
+     </math>
+    <div class="mathcat">my function   x</div>
+
+     <math display="block">
       <mrow>
        <mo intent="my-function@silent">&#x1F407;</mo>
        <mi>X</mi>
       </mrow>
-     </mtd></mtr>
-     </mtable>
      </math>
-    <div class="mathcat">2 lines, <br/>line 1; my function   x; <br/>line 2; my function   x;</div>
+    <div class="mathcat">my function   x</div>
 
     </td>
+
     <td>&#x1F407;  X</td>
     <td id="IDintentonprefixmo"><a class="self" href="#IDintentonprefixmo">intent on prefix mo</a></td>
  </tr>
 
    <tr>
-    <td>
-     <pre>
+    <td><pre>
+
 &lt;math display="block">
  &lt;mrow>
   &lt;mo>&amp;#x1F407;&lt;/mo>
   &lt;mi>X&lt;/mi>
  &lt;/mrow>
 &lt;/math>
+    
 </pre></td><td>
-<math display="block">
+
+     <math display="block">
       <mrow>
        <mo>&#x1F407;</mo>
        <mi>X</mi>
@@ -709,16 +1067,19 @@ caused by: Error in intent value: extra unparsed intent &apos;234:thousands-comm
     <div class="mathcat">🐇   x</div>
 
     </td>
-    <td>
-     <pre>
+
+    <td><pre>
+
 &lt;math display="block">
  &lt;mrow intent="my-function($X)">
   &lt;mo>&amp;#x1F407;&lt;/mo>
   &lt;mi arg="X">X&lt;/mi>
  &lt;/mrow>
 &lt;/math>
+    
 </pre></td><td>
-<math display="block">
+
+     <math display="block">
       <mrow intent="my-function($X)">
        <mo>&#x1F407;</mo>
        <mi arg="X">X</mi>
@@ -727,69 +1088,77 @@ caused by: Error in intent value: extra unparsed intent &apos;234:thousands-comm
     <div class="mathcat">my function of,   x</div>
 
     </td>
-    <td>
-     <pre>
+
+    <td><pre>
+
 &lt;math display="block">
-&lt;mtable>
- &lt;mtr>&lt;mtd>
  &lt;mrow intent="my-function@function($X)">
   &lt;mo>&amp;#x1F407;&lt;/mo>
   &lt;mi arg="X">X&lt;/mi>
  &lt;/mrow>
- &lt;/mtd>&lt;/mtr>&lt;mtr>&lt;mtd>
+&lt;/math>
+&lt;math display="block">
  &lt;mrow intent="my-function@prefix($X)">
   &lt;mo>&amp;#x1F407;&lt;/mo>
   &lt;mi arg="X">X&lt;/mi>
  &lt;/mrow>
- &lt;/mtd>&lt;/mtr>&lt;mtr>&lt;mtd>
+&lt;/math>
+&lt;math display="block">
  &lt;mrow intent="my-function@postfix($X)">
   &lt;mo>&amp;#x1F407;&lt;/mo>
   &lt;mi arg="X">X&lt;/mi>
  &lt;/mrow>
- &lt;/mtd>&lt;/mtr>&lt;mtr>&lt;mtd>
+&lt;/math>
+&lt;math display="block">
  &lt;mrow intent="my-function@silent(_rabbit_function_applied_to,$X)">
   &lt;mo>&amp;#x1F407;&lt;/mo>
   &lt;mi arg="X">X&lt;/mi>
  &lt;/mrow>
- &lt;/mtd>&lt;/mtr>
-&lt;/mtable>
 &lt;/math>
+    
 </pre></td><td>
-<math display="block">
-     <mtable>
-      <mtr><mtd>
+
+     <math display="block">
       <mrow intent="my-function@function($X)">
        <mo>&#x1F407;</mo>
        <mi arg="X">X</mi>
       </mrow>
-      </mtd></mtr><mtr><mtd>
+     </math>
+    <div class="mathcat">my function of,   x</div>
+
+     <math display="block">
       <mrow intent="my-function@prefix($X)">
        <mo>&#x1F407;</mo>
        <mi arg="X">X</mi>
       </mrow>
-      </mtd></mtr><mtr><mtd>
+     </math>
+    <div class="mathcat">my function   x,</div>
+
+     <math display="block">
       <mrow intent="my-function@postfix($X)">
        <mo>&#x1F407;</mo>
        <mi arg="X">X</mi>
       </mrow>
-      </mtd></mtr><mtr><mtd>
+     </math>
+    <div class="mathcat">,   x my function</div>
+
+     <math display="block">
       <mrow intent="my-function@silent(_rabbit_function_applied_to,$X)">
        <mo>&#x1F407;</mo>
        <mi arg="X">X</mi>
       </mrow>
-      </mtd></mtr>
-     </mtable>
      </math>
-    <div class="mathcat">4 lines, <br/>line 1; my function of,   x; <br/>line 2; my function   x; <br/>line 3;   x my function; <br/>line 4;  rabbit function applied to   x;</div>
+    <div class="mathcat">rabbit function applied to   x</div>
 
     </td>
+
     <td>&#x1F407;  X</td>
     <td id="IDintentonmrowofprefixmo"><a class="self" href="#IDintentonmrowofprefixmo">intent on mrow of prefix mo</a></td>
  </tr>
    
    <tr>
-    <td>
-     <pre>
+    <td><pre>
+
 &lt;math display="block">
  &lt;mrow>
   &lt;mi arg="x">x&lt;/mi>
@@ -797,8 +1166,10 @@ caused by: Error in intent value: extra unparsed intent &apos;234:thousands-comm
   &lt;mi arg="y">y&lt;/mi>
  &lt;/mrow>
 &lt;/math>
+    
 </pre></td><td>
-<math display="block">
+
+     <math display="block">
       <mrow>
        <mi arg="x">x</mi>
        <mo arg="prod" intent="cross-product">⨯</mo>
@@ -808,8 +1179,9 @@ caused by: Error in intent value: extra unparsed intent &apos;234:thousands-comm
     <div class="mathcat">x cross product y</div>
 
     </td>
-    <td>
-     <pre>
+
+    <td><pre>
+
 &lt;math display="block">
  &lt;mrow intent="$prod($x,$y)">
   &lt;mi arg="x">x&lt;/mi>
@@ -817,8 +1189,10 @@ caused by: Error in intent value: extra unparsed intent &apos;234:thousands-comm
   &lt;mi arg="y">y&lt;/mi>
  &lt;/mrow>
 &lt;/math>
+    
 </pre></td><td>
-<math display="block">
+
+     <math display="block">
       <mrow intent="$prod($x,$y)">
        <mi arg="x">x</mi>
        <mo arg="prod" intent="cross-product">⨯</mo>
@@ -828,8 +1202,9 @@ caused by: Error in intent value: extra unparsed intent &apos;234:thousands-comm
     <div class="mathcat">cross product of, x comma y</div>
 
     </td>
-    <td>
-     <pre>
+
+    <td><pre>
+
 &lt;math display="block">
 &lt;mtable>
  &lt;mtr>&lt;mtd>
@@ -853,8 +1228,10 @@ caused by: Error in intent value: extra unparsed intent &apos;234:thousands-comm
  &lt;/mtd>&lt;/mtr>
 &lt;/mtable>
 &lt;/math>
+    
 </pre></td><td>
-<math display="block">
+
+     <math display="block">
      <mtable>
       <mtr><mtd>
       <mrow intent="$prod@infix($x,$y)">
@@ -880,6 +1257,7 @@ caused by: Error in intent value: extra unparsed intent &apos;234:thousands-comm
     <div class="mathcat">3 lines, <br/>line 1; x cross product y; <br/>line 2; cross product of, x comma y; <br/>line 3;  vector product  of x  with y;</div>
 
     </td>
+
     <td>x \vectimes y</td>
     <td id="IDvectimeshints"><a class="self" href="#IDvectimeshints">vectimes hints</a></td>
  </tr>
@@ -890,8 +1268,8 @@ caused by: Error in intent value: extra unparsed intent &apos;234:thousands-comm
  </tr>
 
    <tr>
-    <td>
-     <pre>
+    <td><pre>
+
 &lt;math display="block">
  &lt;mrow>
   &lt;mo>|&lt;/mo>
@@ -899,8 +1277,10 @@ caused by: Error in intent value: extra unparsed intent &apos;234:thousands-comm
   &lt;mo>|&lt;/mo>
  &lt;/mrow>
 &lt;/math>
+    
 </pre></td><td>
-<math display="block">
+
+     <math display="block">
       <mrow>
        <mo>|</mo>
        <mi>x</mi>
@@ -910,8 +1290,9 @@ caused by: Error in intent value: extra unparsed intent &apos;234:thousands-comm
     <div class="mathcat">the absolute value of x,</div>
 
     </td>
-    <td>
-     <pre>
+
+    <td><pre>
+
 &lt;math display="block">
  &lt;mrow intent="absolute-value($x)">
   &lt;mo>|&lt;/mo>
@@ -919,8 +1300,10 @@ caused by: Error in intent value: extra unparsed intent &apos;234:thousands-comm
   &lt;mo>|&lt;/mo>
  &lt;/mrow>
 &lt;/math>
+    
 </pre></td><td>
-<math display="block">
+
+     <math display="block">
       <mrow intent="absolute-value($x)">
        <mo>|</mo>
        <mi arg="x">x</mi>
@@ -930,6 +1313,7 @@ caused by: Error in intent value: extra unparsed intent &apos;234:thousands-comm
     <div class="mathcat">the absolute value of x,</div>
 
     </td>
+
     <td> - </td>
     <td> - </td>
     <td>\lvert x\rvert</td>
@@ -937,8 +1321,8 @@ caused by: Error in intent value: extra unparsed intent &apos;234:thousands-comm
  </tr>
 
    <tr>
-    <td>
-     <pre>
+    <td><pre>
+
 &lt;math display="block">
  &lt;mrow>
   &lt;mo>|&lt;/mo>
@@ -946,8 +1330,10 @@ caused by: Error in intent value: extra unparsed intent &apos;234:thousands-comm
   &lt;mo>|&lt;/mo>
  &lt;/mrow>
 &lt;/math>
+    
 </pre></td><td>
-<math display="block">
+
+     <math display="block">
       <mrow>
        <mo>|</mo>
        <mi>M</mi>
@@ -957,8 +1343,9 @@ caused by: Error in intent value: extra unparsed intent &apos;234:thousands-comm
     <div class="mathcat">the absolute value of   m,</div>
 
     </td>
-    <td>
-     <pre>
+
+    <td><pre>
+
 &lt;math display="block">
  &lt;mrow intent="determinant($M)">
   &lt;mo>|&lt;/mo>
@@ -966,8 +1353,10 @@ caused by: Error in intent value: extra unparsed intent &apos;234:thousands-comm
   &lt;mo>|&lt;/mo>
  &lt;/mrow>
 &lt;/math>
+    
 </pre></td><td>
-<math display="block">
+
+     <math display="block">
       <mrow intent="determinant($M)">
        <mo>|</mo>
        <mi arg="M">M</mi>
@@ -977,6 +1366,7 @@ caused by: Error in intent value: extra unparsed intent &apos;234:thousands-comm
     <div class="mathcat">the determinant of   m</div>
 
     </td>
+
     <td> - </td>
     <td> - </td>
     <td>\lvert M\rvert</td>
@@ -984,8 +1374,8 @@ caused by: Error in intent value: extra unparsed intent &apos;234:thousands-comm
  </tr>
    
    <tr>
-    <td>
-     <pre>
+    <td><pre>
+
 &lt;math display="block">
  &lt;mrow>
   &lt;mo>|&lt;/mo>
@@ -1002,8 +1392,10 @@ caused by: Error in intent value: extra unparsed intent &apos;234:thousands-comm
   &lt;mo>|&lt;/mo>
  &lt;/mrow>
 &lt;/math>
+    
 </pre></td><td>
-<math display="block">
+
+     <math display="block">
       <mrow>
        <mo>|</mo>
        <mtable>
@@ -1022,8 +1414,9 @@ caused by: Error in intent value: extra unparsed intent &apos;234:thousands-comm
     <div class="mathcat">the 2 by 2 determinant; column 1; eigh; column 2; b; column 1; c; column 2; d;</div>
 
     </td>
-    <td>
-     <pre>
+
+    <td><pre>
+
 &lt;math display="block">
  &lt;mrow intent="determinant($M)">
   &lt;mo>|&lt;/mo>
@@ -1040,8 +1433,10 @@ caused by: Error in intent value: extra unparsed intent &apos;234:thousands-comm
   &lt;mo>|&lt;/mo>
  &lt;/mrow>
 &lt;/math>
+    
 </pre></td><td>
-<math display="block">
+
+     <math display="block">
       <mrow intent="determinant($M)">
        <mo>|</mo>
        <mtable arg="M">
@@ -1060,8 +1455,9 @@ caused by: Error in intent value: extra unparsed intent &apos;234:thousands-comm
     <div class="mathcat">the determinant of 2 lines, <br/>line 1; eigh, b; <br/>line 2; c, d;</div>
 
     </td>
-    <td>
-     <pre>
+
+    <td><pre>
+
 &lt;math display="block">
  &lt;mrow intent="determinant($M:matrix)">
   &lt;mo>|&lt;/mo>
@@ -1078,8 +1474,10 @@ caused by: Error in intent value: extra unparsed intent &apos;234:thousands-comm
   &lt;mo>|&lt;/mo>
  &lt;/mrow>
 &lt;/math>
+    
 </pre></td><td>
-<math display="block">
+
+     <math display="block">
       <mrow intent="determinant($M:matrix)">
        <mo>|</mo>
        <mtable arg="M">
@@ -1099,13 +1497,14 @@ caused by: Error in intent value: extra unparsed intent &apos;234:thousands-comm
 
     </td>
 
+
     <td>\begin{vmatrix}a&amp;b\\c&amp;d\end{vmatrix}</td>
     <td id="IDvertabcddeterminant"><a class="self" href="#IDvertabcddeterminant">vert abcd determinant</a></td>
  </tr>
    
    <tr>
-    <td>
-     <pre>
+    <td><pre>
+
 &lt;math display="block">
  &lt;mrow>
   &lt;mo>‖&lt;/mo> 
@@ -1113,8 +1512,10 @@ caused by: Error in intent value: extra unparsed intent &apos;234:thousands-comm
   &lt;mo>‖&lt;/mo>
  &lt;/mrow>
 &lt;/math>
+    
 </pre></td><td>
-<math display="block">
+
+     <math display="block">
       <mrow>
        <mo>‖</mo> 
        <mi>x</mi>
@@ -1124,8 +1525,9 @@ caused by: Error in intent value: extra unparsed intent &apos;234:thousands-comm
     <div class="mathcat">magnitude of, x</div>
 
     </td>
-    <td>
-     <pre>
+
+    <td><pre>
+
 &lt;math display="block">
  &lt;mrow intent="magnitude($x)">
   &lt;mo>‖&lt;/mo> 
@@ -1133,8 +1535,10 @@ caused by: Error in intent value: extra unparsed intent &apos;234:thousands-comm
   &lt;mo>‖&lt;/mo>
  &lt;/mrow>
 &lt;/math>
+    
 </pre></td><td>
-<math display="block">
+
+     <math display="block">
       <mrow intent="magnitude($x)">
        <mo>‖</mo> 
        <mi arg="x">x</mi>
@@ -1144,6 +1548,7 @@ caused by: Error in intent value: extra unparsed intent &apos;234:thousands-comm
     <div class="mathcat">magnitude of, x</div>
 
     </td>
+
     <td> - </td>
     <td> - </td>
     <td>\lVert x\rVert</td>
@@ -1151,8 +1556,8 @@ caused by: Error in intent value: extra unparsed intent &apos;234:thousands-comm
  </tr>
     
    <tr>
-    <td>
-     <pre>
+    <td><pre>
+
 &lt;math display="block">
  &lt;mrow>
   &lt;mo>]&lt;/mo> 
@@ -1162,8 +1567,10 @@ caused by: Error in intent value: extra unparsed intent &apos;234:thousands-comm
   &lt;mo>[&lt;/mo>
  &lt;/mrow>
 &lt;/math>
+    
 </pre></td><td>
-<math display="block">
+
+     <math display="block">
       <mrow>
        <mo>]</mo> 
        <mi>x</mi>
@@ -1175,8 +1582,9 @@ caused by: Error in intent value: extra unparsed intent &apos;234:thousands-comm
     <div class="mathcat">close bracket, x comma y open bracket</div>
 
     </td>
-    <td>
-     <pre>
+
+    <td><pre>
+
 &lt;math display="block">
  &lt;mrow intent="open-interval($x,$y)">
   &lt;mo>]&lt;/mo> 
@@ -1186,8 +1594,10 @@ caused by: Error in intent value: extra unparsed intent &apos;234:thousands-comm
   &lt;mo>[&lt;/mo>
  &lt;/mrow>
 &lt;/math>
+    
 </pre></td><td>
-<math display="block">
+
+     <math display="block">
       <mrow intent="open-interval($x,$y)">
        <mo>]</mo> 
        <mi arg="x">x</mi>
@@ -1199,6 +1609,7 @@ caused by: Error in intent value: extra unparsed intent &apos;234:thousands-comm
     <div class="mathcat">the open interval from x to y</div>
 
     </td>
+
     <td> - </td>
     <td> - </td>
     <td>\mathopen] x,y\mathclose[\rVert</td>
@@ -1210,8 +1621,8 @@ caused by: Error in intent value: extra unparsed intent &apos;234:thousands-comm
     <th colspan="6" id="IDTables"><a class="self" href="#IDTables">Tables</a></th>
  </tr>
    <tr>
-    <td>
-     <pre>
+    <td><pre>
+
 &lt;math display="block">
  &lt;mrow>
   &lt;mo>[&lt;/mo>  
@@ -1226,8 +1637,10 @@ caused by: Error in intent value: extra unparsed intent &apos;234:thousands-comm
   &lt;mo>]&lt;/mo>
  &lt;/mrow>
 &lt;/math>
+    
 </pre></td><td>
-<math display="block">
+
+     <math display="block">
       <mrow>
        <mo>[</mo>  
        <mtable>
@@ -1244,8 +1657,9 @@ caused by: Error in intent value: extra unparsed intent &apos;234:thousands-comm
     <div class="mathcat">the 2 by 2 matrix; column 1; eigh; column 2; b; column 1; x; column 2; y;</div>
 
     </td>
-    <td>
-     <pre>
+
+    <td><pre>
+
 &lt;math display="block">
  &lt;mrow intent="matrix($m)">
   &lt;mo>[&lt;/mo>  
@@ -1260,8 +1674,10 @@ caused by: Error in intent value: extra unparsed intent &apos;234:thousands-comm
   &lt;mo>]&lt;/mo>
  &lt;/mrow>
 &lt;/math>
+    
 </pre></td><td>
-<math display="block">
+
+     <math display="block">
       <mrow intent="matrix($m)">
        <mo>[</mo>  
        <mtable arg="m">
@@ -1278,6 +1694,7 @@ caused by: Error in intent value: extra unparsed intent &apos;234:thousands-comm
     <div class="mathcat">the 1 by 2 row matrix; <br/>line 1; eigh, b; <br/>line 2; x, y;</div>
 
     </td>
+
     <td> - </td>
     <td> - </td>
     <td>\begin{bmatrix} a&amp;b\\ x&amp;y \end{bmatrix}</td>
@@ -1285,8 +1702,8 @@ caused by: Error in intent value: extra unparsed intent &apos;234:thousands-comm
  </tr>
 
    <tr>
-    <td>
-     <pre>
+    <td><pre>
+
 &lt;math display="block">
  &lt;mrow>
   &lt;mo>&lt;!--?-->&lt;/mo>
@@ -1302,8 +1719,10 @@ caused by: Error in intent value: extra unparsed intent &apos;234:thousands-comm
   &lt;mo>)&lt;/mo>
  &lt;/mrow>
 &lt;/math>
+    
 </pre></td><td>
-<math display="block">
+
+     <math display="block">
       <mrow>
        <mo><!--?--></mo>
        <mo>(</mo>  
@@ -1321,8 +1740,9 @@ caused by: Error in intent value: extra unparsed intent &apos;234:thousands-comm
     <div class="mathcat">the 2 by 2 matrix; column 1; eigh; column 2; b; column 1; x; column 2; y;</div>
 
     </td>
-    <td>
-     <pre>
+
+    <td><pre>
+
 &lt;math display="block">
  &lt;mrow>
   &lt;mo intent="array">&lt;!--?-->&lt;/mo>
@@ -1338,8 +1758,10 @@ caused by: Error in intent value: extra unparsed intent &apos;234:thousands-comm
   &lt;mo>)&lt;/mo>
  &lt;/mrow>
 &lt;/math>
+    
 </pre></td><td>
-<math display="block">
+
+     <math display="block">
       <mrow>
        <mo intent="array"><!--?--></mo>
        <mo>(</mo>  
@@ -1357,6 +1779,7 @@ caused by: Error in intent value: extra unparsed intent &apos;234:thousands-comm
     <div class="mathcat">the 2 by 2 matrix; column 1; eigh; column 2; b; column 1; x; column 2; y;</div>
 
     </td>
+
     <td> - </td>
     <td> - </td>
     <td>\begin{pmatrix} a&amp;b\\ x&amp;y \end{pmatrix}</td>
@@ -1364,8 +1787,8 @@ caused by: Error in intent value: extra unparsed intent &apos;234:thousands-comm
  </tr>
 
    <tr>
-    <td>
-     <pre>
+    <td><pre>
+
 &lt;math display="block">
  &lt;mrow>
   &lt;mo>{&lt;/mo>
@@ -1383,8 +1806,10 @@ caused by: Error in intent value: extra unparsed intent &apos;234:thousands-comm
   &lt;/mtable>
  &lt;/mrow>
 &lt;/math>
+    
 </pre></td><td>
-<math display="block">
+
+     <math display="block">
       <mrow>
        <mo>{</mo>
        <mtable>
@@ -1404,8 +1829,9 @@ caused by: Error in intent value: extra unparsed intent &apos;234:thousands-comm
     <div class="mathcat">2 cases, case 1; x plus y, is equal to, 2; case 2; x minus y, is equal to, 0;</div>
 
     </td>
-    <td>
-     <pre>
+
+    <td><pre>
+
 &lt;math display="block">
  &lt;mrow>
   &lt;mo intent="system-of-equations">{&lt;/mo>
@@ -1423,8 +1849,10 @@ caused by: Error in intent value: extra unparsed intent &apos;234:thousands-comm
   &lt;/mtable>
  &lt;/mrow>
 &lt;/math>
+    
 </pre></td><td>
-<math display="block">
+
+     <math display="block">
       <mrow>
        <mo intent="system-of-equations">{</mo>
        <mtable>
@@ -1444,6 +1872,7 @@ caused by: Error in intent value: extra unparsed intent &apos;234:thousands-comm
     <div class="mathcat">2 cases, case 1; x plus y, is equal to, 2; case 2; x minus y, is equal to, 0;</div>
 
     </td>
+
     <td> - </td>
     <td> - </td>
     <td>\left\{\begin{aligned} x+y &amp;= 2 \\ x-y &amp;=0 \end{aligned}\right.</td>
@@ -1454,28 +1883,33 @@ caused by: Error in intent value: extra unparsed intent &apos;234:thousands-comm
     <th colspan="6" id="IDUnexpectedarity"><a class="self" href="#IDUnexpectedarity">Unexpected arity</a></th>
  </tr>
    <tr>
-    <td>
-     <pre>
+    <td><pre>
+
 &lt;math display="block">
  &lt;mfrac>&lt;mi>x&lt;/mi>&lt;mi>y&lt;/mi>&lt;/mfrac>
 &lt;/math>
+    
 </pre></td><td>
-<math display="block">
+
+     <math display="block">
       <mfrac><mi>x</mi><mi>y</mi></mfrac>
      </math>
     <div class="mathcat">x over y,</div>
 
     </td>
-    <td>
-     <pre>
+
+    <td><pre>
+
 &lt;math display="block">
  &lt;mfrac intent="divides">
   &lt;mi>x&lt;/mi>
   &lt;mi>y&lt;/mi>
  &lt;/mfrac>
 &lt;/math>
+    
 </pre></td><td>
-<math display="block">
+
+     <math display="block">
       <mfrac intent="divides">
        <mi>x</mi>
        <mi>y</mi>
@@ -1484,34 +1918,40 @@ caused by: Error in intent value: extra unparsed intent &apos;234:thousands-comm
     <div class="mathcat">divides</div>
 
     </td>
+
     <td> - </td>
     <td> - </td>
     <td> - </td>
     <td id="ID0-arydivides"><a class="self" href="#ID0-arydivides">0-ary divides</a></td>
  </tr>
    <tr>
-    <td>
-     <pre>
+    <td><pre>
+
 &lt;math display="block">
  &lt;mfrac>&lt;mi>x&lt;/mi>&lt;mi>y&lt;/mi>&lt;/mfrac>
 &lt;/math>
+    
 </pre></td><td>
-<math display="block">
+
+     <math display="block">
       <mfrac><mi>x</mi><mi>y</mi></mfrac>
      </math>
     <div class="mathcat">x over y,</div>
 
     </td>
-    <td>
-     <pre>
+
+    <td><pre>
+
 &lt;math display="block">
  &lt;mfrac intent="divides(z)">
   &lt;mi>x&lt;/mi>
   &lt;mi>y&lt;/mi>
  &lt;/mfrac>
 &lt;/math>
+    
 </pre></td><td>
-<math display="block">
+
+     <math display="block">
       <mfrac intent="divides(z)">
        <mi>x</mi>
        <mi>y</mi>
@@ -1520,34 +1960,40 @@ caused by: Error in intent value: extra unparsed intent &apos;234:thousands-comm
     <div class="mathcat">divides of, z</div>
 
     </td>
+
     <td> - </td>
     <td> - </td>
     <td> - </td>
     <td id="ID1-arydivides"><a class="self" href="#ID1-arydivides">1-ary divides</a></td>
  </tr>
    <tr>
-    <td>
-     <pre>
+    <td><pre>
+
 &lt;math display="block">
  &lt;mfrac>&lt;mi>x&lt;/mi>&lt;mi>y&lt;/mi>&lt;/mfrac>
 &lt;/math>
+    
 </pre></td><td>
-<math display="block">
+
+     <math display="block">
       <mfrac><mi>x</mi><mi>y</mi></mfrac>
      </math>
     <div class="mathcat">x over y,</div>
 
     </td>
-    <td>
-     <pre>
+
+    <td><pre>
+
 &lt;math display="block">
  &lt;mfrac intent="divides(w,x,y)">
   &lt;mi>x&lt;/mi>
   &lt;mi>y&lt;/mi>
  &lt;/mfrac>
 &lt;/math>
+    
 </pre></td><td>
-<math display="block">
+
+     <math display="block">
       <mfrac intent="divides(w,x,y)">
        <mi>x</mi>
        <mi>y</mi>
@@ -1556,6 +2002,7 @@ caused by: Error in intent value: extra unparsed intent &apos;234:thousands-comm
     <div class="mathcat">divides of, w comma x comma y</div>
 
     </td>
+
     <td> - </td>
     <td> - </td>
     <td> - </td>
@@ -1563,16 +2010,18 @@ caused by: Error in intent value: extra unparsed intent &apos;234:thousands-comm
  </tr>
 
    <tr>
-    <td>
-     <pre>
+    <td><pre>
+
 &lt;math display="block">
  &lt;mover>
   &lt;mi>X&lt;/mi>
   &lt;mo>→&lt;/mo>
  &lt;/mover>
 &lt;/math>
+    
 </pre></td><td>
-<math display="block">
+
+     <math display="block">
       <mover>
        <mi>X</mi>
        <mo>→</mo>
@@ -1581,16 +2030,19 @@ caused by: Error in intent value: extra unparsed intent &apos;234:thousands-comm
     <div class="mathcat">vector   x</div>
 
     </td>
-    <td>
-     <pre>
-&lt;math display="block">
+
+    <td><pre>
+
+&lt;math display="block" mathbackground="yellow">
  &lt;mover intent="ray($x)">
   &lt;mi arg="X">X&lt;/mi>
   &lt;mo>→&lt;/mo>
  &lt;/mover>
 &lt;/math>
+    
 </pre></td><td>
-<math display="block">
+
+     <math display="block" mathbackground="yellow">
       <mover intent="ray($x)">
        <mi arg="X">X</mi>
        <mo>→</mo>
@@ -1604,7 +2056,7 @@ Replacement
 ]
 ...due to matching the following MathML with the pattern
 x: "."
- &lt;math display=&apos;block&apos; id=&apos;M...&apos; data-id-added=&apos;true&apos;>
+ &lt;math display=&apos;block&apos; mathbackground=&apos;yellow&apos; id=&apos;M...&apos; data-id-added=&apos;true&apos;>
   &lt;mover intent=&apos;ray($x)&apos; id=&apos;M...&apos; data-id-added=&apos;true&apos;>
     &lt;mi arg=&apos;X&apos; id=&apos;M...&apos; data-id-added=&apos;true&apos;>X&lt;/mi>
     &lt;mo id=&apos;M...&apos; data-id-added=&apos;true&apos;>→&lt;/mo>
@@ -1629,6 +2081,7 @@ caused by: intent arg &apos;$x&apos; not found
 '>problem with getting speech for MathML (hover for trace)</span></div>
 
     </td>
+
     <td> - </td>
     <td> - </td>
     <td> - </td>
@@ -1639,27 +2092,32 @@ caused by: intent arg &apos;$x&apos; not found
     <th colspan="6" id="IDIntentGrammarErrors"><a class="self" href="#IDIntentGrammarErrors">Intent Grammar Errors</a></th>
  </tr>
    <tr>
-    <td>
-     <pre>
+    <td><pre>
+
 &lt;math display="block">
  &lt;mfrac>&lt;mi>x&lt;/mi>&lt;mi>y&lt;/mi>&lt;/mfrac>
 &lt;/math>
+    
 </pre></td><td>
-<math display="block">
+
+     <math display="block">
       <mfrac><mi>x</mi><mi>y</mi></mfrac>
      </math>
     <div class="mathcat">x over y,</div>
 
     </td>
-    <td>
-     <pre>
+
+    <td><pre>
+
 &lt;math display="block">
  &lt;mfrac>&lt;mi intent="hmm)(">x&lt;/mi>
  &lt;mi>y&lt;/mi>
  &lt;/mfrac>
 &lt;/math>
+    
 </pre></td><td>
-<math display="block">
+
+     <math display="block">
       <mfrac><mi intent="hmm)(">x</mi>
       <mi>y</mi>
       </mfrac>
@@ -1709,6 +2167,7 @@ caused by: Error in intent value: extra unparsed intent &apos;(&apos; in intent 
 '>problem with getting speech for MathML (hover for trace)</span></div>
 
     </td>
+
     <td> - </td>
     <td> - </td>
     <td> - </td>
@@ -1716,8 +2175,8 @@ caused by: Error in intent value: extra unparsed intent &apos;(&apos; in intent 
  </tr>
 
    <tr>
-    <td>
-     <pre>
+    <td><pre>
+
 &lt;math display="block">
  &lt;mrow>
   &lt;mn>1.234&lt;/mn>
@@ -1725,8 +2184,10 @@ caused by: Error in intent value: extra unparsed intent &apos;(&apos; in intent 
   &lt;mi>x&lt;/mi>
  &lt;/mrow>
 &lt;/math>
+    
 </pre></td><td>
-<math display="block">
+
+     <math display="block">
       <mrow>
        <mn>1.234</mn>
        <mo>+</mo>
@@ -1736,17 +2197,20 @@ caused by: Error in intent value: extra unparsed intent &apos;(&apos; in intent 
     <div class="mathcat">1.234 plus x</div>
 
     </td>
-    <td>
-     <pre>
-&lt;math display="block">
+
+    <td><pre>
+
+&lt;math display="block" mathbackground="yellow">
  &lt;mrow intent="sum($a,$b)">
   &lt;mn>1.234&lt;/mn>
   &lt;mo>+&lt;/mo>
   &lt;mi>x&lt;/mi>
  &lt;/mrow>
 &lt;/math>
+    
 </pre></td><td>
-<math display="block">
+
+     <math display="block" mathbackground="yellow">
       <mrow intent="sum($a,$b)">
        <mn>1.234</mn>
        <mo>+</mo>
@@ -1761,7 +2225,7 @@ Replacement
 ]
 ...due to matching the following MathML with the pattern
 x: "."
- &lt;math display=&apos;block&apos; id=&apos;M...&apos; data-id-added=&apos;true&apos;>
+ &lt;math display=&apos;block&apos; mathbackground=&apos;yellow&apos; id=&apos;M...&apos; data-id-added=&apos;true&apos;>
   &lt;mrow intent=&apos;sum($a,$b)&apos; id=&apos;M...&apos; data-id-added=&apos;true&apos;>
     &lt;mn id=&apos;M...&apos; data-id-added=&apos;true&apos;>1.234&lt;/mn>
     &lt;mo id=&apos;M...&apos; data-id-added=&apos;true&apos;>+&lt;/mo>
@@ -1788,6 +2252,7 @@ caused by: intent arg &apos;$a&apos; not found
 '>problem with getting speech for MathML (hover for trace)</span></div>
 
     </td>
+
     <td> - </td>
     <td> - </td>
     <td> - </td>
@@ -1795,8 +2260,8 @@ caused by: intent arg &apos;$a&apos; not found
  </tr>
 
    <tr>
-    <td>
-     <pre>
+    <td><pre>
+
 &lt;math display="block">
  &lt;mrow>
   &lt;mn>1.234&lt;/mn>
@@ -1804,8 +2269,10 @@ caused by: intent arg &apos;$a&apos; not found
   &lt;mi>x&lt;/mi>
  &lt;/mrow>
 &lt;/math>
+    
 </pre></td><td>
-<math display="block">
+
+     <math display="block">
       <mrow>
        <mn>1.234</mn>
        <mo>+</mo>
@@ -1815,8 +2282,9 @@ caused by: intent arg &apos;$a&apos; not found
     <div class="mathcat">1.234 plus x</div>
 
     </td>
-    <td>
-     <pre>
+
+    <td><pre>
+
 &lt;math display="block">
  &lt;mrow intent="sum($1.234,$:x:)">
   &lt;mn arg="1.234">1.234&lt;/mn>
@@ -1824,8 +2292,10 @@ caused by: intent arg &apos;$a&apos; not found
   &lt;mi arg=":x:">x&lt;/mi>
  &lt;/mrow>
 &lt;/math>
+    
 </pre></td><td>
-<math display="block">
+
+     <math display="block">
       <mrow intent="sum($1.234,$:x:)">
        <mn arg="1.234">1.234</mn>
        <mo>+</mo>
@@ -1867,6 +2337,7 @@ caused by: Illegal &apos;intent&apos; syntax: $1.234
 '>problem with getting speech for MathML (hover for trace)</span></div>
 
     </td>
+
     <td> - </td>
     <td> - </td>
     <td> - </td>
@@ -1874,25 +2345,30 @@ caused by: Illegal &apos;intent&apos; syntax: $1.234
  </tr>
 
    <tr>
-    <td>
-     <pre>
+    <td><pre>
+
 &lt;math display="block">
  &lt;mi>x&lt;/mi>
 &lt;/math>
+    
 </pre></td><td>
-<math display="block">
+
+     <math display="block">
       <mi>x</mi>
      </math>
     <div class="mathcat">x</div>
 
     </td>
-    <td>
-     <pre>
+
+    <td><pre>
+
 &lt;math display="block">
  &lt;mi intent="one two">x&lt;/mi>
 &lt;/math>
+    
 </pre></td><td>
-<math display="block">
+
+     <math display="block">
       <mi intent="one two">x</mi>
      </math>
     <div class="mathcat"><span class='error' title='Pattern match/replacement failure!
@@ -1921,6 +2397,7 @@ caused by: Illegal &apos;intent&apos; syntax: one two
 '>problem with getting speech for MathML (hover for trace)</span></div>
 
     </td>
+
     <td> - </td>
     <td> - </td>
     <td> - </td>
@@ -1930,25 +2407,30 @@ caused by: Illegal &apos;intent&apos; syntax: one two
 
    
    <tr>
-    <td>
-     <pre>
+    <td><pre>
+
 &lt;math display="block">
  &lt;mn>12&lt;/mn>
 &lt;/math>
+    
 </pre></td><td>
-<math display="block">
+
+     <math display="block">
       <mn>12</mn>
      </math>
     <div class="mathcat">12</div>
 
     </td>
-    <td>
-     <pre>
+
+    <td><pre>
+
 &lt;math display="block">
  &lt;mn intent="1.2e1">12&lt;/mn>
 &lt;/math>
+    
 </pre></td><td>
-<math display="block">
+
+     <math display="block">
       <mn intent="1.2e1">12</mn>
      </math>
     <div class="mathcat"><span class='error' title='Pattern match/replacement failure!
@@ -1977,6 +2459,7 @@ caused by: Illegal &apos;intent&apos; syntax: 1.2e1
 '>problem with getting speech for MathML (hover for trace)</span></div>
 
     </td>
+
     <td> - </td>
     <td> - </td>
     <td> - </td>

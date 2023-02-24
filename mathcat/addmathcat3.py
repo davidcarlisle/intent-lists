@@ -46,7 +46,8 @@ htmlstr = open(htmlfile,'r',encoding="utf-8").read()
 
 htmlstr = htmlstr.replace('<!--X','<').replace('X-->','>').replace('\t','        ')
 
-mmls=re.split(r'(<math\b.*?</math>)', htmlstr, flags=re.DOTALL)
+mmltds=re.split(r'<td>(\s*<math\b.*?</math>\s*)</td>', htmlstr, flags=re.DOTALL)
+
 
 sys.stdout.reconfigure(encoding='utf-8')
 
@@ -58,22 +59,28 @@ def selflink(match):
   return u"<t{}{} id=\"ID{}\"><a class=\"self\" href=\"#ID{}\">{}</a></t{}>\n </tr>".format(m1,m2,m3id,m3id,m3,m1)
 
 i=0
-for mml in mmls:
+for mmltd in mmltds:
   i=i+1
   if(i % 2 == 0):
-    print("<pre>",)
-    print(mml.replace('&','&amp;').replace('<','&lt;').replace('\n     ','\n'))
+    print("<td><pre>",)
+    print(mmltd.replace('&','&amp;').replace('<','&lt;').replace('\n     ','\n'))
     print("</pre></td><td>")
-    print (mml,end="")
-    try:
-      SetMathMLForMathCAT(mml)
-      mcat=GetSpeech()
-      mcatl=re.sub(r'(line [0-9]+;)',r'<br/>\1',mcat)
-      print ("\n    <div class=\"mathcat\">{}</div>".format(mcatl))
-    except:
-      print ("\n    <div class=\"mathcat\">problem with SetMathML</div>")
+    mmls=re.split(r'(<math\b.*?</math>)',str(mmltd), flags=re.DOTALL)
+    j=0
+    for mml in mmls:
+      print (mml,end="")
+      j=j+1
+      if(j % 2 == 0):
+        try:
+          SetMathMLForMathCAT(mml)
+          mcat=GetSpeech()
+          mcatl=re.sub(r'(line [0-9]+;)',r'<br/>\1',mcat)
+          print ("\n    <div class=\"mathcat\">{}</div>".format(mcatl))
+        except:
+          print ("\n    <div class=\"mathcat\">problem with SetMathML</div>")
+    print("</td>")
   else:
-    mml=re.sub(r'<t(d|h)([^<>]*)>([^<>]*)</t[dh]>\s*</tr>',
+    mmltd=re.sub(r'<t(d|h)([^<>]*)>([^<>]*)</t[dh]>\s*</tr>',
                selflink,
-               mml)
-    print (mml,end="")
+               mmltd)
+    print (mmltd,end="")
