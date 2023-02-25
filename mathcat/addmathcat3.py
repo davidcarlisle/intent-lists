@@ -74,7 +74,7 @@ for mmltd in mmltds:
         try:
           SetMathMLForMathCAT(mml)
           mcat=GetSpeech()
-          mcatl=re.sub(r'(line [0-9]+;)',r'<br/>\1',mcat)
+          mcatl=re.sub(r'((line|column) [0-9]+;)',r'<br/>\1',mcat)
           print ("\n    <div class=\"mathcat\">{}</div>".format(mcatl))
         except:
           print ("\n    <div class=\"mathcat\">problem with SetMathML</div>")
