@@ -24,6 +24,7 @@ def SetMathCATPreferences():
     libmathcat.SetPreference("SpeechStyle", "SimpleSpeak")   # Also "ClearSpeak"
     libmathcat.SetPreference("Verbosity", "Verbose")   # also terse "Terse"/"Medium"x
     libmathcat.SetPreference("CapitalLetters_UseWord", "false")   # if "true", X => "cap x"
+    libmathcat.SetPreference("IntentErrorRecovery","Error") # Error and IgnoreIntent.
   except Exception as e:
       print("problem with setting a preference")
 
@@ -32,10 +33,13 @@ def SetMathMLForMathCAT(mathml: str):
 
 
 def GetSpeech():
+  libmathcat.SetPreference("IntentErrorRecovery","Error") # Error and IgnoreIntent.
   try:
     return libmathcat.GetSpokenText()
   except Exception as e:
-    return "<span class='error' title='" + re.sub('apos;M[^& ]*','apos;M...',re.sub('C:.*?mathcat','mathcat',str(e)).replace('&','&amp;').replace('<','&lt;').replace("'",'&apos;')) + "'>problem with getting speech for MathML (hover for trace)</span>"
+      libmathcat.SetPreference("IntentErrorRecovery","IgnoreIntent") # Error and IgnoreIntent.
+      s2=libmathcat.GetSpokenText()
+      return "<span class='error' title='" + re.sub('apos;M[^& ]*','apos;M...',re.sub('C:.*?mathcat','mathcat',str(e)).replace('&','&amp;').replace('<','&lt;').replace("'",'&apos;')) + "'>" + s2 +"</span>"
 
 
 
