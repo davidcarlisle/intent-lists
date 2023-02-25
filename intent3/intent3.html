@@ -393,7 +393,270 @@
     <td>{}^{\mathrm{T}}x</td>
     <td>x transpose pre-sup</td>
    </tr>
+ 
 
+ 
+   <tr>
+    <th colspan='6'>Combinations and Permutations</th>
+   </tr>
+
+   <tr>
+    <td>
+     <math display='block'>
+      <mrow>
+       <mo>(</mo>
+       <mfrac linethickness='0pt'>
+	<mi>n</mi>
+	<mi>k</mi>
+       </mfrac>
+       <mo>)</mo>
+      </mrow>
+     </math>
+    </td>
+    <td>
+     <math display='block'>
+      <mrow intent='choose($n,$k)'>
+       <mo>(</mo>
+       <mfrac linethickness='0pt'>
+	<mi arg='n'>n</mi>
+	<mi arg='k'>k</mi>
+       </mfrac>
+       <mo>)</mo>
+      </mrow>
+     </math>
+    </td>
+    <td>
+     <math display='block'>
+      <mrow intent='choose@infix($n,$k)'>
+       <mo>(</mo>
+       <mfrac linethickness='0pt'>
+	<mi arg='n'>n</mi>
+	<mi arg='k'>k</mi>
+       </mfrac>
+       <mo>)</mo>
+      </mrow>
+     </math>
+    </td>
+    <td>\binom{n}{k}</td>
+    <td>binom n k</td>
+   </tr>
+   <tr>
+    <td>
+     <math display='block'>
+      <mmultiscripts>
+       <mi>C</mi>
+       <mi>k</mi>
+       <mrow/>
+       <mprescripts/>
+       <mrow/>
+       <mi>n</mi>
+      </mmultiscripts>
+     </math>
+    </td>
+    <td>
+     <math display='block'>
+      <mmultiscripts intent='choose($n,$k)'>
+       <mi>C</mi>
+       <mi arg='k'>k</mi>
+       <mrow/>
+       <mprescripts/>
+       <mrow/>
+       <mi arg='n'>n</mi>
+      </mmultiscripts>
+     </math>
+    </td>
+    <td>
+     <math display='block'>
+      <mmultiscripts intent='choose@infix($n,$k)'>
+       <mi>C</mi>
+       <mi arg='k'>k</mi>
+       <mrow/>
+       <mprescripts/>
+       <mrow/>
+       <mi arg='n'>n</mi>
+      </mmultiscripts>
+     </math>
+    </td>
+    <td>{}^n C_k</td>
+    <td> binom sup n C sub k</td>
+   </tr>
+   <tr>
+    <td>
+     <math display='block'>
+      <msubsup>
+       <mi>C</mi>
+       <mi>k</mi>
+       <mi>n</mi>
+      </msubsup>
+     </math>
+    </td>
+    <td>
+     <math display='block'>
+      <msubsup intent='choose($n,$k)'>
+       <mi>C</mi>
+       <mi arg='k'>k</mi>
+       <mi arg='n'>n</mi>
+      </msubsup>
+     </math>
+    </td>
+    <td>
+     <math display='block'>
+      <msubsup intent='choose@infix($n,$k)'>
+       <mi>C</mi>
+       <mi arg='k'>k</mi>
+       <mi arg='n'>n</mi>
+      </msubsup>
+     </math>
+    </td>
+    <td>C^n_k</td>
+    <td> binom C sup n sub k</td>
+   </tr>
+   <tr>
+    <td>
+     <math display='block'>
+      <mrow>
+       <mi>C</mi>
+       <mo>(</mo>
+       <mi>n</mi>
+       <mi>k</mi>
+       <mo>)</mo>
+      </mrow>
+     </math>
+    </td>
+    <td>
+     <math display='block'>
+      <mrow intent='choose($n,$k)'>
+       <mi>C</mi>
+       <mo>(</mo>
+       <mi arg='n'>n</mi>
+       <mi arg='k'>k</mi>
+       <mo>)</mo>
+      </mrow>
+     </math>
+    </td>
+    <td>
+     <math display='block'>
+      <mrow intent='choose@infix($n,$k)'>
+       <mi>C</mi>
+       <mo>(</mo>
+       <mi arg='n'>n</mi>
+       <mi arg='k'>k</mi>
+       <mo>)</mo>
+      </mrow>
+     </math>
+    </td>
+    <td>C(n,k)</td>
+    <td> binom C n k</td>
+   </tr>
+   <tr>
+    <td>
+     <math display='block'>
+      <mmultiscripts>
+       <mi>P</mi>
+       <mi>k</mi>
+       <mrow/>
+       <mprescripts/>
+       <mrow/>
+       <mi>n</mi>
+      </mmultiscripts>
+     </math>
+    </td>
+    <td>
+     <math display='block'>
+      <mmultiscripts intent='P($n,$k)'>
+       <mi>P</mi>
+       <mi arg='k'>k</mi>
+       <mrow/>
+       <mprescripts/>
+       <mrow/>
+       <mi arg='n'>n</mi>
+      </mmultiscripts>
+     </math>
+    </td>
+    <td>
+     <math display='block'>
+      <mmultiscripts intent='P@prefix($n,$k)'>
+       <mi>P</mi>
+       <mi arg='k'>k</mi>
+       <mrow/>
+       <mprescripts/>
+       <mrow/>
+       <mi arg='n'>n</mi>
+      </mmultiscripts>
+     </math>
+    </td>
+    <td>{}^n P_k</td>
+    <td> permutations sup n P sub k</td>
+   </tr>
+   <tr>
+    <td>
+     <math display='block'>
+      <msubsup>
+       <mi>P</mi>
+       <mi>k</mi>
+       <mi>n</mi>
+      </msubsup>
+     </math>
+    </td>
+    <td>
+     <math display='block'>
+      <msubsup intent='P($n,$k)'>
+       <mi>P</mi>
+       <mi arg='k'>k</mi>
+       <mi arg='n'>n</mi>
+      </msubsup>
+     </math>
+    </td>
+    <td>
+     <math display='block'>
+      <msubsup intent='P@prefix($n,$k)'>
+       <mi>P</mi>
+       <mi arg='k'>k</mi>
+       <mi arg='n'>n</mi>
+      </msubsup>
+     </math>
+    </td>
+    <td>P^n_k</td>
+    <td> permutations P sup n sub k</td>
+   </tr>
+   <tr>
+    <td>
+     <math display='block'>
+      <mrow>
+       <mi>P</mi>
+       <mo>(</mo>
+       <mi>n</mi>
+       <mi>k</mi>
+       <mo>)</mo>
+      </mrow>
+     </math>
+    </td>
+    <td>
+     <math display='block'>
+      <mrow intent='P($n,$k)'>
+       <mi>P</mi>
+       <mo>(</mo>
+       <mi arg='n'>n</mi>
+       <mi arg='k'>k</mi>
+       <mo>)</mo>
+      </mrow>
+     </math>
+    </td>
+    <td>
+     <math display='block'>
+      <mrow intent='P@prefix($n,$k)'>
+       <mi>P</mi>
+       <mo>(</mo>
+       <mi arg='n'>n</mi>
+       <mi arg='k'>k</mi>
+       <mo>)</mo>
+      </mrow>
+     </math>
+    </td>
+    <td>P(n,k)</td>
+    <td> permutations P n k</td>
+   </tr>
+ 
    <tr>
     <th colspan='6'>Infix</th>
    </tr>

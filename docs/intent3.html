@@ -919,7 +919,603 @@ caused by: Error in intent value: extra unparsed intent &apos;234:thousands-comm
     <td>{}^{\mathrm{T}}x</td>
     <td id="IDxtransposepre-sup"><a class="self" href="#IDxtransposepre-sup">x transpose pre-sup</a></td>
  </tr>
+ 
 
+ 
+   <tr>
+    <th colspan='6' id="IDCombinationsandPermutations"><a class="self" href="#IDCombinationsandPermutations">Combinations and Permutations</a></th>
+ </tr>
+
+   <tr>
+    <td><pre>
+
+&lt;math display='block'>
+ &lt;mrow>
+  &lt;mo>(&lt;/mo>
+  &lt;mfrac linethickness='0pt'>
+   &lt;mi>n&lt;/mi>
+   &lt;mi>k&lt;/mi>
+  &lt;/mfrac>
+  &lt;mo>)&lt;/mo>
+ &lt;/mrow>
+&lt;/math>
+    
+</pre></td><td>
+
+     <math display='block'>
+      <mrow>
+       <mo>(</mo>
+       <mfrac linethickness='0pt'>
+        <mi>n</mi>
+        <mi>k</mi>
+       </mfrac>
+       <mo>)</mo>
+      </mrow>
+     </math>
+    <div class="mathcat">n choose k</div>
+
+    </td>
+
+    <td><pre>
+
+&lt;math display='block'>
+ &lt;mrow intent='choose($n,$k)'>
+  &lt;mo>(&lt;/mo>
+  &lt;mfrac linethickness='0pt'>
+   &lt;mi arg='n'>n&lt;/mi>
+   &lt;mi arg='k'>k&lt;/mi>
+  &lt;/mfrac>
+  &lt;mo>)&lt;/mo>
+ &lt;/mrow>
+&lt;/math>
+    
+</pre></td><td>
+
+     <math display='block'>
+      <mrow intent='choose($n,$k)'>
+       <mo>(</mo>
+       <mfrac linethickness='0pt'>
+        <mi arg='n'>n</mi>
+        <mi arg='k'>k</mi>
+       </mfrac>
+       <mo>)</mo>
+      </mrow>
+     </math>
+    <div class="mathcat">choose of, n comma k</div>
+
+    </td>
+
+    <td><pre>
+
+&lt;math display='block'>
+ &lt;mrow intent='choose@infix($n,$k)'>
+  &lt;mo>(&lt;/mo>
+  &lt;mfrac linethickness='0pt'>
+   &lt;mi arg='n'>n&lt;/mi>
+   &lt;mi arg='k'>k&lt;/mi>
+  &lt;/mfrac>
+  &lt;mo>)&lt;/mo>
+ &lt;/mrow>
+&lt;/math>
+    
+</pre></td><td>
+
+     <math display='block'>
+      <mrow intent='choose@infix($n,$k)'>
+       <mo>(</mo>
+       <mfrac linethickness='0pt'>
+        <mi arg='n'>n</mi>
+        <mi arg='k'>k</mi>
+       </mfrac>
+       <mo>)</mo>
+      </mrow>
+     </math>
+    <div class="mathcat">, n choose k,</div>
+
+    </td>
+
+    <td>\binom{n}{k}</td>
+    <td id="IDbinomnk"><a class="self" href="#IDbinomnk">binom n k</a></td>
+ </tr>
+   <tr>
+    <td><pre>
+
+&lt;math display='block'>
+ &lt;mmultiscripts>
+  &lt;mi>C&lt;/mi>
+  &lt;mi>k&lt;/mi>
+  &lt;mrow/>
+  &lt;mprescripts/>
+  &lt;mrow/>
+  &lt;mi>n&lt;/mi>
+ &lt;/mmultiscripts>
+&lt;/math>
+    
+</pre></td><td>
+
+     <math display='block'>
+      <mmultiscripts>
+       <mi>C</mi>
+       <mi>k</mi>
+       <mrow/>
+       <mprescripts/>
+       <mrow/>
+       <mi>n</mi>
+      </mmultiscripts>
+     </math>
+    <div class="mathcat">c pre-superscript n, subscript k</div>
+
+    </td>
+
+    <td><pre>
+
+&lt;math display='block'>
+ &lt;mmultiscripts intent='choose($n,$k)'>
+  &lt;mi>C&lt;/mi>
+  &lt;mi arg='k'>k&lt;/mi>
+  &lt;mrow/>
+  &lt;mprescripts/>
+  &lt;mrow/>
+  &lt;mi arg='n'>n&lt;/mi>
+ &lt;/mmultiscripts>
+&lt;/math>
+    
+</pre></td><td>
+
+     <math display='block'>
+      <mmultiscripts intent='choose($n,$k)'>
+       <mi>C</mi>
+       <mi arg='k'>k</mi>
+       <mrow/>
+       <mprescripts/>
+       <mrow/>
+       <mi arg='n'>n</mi>
+      </mmultiscripts>
+     </math>
+    <div class="mathcat">choose of, n comma k</div>
+
+    </td>
+
+    <td><pre>
+
+&lt;math display='block'>
+ &lt;mmultiscripts intent='choose@infix($n,$k)'>
+  &lt;mi>C&lt;/mi>
+  &lt;mi arg='k'>k&lt;/mi>
+  &lt;mrow/>
+  &lt;mprescripts/>
+  &lt;mrow/>
+  &lt;mi arg='n'>n&lt;/mi>
+ &lt;/mmultiscripts>
+&lt;/math>
+    
+</pre></td><td>
+
+     <math display='block'>
+      <mmultiscripts intent='choose@infix($n,$k)'>
+       <mi>C</mi>
+       <mi arg='k'>k</mi>
+       <mrow/>
+       <mprescripts/>
+       <mrow/>
+       <mi arg='n'>n</mi>
+      </mmultiscripts>
+     </math>
+    <div class="mathcat">, n choose k,</div>
+
+    </td>
+
+    <td>{}^n C_k</td>
+    <td id="IDbinomsupnCsubk"><a class="self" href="#IDbinomsupnCsubk"> binom sup n C sub k</a></td>
+ </tr>
+   <tr>
+    <td><pre>
+
+&lt;math display='block'>
+ &lt;msubsup>
+  &lt;mi>C&lt;/mi>
+  &lt;mi>k&lt;/mi>
+  &lt;mi>n&lt;/mi>
+ &lt;/msubsup>
+&lt;/math>
+    
+</pre></td><td>
+
+     <math display='block'>
+      <msubsup>
+       <mi>C</mi>
+       <mi>k</mi>
+       <mi>n</mi>
+      </msubsup>
+     </math>
+    <div class="mathcat">c sub k to the n-th</div>
+
+    </td>
+
+    <td><pre>
+
+&lt;math display='block'>
+ &lt;msubsup intent='choose($n,$k)'>
+  &lt;mi>C&lt;/mi>
+  &lt;mi arg='k'>k&lt;/mi>
+  &lt;mi arg='n'>n&lt;/mi>
+ &lt;/msubsup>
+&lt;/math>
+    
+</pre></td><td>
+
+     <math display='block'>
+      <msubsup intent='choose($n,$k)'>
+       <mi>C</mi>
+       <mi arg='k'>k</mi>
+       <mi arg='n'>n</mi>
+      </msubsup>
+     </math>
+    <div class="mathcat">choose of, n comma k</div>
+
+    </td>
+
+    <td><pre>
+
+&lt;math display='block'>
+ &lt;msubsup intent='choose@infix($n,$k)'>
+  &lt;mi>C&lt;/mi>
+  &lt;mi arg='k'>k&lt;/mi>
+  &lt;mi arg='n'>n&lt;/mi>
+ &lt;/msubsup>
+&lt;/math>
+    
+</pre></td><td>
+
+     <math display='block'>
+      <msubsup intent='choose@infix($n,$k)'>
+       <mi>C</mi>
+       <mi arg='k'>k</mi>
+       <mi arg='n'>n</mi>
+      </msubsup>
+     </math>
+    <div class="mathcat">, n choose k,</div>
+
+    </td>
+
+    <td>C^n_k</td>
+    <td id="IDbinomCsupnsubk"><a class="self" href="#IDbinomCsupnsubk"> binom C sup n sub k</a></td>
+ </tr>
+   <tr>
+    <td><pre>
+
+&lt;math display='block'>
+ &lt;mrow>
+  &lt;mi>C&lt;/mi>
+  &lt;mo>(&lt;/mo>
+  &lt;mi>n&lt;/mi>
+  &lt;mi>k&lt;/mi>
+  &lt;mo>)&lt;/mo>
+ &lt;/mrow>
+&lt;/math>
+    
+</pre></td><td>
+
+     <math display='block'>
+      <mrow>
+       <mi>C</mi>
+       <mo>(</mo>
+       <mi>n</mi>
+       <mi>k</mi>
+       <mo>)</mo>
+      </mrow>
+     </math>
+    <div class="mathcat">c n k</div>
+
+    </td>
+
+    <td><pre>
+
+&lt;math display='block'>
+ &lt;mrow intent='choose($n,$k)'>
+  &lt;mi>C&lt;/mi>
+  &lt;mo>(&lt;/mo>
+  &lt;mi arg='n'>n&lt;/mi>
+  &lt;mi arg='k'>k&lt;/mi>
+  &lt;mo>)&lt;/mo>
+ &lt;/mrow>
+&lt;/math>
+    
+</pre></td><td>
+
+     <math display='block'>
+      <mrow intent='choose($n,$k)'>
+       <mi>C</mi>
+       <mo>(</mo>
+       <mi arg='n'>n</mi>
+       <mi arg='k'>k</mi>
+       <mo>)</mo>
+      </mrow>
+     </math>
+    <div class="mathcat">choose of, n comma k</div>
+
+    </td>
+
+    <td><pre>
+
+&lt;math display='block'>
+ &lt;mrow intent='choose@infix($n,$k)'>
+  &lt;mi>C&lt;/mi>
+  &lt;mo>(&lt;/mo>
+  &lt;mi arg='n'>n&lt;/mi>
+  &lt;mi arg='k'>k&lt;/mi>
+  &lt;mo>)&lt;/mo>
+ &lt;/mrow>
+&lt;/math>
+    
+</pre></td><td>
+
+     <math display='block'>
+      <mrow intent='choose@infix($n,$k)'>
+       <mi>C</mi>
+       <mo>(</mo>
+       <mi arg='n'>n</mi>
+       <mi arg='k'>k</mi>
+       <mo>)</mo>
+      </mrow>
+     </math>
+    <div class="mathcat">, n choose k,</div>
+
+    </td>
+
+    <td>C(n,k)</td>
+    <td id="IDbinomCnk"><a class="self" href="#IDbinomCnk"> binom C n k</a></td>
+ </tr>
+   <tr>
+    <td><pre>
+
+&lt;math display='block'>
+ &lt;mmultiscripts>
+  &lt;mi>P&lt;/mi>
+  &lt;mi>k&lt;/mi>
+  &lt;mrow/>
+  &lt;mprescripts/>
+  &lt;mrow/>
+  &lt;mi>n&lt;/mi>
+ &lt;/mmultiscripts>
+&lt;/math>
+    
+</pre></td><td>
+
+     <math display='block'>
+      <mmultiscripts>
+       <mi>P</mi>
+       <mi>k</mi>
+       <mrow/>
+       <mprescripts/>
+       <mrow/>
+       <mi>n</mi>
+      </mmultiscripts>
+     </math>
+    <div class="mathcat">k permutations of n</div>
+
+    </td>
+
+    <td><pre>
+
+&lt;math display='block'>
+ &lt;mmultiscripts intent='P($n,$k)'>
+  &lt;mi>P&lt;/mi>
+  &lt;mi arg='k'>k&lt;/mi>
+  &lt;mrow/>
+  &lt;mprescripts/>
+  &lt;mrow/>
+  &lt;mi arg='n'>n&lt;/mi>
+ &lt;/mmultiscripts>
+&lt;/math>
+    
+</pre></td><td>
+
+     <math display='block'>
+      <mmultiscripts intent='P($n,$k)'>
+       <mi>P</mi>
+       <mi arg='k'>k</mi>
+       <mrow/>
+       <mprescripts/>
+       <mrow/>
+       <mi arg='n'>n</mi>
+      </mmultiscripts>
+     </math>
+    <div class="mathcat">P of, n comma k</div>
+
+    </td>
+
+    <td><pre>
+
+&lt;math display='block'>
+ &lt;mmultiscripts intent='P@prefix($n,$k)'>
+  &lt;mi>P&lt;/mi>
+  &lt;mi arg='k'>k&lt;/mi>
+  &lt;mrow/>
+  &lt;mprescripts/>
+  &lt;mrow/>
+  &lt;mi arg='n'>n&lt;/mi>
+ &lt;/mmultiscripts>
+&lt;/math>
+    
+</pre></td><td>
+
+     <math display='block'>
+      <mmultiscripts intent='P@prefix($n,$k)'>
+       <mi>P</mi>
+       <mi arg='k'>k</mi>
+       <mrow/>
+       <mprescripts/>
+       <mrow/>
+       <mi arg='n'>n</mi>
+      </mmultiscripts>
+     </math>
+    <div class="mathcat">P n k,</div>
+
+    </td>
+
+    <td>{}^n P_k</td>
+    <td id="IDpermutationssupnPsubk"><a class="self" href="#IDpermutationssupnPsubk"> permutations sup n P sub k</a></td>
+ </tr>
+   <tr>
+    <td><pre>
+
+&lt;math display='block'>
+ &lt;msubsup>
+  &lt;mi>P&lt;/mi>
+  &lt;mi>k&lt;/mi>
+  &lt;mi>n&lt;/mi>
+ &lt;/msubsup>
+&lt;/math>
+    
+</pre></td><td>
+
+     <math display='block'>
+      <msubsup>
+       <mi>P</mi>
+       <mi>k</mi>
+       <mi>n</mi>
+      </msubsup>
+     </math>
+    <div class="mathcat">k permutations of n</div>
+
+    </td>
+
+    <td><pre>
+
+&lt;math display='block'>
+ &lt;msubsup intent='P($n,$k)'>
+  &lt;mi>P&lt;/mi>
+  &lt;mi arg='k'>k&lt;/mi>
+  &lt;mi arg='n'>n&lt;/mi>
+ &lt;/msubsup>
+&lt;/math>
+    
+</pre></td><td>
+
+     <math display='block'>
+      <msubsup intent='P($n,$k)'>
+       <mi>P</mi>
+       <mi arg='k'>k</mi>
+       <mi arg='n'>n</mi>
+      </msubsup>
+     </math>
+    <div class="mathcat">P of, n comma k</div>
+
+    </td>
+
+    <td><pre>
+
+&lt;math display='block'>
+ &lt;msubsup intent='P@prefix($n,$k)'>
+  &lt;mi>P&lt;/mi>
+  &lt;mi arg='k'>k&lt;/mi>
+  &lt;mi arg='n'>n&lt;/mi>
+ &lt;/msubsup>
+&lt;/math>
+    
+</pre></td><td>
+
+     <math display='block'>
+      <msubsup intent='P@prefix($n,$k)'>
+       <mi>P</mi>
+       <mi arg='k'>k</mi>
+       <mi arg='n'>n</mi>
+      </msubsup>
+     </math>
+    <div class="mathcat">P n k,</div>
+
+    </td>
+
+    <td>P^n_k</td>
+    <td id="IDpermutationsPsupnsubk"><a class="self" href="#IDpermutationsPsupnsubk"> permutations P sup n sub k</a></td>
+ </tr>
+   <tr>
+    <td><pre>
+
+&lt;math display='block'>
+ &lt;mrow>
+  &lt;mi>P&lt;/mi>
+  &lt;mo>(&lt;/mo>
+  &lt;mi>n&lt;/mi>
+  &lt;mi>k&lt;/mi>
+  &lt;mo>)&lt;/mo>
+ &lt;/mrow>
+&lt;/math>
+    
+</pre></td><td>
+
+     <math display='block'>
+      <mrow>
+       <mi>P</mi>
+       <mo>(</mo>
+       <mi>n</mi>
+       <mi>k</mi>
+       <mo>)</mo>
+      </mrow>
+     </math>
+    <div class="mathcat">p n k</div>
+
+    </td>
+
+    <td><pre>
+
+&lt;math display='block'>
+ &lt;mrow intent='P($n,$k)'>
+  &lt;mi>P&lt;/mi>
+  &lt;mo>(&lt;/mo>
+  &lt;mi arg='n'>n&lt;/mi>
+  &lt;mi arg='k'>k&lt;/mi>
+  &lt;mo>)&lt;/mo>
+ &lt;/mrow>
+&lt;/math>
+    
+</pre></td><td>
+
+     <math display='block'>
+      <mrow intent='P($n,$k)'>
+       <mi>P</mi>
+       <mo>(</mo>
+       <mi arg='n'>n</mi>
+       <mi arg='k'>k</mi>
+       <mo>)</mo>
+      </mrow>
+     </math>
+    <div class="mathcat">P of, n comma k</div>
+
+    </td>
+
+    <td><pre>
+
+&lt;math display='block'>
+ &lt;mrow intent='P@prefix($n,$k)'>
+  &lt;mi>P&lt;/mi>
+  &lt;mo>(&lt;/mo>
+  &lt;mi arg='n'>n&lt;/mi>
+  &lt;mi arg='k'>k&lt;/mi>
+  &lt;mo>)&lt;/mo>
+ &lt;/mrow>
+&lt;/math>
+    
+</pre></td><td>
+
+     <math display='block'>
+      <mrow intent='P@prefix($n,$k)'>
+       <mi>P</mi>
+       <mo>(</mo>
+       <mi arg='n'>n</mi>
+       <mi arg='k'>k</mi>
+       <mo>)</mo>
+      </mrow>
+     </math>
+    <div class="mathcat">P n k,</div>
+
+    </td>
+
+    <td>P(n,k)</td>
+    <td id="IDpermutationsPnk"><a class="self" href="#IDpermutationsPnk"> permutations P n k</a></td>
+ </tr>
+ 
    <tr>
     <th colspan='6' id="IDInfix"><a class="self" href="#IDInfix">Infix</a></th>
  </tr>
