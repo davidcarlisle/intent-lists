@@ -27,9 +27,7 @@
    <body>
     <h1>Intent Examples 1</h1>
 
-    <p>List 1 (David F) <a href="https://docs.google.com/spreadsheets/d/1PhjYFEz3PhRTsE5U4RiPH84pnTTTwilh0wx-ujnprqg/edit#gid=0">Original Google Docs spreadsheet</a>.</p>
-    <p><a href="intent2.html">List 2 (Deyan G)</a></p>
-    <p><a href="intent3.html">List 3 (David C)</a></p>
+    <p><a href="./">Index of Examples</a></p>
     
     <p><xsl:copy-of select="//tbody/tr[1]/*[2]/node()"/></p>
 

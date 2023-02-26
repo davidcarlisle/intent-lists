@@ -27,9 +27,7 @@
    <body>
     <h1>Intent Examples 2</h1>
 
-    <p><a href="intent1.html">List 1 (David F)</a></p>
-    <p> List 2 (Deyan G) <a href="https://docs.google.com/spreadsheets/d/1EsWou1K5nxBdLPvQapdoA9h-s8lg_qjn8fJH64g9izQ/edit#gid=1358098730">Original Google Docs spreadsheet</a>.</p>
-    <p><a href="intent3.html">List 3 (David C)</a></p>
+    <p><a href="./">Index of Examples</a></p>
 
     
     <table>
