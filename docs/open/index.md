@@ -10,6 +10,9 @@ any concept names for which they implement custom rules. Names which
 receive support in multiple implementations may be moved to the core
 list.
 
+The list may also be used as a reference for the intended meaning of intent
+concept terms and so has many entries that do not require custom speech rules.
+
 
  | Name | Arity | `Form`/hint | Subject | Known notation | Sources | Alias 
  | ----  | ----  | ----  | ----  | ----  | ----  | ----  | 
