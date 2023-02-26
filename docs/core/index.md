@@ -4,14 +4,14 @@
 | concept   | arity | hint     | speech template (en)                 | Comments     |
 | ----      | ----  | ----     | ----                                 |              |
 | power     | 2     | infix*   | IF $2=2<br> $1 squared               |              |
-|           |       |          | IF $2=3<br> $1 cubed                 |              |
-|           |       |          | IF $2=_n_<br> $1 to the $2_th_ power |              |
+| power     | 2     | infix*   | IF $2=3<br> $1 cubed                 |              |
+| power     | 2     | infix*   | IF $2=_n_<br> $1 to the $2_th_ power |              |
 | equals    | 2     | infix*   | $1 equals $2                         |              |
-|           |       |          | $1 is equal to $2                    |              |
-|           |       | function | equal to $1, $2                      |              |
+| equals    | 2     | infix*   | $1 is equal to $2                    |              |
+| equals    | 2     | function | equal to $1, $2                      |              |
 | factorial | 1     | postfix* | $1 factoral                          |              |
-|           |       | function | factorial of $1                      |              |
-| ⋮ | ⋮ | ⋮ | ⋮ | More to be added |
+| factorial | 1     | function | factorial of $1                      |              |
+| ⋮          | ⋮     | ⋮         | ⋮                                     | More to be added |
 
 -----
 
@@ -30,7 +30,7 @@ The list should include all the entries from the **core** list above.
 
 2. Optionally intents may be defaulted based on the available content, so `<mo>=</mo>` may default to
 `<mo intent="equals">=</mo>` or `<msup><mi>x</mi><mn>2</mn></msup>` may default to
-`<msup intent="power($x,$n)><mi arg="x">x</mi><mn arg="n">2</mn></msup>`
+`<msup intent="power($x,$n)"><mi arg="x">x</mi><mn arg="n">2</mn></msup>`
 Defaulting rules and options to control them to be specifed elsewhere, and are likely to be system specific.
 
 3. An intent term matches a row in the table if the concept name,
