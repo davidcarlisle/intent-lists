@@ -3307,7 +3307,7 @@ caused by: Error in intent value: extra unparsed intent &apos;234:thousands-comm
     <td><pre>
 
 &lt;math display='block'>
- &lt;mover intent='derivative@prefix($x)'>
+ &lt;mover intent='derivative@function($x)'>
   &lt;mo arg='x'>x&lt;/mo>
   &lt;mo intent='derivative'>&amp;#x02D9;&lt;/mo>
  &lt;/mover>
@@ -3322,12 +3322,12 @@ caused by: Error in intent value: extra unparsed intent &apos;234:thousands-comm
 </pre></td><td>
 
      <math display='block'>
-      <mover intent='derivative@prefix($x)'>
+      <mover intent='derivative@function($x)'>
        <mo arg='x'>x</mo>
        <mo intent='derivative'>&#x02D9;</mo>
       </mover>
      </math>
-    <div class="mathcat">derivative x,</div>
+    <div class="mathcat">derivative of, x</div>
 
      <math display='block'>
       <mover intent='dot@postfix($x)'>
@@ -3388,7 +3388,7 @@ caused by: Error in intent value: extra unparsed intent &apos;234:thousands-comm
     <td><pre>
 
 &lt;math display='block'>
- &lt;mover intent='second-derivative@prefix($x)'>
+ &lt;mover intent='second-derivative@function($x)'>
   &lt;mo arg='x'>x&lt;/mo>
   &lt;mo intent='second-derivative'>&amp;#x00A8;&lt;/mo>
  &lt;/mover>
@@ -3403,12 +3403,12 @@ caused by: Error in intent value: extra unparsed intent &apos;234:thousands-comm
 </pre></td><td>
 
      <math display='block'>
-      <mover intent='second-derivative@prefix($x)'>
+      <mover intent='second-derivative@function($x)'>
        <mo arg='x'>x</mo>
        <mo intent='second-derivative'>&#x00A8;</mo>
       </mover>
      </math>
-    <div class="mathcat">second derivative x,</div>
+    <div class="mathcat">second derivative of, x</div>
 
      <math display='block'>
       <mover intent='dot-dot@postfix($x)'>
@@ -3676,6 +3676,121 @@ caused by: Error in intent value: extra unparsed intent &apos;234:thousands-comm
     <td id="IDdxbydt"><a class="self" href="#IDdxbydt">dx by dt</a></td>
  </tr>
 
+   <tr>
+    <td><pre>
+
+&lt;math display='block'>
+ &lt;mo>&amp;#x222B;&lt;/mo>
+ &lt;mrow>
+  &lt;mi>f&lt;/mi>
+  &lt;mo>&amp;#x2061;&lt;/mo>
+  &lt;mo>(&lt;/mo>
+  &lt;mi>x&lt;/mi>
+  &lt;mo>)&lt;/mo>
+ &lt;/mrow>
+ &lt;mrow>
+  &lt;mi>d&lt;/mi>
+  &lt;mi>x&lt;/mi>
+ &lt;/mrow>
+&lt;/math>
+    
+</pre></td><td>
+
+     <math display='block'>
+      <mo>&#x222B;</mo>
+      <mrow>
+       <mi>f</mi>
+       <mo>&#x2061;</mo>
+       <mo>(</mo>
+       <mi>x</mi>
+       <mo>)</mo>
+      </mrow>
+      <mrow>
+       <mi>d</mi>
+       <mi>x</mi>
+      </mrow>
+     </math>
+    <div class="mathcat">the integral of f of x d x</div>
+
+    </td>
+
+    <td><pre>
+
+&lt;math display='block'>
+ &lt;mo>&amp;#x222B;&lt;/mo>
+ &lt;mrow>
+  &lt;mi>f&lt;/mi>
+  &lt;mo>&amp;#x2061;&lt;/mo>
+  &lt;mo>(&lt;/mo>
+  &lt;mi>x&lt;/mi>
+  &lt;mo>)&lt;/mo>
+ &lt;/mrow>
+ &lt;mrow>
+  &lt;mi>d&lt;/mi>
+  &lt;mi>x&lt;/mi>
+ &lt;/mrow>
+&lt;/math>
+    
+</pre></td><td>
+
+     <math display='block'>
+      <mo>&#x222B;</mo>
+      <mrow>
+       <mi>f</mi>
+       <mo>&#x2061;</mo>
+       <mo>(</mo>
+       <mi>x</mi>
+       <mo>)</mo>
+      </mrow>
+      <mrow>
+       <mi>d</mi>
+       <mi>x</mi>
+      </mrow>
+     </math>
+    <div class="mathcat">the integral of f of x d x</div>
+
+    </td>
+
+    <td><pre>
+
+&lt;math display='block'>
+ &lt;mo>&amp;#x222B;&lt;/mo>
+ &lt;mrow>
+  &lt;mi>f&lt;/mi>
+  &lt;mo>&amp;#x2061;&lt;/mo>
+  &lt;mo>(&lt;/mo>
+  &lt;mi>x&lt;/mi>
+  &lt;mo>)&lt;/mo>
+ &lt;/mrow>
+ &lt;mrow>
+  &lt;mi>d&lt;/mi>
+  &lt;mi>x&lt;/mi>
+ &lt;/mrow>
+&lt;/math>
+    
+</pre></td><td>
+
+     <math display='block'>
+      <mo>&#x222B;</mo>
+      <mrow>
+       <mi>f</mi>
+       <mo>&#x2061;</mo>
+       <mo>(</mo>
+       <mi>x</mi>
+       <mo>)</mo>
+      </mrow>
+      <mrow>
+       <mi>d</mi>
+       <mi>x</mi>
+      </mrow>
+     </math>
+    <div class="mathcat">the integral of f of x d x</div>
+
+    </td>
+
+    <td>\int f(x) dx</td>
+    <td id="IDintfxdx"><a class="self" href="#IDintfxdx">int f(x) dx</a></td>
+ </tr>
 
    <tr>
     <th colspan='6' id="IDHTML"><a class="self" href="#IDHTML">HTML</a></th>
