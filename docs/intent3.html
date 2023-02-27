@@ -945,7 +945,7 @@ caused by: Error in intent value: extra unparsed intent &apos;234:thousands-comm
 &lt;math display='block'>
  &lt;msup>
   &lt;mn>4&lt;/mn>
-  &lt;mi intent="ordinal-mark">th&lt;/mi>
+  &lt;mi intent='ordinal-mark'>th&lt;/mi>
  &lt;/msup>
 &lt;/math>
     
@@ -954,7 +954,7 @@ caused by: Error in intent value: extra unparsed intent &apos;234:thousands-comm
      <math display='block'>
       <msup>
        <mn>4</mn>
-       <mi intent="ordinal-mark">th</mi>
+       <mi intent='ordinal-mark'>th</mi>
       </msup>
      </math>
     <div class="mathcat">4 raised to the ordinal mark power</div>
@@ -964,13 +964,13 @@ caused by: Error in intent value: extra unparsed intent &apos;234:thousands-comm
     <td><pre>
 
 &lt;math display='block'>
- &lt;msup intent="ordinal-mark@silent($n,$th)">
-  &lt;mn arg="n">4&lt;/mn>
-  &lt;mi arg="th">th&lt;/mi>
+ &lt;msup intent='ordinal-mark@silent($n,$th)'>
+  &lt;mn arg='n'>4&lt;/mn>
+  &lt;mi arg='th'>th&lt;/mi>
  &lt;/msup>
 &lt;/math>
 &lt;math display='block'>
- &lt;msup intent="_4th">
+ &lt;msup intent='_4th'>
   &lt;mn>4&lt;/mn>
   &lt;mi>th&lt;/mi>
  &lt;/msup>
@@ -979,15 +979,15 @@ caused by: Error in intent value: extra unparsed intent &apos;234:thousands-comm
 </pre></td><td>
 
      <math display='block'>
-      <msup intent="ordinal-mark@silent($n,$th)">
-       <mn arg="n">4</mn>
-       <mi arg="th">th</mi>
+      <msup intent='ordinal-mark@silent($n,$th)'>
+       <mn arg='n'>4</mn>
+       <mi arg='th'>th</mi>
       </msup>
      </math>
     <div class="mathcat">4 th</div>
 
      <math display='block'>
-      <msup intent="_4th">
+      <msup intent='_4th'>
        <mn>4</mn>
        <mi>th</mi>
       </msup>
@@ -2139,6 +2139,71 @@ caused by: Error in intent value: extra unparsed intent &apos;234:thousands-comm
     <td><pre>
 
 &lt;math display='block'>
+ &lt;msub>
+  &lt;mrow>
+   &lt;mo>|&lt;/mo>
+   &lt;mi>x&lt;/mi>
+   &lt;mo>|&lt;/mo>
+  &lt;/mrow>
+  &lt;mn>2&lt;/mn>
+ &lt;/msub>
+&lt;/math>
+    
+</pre></td><td>
+
+     <math display='block'>
+      <msub>
+       <mrow>
+        <mo>|</mo>
+        <mi>x</mi>
+        <mo>|</mo>
+       </mrow>
+       <mn>2</mn>
+      </msub>
+     </math>
+    <div class="mathcat">the absolute value of x, sub 2</div>
+
+    </td>
+
+    <td><pre>
+
+&lt;math display='block'>
+ &lt;msub intent='l2-norm($x)'>
+  &lt;mrow>
+   &lt;mo>|&lt;/mo>
+   &lt;mi arg='x'>x&lt;/mi>
+   &lt;mo>|&lt;/mo>
+  &lt;/mrow>
+  &lt;mn>2&lt;/mn>
+ &lt;/msub>
+&lt;/math>
+    
+</pre></td><td>
+
+     <math display='block'>
+      <msub intent='l2-norm($x)'>
+       <mrow>
+        <mo>|</mo>
+        <mi arg='x'>x</mi>
+        <mo>|</mo>
+       </mrow>
+       <mn>2</mn>
+      </msub>
+     </math>
+    <div class="mathcat">l2 norm of, x</div>
+
+    </td>
+
+    <td> - </td>
+    <td> - </td>
+    <td>\lvert x\rvert_2</td>
+    <td id="IDl2normx"><a class="self" href="#IDl2normx">l2 norm x</a></td>
+ </tr>
+
+   <tr>
+    <td><pre>
+
+&lt;math display='block'>
  &lt;mrow>
   &lt;mo>|&lt;/mo>
   &lt;mi>M&lt;/mi>
@@ -2461,11 +2526,11 @@ caused by: Error in intent value: extra unparsed intent &apos;234:thousands-comm
     <td><pre>
 
 &lt;math display='block'>
- &lt;mrow intent="open-interval($x,$y)">
+ &lt;mrow intent='open-interval($x,$y)'>
   &lt;mo>(&lt;/mo>
-  &lt;mi arg="x">x&lt;/mi>
+  &lt;mi arg='x'>x&lt;/mi>
   &lt;mo>,&lt;/mo>
-  &lt;mi arg="y">y&lt;/mi>
+  &lt;mi arg='y'>y&lt;/mi>
   &lt;mo>)&lt;/mo>
  &lt;/mrow>
 &lt;/math>
@@ -2473,11 +2538,11 @@ caused by: Error in intent value: extra unparsed intent &apos;234:thousands-comm
 </pre></td><td>
 
      <math display='block'>
-      <mrow intent="open-interval($x,$y)">
+      <mrow intent='open-interval($x,$y)'>
        <mo>(</mo>
-       <mi arg="x">x</mi>
+       <mi arg='x'>x</mi>
        <mo>,</mo>
-       <mi arg="y">y</mi>
+       <mi arg='y'>y</mi>
        <mo>)</mo>
       </mrow>
      </math>
@@ -2521,11 +2586,11 @@ caused by: Error in intent value: extra unparsed intent &apos;234:thousands-comm
     <td><pre>
 
 &lt;math display='block'>
- &lt;mrow intent="open-closed-interval($x,$y)">
+ &lt;mrow intent='open-closed-interval($x,$y)'>
   &lt;mo>(&lt;/mo>
-  &lt;mi arg="x">x&lt;/mi>
+  &lt;mi arg='x'>x&lt;/mi>
   &lt;mo>,&lt;/mo>
-  &lt;mi arg="y">y&lt;/mi>
+  &lt;mi arg='y'>y&lt;/mi>
   &lt;mo>]&lt;/mo>
  &lt;/mrow>
 &lt;/math>
@@ -2533,11 +2598,11 @@ caused by: Error in intent value: extra unparsed intent &apos;234:thousands-comm
 </pre></td><td>
 
      <math display='block'>
-      <mrow intent="open-closed-interval($x,$y)">
+      <mrow intent='open-closed-interval($x,$y)'>
        <mo>(</mo>
-       <mi arg="x">x</mi>
+       <mi arg='x'>x</mi>
        <mo>,</mo>
-       <mi arg="y">y</mi>
+       <mi arg='y'>y</mi>
        <mo>]</mo>
       </mrow>
      </math>
@@ -2581,11 +2646,11 @@ caused by: Error in intent value: extra unparsed intent &apos;234:thousands-comm
     <td><pre>
 
 &lt;math display='block'>
- &lt;mrow intent="closed-open-interval($x,$y)">
+ &lt;mrow intent='closed-open-interval($x,$y)'>
   &lt;mo>[&lt;/mo>
-  &lt;mi arg="x">x&lt;/mi>
+  &lt;mi arg='x'>x&lt;/mi>
   &lt;mo>,&lt;/mo>
-  &lt;mi arg="y">y&lt;/mi>
+  &lt;mi arg='y'>y&lt;/mi>
   &lt;mo>)&lt;/mo>
  &lt;/mrow>
 &lt;/math>
@@ -2593,11 +2658,11 @@ caused by: Error in intent value: extra unparsed intent &apos;234:thousands-comm
 </pre></td><td>
 
      <math display='block'>
-      <mrow intent="closed-open-interval($x,$y)">
+      <mrow intent='closed-open-interval($x,$y)'>
        <mo>[</mo>
-       <mi arg="x">x</mi>
+       <mi arg='x'>x</mi>
        <mo>,</mo>
-       <mi arg="y">y</mi>
+       <mi arg='y'>y</mi>
        <mo>)</mo>
       </mrow>
      </math>
@@ -2641,11 +2706,11 @@ caused by: Error in intent value: extra unparsed intent &apos;234:thousands-comm
     <td><pre>
 
 &lt;math display='block'>
- &lt;mrow intent="closed-interval($x,$y)">
+ &lt;mrow intent='closed-interval($x,$y)'>
   &lt;mo>[&lt;/mo>
-  &lt;mi arg="x">x&lt;/mi>
+  &lt;mi arg='x'>x&lt;/mi>
   &lt;mo>,&lt;/mo>
-  &lt;mi arg="y">y&lt;/mi>
+  &lt;mi arg='y'>y&lt;/mi>
   &lt;mo>]&lt;/mo>
  &lt;/mrow>
 &lt;/math>
@@ -2653,11 +2718,11 @@ caused by: Error in intent value: extra unparsed intent &apos;234:thousands-comm
 </pre></td><td>
 
      <math display='block'>
-      <mrow intent="closed-interval($x,$y)">
+      <mrow intent='closed-interval($x,$y)'>
        <mo>[</mo>
-       <mi arg="x">x</mi>
+       <mi arg='x'>x</mi>
        <mo>,</mo>
-       <mi arg="y">y</mi>
+       <mi arg='y'>y</mi>
        <mo>]</mo>
       </mrow>
      </math>
