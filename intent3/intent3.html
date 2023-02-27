@@ -392,7 +392,40 @@
     <td>x transpose pre-sup</td>
    </tr>
  
-
+   <tr>
+    <td>
+     <math display='block'>
+      <msup>
+       <mn>4</mn>
+       <mi>th</mi>
+      </msup>
+     </math>
+    </td>
+    <td>
+     <math display='block'>
+      <msup>
+       <mn>4</mn>
+       <mi intent="ordinal-mark">th</mi>
+      </msup>
+     </math>
+    </td>
+    <td>
+     <math display='block'>
+      <msup intent="ordinal-mark@silent($n,$th)">
+       <mn arg="n">4</mn>
+       <mi arg="th">th</mi>
+      </msup>
+     </math>
+     <math display='block'>
+      <msup intent="_4th">
+       <mn>4</mn>
+       <mi>th</mi>
+      </msup>
+     </math>
+    </td>
+    <td>4{\mathrm{th}</td>
+    <td>ordinal 4th</td>
+   </tr>x
  
    <tr>
     <th colspan='6'>Combinations and Permutations</th>
@@ -978,7 +1011,6 @@
       </mrow>
      </math>
     </td>
-
     <td>\begin{vmatrix}a&amp;b\\c&amp;d\end{vmatrix}</td>
     <td>vert abcd determinant</td>
    </tr>
@@ -1036,19 +1068,131 @@
     <td>\mathopen] x,y\mathclose[\rVert</td>
     <td>open-open inverted bracket</td>
    </tr>
-    
+
    <tr>
     <td>
      <math display='block'>
       <mrow>
        <mo>(</mo>
-       <mi arg='x'>x</mi>
+       <mi>x</mi>
+       <mo>,</mo>
+       <mi>y</mi>
+       <mo>)</mo>
+      </mrow>
+     </math>
+    </td>
+    <td>
+     <math display='block'>
+      <mrow intent="open-interval($x,$y)">
+       <mo>(</mo>
+       <mi arg="x">x</mi>
+       <mo>,</mo>
+       <mi arg="y">y</mi>
+       <mo>)</mo>
+      </mrow>
+     </math>
+    </td>
+    <!--Xtd> - </tdX-->
+    <td> - </td>
+    <td>(x,y)</td>
+    <td>open-open</td>
+   </tr>
+   <tr>
+    <td>
+     <math display='block'>
+      <mrow>
+       <mo>(</mo>
+       <mi>x</mi>
+       <mo>,</mo>
+       <mi>y</mi>
+       <mo>]</mo>
+      </mrow>
+     </math>
+    </td>
+    <td>
+     <math display='block'>
+      <mrow intent="open-closed-interval($x,$y)">
+       <mo>(</mo>
+       <mi arg="x">x</mi>
+       <mo>,</mo>
+       <mi arg="y">y</mi>
+       <mo>]</mo>
+      </mrow>
+     </math>
+    </td>
+    <!--Xtd> - </tdX-->
+    <td> - </td>
+    <td>(x,y]</td>
+    <td>open-closed</td>
+   </tr>
+   <tr>
+    <td>
+     <math display='block'>
+      <mrow>
+       <mo>[</mo>
+       <mi>x</mi>
+       <mo>,</mo>
+       <mi>y</mi>
+       <mo>)</mo>
+      </mrow>
+     </math>
+    </td>
+    <td>
+     <math display='block'>
+      <mrow intent="closed-open-interval($x,$y)">
+       <mo>[</mo>
+       <mi arg="x">x</mi>
+       <mo>,</mo>
+       <mi arg="y">y</mi>
+       <mo>)</mo>
+      </mrow>
+     </math>
+    </td>
+    <!--Xtd> - </tdX-->
+    <td> - </td>
+    <td>[x,y)</td>
+    <td>closed-open</td>
+   </tr>
+   <tr>
+    <td>
+     <math display='block'>
+      <mrow>
+       <mo>[</mo>
+       <mi>x</mi>
+       <mo>,</mo>
+       <mi>y</mi>
+       <mo>]</mo>
+      </mrow>
+     </math>
+    </td>
+    <td>
+     <math display='block'>
+      <mrow intent="closed-interval($x,$y)">
+       <mo>[</mo>
+       <mi arg="x">x</mi>
+       <mo>,</mo>
+       <mi arg="y">y</mi>
+       <mo>]</mo>
+      </mrow>
+     </math>
+    </td>
+    <!--Xtd> - </tdX-->
+    <td> - </td>
+    <td>[x,y]</td>
+    <td>closed-closed</td>
+   </tr>    
+   <tr>
+    <td>
+     <math display='block'>
+      <mrow>
+       <mo>(</mo>
+       <mi>x</mi>
        <mo>&#x2009;</mo>
-       <mi arg='y'>y</mi>
+       <mi>y</mi>
        <mo>&#x2009;</mo>
-       <mi arg='c'>c</mi>
+       <mi>c</mi>
        <mo>&#x2009;</mo>
-       <mi arg='d'>d</mi>
+       <mi>d</mi>
        <mo>)</mo>
       </mrow>
      </math>
@@ -1502,9 +1646,6 @@
     <td>bad number</td>
    </tr>
 
-
-
-   
    <tr>
     <td>
      <math display='block'>
@@ -1514,7 +1655,7 @@
       </mover>
       <mo>+</mo>
       <mover>
-       <mi arg='y'>Y</mi>
+       <mi>Y</mi>
        <mo>&#x203e;</mo>
       </mover>
      </math>

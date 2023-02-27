@@ -304,7 +304,7 @@ caused by: Error in intent value: extra unparsed intent &apos;234:thousands-comm
      <math display='block'>
       <mn intent='-3'>−3</mn>
      </math>
-    <div class="mathcat">minus  3</div>
+    <div class="mathcat">3</div>
 
     </td>
 
@@ -352,7 +352,7 @@ caused by: Error in intent value: extra unparsed intent &apos;234:thousands-comm
        <mn>3</mn>
       </mrow>
      </math>
-    <div class="mathcat">minus  3</div>
+    <div class="mathcat">3</div>
 
     </td>
 
@@ -918,7 +918,87 @@ caused by: Error in intent value: extra unparsed intent &apos;234:thousands-comm
     <td id="IDxtransposepre-sup"><a class="self" href="#IDxtransposepre-sup">x transpose pre-sup</a></td>
  </tr>
  
+   <tr>
+    <td><pre>
 
+&lt;math display='block'>
+ &lt;msup>
+  &lt;mn>4&lt;/mn>
+  &lt;mi>th&lt;/mi>
+ &lt;/msup>
+&lt;/math>
+    
+</pre></td><td>
+
+     <math display='block'>
+      <msup>
+       <mn>4</mn>
+       <mi>th</mi>
+      </msup>
+     </math>
+    <div class="mathcat">4 to the th</div>
+
+    </td>
+
+    <td><pre>
+
+&lt;math display='block'>
+ &lt;msup>
+  &lt;mn>4&lt;/mn>
+  &lt;mi intent="ordinal-mark">th&lt;/mi>
+ &lt;/msup>
+&lt;/math>
+    
+</pre></td><td>
+
+     <math display='block'>
+      <msup>
+       <mn>4</mn>
+       <mi intent="ordinal-mark">th</mi>
+      </msup>
+     </math>
+    <div class="mathcat">4 raised to the ordinal mark power</div>
+
+    </td>
+
+    <td><pre>
+
+&lt;math display='block'>
+ &lt;msup intent="ordinal-mark@silent($n,$th)">
+  &lt;mn arg="n">4&lt;/mn>
+  &lt;mi arg="th">th&lt;/mi>
+ &lt;/msup>
+&lt;/math>
+&lt;math display='block'>
+ &lt;msup intent="_4th">
+  &lt;mn>4&lt;/mn>
+  &lt;mi>th&lt;/mi>
+ &lt;/msup>
+&lt;/math>
+    
+</pre></td><td>
+
+     <math display='block'>
+      <msup intent="ordinal-mark@silent($n,$th)">
+       <mn arg="n">4</mn>
+       <mi arg="th">th</mi>
+      </msup>
+     </math>
+    <div class="mathcat">4 th</div>
+
+     <math display='block'>
+      <msup intent="_4th">
+       <mn>4</mn>
+       <mi>th</mi>
+      </msup>
+     </math>
+    <div class="mathcat">4th</div>
+
+    </td>
+
+    <td>4{\mathrm{th}</td>
+    <td id="IDordinal4th"><a class="self" href="#IDordinal4th">ordinal 4th</a></td>
+ </tr>x
  
    <tr>
     <th colspan='6' id="IDCombinationsandPermutations"><a class="self" href="#IDCombinationsandPermutations">Combinations and Permutations</a></th>
@@ -2232,7 +2312,6 @@ caused by: Error in intent value: extra unparsed intent &apos;234:thousands-comm
 
     </td>
 
-
     <td>\begin{vmatrix}a&amp;b\\c&amp;d\end{vmatrix}</td>
     <td id="IDvertabcddeterminant"><a class="self" href="#IDvertabcddeterminant">vert abcd determinant</a></td>
  </tr>
@@ -2350,20 +2429,16 @@ caused by: Error in intent value: extra unparsed intent &apos;234:thousands-comm
     <td>\mathopen] x,y\mathclose[\rVert</td>
     <td id="IDopen-openinvertedbracket"><a class="self" href="#IDopen-openinvertedbracket">open-open inverted bracket</a></td>
  </tr>
-    
+
    <tr>
     <td><pre>
 
 &lt;math display='block'>
  &lt;mrow>
   &lt;mo>(&lt;/mo>
-  &lt;mi arg='x'>x&lt;/mi>
-  &lt;mo>&amp;#x2009;&lt;/mo>
-  &lt;mi arg='y'>y&lt;/mi>
-  &lt;mo>&amp;#x2009;&lt;/mo>
-  &lt;mi arg='c'>c&lt;/mi>
-  &lt;mo>&amp;#x2009;&lt;/mo>
-  &lt;mi arg='d'>d&lt;/mi>
+  &lt;mi>x&lt;/mi>
+  &lt;mo>,&lt;/mo>
+  &lt;mi>y&lt;/mi>
   &lt;mo>)&lt;/mo>
  &lt;/mrow>
 &lt;/math>
@@ -2373,13 +2448,257 @@ caused by: Error in intent value: extra unparsed intent &apos;234:thousands-comm
      <math display='block'>
       <mrow>
        <mo>(</mo>
-       <mi arg='x'>x</mi>
+       <mi>x</mi>
+       <mo>,</mo>
+       <mi>y</mi>
+       <mo>)</mo>
+      </mrow>
+     </math>
+    <div class="mathcat">open paren x comma y, close paren</div>
+
+    </td>
+
+    <td><pre>
+
+&lt;math display='block'>
+ &lt;mrow intent="open-interval($x,$y)">
+  &lt;mo>(&lt;/mo>
+  &lt;mi arg="x">x&lt;/mi>
+  &lt;mo>,&lt;/mo>
+  &lt;mi arg="y">y&lt;/mi>
+  &lt;mo>)&lt;/mo>
+ &lt;/mrow>
+&lt;/math>
+    
+</pre></td><td>
+
+     <math display='block'>
+      <mrow intent="open-interval($x,$y)">
+       <mo>(</mo>
+       <mi arg="x">x</mi>
+       <mo>,</mo>
+       <mi arg="y">y</mi>
+       <mo>)</mo>
+      </mrow>
+     </math>
+    <div class="mathcat">the open interval from x to y</div>
+
+    </td>
+
+    <td> - </td>
+    <td> - </td>
+    <td>(x,y)</td>
+    <td id="IDopen-open"><a class="self" href="#IDopen-open">open-open</a></td>
+ </tr>
+   <tr>
+    <td><pre>
+
+&lt;math display='block'>
+ &lt;mrow>
+  &lt;mo>(&lt;/mo>
+  &lt;mi>x&lt;/mi>
+  &lt;mo>,&lt;/mo>
+  &lt;mi>y&lt;/mi>
+  &lt;mo>]&lt;/mo>
+ &lt;/mrow>
+&lt;/math>
+    
+</pre></td><td>
+
+     <math display='block'>
+      <mrow>
+       <mo>(</mo>
+       <mi>x</mi>
+       <mo>,</mo>
+       <mi>y</mi>
+       <mo>]</mo>
+      </mrow>
+     </math>
+    <div class="mathcat">the open closed interval from x to y</div>
+
+    </td>
+
+    <td><pre>
+
+&lt;math display='block'>
+ &lt;mrow intent="open-closed-interval($x,$y)">
+  &lt;mo>(&lt;/mo>
+  &lt;mi arg="x">x&lt;/mi>
+  &lt;mo>,&lt;/mo>
+  &lt;mi arg="y">y&lt;/mi>
+  &lt;mo>]&lt;/mo>
+ &lt;/mrow>
+&lt;/math>
+    
+</pre></td><td>
+
+     <math display='block'>
+      <mrow intent="open-closed-interval($x,$y)">
+       <mo>(</mo>
+       <mi arg="x">x</mi>
+       <mo>,</mo>
+       <mi arg="y">y</mi>
+       <mo>]</mo>
+      </mrow>
+     </math>
+    <div class="mathcat">the open closed interval from x to y</div>
+
+    </td>
+
+    <td> - </td>
+    <td> - </td>
+    <td>(x,y]</td>
+    <td id="IDopen-closed"><a class="self" href="#IDopen-closed">open-closed</a></td>
+ </tr>
+   <tr>
+    <td><pre>
+
+&lt;math display='block'>
+ &lt;mrow>
+  &lt;mo>[&lt;/mo>
+  &lt;mi>x&lt;/mi>
+  &lt;mo>,&lt;/mo>
+  &lt;mi>y&lt;/mi>
+  &lt;mo>)&lt;/mo>
+ &lt;/mrow>
+&lt;/math>
+    
+</pre></td><td>
+
+     <math display='block'>
+      <mrow>
+       <mo>[</mo>
+       <mi>x</mi>
+       <mo>,</mo>
+       <mi>y</mi>
+       <mo>)</mo>
+      </mrow>
+     </math>
+    <div class="mathcat">the closed open interval from x to y</div>
+
+    </td>
+
+    <td><pre>
+
+&lt;math display='block'>
+ &lt;mrow intent="closed-open-interval($x,$y)">
+  &lt;mo>[&lt;/mo>
+  &lt;mi arg="x">x&lt;/mi>
+  &lt;mo>,&lt;/mo>
+  &lt;mi arg="y">y&lt;/mi>
+  &lt;mo>)&lt;/mo>
+ &lt;/mrow>
+&lt;/math>
+    
+</pre></td><td>
+
+     <math display='block'>
+      <mrow intent="closed-open-interval($x,$y)">
+       <mo>[</mo>
+       <mi arg="x">x</mi>
+       <mo>,</mo>
+       <mi arg="y">y</mi>
+       <mo>)</mo>
+      </mrow>
+     </math>
+    <div class="mathcat">the closed open interval from x to y</div>
+
+    </td>
+
+    <td> - </td>
+    <td> - </td>
+    <td>[x,y)</td>
+    <td id="IDclosed-open"><a class="self" href="#IDclosed-open">closed-open</a></td>
+ </tr>
+   <tr>
+    <td><pre>
+
+&lt;math display='block'>
+ &lt;mrow>
+  &lt;mo>[&lt;/mo>
+  &lt;mi>x&lt;/mi>
+  &lt;mo>,&lt;/mo>
+  &lt;mi>y&lt;/mi>
+  &lt;mo>]&lt;/mo>
+ &lt;/mrow>
+&lt;/math>
+    
+</pre></td><td>
+
+     <math display='block'>
+      <mrow>
+       <mo>[</mo>
+       <mi>x</mi>
+       <mo>,</mo>
+       <mi>y</mi>
+       <mo>]</mo>
+      </mrow>
+     </math>
+    <div class="mathcat">the closed interval from x to y</div>
+
+    </td>
+
+    <td><pre>
+
+&lt;math display='block'>
+ &lt;mrow intent="closed-interval($x,$y)">
+  &lt;mo>[&lt;/mo>
+  &lt;mi arg="x">x&lt;/mi>
+  &lt;mo>,&lt;/mo>
+  &lt;mi arg="y">y&lt;/mi>
+  &lt;mo>]&lt;/mo>
+ &lt;/mrow>
+&lt;/math>
+    
+</pre></td><td>
+
+     <math display='block'>
+      <mrow intent="closed-interval($x,$y)">
+       <mo>[</mo>
+       <mi arg="x">x</mi>
+       <mo>,</mo>
+       <mi arg="y">y</mi>
+       <mo>]</mo>
+      </mrow>
+     </math>
+    <div class="mathcat">the closed interval from x to y</div>
+
+    </td>
+
+    <td> - </td>
+    <td> - </td>
+    <td>[x,y]</td>
+    <td id="IDclosed-closed"><a class="self" href="#IDclosed-closed">closed-closed</a></td>
+ </tr>    
+   <tr>
+    <td><pre>
+
+&lt;math display='block'>
+ &lt;mrow>
+  &lt;mo>(&lt;/mo>
+  &lt;mi>x&lt;/mi>
+  &lt;mo>&amp;#x2009;&lt;/mo>
+  &lt;mi>y&lt;/mi>
+  &lt;mo>&amp;#x2009;&lt;/mo>
+  &lt;mi>c&lt;/mi>
+  &lt;mo>&amp;#x2009;&lt;/mo>
+  &lt;mi>d&lt;/mi>
+  &lt;mo>)&lt;/mo>
+ &lt;/mrow>
+&lt;/math>
+    
+</pre></td><td>
+
+     <math display='block'>
+      <mrow>
+       <mo>(</mo>
+       <mi>x</mi>
        <mo>&#x2009;</mo>
-       <mi arg='y'>y</mi>
+       <mi>y</mi>
        <mo>&#x2009;</mo>
-       <mi arg='c'>c</mi>
+       <mi>c</mi>
        <mo>&#x2009;</mo>
-       <mi arg='d'>d</mi>
+       <mi>d</mi>
        <mo>)</mo>
       </mrow>
      </math>
@@ -3507,9 +3826,6 @@ caused by: Illegal &apos;intent&apos; syntax: 1.2e1
     <td id="IDbadnumber"><a class="self" href="#IDbadnumber">bad number</a></td>
  </tr>
 
-
-
-   
    <tr>
     <td><pre>
 
@@ -3520,7 +3836,7 @@ caused by: Illegal &apos;intent&apos; syntax: 1.2e1
  &lt;/mover>
  &lt;mo>+&lt;/mo>
  &lt;mover>
-  &lt;mi arg='y'>Y&lt;/mi>
+  &lt;mi>Y&lt;/mi>
   &lt;mo>&amp;#x203e;&lt;/mo>
  &lt;/mover>
 &lt;/math>
@@ -3534,7 +3850,7 @@ caused by: Illegal &apos;intent&apos; syntax: 1.2e1
       </mover>
       <mo>+</mo>
       <mover>
-       <mi arg='y'>Y</mi>
+       <mi>Y</mi>
        <mo>&#x203e;</mo>
       </mover>
      </math>
