@@ -16,7 +16,7 @@ concept terms and so has many entries that do not require custom speech rules.
 
  | Name | Arity | `Form`/hint | Subject | Known notation | Sources | Alias 
  | ----  | ----  | ----  | ----  | ----  | ----  | ----  | 
-  | abelian-category | 0 | `symbol` | category theory | mi Ab | https://mathworld.wolfram.com/AbelianCategory.html<br/>[https://en.wikipedia.org/wiki/Abelian_category](https://en.wikipedia.org/wiki/Abelian_category)<br/>https://ncatlab.org/nlab/show/abelian+category<br/>https://www.encyclopediaofmath.org/index.php/Abelian_category |  | 
+  | abelian-category | 0 | `symbol` | category theory | mi Ab | <https://mathworld.wolfram.com/AbelianCategory.html><br/>[https://en.wikipedia.org/wiki/Abelian_category](https://en.wikipedia.org/wiki/Abelian_category)<br/>https://ncatlab.org/nlab/show/abelian+category<br/>https://www.encyclopediaofmath.org/index.php/Abelian_category |  | 
   | abelian-integral | 1 | `indexed` | complex analysis | mo ∫ | https://mathworld.wolfram.com/AbelianIntegral.html<br/>https://en.wikipedia.org/wiki/Abelian_integral<br/>https://www.encyclopediaofmath.org/index.php/Abelian_integral |  | 
   | abundance | 1 | `prefix` | number theory | mi A | [https://mathworld.wolfram.com/Abundance.html](https://mathworld.wolfram.com/Abundance.html) |  | 
   | abundancy | 1 | `mixfix` | number theory | sigma (n) / n | https://mathworld.wolfram.com/Abundancy.html<br/>https://en.wikipedia.org/wiki/Friendly_number<br/> |  | 
