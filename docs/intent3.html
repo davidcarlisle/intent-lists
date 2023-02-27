@@ -3470,13 +3470,15 @@ caused by: Error in intent value: extra unparsed intent &apos;234:thousands-comm
     <td><pre>
 
 &lt;math display='block'>
- &lt;mfrac intent='derivative@prefix(_of,$x,_with_respect_to,$t)'>
+ &lt;mfrac intent='derivative@prefix(
+                _of,$x,_with_respect_to,$t)'>
   &lt;mrow>&lt;mi>d&lt;/mi>&lt;mi arg='x'>x&lt;/mi>&lt;/mrow>
   &lt;mrow>&lt;mi>d&lt;/mi>&lt;mi arg='t'>t&lt;/mi>&lt;/mrow>
  &lt;/mfrac>
 &lt;/math>
 &lt;math display='block'>
- &lt;mfrac intent='derivative@silent(_d,$x,_by,_d,$t)'>
+ &lt;mfrac intent='derivative@silent(
+                _d,$x,_by,_d,$t)'>
   &lt;mrow>&lt;mi>d&lt;/mi>&lt;mi arg='x'>x&lt;/mi>&lt;/mrow>
   &lt;mrow>&lt;mi>d&lt;/mi>&lt;mi arg='t'>t&lt;/mi>&lt;/mrow>
  &lt;/mfrac>
@@ -3485,7 +3487,8 @@ caused by: Error in intent value: extra unparsed intent &apos;234:thousands-comm
 </pre></td><td>
 
      <math display='block'>
-      <mfrac intent='derivative@prefix(_of,$x,_with_respect_to,$t)'>
+      <mfrac intent='derivative@prefix(
+                     _of,$x,_with_respect_to,$t)'>
        <mrow><mi>d</mi><mi arg='x'>x</mi></mrow>
        <mrow><mi>d</mi><mi arg='t'>t</mi></mrow>
       </mfrac>
@@ -3493,7 +3496,8 @@ caused by: Error in intent value: extra unparsed intent &apos;234:thousands-comm
     <div class="mathcat">derivative  of x  with respect to t,</div>
 
      <math display='block'>
-      <mfrac intent='derivative@silent(_d,$x,_by,_d,$t)'>
+      <mfrac intent='derivative@silent(
+                     _d,$x,_by,_d,$t)'>
        <mrow><mi>d</mi><mi arg='x'>x</mi></mrow>
        <mrow><mi>d</mi><mi arg='t'>t</mi></mrow>
       </mfrac>
@@ -3596,7 +3600,8 @@ caused by: Error in intent value: extra unparsed intent &apos;234:thousands-comm
     <td><pre>
 
 &lt;math display='block'>
- &lt;mfrac intent='second-derivative@prefix(_of,$x,_with_respect_to,$t)'>
+ &lt;mfrac intent='second-derivative@prefix(
+                _of,$x,_with_respect_to,$t)'>
   &lt;mrow>
    &lt;msup>
     &lt;mi>d&lt;/mi>&lt;mn>2&lt;/mn>
@@ -3613,7 +3618,8 @@ caused by: Error in intent value: extra unparsed intent &apos;234:thousands-comm
  &lt;/mfrac>
 &lt;/math>
 &lt;math display='block'>
- &lt;mfrac intent='derivative@silent(_d,_2,$x,_by,_d,$t,_squared)'>
+ &lt;mfrac intent='derivative@silent(
+                _d,_2,$x,_by,_d,$t,_squared)'>
   &lt;mrow>
    &lt;msup>
     &lt;mi>d&lt;/mi>&lt;mn>2&lt;/mn>
@@ -3633,7 +3639,8 @@ caused by: Error in intent value: extra unparsed intent &apos;234:thousands-comm
 </pre></td><td>
 
      <math display='block'>
-      <mfrac intent='second-derivative@prefix(_of,$x,_with_respect_to,$t)'>
+      <mfrac intent='second-derivative@prefix(
+                     _of,$x,_with_respect_to,$t)'>
        <mrow>
         <msup>
          <mi>d</mi><mn>2</mn>
@@ -3652,7 +3659,8 @@ caused by: Error in intent value: extra unparsed intent &apos;234:thousands-comm
     <div class="mathcat">second derivative  of x  with respect to t,</div>
 
      <math display='block'>
-      <mfrac intent='derivative@silent(_d,_2,$x,_by,_d,$t,_squared)'>
+      <mfrac intent='derivative@silent(
+                     _d,_2,$x,_by,_d,$t,_squared)'>
        <mrow>
         <msup>
          <mi>d</mi><mn>2</mn>
