@@ -3580,6 +3580,130 @@ caused by: Error in intent value: extra unparsed intent &apos;234:thousands-comm
     <td><pre>
 
 &lt;math display='block'>
+ &lt;mrow>
+  &lt;mfrac>
+   &lt;mrow>&lt;mi>d&lt;/mi>&lt;/mrow>
+   &lt;mrow>&lt;mi>d&lt;/mi>&lt;mi>t&lt;/mi>&lt;/mrow>
+  &lt;/mfrac>
+  &lt;mrow>
+   &lt;mi>f&lt;/mi>
+   &lt;mo>&amp;#x2061;&lt;/mo>
+   &lt;mo>(&lt;/mo>
+   &lt;mi>t&lt;/mi>
+   &lt;mo>)&lt;/mo>
+  &lt;/mrow>
+ &lt;/mrow>
+&lt;/math>
+    
+</pre></td><td>
+
+     <math display='block'>
+      <mrow>
+       <mfrac>
+        <mrow><mi>d</mi></mrow>
+        <mrow><mi>d</mi><mi>t</mi></mrow>
+       </mfrac>
+       <mrow>
+        <mi>f</mi>
+        <mo>&#x2061;</mo>
+        <mo>(</mo>
+        <mi>t</mi>
+        <mo>)</mo>
+       </mrow>
+      </mrow>
+     </math>
+    <div class="mathcat">fraction, d over, d t, end fraction; f of t</div>
+
+    </td>
+
+    <td><pre>
+
+&lt;math display='block'>
+ &lt;mrow intent='derivative($ft,1,$t)'>
+  &lt;mfrac>
+   &lt;mrow>&lt;mi>d&lt;/mi>&lt;/mrow>
+   &lt;mrow>&lt;mi>d&lt;/mi>&lt;mi arg='t'>t&lt;/mi>&lt;/mrow>
+  &lt;/mfrac>
+  &lt;mrow arg='ft'>
+   &lt;mi>f&lt;/mi>
+   &lt;mo>&amp;#x2061;&lt;/mo>
+   &lt;mo>(&lt;/mo>
+   &lt;mi>t&lt;/mi>
+   &lt;mo>)&lt;/mo>
+  &lt;/mrow>
+ &lt;/mrow>
+&lt;/math>
+    
+</pre></td><td>
+
+     <math display='block'>
+      <mrow intent='derivative($ft,1,$t)'>
+       <mfrac>
+        <mrow><mi>d</mi></mrow>
+        <mrow><mi>d</mi><mi arg='t'>t</mi></mrow>
+       </mfrac>
+       <mrow arg='ft'>
+        <mi>f</mi>
+        <mo>&#x2061;</mo>
+        <mo>(</mo>
+        <mi>t</mi>
+        <mo>)</mo>
+       </mrow>
+      </mrow>
+     </math>
+    <div class="mathcat">derivative of, f of t comma 1 comma t</div>
+
+    </td>
+
+    <td><pre>
+
+&lt;math display='block'>
+ &lt;mrow intent='derivative@prefix(
+               _of,$ft,_with_respect_to,$t)'>
+  &lt;mfrac>
+   &lt;mrow>&lt;mi>d&lt;/mi>&lt;/mrow>
+   &lt;mrow>&lt;mi>d&lt;/mi>&lt;mi arg='t'>t&lt;/mi>&lt;/mrow>
+  &lt;/mfrac>
+  &lt;mrow arg='ft'>
+   &lt;mi>f&lt;/mi>
+   &lt;mo>&amp;#x2061;&lt;/mo>
+   &lt;mo>(&lt;/mo>
+   &lt;mi>t&lt;/mi>
+   &lt;mo>)&lt;/mo>
+  &lt;/mrow>
+ &lt;/mrow>
+&lt;/math>   
+    
+</pre></td><td>
+
+     <math display='block'>
+      <mrow intent='derivative@prefix(
+                    _of,$ft,_with_respect_to,$t)'>
+       <mfrac>
+        <mrow><mi>d</mi></mrow>
+        <mrow><mi>d</mi><mi arg='t'>t</mi></mrow>
+       </mfrac>
+       <mrow arg='ft'>
+        <mi>f</mi>
+        <mo>&#x2061;</mo>
+        <mo>(</mo>
+        <mi>t</mi>
+        <mo>)</mo>
+       </mrow>
+      </mrow>
+     </math>
+    <div class="mathcat">derivative  of f of t  with respect to t,</div>
+   
+    </td>
+
+    <td>\frac{d}{dt}f(t)</td>
+    <td id="IDdbydtfoft"><a class="self" href="#IDdbydtfoft">d by dt f of t</a></td>
+ </tr>
+
+   <tr>
+    <td><pre>
+
+&lt;math display='block'>
  &lt;mfrac>
   &lt;mrow>
    &lt;msup>
