@@ -1267,6 +1267,7 @@ caused by: Error in intent value: extra unparsed intent &apos;234:thousands-comm
   &lt;mi>C&lt;/mi>
   &lt;mo>(&lt;/mo>
   &lt;mi>n&lt;/mi>
+  &lt;mo>,&lt;/mo>
   &lt;mi>k&lt;/mi>
   &lt;mo>)&lt;/mo>
  &lt;/mrow>
@@ -1279,11 +1280,12 @@ caused by: Error in intent value: extra unparsed intent &apos;234:thousands-comm
        <mi>C</mi>
        <mo>(</mo>
        <mi>n</mi>
+       <mo>,</mo>
        <mi>k</mi>
        <mo>)</mo>
       </mrow>
      </math>
-    <div class="mathcat">c n k</div>
+    <div class="mathcat">c of, open paren n comma k, close paren</div>
 
     </td>
 
@@ -1294,6 +1296,7 @@ caused by: Error in intent value: extra unparsed intent &apos;234:thousands-comm
   &lt;mi>C&lt;/mi>
   &lt;mo>(&lt;/mo>
   &lt;mi arg='n'>n&lt;/mi>
+  &lt;mo>,&lt;/mo>
   &lt;mi arg='k'>k&lt;/mi>
   &lt;mo>)&lt;/mo>
  &lt;/mrow>
@@ -1306,6 +1309,7 @@ caused by: Error in intent value: extra unparsed intent &apos;234:thousands-comm
        <mi>C</mi>
        <mo>(</mo>
        <mi arg='n'>n</mi>
+       <mo>,</mo>
        <mi arg='k'>k</mi>
        <mo>)</mo>
       </mrow>
@@ -1321,6 +1325,7 @@ caused by: Error in intent value: extra unparsed intent &apos;234:thousands-comm
   &lt;mi>C&lt;/mi>
   &lt;mo>(&lt;/mo>
   &lt;mi arg='n'>n&lt;/mi>
+  &lt;mo>,&lt;/mo>
   &lt;mi arg='k'>k&lt;/mi>
   &lt;mo>)&lt;/mo>
  &lt;/mrow>
@@ -1333,6 +1338,7 @@ caused by: Error in intent value: extra unparsed intent &apos;234:thousands-comm
        <mi>C</mi>
        <mo>(</mo>
        <mi arg='n'>n</mi>
+       <mo>,</mo>
        <mi arg='k'>k</mi>
        <mo>)</mo>
       </mrow>
@@ -1377,7 +1383,7 @@ caused by: Error in intent value: extra unparsed intent &apos;234:thousands-comm
     <td><pre>
 
 &lt;math display='block'>
- &lt;mmultiscripts intent='P($n,$k)'>
+ &lt;mmultiscripts intent='permutations($n,$k)'>
   &lt;mi>P&lt;/mi>
   &lt;mi arg='k'>k&lt;/mi>
   &lt;mrow/>
@@ -1390,7 +1396,7 @@ caused by: Error in intent value: extra unparsed intent &apos;234:thousands-comm
 </pre></td><td>
 
      <math display='block'>
-      <mmultiscripts intent='P($n,$k)'>
+      <mmultiscripts intent='permutations($n,$k)'>
        <mi>P</mi>
        <mi arg='k'>k</mi>
        <mrow/>
@@ -1399,14 +1405,14 @@ caused by: Error in intent value: extra unparsed intent &apos;234:thousands-comm
        <mi arg='n'>n</mi>
       </mmultiscripts>
      </math>
-    <div class="mathcat">P of, n comma k</div>
+    <div class="mathcat">permutations of, n comma k</div>
 
     </td>
 
     <td><pre>
 
 &lt;math display='block'>
- &lt;mmultiscripts intent='P@prefix($n,$k)'>
+ &lt;mmultiscripts intent='permutations@prefix($n,$k)'>
   &lt;mi>P&lt;/mi>
   &lt;mi arg='k'>k&lt;/mi>
   &lt;mrow/>
@@ -1419,7 +1425,7 @@ caused by: Error in intent value: extra unparsed intent &apos;234:thousands-comm
 </pre></td><td>
 
      <math display='block'>
-      <mmultiscripts intent='P@prefix($n,$k)'>
+      <mmultiscripts intent='permutations@prefix($n,$k)'>
        <mi>P</mi>
        <mi arg='k'>k</mi>
        <mrow/>
@@ -1428,7 +1434,7 @@ caused by: Error in intent value: extra unparsed intent &apos;234:thousands-comm
        <mi arg='n'>n</mi>
       </mmultiscripts>
      </math>
-    <div class="mathcat">P n k,</div>
+    <div class="mathcat">permutations n k,</div>
 
     </td>
 
@@ -1462,7 +1468,8 @@ caused by: Error in intent value: extra unparsed intent &apos;234:thousands-comm
     <td><pre>
 
 &lt;math display='block'>
- &lt;msubsup intent='P($n,$k)'>
+ &lt;msubsup
+     intent='P($n,$k)'>
   &lt;mi>P&lt;/mi>
   &lt;mi arg='k'>k&lt;/mi>
   &lt;mi arg='n'>n&lt;/mi>
@@ -1472,7 +1479,8 @@ caused by: Error in intent value: extra unparsed intent &apos;234:thousands-comm
 </pre></td><td>
 
      <math display='block'>
-      <msubsup intent='P($n,$k)'>
+      <msubsup
+          intent='P($n,$k)'>
        <mi>P</mi>
        <mi arg='k'>k</mi>
        <mi arg='n'>n</mi>
@@ -1485,7 +1493,16 @@ caused by: Error in intent value: extra unparsed intent &apos;234:thousands-comm
     <td><pre>
 
 &lt;math display='block'>
- &lt;msubsup intent='P@prefix($n,$k)'>
+ &lt;msubsup
+     intent='permutations@prefix($n,$k)'>
+  &lt;mi>P&lt;/mi>
+  &lt;mi arg='k'>k&lt;/mi>
+  &lt;mi arg='n'>n&lt;/mi>
+ &lt;/msubsup>
+&lt;/math>
+&lt;math display='block'>
+ &lt;msubsup
+     intent='_permutations@prefix(_of,$k,_from,$n)'>
   &lt;mi>P&lt;/mi>
   &lt;mi arg='k'>k&lt;/mi>
   &lt;mi arg='n'>n&lt;/mi>
@@ -1495,13 +1512,24 @@ caused by: Error in intent value: extra unparsed intent &apos;234:thousands-comm
 </pre></td><td>
 
      <math display='block'>
-      <msubsup intent='P@prefix($n,$k)'>
+      <msubsup
+          intent='permutations@prefix($n,$k)'>
        <mi>P</mi>
        <mi arg='k'>k</mi>
        <mi arg='n'>n</mi>
       </msubsup>
      </math>
-    <div class="mathcat">P n k,</div>
+    <div class="mathcat">permutations n k,</div>
+
+     <math display='block'>
+      <msubsup
+          intent='_permutations@prefix(_of,$k,_from,$n)'>
+       <mi>P</mi>
+       <mi arg='k'>k</mi>
+       <mi arg='n'>n</mi>
+      </msubsup>
+     </math>
+    <div class="mathcat">permutations  of k  from n,</div>
 
     </td>
 
@@ -1539,10 +1567,12 @@ caused by: Error in intent value: extra unparsed intent &apos;234:thousands-comm
     <td><pre>
 
 &lt;math display='block'>
- &lt;mrow intent='P($n,$k)'>
+ &lt;mrow
+     intent='permutations($n,$k)'>
   &lt;mi>P&lt;/mi>
   &lt;mo>(&lt;/mo>
   &lt;mi arg='n'>n&lt;/mi>
+  &lt;mo>,&lt;/mo>
   &lt;mi arg='k'>k&lt;/mi>
   &lt;mo>)&lt;/mo>
  &lt;/mrow>
@@ -1551,25 +1581,40 @@ caused by: Error in intent value: extra unparsed intent &apos;234:thousands-comm
 </pre></td><td>
 
      <math display='block'>
-      <mrow intent='P($n,$k)'>
+      <mrow
+          intent='permutations($n,$k)'>
        <mi>P</mi>
        <mo>(</mo>
        <mi arg='n'>n</mi>
+       <mo>,</mo>
        <mi arg='k'>k</mi>
        <mo>)</mo>
       </mrow>
      </math>
-    <div class="mathcat">P of, n comma k</div>
+    <div class="mathcat">permutations of, n comma k</div>
 
     </td>
 
     <td><pre>
 
 &lt;math display='block'>
- &lt;mrow intent='P@prefix($n,$k)'>
+ &lt;mrow
+     intent='permutations@prefix($n,$k)'>
   &lt;mi>P&lt;/mi>
   &lt;mo>(&lt;/mo>
   &lt;mi arg='n'>n&lt;/mi>
+  &lt;mo>,&lt;/mo>
+  &lt;mi arg='k'>k&lt;/mi>
+  &lt;mo>)&lt;/mo>
+ &lt;/mrow>
+&lt;/math>
+&lt;math display='block'>
+ &lt;mrow
+     intent='_permutations@prefix(_of,$k,_from, $n)'>
+  &lt;mi>P&lt;/mi>
+  &lt;mo>(&lt;/mo>
+  &lt;mi arg='n'>n&lt;/mi>
+  &lt;mo>,&lt;/mo>
   &lt;mi arg='k'>k&lt;/mi>
   &lt;mo>)&lt;/mo>
  &lt;/mrow>
@@ -1578,15 +1623,30 @@ caused by: Error in intent value: extra unparsed intent &apos;234:thousands-comm
 </pre></td><td>
 
      <math display='block'>
-      <mrow intent='P@prefix($n,$k)'>
+      <mrow
+          intent='permutations@prefix($n,$k)'>
        <mi>P</mi>
        <mo>(</mo>
        <mi arg='n'>n</mi>
+       <mo>,</mo>
        <mi arg='k'>k</mi>
        <mo>)</mo>
       </mrow>
      </math>
-    <div class="mathcat">P n k,</div>
+    <div class="mathcat">permutations n k,</div>
+
+     <math display='block'>
+      <mrow
+          intent='_permutations@prefix(_of,$k,_from, $n)'>
+       <mi>P</mi>
+       <mo>(</mo>
+       <mi arg='n'>n</mi>
+       <mo>,</mo>
+       <mi arg='k'>k</mi>
+       <mo>)</mo>
+      </mrow>
+     </math>
+    <div class="mathcat">permutations  of k  from n,</div>
 
     </td>
 

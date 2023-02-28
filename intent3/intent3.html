@@ -549,6 +549,7 @@
        <mi>C</mi>
        <mo>(</mo>
        <mi>n</mi>
+       <mo>,</mo>
        <mi>k</mi>
        <mo>)</mo>
       </mrow>
@@ -560,6 +561,7 @@
        <mi>C</mi>
        <mo>(</mo>
        <mi arg='n'>n</mi>
+       <mo>,</mo>
        <mi arg='k'>k</mi>
        <mo>)</mo>
       </mrow>
@@ -571,6 +573,7 @@
        <mi>C</mi>
        <mo>(</mo>
        <mi arg='n'>n</mi>
+       <mo>,</mo>
        <mi arg='k'>k</mi>
        <mo>)</mo>
       </mrow>
@@ -594,7 +597,7 @@
     </td>
     <td>
      <math display='block'>
-      <mmultiscripts intent='P($n,$k)'>
+      <mmultiscripts intent='permutations($n,$k)'>
        <mi>P</mi>
        <mi arg='k'>k</mi>
        <mrow/>
@@ -606,7 +609,7 @@
     </td>
     <td>
      <math display='block'>
-      <mmultiscripts intent='P@prefix($n,$k)'>
+      <mmultiscripts intent='permutations@prefix($n,$k)'>
        <mi>P</mi>
        <mi arg='k'>k</mi>
        <mrow/>
@@ -631,7 +634,8 @@
     </td>
     <td>
      <math display='block'>
-      <msubsup intent='P($n,$k)'>
+      <msubsup
+	  intent='P($n,$k)'>
        <mi>P</mi>
        <mi arg='k'>k</mi>
        <mi arg='n'>n</mi>
@@ -640,7 +644,16 @@
     </td>
     <td>
      <math display='block'>
-      <msubsup intent='P@prefix($n,$k)'>
+      <msubsup
+	  intent='permutations@prefix($n,$k)'>
+       <mi>P</mi>
+       <mi arg='k'>k</mi>
+       <mi arg='n'>n</mi>
+      </msubsup>
+     </math>
+     <math display='block'>
+      <msubsup
+	  intent='_permutations@prefix(_of,$k,_from,$n)'>
        <mi>P</mi>
        <mi arg='k'>k</mi>
        <mi arg='n'>n</mi>
@@ -664,10 +677,12 @@
     </td>
     <td>
      <math display='block'>
-      <mrow intent='P($n,$k)'>
+      <mrow
+	  intent='permutations($n,$k)'>
        <mi>P</mi>
        <mo>(</mo>
        <mi arg='n'>n</mi>
+       <mo>,</mo>
        <mi arg='k'>k</mi>
        <mo>)</mo>
       </mrow>
@@ -675,10 +690,23 @@
     </td>
     <td>
      <math display='block'>
-      <mrow intent='P@prefix($n,$k)'>
+      <mrow
+	  intent='permutations@prefix($n,$k)'>
        <mi>P</mi>
        <mo>(</mo>
        <mi arg='n'>n</mi>
+       <mo>,</mo>
+       <mi arg='k'>k</mi>
+       <mo>)</mo>
+      </mrow>
+     </math>
+     <math display='block'>
+      <mrow
+	  intent='_permutations@prefix(_of,$k,_from, $n)'>
+       <mi>P</mi>
+       <mo>(</mo>
+       <mi arg='n'>n</mi>
+       <mo>,</mo>
        <mi arg='k'>k</mi>
        <mo>)</mo>
       </mrow>
