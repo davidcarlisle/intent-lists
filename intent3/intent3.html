@@ -1646,8 +1646,80 @@
       </mfrac>
      </math>
     </td>
-    <td>\frac{dx}{dt}</td>
-    <td>dx by dt</td>
+    <td>\frac{d^2x}{dt^2}</td>
+    <td>dx2 by dt2</td>
+   </tr>
+
+   <tr>
+    <td>
+     <math display='block'>
+      <mfrac>
+       <mrow>
+	<msup>
+	 <mo>&#x2202;</mo><mn>2</mn>
+	</msup>
+	<mi>f</mi>
+       </mrow>
+       <mrow>
+	<mrow>
+	 <mo>&#x2202;</mo>
+	 <mi>x</mi>
+	</mrow>
+	<mrow>
+	 <mo>&#x2202;</mo>
+	 <mi>y</mi>
+	</mrow>
+       </mrow>
+      </mfrac>
+     </math>
+    </td>
+    <td>
+     <math display='block'>
+      <mfrac intent='partial-second-derivative($f,$x,$y)'>
+       <mrow>
+	<msup>
+	 <mo>&#x2202;</mo><mn>2</mn>
+	</msup>
+	<mi arg='f'>f</mi>
+       </mrow>
+       <mrow>
+	<mrow>
+	 <mo>&#x2202;</mo>
+	 <mi arg='x'>x</mi>
+	</mrow>
+	<mrow>
+	 <mo>&#x2202;</mo>
+	 <mi arg='y'>y</mi>
+	</mrow>
+       </mrow>
+      </mfrac>
+     </math>
+    </td>
+    <td>
+     <math display='block'>
+      <mfrac intent='partial-second-derivative@prefix(
+		     _of,$f,_with_respect_to,$x,_and,$y)'>
+       <mrow>
+	<msup>
+	 <mo>&#x2202;</mo><mn>2</mn>
+	</msup>
+	<mi arg='f'>f</mi>
+       </mrow>
+       <mrow>
+	<mrow>
+	 <mo>&#x2202;</mo>
+	 <mi arg='x'>x</mi>
+	</mrow>
+	<mrow>
+	 <mo>&#x2202;</mo>
+	 <mi arg='y'>y</mi>
+	</mrow>
+       </mrow>
+      </mfrac>
+     </math>
+    </td>
+    <td>\frac{\partial^2 f}{\partial x \partial y}</td>
+    <td>partial df by dx dy</td>
    </tr>
 
    <tr>
@@ -1701,6 +1773,59 @@
     </td>
     <td>\int f(x) dx</td>
     <td>int f(x) dx</td>    
+   </tr>
+
+   <tr>
+    <td>
+     <math display='block'>
+      <msub>
+       <mo>&#x222E;</mo>
+       <mi>C</mi>
+      </msub>
+      <mfrac>
+       <mn>1</mn>
+       <mi>z</mi>
+      </mfrac>
+      <mrow>
+       <mi>d</mi>
+       <mi>z</mi>
+      </mrow>
+     </math>
+    </td>
+    <td>
+     <math display='block'>
+      <msub>
+       <mo>&#x222E;</mo>
+       <mi>C</mi>
+      </msub>
+      <mfrac>
+       <mn>1</mn>
+       <mi>z</mi>
+      </mfrac>
+      <mrow>
+       <mi>d</mi>
+       <mi>z</mi>
+      </mrow>
+     </math>
+    </td>
+    <td>
+     <math display='block'>
+      <msub>
+       <mo>&#x222E;</mo>
+       <mi>C</mi>
+      </msub>
+      <mfrac>
+       <mn>1</mn>
+       <mi>z</mi>
+      </mfrac>
+      <mrow>
+       <mi>d</mi>
+       <mi>z</mi>
+      </mrow>
+     </math>
+    </td>
+    <td>\oint \frac{1}{z} dz</td>
+    <td>oint1 over z dz</td>   
    </tr>
 
    <tr>

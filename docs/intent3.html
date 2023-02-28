@@ -3680,8 +3680,162 @@ caused by: Error in intent value: extra unparsed intent &apos;234:thousands-comm
 
     </td>
 
-    <td>\frac{dx}{dt}</td>
-    <td id="IDdxbydt"><a class="self" href="#IDdxbydt">dx by dt</a></td>
+    <td>\frac{d^2x}{dt^2}</td>
+    <td id="IDdx2bydt2"><a class="self" href="#IDdx2bydt2">dx2 by dt2</a></td>
+ </tr>
+
+   <tr>
+    <td><pre>
+
+&lt;math display='block'>
+ &lt;mfrac>
+  &lt;mrow>
+   &lt;msup>
+    &lt;mo>&amp;#x2202;&lt;/mo>&lt;mn>2&lt;/mn>
+   &lt;/msup>
+   &lt;mi>f&lt;/mi>
+  &lt;/mrow>
+  &lt;mrow>
+   &lt;mrow>
+    &lt;mo>&amp;#x2202;&lt;/mo>
+    &lt;mi>x&lt;/mi>
+   &lt;/mrow>
+   &lt;mrow>
+    &lt;mo>&amp;#x2202;&lt;/mo>
+    &lt;mi>y&lt;/mi>
+   &lt;/mrow>
+  &lt;/mrow>
+ &lt;/mfrac>
+&lt;/math>
+    
+</pre></td><td>
+
+     <math display='block'>
+      <mfrac>
+       <mrow>
+        <msup>
+         <mo>&#x2202;</mo><mn>2</mn>
+        </msup>
+        <mi>f</mi>
+       </mrow>
+       <mrow>
+        <mrow>
+         <mo>&#x2202;</mo>
+         <mi>x</mi>
+        </mrow>
+        <mrow>
+         <mo>&#x2202;</mo>
+         <mi>y</mi>
+        </mrow>
+       </mrow>
+      </mfrac>
+     </math>
+    <div class="mathcat">fraction, partial derivative squared f, over, partial derivative x, partial derivative y, end fraction;</div>
+
+    </td>
+
+    <td><pre>
+
+&lt;math display='block'>
+ &lt;mfrac intent='partial-second-derivative($f,$x,$y)'>
+  &lt;mrow>
+   &lt;msup>
+    &lt;mo>&amp;#x2202;&lt;/mo>&lt;mn>2&lt;/mn>
+   &lt;/msup>
+   &lt;mi arg='f'>f&lt;/mi>
+  &lt;/mrow>
+  &lt;mrow>
+   &lt;mrow>
+    &lt;mo>&amp;#x2202;&lt;/mo>
+    &lt;mi arg='x'>x&lt;/mi>
+   &lt;/mrow>
+   &lt;mrow>
+    &lt;mo>&amp;#x2202;&lt;/mo>
+    &lt;mi arg='y'>y&lt;/mi>
+   &lt;/mrow>
+  &lt;/mrow>
+ &lt;/mfrac>
+&lt;/math>
+    
+</pre></td><td>
+
+     <math display='block'>
+      <mfrac intent='partial-second-derivative($f,$x,$y)'>
+       <mrow>
+        <msup>
+         <mo>&#x2202;</mo><mn>2</mn>
+        </msup>
+        <mi arg='f'>f</mi>
+       </mrow>
+       <mrow>
+        <mrow>
+         <mo>&#x2202;</mo>
+         <mi arg='x'>x</mi>
+        </mrow>
+        <mrow>
+         <mo>&#x2202;</mo>
+         <mi arg='y'>y</mi>
+        </mrow>
+       </mrow>
+      </mfrac>
+     </math>
+    <div class="mathcat">partial second derivative of, f comma x comma y</div>
+
+    </td>
+
+    <td><pre>
+
+&lt;math display='block'>
+ &lt;mfrac intent='partial-second-derivative@prefix(
+                _of,$f,_with_respect_to,$x,_and,$y)'>
+  &lt;mrow>
+   &lt;msup>
+    &lt;mo>&amp;#x2202;&lt;/mo>&lt;mn>2&lt;/mn>
+   &lt;/msup>
+   &lt;mi arg='f'>f&lt;/mi>
+  &lt;/mrow>
+  &lt;mrow>
+   &lt;mrow>
+    &lt;mo>&amp;#x2202;&lt;/mo>
+    &lt;mi arg='x'>x&lt;/mi>
+   &lt;/mrow>
+   &lt;mrow>
+    &lt;mo>&amp;#x2202;&lt;/mo>
+    &lt;mi arg='y'>y&lt;/mi>
+   &lt;/mrow>
+  &lt;/mrow>
+ &lt;/mfrac>
+&lt;/math>
+    
+</pre></td><td>
+
+     <math display='block'>
+      <mfrac intent='partial-second-derivative@prefix(
+                     _of,$f,_with_respect_to,$x,_and,$y)'>
+       <mrow>
+        <msup>
+         <mo>&#x2202;</mo><mn>2</mn>
+        </msup>
+        <mi arg='f'>f</mi>
+       </mrow>
+       <mrow>
+        <mrow>
+         <mo>&#x2202;</mo>
+         <mi arg='x'>x</mi>
+        </mrow>
+        <mrow>
+         <mo>&#x2202;</mo>
+         <mi arg='y'>y</mi>
+        </mrow>
+       </mrow>
+      </mfrac>
+     </math>
+    <div class="mathcat">partial second derivative  of f  with respect to x  and y,</div>
+
+    </td>
+
+    <td>\frac{\partial^2 f}{\partial x \partial y}</td>
+    <td id="IDpartialdfbydxdy"><a class="self" href="#IDpartialdfbydxdy">partial df by dx dy</a></td>
  </tr>
 
    <tr>
@@ -3798,6 +3952,122 @@ caused by: Error in intent value: extra unparsed intent &apos;234:thousands-comm
 
     <td>\int f(x) dx</td>
     <td id="IDintfxdx"><a class="self" href="#IDintfxdx">int f(x) dx</a></td>
+ </tr>
+
+   <tr>
+    <td><pre>
+
+&lt;math display='block'>
+ &lt;msub>
+  &lt;mo>&amp;#x222E;&lt;/mo>
+  &lt;mi>C&lt;/mi>
+ &lt;/msub>
+ &lt;mfrac>
+  &lt;mn>1&lt;/mn>
+  &lt;mi>z&lt;/mi>
+ &lt;/mfrac>
+ &lt;mrow>
+  &lt;mi>d&lt;/mi>
+  &lt;mi>z&lt;/mi>
+ &lt;/mrow>
+&lt;/math>
+    
+</pre></td><td>
+
+     <math display='block'>
+      <msub>
+       <mo>&#x222E;</mo>
+       <mi>C</mi>
+      </msub>
+      <mfrac>
+       <mn>1</mn>
+       <mi>z</mi>
+      </mfrac>
+      <mrow>
+       <mi>d</mi>
+       <mi>z</mi>
+      </mrow>
+     </math>
+    <div class="mathcat">the contour integral over   c of; 1 over z, d z</div>
+
+    </td>
+
+    <td><pre>
+
+&lt;math display='block'>
+ &lt;msub>
+  &lt;mo>&amp;#x222E;&lt;/mo>
+  &lt;mi>C&lt;/mi>
+ &lt;/msub>
+ &lt;mfrac>
+  &lt;mn>1&lt;/mn>
+  &lt;mi>z&lt;/mi>
+ &lt;/mfrac>
+ &lt;mrow>
+  &lt;mi>d&lt;/mi>
+  &lt;mi>z&lt;/mi>
+ &lt;/mrow>
+&lt;/math>
+    
+</pre></td><td>
+
+     <math display='block'>
+      <msub>
+       <mo>&#x222E;</mo>
+       <mi>C</mi>
+      </msub>
+      <mfrac>
+       <mn>1</mn>
+       <mi>z</mi>
+      </mfrac>
+      <mrow>
+       <mi>d</mi>
+       <mi>z</mi>
+      </mrow>
+     </math>
+    <div class="mathcat">the contour integral over   c of; 1 over z, d z</div>
+
+    </td>
+
+    <td><pre>
+
+&lt;math display='block'>
+ &lt;msub>
+  &lt;mo>&amp;#x222E;&lt;/mo>
+  &lt;mi>C&lt;/mi>
+ &lt;/msub>
+ &lt;mfrac>
+  &lt;mn>1&lt;/mn>
+  &lt;mi>z&lt;/mi>
+ &lt;/mfrac>
+ &lt;mrow>
+  &lt;mi>d&lt;/mi>
+  &lt;mi>z&lt;/mi>
+ &lt;/mrow>
+&lt;/math>
+    
+</pre></td><td>
+
+     <math display='block'>
+      <msub>
+       <mo>&#x222E;</mo>
+       <mi>C</mi>
+      </msub>
+      <mfrac>
+       <mn>1</mn>
+       <mi>z</mi>
+      </mfrac>
+      <mrow>
+       <mi>d</mi>
+       <mi>z</mi>
+      </mrow>
+     </math>
+    <div class="mathcat">the contour integral over   c of; 1 over z, d z</div>
+
+    </td>
+
+    <td>\oint \frac{1}{z} dz</td>
+    <td id="IDoint1overzdz"><a class="self" href="#IDoint1overzdz">oint1 over z dz</a></td>
  </tr>
 
    <tr>
