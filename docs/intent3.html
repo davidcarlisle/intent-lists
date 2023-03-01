@@ -21,7 +21,7 @@
  <body>
   <h1>Intent Examples 3</h1>
 
-  <p><a href="./">Index of Examples</a></p>
+  <p><a href='./'>Index of Examples</a></p>
 
   <table>
    <colgroup>
@@ -1000,6 +1000,226 @@ caused by: Error in intent value: extra unparsed intent &apos;234:thousands-comm
     <td id="IDordinal4th"><a class="self" href="#IDordinal4th">ordinal 4th</a></td>
  </tr>
 
+   <tr>
+    <td><pre>
+
+&lt;math display='block'>
+ &lt;mrow>
+  &lt;mi>A&lt;/mi>
+  &lt;mo>=&lt;/mo>
+  &lt;munderover>
+   &lt;mo>∑&lt;/mo>
+   &lt;mrow>
+    &lt;mi>n&lt;/mi>
+    &lt;mo>=&lt;/mo>
+    &lt;mn>0&lt;/mn>
+   &lt;/mrow>
+   &lt;mi>∞&lt;/mi>
+   &lt;/munderover>
+   &lt;msub>
+    &lt;mi>a&lt;/mi>
+    &lt;mi>n&lt;/mi>
+   &lt;/msub>
+   &lt;msup>
+    &lt;mi>X&lt;/mi>
+    &lt;mi>n&lt;/mi>
+   &lt;/msup>
+   &lt;mo>∈&lt;/mo>
+   &lt;mrow intent='R-power-series_over_X'>
+    &lt;mi>R&lt;/mi>
+    &lt;mo>&lt;/mo>
+    &lt;mo>⟦&lt;/mo>
+    &lt;mi>X&lt;/mi>
+    &lt;mo>⟧&lt;/mo>
+   &lt;/mrow>
+ &lt;/mrow>
+&lt;/math>
+    
+</pre></td><td>
+
+     <math display='block'>
+      <mrow>
+       <mi>A</mi>
+       <mo>=</mo>
+       <munderover>
+        <mo>∑</mo>
+        <mrow>
+         <mi>n</mi>
+         <mo>=</mo>
+         <mn>0</mn>
+        </mrow>
+        <mi>∞</mi>
+        </munderover>
+        <msub>
+         <mi>a</mi>
+         <mi>n</mi>
+        </msub>
+        <msup>
+         <mi>X</mi>
+         <mi>n</mi>
+        </msup>
+        <mo>∈</mo>
+        <mrow intent='R-power-series_over_X'>
+         <mi>R</mi>
+         <mo></mo>
+         <mo>⟦</mo>
+         <mi>X</mi>
+         <mo>⟧</mo>
+        </mrow>
+      </mrow>
+     </math>
+    <div class="mathcat">eigh is equal to; the sum from n is equal to 0 to infinity of; eigh sub n   x to the n-th; an element of R power series over X</div>
+
+    </td>
+
+    <td><pre>
+
+&lt;math display='block'>
+ &lt;mrow>
+  &lt;mi>A&lt;/mi>
+  &lt;mo>=&lt;/mo>
+  &lt;munderover>
+   &lt;mo>∑&lt;/mo>
+   &lt;mrow>
+    &lt;mi>n&lt;/mi>
+    &lt;mo>=&lt;/mo>
+    &lt;mn>0&lt;/mn>
+   &lt;/mrow>
+   &lt;mi>∞&lt;/mi>
+   &lt;/munderover>
+   &lt;msub>
+    &lt;mi>a&lt;/mi>
+    &lt;mi>n&lt;/mi>
+   &lt;/msub>
+   &lt;msup>
+    &lt;mi>X&lt;/mi>
+    &lt;mi>n&lt;/mi>
+   &lt;/msup>
+   &lt;mo>∈&lt;/mo>
+   &lt;mrow intent='power-series($r,$x)'>
+    &lt;mi arg='r'>R&lt;/mi>
+    &lt;mo>&lt;/mo>
+    &lt;mo>⟦&lt;/mo>
+    &lt;mi arg='x'>X&lt;/mi>
+    &lt;mo>⟧&lt;/mo>
+   &lt;/mrow>
+ &lt;/mrow>
+&lt;/math>
+    
+</pre></td><td>
+
+     <math display='block'>
+      <mrow>
+       <mi>A</mi>
+       <mo>=</mo>
+       <munderover>
+        <mo>∑</mo>
+        <mrow>
+         <mi>n</mi>
+         <mo>=</mo>
+         <mn>0</mn>
+        </mrow>
+        <mi>∞</mi>
+        </munderover>
+        <msub>
+         <mi>a</mi>
+         <mi>n</mi>
+        </msub>
+        <msup>
+         <mi>X</mi>
+         <mi>n</mi>
+        </msup>
+        <mo>∈</mo>
+        <mrow intent='power-series($r,$x)'>
+         <mi arg='r'>R</mi>
+         <mo></mo>
+         <mo>⟦</mo>
+         <mi arg='x'>X</mi>
+         <mo>⟧</mo>
+        </mrow>
+      </mrow>
+     </math>
+    <div class="mathcat">eigh is equal to; the sum from n is equal to 0 to infinity of; eigh sub n   x to the n-th; an element of, power series of,   r comma   x</div>
+
+    </td>
+
+    <td><pre>
+
+&lt;math display='block'>
+ &lt;mrow>
+  &lt;mi>A&lt;/mi>
+  &lt;mo>=&lt;/mo>
+  &lt;munderover>
+   &lt;mo>∑&lt;/mo>
+   &lt;mrow intent='_(0)'>
+    &lt;mi>n&lt;/mi>
+    &lt;mo>=&lt;/mo>
+    &lt;mn>0&lt;/mn>
+   &lt;/mrow>
+   &lt;mi>∞&lt;/mi>
+   &lt;/munderover>
+   &lt;msub>
+    &lt;mi>a&lt;/mi>
+    &lt;mi>n&lt;/mi>
+   &lt;/msub>
+   &lt;msup intent='_power@silent($x,_to_the,$n)'>
+    &lt;mi arg='x'>X&lt;/mi>
+    &lt;mi arg='n'>n&lt;/mi>
+   &lt;/msup>
+   &lt;mo>∈&lt;/mo>
+   &lt;mrow intent='power-series@silent(
+                 $r,_power_series,_over,$x)'>
+    &lt;mi arg='r'>R&lt;/mi>
+    &lt;mo>&lt;/mo>
+    &lt;mo>⟦&lt;/mo>
+    &lt;mi arg='x'>X&lt;/mi>
+    &lt;mo>⟧&lt;/mo>
+   &lt;/mrow>
+ &lt;/mrow>
+&lt;/math>
+    
+</pre></td><td>
+
+     <math display='block'>
+      <mrow>
+       <mi>A</mi>
+       <mo>=</mo>
+       <munderover>
+        <mo>∑</mo>
+        <mrow intent='_(0)'>
+         <mi>n</mi>
+         <mo>=</mo>
+         <mn>0</mn>
+        </mrow>
+        <mi>∞</mi>
+        </munderover>
+        <msub>
+         <mi>a</mi>
+         <mi>n</mi>
+        </msub>
+        <msup intent='_power@silent($x,_to_the,$n)'>
+         <mi arg='x'>X</mi>
+         <mi arg='n'>n</mi>
+        </msup>
+        <mo>∈</mo>
+        <mrow intent='power-series@silent(
+                      $r,_power_series,_over,$x)'>
+         <mi arg='r'>R</mi>
+         <mo></mo>
+         <mo>⟦</mo>
+         <mi arg='x'>X</mi>
+         <mo>⟧</mo>
+        </mrow>
+      </mrow>
+     </math>
+    <div class="mathcat">eigh is equal to; the sum from 0 to infinity of; eigh sub n   x  to the n; an element of,   r  power series  over   x</div>
+
+    </td>
+
+    <td>A=\sum_0^\infty a_n X^n \in R\lBrack X \rBrack</td>
+    <td id="IDformalpowerseries"><a class="self" href="#IDformalpowerseries">formal power series</a></td>
+ </tr>
+   
    <tr>
     <th colspan='6' id="IDCombinationsandPermutations"><a class="self" href="#IDCombinationsandPermutations">Combinations and Permutations</a></th>
  </tr>
@@ -4305,7 +4525,7 @@ caused by: Error in intent value: extra unparsed intent &apos;234:thousands-comm
        </msubsup>
       </mrow>
      </math>
-    <div class="mathcat">open bracket evaluated at 1 minus the same expression evaluated at 0</div>
+    <div class="mathcat">2 x evaluated at 1 minus the same expression evaluated at 0</div>
 
     </td>
 
@@ -4340,7 +4560,7 @@ caused by: Error in intent value: extra unparsed intent &apos;234:thousands-comm
        </msubsup>
       </mrow>
      </math>
-    <div class="mathcat">open bracket evaluated at 1 minus the same expression evaluated at 0</div>
+    <div class="mathcat">2 x evaluated at 1 minus the same expression evaluated at 0</div>
 
     </td>
 
@@ -4375,7 +4595,7 @@ caused by: Error in intent value: extra unparsed intent &apos;234:thousands-comm
        </msubsup>
       </mrow>
      </math>
-    <div class="mathcat">open bracket evaluated at 1 minus the same expression evaluated at 0</div>
+    <div class="mathcat">2 x evaluated at 1 minus the same expression evaluated at 0</div>
 
     </td>
 
@@ -4414,7 +4634,7 @@ caused by: Error in intent value: extra unparsed intent &apos;234:thousands-comm
        <mn>1</mn>
       </msubsup>
      </math>
-    <div class="mathcat">open bracket evaluated at 1 minus the same expression evaluated at 0</div>
+    <div class="mathcat">2 x evaluated at 1 minus the same expression evaluated at 0</div>
 
     </td>
 
@@ -4449,7 +4669,7 @@ caused by: Error in intent value: extra unparsed intent &apos;234:thousands-comm
        <mn>1</mn>
       </msubsup>
      </math>
-    <div class="mathcat">open bracket evaluated at 1 minus the same expression evaluated at 0</div>
+    <div class="mathcat">2 x evaluated at 1 minus the same expression evaluated at 0</div>
 
     </td>
 
@@ -4484,7 +4704,7 @@ caused by: Error in intent value: extra unparsed intent &apos;234:thousands-comm
        <mn>1</mn>
       </msubsup>
      </math>
-    <div class="mathcat">open bracket evaluated at 1 minus the same expression evaluated at 0</div>
+    <div class="mathcat">2 x evaluated at 1 minus the same expression evaluated at 0</div>
 
     </td>
 
@@ -4624,7 +4844,7 @@ caused by: Error in intent value: extra unparsed intent &apos;234:thousands-comm
        <mn>1</mn>
       </msubsup>
      </math>
-    <div class="mathcat">2 x vertical line sub 0 to the first</div>
+    <div class="mathcat">2 x evaluated at 1 minus the same expression evaluated at 0</div>
 
     </td>
 
@@ -4657,7 +4877,7 @@ caused by: Error in intent value: extra unparsed intent &apos;234:thousands-comm
        <mn>1</mn>
       </msubsup>
      </math>
-    <div class="mathcat">2 x vertical line sub 0 to the first</div>
+    <div class="mathcat">2 x evaluated at 1 minus the same expression evaluated at 0</div>
 
     </td>
 
@@ -4690,7 +4910,7 @@ caused by: Error in intent value: extra unparsed intent &apos;234:thousands-comm
        <mn>1</mn>
       </msubsup>
      </math>
-    <div class="mathcat">2 x vertical line sub 0 to the first</div>
+    <div class="mathcat">2 x evaluated at 1 minus the same expression evaluated at 0</div>
 
     </td>
 

@@ -21,7 +21,7 @@
  <body>
   <h1>Intent Examples 3</h1>
 
-  <p><a href="./">Index of Examples</a></p>
+  <p><a href='./'>Index of Examples</a></p>
 
   <table>
    <colgroup>
@@ -427,6 +427,111 @@
     <td>ordinal 4th</td>
    </tr>
 
+   <tr>
+    <td>
+     <math display='block'>
+      <mrow>
+       <mi>A</mi>
+       <mo>=</mo>
+       <munderover>
+        <mo>∑</mo>
+        <mrow>
+         <mi>n</mi>
+         <mo>=</mo>
+         <mn>0</mn>
+        </mrow>
+        <mi>∞</mi>
+        </munderover>
+        <msub>
+         <mi>a</mi>
+         <mi>n</mi>
+        </msub>
+        <msup>
+         <mi>X</mi>
+         <mi>n</mi>
+        </msup>
+        <mo>∈</mo>
+	<mrow intent='R-power-series_over_X'>
+         <mi>R</mi>
+         <mo></mo>
+         <mo>⟦</mo>
+         <mi>X</mi>
+         <mo>⟧</mo>
+	</mrow>
+      </mrow>
+     </math>
+    </td>
+    <td>
+     <math display='block'>
+      <mrow>
+       <mi>A</mi>
+       <mo>=</mo>
+       <munderover>
+        <mo>∑</mo>
+        <mrow>
+         <mi>n</mi>
+         <mo>=</mo>
+         <mn>0</mn>
+        </mrow>
+        <mi>∞</mi>
+        </munderover>
+        <msub>
+         <mi>a</mi>
+         <mi>n</mi>
+        </msub>
+        <msup>
+         <mi>X</mi>
+         <mi>n</mi>
+        </msup>
+        <mo>∈</mo>
+	<mrow intent='power-series($r,$x)'>
+         <mi arg='r'>R</mi>
+         <mo></mo>
+         <mo>⟦</mo>
+         <mi arg='x'>X</mi>
+         <mo>⟧</mo>
+	</mrow>
+      </mrow>
+     </math>
+    </td>
+    <td>
+     <math display='block'>
+      <mrow>
+       <mi>A</mi>
+       <mo>=</mo>
+       <munderover>
+        <mo>∑</mo>
+        <mrow intent='_(0)'>
+         <mi>n</mi>
+         <mo>=</mo>
+         <mn>0</mn>
+        </mrow>
+        <mi>∞</mi>
+        </munderover>
+        <msub>
+         <mi>a</mi>
+         <mi>n</mi>
+        </msub>
+        <msup intent='_power@silent($x,_to_the,$n)'>
+         <mi arg='x'>X</mi>
+         <mi arg='n'>n</mi>
+        </msup>
+        <mo>∈</mo>
+	<mrow intent='power-series@silent(
+		      $r,_power_series,_over,$x)'>
+         <mi arg='r'>R</mi>
+         <mo></mo>
+         <mo>⟦</mo>
+         <mi arg='x'>X</mi>
+         <mo>⟧</mo>
+	</mrow>
+      </mrow>
+     </math>
+    </td>
+    <td>A=\sum_0^\infty a_n X^n \in R\lBrack X \rBrack</td>
+    <td>formal power series</td>
+   </tr>
+   
    <tr>
     <th colspan='6'>Combinations and Permutations</th>
    </tr>
