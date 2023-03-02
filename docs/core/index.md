@@ -1,19 +1,26 @@
 
 ## Core list
 
-| concept   | arity | hint     | speech template (en)                 | Comments     |
-| ----      | ----  | ----     | ----                                 |              |
-| power     | 2     | infix*   | IF $2=2<br> $1 squared               |              |
-| power     | 2     | infix*   | IF $2=3<br> $1 cubed                 |              |
-| power     | 2     | infix*   | IF $2=_n_<br> $1 to the $2_th_ power |              |
-| equals    | 2     | infix*   | $1 equals $2                         |              |
-| equals    | 2     | infix*   | $1 is equal to $2                    |              |
-| equals    | 2     | function | equal to $1, $2                      |              |
-| factorial | 1     | postfix* | $1 factoral                          |              |
-| factorial | 1     | function | factorial of $1                      | This row could be deleted, as it follows from the default behaviour |
-| sin       | 1     | prefix*  | sine $1                              |              |
-| sin       | 1     | function | sine of $1                           |              |
-| ⋮          | ⋮     | ⋮         | ⋮                                     | More to be added |
+| concept   | arity | hint      | speech template (en)                 | Comments     |
+| ----      | ----  | ----      | ----                                 |              |
+| power     | 2     | infix*    | IF $2=2<br> $1 squared               |              |
+| power     | 2     | infix*    | IF $2=3<br> $1 cubed                 |              |
+| power     | 2     | infix*    | IF $2=_n_<br> $1 to the $2_th_ power |              |
+| equals    | 2     | infix*    | $1 equals $2                         |              |
+| equals    | 2     | infix*    | $1 is equal to $2                    |              |
+| equals    | 2     | function  | equal to $1, $2                      |              |
+| factorial | 1     | postfix*  | $1 factoral                          |              |
+| factorial | 1     | function  | factorial of $1                      | This row could be deleted, as it follows from the default behaviour |
+| sin       | 1     | prefix*   | sine $1                              |              |
+| sin       | 1     | function  | sine of $1                           |              |
+| log       | 2     | function* | log base $2 of $1                      |  arity 1 log(x)  needs no rule here |
+| ln        | 1     | function* | natural log of $1                      |  |
+| ln        | 1     | function* | log of $1                      |  |
+| ln        | 1     | function* | log base e of $1                      |  |
+| ln        | 1     | prefix    | natural log $1                     |  |
+| ln        | 1     | prefix    | log $1                     |  |
+| ln        | 1     | prefix    | log base e $1                     |  |
+| ⋮          | ⋮     | ⋮          | ⋮                                     | More to be added |
 
 -----
 
