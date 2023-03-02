@@ -1,7 +1,7 @@
 # Core Concept List
 
 
-## Matching the list
+## Matching the List
 
 1. A intent processor should match a system-specifed list of known concept names.
 The list should include all the entries from the **core** list below.
@@ -25,9 +25,9 @@ controlled by the context, or by system option settings such as "Verbosity".
 
 ----
 
-## Core list
+## Core List
 
-| concept   | arity | hint      | speech template (en)                 | Comments     |
+| Concept   | Arity | Hint      | Speech Template (en)                 | Comments     |
 | ----      | ----  | ----      | ----                                 | ----         |
 | power     | 2     | infix*    | $1 squared [$2=2] <br> $1 cubed [$2=3] <br> $1 to the $2_th_ power             |              |
 | equals    | 2     | infix*    | $1 equals $2  <br>   $1 is equal to $2                      |              |
@@ -45,7 +45,7 @@ controlled by the context, or by system option settings such as "Verbosity".
 
 ### Key
 
-| entry | meaning |
+| Entry | Meaning |
 | ---- | ---- |
 | `*` | hint default if no `@` hint given |
 | _th_  | suitable ordinal indicator, so `st`  `nd` `rd` or `th` in English. |
