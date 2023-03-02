@@ -36,6 +36,9 @@ controlled by the context, or by system option settings such as "Verbosity".
 | factorial | 1     | function  | factorial of $1                      | This row could be deleted, as it follows from the default behaviour |
 | sin       | 1     | prefix*   | sine $1                              |              |
 | sin       | 1     | function  | sine of $1                           |              |
+| sinh      | 1     | prefix*   | shine <br> sinch                     | <https://www.youtube.com/watch?v=jA-pkiwLVjA> |
+| cosh      | 1     | prefix*   | cosh <br> kosh                    | |
+| tanh      | 1     | prefix*   | than <br> tanch                   | |
 | log       | 2     | function* | log base $2 of $1                      |  arity 1 log(x)  needs no rule here |
 | ln        | 1     | function* | natural log of $1 <br> log of $1  <br>  log base e of $1                   |  |
 | ln        | 1     | prefix    | natural log $1  <br> log $1 <br> log base e $1                   |  |
