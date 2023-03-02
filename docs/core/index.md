@@ -10,7 +10,7 @@
 | equals    | 2     | infix*   | $1 is equal to $2                    |              |
 | equals    | 2     | function | equal to $1, $2                      |              |
 | factorial | 1     | postfix* | $1 factoral                          |              |
-| factorial | 1     | function | factorial of $1                      | Thiis row could be deleted, as it follows from the default behaviour |
+| factorial | 1     | function | factorial of $1                      | This row could be deleted, as it follows from the default behaviour |
 | ⋮          | ⋮     | ⋮         | ⋮                                     | More to be added |
 
 -----
