@@ -29,9 +29,7 @@ controlled by the context, or by system option settings such as "Verbosity".
 
 | concept   | arity | hint      | speech template (en)                 | Comments     |
 | ----      | ----  | ----      | ----                                 | ----         |
-| power     | 2     | infix*    | IF $2=2<br> $1 squared               |              |
-| power     | 2     | infix*    | IF $2=3<br> $1 cubed                 |              |
-| power     | 2     | infix*    | IF $2=_n_<br> $1 to the $2_th_ power |              |
+| power     | 2     | infix*    | $1 squared [$2=2] <br> $1 cubed [$2=3] <br> $1 to the $2_th_ power             |              |
 | equals    | 2     | infix*    | $1 equals $2  <br>   $1 is equal to $2                      |              |
 | equals    | 2     | function  | equal to $1, $2                      |              |
 | factorial | 1     | postfix*  | $1 factoral                          |              |
@@ -39,8 +37,7 @@ controlled by the context, or by system option settings such as "Verbosity".
 | sin       | 1     | prefix*   | sine $1                              |              |
 | sin       | 1     | function  | sine of $1                           |              |
 | log       | 2     | function* | log base $2 of $1                      |  arity 1 log(x)  needs no rule here |
-| ln        | 1     | function* | natural log of $1                      |  |
-| ln        | 1     | function* | log of $1  <br>  log base e of $1                   |  |
+| ln        | 1     | function* | natural log of $1 <br> log of $1  <br>  log base e of $1                   |  |
 | ln        | 1     | prefix    | natural log $1  <br> log $1 <br> log base e $1                   |  |
 | ⋮          | ⋮     | ⋮          | ⋮                                     | More to be added |
 
