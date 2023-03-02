@@ -11,6 +11,8 @@
 | equals    | 2     | function | equal to $1, $2                      |              |
 | factorial | 1     | postfix* | $1 factoral                          |              |
 | factorial | 1     | function | factorial of $1                      | This row could be deleted, as it follows from the default behaviour |
+| sin       | 1     | prefix*  | sine $1                              |              |
+| sin       | 1     | function | sine of $1                           |              |
 | ⋮          | ⋮     | ⋮         | ⋮                                     | More to be added |
 
 -----
