@@ -29,6 +29,7 @@ controlled by the context, or by system option settings such as "Verbosity".
 
 | Concept   | Arity | Hint      | Speech Template (en)                 | Comments     |
 | ----      | ----  | ----      | ----                                 | ----         |
+| `_`       | n     | prefix*    | _silent_            |              |
 | power     | 2     | infix*    | $1 squared [$2=2] <br> $1 cubed [$2=3] <br> $1 to the $2_th_ power             |              |
 | equals    | 2     | infix*    | $1 equals $2  <br>   $1 is equal to $2                      |              |
 | equals    | 2     | function  | equal to $1, $2                      |              |
