@@ -43,9 +43,7 @@ controlled by the context, or by system option settings such as "Verbosity".
 | ln        | 1     | function* | natural log of $1                      |  |
 | ln        | 1     | function* | log of $1                      |  |
 | ln        | 1     | function* | log base e of $1                      |  |
-| ln        | 1     | prefix    | natural log $1                     |  |
-| ln        | 1     | prefix    | log $1                     |  |
-| ln        | 1     | prefix    | log base e $1                     |  |
+| ln        | 1     | prefix    | natural log $1  <br> log $1 <br> log base e $1                   |  |
 | ⋮          | ⋮     | ⋮          | ⋮                                     | More to be added |
 
 
