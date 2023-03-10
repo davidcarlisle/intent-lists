@@ -1252,7 +1252,6 @@
     <td> permutations P n k</td>
    </tr>
 
-   <tr><th colspan='6'>GOT TO HERE</th></tr>
     
    <tr>
     <th colspan='6'>Infix</th>
@@ -1363,6 +1362,7 @@
     <td> parallel </td>
    </tr>
 
+
    <tr>
     <th colspan='6'>Hints</th>
    </tr>
@@ -1383,8 +1383,6 @@
        <mi>X</mi>
       </mrow>
      </math>
-    </td>
-    <td>
      <math display='block'>
       <mrow>
        <mo intent='my-function@function'>&#x1F407;</mo>
@@ -1394,6 +1392,26 @@
      <math display='block'>
       <mrow>
        <mo intent='my-function@silent'>&#x1F407;</mo>
+       <mi>X</mi>
+      </mrow>
+     </math>
+    </td>
+    <td>
+     <math display='block'>
+      <mrow>
+       <mo intent2='my-function'>&#x1F407;</mo>
+       <mi>X</mi>
+      </mrow>
+     </math>
+     <math display='block'>
+      <mrow>
+       <mo intent2='my-function:function'>&#x1F407;</mo>
+       <mi>X</mi>
+      </mrow>
+     </math>
+     <math display='block'>
+      <mrow>
+       <mo intent2='my-function:silent'>&#x1F407;</mo>
        <mi>X</mi>
       </mrow>
      </math>
@@ -1418,8 +1436,6 @@
        <mi arg='X'>X</mi>
       </mrow>
      </math>
-    </td>
-    <td>
      <math display='block'>
       <mrow intent='my-function@function($X)'>
        <mo>&#x1F407;</mo>
@@ -1441,6 +1457,38 @@
      <math display='block'>
       <mrow intent='my-function@silent(
 		    _rabbit_function_applied_to,$X)'>
+       <mo>&#x1F407;</mo>
+       <mi arg='X'>X</mi>
+      </mrow>
+     </math>
+    </td>
+    <td>
+     <math display='block'>
+      <mrow intent2='my-function($X)'>
+       <mo>&#x1F407;</mo>
+       <mi arg='X'>X</mi>
+      </mrow>
+     </math>
+     <math display='block'>
+      <mrow intent2='my-function:function($X)'>
+       <mo>&#x1F407;</mo>
+       <mi arg='X'>X</mi>
+      </mrow>
+     </math>
+     <math display='block'>
+      <mrow intent2='my-function $X'>
+       <mo>&#x1F407;</mo>
+       <mi arg='X'>X</mi>
+      </mrow>
+     </math>
+     <math display='block'>
+      <mrow intent2='$X my-function'>
+       <mo>&#x1F407;</mo>
+       <mi arg='X'>X</mi>
+      </mrow>
+     </math>
+     <math display='block'>
+      <mrow intent2='rabbit function applied to $X'>
        <mo>&#x1F407;</mo>
        <mi arg='X'>X</mi>
       </mrow>
@@ -1470,8 +1518,6 @@
        <mi arg='y'>y</mi>
       </mrow>
      </math>
-    </td>
-    <td>
      <math display='block'>
       <mrow intent='$prod@infix($x,$y)'>
        <mi arg='x'>x</mi>
@@ -1491,6 +1537,40 @@
      <math display='block'>
       <mrow intent='$prod@silent(
 		    _vector_product, _of, $x, _with, $y)'>
+       <mi arg='x'>x</mi>
+       <mo arg='prod'
+	   intent='cross-product'>⨯</mo>
+       <mi arg='y'>y</mi>
+      </mrow>
+     </math>
+    </td>
+     <td>
+     <math display='block'>
+      <mrow intent2='$prod($x,$y)'>
+       <mi arg='x'>x</mi>
+       <mo arg='prod'
+	   intent='cross-product'>⨯</mo>
+       <mi arg='y'>y</mi>
+      </mrow>
+     </math>
+     <math display='block'>
+      <mrow intent2='4x $prod $y'>
+       <mi arg='x'>x</mi>
+       <mo arg='prod'
+	   intent='cross-product'>⨯</mo>
+       <mi arg='y'>y</mi>
+      </mrow>
+     </math>
+     <math display='block'>
+      <mrow intent='$prod@function($x,$y)'>
+       <mi arg='x'>x</mi>
+       <mo arg='prod'
+	   intent='cross-product'>⨯</mo>
+       <mi arg='y'>y</mi>
+      </mrow>
+     </math>
+     <math display='block'>
+      <mrow intent='vector_product:prod of $x with $y'>
        <mi arg='x'>x</mi>
        <mo arg='prod'
 	   intent='cross-product'>⨯</mo>
@@ -1526,8 +1606,22 @@
       </mrow>
      </math>
     </td>
-    <!--Xtd> - </tdX-->
-    <td> - </td>
+    <td>
+     <math display='block'>
+      <mrow intent2='absolute-value($x)'>
+       <mo>|</mo>
+       <mi arg='x'>x</mi>
+       <mo>|</mo>
+      </mrow>
+     </math>
+     <math display='block'>
+      <mrow intent2='absolute-value of $x'>
+       <mo>|</mo>
+       <mi arg='x'>x</mi>
+       <mo>|</mo>
+      </mrow>
+     </math>
+    </td>
     <td>\lvert x\rvert</td>
     <td>vert x abs</td>
    </tr>
@@ -1557,8 +1651,28 @@
       </msub>
      </math>
     </td>
-    <!--Xtd> - </tdX-->
-    <td> - </td>
+    <td>
+     <math display='block'>
+      <msub intent='l2-norm($x)'>
+       <mrow>
+	<mo>|</mo>
+	<mi arg='x'>x</mi>
+	<mo>|</mo>
+       </mrow>
+       <mn>2</mn>
+      </msub>
+     </math>
+     <math display='block'>
+      <msub intent='l2-norm of $x'>
+       <mrow>
+	<mo>|</mo>
+	<mi arg='x'>x</mi>
+	<mo>|</mo>
+       </mrow>
+       <mn>2</mn>
+      </msub>
+     </math>
+    </td>
     <td>\lvert x\rvert_2</td>
     <td>l2 norm x</td>
    </tr>
@@ -1582,8 +1696,22 @@
       </mrow>
      </math>
     </td>
-    <!--Xtd> - </tdX-->
-    <td> - </td>
+    <td>
+     <math display='block'>
+      <mrow intent2='determinant($M)'>
+       <mo>|</mo>
+       <mi arg='M'>M</mi>
+       <mo>|</mo>
+      </mrow>
+     </math>
+     <math display='block'>
+      <mrow intent2='determinant of $M'>
+       <mo>|</mo>
+       <mi arg='M'>M</mi>
+       <mo>|</mo>
+      </mrow>
+     </math>
+    </td>
     <td>\lvert M\rvert</td>
     <td>vert M determinant</td>
    </tr>
@@ -1624,10 +1752,42 @@
        <mo>|</mo>
       </mrow>
      </math>
+     <math display='block'>
+      <mrow intent='determinant($M:matrix)'>
+       <mo>|</mo>
+       <mtable arg='M'>
+	<mtr>
+	 <mtd><mi>a</mi></mtd>
+	 <mtd><mi>b</mi></mtd>
+	</mtr>
+	<mtr>
+	 <mtd><mi>c</mi></mtd>
+	 <mtd><mi>d</mi></mtd>
+	</mtr>
+       </mtable>
+       <mo>|</mo>
+      </mrow>
+     </math>
     </td>
     <td>
      <math display='block'>
-      <mrow intent='determinant($M:matrix)'>
+      <mrow intent2='determinant($M)'>
+       <mo>|</mo>
+       <mtable arg='M'>
+	<mtr>
+	 <mtd><mi>a</mi></mtd>
+	 <mtd><mi>b</mi></mtd>
+	</mtr>
+	<mtr>
+	 <mtd><mi>c</mi></mtd>
+	 <mtd><mi>d</mi></mtd>
+	</mtr>
+       </mtable>
+       <mo>|</mo>
+      </mrow>
+     </math>
+     <math display='block'>
+      <mrow intent2='determinant of $M:matrix'>
        <mo>|</mo>
        <mtable arg='M'>
 	<mtr>
@@ -1666,8 +1826,15 @@
       </mrow>
      </math>
     </td>
-    <!--Xtd> - </tdX-->
-    <td> - </td>
+    <td>
+     <math display='block'>
+      <mrow intent2='magnitude of $x'>
+       <mo>‖</mo>
+       <mi arg='x'>x</mi>
+       <mo>‖</mo>
+      </mrow>
+     </math>
+    </td>
     <td>\lVert x\rVert</td>
     <td>Vert x magnitude</td>
    </tr>
@@ -1695,8 +1862,26 @@
       </mrow>
      </math>
     </td>
-    <!--Xtd> - </tdX-->
-    <td> - </td>
+    <td>
+     <math display='block'>
+      <mrow intent2='open-interval($x,$y)'>
+       <mo>]</mo>
+       <mi arg='x'>x</mi>
+       <mo>,</mo>
+       <mi arg='y'>y</mi>
+       <mo>[</mo>
+      </mrow>
+     </math>
+     <math display='block'>
+      <mrow intent2='the open interval from $x to $y'>
+       <mo>]</mo>
+       <mi arg='x'>x</mi>
+       <mo>,</mo>
+       <mi arg='y'>y</mi>
+       <mo>[</mo>
+      </mrow>
+     </math>
+    </td>
     <td>\mathopen] x,y\mathclose[\rVert</td>
     <td>open-open inverted bracket</td>
    </tr>
@@ -1724,8 +1909,26 @@
       </mrow>
      </math>
     </td>
-    <!--Xtd> - </tdX-->
-    <td> - </td>
+    <td>
+     <math display='block'>
+      <mrow intent2='open-interval($x,$y)'>
+       <mo>(</mo>
+       <mi arg='x'>x</mi>
+       <mo>,</mo>
+       <mi arg='y'>y</mi>
+       <mo>)</mo>
+      </mrow>
+     </math>
+     <math display='block'>
+      <mrow intent2='the open-interval from $x to $y'>
+       <mo>(</mo>
+       <mi arg='x'>x</mi>
+       <mo>,</mo>
+       <mi arg='y'>y</mi>
+       <mo>)</mo>
+      </mrow>
+     </math>
+    </td>
     <td>(x,y)</td>
     <td>open-open</td>
    </tr>
@@ -1752,8 +1955,17 @@
       </mrow>
      </math>
     </td>
-    <!--Xtd> - </tdX-->
-    <td> - </td>
+    <td>
+     <math display='block'>
+      <mrow intent2='the open-closed interval from $x to $y'>
+       <mo>(</mo>
+       <mi arg='x'>x</mi>
+       <mo>,</mo>
+       <mi arg='y'>y</mi>
+       <mo>]</mo>
+      </mrow>
+     </math>
+    </td>
     <td>(x,y]</td>
     <td>open-closed</td>
    </tr>
@@ -1780,8 +1992,17 @@
       </mrow>
      </math>
     </td>
-    <!--Xtd> - </tdX-->
-    <td> - </td>
+    <td>
+     <math display='block'>
+      <mrow intent2='the closed-open interval from $x to $y'>
+       <mo>[</mo>
+       <mi arg='x'>x</mi>
+       <mo>,</mo>
+       <mi arg='y'>y</mi>
+       <mo>)</mo>
+      </mrow>
+     </math>
+    </td>
     <td>[x,y)</td>
     <td>closed-open</td>
    </tr>
@@ -1807,8 +2028,6 @@
        <mo>]</mo>
       </mrow>
      </math>
-    </td>
-    <td>
      <math display='block'>
       <mrow intent='closed-interval($x,$y)'>
        <mo>[</mo>
@@ -1820,6 +2039,35 @@
      </math>
      <math display='block'>
       <mrow intent='closed-interval@prefix($x,$y)'>
+       <mo>[</mo>
+       <mi arg='x'>x</mi>
+       <mo>,</mo>
+       <mi arg='y'>y</mi>
+       <mo>]</mo>
+      </mrow>
+     </math>
+    </td>
+    <td>
+     <math display='block'>
+      <mrow intent2='closed-interval($x,$y)'>
+       <mo>[</mo>
+       <mi arg='x'>x</mi>
+       <mo>,</mo>
+       <mi arg='y'>y</mi>
+       <mo>]</mo>
+      </mrow>
+     </math>
+     <math display='block'>
+      <mrow intent2='the closed-interval from $x to $y'>
+       <mo>[</mo>
+       <mi arg='x'>x</mi>
+       <mo>,</mo>
+       <mi arg='y'>y</mi>
+       <mo>]</mo>
+      </mrow>
+     </math>
+     <math display='block'>
+      <mrow intent2='closed-interval $x $y'>
        <mo>[</mo>
        <mi arg='x'>x</mi>
        <mo>,</mo>
@@ -1874,8 +2122,6 @@
        <mo>)</mo>
       </mrow>
      </math>
-    </td>
-    <td>
      <math display='block'>
       <mrow intent='vector@prefix($x,$y,$c,$d)'>
        <mo>(</mo>
@@ -1891,6 +2137,60 @@
      </math>
      <math display='block'>
       <mrow intent='cycle@prefix($x,$y,$c,$d)'>
+       <mo>(</mo>
+       <mi arg='x'>x</mi>
+       <mo>&#x2009;</mo>
+       <mi arg='y'>y</mi>
+       <mo>&#x2009;</mo>
+       <mi arg='c'>c</mi>
+       <mo>&#x2009;</mo>
+       <mi arg='d'>d</mi>
+       <mo>)</mo>
+      </mrow>
+     </math>
+    </td>
+    <td>
+     <math display='block'>
+      <mrow intent2='vector($x,$y,$c,$d)'>
+       <mo>(</mo>
+       <mi arg='x'>x</mi>
+       <mo>&#x2009;</mo>
+       <mi arg='y'>y</mi>
+       <mo>&#x2009;</mo>
+       <mi arg='c'>c</mi>
+       <mo>&#x2009;</mo>
+       <mi arg='d'>d</mi>
+       <mo>)</mo>
+      </mrow>
+     </math>
+     <math display='block'>
+      <mrow intent2='cycle($x,$y,$c,$d)'>
+       <mo>(</mo>
+       <mi arg='x'>x</mi>
+       <mo>&#x2009;</mo>
+       <mi arg='y'>y</mi>
+       <mo>&#x2009;</mo>
+       <mi arg='c'>c</mi>
+       <mo>&#x2009;</mo>
+       <mi arg='d'>d</mi>
+       <mo>)</mo>
+      </mrow>
+     </math>
+     <math display='block'>
+      <mrow intent2='vector $x $y $c $d'>
+       <mo>(</mo>
+       <mi arg='x'>x</mi>
+       <mo>&#x2009;</mo>
+       <mi arg='y'>y</mi>
+       <mo>&#x2009;</mo>
+       <mi arg='c'>c</mi>
+       <mo>&#x2009;</mo>
+       <mi arg='d'>d</mi>
+       <mo>)</mo>
+      </mrow>
+     </math>
+     <math display='block'>
+      <mrow intent2='cycle $x $y $c $d'>
        <mo>(</mo>
        <mi arg='x'>x</mi>
        <mo>&#x2009;</mo>
@@ -1947,8 +2247,24 @@
       </mrow>
      </math>
     </td>
-    <!--Xtd> - </tdX-->
-    <td> - </td>
+    <td>
+     <math display='block'>
+      <mrow intent2=':matrix'>
+       <mo>[</mo>
+       <mtable arg='m'>
+        <mtr>
+         <mtd><mi>a</mi></mtd>
+	 <mtd><mi>b</mi></mtd>
+        </mtr>
+        <mtr>
+         <mtd><mi>x</mi></mtd>
+	 <mtd><mi>y</mi></mtd>
+        </mtr>
+       </mtable>
+       <mo>]</mo>
+      </mrow>
+     </math>
+    </td>
     <td>\begin{bmatrix} a&amp;b\\ x&amp;y \end{bmatrix}</td>
     <td>bmatrix</td>
    </tr>
@@ -1992,8 +2308,25 @@
       </mrow>
      </math>
     </td>
-    <!--Xtd> - </tdX-->
-    <td> - </td>
+    <td>
+     <math display='block'>
+      <mrow>
+       <mo intent2=':array'x><!--?--></mo>
+       <mo>(</mo>
+       <mtable>
+        <mtr>
+         <mtd><mi>a</mi></mtd>
+	 <mtd><mi>b</mi></mtd>
+        </mtr>
+        <mtr>
+         <mtd><mi>x</mi></mtd>
+	 <mtd><mi>y</mi></mtd>
+        </mtr>
+       </mtable>
+v       <mo>)</mo>
+      </mrow>
+     </math>
+    </td>
     <td>\begin{pmatrix} a&amp;b\\ x&amp;y \end{pmatrix}</td>
     <td>pmatrix</td>
    </tr>
@@ -2053,8 +2386,33 @@
       </mrow>
      </math>
     </td>
-    <!--Xtd> - </tdX-->
-    <td> - </td>
+    <td>
+     <math display='block'>
+      <mrow>
+       <mo intent2=':system-of-equations'>{</mo>
+       <mtable>
+        <mtr>
+         <mtd>
+	  <mi>x</mi>
+	  <mo>+</mo>
+	  <mi>y</mi>
+	 </mtd>
+         <mtd><mo>=</mo></mtd>
+         <mtd><mn>2</mn></mtd>
+        </mtr>
+        <mtr>
+         <mtd>
+	  <mi>x</mi>
+	  <mo>&#x2212;</mo>
+	  <mi>y</mi>
+	 </mtd>
+         <mtd><mo>=</mo></mtd>
+         <mtd><mn>0</mn></mtd>
+        </mtr>
+       </mtable>
+      </mrow>
+     </math>
+    </td>
     <td>\left\{\begin{aligned} x+y &amp;= 2 \\ x-y &amp;=0 \end{aligned}\right.</td>
     <td>braced system of equations</td>
    </tr>
@@ -2195,37 +2553,6 @@
     </td>
     <td>
      <math display='block'>
-      <mtable>
-       <mtr>
-	<mtd columnalign='right'>
-	 <mi>a</mi>
-	</mtd>
-	<mtd columnalign='center'>
-	 <mo>=</mo>
-	</mtd>
-	<mtd columnalign='left'>
-	 <mi>b</mi>
-	 <mo>+</mo>
-	 <mi>c</mi>
-	 <mo>&#x2212;</mo>
-	 <mi>d</mi>
-	</mtd>
-       </mtr>
-       <mtr>
-	<mtd columnalign='right'></mtd>
-	<mtd columnalign='center'></mtd>
-	<mtd columnalign='left'>
-	 <mo form='infix'>+</mo>
-	 <mi>e</mi>
-	 <mo>&#x2212;</mo>
-	 <mi>f</mi>
-	</mtd>
-       </mtr>
-      </mtable>
-     </math>
-    </td>
-    <td>
-     <math display='block'>
       <mtable intent='equation@prefix($e1,$e1x)'>
        <mtr arg='e1'>
 	<mtd columnalign='right'>
@@ -2247,6 +2574,39 @@
        <mtr arg='e1x'>
 	<mtd intent='_' columnalign='right'></mtd>
 	<mtd intent='_' columnalign='center'></mtd>
+	<mtd arg='rhs' columnalign='left'>
+	 <mo form='infix'>+</mo>
+	 <mi>e</mi>
+	 <mo>&#x2212;</mo>
+	 <mi>f</mi>
+	</mtd>
+       </mtr>
+      </mtable>
+     </math>
+    </td>
+    <td>
+     <math display='block'>
+      <mtable intent2='$e1 $e1x'>
+       <mtr arg='e1'>
+	<mtd columnalign='right'>
+	 <mi>a</mi>
+	</mtd>
+	<mtd columnalign='center'>
+	 <mo>=</mo>
+	</mtd>
+	<mtd intent2='$lhs' columnalign='left'>
+	 <mrow arg='lhs'>
+	 <mi>b</mi>
+	 <mo>+</mo>
+	 <mi>c</mi>
+	 <mo>&#x2212;</mo>
+	 <mi>d</mi>
+	</mrow>
+	</mtd>
+       </mtr>
+       <mtr arg='e1x'>
+	<mtd intent2=':silent' columnalign='right'></mtd>
+	<mtd intent2=':silent' columnalign='center'></mtd>
 	<mtd arg='rhs' columnalign='left'>
 	 <mo form='infix'>+</mo>
 	 <mi>e</mi>
@@ -2282,8 +2642,6 @@
        <mo>&#x02D9;</mo>
       </mover>
      </math>
-    </td>
-    <td>
      <math display='block'>
       <mover intent='derivative@function($x)'>
        <mo arg='x'>x</mo>
@@ -2294,6 +2652,26 @@
       <mover intent='dot@postfix($x)'>
        <mo arg='x'>x</mo>
        <mo intent='derivative'>&#x02D9;</mo>
+      </mover>
+     </math>
+    </td>
+    <td>
+     <math display='block'>
+      <mover intent2='derivative($x,1)'>
+       <mo arg='x'>x</mo>
+       <mo>&#x02D9;</mo>
+      </mover>
+     </math>
+     <math display='block'>
+      <mover intent2='first derivative of $x'>
+       <mo arg='x'>x</mo>
+       <mo intent2='derivative'>&#x02D9;</mo>
+      </mover>
+     </math>
+     <math display='block'>
+      <mover intent2='$x dot'>
+       <mo arg='x'>x</mo>
+       <mo intent2='derivative'>&#x02D9;</mo>
       </mover>
      </math>
     </td>
@@ -2316,8 +2694,6 @@
        <mo>&#x00A8;</mo>
       </mover>
      </math>
-    </td>
-    <td>
      <math display='block'>
       <mover intent='second-derivative@function($x)'>
        <mo arg='x'>x</mo>
@@ -2328,6 +2704,26 @@
       <mover intent='dot-dot@postfix($x)'>
        <mo arg='x'>x</mo>
        <mo intent='second-derivative'>&#x00A8;</mo>
+      </mover>
+     </math>
+    </td>
+    <td>
+     <math display='block'>
+      <mover intent2='derivative($x,2)'>
+       <mo arg='x'>x</mo>
+       <mo>&#x00A8;</mo>
+      </mover>
+     </math>
+     <math display='block'>
+      <mover intent2='second derivative of $x'>
+       <mo arg='x'>x</mo>
+       <mo intent2='second-derivative'>&#x00A8;</mo>
+      </mover>
+     </math>
+     <math display='block'>
+      <mover intent2='$x dot dot'>
+       <mo arg='x'>x</mo>
+       <mo intent2='second-derivative'>&#x00A8;</mo>
       </mover>
      </math>
     </td>
@@ -2351,8 +2747,6 @@
        <mrow><mi>d</mi><mi arg='t'>t</mi></mrow>
       </mfrac>
      </math>
-    </td>
-    <td>
      <math display='block'>
       <mfrac intent='derivative@prefix(
 		     _of,$x,_with_respect_to,$t)'>
@@ -2363,6 +2757,26 @@
      <math display='block'>
       <mfrac intent='derivative@silent(
 		     _d,$x,_by,_d,$t)'>
+       <mrow><mi>d</mi><mi arg='x'>x</mi></mrow>
+       <mrow><mi>d</mi><mi arg='t'>t</mi></mrow>
+      </mfrac>
+     </math>
+    </td>
+    <td>
+     <math display='block'>
+      <mfrac intent2='derivative($x,1,$t)'>
+       <mrow><mi>d</mi><mi arg='x'>x</mi></mrow>
+       <mrow><mi>d</mi><mi arg='t'>t</mi></mrow>
+      </mfrac>
+     </math>
+     <math display='block'>
+      <mfrac intent2='derivative of $x with respect to $t'>
+       <mrow><mi>d</mi><mi arg='x'>x</mi></mrow>
+       <mrow><mi>d</mi><mi arg='t'>t</mi></mrow>
+      </mfrac>
+     </math>
+     <math display='block'>
+      <mfrac intent2='d $x by d $t'>
        <mrow><mi>d</mi><mi arg='x'>x</mi></mrow>
        <mrow><mi>d</mi><mi arg='t'>t</mi></mrow>
       </mfrac>
@@ -2406,11 +2820,41 @@
        </mrow>
       </mrow>
      </math>
-    </td>
-    <td>
      <math display='block'>
       <mrow intent='derivative@prefix(
 		    _of,$ft,_with_respect_to,$t)'>
+       <mfrac>
+	<mrow><mi>d</mi></mrow>
+	<mrow><mi>d</mi><mi arg='t'>t</mi></mrow>
+       </mfrac>
+       <mrow arg='ft'>
+	<mi>f</mi>
+	<mo>&#x2061;</mo>
+	<mo>(</mo>
+	<mi>t</mi>
+	<mo>)</mo>
+       </mrow>
+      </mrow>
+     </math>   
+    </td>
+    <td>
+     <math display='block'>
+      <mrow intent2='derivative($ft,1,$t)'>
+       <mfrac>
+	<mrow><mi>d</mi></mrow>
+	<mrow><mi>d</mi><mi arg='t'>t</mi></mrow>
+       </mfrac>
+       <mrow arg='ft'>
+	<mi>f</mi>
+	<mo>&#x2061;</mo>
+	<mo>(</mo>
+	<mi>t</mi>
+	<mo>)</mo>
+       </mrow>
+      </mrow>
+     </math>
+     <math display='block'>
+      <mrow intent2='derivative of $ft with respect to $t'>
        <mfrac>
 	<mrow><mi>d</mi></mrow>
 	<mrow><mi>d</mi><mi arg='t'>t</mi></mrow>
@@ -2467,8 +2911,6 @@
        </mrow>
       </mfrac>
      </math>
-    </td>
-    <td>
      <math display='block'>
       <mfrac intent='second-derivative@prefix(
 		     _of,$x,_with_respect_to,$t)'>
@@ -2490,6 +2932,59 @@
      <math display='block'>
       <mfrac intent='derivative@silent(
 		     _d,_2,$x,_by,_d,$t,_squared)'>
+       <mrow>
+	<msup>
+	 <mi>d</mi><mn>2</mn>
+	</msup>
+	<mi arg='x'>x</mi>
+       </mrow>
+       <mrow>
+	<mi>d</mi>
+	<msup>
+	 <mi arg='t'>t</mi>
+	 <mn>2</mn>
+	</msup>
+       </mrow>
+      </mfrac>
+     </math>
+    </td>
+    <td>
+     <math display='block'>
+      <mfrac intent2='derivative($x,2,$t)'>
+       <mrow>
+	<msup>
+	 <mi>d</mi><mn>2</mn>
+	</msup>
+	<mi arg='x'>x</mi>
+       </mrow>
+       <mrow>
+	<mi>d</mi>
+	<msup>
+	 <mi arg='t'>t</mi>
+	 <mn>2</mn>
+	</msup>
+       </mrow>
+      </mfrac>
+     </math>
+     <math display='block'>
+      <mfrac intent2='second derivative of $x with respect to $t'>
+       <mrow>
+	<msup>
+	 <mi>d</mi><mn>2</mn>
+	</msup>
+	<mi arg='x'>x</mi>
+       </mrow>
+       <mrow>
+	<mi>d</mi>
+	<msup>
+	 <mi arg='t'>t</mi>
+	 <mn>2</mn>
+	</msup>
+       </mrow>
+      </mfrac>
+     </math>
+     <math display='block'>
+      <mfrac intent2='d 2 $x by d $t squared'>
        <mrow>
 	<msup>
 	 <mi>d</mi><mn>2</mn>
@@ -2555,11 +3050,52 @@
        </mrow>
       </mfrac>
      </math>
-    </td>
-    <td>
      <math display='block'>
       <mfrac intent='partial-second-derivative@prefix(
 		     _of,$f,_with_respect_to,$x,_and,$y)'>
+       <mrow>
+	<msup>
+	 <mo>&#x2202;</mo><mn>2</mn>
+	</msup>
+	<mi arg='f'>f</mi>
+       </mrow>
+       <mrow>
+	<mrow>
+	 <mo>&#x2202;</mo>
+	 <mi arg='x'>x</mi>
+	</mrow>
+	<mrow>
+	 <mo>&#x2202;</mo>
+	 <mi arg='y'>y</mi>
+	</mrow>
+       </mrow>
+      </mfrac>
+     </math>
+    </td>
+    <td>
+     <math display='block'>
+      <mfrac intent2='partial-second-derivative(
+		     $f,$x,$y)'>
+       <mrow>
+	<msup>
+	 <mo>&#x2202;</mo><mn>2</mn>
+	</msup>
+	<mi arg='f'>f</mi>
+       </mrow>
+       <mrow>
+	<mrow>
+	 <mo>&#x2202;</mo>
+	 <mi arg='x'>x</mi>
+	</mrow>
+	<mrow>
+	 <mo>&#x2202;</mo>
+	 <mi arg='y'>y</mi>
+	</mrow>
+       </mrow>
+      </mfrac>
+     </math>
+     <math display='block'>
+      <mfrac intent2='partial second derivative of $f with respect to $x and $y'>
        <mrow>
 	<msup>
 	 <mo>&#x2202;</mo><mn>2</mn>
@@ -2977,8 +3513,14 @@
       </mfrac>
      </math>
     </td>
-    <!--Xtd> - </tdX-->
-    <td> - </td>
+    <td>
+     <math display='block'>
+      <mfrac intent2='divides()'>
+       <mi>x</mi>
+       <mi>y</mi>
+      </mfrac>
+     </math>
+    </td>
     <td> - </td>
     <td>0-ary divides</td>
    </tr>
@@ -2999,8 +3541,14 @@
       </mfrac>
      </math>
     </td>
-    <!--Xtd> - </tdX-->
-    <td> - </td>
+    <td>
+     <math display='block'>
+      <mfrac intent2='divides(z)'>
+       <mi>x</mi>
+       <mi>y</mi>
+      </mfrac>
+     </math>
+    </td>
     <td> - </td>
     <td>1-ary divides</td>
    </tr>
@@ -3021,8 +3569,14 @@
       </mfrac>
      </math>
     </td>
-    <!--Xtd> - </tdX-->
-    <td> - </td>
+    <td>
+     <math display='block'>
+      <mfrac intent3='divides(w,x,y)'>
+       <mi>x</mi>
+       <mi>y</mi>
+      </mfrac>
+     </math>
+    </td>
     <td> - </td>
     <td>3-ary divides</td>
    </tr>
@@ -3044,8 +3598,14 @@
       </mover>
      </math>
     </td>
-    <!--Xtd> - </tdX-->
-    <td> - </td>
+    <td>
+     <math display='block' mathbackground='yellow'>
+      <mover intent2='ray($x)'>
+       <mi arg='X'>X</mi>
+       <mo>→</mo>
+      </mover>
+     </math>
+    </td>
     <td> - </td>
     <td>1-ary ray</td>
    </tr>
@@ -3069,8 +3629,13 @@
       </mfrac>
      </math>
     </td>
-    <!--Xtd> - </tdX-->
-    <td> - </td>
+    <td>
+     <math display='block'>
+      <mfrac><mi intent2='hmm)('>x</mi>
+      <mi>y</mi>
+      </mfrac>
+     </math>
+    </td>
     <td> - </td>
     <td>bad intent paren</td>
    </tr>
@@ -3094,8 +3659,15 @@
       </mrow>
      </math>
     </td>
-    <!--Xtd> - </tdX-->
-    <td> - </td>
+    <td>
+     <math display='block' mathbackground='yellow'>
+      <mrow intent2='sum($a,$b)'>
+       <mn>1.234</mn>
+       <mo>+</mo>
+       <mi>x</mi>
+      </mrow>
+     </math>
+    </td>
     <td> - </td>
     <td>bad intent argref</td>
    </tr>
@@ -3119,8 +3691,15 @@
       </mrow>
      </math>
     </td>
-    <!--Xtd> - </tdX-->
-    <td> - </td>
+    <td>
+     <math display='block'>
+      <mrow intent2='sum($1.234,$:x:)'>
+       <mn arg='1.234'>1.234</mn>
+       <mo>+</mo>
+       <mi arg=':x:'>x</mi>
+      </mrow>
+     </math>
+    </td>
     <td> - </td>
     <td>bad intent arg names</td>
    </tr>
@@ -3136,8 +3715,11 @@
       <mi intent='one two'>x</mi>
      </math>
     </td>
-    <!--Xtd> - </tdX-->
-    <td> - </td>
+    <td>
+     <math display='block'>
+      <mi intent2='one two'>x</mi>
+     </math>
+    </td>
     <td> - </td>
     <td>multiple identifiers</td>
    </tr>
@@ -3153,8 +3735,11 @@
       <mn intent='1.2e1'>12</mn>
      </math>
     </td>
-    <!--Xtd> - </tdX-->
-    <td> - </td>
+    <td>
+     <math display='block'>
+      <mn intent2='1.2e1'>12</mn>
+     </math>
+    </td>
     <td> - </td>
     <td>bad number</td>
    </tr>
@@ -3186,9 +3771,20 @@
       </mover>
      </math>
     </td>
-    <!--Xtd> - </tdX-->
-    <td> - </td>
-    <td> - </td>
+   <td>
+     <math display='block'>
+      <mover intent2='mean($x('>
+       <mi arg='x'>X</mi>
+       <mo>&#x203e;</mo>
+      </mover>
+      <mo>+</mo>
+      <mover intent2='mean($x)'>
+       <mi arg='x'>Y</mi>
+       <mo>&#x203e;</mo>
+      </mover>
+     </math>
+   </td>
+   <td> - </td>
     <td>bad intent subexpression</td>
    </tr>
 
