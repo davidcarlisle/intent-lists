@@ -1,0 +1,355 @@
+<!DOCTYPE HTML>
+<HTML>
+ <head>
+  <title>Intent Examples (fun/template)</title>
+  <meta charset='UTF-8'/>
+  <style>
+   th[colspan] {font-size:120%;font-weight:bold;
+   background-color:white;
+   padding-top:.5em}
+   tbody th {width:2em;}
+   math{font-size:120%;margin:.2em;}
+   div.mathcat{
+   background-color:white;padding:.2em;
+   margin:-.2em .1em 1em .1em;
+   }
+   a.self {text-decoration:none;color:DarkBlue}
+   a.self::visited  {text-decoration:none;color:DarkBlue}
+   span.error {border-left: solid thick red;padding-left:.1em}
+  </style>
+ </head>
+ <body>
+  <h1>Intent Examples 4</h1>
+
+  <p><a href='./'>Index of Examples</a></p>
+
+  <table>
+   <colgroup>
+    <col style='background-color:#FFE;min-width:12em'/>
+    <col style='background-color:#EEE;font-family: monospace;'/>
+    <col style='background-color:#EFE;font-family: monospace;'/>
+    <col style='background-color:#EEF;font-family: monospace;'/>
+    <col style='background-color:#AAA;font-family: monospace;'/>
+    <col style='background-color:beige'/>
+   </colgroup>
+   <thead>
+    <th>MathML</thX8-->
+    <th>MathML-no-intent</th>
+    <th>MathML+intent-functional</th>
+    <th>MathML+intent-template</th>
+    <th>TeX</th>
+    <th>Comments</th>
+   </thead>
+   <tr>
+    <th colspan='6' id="IDNumbers"><a class="self" href="#IDNumbers">Numbers</a></th>
+ </tr>
+   <td>
+
+     <math display='block'>
+      <mn>1,234</mn>
+      <mo>+</mo>
+      <mn>1,234</mn>
+     </math>
+    
+</td>
+<td>
+<pre>
+&lt;math display='block'>
+ &lt;mn>1,234&lt;/mn>
+ &lt;mo>+&lt;/mo>
+ &lt;mn>1,234&lt;/mn>
+&lt;/math>
+</pre>
+
+    <div class="mathcat">1,234 plus 1,234</div>
+</td>
+<td>
+<pre>
+&lt;math display='block'>
+ &lt;mn>1,234&lt;/mn>
+ &lt;mo intent='plus'>+&lt;/mo>
+ &lt;mn>1,234&lt;/mn>
+&lt;/math>
+</pre>
+
+    <div class="mathcat">1,234 plus 1,234</div>
+<pre>
+&lt;math display='block'>
+ &lt;mn intent='1,234:decimal-comma'>1,234&lt;/mn>
+ &lt;mo intent='plus'>+&lt;/mo>
+ &lt;mn intent='1,234:decimal-comma'>1,234&lt;/mn>
+&lt;/math>
+</pre>
+
+    <div class="mathcat"><span class='error' title='Pattern match/replacement failure!
+caused by: attempting replacement pattern: "default" for "math".
+Replacement
+[test: [  if: &apos;x: "*"&apos; then:[intent:  name: math
+      children: [x: "*"]] else:[t: " "]]
+]
+...due to matching the following MathML with the pattern
+x: "."
+ &lt;math display=&apos;block&apos; id=&apos;M...&apos; data-id-added=&apos;true&apos;>
+  &lt;mrow data-changed=&apos;added&apos; id=&apos;M...&apos; data-id-added=&apos;true&apos;>
+    &lt;mn intent=&apos;1,234:decimal-comma&apos; id=&apos;M...&apos; data-id-added=&apos;true&apos;>1,234&lt;/mn>
+    &lt;mo intent=&apos;plus&apos; id=&apos;M...&apos; data-id-added=&apos;true&apos;>+&lt;/mo>
+    &lt;mn intent=&apos;1,234:decimal-comma&apos; id=&apos;M...&apos; data-id-added=&apos;true&apos;>1,234&lt;/mn>
+  &lt;/mrow>
+ &lt;/math>
+The patterns are in mathcat\Rules\intent.yaml.
+
+caused by: replacing inside &apos;intent&apos;
+caused by: attempting replacement pattern: "default" for "*".
+Replacement
+[test: [  if: &apos;x: "count(*) > 0"&apos; then:[intent:  xpath-name: x: "name(.)"
+      children: [x: "*"]]]
+test: [  if: &apos;x: "text()"&apos; then:[intent:  xpath-name: x: "name(.)"
+      children: [x: "text()"]] else:[intent:  xpath-name: x: "name(.)"
+      children: 
+]]
+]
+...due to matching the following MathML with the pattern
+x: "."
+ &lt;mrow data-changed=&apos;added&apos; id=&apos;M...&apos; data-id-added=&apos;true&apos;>
+  &lt;mn intent=&apos;1,234:decimal-comma&apos; id=&apos;M...&apos; data-id-added=&apos;true&apos;>1,234&lt;/mn>
+  &lt;mo intent=&apos;plus&apos; id=&apos;M...&apos; data-id-added=&apos;true&apos;>+&lt;/mo>
+  &lt;mn intent=&apos;1,234:decimal-comma&apos; id=&apos;M...&apos; data-id-added=&apos;true&apos;>1,234&lt;/mn>
+ &lt;/mrow>
+The patterns are in mathcat\Rules\intent.yaml.
+
+caused by: replacing inside &apos;intent&apos;
+caused by: attempting replacement pattern: "intent-exists" for "!*".
+Replacement
+[x: "process-intent(.)"]
+...due to matching the following MathML with the pattern
+x: "@intent"
+ &lt;mn intent=&apos;1,234:decimal-comma&apos; id=&apos;M...&apos; data-id-added=&apos;true&apos;>1,234&lt;/mn>
+The patterns are in mathcat\Rules\intent.yaml.
+
+caused by: Error in intent value: extra unparsed intent &apos;234:decimal-comma&apos; in intent attribute value &apos;1,234:decimal-comma&apos;
+'>1,234 plus 1,234</span></div>
+</td>
+<td>
+<pre>
+&lt;math display='block'>
+ &lt;mn>1,234&lt;/mn>
+ &lt;mo intent2='plus'>+&lt;/mo>
+ &lt;mn>1,234&lt;/mn>
+&lt;/math>
+</pre>
+
+    <div class="mathcat">1,234 plus 1,234</div>
+<pre>
+&lt;math display='block'>
+ &lt;mn intent2='1,234:decimal-comma'>1,234&lt;/mn>
+ &lt;mo intent2='plus'>+&lt;/mo>
+ &lt;mn intent2='1,234:decimal-comma'>1,234&lt;/mn>
+&lt;/math>
+</pre>
+
+    <div class="mathcat">1,234 plus 1,234</div>
+</td>
+
+    <td>1,234+1{,}234</td>
+    <td id="IDdecimalcomma"><a class="self" href="#IDdecimalcomma">decimal comma</a></td>
+ </tr>
+   <td>
+
+     <math display='block'>
+      <mn>1,234</mn>
+      <mo>;</mo>
+      <mn>1,234</mn>
+      <mo>;</mo>
+      <mn>1,234,000</mn>
+     </math>
+    
+</td>
+<td>
+<pre>
+&lt;math display='block'>
+ &lt;mn>1,234&lt;/mn>
+ &lt;mo>;&lt;/mo>
+ &lt;mn>1,234&lt;/mn>
+ &lt;mo>;&lt;/mo>
+ &lt;mn>1,234,000&lt;/mn>
+&lt;/math>
+</pre>
+
+    <div class="mathcat">1,234 semicolon 1,234 semicolon 1,234,000</div>
+</td>
+<td>
+<pre>
+&lt;math display='block' mathbackground='yellow'>
+ &lt;mn intent='1,234:thousands-comma'>1,234&lt;/mn>
+ &lt;mo>;&lt;/mo>
+ &lt;mn intent='1,234:thousands-comma'>1,234&lt;/mn>
+ &lt;mo>;&lt;/mo>
+ &lt;mn intent='1,234:thousands-comma'>1,234,000&lt;/mn>
+&lt;/math>
+</pre>
+
+    <div class="mathcat"><span class='error' title='Pattern match/replacement failure!
+caused by: attempting replacement pattern: "default" for "math".
+Replacement
+[test: [  if: &apos;x: "*"&apos; then:[intent:  name: math
+      children: [x: "*"]] else:[t: " "]]
+]
+...due to matching the following MathML with the pattern
+x: "."
+ &lt;math display=&apos;block&apos; mathbackground=&apos;yellow&apos; id=&apos;M...&apos; data-id-added=&apos;true&apos;>
+  &lt;mrow data-changed=&apos;added&apos; id=&apos;M...&apos; data-id-added=&apos;true&apos;>
+    &lt;mn intent=&apos;1,234:thousands-comma&apos; id=&apos;M...&apos; data-id-added=&apos;true&apos;>1,234&lt;/mn>
+    &lt;mo id=&apos;M...&apos; data-id-added=&apos;true&apos;>;&lt;/mo>
+    &lt;mn intent=&apos;1,234:thousands-comma&apos; id=&apos;M...&apos; data-id-added=&apos;true&apos;>1,234&lt;/mn>
+    &lt;mo id=&apos;M...&apos; data-id-added=&apos;true&apos;>;&lt;/mo>
+    &lt;mn intent=&apos;1,234:thousands-comma&apos; id=&apos;M...&apos; data-id-added=&apos;true&apos;>1,234,000&lt;/mn>
+  &lt;/mrow>
+ &lt;/math>
+The patterns are in mathcat\Rules\intent.yaml.
+
+caused by: replacing inside &apos;intent&apos;
+caused by: attempting replacement pattern: "default" for "*".
+Replacement
+[test: [  if: &apos;x: "count(*) > 0"&apos; then:[intent:  xpath-name: x: "name(.)"
+      children: [x: "*"]]]
+test: [  if: &apos;x: "text()"&apos; then:[intent:  xpath-name: x: "name(.)"
+      children: [x: "text()"]] else:[intent:  xpath-name: x: "name(.)"
+      children: 
+]]
+]
+...due to matching the following MathML with the pattern
+x: "."
+ &lt;mrow data-changed=&apos;added&apos; id=&apos;M...&apos; data-id-added=&apos;true&apos;>
+  &lt;mn intent=&apos;1,234:thousands-comma&apos; id=&apos;M...&apos; data-id-added=&apos;true&apos;>1,234&lt;/mn>
+  &lt;mo id=&apos;M...&apos; data-id-added=&apos;true&apos;>;&lt;/mo>
+  &lt;mn intent=&apos;1,234:thousands-comma&apos; id=&apos;M...&apos; data-id-added=&apos;true&apos;>1,234&lt;/mn>
+  &lt;mo id=&apos;M...&apos; data-id-added=&apos;true&apos;>;&lt;/mo>
+  &lt;mn intent=&apos;1,234:thousands-comma&apos; id=&apos;M...&apos; data-id-added=&apos;true&apos;>1,234,000&lt;/mn>
+ &lt;/mrow>
+The patterns are in mathcat\Rules\intent.yaml.
+
+caused by: replacing inside &apos;intent&apos;
+caused by: attempting replacement pattern: "intent-exists" for "!*".
+Replacement
+[x: "process-intent(.)"]
+...due to matching the following MathML with the pattern
+x: "@intent"
+ &lt;mn intent=&apos;1,234:thousands-comma&apos; id=&apos;M...&apos; data-id-added=&apos;true&apos;>1,234&lt;/mn>
+The patterns are in mathcat\Rules\intent.yaml.
+
+caused by: Error in intent value: extra unparsed intent &apos;234:thousands-comma&apos; in intent attribute value &apos;1,234:thousands-comma&apos;
+'>1,234 semicolon 1,234 semicolon 1,234,000</span></div>
+</td>
+<td>
+<pre>
+&lt;math display='block' mathbackground='yellow'>
+ &lt;mn intent2='1,234:thousands-comma'>1,234&lt;/mn>
+ &lt;mo>;&lt;/mo>
+ &lt;mn intent2='1,234:thousands-comma'>1,234&lt;/mn>
+ &lt;mo>;&lt;/mo>
+ &lt;mn intent2='1,234:thousands-comma'>1,234,000&lt;/mn>
+&lt;/math>
+</pre>
+
+    <div class="mathcat">1,234 semicolon 1,234 semicolon 1,234,000</div>
+</td>
+
+    <td>1,234; 1,234; 1,234,000</td>
+    <td id="IDgroupingcomma"><a class="self" href="#IDgroupingcomma">grouping comma</a></td>
+ </tr>
+   <td>
+
+     <math display='block'>
+      <mn>−3</mn>
+     </math>
+    
+</td>
+<td>
+<pre>
+&lt;math display='block'>
+ &lt;mn>−3&lt;/mn>
+&lt;/math>
+</pre>
+
+    <div class="mathcat">negative 3</div>
+</td>
+<td>
+<pre>
+&lt;math display='block'>
+ &lt;mn intent='-3'>−3&lt;/mn>
+&lt;/math>
+</pre>
+
+    <div class="mathcat">minus  3</div>
+</td>
+<td>
+<pre>
+&lt;math display='block'>
+ &lt;mn intent2='-3'>−3&lt;/mn>
+&lt;/math>
+</pre>
+
+    <div class="mathcat">negative 3</div>
+</td>
+
+    <td>-3</td>
+    <td id="IDmn-3"><a class="self" href="#IDmn-3">mn -3</a></td>
+ </tr>
+   <td>
+
+     <math display='block'>
+      <mrow>
+       <mo>−</mo>
+       <mn>3</mn>
+      </mrow>
+     </math>
+    
+</td>
+<td>
+<pre>
+&lt;math display='block'>
+ &lt;mrow>
+  &lt;mo>−&lt;/mo>
+  &lt;mn>3&lt;/mn>
+ &lt;/mrow>
+&lt;/math>
+</pre>
+
+    <div class="mathcat">negative 3</div>
+</td>
+<td>
+<pre>
+&lt;math display='block'>
+ &lt;mrow intent='-3'>
+  &lt;mo>−&lt;/mo>
+  &lt;mn>3&lt;/mn>
+ &lt;/mrow>
+&lt;/math>
+</pre>
+
+    <div class="mathcat">minus  3</div>
+</td>
+<td>
+<pre>
+&lt;math display='block'>
+ &lt;mrow intent2='-3'>
+  &lt;mo>−&lt;/mo>
+  &lt;mn>3&lt;/mn>
+ &lt;/mrow>
+&lt;/math>
+</pre>
+
+    <div class="mathcat">negative 3</div>
+</td>
+
+    <td>-3</td>
+    <td id="IDmrowmo-3"><a class="self" href="#IDmrowmo-3">mrow mo -3</a></td>
+ </tr>
+
+
+  </table>
+
+
+
+ </body>
+</HTML>

@@ -1,0 +1,166 @@
+<!DOCTYPE HTML>
+<HTML>
+ <head>
+  <title>Intent Examples (fun/template)</title>
+  <meta charset='UTF-8'/>
+  <style>
+   th[colspan] {font-size:120%;font-weight:bold;
+   background-color:white;
+   padding-top:.5em}
+   tbody th {width:2em;}
+   math{font-size:120%;margin:.2em;}
+   div.mathcat{
+   background-color:white;padding:.2em;
+   margin:-.2em .1em 1em .1em;
+   }
+   a.self {text-decoration:none;color:DarkBlue}
+   a.self::visited  {text-decoration:none;color:DarkBlue}
+   span.error {border-left: solid thick red;padding-left:.1em}
+  </style>
+ </head>
+ <body>
+  <h1>Intent Examples 4</h1>
+
+  <p><a href='./'>Index of Examples</a></p>
+
+  <table>
+   <colgroup>
+    <col style='background-color:#FFE;min-width:12em'/>
+    <!--Xcol style='background-color:#EEE;font-family: monospace;'/X-->
+    <col style='background-color:#EFE;font-family: monospace;'/>
+    <col style='background-color:#EEF;font-family: monospace;'/>
+    <col style='background-color:#AAA;font-family: monospace;'/>
+    <col style='background-color:beige'/>
+   </colgroup>
+   <thead>
+    <!--Xth>MathML</thX8-->
+    <th>MathML-no-intent</th>
+    <th>MathML+intent-functional</th>
+    <th>MathML+intent-template</th>
+    <th>TeX</th>
+    <th>Comments</th>
+   </thead>
+   <tr>
+    <th colspan='6'>Numbers</th>
+   </tr>
+   <tr>
+    <td>
+     <math display='block'>
+      <mn>1,234</mn>
+      <mo>+</mo>
+      <mn>1,234</mn>
+     </math>
+    </td>
+    <td>
+     <math display='block'>
+      <mn>1,234</mn>
+      <mo intent='plus'>+</mo>
+      <mn>1,234</mn>
+     </math>
+     <math display='block'>
+      <mn intent='1,234:decimal-comma'>1,234</mn>
+      <mo intent='plus'>+</mo>
+      <mn intent='1,234:decimal-comma'>1,234</mn>
+     </math>
+    </td>
+    <td>
+     <math display='block'>
+      <mn>1,234</mn>
+      <mo intent2='plus'>+</mo>
+      <mn>1,234</mn>
+     </math>
+     <math display='block'>
+      <mn intent2='1,234:decimal-comma'>1,234</mn>
+      <mo intent2='plus'>+</mo>
+      <mn intent2='1,234:decimal-comma'>1,234</mn>
+     </math>
+    </td>
+    <td>1,234+1{,}234</td>
+    <td>decimal comma</td>
+   </tr>
+   <tr>
+    <td>
+     <math display='block'>
+      <mn>1,234</mn>
+      <mo>;</mo>
+      <mn>1,234</mn>
+      <mo>;</mo>
+      <mn>1,234,000</mn>
+     </math>
+    </td>
+    <td>
+     <math display='block' mathbackground='yellow'>
+      <mn intent='1,234:thousands-comma'>1,234</mn>
+      <mo>;</mo>
+      <mn intent='1,234:thousands-comma'>1,234</mn>
+      <mo>;</mo>
+      <mn intent='1,234:thousands-comma'>1,234,000</mn>
+     </math>
+    </td>
+    <td>
+     <math display='block' mathbackground='yellow'>
+      <mn intent2='1,234:thousands-comma'>1,234</mn>
+      <mo>;</mo>
+      <mn intent2='1,234:thousands-comma'>1,234</mn>
+      <mo>;</mo>
+      <mn intent2='1,234:thousands-comma'>1,234,000</mn>
+     </math>
+    </td>
+    <td>1,234; 1,234; 1,234,000</td>
+    <td>grouping comma</td>
+   </tr>
+   <tr>
+    <td>
+     <math display='block'>
+      <mn>−3</mn>
+     </math>
+    </td>
+    <td>
+     <math display='block'>
+      <mn intent='-3'>−3</mn>
+     </math>
+    </td>
+    <td>
+     <math display='block'>
+      <mn intent2='-3'>−3</mn>
+     </math>
+    </td>
+    <td>-3</td>
+    <td>mn -3</td>
+   </tr>
+   <tr>
+    <td>
+     <math display='block'>
+      <mrow>
+       <mo>−</mo>
+       <mn>3</mn>
+      </mrow>
+     </math>
+    </td>
+    <td>
+     <math display='block'>
+      <mrow intent='-3'>
+       <mo>−</mo>
+       <mn>3</mn>
+      </mrow>
+     </math>
+    </td>
+    <td>
+     <math display='block'>
+      <mrow intent2='-3'>
+       <mo>−</mo>
+       <mn>3</mn>
+      </mrow>
+     </math>
+    </td>
+    <td>-3</td>
+    <td>mrow mo -3</td>
+   </tr>
+
+
+  </table>
+
+
+
+ </body>
+</HTML>

@@ -1,0 +1,8 @@
+#!/bin/bash
+set -e
+
+
+cd ../mathcat
+py addmathcat4.py ../intent4/intent4.html > ../docs/intent4.html
+
+
