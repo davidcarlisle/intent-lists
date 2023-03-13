@@ -8426,6 +8426,109 @@ caused by: Error in intent value: extra unparsed intent &apos;int(bar:positive-i
     <td id="IDPropertiesonargref"><a class="self" href="#IDPropertiesonargref">Properties on argref</a></td>
  </tr>
 
+   <tr>
+<td>
+
+
+     <math display='block'>
+      <mrow>
+       <mi>R</mi>
+       <mo>&#x27e8;</mo>
+       <mi>X</mi>
+       <mo>&#x27e9;</mo>
+      </mrow>
+     </math>
+    
+
+</td>
+<td>
+<pre>
+&lt;math display='block'>
+ &lt;mrow>
+  &lt;mi>R&lt;/mi>
+  &lt;mo>&amp;#x27e8;&lt;/mo>
+  &lt;mi>X&lt;/mi>
+  &lt;mo>&amp;#x27e9;&lt;/mo>
+ &lt;/mrow>
+&lt;/math>
+</pre>
+
+    <div class="mathcat">r, left angle bracket   x right angle bracket</div>
+</td>
+<td>
+
+<pre>
+&lt;math display='block'>
+ &lt;mrow intent='_(free, $r, _algebra_on, $x)' >
+  &lt;mi arg='r'>R&lt;/mi>
+  &lt;mo>&amp;#x27e8;&lt;/mo>
+  &lt;mi arg='x'>X&lt;/mi>
+  &lt;mo>&amp;#x27e9;&lt;/mo>
+ &lt;/mrow>
+&lt;/math>
+</pre>
+
+    <div class="mathcat">free   r  algebra on   x</div>
+
+</td>
+<td>
+<pre>
+&lt;math display='block'>
+ &lt;mrow intent='free $r -algebra on $x'>
+  &lt;mi arg='r'>R&lt;/mi>
+  &lt;mo>&amp;#x27e8;&lt;/mo>
+  &lt;mi arg='x'>X&lt;/mi>
+  &lt;mo>&amp;#x27e9;&lt;/mo>
+ &lt;/mrow>
+&lt;/math>
+</pre>
+
+    <div class="mathcat"><span class='error' title='Pattern match/replacement failure!
+caused by: attempting replacement pattern: "default" for "math".
+Replacement
+[test: [  if: &apos;x: "*"&apos; then:[intent:  name: math
+      children: [x: "*"]] else:[t: " "]]
+]
+...due to matching the following MathML with the pattern
+x: "."
+ &lt;math display=&apos;block&apos; id=&apos;M...&apos; data-id-added=&apos;true&apos;>
+  &lt;mrow intent=&apos;free $r -algebra on $x&apos; id=&apos;M...&apos; data-id-added=&apos;true&apos;>
+    &lt;mi arg=&apos;r&apos; id=&apos;M...&apos; data-id-added=&apos;true&apos;>R&lt;/mi>
+    &lt;mo data-changed=&apos;added&apos; id=&apos;M...&apos; data-id-added=&apos;true&apos;>&amp;#x2062;&lt;/mo>
+    &lt;mrow data-changed=&apos;added&apos; id=&apos;M...&apos; data-id-added=&apos;true&apos;>
+      &lt;mo id=&apos;M...&apos; data-id-added=&apos;true&apos;>⟨&lt;/mo>
+      &lt;mi arg=&apos;x&apos; id=&apos;M...&apos; data-id-added=&apos;true&apos;>X&lt;/mi>
+      &lt;mo id=&apos;M...&apos; data-id-added=&apos;true&apos;>⟩&lt;/mo>
+    &lt;/mrow>
+  &lt;/mrow>
+ &lt;/math>
+The patterns are in mathcat2\Rules\intent.yaml.
+
+caused by: replacing inside &apos;intent&apos;
+caused by: attempting replacement pattern: "intent-exists" for "!*".
+Replacement
+[x: "process-intent(.)"]
+...due to matching the following MathML with the pattern
+x: "@intent"
+ &lt;mrow intent=&apos;free $r -algebra on $x&apos; id=&apos;M...&apos; data-id-added=&apos;true&apos;>
+  &lt;mi arg=&apos;r&apos; id=&apos;M...&apos; data-id-added=&apos;true&apos;>R&lt;/mi>
+  &lt;mo data-changed=&apos;added&apos; id=&apos;M...&apos; data-id-added=&apos;true&apos;>&amp;#x2062;&lt;/mo>
+  &lt;mrow data-changed=&apos;added&apos; id=&apos;M...&apos; data-id-added=&apos;true&apos;>
+    &lt;mo id=&apos;M...&apos; data-id-added=&apos;true&apos;>⟨&lt;/mo>
+    &lt;mi arg=&apos;x&apos; id=&apos;M...&apos; data-id-added=&apos;true&apos;>X&lt;/mi>
+    &lt;mo id=&apos;M...&apos; data-id-added=&apos;true&apos;>⟩&lt;/mo>
+  &lt;/mrow>
+ &lt;/mrow>
+The patterns are in mathcat2\Rules\intent.yaml.
+
+caused by: Illegal &apos;intent&apos; syntax: free $r -algebra on $x
+'>r, left angle bracket   x right angle bracket</span></div>
+</td>
+
+
+    <td>R\langle X\rangle</td>
+    <td id="IDfreer-algebraonx"><a class="self" href="#IDfreer-algebraonx">free r-algebra on x</a></td>
+ </tr>
    
    <tr>
     <th colspan='6' id="IDHTML"><a class="self" href="#IDHTML">HTML</a></th>
