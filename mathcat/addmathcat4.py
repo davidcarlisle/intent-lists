@@ -66,10 +66,12 @@ i=0
 for mmltd in mmltds:
   i=i+1
   if(i % 4 == 2):
+    print("<tr>")
     print("<td>")
     print(mmltd)
     print("</td>")
-  if(i % 4 == 2  or i % 4 == 3  or i % 4 == 0):
+#  if(i % 4 == 2  or i % 4 == 3  or i % 4 == 0):
+  if(i % 4 == 3):
     print("<td>")
     mmls=re.split(r'(<math\b.*?</math>)',str(mmltd), flags=re.DOTALL)
     j=0
@@ -86,6 +88,10 @@ for mmltd in mmltds:
           print ("\n    <div class=\"mathcat\">{}</div>".format(mcatl))
         except:
           print ("\n    <div class=\"mathcat\">problem with SetMathML</div>")
+    print("</td>")
+  elif(i % 4 == 2   or i % 4 == 0):
+    print("<td>")
+    print(mmltd)
     print("</td>")
   else:
     mmltd=re.sub(r'<t(d|h)([^<>]*)>([^<>]*)</t[dh]>\s*</tr>',
