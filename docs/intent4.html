@@ -3006,6 +3006,111 @@ caused by: Error in intent value: extra unparsed intent &apos;234:thousands-comm
     <td id="IDvectimeshints"><a class="self" href="#IDvectimeshints">vectimes hints</a></td>
  </tr>
 
+   
+   <tr>
+<td>
+
+
+     <math display='block'>
+      <mrow>
+       <mi>x</mi>
+       <mo>&#x229e;</mo>
+       <mi>y</mi>
+      </mrow>
+     </math>
+    
+
+</td>
+<td>
+<pre>
+&lt;math display='block'>
+ &lt;mrow>
+  &lt;mi>x&lt;/mi>
+  &lt;mo>&amp;#x229e;&lt;/mo>
+  &lt;mi>y&lt;/mi>
+ &lt;/mrow>
+&lt;/math>
+</pre>
+
+    <div class="mathcat">x squared plus y</div>
+</td>
+<td>
+
+<pre>
+&lt;math display='block'>
+ &lt;mrow intent='foo@infix($x,$y)'>
+  &lt;mi arg='x'>x&lt;/mi>
+  &lt;mo>&amp;#x229e;&lt;/mo>
+  &lt;mi arg='y'>y&lt;/mi>
+ &lt;/mrow>
+&lt;/math>
+</pre>
+
+    <div class="mathcat">, x foo y,</div>
+<pre>
+&lt;math display='block'>
+ &lt;mrow>
+  &lt;mi>x&lt;/mi>
+  &lt;mo intent='foo'>&amp;#x229e;&lt;/mo>
+  &lt;mi>y&lt;/mi>
+ &lt;/mrow>
+&lt;/math>
+</pre>
+
+    <div class="mathcat">x foo y</div>
+
+</td>
+<td>
+<pre>
+&lt;math display='block'>
+ &lt;mrow intent='foo:infix($x,$y)'>
+  &lt;mi arg='x'>x&lt;/mi>
+  &lt;mo>&amp;#x229e;&lt;/mo>
+  &lt;mi arg='y'>y&lt;/mi>
+ &lt;/mrow>
+&lt;/math>
+</pre>
+
+    <div class="mathcat">, x foo y,</div>
+<pre>
+&lt;math display='block'>
+ &lt;mrow intent='$op($x,$y)'>
+  &lt;mi arg='x'>x&lt;/mi>
+  &lt;mo arg='op' intent='foo:infix'>&amp;#x229e;&lt;/mo>
+  &lt;mi arg='y'>y&lt;/mi>
+ &lt;/mrow>
+&lt;/math>
+</pre>
+
+    <div class="mathcat">, x foo y,</div>
+<pre>
+&lt;math display='block'>
+ &lt;mrow intent='$op:infix($x,$y)'>
+  &lt;mi arg='x'>x&lt;/mi>
+  &lt;mo arg='op' intent='foo'>&amp;#x229e;&lt;/mo>
+  &lt;mi arg='y'>y&lt;/mi>
+ &lt;/mrow>
+&lt;/math>
+</pre>
+
+    <div class="mathcat">, x foo y,</div>
+<pre>
+&lt;math display='block'>
+ &lt;mrow intent='$x foo $y'>
+  &lt;mi arg='x'>x&lt;/mi>
+  &lt;mo>&amp;#x229e;&lt;/mo>
+  &lt;mi arg='y'>y&lt;/mi>
+ &lt;/mrow>
+&lt;/math>
+</pre>
+
+    <div class="mathcat">x foo y</div>
+</td>
+
+
+    <td>x \boxplus y</td>
+    <td id="IDxfoo/boxplusy"><a class="self" href="#IDxfoo/boxplusy">x  foo/boxplus y</a></td>
+ </tr>
 
    <tr>
     <th colspan='6' id="IDDelimiters"><a class="self" href="#IDDelimiters">Delimiters</a></th>
