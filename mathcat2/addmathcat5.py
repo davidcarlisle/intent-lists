@@ -54,6 +54,13 @@ mmltds=re.split(r'<tr>\s*<td>(\s*<math\b.*?</math>\s*)</td>\s*<td>(.*?)</td>', h
 
 sys.stdout.reconfigure(encoding='utf-8')
 
+def selflink(match):
+  m1 = match.group(1)
+  m2 = match.group(2)
+  m3 = match.group(3)
+  m3id = re.sub(r'[ \t()]','',m3)
+  return u"<t{}{} id=\"ID{}\"><a class=\"self\" href=\"#ID{}\">{}</a></t{}>\n </tr>".format(m1,m2,m3id,m3id,m3,m1)
+
 i=0
 for mmltd in mmltds:
   i=i+1
@@ -81,4 +88,7 @@ for mmltd in mmltds:
           print ("\n    <div class=\"mathcat\">problem with SetMathML</div>")
     print("</td>")
   else:
+    mmltd=re.sub(r'<t(d|h)([^<>]*)>([^<>]*)</t[dh]>\s*</tr>',
+               selflink,
+               mmltd)
     print (mmltd,end="")
