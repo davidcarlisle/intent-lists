@@ -138,15 +138,6 @@ caused by: Error in intent value: extra unparsed intent &apos;234:decimal-comma&
 <td>
 <pre>
 &lt;math display='block'>
- &lt;mn>1,234&lt;/mn>
- &lt;mo intent='plus'>+&lt;/mo>
- &lt;mn>1,234&lt;/mn>
-&lt;/math>
-</pre>
-
-    <div class="mathcat">1,234 plus 1,234</div>
-<pre>
-&lt;math display='block'>
  &lt;mn intent='1,234:decimal-comma'>1,234&lt;/mn>
  &lt;mo intent='plus'>+&lt;/mo>
  &lt;mn intent='1,234:decimal-comma'>1,234&lt;/mn>
@@ -200,6 +191,15 @@ The patterns are in mathcat2\Rules\intent.yaml.
 
 caused by: Error in intent value: extra unparsed intent &apos;234:decimal-comma&apos; in intent attribute value &apos;1,234:decimal-comma&apos;
 '>1,234 plus 1,234</span></div>
+<pre>
+&lt;math display='block'>
+ &lt;mn intent=':decimal-comma'>1,234&lt;/mn>
+ &lt;mo intent='plus'>+&lt;/mo>
+ &lt;mn intent=':decimal-comma'>1,234&lt;/mn>
+&lt;/math>
+</pre>
+
+    <div class="mathcat">1,234 plus 1,234</div>
 </td>
 
 
