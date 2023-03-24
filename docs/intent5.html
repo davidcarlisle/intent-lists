@@ -441,7 +441,7 @@ caused by: Error in intent value: extra unparsed intent &apos;234:thousands-comm
    <tr>
 <td>
 
-     <math>
+     <math display='block'>
       <msup>
        <mi>&#x211D;</mi>
        <mn>2</mn>
@@ -451,7 +451,7 @@ caused by: Error in intent value: extra unparsed intent &apos;234:thousands-comm
 </td>
 <td>
 <pre>
-&lt;math>
+&lt;math display='block'>
  &lt;msup>
   &lt;mi>&amp;#x211D;&lt;/mi>
   &lt;mn>2&lt;/mn>
@@ -463,7 +463,7 @@ caused by: Error in intent value: extra unparsed intent &apos;234:thousands-comm
 </td>
 <td>
 <pre>
-&lt;math>
+&lt;math display='block'>
  &lt;msup intent='vector-space-power($R,$n)'>
   &lt;mi arg='R'>&amp;#x211D;&lt;/mi>
   &lt;mn arg='n'>2&lt;/mn>
@@ -473,7 +473,7 @@ caused by: Error in intent value: extra unparsed intent &apos;234:thousands-comm
 
     <div class="mathcat">vector space power of, the real numbers comma 2</div>
 <pre>
-&lt;math>
+&lt;math display='block'>
  &lt;msup intent='vector-space-power:silent(_R,$n)'>
   &lt;mi arg='R'>&amp;#x211D;&lt;/mi>
   &lt;mn arg='n'>2&lt;/mn>
@@ -775,7 +775,7 @@ caused by: Error in intent value: extra unparsed intent &apos;234:thousands-comm
 &lt;/math>
 </pre>
 
-    <div class="mathcat">4th</div>
+    <div class="mathcat">_4th</div>
 </td>
 
     <td>4{\mathrm{th}</td>
@@ -1720,7 +1720,298 @@ caused by: Error in intent value: extra unparsed intent &apos;234:thousands-comm
     <td id="IDAckermanorA"><a class="self" href="#IDAckermanorA">Ackerman or A</a></td>
  </tr>
       
+
    <tr>
+    <th colspan='6' id="IDHigherOrderFunctions"><a class="self" href="#IDHigherOrderFunctions">Higher Order Functions</a></th>
+ </tr>
+
+   <tr>
+<td>
+
+     <math display='block'>
+      <mrow>
+       <msup>
+        <mrow>
+         <mo>(</mo>
+         <mi arg='g'>g</mi>
+         <mo>∘</mo>
+         <mi arg='h'>h</mi>
+         <mo>)</mo>
+        </mrow>
+        <mo>′</mo>
+       </msup>
+       <mo>(</mo>
+       <mi arg='x'>x</mi>
+       <mo>)</mo>
+      </mrow>
+     </math>
+    
+</td>
+<td>
+<pre>
+&lt;math display='block'>
+ &lt;mrow>
+  &lt;msup>
+   &lt;mrow>
+    &lt;mo>(&lt;/mo>
+    &lt;mi arg='g'>g&lt;/mi>
+    &lt;mo>∘&lt;/mo>
+    &lt;mi arg='h'>h&lt;/mi>
+    &lt;mo>)&lt;/mo>
+   &lt;/mrow>
+   &lt;mo>′&lt;/mo>
+  &lt;/msup>
+  &lt;mo>(&lt;/mo>
+  &lt;mi arg='x'>x&lt;/mi>
+  &lt;mo>)&lt;/mo>
+ &lt;/mrow>
+&lt;/math>
+</pre>
+
+    <div class="mathcat">open paren, g composed with h, close paren prime; times x</div>
+</td>
+<td>
+<pre>
+&lt;math display='block'>
+ &lt;mrow intent='$op3($x)'>
+  &lt;msup arg='op3' intent='$op2($composed)'>
+   &lt;mrow arg='composed' intent='$op1:infix($g,$h)'>
+    &lt;mo>(&lt;/mo>
+    &lt;mi arg='g'>g&lt;/mi>
+    &lt;mo arg='op1' intent='function-composition'>∘&lt;/mo>
+    &lt;mi arg='h'>h&lt;/mi>
+    &lt;mo>)&lt;/mo>
+   &lt;/mrow>
+   &lt;mo arg='op2' intent='first-derivative'>′&lt;/mo>
+  &lt;/msup>
+  &lt;mo>(&lt;/mo>
+  &lt;mi arg='x'>x&lt;/mi>
+  &lt;mo>)&lt;/mo>
+ &lt;/mrow>
+&lt;/math>
+</pre>
+
+    <div class="mathcat">apply function of, first derivative of; g function composition h, comma x</div>
+</td>
+
+    <td>(g∘h)′(x)</td>
+    <td id="IDlowg∘h′x"><a class="self" href="#IDlowg∘h′x">low (g∘h)′(x)</a></td>
+ </tr>
+
+   <tr>
+<td>
+
+     <math display='block'>
+      <mrow>
+       <mo>(</mo>
+       <mi>g</mi>
+       <mo>∘</mo>
+       <mi>h</mi>
+       <mo>)</mo>
+       <mo>′</mo>
+       <mo>(</mo>
+       <mi>x</mi>
+       <mo>)</mo>
+      </mrow>
+     </math>
+    
+</td>
+<td>
+<pre>
+&lt;math display='block'>
+ &lt;mrow>
+  &lt;mo>(&lt;/mo>
+  &lt;mi>g&lt;/mi>
+  &lt;mo>∘&lt;/mo>
+  &lt;mi>h&lt;/mi>
+  &lt;mo>)&lt;/mo>
+  &lt;mo>′&lt;/mo>
+  &lt;mo>(&lt;/mo>
+  &lt;mi>x&lt;/mi>
+  &lt;mo>)&lt;/mo>
+ &lt;/mrow>
+&lt;/math>
+</pre>
+
+    <div class="mathcat">open paren, g composed with h, close paren prime; times x</div>
+</td>
+<td>
+<pre>
+&lt;math display='block'>
+ &lt;mrow intent='first-derivative(function-composition:infix(g,h))(x)'>
+  &lt;mo>(&lt;/mo>
+  &lt;mi>g&lt;/mi>
+  &lt;mo>∘&lt;/mo>
+  &lt;mi>h&lt;/mi>
+  &lt;mo>)&lt;/mo>
+  &lt;mo>′&lt;/mo>
+  &lt;mo>(&lt;/mo>
+  &lt;mi>x&lt;/mi>
+  &lt;mo>)&lt;/mo>
+ &lt;/mrow>
+&lt;/math>
+</pre>
+
+    <div class="mathcat">apply function of, first derivative of; g function composition h, comma x</div>
+</td>
+
+    <td>(g∘h)′(x)</td>
+    <td id="IDhighg∘h′x"><a class="self" href="#IDhighg∘h′x">high (g∘h)′(x)</a></td>
+ </tr>
+
+   <tr>
+<td>
+
+     <math display='block'>
+      <mrow>
+       <msup>
+        <mrow>
+         <mo>(</mo>
+         <mi>g</mi>
+         <mo>∘</mo>
+         <mi>h</mi>
+         <mo>)</mo>
+        </mrow>
+        <mo>′</mo>
+       </msup>
+       <mo>(</mo>
+       <mi>x</mi>
+       <mo>)</mo>
+      </mrow>
+     </math>
+    
+</td>
+<td>
+<pre>
+&lt;math display='block'>
+ &lt;mrow>
+  &lt;msup>
+   &lt;mrow>
+    &lt;mo>(&lt;/mo>
+    &lt;mi>g&lt;/mi>
+    &lt;mo>∘&lt;/mo>
+    &lt;mi>h&lt;/mi>
+    &lt;mo>)&lt;/mo>
+   &lt;/mrow>
+   &lt;mo>′&lt;/mo>
+  &lt;/msup>
+  &lt;mo>(&lt;/mo>
+  &lt;mi>x&lt;/mi>
+  &lt;mo>)&lt;/mo>
+ &lt;/mrow>
+&lt;/math>
+</pre>
+
+    <div class="mathcat">open paren, g composed with h, close paren prime; times x</div>
+</td>
+<td>
+<pre>
+&lt;math display='block'>
+ &lt;mrow intent='apply($op3,$x)'>
+  &lt;msup arg='op3' intent='apply($op2,$composed)'>
+   &lt;mrow arg='composed' intent='apply:infix($op1,$g,$h)'>&lt;!-- ?-->
+    &lt;mo>(&lt;/mo>
+    &lt;mi arg='g'>g&lt;/mi>
+    &lt;mo arg='op1' intent='function-composition'>∘&lt;/mo>
+    &lt;mi arg='h'>h&lt;/mi>
+    &lt;mo>)&lt;/mo>
+   &lt;/mrow>
+   &lt;mo arg='op2' intent='first-derivative'>′&lt;/mo>
+  &lt;/msup>
+  &lt;mo>(&lt;/mo>
+  &lt;mi arg='x'>x&lt;/mi>
+  &lt;mo>)&lt;/mo>
+ &lt;/mrow>
+&lt;/math>
+</pre>
+
+    <div class="mathcat">apply of, apply of, first derivative comma; function composition apply g apply h, comma x</div>
+</td>
+
+    <td>(g∘h)′(x)</td>
+    <td id="IDapplyg∘h′x"><a class="self" href="#IDapplyg∘h′x">apply (g∘h)′(x)</a></td>
+ </tr>
+
+
+   <tr>
+<td>
+
+     <math display='block'>
+      <mrow>
+       <msup>
+        <mrow>
+         <mo>(</mo>
+         <mi>g</mi>
+         <mo>∘</mo>
+         <mi>h</mi>
+         <mo>)</mo>
+        </mrow>
+        <mo>′</mo>
+       </msup>
+       <mo>&#x2061;</mo>
+       <mo>(</mo>
+       <mi>x</mi>
+       <mo>)</mo>
+      </mrow>
+     </math>
+    
+</td>
+<td>
+<pre>
+&lt;math display='block'>
+ &lt;mrow>
+  &lt;msup>
+   &lt;mrow>
+    &lt;mo>(&lt;/mo>
+    &lt;mi>g&lt;/mi>
+    &lt;mo>∘&lt;/mo>
+    &lt;mi>h&lt;/mi>
+    &lt;mo>)&lt;/mo>
+   &lt;/mrow>
+   &lt;mo>′&lt;/mo>
+  &lt;/msup>
+  &lt;mo>&amp;#x2061;&lt;/mo>
+  &lt;mo>(&lt;/mo>
+  &lt;mi>x&lt;/mi>
+  &lt;mo>)&lt;/mo>
+ &lt;/mrow>
+&lt;/math>
+</pre>
+
+    <div class="mathcat">open paren, g composed with h, close paren prime, of x</div>
+</td>
+<td>
+<pre>
+&lt;math display='block'>
+ &lt;mrow>
+  &lt;msup intent='first-derivative($composed)'>
+   &lt;mrow arg='composed'>
+    &lt;mo>(&lt;/mo>
+    &lt;mi>g&lt;/mi>
+    &lt;mo intent='composed-with'>∘&lt;/mo>
+    &lt;mi>h&lt;/mi>
+    &lt;mo>)&lt;/mo>
+   &lt;/mrow>
+   &lt;mo>′&lt;/mo>
+  &lt;/msup>
+  &lt;mo>&amp;#x2061;&lt;/mo> &lt;!-- apply function -->
+  &lt;mo>(&lt;/mo>
+  &lt;mi>x&lt;/mi>
+  &lt;mo>)&lt;/mo>
+ &lt;/mrow>
+&lt;/math>
+</pre>
+
+    <div class="mathcat">first derivative of, open paren, g composed with h, close paren of x</div>
+</td>
+
+    <td>(g∘h)′(x)</td>
+    <td id="IDleafg∘h′x"><a class="self" href="#IDleafg∘h′x">leaf (g∘h)′(x)</a></td>
+ </tr>
+
+
+    
+   <tr> 
     <th colspan='6' id="IDHints"><a class="self" href="#IDHints">Hints</a></th>
  </tr>
 
@@ -3507,7 +3798,7 @@ caused by: Error in intent value: extra unparsed intent &apos;234:thousands-comm
 &lt;/math>
 </pre>
 
-    <div class="mathcat">d 2 x by d t squared</div>
+    <div class="mathcat">d _2 x by d t squared</div>
 </td>
 
     <td>\frac{d^2x}{dt^2}</td>

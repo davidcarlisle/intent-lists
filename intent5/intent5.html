@@ -202,7 +202,7 @@
 
    <tr>
     <td>
-     <math>
+     <math display='block'>
       <msup>
        <mi>&#x211D;</mi>
        <mn>2</mn>
@@ -210,13 +210,13 @@
      </math>
     </td>
     <td>
-     <math>
+     <math display='block'>
       <msup intent='vector-space-power($R,$n)'>
        <mi arg='R'>&#x211D;</mi>
        <mn arg='n'>2</mn>
       </msup>
      </math>
-     <math>
+     <math display='block'>
       <msup intent='vector-space-power:silent(_R,$n)'>
        <mi arg='R'>&#x211D;</mi>
        <mn arg='n'>2</mn>
@@ -972,7 +972,181 @@
     <td>Ackerman or A</td>
    </tr>
       
+
    <tr>
+    <th colspan='6'>Higher Order Functions</th>
+   </tr>
+
+   <tr>
+    <td>
+     <math display='block'>
+      <mrow>
+       <msup>
+	<mrow>
+	 <mo>(</mo>
+	 <mi arg='g'>g</mi>
+	 <mo>∘</mo>
+	 <mi arg='h'>h</mi>
+	 <mo>)</mo>
+	</mrow>
+	<mo>′</mo>
+       </msup>
+       <mo>(</mo>
+       <mi arg='x'>x</mi>
+       <mo>)</mo>
+      </mrow>
+     </math>
+    </td>
+    <td>
+     <math display='block'>
+      <mrow intent='$op3($x)'>
+       <msup arg='op3' intent='$op2($composed)'>
+	<mrow arg='composed' intent='$op1:infix($g,$h)'>
+	 <mo>(</mo>
+	 <mi arg='g'>g</mi>
+	 <mo arg='op1' intent='function-composition'>∘</mo>
+	 <mi arg='h'>h</mi>
+	 <mo>)</mo>
+	</mrow>
+	<mo arg='op2' intent='first-derivative'>′</mo>
+       </msup>
+       <mo>(</mo>
+       <mi arg='x'>x</mi>
+       <mo>)</mo>
+      </mrow>
+     </math>
+    </td>
+    <td>(g∘h)′(x)</td>
+    <td>low (g∘h)′(x)</td>
+   </tr>
+
+   <tr>
+    <td>
+     <math display='block'>
+      <mrow>
+       <mo>(</mo>
+       <mi>g</mi>
+       <mo>∘</mo>
+       <mi>h</mi>
+       <mo>)</mo>
+       <mo>′</mo>
+       <mo>(</mo>
+       <mi>x</mi>
+       <mo>)</mo>
+      </mrow>
+     </math>
+    </td>
+    <td>
+     <math display='block'>
+      <mrow intent='first-derivative(function-composition:infix(g,h))(x)'>
+       <mo>(</mo>
+       <mi>g</mi>
+       <mo>∘</mo>
+       <mi>h</mi>
+       <mo>)</mo>
+       <mo>′</mo>
+       <mo>(</mo>
+       <mi>x</mi>
+       <mo>)</mo>
+      </mrow>
+     </math>
+    </td>
+    <td>(g∘h)′(x)</td>
+    <td>high (g∘h)′(x)</td>
+   </tr>
+
+   <tr>
+    <td>
+     <math display='block'>
+      <mrow>
+       <msup>
+	<mrow>
+	 <mo>(</mo>
+	 <mi>g</mi>
+	 <mo>∘</mo>
+	 <mi>h</mi>
+	 <mo>)</mo>
+	</mrow>
+	<mo>′</mo>
+       </msup>
+       <mo>(</mo>
+       <mi>x</mi>
+       <mo>)</mo>
+      </mrow>
+     </math>
+    </td>
+    <td>
+     <math display='block'>
+      <mrow intent='apply($op3,$x)'>
+       <msup arg='op3' intent='apply($op2,$composed)'>
+	<mrow arg='composed' intent='apply:infix($op1,$g,$h)'><!-- ?-->
+	 <mo>(</mo>
+	 <mi arg='g'>g</mi>
+	 <mo arg='op1' intent='function-composition'>∘</mo>
+	 <mi arg='h'>h</mi>
+	 <mo>)</mo>
+	</mrow>
+	<mo arg='op2' intent='first-derivative'>′</mo>
+       </msup>
+       <mo>(</mo>
+       <mi arg='x'>x</mi>
+       <mo>)</mo>
+      </mrow>
+     </math>
+    </td>
+    <td>(g∘h)′(x)</td>
+    <td>apply (g∘h)′(x)</td>
+   </tr>
+
+
+   <tr>
+    <td>
+     <math display='block'>
+      <mrow>
+       <msup>
+	<mrow>
+	 <mo>(</mo>
+	 <mi>g</mi>
+	 <mo>∘</mo>
+	 <mi>h</mi>
+	 <mo>)</mo>
+	</mrow>
+	<mo>′</mo>
+       </msup>
+       <mo>&#x2061;</mo>
+       <mo>(</mo>
+       <mi>x</mi>
+       <mo>)</mo>
+      </mrow>
+     </math>
+    </td>
+    <td>
+     <math display='block'>
+      <mrow>
+       <msup intent='first-derivative($composed)'>
+	<mrow arg='composed'>
+	 <mo>(</mo>
+	 <mi>g</mi>
+	 <mo intent='composed-with'>∘</mo>
+	 <mi>h</mi>
+	 <mo>)</mo>
+	</mrow>
+	<mo>′</mo>
+       </msup>
+       <mo>&#x2061;</mo> <!-- apply function -->
+       <mo>(</mo>
+       <mi>x</mi>
+       <mo>)</mo>
+      </mrow>
+     </math>
+    </td>
+    <td>(g∘h)′(x)</td>
+    <td>leaf (g∘h)′(x)</td>
+   </tr>
+
+
+    
+   <tr> 
     <th colspan='6'>Hints</th>
    </tr>
 
