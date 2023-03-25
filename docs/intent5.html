@@ -66,59 +66,13 @@
 <td>
 <pre>
 &lt;math display='block'>
- &lt;mn intent='1,234:decimal-comma'>1,234&lt;/mn>
+ &lt;mn intent='1.234:decimal-comma'>1,234&lt;/mn>
  &lt;mo>+&lt;/mo>
- &lt;mn intent='1,234:decimal-comma'>1,234&lt;/mn>
+ &lt;mn intent='1.234:decimal-comma'>1,234&lt;/mn>
 &lt;/math>
 </pre>
 
-    <div class="mathcat"><span class='error' title='Pattern match/replacement failure!
-caused by: attempting replacement pattern: "default" for "math".
-Replacement
-[test: [  if: &apos;x: "*"&apos; then:[intent:  name: math
-      children: [x: "*"]] else:[t: " "]]
-]
-...due to matching the following MathML with the pattern
-x: "."
- &lt;math display=&apos;block&apos; id=&apos;M...&apos; data-id-added=&apos;true&apos;>
-  &lt;mrow data-changed=&apos;added&apos; id=&apos;M...&apos; data-id-added=&apos;true&apos;>
-    &lt;mn intent=&apos;1,234:decimal-comma&apos; id=&apos;M...&apos; data-id-added=&apos;true&apos;>1,234&lt;/mn>
-    &lt;mo id=&apos;M...&apos; data-id-added=&apos;true&apos;>+&lt;/mo>
-    &lt;mn intent=&apos;1,234:decimal-comma&apos; id=&apos;M...&apos; data-id-added=&apos;true&apos;>1,234&lt;/mn>
-  &lt;/mrow>
- &lt;/math>
-The patterns are in mathcat2\Rules\intent.yaml.
-
-caused by: replacing inside &apos;intent&apos;
-caused by: attempting replacement pattern: "default" for "*".
-Replacement
-[test: [  if: &apos;x: "count(*) > 0"&apos; then:[intent:  xpath-name: x: "name(.)"
-      children: [x: "*"]]]
-test: [  if: &apos;x: "text()"&apos; then:[intent:  xpath-name: x: "name(.)"
-      children: [x: "text()"]] else:[intent:  xpath-name: x: "name(.)"
-      children: 
-]]
-]
-...due to matching the following MathML with the pattern
-x: "."
- &lt;mrow data-changed=&apos;added&apos; id=&apos;M...&apos; data-id-added=&apos;true&apos;>
-  &lt;mn intent=&apos;1,234:decimal-comma&apos; id=&apos;M...&apos; data-id-added=&apos;true&apos;>1,234&lt;/mn>
-  &lt;mo id=&apos;M...&apos; data-id-added=&apos;true&apos;>+&lt;/mo>
-  &lt;mn intent=&apos;1,234:decimal-comma&apos; id=&apos;M...&apos; data-id-added=&apos;true&apos;>1,234&lt;/mn>
- &lt;/mrow>
-The patterns are in mathcat2\Rules\intent.yaml.
-
-caused by: replacing inside &apos;intent&apos;
-caused by: attempting replacement pattern: "intent-exists" for "!*".
-Replacement
-[x: "process-intent(.)"]
-...due to matching the following MathML with the pattern
-x: "@intent"
- &lt;mn intent=&apos;1,234:decimal-comma&apos; id=&apos;M...&apos; data-id-added=&apos;true&apos;>1,234&lt;/mn>
-The patterns are in mathcat2\Rules\intent.yaml.
-
-caused by: Error in intent value: extra unparsed intent &apos;234:decimal-comma&apos; in intent attribute value &apos;1,234:decimal-comma&apos;
-'>1234 plus 1234</span></div>
+    <div class="mathcat">1.234 plus 1.234</div>
 <pre>
 &lt;math display='block'>
  &lt;mn intent=':decimal-comma'>1,234&lt;/mn>
@@ -161,65 +115,15 @@ caused by: Error in intent value: extra unparsed intent &apos;234:decimal-comma&
 <td>
 <pre>
 &lt;math display='block' mathbackground='yellow'>
- &lt;mn intent='1,234:thousands-comma'>1,234&lt;/mn>
+ &lt;mn intent='1234:thousands-comma'>1,234&lt;/mn>
  &lt;mo>;&lt;/mo>
- &lt;mn intent='1,234:thousands-comma'>1,234&lt;/mn>
+ &lt;mn intent='1234:thousands-comma'>1,234&lt;/mn>
  &lt;mo>;&lt;/mo>
- &lt;mn intent='1,234,000:thousands-comma'>1,234,000&lt;/mn>
+ &lt;mn intent='1234000:thousands-comma'>1,234,000&lt;/mn>
 &lt;/math>
 </pre>
 
-    <div class="mathcat"><span class='error' title='Pattern match/replacement failure!
-caused by: attempting replacement pattern: "default" for "math".
-Replacement
-[test: [  if: &apos;x: "*"&apos; then:[intent:  name: math
-      children: [x: "*"]] else:[t: " "]]
-]
-...due to matching the following MathML with the pattern
-x: "."
- &lt;math display=&apos;block&apos; mathbackground=&apos;yellow&apos; id=&apos;M...&apos; data-id-added=&apos;true&apos;>
-  &lt;mrow data-changed=&apos;added&apos; id=&apos;M...&apos; data-id-added=&apos;true&apos;>
-    &lt;mn intent=&apos;1,234:thousands-comma&apos; id=&apos;M...&apos; data-id-added=&apos;true&apos;>1,234&lt;/mn>
-    &lt;mo id=&apos;M...&apos; data-id-added=&apos;true&apos;>;&lt;/mo>
-    &lt;mn intent=&apos;1,234:thousands-comma&apos; id=&apos;M...&apos; data-id-added=&apos;true&apos;>1,234&lt;/mn>
-    &lt;mo id=&apos;M...&apos; data-id-added=&apos;true&apos;>;&lt;/mo>
-    &lt;mn intent=&apos;1,234,000:thousands-comma&apos; id=&apos;M...&apos; data-id-added=&apos;true&apos;>1,234,000&lt;/mn>
-  &lt;/mrow>
- &lt;/math>
-The patterns are in mathcat2\Rules\intent.yaml.
-
-caused by: replacing inside &apos;intent&apos;
-caused by: attempting replacement pattern: "default" for "*".
-Replacement
-[test: [  if: &apos;x: "count(*) > 0"&apos; then:[intent:  xpath-name: x: "name(.)"
-      children: [x: "*"]]]
-test: [  if: &apos;x: "text()"&apos; then:[intent:  xpath-name: x: "name(.)"
-      children: [x: "text()"]] else:[intent:  xpath-name: x: "name(.)"
-      children: 
-]]
-]
-...due to matching the following MathML with the pattern
-x: "."
- &lt;mrow data-changed=&apos;added&apos; id=&apos;M...&apos; data-id-added=&apos;true&apos;>
-  &lt;mn intent=&apos;1,234:thousands-comma&apos; id=&apos;M...&apos; data-id-added=&apos;true&apos;>1,234&lt;/mn>
-  &lt;mo id=&apos;M...&apos; data-id-added=&apos;true&apos;>;&lt;/mo>
-  &lt;mn intent=&apos;1,234:thousands-comma&apos; id=&apos;M...&apos; data-id-added=&apos;true&apos;>1,234&lt;/mn>
-  &lt;mo id=&apos;M...&apos; data-id-added=&apos;true&apos;>;&lt;/mo>
-  &lt;mn intent=&apos;1,234,000:thousands-comma&apos; id=&apos;M...&apos; data-id-added=&apos;true&apos;>1,234,000&lt;/mn>
- &lt;/mrow>
-The patterns are in mathcat2\Rules\intent.yaml.
-
-caused by: replacing inside &apos;intent&apos;
-caused by: attempting replacement pattern: "intent-exists" for "!*".
-Replacement
-[x: "process-intent(.)"]
-...due to matching the following MathML with the pattern
-x: "@intent"
- &lt;mn intent=&apos;1,234:thousands-comma&apos; id=&apos;M...&apos; data-id-added=&apos;true&apos;>1,234&lt;/mn>
-The patterns are in mathcat2\Rules\intent.yaml.
-
-caused by: Error in intent value: extra unparsed intent &apos;234:thousands-comma&apos; in intent attribute value &apos;1,234:thousands-comma&apos;
-'>1234 semicolon 1234 semicolon 1234000</span></div>
+    <div class="mathcat">1234 semicolon 1234 semicolon 1234000</div>
 <pre>
 &lt;math display='block' mathbackground='yellow'>
  &lt;mn intent=':thousands-comma'>1,234&lt;/mn>
