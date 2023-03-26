@@ -42,12 +42,17 @@ def GetSpeech():
       return "<span class='error' title='" + re.sub('apos;M[^& ]*','apos;M...',re.sub('C:.*?mathcat','mathcat',str(e)).replace('&','&amp;').replace('<','&lt;').replace("'",'&apos;')) + "'>" + s2 +"</span>"
 
 
+def GetVersion():
+    return libmathcat.GetVersion()
+
 
 SetMathCATPreferences()   # you only need to this once
 
 
 htmlstr = open(htmlfile,'r',encoding="utf-8").read()
 htmlstr = htmlstr.replace('<!--X','<').replace('X-->','>').replace('\t','        ')
+htmlstr = htmlstr.replace('</h1>','<br/>MathCAT Version: ' +  GetVersion() + '</h1>')
+
 
 mmltds=re.split(r'<tr>\s*<td>(\s*<math\b.*?</math>\s*)</td>\s*<td>(.*?)</td>', htmlstr, flags=re.DOTALL)
 
