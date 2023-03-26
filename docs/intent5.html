@@ -4569,6 +4569,91 @@
  </tr>
    
    
+   
+   <tr>
+    <th colspan='6' id="IDXMLFeatures"><a class="self" href="#IDXMLFeatures">XML Features</a></th>
+ </tr>
+
+   <tr>
+<td>
+
+     <math display='block'>
+      <mrow>
+       <mi>log</mi>
+       <mi>X</mi>
+      </mrow>
+     </math>
+    
+</td>
+<td>
+<pre>
+&lt;math display='block'>
+ &lt;mrow>
+  &lt;mi>log&lt;/mi>
+  &lt;mi>X&lt;/mi>
+ &lt;/mrow>
+&lt;/math>
+</pre>
+
+    <div class="mathcat">log   x</div>
+</td>
+<td>
+<pre>
+&lt;math display='block'>
+ &lt;mrow intent='log(x)'/>
+&lt;/math>
+</pre>
+
+    <div class="mathcat"></div>
+<pre>
+&lt;math display='block'>
+ &lt;mrow intent='log($x)'>
+  &lt;mi arg='x'>X&lt;/mi>
+ &lt;/mrow>
+&lt;/math>
+</pre>
+
+    <div class="mathcat"><span class='error' title='Pattern match/replacement failure!
+caused by: attempting replacement pattern: "default" for "math".
+Replacement
+[test: [  if: &apos;x: "*"&apos; then:[intent:  name: math
+      children: [x: "*"]] else:[t: " "]]
+]
+...due to matching the following MathML with the pattern
+x: "."
+ &lt;math display=&apos;block&apos; id=&apos;M...&apos; data-id-added=&apos;true&apos;>
+  &lt;mi intent=&apos;log($x)&apos; arg=&apos;x&apos; id=&apos;M...&apos; data-id-added=&apos;true&apos;>X&lt;/mi>
+ &lt;/math>
+The patterns are in mathcat2\Rules\intent.yaml.
+
+caused by: replacing inside &apos;intent&apos;
+caused by: attempting replacement pattern: "intent-exists" for "!*".
+Replacement
+[x: "process-intent(.)"]
+...due to matching the following MathML with the pattern
+x: "@intent"
+ &lt;mi intent=&apos;log($x)&apos; arg=&apos;x&apos; id=&apos;M...&apos; data-id-added=&apos;true&apos;>X&lt;/mi>
+The patterns are in mathcat2\Rules\intent.yaml.
+
+caused by: occurs before &apos;)&apos; in intent attribute value &apos;log($x)&apos;
+caused by: intent arg &apos;$x&apos; not found
+'>x</span></div>
+<pre>
+&lt;math display='block'>
+ &lt;mrow intent='log&amp;#x28;&amp;#x24;x)'>
+  &lt;mi>log&lt;/mi>
+  &lt;mi arg='x'>Y&lt;/mi>
+ &lt;/mrow>
+&lt;/math>
+</pre>
+
+    <div class="mathcat">log of,   y</div>
+</td>
+
+    <td>\log x</td>
+    <td id="IDNCRx28andx24"><a class="self" href="#IDNCRx28andx24">NCR x28 and x24</a></td>
+ </tr>
+   
    <tr>
     <th colspan='6' id="IDHTML"><a class="self" href="#IDHTML">HTML</a></th>
  </tr>
