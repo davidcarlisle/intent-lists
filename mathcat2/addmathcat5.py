@@ -51,7 +51,7 @@ SetMathCATPreferences()   # you only need to this once
 
 htmlstr = open(htmlfile,'r',encoding="utf-8").read()
 htmlstr = htmlstr.replace('<!--X','<').replace('X-->','>').replace('\t','        ')
-htmlstr = htmlstr.replace('</h1>','<br/>MathCAT Version: ' +  GetVersion() + '</h1>')
+htmlstr = htmlstr.replace('</h1>','</h1><h2>MathCAT Version: ' +  GetVersion() + '</h2>')
 
 
 mmltds=re.split(r'<tr>\s*<td>(\s*<math\b.*?</math>\s*)</td>\s*<td>(.*?)</td>', htmlstr, flags=re.DOTALL)
