@@ -7,6 +7,7 @@
    th[colspan] {font-size:120%;font-weight:bold;
    background-color:white;
    padding-top:.5em}
+   thead {font-size:120%;}
    tbody th {width:2em;}
    math{font-size:120%;margin:.2em;}
    tr>td  {border:solid thin black;}
@@ -956,7 +957,7 @@
 <td>
 <pre>
 &lt;math display='block'>
- &lt;mrow intent='choose($n,$k)'>
+ &lt;mrow intent='binomial($n,$k)'>
   &lt;mo>(&lt;/mo>
   &lt;mfrac linethickness='0pt'>
    &lt;mi arg='n'>n&lt;/mi>
@@ -967,10 +968,10 @@
 &lt;/math>
 </pre>
 
-    <div class="mathcat">choose of, n comma k</div>
+    <div class="mathcat">n choose k</div>
 <pre>
 &lt;math display='block'>
- &lt;mrow intent='choose:infix($n,$k)'>
+ &lt;mrow intent='binomial:infix($n,$k)'>
   &lt;mo>(&lt;/mo>
   &lt;mfrac linethickness='0pt'>
    &lt;mi arg='n'>n&lt;/mi>
@@ -981,7 +982,7 @@
 &lt;/math>
 </pre>
 
-    <div class="mathcat">, n choose k,</div>
+    <div class="mathcat">n choose k</div>
 </td>
 
     <td>\binom{n}{k}</td>
@@ -1021,7 +1022,7 @@
 <td>
 <pre>
 &lt;math display='block'>
- &lt;mmultiscripts intent='choose($n,$k)'>
+ &lt;mmultiscripts intent='binomial($n,$k)'>
   &lt;mi>C&lt;/mi>
   &lt;mi arg='k'>k&lt;/mi>
   &lt;mrow/>
@@ -1032,10 +1033,10 @@
 &lt;/math>
 </pre>
 
-    <div class="mathcat">choose of, n comma k</div>
+    <div class="mathcat">n choose k</div>
 <pre>
 &lt;math display='block'>
- &lt;mmultiscripts intent='choose:infix($n,$k)'>
+ &lt;mmultiscripts intent='binomial:infix($n,$k)'>
   &lt;mi>C&lt;/mi>
   &lt;mi arg='k'>k&lt;/mi>
   &lt;mrow/>
@@ -1046,7 +1047,7 @@
 &lt;/math>
 </pre>
 
-    <div class="mathcat">, n choose k,</div>
+    <div class="mathcat">n choose k</div>
 </td>
 
     <td>{}^n C_k</td>
@@ -1080,7 +1081,7 @@
 <td>
 <pre>
 &lt;math display='block'>
- &lt;msubsup intent='choose($n,$k)'>
+ &lt;msubsup intent='binomial($n,$k)'>
   &lt;mi>C&lt;/mi>
   &lt;mi arg='k'>k&lt;/mi>
   &lt;mi arg='n'>n&lt;/mi>
@@ -1088,10 +1089,10 @@
 &lt;/math>
 </pre>
 
-    <div class="mathcat">choose of, n comma k</div>
+    <div class="mathcat">n choose k</div>
 <pre>
 &lt;math display='block'>
- &lt;msubsup intent='choose:infix($n,$k)'>
+ &lt;msubsup intent='binomial:infix($n,$k)'>
   &lt;mi>C&lt;/mi>
   &lt;mi arg='k'>k&lt;/mi>
   &lt;mi arg='n'>n&lt;/mi>
@@ -1099,7 +1100,7 @@
 &lt;/math>
 </pre>
 
-    <div class="mathcat">, n choose k,</div>
+    <div class="mathcat">n choose k</div>
 </td>
 
     <td>C^n_k</td>
@@ -1139,7 +1140,7 @@
 <td>
 <pre>
 &lt;math display='block'>
- &lt;mrow intent='choose($n,$k)'>
+ &lt;mrow intent='binomial($n,$k)'>
   &lt;mi>C&lt;/mi>
   &lt;mo>(&lt;/mo>
   &lt;mi arg='n'>n&lt;/mi>
@@ -1150,10 +1151,10 @@
 &lt;/math>
 </pre>
 
-    <div class="mathcat">choose of, n comma k</div>
+    <div class="mathcat">n choose k</div>
 <pre>
 &lt;math display='block'>
- &lt;mrow intent='choose:infix($n,$k)'>
+ &lt;mrow intent='binomial:infix($n,$k)'>
   &lt;mi>C&lt;/mi>
   &lt;mo>(&lt;/mo>
   &lt;mi arg='n'>n&lt;/mi>
@@ -1164,7 +1165,7 @@
 &lt;/math>
 </pre>
 
-    <div class="mathcat">, n choose k,</div>
+    <div class="mathcat">n choose k</div>
 </td>
 
     <td>C(n,k)</td>

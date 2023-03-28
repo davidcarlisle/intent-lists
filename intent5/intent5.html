@@ -7,6 +7,7 @@
    th[colspan] {font-size:120%;font-weight:bold;
    background-color:white;
    padding-top:.5em}
+   thead {font-size:120%;}
    tbody th {width:2em;}
    math{font-size:120%;margin:.2em;}
    tr>td  {border:solid thin black;}
@@ -566,7 +567,7 @@
     </td>
     <td>
      <math display='block'>
-      <mrow intent='choose($n,$k)'>
+      <mrow intent='binomial($n,$k)'>
        <mo>(</mo>
        <mfrac linethickness='0pt'>
 	<mi arg='n'>n</mi>
@@ -576,7 +577,7 @@
       </mrow>
      </math>
      <math display='block'>
-      <mrow intent='choose:infix($n,$k)'>
+      <mrow intent='binomial:infix($n,$k)'>
        <mo>(</mo>
        <mfrac linethickness='0pt'>
 	<mi arg='n'>n</mi>
@@ -604,7 +605,7 @@
     </td>
     <td>
      <math display='block'>
-      <mmultiscripts intent='choose($n,$k)'>
+      <mmultiscripts intent='binomial($n,$k)'>
        <mi>C</mi>
        <mi arg='k'>k</mi>
        <mrow/>
@@ -614,7 +615,7 @@
       </mmultiscripts>
      </math>
      <math display='block'>
-      <mmultiscripts intent='choose:infix($n,$k)'>
+      <mmultiscripts intent='binomial:infix($n,$k)'>
        <mi>C</mi>
        <mi arg='k'>k</mi>
        <mrow/>
@@ -639,14 +640,14 @@
     </td>
     <td>
      <math display='block'>
-      <msubsup intent='choose($n,$k)'>
+      <msubsup intent='binomial($n,$k)'>
        <mi>C</mi>
        <mi arg='k'>k</mi>
        <mi arg='n'>n</mi>
       </msubsup>
      </math>
      <math display='block'>
-      <msubsup intent='choose:infix($n,$k)'>
+      <msubsup intent='binomial:infix($n,$k)'>
        <mi>C</mi>
        <mi arg='k'>k</mi>
        <mi arg='n'>n</mi>
@@ -671,7 +672,7 @@
     </td>
     <td>
      <math display='block'>
-      <mrow intent='choose($n,$k)'>
+      <mrow intent='binomial($n,$k)'>
        <mi>C</mi>
        <mo>(</mo>
        <mi arg='n'>n</mi>
@@ -681,7 +682,7 @@
       </mrow>
      </math>
      <math display='block'>
-      <mrow intent='choose:infix($n,$k)'>
+      <mrow intent='binomial:infix($n,$k)'>
        <mi>C</mi>
        <mo>(</mo>
        <mi arg='n'>n</mi>
