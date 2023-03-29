@@ -82,7 +82,8 @@ for mmltd in mmltds:
       j=j+1
       if(j % 2 == 0):
         print("<pre>")
-        print(mml.replace('&','&amp;').replace('<','&lt;').replace('\n     ','\n'))
+        print(re.sub("((arg|intent)='[^']*')",r'<b>\1</b>',
+              mml.replace('&','&amp;').replace('<','&lt;').replace('\n     ','\n')))
         print("</pre>")
         try:
           SetMathMLForMathCAT(mml)

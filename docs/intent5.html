@@ -67,18 +67,18 @@
 <td>
 <pre>
 &lt;math display='block'>
- &lt;mn intent='1.234:decimal-comma'>1,234&lt;/mn>
+ &lt;mn <b>intent='1.234:decimal-comma'</b>>1,234&lt;/mn>
  &lt;mo>+&lt;/mo>
- &lt;mn intent='1.234:decimal-comma'>1,234&lt;/mn>
+ &lt;mn <b>intent='1.234:decimal-comma'</b>>1,234&lt;/mn>
 &lt;/math>
 </pre>
 
     <div class="mathcat">1.234 plus 1.234</div>
 <pre>
 &lt;math display='block'>
- &lt;mn intent=':decimal-comma'>1,234&lt;/mn>
+ &lt;mn <b>intent=':decimal-comma'</b>>1,234&lt;/mn>
  &lt;mo>+&lt;/mo>
- &lt;mn intent=':decimal-comma'>1,234&lt;/mn>
+ &lt;mn <b>intent=':decimal-comma'</b>>1,234&lt;/mn>
 &lt;/math>
 </pre>
 
@@ -116,22 +116,22 @@
 <td>
 <pre>
 &lt;math display='block' mathbackground='yellow'>
- &lt;mn intent='1234:thousands-comma'>1,234&lt;/mn>
+ &lt;mn <b>intent='1234:thousands-comma'</b>>1,234&lt;/mn>
  &lt;mo>;&lt;/mo>
- &lt;mn intent='1234:thousands-comma'>1,234&lt;/mn>
+ &lt;mn <b>intent='1234:thousands-comma'</b>>1,234&lt;/mn>
  &lt;mo>;&lt;/mo>
- &lt;mn intent='1234000:thousands-comma'>1,234,000&lt;/mn>
+ &lt;mn <b>intent='1234000:thousands-comma'</b>>1,234,000&lt;/mn>
 &lt;/math>
 </pre>
 
     <div class="mathcat">1234 semicolon 1234 semicolon 1234000</div>
 <pre>
 &lt;math display='block' mathbackground='yellow'>
- &lt;mn intent=':thousands-comma'>1,234&lt;/mn>
+ &lt;mn <b>intent=':thousands-comma'</b>>1,234&lt;/mn>
  &lt;mo>;&lt;/mo>
- &lt;mn intent=':thousands-comma'>1,234&lt;/mn>
+ &lt;mn <b>intent=':thousands-comma'</b>>1,234&lt;/mn>
  &lt;mo>;&lt;/mo>
- &lt;mn intent=':thousands-comma'>1,234,000&lt;/mn>
+ &lt;mn <b>intent=':thousands-comma'</b>>1,234,000&lt;/mn>
 &lt;/math>
 </pre>
 
@@ -161,7 +161,7 @@
 <td>
 <pre>
 &lt;math display='block'>
- &lt;mn intent='-3'>−3&lt;/mn>
+ &lt;mn <b>intent='-3'</b>>−3&lt;/mn>
 &lt;/math>
 </pre>
 
@@ -197,7 +197,7 @@
 <td>
 <pre>
 &lt;math display='block'>
- &lt;mrow intent='-3'>
+ &lt;mrow <b>intent='-3'</b>>
   &lt;mo>−&lt;/mo>
   &lt;mn>3&lt;/mn>
  &lt;/mrow>
@@ -319,9 +319,9 @@
 <td>
 <pre>
 &lt;math display='block'>
- &lt;msup intent='index($H,$n)'>
-  &lt;mi arg='H' mathvariant='normal'>H&lt;/mi>
-  &lt;mn arg='n'>2&lt;/mn>
+ &lt;msup <b>intent='index($H,$n)'</b>>
+  &lt;mi <b>arg='H'</b> mathvariant='normal'>H&lt;/mi>
+  &lt;mn <b>arg='n'</b>>2&lt;/mn>
  &lt;/msup>
 &lt;/math>
 </pre>
@@ -329,9 +329,9 @@
     <div class="mathcat">index of,   h comma 2</div>
 <pre>
 &lt;math display='block'>
- &lt;msup intent='index:silent($H,$n)'>
-  &lt;mi arg='H' mathvariant='normal'>H&lt;/mi>
-  &lt;mn arg='n'>2&lt;/mn>
+ &lt;msup <b>intent='index:silent($H,$n)'</b>>
+  &lt;mi <b>arg='H'</b> mathvariant='normal'>H&lt;/mi>
+  &lt;mn <b>arg='n'</b>>2&lt;/mn>
  &lt;/msup>
 &lt;/math>
 </pre>
@@ -369,9 +369,9 @@
 <td>
 <pre>
 &lt;math display='block'>
- &lt;msup intent='vector-space-power($R,$n)'>
-  &lt;mi arg='R'>&amp;#x211D;&lt;/mi>
-  &lt;mn arg='n'>2&lt;/mn>
+ &lt;msup <b>intent='vector-space-power($R,$n)'</b>>
+  &lt;mi <b>arg='R'</b>>&amp;#x211D;&lt;/mi>
+  &lt;mn <b>arg='n'</b>>2&lt;/mn>
  &lt;/msup>
 &lt;/math>
 </pre>
@@ -379,9 +379,9 @@
     <div class="mathcat">vector space power of, the real numbers comma 2</div>
 <pre>
 &lt;math display='block'>
- &lt;msup intent='vector-space-power:silent(_R,$n)'>
-  &lt;mi arg='R'>&amp;#x211D;&lt;/mi>
-  &lt;mn arg='n'>2&lt;/mn>
+ &lt;msup <b>intent='vector-space-power:silent(_R,$n)'</b>>
+  &lt;mi <b>arg='R'</b>>&amp;#x211D;&lt;/mi>
+  &lt;mn <b>arg='n'</b>>2&lt;/mn>
  &lt;/msup>
 &lt;/math>
 </pre>
@@ -459,7 +459,7 @@
 <td>
 <pre>
 &lt;math display='block'>
- &lt;msup intent='x-dagger'>
+ &lt;msup <b>intent='x-dagger'</b>>
   &lt;mi>x&lt;/mi>
   &lt;mo>&amp;#x2020;&lt;!-- U+2020-->&lt;/mo>
  &lt;/msup>
@@ -499,10 +499,10 @@
 <td>
 <pre>
 &lt;math display='block'>
- &lt;msup intent='$op($arg)'>
-  &lt;mi arg='arg'>x&lt;/mi>
-  &lt;mi arg='op'
-      intent='transpose'
+ &lt;msup <b>intent='$op($arg)'</b>>
+  &lt;mi <b>arg='arg'</b>>x&lt;/mi>
+  &lt;mi <b>arg='op'</b>
+      <b>intent='transpose'</b>
       mathvariant='normal'>T&lt;/mi>
  &lt;/msup>
 &lt;/math>
@@ -511,10 +511,10 @@
     <div class="mathcat">x transpose</div>
 <pre>
 &lt;math display='block' mathbackground='yellow'>
- &lt;msup intent='$op:function($arg)'>
-  &lt;mi arg='arg'>x&lt;/mi>
-  &lt;mi arg='op'
-      intent='transpose'
+ &lt;msup <b>intent='$op:function($arg)'</b>>
+  &lt;mi <b>arg='arg'</b>>x&lt;/mi>
+  &lt;mi <b>arg='op'</b>
+      <b>intent='transpose'</b>
       mathvariant='normal'>T&lt;/mi>
  &lt;/msup>
 &lt;/math>
@@ -523,10 +523,10 @@
     <div class="mathcat">x transpose</div>
 <pre>
 &lt;math display='block' mathbackground='yellow'>
- &lt;msup intent='transpose:function($arg)'>
-  &lt;mi arg='arg'>x&lt;/mi>
-  &lt;mi arg='op'
-      intent='transpose'
+ &lt;msup <b>intent='transpose:function($arg)'</b>>
+  &lt;mi <b>arg='arg'</b>>x&lt;/mi>
+  &lt;mi <b>arg='op'</b>
+      <b>intent='transpose'</b>
       mathvariant='normal'>T&lt;/mi>
  &lt;/msup>
 &lt;/math>
@@ -535,10 +535,10 @@
     <div class="mathcat">x transpose</div>
 <pre>
 &lt;math display='block'>
- &lt;msup intent='_($op, _of, $arg)'>
-  &lt;mi arg='arg'>x&lt;/mi>
-  &lt;mi arg='op'
-      intent='transpose'
+ &lt;msup <b>intent='_($op, _of, $arg)'</b>>
+  &lt;mi <b>arg='arg'</b>>x&lt;/mi>
+  &lt;mi <b>arg='op'</b>
+      <b>intent='transpose'</b>
       mathvariant='normal'>T&lt;/mi>
  &lt;/msup>
 &lt;/math>
@@ -581,12 +581,12 @@
 <td>
 <pre>
 &lt;math display='block'>
- &lt;mmultiscripts intent='$op($arg)'>
-  &lt;mi arg='arg'>x&lt;/mi>
+ &lt;mmultiscripts <b>intent='$op($arg)'</b>>
+  &lt;mi <b>arg='arg'</b>>x&lt;/mi>
   &lt;mprescripts/>
   &lt;mrow/>
-  &lt;mi arg='op'
-      intent='transpose'
+  &lt;mi <b>arg='op'</b>
+      <b>intent='transpose'</b>
       mathvariant='normal'>T&lt;/mi>
  &lt;/mmultiscripts>
 &lt;/math>
@@ -595,12 +595,12 @@
     <div class="mathcat">x transpose</div>
 <pre>
 &lt;math display='block' mathbackground='yellow'>
- &lt;mmultiscripts intent='$op:function($arg)'>
-  &lt;mi arg='arg'>x&lt;/mi>
+ &lt;mmultiscripts <b>intent='$op:function($arg)'</b>>
+  &lt;mi <b>arg='arg'</b>>x&lt;/mi>
   &lt;mprescripts/>
   &lt;mrow/>
-  &lt;mi arg='op'
-      intent='transpose'
+  &lt;mi <b>arg='op'</b>
+      <b>intent='transpose'</b>
       mathvariant='normal'>T&lt;/mi>
  &lt;/mmultiscripts>
 &lt;/math>
@@ -609,12 +609,12 @@
     <div class="mathcat">x transpose</div>
 <pre>
 &lt;math display='block'>
- &lt;mmultiscripts intent='_($op, _of, $arg)'>
-  &lt;mi arg='arg'>x&lt;/mi>
+ &lt;mmultiscripts <b>intent='_($op, _of, $arg)'</b>>
+  &lt;mi <b>arg='arg'</b>>x&lt;/mi>
   &lt;mprescripts/>
   &lt;mrow/>
-  &lt;mi arg='op'
-      intent='transpose'
+  &lt;mi <b>arg='op'</b>
+      <b>intent='transpose'</b>
       mathvariant='normal'>T&lt;/mi>
  &lt;/mmultiscripts>
 &lt;/math>
@@ -655,7 +655,7 @@
 &lt;math display='block'>
  &lt;msup>
   &lt;mn>4&lt;/mn>
-  &lt;mi intent='ordinal-mark'>th&lt;/mi>
+  &lt;mi <b>intent='ordinal-mark'</b>>th&lt;/mi>
  &lt;/msup>
 &lt;/math>
 </pre>
@@ -663,9 +663,9 @@
     <div class="mathcat">4 to the ordinal mark</div>
 <pre>
 &lt;math display='block'>
- &lt;msup intent='ordinal-mark:silent($n,$th)'>
-  &lt;mn arg='n'>4&lt;/mn>
-  &lt;mi arg='th'>th&lt;/mi>
+ &lt;msup <b>intent='ordinal-mark:silent($n,$th)'</b>>
+  &lt;mn <b>arg='n'</b>>4&lt;/mn>
+  &lt;mi <b>arg='th'</b>>th&lt;/mi>
  &lt;/msup>
 &lt;/math>
 </pre>
@@ -673,7 +673,7 @@
     <div class="mathcat">4 th</div>
 <pre>
 &lt;math display='block'>
- &lt;msup intent='_4th'>
+ &lt;msup <b>intent='_4th'</b>>
   &lt;mn>4&lt;/mn>
   &lt;mi>th&lt;/mi>
  &lt;/msup>
@@ -782,10 +782,10 @@
     &lt;mi>n&lt;/mi>
    &lt;/msup>
    &lt;mo>∈&lt;/mo>
-   &lt;mrow intent='power-series($r,$x)'>
-    &lt;mi arg='r'>R&lt;/mi>
+   &lt;mrow <b>intent='power-series($r,$x)'</b>>
+    &lt;mi <b>arg='r'</b>>R&lt;/mi>
     &lt;mo>⟦&lt;/mo>
-    &lt;mi arg='x'>X&lt;/mi>
+    &lt;mi <b>arg='x'</b>>X&lt;/mi>
     &lt;mo>⟧&lt;/mo>
    &lt;/mrow>
  &lt;/mrow>
@@ -800,7 +800,7 @@
   &lt;mo>=&lt;/mo>
   &lt;munderover>
    &lt;mo>∑&lt;/mo>
-   &lt;mrow intent='_(0)'>
+   &lt;mrow <b>intent='_(0)'</b>>
     &lt;mi>n&lt;/mi>
     &lt;mo>=&lt;/mo>
     &lt;mn>0&lt;/mn>
@@ -811,16 +811,16 @@
     &lt;mi>a&lt;/mi>
     &lt;mi>n&lt;/mi>
    &lt;/msub>
-   &lt;msup intent='_power:silent($x,_to_the,$n)'>
-    &lt;mi arg='x'>X&lt;/mi>
-    &lt;mi arg='n'>n&lt;/mi>
+   &lt;msup <b>intent='_power:silent($x,_to_the,$n)'</b>>
+    &lt;mi <b>arg='x'</b>>X&lt;/mi>
+    &lt;mi <b>arg='n'</b>>n&lt;/mi>
    &lt;/msup>
    &lt;mo>∈&lt;/mo>
-   &lt;mrow intent='power-series:silent(
-                 $r,_power_series,_over,$x)'>
-    &lt;mi arg='r'>R&lt;/mi>
+   &lt;mrow <b>intent='power-series:silent(
+                 $r,_power_series,_over,$x)'</b>>
+    &lt;mi <b>arg='r'</b>>R&lt;/mi>
     &lt;mo>⟦&lt;/mo>
-    &lt;mi arg='x'>X&lt;/mi>
+    &lt;mi <b>arg='x'</b>>X&lt;/mi>
     &lt;mo>⟧&lt;/mo>
    &lt;/mrow>
  &lt;/mrow>
@@ -895,8 +895,8 @@
    &lt;mi>sin&lt;/mi>
    &lt;mn>2&lt;/mn>
   &lt;/msup>
-  &lt;mo intent='apply:silent'>&amp;#x2061;&lt;/mo>
-  &lt;mi intent='theta'>𝜃&lt;/mi>
+  &lt;mo <b>intent='apply:silent'</b>>&amp;#x2061;&lt;/mo>
+  &lt;mi <b>intent='theta'</b>>𝜃&lt;/mi>
  &lt;/mrow>
  &lt;mo>+&lt;/mo>
  &lt;mrow>
@@ -904,8 +904,8 @@
    &lt;mi>cos&lt;/mi>
    &lt;mn>2&lt;/mn>
   &lt;/msup>
-  &lt;mo intent='apply:silent'>&amp;#x2061;&lt;/mo>
-  &lt;mi intent='theta'>𝜃&lt;/mi>
+  &lt;mo <b>intent='apply:silent'</b>>&amp;#x2061;&lt;/mo>
+  &lt;mi <b>intent='theta'</b>>𝜃&lt;/mi>
  &lt;/mrow>
  &lt;mo>=&lt;/mo>
  &lt;mn>1&lt;/mn>
@@ -957,11 +957,11 @@
 <td>
 <pre>
 &lt;math display='block'>
- &lt;mrow intent='binomial($n,$k)'>
+ &lt;mrow <b>intent='binomial($n,$k)'</b>>
   &lt;mo>(&lt;/mo>
   &lt;mfrac linethickness='0pt'>
-   &lt;mi arg='n'>n&lt;/mi>
-   &lt;mi arg='k'>k&lt;/mi>
+   &lt;mi <b>arg='n'</b>>n&lt;/mi>
+   &lt;mi <b>arg='k'</b>>k&lt;/mi>
   &lt;/mfrac>
   &lt;mo>)&lt;/mo>
  &lt;/mrow>
@@ -971,11 +971,11 @@
     <div class="mathcat">n choose k</div>
 <pre>
 &lt;math display='block'>
- &lt;mrow intent='binomial:infix($n,$k)'>
+ &lt;mrow <b>intent='binomial:infix($n,$k)'</b>>
   &lt;mo>(&lt;/mo>
   &lt;mfrac linethickness='0pt'>
-   &lt;mi arg='n'>n&lt;/mi>
-   &lt;mi arg='k'>k&lt;/mi>
+   &lt;mi <b>arg='n'</b>>n&lt;/mi>
+   &lt;mi <b>arg='k'</b>>k&lt;/mi>
   &lt;/mfrac>
   &lt;mo>)&lt;/mo>
  &lt;/mrow>
@@ -1022,13 +1022,13 @@
 <td>
 <pre>
 &lt;math display='block'>
- &lt;mmultiscripts intent='binomial($n,$k)'>
+ &lt;mmultiscripts <b>intent='binomial($n,$k)'</b>>
   &lt;mi>C&lt;/mi>
-  &lt;mi arg='k'>k&lt;/mi>
+  &lt;mi <b>arg='k'</b>>k&lt;/mi>
   &lt;mrow/>
   &lt;mprescripts/>
   &lt;mrow/>
-  &lt;mi arg='n'>n&lt;/mi>
+  &lt;mi <b>arg='n'</b>>n&lt;/mi>
  &lt;/mmultiscripts>
 &lt;/math>
 </pre>
@@ -1036,13 +1036,13 @@
     <div class="mathcat">n choose k</div>
 <pre>
 &lt;math display='block'>
- &lt;mmultiscripts intent='binomial:infix($n,$k)'>
+ &lt;mmultiscripts <b>intent='binomial:infix($n,$k)'</b>>
   &lt;mi>C&lt;/mi>
-  &lt;mi arg='k'>k&lt;/mi>
+  &lt;mi <b>arg='k'</b>>k&lt;/mi>
   &lt;mrow/>
   &lt;mprescripts/>
   &lt;mrow/>
-  &lt;mi arg='n'>n&lt;/mi>
+  &lt;mi <b>arg='n'</b>>n&lt;/mi>
  &lt;/mmultiscripts>
 &lt;/math>
 </pre>
@@ -1081,10 +1081,10 @@
 <td>
 <pre>
 &lt;math display='block'>
- &lt;msubsup intent='binomial($n,$k)'>
+ &lt;msubsup <b>intent='binomial($n,$k)'</b>>
   &lt;mi>C&lt;/mi>
-  &lt;mi arg='k'>k&lt;/mi>
-  &lt;mi arg='n'>n&lt;/mi>
+  &lt;mi <b>arg='k'</b>>k&lt;/mi>
+  &lt;mi <b>arg='n'</b>>n&lt;/mi>
  &lt;/msubsup>
 &lt;/math>
 </pre>
@@ -1092,10 +1092,10 @@
     <div class="mathcat">n choose k</div>
 <pre>
 &lt;math display='block'>
- &lt;msubsup intent='binomial:infix($n,$k)'>
+ &lt;msubsup <b>intent='binomial:infix($n,$k)'</b>>
   &lt;mi>C&lt;/mi>
-  &lt;mi arg='k'>k&lt;/mi>
-  &lt;mi arg='n'>n&lt;/mi>
+  &lt;mi <b>arg='k'</b>>k&lt;/mi>
+  &lt;mi <b>arg='n'</b>>n&lt;/mi>
  &lt;/msubsup>
 &lt;/math>
 </pre>
@@ -1140,12 +1140,12 @@
 <td>
 <pre>
 &lt;math display='block'>
- &lt;mrow intent='binomial($n,$k)'>
+ &lt;mrow <b>intent='binomial($n,$k)'</b>>
   &lt;mi>C&lt;/mi>
   &lt;mo>(&lt;/mo>
-  &lt;mi arg='n'>n&lt;/mi>
+  &lt;mi <b>arg='n'</b>>n&lt;/mi>
   &lt;mo>,&lt;/mo>
-  &lt;mi arg='k'>k&lt;/mi>
+  &lt;mi <b>arg='k'</b>>k&lt;/mi>
   &lt;mo>)&lt;/mo>
  &lt;/mrow>
 &lt;/math>
@@ -1154,12 +1154,12 @@
     <div class="mathcat">n choose k</div>
 <pre>
 &lt;math display='block'>
- &lt;mrow intent='binomial:infix($n,$k)'>
+ &lt;mrow <b>intent='binomial:infix($n,$k)'</b>>
   &lt;mi>C&lt;/mi>
   &lt;mo>(&lt;/mo>
-  &lt;mi arg='n'>n&lt;/mi>
+  &lt;mi <b>arg='n'</b>>n&lt;/mi>
   &lt;mo>,&lt;/mo>
-  &lt;mi arg='k'>k&lt;/mi>
+  &lt;mi <b>arg='k'</b>>k&lt;/mi>
   &lt;mo>)&lt;/mo>
  &lt;/mrow>
 &lt;/math>
@@ -1206,13 +1206,13 @@
 <pre>
 &lt;math display='block'>
  &lt;mmultiscripts
-     intent='permutation($n,$k)'>
+     <b>intent='permutation($n,$k)'</b>>
   &lt;mi>P&lt;/mi>
-  &lt;mi arg='k'>k&lt;/mi>
+  &lt;mi <b>arg='k'</b>>k&lt;/mi>
   &lt;mrow/>
   &lt;mprescripts/>
   &lt;mrow/>
-  &lt;mi arg='n'>n&lt;/mi>
+  &lt;mi <b>arg='n'</b>>n&lt;/mi>
  &lt;/mmultiscripts>
 &lt;/math>
 </pre>
@@ -1221,13 +1221,13 @@
 <pre>
 &lt;math display='block'>
  &lt;mmultiscripts
-     intent='permutation:prefix($n,$k)'>
+     <b>intent='permutation:prefix($n,$k)'</b>>
   &lt;mi>P&lt;/mi>
-  &lt;mi arg='k'>k&lt;/mi>
+  &lt;mi <b>arg='k'</b>>k&lt;/mi>
   &lt;mrow/>
   &lt;mprescripts/>
   &lt;mrow/>
-  &lt;mi arg='n'>n&lt;/mi>
+  &lt;mi <b>arg='n'</b>>n&lt;/mi>
  &lt;/mmultiscripts>
 &lt;/math>
 </pre>
@@ -1236,13 +1236,13 @@
 <pre>
 &lt;math display='block'>
  &lt;mmultiscripts
-     intent='_permutation:prefix(_of,$k,_from,$n)'>
+     <b>intent='_permutation:prefix(_of,$k,_from,$n)'</b>>
   &lt;mi>P&lt;/mi>
-  &lt;mi arg='k'>k&lt;/mi>
+  &lt;mi <b>arg='k'</b>>k&lt;/mi>
   &lt;mrow/>
   &lt;mprescripts/>
   &lt;mrow/>
-  &lt;mi arg='n'>n&lt;/mi>
+  &lt;mi <b>arg='n'</b>>n&lt;/mi>
  &lt;/mmultiscripts>
 &lt;/math>
 </pre>
@@ -1282,10 +1282,10 @@
 <pre>
 &lt;math display='block'>
  &lt;msubsup
-     intent='P($n,$k)'>
+     <b>intent='P($n,$k)'</b>>
   &lt;mi>P&lt;/mi>
-  &lt;mi arg='k'>k&lt;/mi>
-  &lt;mi arg='n'>n&lt;/mi>
+  &lt;mi <b>arg='k'</b>>k&lt;/mi>
+  &lt;mi <b>arg='n'</b>>n&lt;/mi>
  &lt;/msubsup>
 &lt;/math>
 </pre>
@@ -1294,10 +1294,10 @@
 <pre>
 &lt;math display='block'>
  &lt;msubsup
-     intent='permutation-symbol($n,$k)'>
+     <b>intent='permutation-symbol($n,$k)'</b>>
   &lt;mi>P&lt;/mi>
-  &lt;mi arg='k'>k&lt;/mi>
-  &lt;mi arg='n'>n&lt;/mi>
+  &lt;mi <b>arg='k'</b>>k&lt;/mi>
+  &lt;mi <b>arg='n'</b>>n&lt;/mi>
  &lt;/msubsup>
 &lt;/math>
 </pre>
@@ -1306,10 +1306,10 @@
 <pre>
 &lt;math display='block'>
  &lt;msubsup
-     intent='permutation:prefix($n,$k)'>
+     <b>intent='permutation:prefix($n,$k)'</b>>
   &lt;mi>P&lt;/mi>
-  &lt;mi arg='k'>k&lt;/mi>
-  &lt;mi arg='n'>n&lt;/mi>
+  &lt;mi <b>arg='k'</b>>k&lt;/mi>
+  &lt;mi <b>arg='n'</b>>n&lt;/mi>
  &lt;/msubsup>
 &lt;/math>
 </pre>
@@ -1318,10 +1318,10 @@
 <pre>
 &lt;math display='block'>
  &lt;msubsup
-     intent='_permutation:prefix(_of,$k,_from,$n)'>
+     <b>intent='_permutation:prefix(_of,$k,_from,$n)'</b>>
   &lt;mi>P&lt;/mi>
-  &lt;mi arg='k'>k&lt;/mi>
-  &lt;mi arg='n'>n&lt;/mi>
+  &lt;mi <b>arg='k'</b>>k&lt;/mi>
+  &lt;mi <b>arg='n'</b>>n&lt;/mi>
  &lt;/msubsup>
 &lt;/math>
 </pre>
@@ -1367,12 +1367,12 @@
 <pre>
 &lt;math display='block'>
  &lt;mrow
-     intent='permutation-symbol($n,$k)'>
+     <b>intent='permutation-symbol($n,$k)'</b>>
   &lt;mi>P&lt;/mi>
   &lt;mo>(&lt;/mo>
-  &lt;mi arg='n'>n&lt;/mi>
+  &lt;mi <b>arg='n'</b>>n&lt;/mi>
   &lt;mo>,&lt;/mo>
-  &lt;mi arg='k'>k&lt;/mi>
+  &lt;mi <b>arg='k'</b>>k&lt;/mi>
   &lt;mo>)&lt;/mo>
  &lt;/mrow>
 &lt;/math>
@@ -1382,12 +1382,12 @@
 <pre>
 &lt;math display='block'>
  &lt;mrow
-     intent='permutation:prefix($n,$k)'>
+     <b>intent='permutation:prefix($n,$k)'</b>>
   &lt;mi>P&lt;/mi>
   &lt;mo>(&lt;/mo>
-  &lt;mi arg='n'>n&lt;/mi>
+  &lt;mi <b>arg='n'</b>>n&lt;/mi>
   &lt;mo>,&lt;/mo>
-  &lt;mi arg='k'>k&lt;/mi>
+  &lt;mi <b>arg='k'</b>>k&lt;/mi>
   &lt;mo>)&lt;/mo>
  &lt;/mrow>
 &lt;/math>
@@ -1397,12 +1397,12 @@
 <pre>
 &lt;math display='block'>
  &lt;mrow
-     intent='_permutation:prefix(_of,$k,_from, $n)'>
+     <b>intent='_permutation:prefix(_of,$k,_from, $n)'</b>>
   &lt;mi>P&lt;/mi>
   &lt;mo>(&lt;/mo>
-  &lt;mi arg='n'>n&lt;/mi>
+  &lt;mi <b>arg='n'</b>>n&lt;/mi>
   &lt;mo>,&lt;/mo>
-  &lt;mi arg='k'>k&lt;/mi>
+  &lt;mi <b>arg='k'</b>>k&lt;/mi>
   &lt;mo>)&lt;/mo>
  &lt;/mrow>
 &lt;/math>
@@ -1449,7 +1449,7 @@
 &lt;math display='block'>
  &lt;mrow>
   &lt;mi>x&lt;/mi>
-  &lt;mo intent='subset'>&amp;#x2282;&lt;/mo>
+  &lt;mo <b>intent='subset'</b>>&amp;#x2282;&lt;/mo>
   &lt;mi>y&lt;/mi>
  &lt;/mrow>
 &lt;/math>
@@ -1458,10 +1458,10 @@
     <div class="mathcat">x subset y</div>
 <pre>
 &lt;math display='block'>
- &lt;mrow intent='_is_a_subset_of:infix($x,$y)'>
-  &lt;mi arg='x'>x&lt;/mi>
+ &lt;mrow <b>intent='_is_a_subset_of:infix($x,$y)'</b>>
+  &lt;mi <b>arg='x'</b>>x&lt;/mi>
   &lt;mo>&amp;#x2282;&lt;/mo>
-  &lt;mi arg='y'>y&lt;/mi>
+  &lt;mi <b>arg='y'</b>>y&lt;/mi>
  &lt;/mrow>
 &lt;/math>
 </pre>
@@ -1490,7 +1490,7 @@
 &lt;math display='block'>
  &lt;mrow>
   &lt;mi>x&lt;/mi>
-  &lt;mo intent='parallel'>‖&lt;/mo>
+  &lt;mo <b>intent='parallel'</b>>‖&lt;/mo>
   &lt;mi>y&lt;/mi>
  &lt;/mrow>
 &lt;/math>
@@ -1503,7 +1503,7 @@
 &lt;math display='block'>
  &lt;mrow>
   &lt;mi>x&lt;/mi>
-  &lt;mo intent='parallel'>‖&lt;/mo>
+  &lt;mo <b>intent='parallel'</b>>‖&lt;/mo>
   &lt;mi>y&lt;/mi>
  &lt;/mrow>
 &lt;/math>
@@ -1514,7 +1514,7 @@
 &lt;math display='block'>
  &lt;mrow>
   &lt;mi>x&lt;/mi>
-  &lt;mo intent='_is_parallel_to'>‖&lt;/mo>
+  &lt;mo <b>intent='_is_parallel_to'</b>>‖&lt;/mo>
   &lt;mi>y&lt;/mi>
  &lt;/mrow>
 &lt;/math>
@@ -1523,10 +1523,10 @@
     <div class="mathcat">x _is_parallel_to y</div>
 <pre>
 &lt;math display='block'>
- &lt;mrow intent='_($x,_is,$op,_to,$y)'>
-  &lt;mi arg='x'>x&lt;/mi>
-  &lt;mo arg='op' intent='parallel'>‖&lt;/mo>
-  &lt;mi arg='y'>y&lt;/mi>
+ &lt;mrow <b>intent='_($x,_is,$op,_to,$y)'</b>>
+  &lt;mi <b>arg='x'</b>>x&lt;/mi>
+  &lt;mo <b>arg='op'</b> <b>intent='parallel'</b>>‖&lt;/mo>
+  &lt;mi <b>arg='y'</b>>y&lt;/mi>
  &lt;/mrow>
 &lt;/math>
 </pre>
@@ -1582,14 +1582,14 @@
 <td>
 <pre>
 &lt;math display='block'>
- &lt;mrow  intent='$A($n,$m)'>
-  &lt;mi arg='A' intent='Ackerman'>A&lt;/mi>
+ &lt;mrow  <b>intent='$A($n,$m)'</b>>
+  &lt;mi <b>arg='A'</b> <b>intent='Ackerman'</b>>A&lt;/mi>
   &lt;mo>&amp;#x2061;&lt;/mo>
   &lt;mrow>
    &lt;mo>(&lt;/mo>
-   &lt;mi arg='n'>n&lt;/mi>
+   &lt;mi <b>arg='n'</b>>n&lt;/mi>
    &lt;mo>,&lt;/mo>
-   &lt;mi arg='m'>m&lt;/mi>
+   &lt;mi <b>arg='m'</b>>m&lt;/mi>
    &lt;mo>)&lt;/mo>
   &lt;/mrow>
  &lt;/mrow>
@@ -1600,7 +1600,7 @@
 <pre>
 &lt;math display='block'>
  &lt;mrow>
-  &lt;mi intent='Ackerman'>A&lt;/mi>
+  &lt;mi <b>intent='Ackerman'</b>>A&lt;/mi>
   &lt;mo>&amp;#x2061;&lt;/mo>
   &lt;mrow>
    &lt;mo>(&lt;/mo>
@@ -1617,7 +1617,7 @@
 <pre>
 &lt;math display='block'>
  &lt;mrow>
-  &lt;mi intent='A:Ackerman'>A&lt;/mi>
+  &lt;mi <b>intent='A:Ackerman'</b>>A&lt;/mi>
   &lt;mo>&amp;#x2061;&lt;/mo>
   &lt;mrow>
    &lt;mo>(&lt;/mo>
@@ -1690,19 +1690,19 @@
 <td>
 <pre>
 &lt;math display='block'>
- &lt;mrow intent='$op3($x)'>
-  &lt;msup arg='op3' intent='$op2($composed)'>
-   &lt;mrow arg='composed' intent='$op1:infix($g,$h)'>
+ &lt;mrow <b>intent='$op3($x)'</b>>
+  &lt;msup <b>arg='op3'</b> <b>intent='$op2($composed)'</b>>
+   &lt;mrow <b>arg='composed'</b> <b>intent='$op1:infix($g,$h)'</b>>
     &lt;mo>(&lt;/mo>
-    &lt;mi arg='g'>g&lt;/mi>
-    &lt;mo arg='op1' intent='function-composition'>∘&lt;/mo>
-    &lt;mi arg='h'>h&lt;/mi>
+    &lt;mi <b>arg='g'</b>>g&lt;/mi>
+    &lt;mo <b>arg='op1'</b> <b>intent='function-composition'</b>>∘&lt;/mo>
+    &lt;mi <b>arg='h'</b>>h&lt;/mi>
     &lt;mo>)&lt;/mo>
    &lt;/mrow>
-   &lt;mo arg='op2' intent='first-derivative'>′&lt;/mo>
+   &lt;mo <b>arg='op2'</b> <b>intent='first-derivative'</b>>′&lt;/mo>
   &lt;/msup>
   &lt;mo>(&lt;/mo>
-  &lt;mi arg='x'>x&lt;/mi>
+  &lt;mi <b>arg='x'</b>>x&lt;/mi>
   &lt;mo>)&lt;/mo>
  &lt;/mrow>
 &lt;/math>
@@ -1755,7 +1755,7 @@
 <td>
 <pre>
 &lt;math display='block'>
- &lt;mrow intent='first-derivative(function-composition:infix(g,h))(x)'>
+ &lt;mrow <b>intent='first-derivative(function-composition:infix(g,h))(x)'</b>>
   &lt;mo>(&lt;/mo>
   &lt;mi>g&lt;/mi>
   &lt;mo>∘&lt;/mo>
@@ -1824,19 +1824,19 @@
 <td>
 <pre>
 &lt;math display='block'>
- &lt;mrow intent='apply($op3,$x)'>
-  &lt;msup arg='op3' intent='apply($op2,$composed)'>
-   &lt;mrow arg='composed' intent='apply:infix($op1,$g,$h)'>&lt;!-- ?-->
+ &lt;mrow <b>intent='apply($op3,$x)'</b>>
+  &lt;msup <b>arg='op3'</b> <b>intent='apply($op2,$composed)'</b>>
+   &lt;mrow <b>arg='composed'</b> <b>intent='apply:infix($op1,$g,$h)'</b>>&lt;!-- ?-->
     &lt;mo>(&lt;/mo>
-    &lt;mi arg='g'>g&lt;/mi>
-    &lt;mo arg='op1' intent='function-composition'>∘&lt;/mo>
-    &lt;mi arg='h'>h&lt;/mi>
+    &lt;mi <b>arg='g'</b>>g&lt;/mi>
+    &lt;mo <b>arg='op1'</b> <b>intent='function-composition'</b>>∘&lt;/mo>
+    &lt;mi <b>arg='h'</b>>h&lt;/mi>
     &lt;mo>)&lt;/mo>
    &lt;/mrow>
-   &lt;mo arg='op2' intent='first-derivative'>′&lt;/mo>
+   &lt;mo <b>arg='op2'</b> <b>intent='first-derivative'</b>>′&lt;/mo>
   &lt;/msup>
   &lt;mo>(&lt;/mo>
-  &lt;mi arg='x'>x&lt;/mi>
+  &lt;mi <b>arg='x'</b>>x&lt;/mi>
   &lt;mo>)&lt;/mo>
  &lt;/mrow>
 &lt;/math>
@@ -1901,11 +1901,11 @@
 <pre>
 &lt;math display='block'>
  &lt;mrow>
-  &lt;msup intent='first-derivative($composed)'>
-   &lt;mrow arg='composed'>
+  &lt;msup <b>intent='first-derivative($composed)'</b>>
+   &lt;mrow <b>arg='composed'</b>>
     &lt;mo>(&lt;/mo>
     &lt;mi>g&lt;/mi>
-    &lt;mo intent='composed-with'>∘&lt;/mo>
+    &lt;mo <b>intent='composed-with'</b>>∘&lt;/mo>
     &lt;mi>h&lt;/mi>
     &lt;mo>)&lt;/mo>
    &lt;/mrow>
@@ -1970,7 +1970,7 @@
 <td>
 <pre>
 &lt;math display='block'>
- &lt;mrow intent='convex-conjugate(f)(p)'>
+ &lt;mrow <b>intent='convex-conjugate(f)(p)'</b>>
   &lt;msup>
    &lt;mi>f&lt;/mi>
    &lt;mo>*&lt;/mo>
@@ -1988,15 +1988,15 @@
     <div class="mathcat">apply function of, convex conjugate of, f comma p</div>
 <pre>
 &lt;math display='block'>
- &lt;mrow intent='$fs($p)'>
-  &lt;msup arg='fs' intent='convex-conjugate($f)'>
-   &lt;mi arg='f'>f&lt;/mi>
+ &lt;mrow <b>intent='$fs($p)'</b>>
+  &lt;msup <b>arg='fs'</b> <b>intent='convex-conjugate($f)'</b>>
+   &lt;mi <b>arg='f'</b>>f&lt;/mi>
    &lt;mo>*&lt;/mo>
   &lt;/msup>
   &lt;mo>&amp;#x2061;&lt;/mo>
   &lt;mrow>
    &lt;mo>(&lt;/mo>
-   &lt;mi arg='p'>p&lt;/mi>
+   &lt;mi <b>arg='p'</b>>p&lt;/mi>
    &lt;mo>)&lt;/mo>
   &lt;/mrow>
  &lt;/mrow>
@@ -2007,9 +2007,9 @@
 <pre>
 &lt;math display='block'>
  &lt;mrow>
-  &lt;msup intent=':decorated-function'>
+  &lt;msup <b>intent=':decorated-function'</b>>
    &lt;mi>f&lt;/mi>
-   &lt;mo intent='convex-conjugate'>*&lt;/mo>
+   &lt;mo <b>intent='convex-conjugate'</b>>*&lt;/mo>
   &lt;/msup>
   &lt;mo>&amp;#x2061;&lt;/mo>
   &lt;mrow>
@@ -2059,7 +2059,7 @@
 <pre>
 &lt;math display='block'>
  &lt;mrow>
-  &lt;mo intent='my-function'>&amp;#x1F407;&lt;/mo>
+  &lt;mo <b>intent='my-function'</b>>&amp;#x1F407;&lt;/mo>
   &lt;mi>X&lt;/mi>
  &lt;/mrow>
 &lt;/math>
@@ -2069,7 +2069,7 @@
 <pre>
 &lt;math display='block'>
  &lt;mrow>
-  &lt;mo intent='my-function:function'>&amp;#x1F407;&lt;/mo>
+  &lt;mo <b>intent='my-function:function'</b>>&amp;#x1F407;&lt;/mo>
   &lt;mi>X&lt;/mi>
  &lt;/mrow>
 &lt;/math>
@@ -2079,7 +2079,7 @@
 <pre>
 &lt;math display='block'>
  &lt;mrow>
-  &lt;mo intent='my-function:silent'>&amp;#x1F407;&lt;/mo>
+  &lt;mo <b>intent='my-function:silent'</b>>&amp;#x1F407;&lt;/mo>
   &lt;mi>X&lt;/mi>
  &lt;/mrow>
 &lt;/math>
@@ -2118,9 +2118,9 @@
 <td>
 <pre>
 &lt;math display='block'>
- &lt;mrow intent='my-function($X)'>
+ &lt;mrow <b>intent='my-function($X)'</b>>
   &lt;mo>&amp;#x1F407;&lt;/mo>
-  &lt;mi arg='X'>X&lt;/mi>
+  &lt;mi <b>arg='X'</b>>X&lt;/mi>
  &lt;/mrow>
 &lt;/math>
 </pre>
@@ -2128,9 +2128,9 @@
     <div class="mathcat">my function of,   x</div>
 <pre>
 &lt;math display='block'>
- &lt;mrow intent='my-function:function($X)'>
+ &lt;mrow <b>intent='my-function:function($X)'</b>>
   &lt;mo>&amp;#x1F407;&lt;/mo>
-  &lt;mi arg='X'>X&lt;/mi>
+  &lt;mi <b>arg='X'</b>>X&lt;/mi>
  &lt;/mrow>
 &lt;/math>
 </pre>
@@ -2138,9 +2138,9 @@
     <div class="mathcat">my function of,   x</div>
 <pre>
 &lt;math display='block'>
- &lt;mrow intent='my-function:prefix($X)'>
+ &lt;mrow <b>intent='my-function:prefix($X)'</b>>
   &lt;mo>&amp;#x1F407;&lt;/mo>
-  &lt;mi arg='X'>X&lt;/mi>
+  &lt;mi <b>arg='X'</b>>X&lt;/mi>
  &lt;/mrow>
 &lt;/math>
 </pre>
@@ -2148,9 +2148,9 @@
     <div class="mathcat">my function   x,</div>
 <pre>
 &lt;math display='block'>
- &lt;mrow intent='my-function:postfix($X)'>
+ &lt;mrow <b>intent='my-function:postfix($X)'</b>>
   &lt;mo>&amp;#x1F407;&lt;/mo>
-  &lt;mi arg='X'>X&lt;/mi>
+  &lt;mi <b>arg='X'</b>>X&lt;/mi>
  &lt;/mrow>
 &lt;/math>
 </pre>
@@ -2158,10 +2158,10 @@
     <div class="mathcat">,   x my function</div>
 <pre>
 &lt;math display='block'>
- &lt;mrow intent='my-function:silent(
-               _rabbit_function_applied_to,$X)'>
+ &lt;mrow <b>intent='my-function:silent(
+               _rabbit_function_applied_to,$X)'</b>>
   &lt;mo>&amp;#x1F407;&lt;/mo>
-  &lt;mi arg='X'>X&lt;/mi>
+  &lt;mi <b>arg='X'</b>>X&lt;/mi>
  &lt;/mrow>
 &lt;/math>
 </pre>
@@ -2190,10 +2190,10 @@
 <pre>
 &lt;math display='block'>
  &lt;mrow>
-  &lt;mi arg='x'>x&lt;/mi>
-  &lt;mo arg='prod'
-      intent='cross-product'>⨯&lt;/mo>
-  &lt;mi arg='y'>y&lt;/mi>
+  &lt;mi <b>arg='x'</b>>x&lt;/mi>
+  &lt;mo <b>arg='prod'</b>
+      <b>intent='cross-product'</b>>⨯&lt;/mo>
+  &lt;mi <b>arg='y'</b>>y&lt;/mi>
  &lt;/mrow>
 &lt;/math>
 </pre>
@@ -2203,11 +2203,11 @@
 <td>
 <pre>
 &lt;math display='block'>
- &lt;mrow intent='$prod($x,$y)'>
-  &lt;mi arg='x'>x&lt;/mi>
-  &lt;mo arg='prod'
-      intent='cross-product'>⨯&lt;/mo>
-  &lt;mi arg='y'>y&lt;/mi>
+ &lt;mrow <b>intent='$prod($x,$y)'</b>>
+  &lt;mi <b>arg='x'</b>>x&lt;/mi>
+  &lt;mo <b>arg='prod'</b>
+      <b>intent='cross-product'</b>>⨯&lt;/mo>
+  &lt;mi <b>arg='y'</b>>y&lt;/mi>
  &lt;/mrow>
 &lt;/math>
 </pre>
@@ -2215,11 +2215,11 @@
     <div class="mathcat">cross product of, x comma y</div>
 <pre>
 &lt;math display='block'>
- &lt;mrow intent='$prod:infix($x,$y)'>
-  &lt;mi arg='x'>x&lt;/mi>
-  &lt;mo arg='prod'
-      intent='cross-product'>⨯&lt;/mo>
-  &lt;mi arg='y'>y&lt;/mi>
+ &lt;mrow <b>intent='$prod:infix($x,$y)'</b>>
+  &lt;mi <b>arg='x'</b>>x&lt;/mi>
+  &lt;mo <b>arg='prod'</b>
+      <b>intent='cross-product'</b>>⨯&lt;/mo>
+  &lt;mi <b>arg='y'</b>>y&lt;/mi>
  &lt;/mrow>
 &lt;/math>
 </pre>
@@ -2227,11 +2227,11 @@
     <div class="mathcat">, x cross product y,</div>
 <pre>
 &lt;math display='block'>
- &lt;mrow intent='$prod:function($x,$y)'>
-  &lt;mi arg='x'>x&lt;/mi>
-  &lt;mo arg='prod'
-      intent='cross-product'>⨯&lt;/mo>
-  &lt;mi arg='y'>y&lt;/mi>
+ &lt;mrow <b>intent='$prod:function($x,$y)'</b>>
+  &lt;mi <b>arg='x'</b>>x&lt;/mi>
+  &lt;mo <b>arg='prod'</b>
+      <b>intent='cross-product'</b>>⨯&lt;/mo>
+  &lt;mi <b>arg='y'</b>>y&lt;/mi>
  &lt;/mrow>
 &lt;/math>
 </pre>
@@ -2239,12 +2239,12 @@
     <div class="mathcat">cross product of, x comma y</div>
 <pre>
 &lt;math display='block'>
- &lt;mrow intent='$prod:silent(
-               _vector_product, _of, $x, _with, $y)'>
-  &lt;mi arg='x'>x&lt;/mi>
-  &lt;mo arg='prod'
-      intent='cross-product'>⨯&lt;/mo>
-  &lt;mi arg='y'>y&lt;/mi>
+ &lt;mrow <b>intent='$prod:silent(
+               _vector_product, _of, $x, _with, $y)'</b>>
+  &lt;mi <b>arg='x'</b>>x&lt;/mi>
+  &lt;mo <b>arg='prod'</b>
+      <b>intent='cross-product'</b>>⨯&lt;/mo>
+  &lt;mi <b>arg='y'</b>>y&lt;/mi>
  &lt;/mrow>
 &lt;/math>
 </pre>
@@ -2285,10 +2285,10 @@
 <td>
 <pre>
 &lt;math display='block'>
- &lt;mrow intent='foo:infix($x,$y)'>
-  &lt;mi arg='x'>x&lt;/mi>
+ &lt;mrow <b>intent='foo:infix($x,$y)'</b>>
+  &lt;mi <b>arg='x'</b>>x&lt;/mi>
   &lt;mo>&amp;#x229e;&lt;/mo>
-  &lt;mi arg='y'>y&lt;/mi>
+  &lt;mi <b>arg='y'</b>>y&lt;/mi>
  &lt;/mrow>
 &lt;/math>
 </pre>
@@ -2298,7 +2298,7 @@
 &lt;math display='block'>
  &lt;mrow>
   &lt;mi>x&lt;/mi>
-  &lt;mo intent='foo'>&amp;#x229e;&lt;/mo>
+  &lt;mo <b>intent='foo'</b>>&amp;#x229e;&lt;/mo>
   &lt;mi>y&lt;/mi>
  &lt;/mrow>
 &lt;/math>
@@ -2343,9 +2343,9 @@
 <td>
 <pre>
 &lt;math display='block'>
- &lt;mrow intent='absolute-value($x)'>
+ &lt;mrow <b>intent='absolute-value($x)'</b>>
   &lt;mo>|&lt;/mo>
-  &lt;mi arg='x'>x&lt;/mi>
+  &lt;mi <b>arg='x'</b>>x&lt;/mi>
   &lt;mo>|&lt;/mo>
  &lt;/mrow>
 &lt;/math>
@@ -2392,10 +2392,10 @@
 <td>
 <pre>
 &lt;math display='block'>
- &lt;msub intent='l2-norm($x)'>
+ &lt;msub <b>intent='l2-norm($x)'</b>>
   &lt;mrow>
    &lt;mo>|&lt;/mo>
-   &lt;mi arg='x'>x&lt;/mi>
+   &lt;mi <b>arg='x'</b>>x&lt;/mi>
    &lt;mo>|&lt;/mo>
   &lt;/mrow>
   &lt;mn>2&lt;/mn>
@@ -2438,9 +2438,9 @@
 <td>
 <pre>
 &lt;math display='block'>
- &lt;mrow intent='determinant($M)'>
+ &lt;mrow <b>intent='determinant($M)'</b>>
   &lt;mo>|&lt;/mo>
-  &lt;mi arg='M'>M&lt;/mi>
+  &lt;mi <b>arg='M'</b>>M&lt;/mi>
   &lt;mo>|&lt;/mo>
  &lt;/mrow>
 &lt;/math>
@@ -2499,9 +2499,9 @@
 <td>
 <pre>
 &lt;math display='block'>
- &lt;mrow intent='determinant($M)'>
+ &lt;mrow <b>intent='determinant($M)'</b>>
   &lt;mo>|&lt;/mo>
-  &lt;mtable arg='M'>
+  &lt;mtable <b>arg='M'</b>>
    &lt;mtr>
     &lt;mtd>&lt;mi>a&lt;/mi>&lt;/mtd>
     &lt;mtd>&lt;mi>b&lt;/mi>&lt;/mtd>
@@ -2519,9 +2519,9 @@
     <div class="mathcat">the determinant of 2 lines, <br/>line 1; eigh, b; <br/>line 2; c, d;</div>
 <pre>
 &lt;math display='block'>
- &lt;mrow intent='determinant($M:matrix)'>
+ &lt;mrow <b>intent='determinant($M:matrix)'</b>>
   &lt;mo>|&lt;/mo>
-  &lt;mtable arg='M'>
+  &lt;mtable <b>arg='M'</b>>
    &lt;mtr>
     &lt;mtd>&lt;mi>a&lt;/mi>&lt;/mtd>
     &lt;mtd>&lt;mi>b&lt;/mi>&lt;/mtd>
@@ -2571,9 +2571,9 @@
 <td>
 <pre>
 &lt;math display='block'>
- &lt;mrow intent='magnitude($x)'>
+ &lt;mrow <b>intent='magnitude($x)'</b>>
   &lt;mo>‖&lt;/mo>
-  &lt;mi arg='x'>x&lt;/mi>
+  &lt;mi <b>arg='x'</b>>x&lt;/mi>
   &lt;mo>‖&lt;/mo>
  &lt;/mrow>
 &lt;/math>
@@ -2618,11 +2618,11 @@
 <td>
 <pre>
 &lt;math display='block'>
- &lt;mrow intent='open-interval($x,$y)'>
+ &lt;mrow <b>intent='open-interval($x,$y)'</b>>
   &lt;mo>]&lt;/mo>
-  &lt;mi arg='x'>x&lt;/mi>
+  &lt;mi <b>arg='x'</b>>x&lt;/mi>
   &lt;mo>,&lt;/mo>
-  &lt;mi arg='y'>y&lt;/mi>
+  &lt;mi <b>arg='y'</b>>y&lt;/mi>
   &lt;mo>[&lt;/mo>
  &lt;/mrow>
 &lt;/math>
@@ -2667,11 +2667,11 @@
 <td>
 <pre>
 &lt;math display='block'>
- &lt;mrow intent='open-interval($x,$y)'>
+ &lt;mrow <b>intent='open-interval($x,$y)'</b>>
   &lt;mo>(&lt;/mo>
-  &lt;mi arg='x'>x&lt;/mi>
+  &lt;mi <b>arg='x'</b>>x&lt;/mi>
   &lt;mo>,&lt;/mo>
-  &lt;mi arg='y'>y&lt;/mi>
+  &lt;mi <b>arg='y'</b>>y&lt;/mi>
   &lt;mo>)&lt;/mo>
  &lt;/mrow>
 &lt;/math>
@@ -2715,11 +2715,11 @@
 <td>
 <pre>
 &lt;math display='block'>
- &lt;mrow intent='open-closed-interval($x,$y)'>
+ &lt;mrow <b>intent='open-closed-interval($x,$y)'</b>>
   &lt;mo>(&lt;/mo>
-  &lt;mi arg='x'>x&lt;/mi>
+  &lt;mi <b>arg='x'</b>>x&lt;/mi>
   &lt;mo>,&lt;/mo>
-  &lt;mi arg='y'>y&lt;/mi>
+  &lt;mi <b>arg='y'</b>>y&lt;/mi>
   &lt;mo>]&lt;/mo>
  &lt;/mrow>
 &lt;/math>
@@ -2763,11 +2763,11 @@
 <td>
 <pre>
 &lt;math display='block'>
- &lt;mrow intent='closed-open-interval($x,$y)'>
+ &lt;mrow <b>intent='closed-open-interval($x,$y)'</b>>
   &lt;mo>[&lt;/mo>
-  &lt;mi arg='x'>x&lt;/mi>
+  &lt;mi <b>arg='x'</b>>x&lt;/mi>
   &lt;mo>,&lt;/mo>
-  &lt;mi arg='y'>y&lt;/mi>
+  &lt;mi <b>arg='y'</b>>y&lt;/mi>
   &lt;mo>)&lt;/mo>
  &lt;/mrow>
 &lt;/math>
@@ -2811,11 +2811,11 @@
 <td>
 <pre>
 &lt;math display='block'>
- &lt;mrow intent='closed-interval($x,$y)'>
+ &lt;mrow <b>intent='closed-interval($x,$y)'</b>>
   &lt;mo>[&lt;/mo>
-  &lt;mi arg='x'>x&lt;/mi>
+  &lt;mi <b>arg='x'</b>>x&lt;/mi>
   &lt;mo>,&lt;/mo>
-  &lt;mi arg='y'>y&lt;/mi>
+  &lt;mi <b>arg='y'</b>>y&lt;/mi>
   &lt;mo>]&lt;/mo>
  &lt;/mrow>
 &lt;/math>
@@ -2824,11 +2824,11 @@
     <div class="mathcat">the closed interval from x to y</div>
 <pre>
 &lt;math display='block'>
- &lt;mrow intent='closed-interval($x,$y)'>
+ &lt;mrow <b>intent='closed-interval($x,$y)'</b>>
   &lt;mo>[&lt;/mo>
-  &lt;mi arg='x'>x&lt;/mi>
+  &lt;mi <b>arg='x'</b>>x&lt;/mi>
   &lt;mo>,&lt;/mo>
-  &lt;mi arg='y'>y&lt;/mi>
+  &lt;mi <b>arg='y'</b>>y&lt;/mi>
   &lt;mo>]&lt;/mo>
  &lt;/mrow>
 &lt;/math>
@@ -2837,11 +2837,11 @@
     <div class="mathcat">the closed interval from x to y</div>
 <pre>
 &lt;math display='block'>
- &lt;mrow intent='closed-interval:prefix($x,$y)'>
+ &lt;mrow <b>intent='closed-interval:prefix($x,$y)'</b>>
   &lt;mo>[&lt;/mo>
-  &lt;mi arg='x'>x&lt;/mi>
+  &lt;mi <b>arg='x'</b>>x&lt;/mi>
   &lt;mo>,&lt;/mo>
-  &lt;mi arg='y'>y&lt;/mi>
+  &lt;mi <b>arg='y'</b>>y&lt;/mi>
   &lt;mo>]&lt;/mo>
  &lt;/mrow>
 &lt;/math>
@@ -2893,15 +2893,15 @@
 <td>
 <pre>
 &lt;math display='block'>
- &lt;mrow intent='vector($x,$y,$c,$d)'>
+ &lt;mrow <b>intent='vector($x,$y,$c,$d)'</b>>
   &lt;mo>(&lt;/mo>
-  &lt;mi arg='x'>x&lt;/mi>
+  &lt;mi <b>arg='x'</b>>x&lt;/mi>
   &lt;mo>&amp;#x2009;&lt;/mo>
-  &lt;mi arg='y'>y&lt;/mi>
+  &lt;mi <b>arg='y'</b>>y&lt;/mi>
   &lt;mo>&amp;#x2009;&lt;/mo>
-  &lt;mi arg='c'>c&lt;/mi>
+  &lt;mi <b>arg='c'</b>>c&lt;/mi>
   &lt;mo>&amp;#x2009;&lt;/mo>
-  &lt;mi arg='d'>d&lt;/mi>
+  &lt;mi <b>arg='d'</b>>d&lt;/mi>
   &lt;mo>)&lt;/mo>
  &lt;/mrow>
 &lt;/math>
@@ -2910,15 +2910,15 @@
     <div class="mathcat">vector of, x comma y comma c comma d</div>
 <pre>
 &lt;math display='block'>
- &lt;mrow intent='cycle($x,$y,$c,$d)'>
+ &lt;mrow <b>intent='cycle($x,$y,$c,$d)'</b>>
   &lt;mo>(&lt;/mo>
-  &lt;mi arg='x'>x&lt;/mi>
+  &lt;mi <b>arg='x'</b>>x&lt;/mi>
   &lt;mo>&amp;#x2009;&lt;/mo>
-  &lt;mi arg='y'>y&lt;/mi>
+  &lt;mi <b>arg='y'</b>>y&lt;/mi>
   &lt;mo>&amp;#x2009;&lt;/mo>
-  &lt;mi arg='c'>c&lt;/mi>
+  &lt;mi <b>arg='c'</b>>c&lt;/mi>
   &lt;mo>&amp;#x2009;&lt;/mo>
-  &lt;mi arg='d'>d&lt;/mi>
+  &lt;mi <b>arg='d'</b>>d&lt;/mi>
   &lt;mo>)&lt;/mo>
  &lt;/mrow>
 &lt;/math>
@@ -2927,15 +2927,15 @@
     <div class="mathcat">cycle of, x comma y comma c comma d</div>
 <pre>
 &lt;math display='block'>
- &lt;mrow intent='vector:prefix($x,$y,$c,$d)'>
+ &lt;mrow <b>intent='vector:prefix($x,$y,$c,$d)'</b>>
   &lt;mo>(&lt;/mo>
-  &lt;mi arg='x'>x&lt;/mi>
+  &lt;mi <b>arg='x'</b>>x&lt;/mi>
   &lt;mo>&amp;#x2009;&lt;/mo>
-  &lt;mi arg='y'>y&lt;/mi>
+  &lt;mi <b>arg='y'</b>>y&lt;/mi>
   &lt;mo>&amp;#x2009;&lt;/mo>
-  &lt;mi arg='c'>c&lt;/mi>
+  &lt;mi <b>arg='c'</b>>c&lt;/mi>
   &lt;mo>&amp;#x2009;&lt;/mo>
-  &lt;mi arg='d'>d&lt;/mi>
+  &lt;mi <b>arg='d'</b>>d&lt;/mi>
   &lt;mo>)&lt;/mo>
  &lt;/mrow>
 &lt;/math>
@@ -2944,15 +2944,15 @@
     <div class="mathcat">vector x y c d,</div>
 <pre>
 &lt;math display='block'>
- &lt;mrow intent='cycle:prefix($x,$y,$c,$d)'>
+ &lt;mrow <b>intent='cycle:prefix($x,$y,$c,$d)'</b>>
   &lt;mo>(&lt;/mo>
-  &lt;mi arg='x'>x&lt;/mi>
+  &lt;mi <b>arg='x'</b>>x&lt;/mi>
   &lt;mo>&amp;#x2009;&lt;/mo>
-  &lt;mi arg='y'>y&lt;/mi>
+  &lt;mi <b>arg='y'</b>>y&lt;/mi>
   &lt;mo>&amp;#x2009;&lt;/mo>
-  &lt;mi arg='c'>c&lt;/mi>
+  &lt;mi <b>arg='c'</b>>c&lt;/mi>
   &lt;mo>&amp;#x2009;&lt;/mo>
-  &lt;mi arg='d'>d&lt;/mi>
+  &lt;mi <b>arg='d'</b>>d&lt;/mi>
   &lt;mo>)&lt;/mo>
  &lt;/mrow>
 &lt;/math>
@@ -3014,9 +3014,9 @@
 <td>
 <pre>
 &lt;math display='block'>
- &lt;mrow intent='matrix($m)'>
+ &lt;mrow <b>intent='matrix($m)'</b>>
   &lt;mo>[&lt;/mo>
-  &lt;mtable arg='m'>
+  &lt;mtable <b>arg='m'</b>>
    &lt;mtr>
     &lt;mtd>&lt;mi>a&lt;/mi>&lt;/mtd>
     &lt;mtd>&lt;mi>b&lt;/mi>&lt;/mtd>
@@ -3087,7 +3087,7 @@
 <pre>
 &lt;math display='block'>
  &lt;mrow>
-  &lt;mo intent='array'>&lt;!--?-->&lt;/mo>
+  &lt;mo <b>intent='array'</b>>&lt;!--?-->&lt;/mo>
   &lt;mo>(&lt;/mo>
   &lt;mtable>
    &lt;mtr>
@@ -3176,7 +3176,7 @@
 <pre>
 &lt;math display='block'>
  &lt;mrow>
-  &lt;mo intent='system-of-equations'>{&lt;/mo>
+  &lt;mo <b>intent='system-of-equations'</b>>{&lt;/mo>
   &lt;mtable>
    &lt;mtr>
     &lt;mtd>
@@ -3393,16 +3393,16 @@
 <td>
 <pre>
 &lt;math display='block'>
- &lt;mtable intent='equation:prefix($e1,$e1x)'>
-  &lt;mtr arg='e1'>
+ &lt;mtable <b>intent='equation:prefix($e1,$e1x)'</b>>
+  &lt;mtr <b>arg='e1'</b>>
    &lt;mtd columnalign='right'>
     &lt;mi>a&lt;/mi>
    &lt;/mtd>
    &lt;mtd columnalign='center'>
     &lt;mo>=&lt;/mo>
    &lt;/mtd>
-   &lt;mtd intent='_($lhs)' columnalign='left'>
-    &lt;mrow arg='lhs'>
+   &lt;mtd <b>intent='_($lhs)'</b> columnalign='left'>
+    &lt;mrow <b>arg='lhs'</b>>
     &lt;mi>b&lt;/mi>
     &lt;mo>+&lt;/mo>
     &lt;mi>c&lt;/mi>
@@ -3411,10 +3411,10 @@
    &lt;/mrow>
    &lt;/mtd>
   &lt;/mtr>
-  &lt;mtr arg='e1x'>
-   &lt;mtd intent='_' columnalign='right'>&lt;/mtd>
-   &lt;mtd intent='_' columnalign='center'>&lt;/mtd>
-   &lt;mtd arg='rhs' columnalign='left'>
+  &lt;mtr <b>arg='e1x'</b>>
+   &lt;mtd <b>intent='_'</b> columnalign='right'>&lt;/mtd>
+   &lt;mtd <b>intent='_'</b> columnalign='center'>&lt;/mtd>
+   &lt;mtd <b>arg='rhs'</b> columnalign='left'>
     &lt;mo form='infix'>+&lt;/mo>
     &lt;mi>e&lt;/mi>
     &lt;mo>&amp;#x2212;&lt;/mo>
@@ -3463,8 +3463,8 @@
 <td>
 <pre>
 &lt;math display='block'>
- &lt;mover intent='derivative($x,1)'>
-  &lt;mo arg='x'>x&lt;/mo>
+ &lt;mover <b>intent='derivative($x,1)'</b>>
+  &lt;mo <b>arg='x'</b>>x&lt;/mo>
   &lt;mo>&amp;#x02D9;&lt;/mo>
  &lt;/mover>
 &lt;/math>
@@ -3473,9 +3473,9 @@
     <div class="mathcat">derivative of, x comma 1</div>
 <pre>
 &lt;math display='block'>
- &lt;mover intent='derivative:function($x)'>
-  &lt;mo arg='x'>x&lt;/mo>
-  &lt;mo intent='derivative'>&amp;#x02D9;&lt;/mo>
+ &lt;mover <b>intent='derivative:function($x)'</b>>
+  &lt;mo <b>arg='x'</b>>x&lt;/mo>
+  &lt;mo <b>intent='derivative'</b>>&amp;#x02D9;&lt;/mo>
  &lt;/mover>
 &lt;/math>
 </pre>
@@ -3483,9 +3483,9 @@
     <div class="mathcat">derivative of, x</div>
 <pre>
 &lt;math display='block'>
- &lt;mover intent='dot:postfix($x)'>
-  &lt;mo arg='x'>x&lt;/mo>
-  &lt;mo intent='derivative'>&amp;#x02D9;&lt;/mo>
+ &lt;mover <b>intent='dot:postfix($x)'</b>>
+  &lt;mo <b>arg='x'</b>>x&lt;/mo>
+  &lt;mo <b>intent='derivative'</b>>&amp;#x02D9;&lt;/mo>
  &lt;/mover>
 &lt;/math>
 </pre>
@@ -3522,8 +3522,8 @@
 <td>
 <pre>
 &lt;math display='block'>
- &lt;mover intent='derivative($x,2)'>
-  &lt;mo arg='x'>x&lt;/mo>
+ &lt;mover <b>intent='derivative($x,2)'</b>>
+  &lt;mo <b>arg='x'</b>>x&lt;/mo>
   &lt;mo>&amp;#x00A8;&lt;/mo>
  &lt;/mover>
 &lt;/math>
@@ -3532,9 +3532,9 @@
     <div class="mathcat">derivative of, x comma 2</div>
 <pre>
 &lt;math display='block'>
- &lt;mover intent='second-derivative:function($x)'>
-  &lt;mo arg='x'>x&lt;/mo>
-  &lt;mo intent='second-derivative'>&amp;#x00A8;&lt;/mo>
+ &lt;mover <b>intent='second-derivative:function($x)'</b>>
+  &lt;mo <b>arg='x'</b>>x&lt;/mo>
+  &lt;mo <b>intent='second-derivative'</b>>&amp;#x00A8;&lt;/mo>
  &lt;/mover>
 &lt;/math>
 </pre>
@@ -3542,9 +3542,9 @@
     <div class="mathcat">second derivative of, x</div>
 <pre>
 &lt;math display='block'>
- &lt;mover intent='dot-dot:postfix($x)'>
-  &lt;mo arg='x'>x&lt;/mo>
-  &lt;mo intent='second-derivative'>&amp;#x00A8;&lt;/mo>
+ &lt;mover <b>intent='dot-dot:postfix($x)'</b>>
+  &lt;mo <b>arg='x'</b>>x&lt;/mo>
+  &lt;mo <b>intent='second-derivative'</b>>&amp;#x00A8;&lt;/mo>
  &lt;/mover>
 &lt;/math>
 </pre>
@@ -3582,9 +3582,9 @@
 <td>
 <pre>
 &lt;math display='block'>
- &lt;mfrac intent='derivative($x,1,$t)'>
-  &lt;mrow>&lt;mi>d&lt;/mi>&lt;mi arg='x'>x&lt;/mi>&lt;/mrow>
-  &lt;mrow>&lt;mi>d&lt;/mi>&lt;mi arg='t'>t&lt;/mi>&lt;/mrow>
+ &lt;mfrac <b>intent='derivative($x,1,$t)'</b>>
+  &lt;mrow>&lt;mi>d&lt;/mi>&lt;mi <b>arg='x'</b>>x&lt;/mi>&lt;/mrow>
+  &lt;mrow>&lt;mi>d&lt;/mi>&lt;mi <b>arg='t'</b>>t&lt;/mi>&lt;/mrow>
  &lt;/mfrac>
 &lt;/math>
 </pre>
@@ -3592,10 +3592,10 @@
     <div class="mathcat">derivative of, x comma 1 comma t</div>
 <pre>
 &lt;math display='block'>
- &lt;mfrac intent='derivative:prefix(
-                _of,$x,_with_respect_to,$t)'>
-  &lt;mrow>&lt;mi>d&lt;/mi>&lt;mi arg='x'>x&lt;/mi>&lt;/mrow>
-  &lt;mrow>&lt;mi>d&lt;/mi>&lt;mi arg='t'>t&lt;/mi>&lt;/mrow>
+ &lt;mfrac <b>intent='derivative:prefix(
+                _of,$x,_with_respect_to,$t)'</b>>
+  &lt;mrow>&lt;mi>d&lt;/mi>&lt;mi <b>arg='x'</b>>x&lt;/mi>&lt;/mrow>
+  &lt;mrow>&lt;mi>d&lt;/mi>&lt;mi <b>arg='t'</b>>t&lt;/mi>&lt;/mrow>
  &lt;/mfrac>
 &lt;/math>
 </pre>
@@ -3603,10 +3603,10 @@
     <div class="mathcat">derivative _of x _with_respect_to t,</div>
 <pre>
 &lt;math display='block'>
- &lt;mfrac intent='derivative:silent(
-                _d,$x,_by,_d,$t)'>
-  &lt;mrow>&lt;mi>d&lt;/mi>&lt;mi arg='x'>x&lt;/mi>&lt;/mrow>
-  &lt;mrow>&lt;mi>d&lt;/mi>&lt;mi arg='t'>t&lt;/mi>&lt;/mrow>
+ &lt;mfrac <b>intent='derivative:silent(
+                _d,$x,_by,_d,$t)'</b>>
+  &lt;mrow>&lt;mi>d&lt;/mi>&lt;mi <b>arg='x'</b>>x&lt;/mi>&lt;/mrow>
+  &lt;mrow>&lt;mi>d&lt;/mi>&lt;mi <b>arg='t'</b>>t&lt;/mi>&lt;/mrow>
  &lt;/mfrac>
 &lt;/math>
 </pre>
@@ -3662,12 +3662,12 @@
 <td>
 <pre>
 &lt;math display='block'>
- &lt;mrow intent='derivative($ft,1,$t)'>
+ &lt;mrow <b>intent='derivative($ft,1,$t)'</b>>
   &lt;mfrac>
    &lt;mrow>&lt;mi>d&lt;/mi>&lt;/mrow>
-   &lt;mrow>&lt;mi>d&lt;/mi>&lt;mi arg='t'>t&lt;/mi>&lt;/mrow>
+   &lt;mrow>&lt;mi>d&lt;/mi>&lt;mi <b>arg='t'</b>>t&lt;/mi>&lt;/mrow>
   &lt;/mfrac>
-  &lt;mrow arg='ft'>
+  &lt;mrow <b>arg='ft'</b>>
    &lt;mi>f&lt;/mi>
    &lt;mo>&amp;#x2061;&lt;/mo>
    &lt;mo>(&lt;/mo>
@@ -3681,13 +3681,13 @@
     <div class="mathcat">derivative of, f of t comma 1 comma t</div>
 <pre>
 &lt;math display='block'>
- &lt;mrow intent='derivative:prefix(
-               _of,$ft,_with_respect_to,$t)'>
+ &lt;mrow <b>intent='derivative:prefix(
+               _of,$ft,_with_respect_to,$t)'</b>>
   &lt;mfrac>
    &lt;mrow>&lt;mi>d&lt;/mi>&lt;/mrow>
-   &lt;mrow>&lt;mi>d&lt;/mi>&lt;mi arg='t'>t&lt;/mi>&lt;/mrow>
+   &lt;mrow>&lt;mi>d&lt;/mi>&lt;mi <b>arg='t'</b>>t&lt;/mi>&lt;/mrow>
   &lt;/mfrac>
-  &lt;mrow arg='ft'>
+  &lt;mrow <b>arg='ft'</b>>
    &lt;mi>f&lt;/mi>
    &lt;mo>&amp;#x2061;&lt;/mo>
    &lt;mo>(&lt;/mo>
@@ -3753,17 +3753,17 @@
 <td>
 <pre>
 &lt;math display='block'>
- &lt;mfrac intent='derivative($x,2,$t)'>
+ &lt;mfrac <b>intent='derivative($x,2,$t)'</b>>
   &lt;mrow>
    &lt;msup>
     &lt;mi>d&lt;/mi>&lt;mn>2&lt;/mn>
    &lt;/msup>
-   &lt;mi arg='x'>x&lt;/mi>
+   &lt;mi <b>arg='x'</b>>x&lt;/mi>
   &lt;/mrow>
   &lt;mrow>
    &lt;mi>d&lt;/mi>
    &lt;msup>
-    &lt;mi arg='t'>t&lt;/mi>
+    &lt;mi <b>arg='t'</b>>t&lt;/mi>
     &lt;mn>2&lt;/mn>
    &lt;/msup>
   &lt;/mrow>
@@ -3774,18 +3774,18 @@
     <div class="mathcat">derivative of, x comma 2 comma t</div>
 <pre>
 &lt;math display='block'>
- &lt;mfrac intent='second-derivative:prefix(
-                _of,$x,_with_respect_to,$t)'>
+ &lt;mfrac <b>intent='second-derivative:prefix(
+                _of,$x,_with_respect_to,$t)'</b>>
   &lt;mrow>
    &lt;msup>
     &lt;mi>d&lt;/mi>&lt;mn>2&lt;/mn>
    &lt;/msup>
-   &lt;mi arg='x'>x&lt;/mi>
+   &lt;mi <b>arg='x'</b>>x&lt;/mi>
   &lt;/mrow>
   &lt;mrow>
    &lt;mi>d&lt;/mi>
    &lt;msup>
-    &lt;mi arg='t'>t&lt;/mi>
+    &lt;mi <b>arg='t'</b>>t&lt;/mi>
     &lt;mn>2&lt;/mn>
    &lt;/msup>
   &lt;/mrow>
@@ -3796,18 +3796,18 @@
     <div class="mathcat">second derivative _of x _with_respect_to t,</div>
 <pre>
 &lt;math display='block'>
- &lt;mfrac intent='derivative:silent(
-                _d,_2,$x,_by,_d,$t,_squared)'>
+ &lt;mfrac <b>intent='derivative:silent(
+                _d,_2,$x,_by,_d,$t,_squared)'</b>>
   &lt;mrow>
    &lt;msup>
     &lt;mi>d&lt;/mi>&lt;mn>2&lt;/mn>
    &lt;/msup>
-   &lt;mi arg='x'>x&lt;/mi>
+   &lt;mi <b>arg='x'</b>>x&lt;/mi>
   &lt;/mrow>
   &lt;mrow>
    &lt;mi>d&lt;/mi>
    &lt;msup>
-    &lt;mi arg='t'>t&lt;/mi>
+    &lt;mi <b>arg='t'</b>>t&lt;/mi>
     &lt;mn>2&lt;/mn>
    &lt;/msup>
   &lt;/mrow>
@@ -3876,22 +3876,22 @@
 <td>
 <pre>
 &lt;math display='block'>
- &lt;mfrac intent='partial-second-derivative(
-                $f,$x,$y)'>
+ &lt;mfrac <b>intent='partial-second-derivative(
+                $f,$x,$y)'</b>>
   &lt;mrow>
    &lt;msup>
     &lt;mo>&amp;#x2202;&lt;/mo>&lt;mn>2&lt;/mn>
    &lt;/msup>
-   &lt;mi arg='f'>f&lt;/mi>
+   &lt;mi <b>arg='f'</b>>f&lt;/mi>
   &lt;/mrow>
   &lt;mrow>
    &lt;mrow>
     &lt;mo>&amp;#x2202;&lt;/mo>
-    &lt;mi arg='x'>x&lt;/mi>
+    &lt;mi <b>arg='x'</b>>x&lt;/mi>
    &lt;/mrow>
    &lt;mrow>
     &lt;mo>&amp;#x2202;&lt;/mo>
-    &lt;mi arg='y'>y&lt;/mi>
+    &lt;mi <b>arg='y'</b>>y&lt;/mi>
    &lt;/mrow>
   &lt;/mrow>
  &lt;/mfrac>
@@ -3901,22 +3901,22 @@
     <div class="mathcat">partial second derivative of, f comma x comma y</div>
 <pre>
 &lt;math display='block'>
- &lt;mfrac intent='partial-second-derivative:prefix(
-                _of,$f,_with_respect_to,$x,_and,$y)'>
+ &lt;mfrac <b>intent='partial-second-derivative:prefix(
+                _of,$f,_with_respect_to,$x,_and,$y)'</b>>
   &lt;mrow>
    &lt;msup>
     &lt;mo>&amp;#x2202;&lt;/mo>&lt;mn>2&lt;/mn>
    &lt;/msup>
-   &lt;mi arg='f'>f&lt;/mi>
+   &lt;mi <b>arg='f'</b>>f&lt;/mi>
   &lt;/mrow>
   &lt;mrow>
    &lt;mrow>
     &lt;mo>&amp;#x2202;&lt;/mo>
-    &lt;mi arg='x'>x&lt;/mi>
+    &lt;mi <b>arg='x'</b>>x&lt;/mi>
    &lt;/mrow>
    &lt;mrow>
     &lt;mo>&amp;#x2202;&lt;/mo>
-    &lt;mi arg='y'>y&lt;/mi>
+    &lt;mi <b>arg='y'</b>>y&lt;/mi>
    &lt;/mrow>
   &lt;/mrow>
  &lt;/mfrac>
@@ -4413,22 +4413,22 @@
 <pre>
 &lt;math display='block'>
  &lt;mrow>
-  &lt;mrow intent='power($v̇, $n)'>
-   &lt;mover arg='v̇' intent='first-deriv(v)'>
+  &lt;mrow <b>intent='power($v̇, $n)'</b>>
+   &lt;mover <b>arg='v̇'</b> <b>intent='first-deriv(v)'</b>>
     &lt;mi>v&lt;/mi>
     &lt;mo>&amp;#x02d9;&lt;/mo>
    &lt;/mover>
    &lt;mo>**&lt;/mo>
-   &lt;mn arg='n'>2&lt;/mn>
+   &lt;mn <b>arg='n'</b>>2&lt;/mn>
   &lt;/mrow>
   &lt;mo>+&lt;/mo>
-  &lt;mrow intent='power($ẇ, $n)'>
-   &lt;mover arg='ẇ' intent='first-deriv(w)'>
+  &lt;mrow <b>intent='power($ẇ, $n)'</b>>
+   &lt;mover <b>arg='ẇ'</b> <b>intent='first-deriv(w)'</b>>
     &lt;mi>w&lt;/mi>
     &lt;mo>&amp;#x02d9;&lt;/mo>
    &lt;/mover>
    &lt;mo>**&lt;/mo>
-   &lt;mn arg='n'>2&lt;/mn>
+   &lt;mn <b>arg='n'</b>>2&lt;/mn>
   &lt;/mrow>
  &lt;/mrow>
 &lt;/math>
@@ -4465,7 +4465,7 @@
 <td>
 <pre>
 &lt;math display='block'>
- &lt;mi intent='the_variable_x'>x&lt;/mi>
+ &lt;mi <b>intent='the_variable_x'</b>>x&lt;/mi>
 &lt;/math>
 </pre>
 
@@ -4506,11 +4506,11 @@
 <td>
 <pre>
 &lt;math display='block'>
- &lt;mrow intent='$p(_($a, $f($b)))'>
-  &lt;mi arg='a'>a&lt;/mi>
-  &lt;mo arg='p' intent='plus'>+&lt;/mo>
-  &lt;mi arg='b'>b&lt;/mi>
-  &lt;mo arg='f' intent='factorial'>!&lt;/mo>
+ &lt;mrow <b>intent='$p(_($a, $f($b)))'</b>>
+  &lt;mi <b>arg='a'</b>>a&lt;/mi>
+  &lt;mo <b>arg='p'</b> <b>intent='plus'</b>>+&lt;/mo>
+  &lt;mi <b>arg='b'</b>>b&lt;/mi>
+  &lt;mo <b>arg='f'</b> <b>intent='factorial'</b>>!&lt;/mo>
  &lt;/mrow>
 &lt;/math>
 </pre>
@@ -4550,10 +4550,10 @@
 <td>
 <pre>
 &lt;math display='block'>
- &lt;mrow intent='foo:int:silent(bar:positive-int-int, $a:foo-bar-foo-bar, $b:number)'>
-  &lt;mi arg='a'>a&lt;/mi>
-  &lt;mo arg='p' intent='plus'>+&lt;/mo>
-  &lt;mi arg='b' intent='b:negative-int-int'>b&lt;/mi>
+ &lt;mrow <b>intent='foo:int:silent(bar:positive-int-int, $a:foo-bar-foo-bar, $b:number)'</b>>
+  &lt;mi <b>arg='a'</b>>a&lt;/mi>
+  &lt;mo <b>arg='p'</b> <b>intent='plus'</b>>+&lt;/mo>
+  &lt;mi <b>arg='b'</b> <b>intent='b:negative-int-int'</b>>b&lt;/mi>
  &lt;/mrow>
 &lt;/math>
 </pre>
@@ -4595,10 +4595,10 @@
 <td>
 <pre>
 &lt;math display='block'>
- &lt;mrow intent='_(free, $r, _algebra_on, $x)'>
-  &lt;mi arg='r'>R&lt;/mi>
+ &lt;mrow <b>intent='_(free, $r, _algebra_on, $x)'</b>>
+  &lt;mi <b>arg='r'</b>>R&lt;/mi>
   &lt;mo>&amp;#x27e8;&lt;/mo>
-  &lt;mi arg='x'>X&lt;/mi>
+  &lt;mi <b>arg='x'</b>>X&lt;/mi>
   &lt;mo>&amp;#x27e9;&lt;/mo>
  &lt;/mrow>
 &lt;/math>
@@ -4607,10 +4607,10 @@
     <div class="mathcat">of, free comma   r comma _algebra_on comma   x</div>
 <pre>
 &lt;math display='block'>
- &lt;mrow intent='_:silent(free, $r, _algebra_on, $x)'>
-  &lt;mi arg='r'>R&lt;/mi>
+ &lt;mrow <b>intent='_:silent(free, $r, _algebra_on, $x)'</b>>
+  &lt;mi <b>arg='r'</b>>R&lt;/mi>
   &lt;mo>&amp;#x27e8;&lt;/mo>
-  &lt;mi arg='x'>X&lt;/mi>
+  &lt;mi <b>arg='x'</b>>X&lt;/mi>
   &lt;mo>&amp;#x27e9;&lt;/mo>
  &lt;/mrow>
 &lt;/math>
@@ -4661,14 +4661,14 @@
 <td>
 <pre>
 &lt;math display='block'>
- &lt;mrow intent='plus:infix($x,times:infix(2,absolute-value(minus:infix($y,$z))))'>
-  &lt;mi arg='x'>x&lt;/mi>
+ &lt;mrow <b>intent='plus:infix($x,times:infix(2,absolute-value(minus:infix($y,$z))))'</b>>
+  &lt;mi <b>arg='x'</b>>x&lt;/mi>
   &lt;mo>+&lt;/mo>
   &lt;mn>2&lt;/mn>
   &lt;mo>|&lt;/mo>
-  &lt;mi arg='y'>y&lt;/mi>
+  &lt;mi <b>arg='y'</b>>y&lt;/mi>
   &lt;mo>-&lt;/mo>
-  &lt;mi arg='z'>z&lt;/mi>
+  &lt;mi <b>arg='z'</b>>z&lt;/mi>
   &lt;mo>|&lt;/mo>
  &lt;/mrow>
 &lt;/math>
@@ -4713,15 +4713,15 @@
 <td>
 <pre>
 &lt;math display='block'>
- &lt;mrow intent='log(x)'/>
+ &lt;mrow <b>intent='log(x)'</b>/>
 &lt;/math>
 </pre>
 
     <div class="mathcat"></div>
 <pre>
 &lt;math display='block'>
- &lt;mrow intent='log($x)'>
-  &lt;mi arg='x'>X&lt;/mi>
+ &lt;mrow <b>intent='log($x)'</b>>
+  &lt;mi <b>arg='x'</b>>X&lt;/mi>
  &lt;/mrow>
 &lt;/math>
 </pre>
@@ -4753,9 +4753,9 @@ caused by: intent arg &apos;$x&apos; not found
 '>x</span></div>
 <pre>
 &lt;math display='block'>
- &lt;mrow intent='log&amp;#x28;&amp;#x24;x)'>
+ &lt;mrow <b>intent='log&amp;#x28;&amp;#x24;x)'</b>>
   &lt;mi>log&lt;/mi>
-  &lt;mi arg='x'>Y&lt;/mi>
+  &lt;mi <b>arg='x'</b>>Y&lt;/mi>
  &lt;/mrow>
 &lt;/math>
 </pre>
@@ -4839,7 +4839,7 @@ caused by: intent arg &apos;$x&apos; not found
 <td>
 <pre>
 &lt;math display='block'>
- &lt;mfrac intent='divides'>
+ &lt;mfrac <b>intent='divides'</b>>
   &lt;mi>x&lt;/mi>
   &lt;mi>y&lt;/mi>
  &lt;/mfrac>
@@ -4878,7 +4878,7 @@ caused by: intent arg &apos;$x&apos; not found
 <td>
 <pre>
 &lt;math display='block'>
- &lt;mfrac intent='divides(z)'>
+ &lt;mfrac <b>intent='divides(z)'</b>>
   &lt;mi>x&lt;/mi>
   &lt;mi>y&lt;/mi>
  &lt;/mfrac>
@@ -4917,7 +4917,7 @@ caused by: intent arg &apos;$x&apos; not found
 <td>
 <pre>
 &lt;math display='block'>
- &lt;mfrac intent='divides(w,x,y)'>
+ &lt;mfrac <b>intent='divides(w,x,y)'</b>>
   &lt;mi>x&lt;/mi>
   &lt;mi>y&lt;/mi>
  &lt;/mfrac>
@@ -4957,8 +4957,8 @@ caused by: intent arg &apos;$x&apos; not found
 <td>
 <pre>
 &lt;math display='block' mathbackground='yellow'>
- &lt;mover intent='ray($x)'>
-  &lt;mi arg='X'>X&lt;/mi>
+ &lt;mover <b>intent='ray($x)'</b>>
+  &lt;mi <b>arg='X'</b>>X&lt;/mi>
   &lt;mo>→&lt;/mo>
  &lt;/mover>
 &lt;/math>
@@ -5030,7 +5030,7 @@ caused by: intent arg &apos;$x&apos; not found
 <td>
 <pre>
 &lt;math display='block'>
- &lt;mfrac>&lt;mi intent='hmm)('>x&lt;/mi>
+ &lt;mfrac>&lt;mi <b>intent='hmm)('</b>>x&lt;/mi>
  &lt;mi>y&lt;/mi>
  &lt;/mfrac>
 &lt;/math>
@@ -5113,7 +5113,7 @@ caused by: Error in intent value: extra unparsed intent &apos;(&apos; in intent 
 <td>
 <pre>
 &lt;math display='block' mathbackground='yellow'>
- &lt;mrow intent='sum($a,$b)'>
+ &lt;mrow <b>intent='sum($a,$b)'</b>>
   &lt;mn>1.234&lt;/mn>
   &lt;mo>+&lt;/mo>
   &lt;mi>x&lt;/mi>
@@ -5188,10 +5188,10 @@ caused by: intent arg &apos;$a&apos; not found
 <td>
 <pre>
 &lt;math display='block'>
- &lt;mrow intent='sum($1.234,$:x:)'>
-  &lt;mn arg='1.234'>1.234&lt;/mn>
+ &lt;mrow <b>intent='sum($1.234,$:x:)'</b>>
+  &lt;mn <b>arg='1.234'</b>>1.234&lt;/mn>
   &lt;mo>+&lt;/mo>
-  &lt;mi arg=':x:'>x&lt;/mi>
+  &lt;mi <b>arg=':x:'</b>>x&lt;/mi>
  &lt;/mrow>
 &lt;/math>
 </pre>
@@ -5255,7 +5255,7 @@ caused by: Illegal &apos;intent&apos; syntax: $1.234,$:x:)
 <td>
 <pre>
 &lt;math display='block'>
- &lt;mi intent='one two'>x&lt;/mi>
+ &lt;mi <b>intent='one two'</b>>x&lt;/mi>
 &lt;/math>
 </pre>
 
@@ -5286,7 +5286,7 @@ caused by: Illegal &apos;intent&apos; syntax: $1.234,$:x:)
 <td>
 <pre>
 &lt;math display='block'>
- &lt;mn intent='1.2e1'>12&lt;/mn>
+ &lt;mn <b>intent='1.2e1'</b>>12&lt;/mn>
 &lt;/math>
 </pre>
 
@@ -5333,13 +5333,13 @@ caused by: Illegal &apos;intent&apos; syntax: $1.234,$:x:)
 <td>
 <pre>
 &lt;math display='block'>
- &lt;mover intent='mean($x('>
-  &lt;mi arg='x'>X&lt;/mi>
+ &lt;mover <b>intent='mean($x('</b>>
+  &lt;mi <b>arg='x'</b>>X&lt;/mi>
   &lt;mo>&amp;#x203e;&lt;/mo>
  &lt;/mover>
  &lt;mo>+&lt;/mo>
- &lt;mover intent='mean($x)'>
-  &lt;mi arg='x'>Y&lt;/mi>
+ &lt;mover <b>intent='mean($x)'</b>>
+  &lt;mi <b>arg='x'</b>>Y&lt;/mi>
   &lt;mo>&amp;#x203e;&lt;/mo>
  &lt;/mover>
 &lt;/math>
@@ -5434,7 +5434,7 @@ caused by: Illegal &apos;intent&apos; syntax: found None
 <td>
 <pre>
 &lt;math display='block'>
- &lt;mi intent='just say this'>x&lt;/mi>
+ &lt;mi <b>intent='just say this'</b>>x&lt;/mi>
 &lt;/math>
 </pre>
 
@@ -5470,8 +5470,8 @@ caused by: Illegal &apos;intent&apos; syntax: found None
 <td>
 <pre>
 &lt;math display='block'>
- &lt;mrow intent='just say this about $x'>
-  &lt;mi arg='x'>x&lt;/mi>
+ &lt;mrow <b>intent='just say this about $x'</b>>
+  &lt;mi <b>arg='x'</b>>x&lt;/mi>
  &lt;/mrow>
 &lt;/math>
 </pre>
@@ -5534,7 +5534,7 @@ caused by: intent arg &apos;$x&apos; not found
 <pre>
 &lt;math display='block'>
  &lt;mrow>
-  &lt;mo intent='&amp;#x1F407;'>&amp;#x1F407;&lt;/mo>
+  &lt;mo <b>intent='&amp;#x1F407;'</b>>&amp;#x1F407;&lt;/mo>
   &lt;mi>X&lt;/mi>
  &lt;/mrow>
 &lt;/math>
