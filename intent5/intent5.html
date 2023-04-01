@@ -312,6 +312,14 @@
 	   mathvariant='normal'>T</mi>
       </msup>
      </math>
+     <math display='block'>
+       <msup intent='_:silent($op, _of, $arg)'>
+       <mi arg='arg'>x</mi>
+       <mi arg='op'
+	   intent='transpose'
+	   mathvariant='normal'>T</mi>
+      </msup>
+     </math>
     </td>
     <td>x^{\mathrm{T}}</td>
     <td>x transpose</td>
@@ -351,6 +359,16 @@
      </math>
      <math display='block'>
       <mmultiscripts intent='_($op, _of, $arg)'>
+       <mi arg='arg'>x</mi>
+       <mprescripts/>
+       <mrow/>
+       <mi arg='op'
+	   intent='transpose'
+	   mathvariant='normal'>T</mi>
+      </mmultiscripts>
+     </math>
+     <math display='block'>
+      <mmultiscripts intent='_:silent($op, _of, $arg)'>
        <mi arg='arg'>x</mi>
        <mprescripts/>
        <mrow/>
@@ -906,6 +924,13 @@
      </math>
      <math display='block'>
       <mrow intent='_($x,_is,$op,_to,$y)'>
+       <mi arg='x'>x</mi>
+       <mo arg='op' intent='parallel'>‖</mo>
+       <mi arg='y'>y</mi>
+      </mrow>
+     </math>
+     <math display='block'>
+      <mrow intent='_:silent($x,_is,$op,_to,$y)'>
        <mi arg='x'>x</mi>
        <mo arg='op' intent='parallel'>‖</mo>
        <mi arg='y'>y</mi>

@@ -545,6 +545,18 @@
 </pre>
 
     <div class="mathcat">of, transpose comma  of comma x</div>
+<pre>
+&lt;math display='block'>
+  &lt;msup <b>intent='_:silent($op, _of, $arg)'</b>>
+  &lt;mi <b>arg='arg'</b>>x&lt;/mi>
+  &lt;mi <b>arg='op'</b>
+      <b>intent='transpose'</b>
+      mathvariant='normal'>T&lt;/mi>
+ &lt;/msup>
+&lt;/math>
+</pre>
+
+    <div class="mathcat">transpose  of x</div>
 </td>
 
     <td>x^{\mathrm{T}}</td>
@@ -621,6 +633,20 @@
 </pre>
 
     <div class="mathcat">of, transpose comma  of comma x</div>
+<pre>
+&lt;math display='block'>
+ &lt;mmultiscripts <b>intent='_:silent($op, _of, $arg)'</b>>
+  &lt;mi <b>arg='arg'</b>>x&lt;/mi>
+  &lt;mprescripts/>
+  &lt;mrow/>
+  &lt;mi <b>arg='op'</b>
+      <b>intent='transpose'</b>
+      mathvariant='normal'>T&lt;/mi>
+ &lt;/mmultiscripts>
+&lt;/math>
+</pre>
+
+    <div class="mathcat">transpose  of x</div>
 </td>
 
     <td>{}^{\mathrm{T}}x</td>
@@ -1532,6 +1558,17 @@
 </pre>
 
     <div class="mathcat">of, x comma  is comma parallel comma  to comma y</div>
+<pre>
+&lt;math display='block'>
+ &lt;mrow <b>intent='_:silent($x,_is,$op,_to,$y)'</b>>
+  &lt;mi <b>arg='x'</b>>x&lt;/mi>
+  &lt;mo <b>arg='op'</b> <b>intent='parallel'</b>>‖&lt;/mo>
+  &lt;mi <b>arg='y'</b>>y&lt;/mi>
+ &lt;/mrow>
+&lt;/math>
+</pre>
+
+    <div class="mathcat">x  is parallel  to y</div>
 </td>
 
     <td>x \parallel y</td>
