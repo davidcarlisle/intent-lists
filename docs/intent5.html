@@ -4722,6 +4722,38 @@
 </pre>
 
     <div class="mathcat">, x plus; 2 times, the absolute value of, y minus z; end absolute value;,</div>
+<pre>
+&lt;math display='block'>
+ &lt;mrow <b>intent='plus($x,times(2,absolute-value(infix($y,$z))))'</b>>
+  &lt;mi <b>arg='x'</b>>x&lt;/mi>
+  &lt;mo>+&lt;/mo>
+  &lt;mn>2&lt;/mn>
+  &lt;mo>|&lt;/mo>
+  &lt;mi <b>arg='y'</b>>y&lt;/mi>
+  &lt;mo>-&lt;/mo>
+  &lt;mi <b>arg='z'</b>>z&lt;/mi>
+  &lt;mo>|&lt;/mo>
+ &lt;/mrow>
+&lt;/math>
+</pre>
+
+    <div class="mathcat">plus of, x comma; times of, 2 comma, the absolute value of infix of, y comma z, end absolute value,</div>
+<pre>
+&lt;math display='block'>
+ &lt;mrow>
+  &lt;mi>x&lt;/mi>
+  &lt;mo>+&lt;/mo>
+  &lt;mn>2&lt;/mn>
+  &lt;mo <b>intent='absolute-value'</b>>|&lt;/mo>
+  &lt;mi>y&lt;/mi>
+  &lt;mo>-&lt;/mo>
+  &lt;mi>z&lt;/mi>
+  &lt;mo <b>intent='end-absolute-value'</b>>|&lt;/mo>
+ &lt;/mrow>
+&lt;/math>
+</pre>
+
+    <div class="mathcat">x plus; 2, the absolute value of y minus z, end absolute value,</div>
 </td>
 
     <td>x+2\lvert y-z\rvert</td>
