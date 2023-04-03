@@ -3061,9 +3061,9 @@
 <td>
 <pre>
 &lt;math display='block'>
- &lt;mrow <b>intent='matrix($m)'</b>>
+ &lt;mrow <b>intent='$m'</b>>
   &lt;mo>[&lt;/mo>
-  &lt;mtable <b>arg='m'</b>>
+  &lt;mtable <b>arg='m'</b> <b>intent=':matrix'</b>>
    &lt;mtr>
     &lt;mtd>&lt;mi>a&lt;/mi>&lt;/mtd>
     &lt;mtd>&lt;mi>b&lt;/mi>&lt;/mtd>
@@ -3078,7 +3078,7 @@
 &lt;/math>
 </pre>
 
-    <div class="mathcat">the 1 by 2 row matrix; <br/>line 1; eigh, b; <br/>line 2; x, y;</div>
+    <div class="mathcat">the 2 by 2 matrix; <br/>column 1; eigh; <br/>column 2; b; <br/>column 1; x; <br/>column 2; y;</div>
 </td>
 
     <td>\begin{bmatrix} a&amp;b\\ x&amp;y \end{bmatrix}</td>
@@ -3090,7 +3090,6 @@
 
      <math display='block'>
       <mrow>
-       <mo><!--?--></mo>
        <mo>(</mo>
        <mtable>
         <mtr>
@@ -3111,7 +3110,6 @@
 <pre>
 &lt;math display='block'>
  &lt;mrow>
-  &lt;mo>&lt;!--?-->&lt;/mo>
   &lt;mo>(&lt;/mo>
   &lt;mtable>
    &lt;mtr>
@@ -3133,10 +3131,9 @@
 <td>
 <pre>
 &lt;math display='block'>
- &lt;mrow>
-  &lt;mo <b>intent='array'</b>>&lt;!--?-->&lt;/mo>
+ &lt;mrow <b>intent='$m'</b>>
   &lt;mo>(&lt;/mo>
-  &lt;mtable>
+  &lt;mtable <b>arg='m'</b> <b>intent=':matrix'</b>>
    &lt;mtr>
     &lt;mtd>&lt;mi>a&lt;/mi>&lt;/mtd>
     &lt;mtd>&lt;mi>b&lt;/mi>&lt;/mtd>
@@ -3222,9 +3219,9 @@
 <td>
 <pre>
 &lt;math display='block'>
- &lt;mrow>
-  &lt;mo <b>intent='system-of-equations'</b>>{&lt;/mo>
-  &lt;mtable>
+ &lt;mrow <b>intent='$m'</b>>
+  &lt;mo>{&lt;/mo>
+  &lt;mtable <b>arg='m'</b> <b>intent=':equations'</b>>
    &lt;mtr>
     &lt;mtd>
      &lt;mi>x&lt;/mi>
@@ -3248,7 +3245,7 @@
 &lt;/math>
 </pre>
 
-    <div class="mathcat">2 cases, <br/>case 1; x plus y, is equal to, 2; <br/>case 2; x minus y, is equal to, 0;</div>
+    <div class="mathcat">2 equations, <br/>equation 1; x plus y, is equal to, 2; <br/>equation 2; x minus y, is equal to, 0;</div>
 </td>
 
     <td>\left\{\begin{aligned} x+y &amp;= 2 \\ x-y &amp;=0 \end{aligned}\right.</td>
@@ -3329,7 +3326,7 @@
 <td>
 <pre>
 &lt;math display='block'>
- &lt;mtable>
+ &lt;mtable <b>intent=':equations'</b>>
   &lt;mtr>
    &lt;mtd columnalign='right'>
     &lt;mn>2&lt;/mn>
@@ -3473,6 +3470,39 @@
 </pre>
 
     <div class="mathcat">equation <br/>column 1; eigh; <br/>column 2; is equal to; b plus c minus d     <br/>column 3; plus e minus f;</div>
+<pre>
+&lt;math display='block'>
+ &lt;mtable <b>intent=':equations'</b>>
+  &lt;mtr>
+   &lt;mtd columnalign='right'>
+    &lt;mi>a&lt;/mi>
+   &lt;/mtd>
+   &lt;mtd columnalign='center'>
+    &lt;mo>=&lt;/mo>
+   &lt;/mtd>
+   &lt;mtd columnalign='left'>
+    &lt;mi>b&lt;/mi>
+    &lt;mo>+&lt;/mo>
+    &lt;mi>c&lt;/mi>
+    &lt;mo>&amp;#x2212;&lt;/mo>
+    &lt;mi>d&lt;/mi>
+   &lt;/mtd>
+  &lt;/mtr>
+  &lt;mtr <b>intent=':continued-equation'</b>>
+   &lt;mtd columnalign='right'>&lt;/mtd>
+   &lt;mtd columnalign='center'>&lt;/mtd>
+   &lt;mtd columnalign='left'>
+    &lt;mo form='infix'>+&lt;/mo>
+    &lt;mi>e&lt;/mi>
+    &lt;mo>&amp;#x2212;&lt;/mo>
+    &lt;mi>f&lt;/mi>
+   &lt;/mtd>
+  &lt;/mtr>
+ &lt;/mtable>
+&lt;/math>
+</pre>
+
+    <div class="mathcat">2 equations, <br/>equation 1; eigh, is equal to, b plus c minus d; <br/>equation 2; empty, empty, plus e minus f;</div>
 </td>
 
     <td>\begin{aligned}... wrapped</td>
