@@ -90,8 +90,8 @@ for mmltd in mmltds:
           mcat=GetSpeech()
           mcatl=re.sub(r'((line|column|case|equation) [0-9]+;)',r'<br/>\1',mcat)
           print ("\n    <div class=\"mathcat\">{}</div>".format(mcatl))
-        except:
-          print ("\n    <div class=\"mathcat\">problem with SetMathML</div>")
+        except Exception as e:
+          print ("\n    <div class=\"mathcat\"><span class='error' title='" + re.sub('apos;M[^& ]*','apos;M...',re.sub('C:.*?mathcat','mathcat',str(e)).replace('&','&amp;').replace('<','&lt;').replace("'",'&apos;')) + "'>problem with SetMathML</span></div>")
     print("</td>")
   else:
     mmltd=re.sub(r'<t(d|h)([^<>]*)>([^<>]*)</t[dh]>\s*</tr>',
