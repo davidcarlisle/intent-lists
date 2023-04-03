@@ -2548,7 +2548,7 @@
 &lt;math display='block'>
  &lt;mrow <b>intent='determinant($M)'</b>>
   &lt;mo>|&lt;/mo>
-  &lt;mtable <b>arg='M'</b>>
+  &lt;mtable <b>arg='M'</b> <b>intent=':matrix'</b>>
    &lt;mtr>
     &lt;mtd>&lt;mi>a&lt;/mi>&lt;/mtd>
     &lt;mtd>&lt;mi>b&lt;/mi>&lt;/mtd>
@@ -2563,12 +2563,12 @@
 &lt;/math>
 </pre>
 
-    <div class="mathcat">the determinant of 2 lines, <br/>line 1; eigh, b; <br/>line 2; c, d;</div>
+    <div class="mathcat">the determinant of the 2 by 2 matrix; <br/>column 1; eigh; <br/>column 2; b; <br/>column 1; c; <br/>column 2; d;</div>
 <pre>
 &lt;math display='block'>
- &lt;mrow <b>intent='determinant($M:matrix)'</b>>
+ &lt;mrow <b>intent='$M'</b>>
   &lt;mo>|&lt;/mo>
-  &lt;mtable <b>arg='M'</b>>
+  &lt;mtable <b>arg='M'</b> <b>intent=':determinant'</b>>
    &lt;mtr>
     &lt;mtd>&lt;mi>a&lt;/mi>&lt;/mtd>
     &lt;mtd>&lt;mi>b&lt;/mi>&lt;/mtd>
@@ -2583,7 +2583,7 @@
 &lt;/math>
 </pre>
 
-    <div class="mathcat">the determinant of 2 lines, <br/>line 1; eigh, b; <br/>line 2; c, d;</div>
+    <div class="mathcat">2 lines, <br/>line 1; eigh, b; <br/>line 2; c, d;</div>
 </td>
 
     <td>\begin{vmatrix}a&amp;b\\c&amp;d\end{vmatrix}</td>
