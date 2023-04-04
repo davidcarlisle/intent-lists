@@ -81,7 +81,7 @@ for mmltd in mmltds:
     for mml in mmls:
       j=j+1
       if(j % 2 == 0):
-        print("<pre>")
+        print("<pre id='id-r{}m{}'><a class='self' href='#id-r{}m{}'>&#xa7;</a>".format(i,j//2,i,j//2) )
         print(re.sub("((arg|intent)='[^']*')",r'<b>\1</b>',
               mml.replace('&','&amp;').replace('<','&lt;').replace('\n     ','\n')))
         print("</pre>")
