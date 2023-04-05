@@ -84,7 +84,6 @@ for mmltd in mmltds:
       hashid="id-{}-{}".format((- i) % 3,hashlib.md5(mml.encode('utf-8')).hexdigest())
       if(j % 2 == 0):
         print("<pre id='{}'><a class='self' href='#{}'>&#xa7;</a>".format(hashid,hashid) )
-        print()
         print(re.sub("((arg|intent)='[^']*')",r'<b>\1</b>',
               mml.replace('&','&amp;').replace('<','&lt;').replace('\n     ','\n')))
         print("</pre>")
