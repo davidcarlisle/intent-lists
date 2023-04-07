@@ -672,51 +672,77 @@
      <math display='block'>
       <msubsup>
        <mi>x</mi>
-       <mi>i</mi>
+       <mrow>
+        <mi>i</mi>
+        <mi>j</mi>
+       </mrow>
        <mi mathvariant='normal'>T</mi>
       </msubsup>
      </math>
     
 </td>
 <td>
-<pre id='id-1-1fabf2d970fbc377b853f85099e2dd67'><a class='self' href='#id-1-1fabf2d970fbc377b853f85099e2dd67'>&#xa7;</a>
+<pre id='id-1-217f60d6e53ee19547d99fcf2ad696a5'><a class='self' href='#id-1-217f60d6e53ee19547d99fcf2ad696a5'>&#xa7;</a>
 &lt;math display='block'>
  &lt;msubsup>
   &lt;mi>x&lt;/mi>
-  &lt;mi>i&lt;/mi>
+  &lt;mrow>
+   &lt;mi>i&lt;/mi>
+   &lt;mi>j&lt;/mi>
+  &lt;/mrow>
   &lt;mi mathvariant='normal'>T&lt;/mi>
  &lt;/msubsup>
 &lt;/math>
 </pre>
 
-    <div class="mathcat">x sub i to the   t-th</div>
+    <div class="mathcat">x sub i j to the   t-th</div>
 </td>
 <td>
-<pre id='id-0-333306ff438b6b20371f34b4e4ab2898'><a class='self' href='#id-0-333306ff438b6b20371f34b4e4ab2898'>&#xa7;</a>
+<pre id='id-0-1277e0e3b79ddf8b85a8794b17d73044'><a class='self' href='#id-0-1277e0e3b79ddf8b85a8794b17d73044'>&#xa7;</a>
 &lt;math display='block'>
- &lt;msubsup <b>intent='transpose(index:silent($x,$i))'</b>>
+ &lt;msubsup <b>intent='transpose(index:silent($x,$sub))'</b>>
   &lt;mi <b>arg='x'</b>>x&lt;/mi>
-  &lt;mi <b>arg='i'</b>>i&lt;/mi>
+  &lt;mrow <b>arg='sub'</b> <b>intent=':index'</b>>
+   &lt;mi>i&lt;/mi>
+   &lt;mi>j&lt;/mi>
+  &lt;/mrow>
   &lt;mi mathvariant='normal'>T&lt;/mi>
  &lt;/msubsup>
 &lt;/math>
 </pre>
 
-    <div class="mathcat">x i transpose</div>
-<pre id='id-0-597b6fae24b812cf5cab7c9c4db8bf5c'><a class='self' href='#id-0-597b6fae24b812cf5cab7c9c4db8bf5c'>&#xa7;</a>
+    <div class="mathcat">x i j transpose</div>
+<pre id='id-0-aba8633268bc34a2ec7fe8f1bea33e7d'><a class='self' href='#id-0-aba8633268bc34a2ec7fe8f1bea33e7d'>&#xa7;</a>
 &lt;math display='block'>
  &lt;msubsup>
   &lt;mi>x&lt;/mi>
-  &lt;mi <b>intent=':index'</b>>i&lt;/mi>
+  &lt;mrow <b>arg='sub'</b> <b>intent=':index'</b>>
+   &lt;mi>i&lt;/mi>
+   &lt;mi>j&lt;/mi>
+  &lt;/mrow>
   &lt;mi <b>intent='transpose:postfix'</b> mathvariant='normal'>T&lt;/mi>
  &lt;/msubsup>
 &lt;/math>
 </pre>
 
-    <div class="mathcat">x sub i to the transpose</div>
+    <div class="mathcat">x sub i j to the transpose</div>
+<pre id='id-0-4dc5e6b2ea853d5abb0821f3494a7950'><a class='self' href='#id-0-4dc5e6b2ea853d5abb0821f3494a7950'>&#xa7;</a>
+&lt;math display='block'>
+ &lt;msubsup <b>intent='transpose(sub:infix($base, $sub))'</b>>
+  &lt;mi <b>arg='base'</b>>x&lt;/mi>
+  &lt;mrow <b>arg='sub'</b> <b>intent=':index'</b>>
+   &lt;mi>i&lt;/mi>
+   &lt;mi>j&lt;/mi>
+  &lt;/mrow>
+  &lt;mi>T&lt;/mi>
+ &lt;/msubsup>
+&lt;/math>
+</pre>
+
+    <div class="mathcat">x sub i j transpose</div>
 </td>
 
-    <td>x_i^{\mathrm{T}}</td>
+    <td>x_{ij}^{\mathrm{T}}</td>
     <td id="IDxsubtranspose"><a class="self" href="#IDxsubtranspose">x sub  transpose</a></td>
  </tr>
 

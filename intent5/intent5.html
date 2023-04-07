@@ -396,28 +396,47 @@
      <math display='block'>
       <msubsup>
        <mi>x</mi>
-       <mi>i</mi>
+       <mrow>
+	<mi>i</mi>
+	<mi>j</mi>
+       </mrow>
        <mi mathvariant='normal'>T</mi>
       </msubsup>
      </math>
     </td>
     <td>
      <math display='block'>
-      <msubsup intent='transpose(index:silent($x,$i))'>
+      <msubsup intent='transpose(index:silent($x,$sub))'>
        <mi arg='x'>x</mi>
-       <mi arg='i'>i</mi>
+       <mrow arg='sub' intent=':index'>
+	<mi>i</mi>
+	<mi>j</mi>
+       </mrow>
        <mi mathvariant='normal'>T</mi>
       </msubsup>
      </math>
      <math display='block'>
       <msubsup>
        <mi>x</mi>
-       <mi intent=':index'>i</mi>
+       <mrow arg='sub' intent=':index'>
+	<mi>i</mi>
+	<mi>j</mi>
+       </mrow>
        <mi intent='transpose:postfix' mathvariant='normal'>T</mi>
       </msubsup>
      </math>
+     <math display='block'>
+      <msubsup intent='transpose(sub:infix($base, $sub))'>
+       <mi arg='base'>x</mi>
+       <mrow arg='sub' intent=':index'>
+	<mi>i</mi>
+	<mi>j</mi>
+       </mrow>
+       <mi>T</mi>
+      </msubsup>
+     </math>
     </td>
-    <td>x_i^{\mathrm{T}}</td>
+    <td>x_{ij}^{\mathrm{T}}</td>
     <td>x sub  transpose</td>
    </tr>
 
