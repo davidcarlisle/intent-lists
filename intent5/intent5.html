@@ -394,6 +394,36 @@
    <tr>
     <td>
      <math display='block'>
+      <msubsup>
+       <mi>x</mi>
+       <mi>i</mi>
+       <mi mathvariant='normal'>T</mi>
+      </msubsup>
+     </math>
+    </td>
+    <td>
+     <math display='block'>
+      <msubsup intent='transpose(index:silent($x,$i))'>
+       <mi arg='x'>x</mi>
+       <mi arg='i'>i</mi>
+       <mi mathvariant='normal'>T</mi>
+      </msubsup>
+     </math>
+     <math display='block'>
+      <msubsup>
+       <mi>x</mi>
+       <mi intent=':index'>i</mi>
+       <mi intent='transpose:postfix' mathvariant='normal'>T</mi>
+      </msubsup>
+     </math>
+    </td>
+    <td>x_i^{\mathrm{T}}</td>
+    <td>x sub  transpose</td>
+   </tr>
+
+   <tr>
+    <td>
+     <math display='block'>
       <msup>
        <mn>4</mn>
        <mi>th</mi>
@@ -3163,7 +3193,7 @@
     </td>
     <td>
      <math display='block' mathbackground='yellow'>
-      <mover intent='ray($x)'>
+      <mover intent='ray($X)'>
        <mi arg='X'>X</mi>
        <mo>→</mo>
       </mover>

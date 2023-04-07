@@ -670,6 +670,60 @@
 <td>
 
      <math display='block'>
+      <msubsup>
+       <mi>x</mi>
+       <mi>i</mi>
+       <mi mathvariant='normal'>T</mi>
+      </msubsup>
+     </math>
+    
+</td>
+<td>
+<pre id='id-1-1fabf2d970fbc377b853f85099e2dd67'><a class='self' href='#id-1-1fabf2d970fbc377b853f85099e2dd67'>&#xa7;</a>
+&lt;math display='block'>
+ &lt;msubsup>
+  &lt;mi>x&lt;/mi>
+  &lt;mi>i&lt;/mi>
+  &lt;mi mathvariant='normal'>T&lt;/mi>
+ &lt;/msubsup>
+&lt;/math>
+</pre>
+
+    <div class="mathcat">x sub i to the   t-th</div>
+</td>
+<td>
+<pre id='id-0-333306ff438b6b20371f34b4e4ab2898'><a class='self' href='#id-0-333306ff438b6b20371f34b4e4ab2898'>&#xa7;</a>
+&lt;math display='block'>
+ &lt;msubsup <b>intent='transpose(index:silent($x,$i))'</b>>
+  &lt;mi <b>arg='x'</b>>x&lt;/mi>
+  &lt;mi <b>arg='i'</b>>i&lt;/mi>
+  &lt;mi mathvariant='normal'>T&lt;/mi>
+ &lt;/msubsup>
+&lt;/math>
+</pre>
+
+    <div class="mathcat">x i transpose</div>
+<pre id='id-0-597b6fae24b812cf5cab7c9c4db8bf5c'><a class='self' href='#id-0-597b6fae24b812cf5cab7c9c4db8bf5c'>&#xa7;</a>
+&lt;math display='block'>
+ &lt;msubsup>
+  &lt;mi>x&lt;/mi>
+  &lt;mi <b>intent=':index'</b>>i&lt;/mi>
+  &lt;mi <b>intent='transpose:postfix'</b> mathvariant='normal'>T&lt;/mi>
+ &lt;/msubsup>
+&lt;/math>
+</pre>
+
+    <div class="mathcat">x sub i to the transpose</div>
+</td>
+
+    <td>x_i^{\mathrm{T}}</td>
+    <td id="IDxsubtranspose"><a class="self" href="#IDxsubtranspose">x sub  transpose</a></td>
+ </tr>
+
+   <tr>
+<td>
+
+     <math display='block'>
       <msup>
        <mn>4</mn>
        <mi>th</mi>
@@ -5280,46 +5334,16 @@
     <div class="mathcat">vector   x</div>
 </td>
 <td>
-<pre id='id-0-d357eecf5e22fea7daa1820c6226c9c8'><a class='self' href='#id-0-d357eecf5e22fea7daa1820c6226c9c8'>&#xa7;</a>
+<pre id='id-0-f4f08f87cf4ea95d8826cf3bea74ce3d'><a class='self' href='#id-0-f4f08f87cf4ea95d8826cf3bea74ce3d'>&#xa7;</a>
 &lt;math display='block' mathbackground='yellow'>
- &lt;mover <b>intent='ray($x)'</b>>
+ &lt;mover <b>intent='ray($X)'</b>>
   &lt;mi <b>arg='X'</b>>X&lt;/mi>
   &lt;mo>→&lt;/mo>
  &lt;/mover>
 &lt;/math>
 </pre>
 
-    <div class="mathcat"><span class='error' title='Pattern match/replacement failure!
-caused by: attempting replacement pattern: "default" for "math".
-Replacement
-[test: [  if: &apos;x: "*"&apos; then:[intent:  name: math
-      children: [x: "*"]] else:[t: " "]]
-]
-...due to matching the following MathML with the pattern
-x: "."
- &lt;math display=&apos;block&apos; mathbackground=&apos;yellow&apos; id=&apos;M...&apos; data-id-added=&apos;true&apos;>
-  &lt;mover intent=&apos;ray($x)&apos; id=&apos;M...&apos; data-id-added=&apos;true&apos;>
-    &lt;mi arg=&apos;X&apos; id=&apos;M...&apos; data-id-added=&apos;true&apos;>X&lt;/mi>
-    &lt;mo id=&apos;M...&apos; data-id-added=&apos;true&apos;>→&lt;/mo>
-  &lt;/mover>
- &lt;/math>
-The patterns are in mathcat2\Rules\intent.yaml.
-
-caused by: replacing inside &apos;intent&apos;
-caused by: attempting replacement pattern: "intent-exists" for "!*".
-Replacement
-[x: "process-intent(.)"]
-...due to matching the following MathML with the pattern
-x: "@intent"
- &lt;mover intent=&apos;ray($x)&apos; id=&apos;M...&apos; data-id-added=&apos;true&apos;>
-  &lt;mi arg=&apos;X&apos; id=&apos;M...&apos; data-id-added=&apos;true&apos;>X&lt;/mi>
-  &lt;mo id=&apos;M...&apos; data-id-added=&apos;true&apos;>→&lt;/mo>
- &lt;/mover>
-The patterns are in mathcat2\Rules\intent.yaml.
-
-caused by: occurs before &apos;)&apos; in intent attribute value &apos;ray($x)&apos;
-caused by: intent arg &apos;$x&apos; not found
-'>vector   x</span></div>
+    <div class="mathcat">ray of,   x</div>
 </td>
 
     <td> - </td>
