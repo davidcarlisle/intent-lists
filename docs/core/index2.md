@@ -70,7 +70,9 @@ controlled by the context, or by system option settings such as "Verbosity".
 ----
 
 
-    <script>
+hhh
+
+<script>
       var LangSelect = document.getElementById('LangSelect');
       var LangCss = document.getElementById('langcss');
       LangSelect.onchange = (event) => {
@@ -83,4 +85,4 @@ controlled by the context, or by system option settings such as "Verbosity".
     }
      }
  }
-    </script>
+</script>
