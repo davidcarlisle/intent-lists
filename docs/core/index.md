@@ -35,8 +35,8 @@ controlled by the context, or by system option settings such as "Verbosity".
 | equals    | 2     | function  | equal to $1, $2                      |              |
 | <span id="factorial">factorial</span> | 1     | postfix*  | $1 factorial                          |              |
 | factorial | 1     | function  | factorial of $1                      | This row could be deleted, as it follows from the default behaviour |
-| <span id="transpose">tranpose</span>  | 1     | postfix*  | $1 tranpose                          |              |
-| tranpose  | 1     | function  | tranpose of $1                       | This row could be deleted, as it follows from the default behaviour |
+| <span id="transpose">transpose</span>  | 1     | postfix*  | $1 transpose                          |              |
+| transpose  | 1     | function  | transpose of $1                       | This row could be deleted, as it follows from the default behaviour |
 | <span id="sin">sin</span>       | 1     | prefix*   | sine $1                              |              |
 | sin       | 1     | function  | sine of $1                           |              |
 | sinh      | 1     | prefix*   | shine <br> sinch                     | <https://www.youtube.com/watch?v=jA-pkiwLVjA> |
