@@ -25,7 +25,18 @@ controlled by the context, or by system option settings such as "Verbosity".
 
 ----
 
-## Core List
+## Core List xx
+
+
+<select id="LangSelect" multiple>
+  <option value="4" selected>English (en)</option>
+  <option value="5">French (fr)</option>
+</select>
+
+<style id="langcss">
+  tr > *:nth-child(5) {display:none}
+</style>
+
 
 | Concept   | Arity | Hint      | Speech Template (en)                 | Comments     |
 | ----      | ----  | ----      | ----                                 | ----         |
@@ -57,3 +68,19 @@ controlled by the context, or by system option settings such as "Verbosity".
 | _th_  | suitable ordinal indicator, so `st`  `nd` `rd` or `th` in English. |
 
 ----
+
+
+    <script>
+      var LangSelect = document.getElementById('LangSelect');
+      var LangCss = document.getElementById('langcss');
+      LangSelect.onchange = (event) => {
+	 LangCss.textContent='';
+     for (var i=0, iLen=LangSelect.options.length; i<iLen; i++) {
+    opt = LangSelect.options[i];
+    if (opt.selected) {
+    } else {
+	LangCss.textContent= "tr > *:nth-child(" + opt.value + ") {display:none}";
+    }
+     }
+ }
+    </script>
