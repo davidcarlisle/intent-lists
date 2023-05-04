@@ -82,7 +82,7 @@ hhhkk
     if (opt.selected) {
 	LangCss.textContent= LangCss.textContent + "tr > *:nth-child(" + opt.value + ") {display:table-cell}";
     } else {
-	LangCss.textContent= LangCss.textContent + "tr > *:nth-child(" + opt.value + ") {display:none}";
+	//LangCss.textContent= LangCss.textContent + "tr > *:nth-child(" + opt.value + ") {display:none}";
     }
      }
  }
