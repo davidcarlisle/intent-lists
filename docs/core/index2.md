@@ -76,7 +76,7 @@ hhhkk
       var LangSelect = document.getElementById('LangSelect');
       var LangCss = document.getElementById('langcss');
       LangSelect.onchange = (event) => {
-	 LangCss.textContent='';
+	 LangCss.textContent='td {display:table-cell}';
      for (var i=0, iLen=LangSelect.options.length; i<iLen; i++) {
     opt = LangSelect.options[i];
     if (opt.selected) {
