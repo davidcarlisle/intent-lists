@@ -34,7 +34,7 @@ controlled by the context, or by system option settings such as "Verbosity".
 </select>
 
 <style id="langcss">
-  tr > *:nth-child(5) {display:none}
+  tr > *:nth-child(5) {color:green}
 </style>
 
 
@@ -76,13 +76,13 @@ hhhkk
       var LangSelect = document.getElementById('LangSelect');
       var LangCss = document.getElementById('langcss');
       LangSelect.onchange = (event) => {
-	 LangCss.textContent='td {display:table-cell}';
+	 LangCss.textContent='td {color:red}';
      for (var i=0, iLen=LangSelect.options.length; i<iLen; i++) {
     opt = LangSelect.options[i];
     if (opt.selected) {
-	LangCss.textContent= LangCss.textContent + "tr > *:nth-child(" + opt.value + ") {display:table-cell}";
+	LangCss.textContent= LangCss.textContent + "tr > *:nth-child(" + opt.value + ") {color:red}";
     } else {
-	//LangCss.textContent= LangCss.textContent + "tr > *:nth-child(" + opt.value + ") {display:none}";
+	//LangCss.textContent= LangCss.textContent + "tr > *:nth-child(" + opt.value + ") {color:green}";
     }
      }
  }
