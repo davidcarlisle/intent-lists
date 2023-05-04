@@ -70,7 +70,7 @@ controlled by the context, or by system option settings such as "Verbosity".
 ----
 
 
-hhh
+hhhkk
 
 <script>
       var LangSelect = document.getElementById('LangSelect');
@@ -80,9 +80,11 @@ hhh
      for (var i=0, iLen=LangSelect.options.length; i<iLen; i++) {
     opt = LangSelect.options[i];
     if (opt.selected) {
+	LangCss.textContent= LangCss.textContent + "tr > *:nth-child(" + opt.value + ") {display:table-cell}";
     } else {
-	LangCss.textContent+= "tr > *:nth-child(" + opt.value + ") {display:none}";
+	LangCss.textContent= LangCss.textContent + "tr > *:nth-child(" + opt.value + ") {display:none}";
     }
      }
  }
 </script>
+
