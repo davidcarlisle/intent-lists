@@ -81,7 +81,7 @@ hhh
     opt = LangSelect.options[i];
     if (opt.selected) {
     } else {
-	LangCss.textContent= "tr > *:nth-child(" + opt.value + ") {display:none}";
+	LangCss.textContent+= "tr > *:nth-child(" + opt.value + ") {display:none}";
     }
      }
  }
