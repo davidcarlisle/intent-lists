@@ -12,7 +12,7 @@ The list should include all the entries from the **core** list below.
 Defaulting rules and options to control them to be specifed elsewhere, and are likely to be system specific.
 
 3. An intent term matches a row in the table if the concept name,
-arity and hint _all_ match.  Any intent literal that does not match is
+arity and property _all_ match.  Any intent literal that does not match is
 not an error but is handled by the general rules for unknown concept
 names (so treated as a literal). Note that unless the intent is
 explicitly or implicitly (by expanding `$argref`) used as a function
@@ -38,16 +38,16 @@ controlled by the context, or by system option settings such as "Verbosity".
 </style>
 
 
-| Concept   | Arity | Hint      | Speech Template (en)        |                                  Speech Template (fr)                 | Comments     |
+| Concept   | Arity | Property      | Speech Template (en)        |                                  Speech Template (fr)                 | Comments     |
 | ----      | ----  | ----      | ----                                  | ----                                 | ----         |
 | `_`       | n     | prefix*    | _silent_        |     _silent_            |              |
-| <span id="power">power</span>     | 2     | infix*    | $1 squared [$2=2] <br> $1 cubed [$2=3] <br> $1 to the $2_th_ power         |     $1 squared [$2=2] <br> $1 cubed [$2=3] <br> $1 to the $2_th_ power..             |              |
-| <span id="equals">equals</span>    | 2     | infix*    | $1 equals $2  <br>   $1 is equal to $2        |               $1 equals $2  <br>   $1 is equal to $2..                      |              |
-| equals    | 2     | function  | equal to $1, $2       |                equal to $1, $2                      |              |
+| <span id="power">power</span>     | 2     | infix*    | $1 squared [$2=2] <br> $1 cubed [$2=3] <br> $1 to the $2_th_ power         |     $1  carré [$2=2] <br> $1 cube [$2=3] <br> $1 à la  $2 ..             |              |
+| <span id="equals">equals</span>    | 2     | infix*    | $1 equals $2  <br>   $1 is equal to $2        |               $1 equals $2  <br>   $1 est égal à $2..                      |              |
+| equals    | 2     | function  | equal to $1, $2       |              égal  $1, $2                      |              |
 | <span id="factorial">factorial</span> | 1     | postfix*  | $1 factorial                |           $1 factorial                          |              |
 | factorial | 1     | function  | factorial of $1          |             factorial of $1                      | This row could be deleted, as it follows from the default behaviour |
-| <span id="transpose">transpose</span>  | 1     | postfix*  | $1 transpose          |                 $1 transpose                          |              |
-| transpose  | 1     | function  | transpose of $1               |         transpose of $1                       | This row could be deleted, as it follows from the default behaviour |
+| <span id="transpose">transpose</span>  | 1     | postfix*  | $1 transpose          |                 $1 transposée                         |              |
+| transpose  | 1     | function  | transpose of $1               |         transposée de $1                       | This row could be deleted, as it follows from the default behaviour |
 | <span id="sin">sin</span>       | 1     | prefix*   | sine $1         |                      sine $1                              |              |
 | sin       | 1     | function  | sine of $1           |                 sine of $1                           |              |
 | sinh      | 1     | prefix*   | shine <br> sinch      |                shine <br> sinch                     | <https://www.youtube.com/watch?v=jA-pkiwLVjA> |
@@ -64,7 +64,7 @@ controlled by the context, or by system option settings such as "Verbosity".
 
 | Entry | Meaning |
 | ---- | ---- |
-| `*` | hint default if no `@` hint given |
+| `*` | property default if no  fixity`:` property given |
 | _th_  | suitable ordinal indicator, so `st`  `nd` `rd` or `th` in English. |
 
 ----
