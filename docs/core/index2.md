@@ -25,7 +25,7 @@ controlled by the context, or by system option settings such as "Verbosity".
 
 ----
 
-## Core List xx
+## Core List
 
 
 <select id="LangSelect" multiple>
@@ -70,7 +70,6 @@ controlled by the context, or by system option settings such as "Verbosity".
 ----
 
 
-hhhkk
 
 <script>
       var LangSelect = document.getElementById('LangSelect');
@@ -81,7 +80,7 @@ hhhkk
     opt = LangSelect.options[i];
     if (opt.selected) {
     } else {
-	//LangCss.textContent= LangCss.textContent + "tr > *:nth-child(" + opt.value + ") {display:none}";
+	LangCss.textContent= LangCss.textContent + "tr > *:nth-child(" + opt.value + ") {display:none}";
     }
      }
  }
