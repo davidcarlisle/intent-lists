@@ -40,7 +40,6 @@ controlled by the context, or by system option settings such as "Verbosity".
 
 | Concept   | Arity | Property      | Speech Template (en)        |                                  Speech Template (fr)                 | Comments     |
 | ----      | ----  | ----      | ----                                  | ----                                 | ----         |
-| `_`       | n     | prefix*    | _silent_        |     _silent_            |              |
 | <span id="power">power</span>     | 2     | infix*    | $1 squared [$2=2] <br> $1 cubed [$2=3] <br> $1 to the $2_th_ power         |     $1  carré [$2=2] <br> $1 cube [$2=3] <br> $1 à la  $2 ..             |              |
 | <span id="equals">equals</span>    | 2     | infix*    | $1 equals $2  <br>   $1 is equal to $2        |               $1 equals $2  <br>   $1 est égal à $2..                      |              |
 | equals    | 2     | function  | equal to $1, $2       |              égal  $1, $2                      |              |
