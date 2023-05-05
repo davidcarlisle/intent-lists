@@ -34,29 +34,29 @@ controlled by the context, or by system option settings such as "Verbosity".
 </select>
 
 <style id="langcss">
-  tr > *:nth-child(5) {color:green}
+  tr > *:nth-child(5) {display:none}
 </style>
 
 
-| Concept   | Arity | Hint      | Speech Template (en)                 | Comments     |
-| ----      | ----  | ----      | ----                                 | ----         |
-| `_`       | n     | prefix*    | _silent_            |              |
-| <span id="power">power</span>     | 2     | infix*    | $1 squared [$2=2] <br> $1 cubed [$2=3] <br> $1 to the $2_th_ power             |              |
-| <span id="equals">equals</span>    | 2     | infix*    | $1 equals $2  <br>   $1 is equal to $2                      |              |
-| equals    | 2     | function  | equal to $1, $2                      |              |
-| <span id="factorial">factorial</span> | 1     | postfix*  | $1 factorial                          |              |
-| factorial | 1     | function  | factorial of $1                      | This row could be deleted, as it follows from the default behaviour |
-| <span id="transpose">transpose</span>  | 1     | postfix*  | $1 transpose                          |              |
-| transpose  | 1     | function  | transpose of $1                       | This row could be deleted, as it follows from the default behaviour |
-| <span id="sin">sin</span>       | 1     | prefix*   | sine $1                              |              |
-| sin       | 1     | function  | sine of $1                           |              |
-| sinh      | 1     | prefix*   | shine <br> sinch                     | <https://www.youtube.com/watch?v=jA-pkiwLVjA> |
-| cosh      | 1     | prefix*   | cosh <br> kosh                    | |
-| tanh      | 1     | prefix*   | than <br> tanch                   | |
-| <span id="log">log</span>       | 2     | function* | log base $2 of $1                      |  arity 1 log(x)  needs no rule here |
-| <span id="ln">ln</span>        | 1     | function* | natural log of $1 <br> log of $1  <br>  log base e of $1                   |  |
-| ln        | 1     | prefix    | natural log $1  <br> log $1 <br> log base e $1                   |  |
-| ⋮          | ⋮     | ⋮          | ⋮                                     | More to be added |
+| Concept   | Arity | Hint      | Speech Template (en)                  Speech Template (fr)                 | Comments     |
+| ----      | ----  | ----      | ----                                  ----                                 | ----         |
+| `_`       | n     | prefix*    | _silent_             _silent_            |              |
+| <span id="power">power</span>     | 2     | infix*    | $1 squared [$2=2] <br> $1 cubed [$2=3] <br> $1 to the $2_th_ power              $1 squared [$2=2] <br> $1 cubed [$2=3] <br> $1 to the $2_th_ power..             |              |
+| <span id="equals">equals</span>    | 2     | infix*    | $1 equals $2  <br>   $1 is equal to $2                       $1 equals $2  <br>   $1 is equal to $2..                      |              |
+| equals    | 2     | function  | equal to $1, $2                       equal to $1, $2                      |              |
+| <span id="factorial">factorial</span> | 1     | postfix*  | $1 factorial                           $1 factorial                          |              |
+| factorial | 1     | function  | factorial of $1                       factorial of $1                      | This row could be deleted, as it follows from the default behaviour |
+| <span id="transpose">transpose</span>  | 1     | postfix*  | $1 transpose                           $1 transpose                          |              |
+| transpose  | 1     | function  | transpose of $1                        transpose of $1                       | This row could be deleted, as it follows from the default behaviour |
+| <span id="sin">sin</span>       | 1     | prefix*   | sine $1                               sine $1                              |              |
+| sin       | 1     | function  | sine of $1                            sine of $1                           |              |
+| sinh      | 1     | prefix*   | shine <br> sinch                      shine <br> sinch                     | <https://www.youtube.com/watch?v=jA-pkiwLVjA> |
+| cosh      | 1     | prefix*   | cosh <br> kosh                     cosh <br> kosh                    | |
+| tanh      | 1     | prefix*   | than <br> tanch                    than <br> tanch                   | |
+| <span id="log">log</span>       | 2     | function* | log base $2 of $1                       log base $2 of $1                      |  arity 1 log(x)  needs no rule here |
+| <span id="ln">ln</span>        | 1     | function* | natural log of $1 <br> log of $1  <br>  log base e of $1                    natural log of $1 <br> log of $1  <br>  log base e of $1                   |  |
+| ln        | 1     | prefix    | natural log $1  <br> log $1 <br> log base e $1                    natural log $1  <br> log $1 <br> log base e $1                   |  |
+| ⋮          | ⋮     | ⋮          | ⋮                                      ⋮                                     | More to be added |
 
 
 
@@ -76,13 +76,12 @@ hhhkk
       var LangSelect = document.getElementById('LangSelect');
       var LangCss = document.getElementById('langcss');
       LangSelect.onchange = (event) => {
-	 LangCss.textContent='td {color:red}';
+	 LangCss.textContent='';
      for (var i=0, iLen=LangSelect.options.length; i<iLen; i++) {
     opt = LangSelect.options[i];
     if (opt.selected) {
-	LangCss.textContent= LangCss.textContent + "tr > *:nth-child(" + opt.value + ") {color:red}";
     } else {
-	//LangCss.textContent= LangCss.textContent + "tr > *:nth-child(" + opt.value + ") {color:green}";
+	//LangCss.textContent= LangCss.textContent + "tr > *:nth-child(" + opt.value + ") {display:none}";
     }
      }
  }
