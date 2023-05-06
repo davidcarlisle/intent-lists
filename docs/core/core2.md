@@ -53,6 +53,13 @@ controlled by the context, or by system option settings such as "Verbosity".
 
 
 <style id="langcss">
+	 {%- assign v = 4 -%}
+    {%- for language in site.data.languages -%}
+        {% assign lang = language.language-code %}
+		{%- assign v = v | plus: 1 -%}
+	  {% if lang != "en" %}
+  tr > *:nth-child({{v}}) {display:none}
+{%- endfor -%}
 </style>
 
 
