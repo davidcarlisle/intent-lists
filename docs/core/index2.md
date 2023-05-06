@@ -37,6 +37,7 @@ controlled by the context, or by system option settings such as "Verbosity".
      <!-- Loop over languages in _data/languages.yml -->
     {%- for language in site.data.languages -%}
         {% assign lang = language.language-code %}
+	<span class="cb">
 	 <input
       type="checkbox"
 	  	  {% if lang == "en" %} checked {% endif %}
@@ -44,10 +45,13 @@ controlled by the context, or by system option settings such as "Verbosity".
       name="language"
       value="{{cb}}" />&nbsp;<label for="cb-{{lang}}">{{lang}}: {{language.label-regional}} 
             {% if lang != "en" %}({{language.label-english}}){% endif %}</label>
+	<span>
     {%- endfor -%}
 </div>
 
-
+<style>
+span.cb {margin-right: 2em;}
+</style>
 
 <style a="2" id="langcss">
 	 {%- assign v = 4 -%}
