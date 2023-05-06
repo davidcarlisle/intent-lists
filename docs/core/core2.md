@@ -42,7 +42,7 @@ controlled by the context, or by system option settings such as "Verbosity".
 	  {% if lang == "en" %}
           selected
           {% endif %}
-          value="{{v}}">
+          value="{{lang}}">
 		    {{lang}}: {{language.label-regional}} 
             {% if lang != "en" %}({{language.label-english}}){% endif %}
         </option>
@@ -57,7 +57,7 @@ controlled by the context, or by system option settings such as "Verbosity".
     {%- for language in site.data.languages -%}
         {% assign lang = language.language-code %}
 		{%- assign v = v | plus: 1 -%}
-	  {%- if lang != "en" -%}  tr > *:nth-child({{v}}) {display:none} {%- endif -%}
+	  {%- if lang != "en" -%}  *.{{lang}} {display:none} {%- endif -%}
 	  {%- endfor -%}
 </style>
 
@@ -70,7 +70,7 @@ controlled by the context, or by system option settings such as "Verbosity".
 <th>Property</th>
 <th>Condition</th>
 {%- for language in site.data.languages -%}
-<th>Speech Template ({{language.language-code}})</th> 
+<th class="{{language.language-code}}">Speech Template ({{language.language-code}})</th> 
 {%- endfor -%}
 <th>Comments</th>
 </tr>
@@ -87,9 +87,9 @@ controlled by the context, or by system option settings such as "Verbosity".
 <td>{{cond.condition}}</td>
 {%- for language in site.data.languages -%}
 {%- if cond[language.language-code] -%}
-<td>{{cond[language.language-code]}}</td>
+<td class="{{language.language-code}}">{{cond[language.language-code]}}</td>
 {%- else -%}
-<td>{{cond.en}} ({{language.language-code}})</td>
+<td class="{{language.language-code}}">{{cond.en}} ({{language.language-code}})</td>
 {% endif %}
 {%- assign r1 = false -%}
 {%- endfor -%}
@@ -104,9 +104,9 @@ controlled by the context, or by system option settings such as "Verbosity".
 <td>{{c.condition}}</td>
 {%- for language in site.data.languages -%}
 {%- if c[language.language-code] -%}
-<td>{{c[language.language-code]}}</td>
+<td class="{{language.language-code}}">{{c[language.language-code]}}</td>
 {%- else -%}
-<td>{{c.en}} ({{language.language-code}})</td>
+<td class="{{language.language-code}}">{{c.en}} ({{language.language-code}})</td>
 {% endif %}
 {%- endfor -%}
 <td>{{c.comment}}</td>
@@ -137,7 +137,7 @@ controlled by the context, or by system option settings such as "Verbosity".
     opt = LangSelect.options[i];
     if (opt.selected) {
     } else {
-	LangCss.textContent= LangCss.textContent + "tr > *:nth-child(" + opt.value + ") {display:none}";
+	LangCss.textContent= LangCss.textContent + "*." + opt.value + " {display:none}";
     }
      }
  }
