@@ -80,8 +80,8 @@ controlled by the context, or by system option settings such as "Verbosity".
 {%- if c.conditions %}
 {%- assign r1 = true -%}
 {%- for cond in c.conditions -%}
-<tr>
-{%- if r1 -%}<td rowspan="{{c.conditions.size}}">{{c.concept}}</td>{%- endif -%}
+<tr id="{{c.concept}}{{c.arity}}{{c.property}}">
+{%- if r1 -%}<td rowspan="{{c.conditions.size}}"><a href="#{{c.concept}}{{c.arity}}{{c.property}}">{{c.concept}}</a></td>{%- endif -%}
 {%- if r1 -%}<td rowspan="{{c.conditions.size}}">{{c.arity}}</td>{%- endif -%}
 {%- if r1 -%}<td rowspan="{{c.conditions.size}}">{{c.property}}{%- if c.default -%}*{%- endif -%}</td>{%- endif -%}
 <td>{{cond.condition}}</td>
@@ -97,8 +97,8 @@ controlled by the context, or by system option settings such as "Verbosity".
 {%- assign r1 = false -%}
 {%- endfor -%}
 {%- else -%}
-<tr>
-<td>{{c.concept}}</td>
+<tr id="{{c.concept}}{{c.arity}}{{c.property}}">
+<td><a href="#{{c.concept}}{{c.arity}}{{c.property}}">{{c.concept}}</a></td>
 <td>{{c.arity}}</td>
 <td>{{c.property}}{%- if c.default -%}*{%- endif -%}</td>
 <td>{{c.condition}}</td>
