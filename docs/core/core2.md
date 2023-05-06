@@ -80,7 +80,7 @@ controlled by the context, or by system option settings such as "Verbosity".
 <tr>
 <td>{{c.concept}}</td>
 <td>{{c.arity}}</td>
-<td>{{c.property}}</td>
+<td>{{c.property}}{%- if c.default -%}*{%- endif -%}</td>
 <td>{{c.condition}}</td>
 {%- for language in site.data.languages -%}
 {%- if c[language.language-code] -%}
