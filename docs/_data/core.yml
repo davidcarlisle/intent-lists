@@ -95,7 +95,6 @@
   arity: 1
   property: prefix
   default: true
-  comment: "arity 1 log(x)  needs no rule here"
   en: "natural log of $1 <br> log of $1  <br>  log base e of $1"
   fr: "natural log of $1 <br> log of $1  <br>  log base e of $1"
 
