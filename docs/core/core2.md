@@ -81,13 +81,15 @@ controlled by the context, or by system option settings such as "Verbosity".
 <td>{{c.arity}}</td>
 <td>{{c.property}}</td>
 {%- for language in site.data.languages -%}
-<td>Speech Template ({{c[language.language-code]}}) ({{language.language-code}})</td> 
+<td>{{c[language.language-code]}} ({{language.language-code}})</td> 
 {%- endfor -%}
 <td>{{c.comment}}</td>
 </tr>
 {%- endfor -%}
 </tbody>
 </table>
+
+
 ### Key
 
 | Entry | Meaning |
