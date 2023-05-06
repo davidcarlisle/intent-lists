@@ -69,7 +69,7 @@ controlled by the context, or by system option settings such as "Verbosity".
 <th>Property</th>
 <th>Condition</th>
 {%- for language in site.data.languages -%}
-<th>Speech Template ({{languge.language-code}})</th> 
+<th>Speech Template ({{language.language-code}})</th> 
 {%- endfor -%}
 <th>Comments</th>
 </tr>
@@ -80,6 +80,9 @@ controlled by the context, or by system option settings such as "Verbosity".
 <td>{{c.concept}}</td>
 <td>{{c.arity}}</td>
 <td>{{c.property}}</td>
+{%- for language in site.data.languages -%}
+<td>Speech Template ({{c[language.language-code]}}) ({{language.language-code}})</td> 
+{%- endfor -%}
 <td>{{c.comment}}</td>
 </tr>
 {%- endfor -%}
