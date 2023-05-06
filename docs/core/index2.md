@@ -37,10 +37,10 @@ controlled by the context, or by system option settings such as "Verbosity".
         {% assign lang = language.language-code %}
 	 <input
       type="checkbox"
-	  	  {%- if lang == "en" -%} checked {%- endif -%}
+	  	  {% if lang == "en" %} checked {% endif %}
       id="cb-{{lang}}"
       name="language"
-      value="{{cb}}" />&bsp;<label for="cb-{{lang}}">{{lang}}: {{language.label-regional}} 
+      value="{{cb}}" />&nbsp;<label for="cb-{{lang}}">{{lang}}: {{language.label-regional}} 
             {% if lang != "en" %}({{language.label-english}}){% endif %}</label>
     {%- endfor -%}
 </div>
