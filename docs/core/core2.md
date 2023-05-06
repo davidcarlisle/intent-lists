@@ -34,15 +34,17 @@ controlled by the context, or by system option settings such as "Verbosity".
 <div class="language-switch">
   <select class="language-switch__select" id="myList" multiple>
      <!-- Loop over languages in _data/languages.yml -->
+	 {%- assign v = 4 -%}
     {%- for language in site.data.languages -%}
         {% assign lang = language.language-code %}
+		{%- assign v = v | plus: 1 -%}
         <option
 	  {% if lang == "en" %}
           selected
           {% endif %}
-          value="{{lang}}">
+          value="{{v}}">
+		    {{lang}}:
             {{ language.label-regional }}
-            <!-- Ensures the translation of English is not displayed -->
             {% if lang != "en" %}
               ({{language.label-english}})
             {% endif %}
@@ -80,6 +82,7 @@ controlled by the context, or by system option settings such as "Verbosity".
 <td>{{c.concept}}</td>
 <td>{{c.arity}}</td>
 <td>{{c.property}}</td>
+<td>{{c.condition}}</td>
 {%- for language in site.data.languages -%}
 {%- if c[language.language-code] -%}
 <td>{{c[language.language-code]}}</td>
