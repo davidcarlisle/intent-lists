@@ -58,7 +58,7 @@ span.cb {margin-right: 2em; white-space:nowrap}
 <style id="langcss">
 {%- for language in site.data.languages -%}
   {%- assign lang = language.language-code -%}
-  {%- if lang != "en" %}  *.{{lang}} {%- endif -%}
+  {%- if lang != "en" %}{{comma}}{%- assign comma = ", " -%}  *.{{lang}} {%- endif -%}
 {%- endfor -%}
  {display:none}
  </style>
