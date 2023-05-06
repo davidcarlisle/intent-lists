@@ -46,8 +46,7 @@ controlled by the context, or by system option settings such as "Verbosity".
       name="language"
       value="{{lang}}" />
 	  <label for="cb-{{lang}}">{{lang}}: {{language.label-regional}} 
-            {% if lang != "en" %}({{language.label-english}}){% endif %}</label>
-	</span>
+            {%- if lang != "en" %}({{language.label-english}}){% endif %}</label></span>
     {%- endfor -%}
 </p>
 
@@ -57,12 +56,10 @@ span.cb {margin-right: 2em; white-space:nowrap}
 </style>
 
 <style a="2" id="langcss">
-	 {%- assign v = 4 -%}
-    {%- for language in site.data.languages -%}
-        {% assign lang = language.language-code %}
-		{%- assign v = v | plus: 1 -%}
-	  {%- if lang != "en" -%}  *.{{lang}} {display:none} {%- endif -%}
-	  {%- endfor -%}
+{%- for language in site.data.languages -%}
+{%- assign lang = language.language-code -%}
+	{% if lang != "en" %}  *.{{lang}} {display:none} {% endif %}
+{%- endfor -%}
 </style>
 
 
@@ -133,17 +130,16 @@ span.cb {margin-right: 2em; white-space:nowrap}
 
 
 <script>
-      var LangCss = document.getElementById('langcss');
-  var langcb=document.getElementById('langchoice').getElementsByTagName('input');
-  function updatelang (e) {
-      LangCss.textContent='';
-     for (var i=0, iLen=langcb.length; i<iLen; i++) {
-	 opt = langcb[i];
-    if (opt.checked) {
-    } else {
-	LangCss.textContent= LangCss.textContent + "*." + opt.value + " {display:none}";
+var LangCss = document.getElementById('langcss');
+var langcb=document.getElementById('langchoice').getElementsByTagName('input');
+function updatelang (e) {
+  LangCss.textContent='';
+  for (var i=0, iLen=langcb.length; i<iLen; i++) {
+    opt = langcb[i];
+    if (!(opt.checked)) {
+      LangCss.textContent= LangCss.textContent + "*." + opt.value + " {display:none}";
     }
-     }
   }
+}
 </script>
 
