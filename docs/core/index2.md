@@ -45,7 +45,7 @@ controlled by the context, or by system option settings such as "Verbosity".
       name="language"
       value="{{cb}}" />&nbsp;<label for="cb-{{lang}}">{{lang}}: {{language.label-regional}} 
             {% if lang != "en" %}({{language.label-english}}){% endif %}</label>
-	<span>
+	</span>
     {%- endfor -%}
 </div>
 
