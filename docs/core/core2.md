@@ -32,7 +32,7 @@ controlled by the context, or by system option settings such as "Verbosity".
 ## Core List
 
 <div class="language-switch">
-  <select class="language-switch__select" id="myList" multiple>
+  <select id="LangSelect" multiple>
      <!-- Loop over languages in _data/languages.yml -->
 	 {%- assign v = 4 -%}
     {%- for language in site.data.languages -%}
@@ -43,11 +43,8 @@ controlled by the context, or by system option settings such as "Verbosity".
           selected
           {% endif %}
           value="{{v}}">
-		    {{lang}}:
-            {{ language.label-regional }}
-            {% if lang != "en" %}
-              ({{language.label-english}})
-            {% endif %}
+		    {{lang}}: {{language.label-regional}} 
+            {% if lang != "en" %}({{language.label-english}}){% endif %}
         </option>
     {%- endfor -%}
   </select>
@@ -56,7 +53,6 @@ controlled by the context, or by system option settings such as "Verbosity".
 
 
 <style id="langcss">
-  tr > *:nth-child(5) {display:none}
 </style>
 
 
