@@ -91,10 +91,10 @@ controlled by the context, or by system option settings such as "Verbosity".
 {%- else -%}
 <td class="{{language.language-code}}">{{cond.en}} ({{language.language-code}})</td>
 {% endif %}
-{%- assign r1 = false -%}
 {%- endfor -%}
 {%- if r1 -%}<td rowspan="{{c.conditions.size}}">{{c.comment}}</td>{%- endif -%}
 </tr>
+{%- assign r1 = false -%}
 {%- endfor -%}
 {%- else -%}
 <tr>
