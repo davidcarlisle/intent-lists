@@ -4,8 +4,8 @@
   property: infix
   default: true
   condition: "$2=2"
-  en: "41 squared"
-  fr: "carré"
+  en: "$1 squared"
+  fr: "$1 carré"
 
 - concept: power
   arity: 3
@@ -19,8 +19,8 @@
   arity: 2
   property: infix
   default: true
-  en: "$1 to the $2<i>th</i. power"
-  fr: "$1 à la  $2"
+  en: "$1 to the $2<i>th</i> power"
+  fr: "$1 à la $2"
 
 - concept: equals
   arity: 2
