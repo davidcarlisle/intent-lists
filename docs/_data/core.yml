@@ -3,24 +3,16 @@
   arity: 2
   property: infix
   default: true
-  condition: "$2=2"
-  en: "$1 squared"
-  fr: "$1 carré"
-
-- concept: power
-  arity: 3
-  property: infix
-  default: true
-  condition: "$2=3"
-  en: "$1 cubed"
-  fr: "$1 cube"
-
-- concept: power
-  arity: 2
-  property: infix
-  default: true
-  en: "$1 to the $2<i>th</i> power"
-  fr: "$1 à la $2"
+  conditions:
+    - condition: "$2=2"
+      en: "$1 squared"
+      fr: "$1 carré"
+    - condition: "$2=3"
+      en: "$1 cubed"
+      fr: "$1 cube"
+    - condition: ""
+      en: "$1 to the $2<i>th</i> power"
+      fr: "$1 à la $2"
 
 - concept: equals
   arity: 2
