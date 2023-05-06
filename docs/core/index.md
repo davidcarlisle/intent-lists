@@ -1,3 +1,7 @@
+---
+title: Core Concept List
+---
+
 # Core Concept List
 
 
@@ -27,36 +31,90 @@ controlled by the context, or by system option settings such as "Verbosity".
 
 ## Core List
 
+<div class="language-switch">
+  <select id="LangSelect" multiple>
+     <!-- Loop over languages in _data/languages.yml -->
+	 {%- assign v = 4 -%}
+    {%- for language in site.data.languages -%}
+        {% assign lang = language.language-code %}
+		{%- assign v = v | plus: 1 -%}
+        <option
+	  {% if lang == "en" %}
+          selected
+          {% endif %}
+          value="{{lang}}">
+		    {{lang}}: {{language.label-regional}} 
+            {% if lang != "en" %}({{language.label-english}}){% endif %}
+        </option>
+    {%- endfor -%}
+  </select>
+</div>
 
-<select id="LangSelect" multiple>
-  <option value="4" selected>English (en)</option>
-  <option value="5">French (fr)</option>
-</select>
 
-<style id="langcss">
-  tr > *:nth-child(5) {display:none}
+
+<style a="2" id="langcss">
+	 {%- assign v = 4 -%}
+    {%- for language in site.data.languages -%}
+        {% assign lang = language.language-code %}
+		{%- assign v = v | plus: 1 -%}
+	  {%- if lang != "en" -%}  *.{{lang}} {display:none} {%- endif -%}
+	  {%- endfor -%}
 </style>
 
 
-| Concept   | Arity | Property      | Speech Template (en)        |                                  Speech Template (fr)                 | Comments     |
-| ----      | ----  | ----      | ----                                  | ----                                 | ----         |
-| <span id="power">power</span>     | 2     | infix*    | $1 squared [$2=2] <br> $1 cubed [$2=3] <br> $1 to the $2_th_ power         |     $1  carré [$2=2] <br> $1 cube [$2=3] <br> $1 à la  $2 ..             |              |
-| <span id="equals">equals</span>    | 2     | infix*    | $1 equals $2  <br>   $1 is equal to $2        |               $1 equals $2  <br>   $1 est égal à $2..                      |              |
-| equals    | 2     | function  | equal to $1, $2       |              égal  $1, $2                      |              |
-| <span id="factorial">factorial</span> | 1     | postfix*  | $1 factorial                |           $1 factorial                          |              |
-| factorial | 1     | function  | factorial of $1          |             factorial of $1                      | This row could be deleted, as it follows from the default behaviour |
-| <span id="transpose">transpose</span>  | 1     | postfix*  | $1 transpose          |                 $1 transposée                         |              |
-| transpose  | 1     | function  | transpose of $1               |         transposée de $1                       | This row could be deleted, as it follows from the default behaviour |
-| <span id="sin">sin</span>       | 1     | prefix*   | sine $1         |                      sine $1                              |              |
-| sin       | 1     | function  | sine of $1           |                 sine of $1                           |              |
-| sinh      | 1     | prefix*   | shine <br> sinch      |                shine <br> sinch                     | <https://www.youtube.com/watch?v=jA-pkiwLVjA> |
-| cosh      | 1     | prefix*   | cosh <br> kosh        |             cosh <br> kosh                    | |
-| tanh      | 1     | prefix*   | than <br> tanch       |            than <br> tanch                   | |
-| <span id="log">log</span>       | 2     | function* | log base $2 of $1         |              log base $2 of $1                      |  arity 1 log(x)  needs no rule here |
-| <span id="ln">ln</span>        | 1     | function* | natural log of $1 <br> log of $1  <br>  log base e of $1        |            natural log of $1 <br> log of $1  <br>  log base e of $1                   |  |
-| ln        | 1     | prefix    | natural log $1  <br> log $1 <br> log base e $1           |         natural log $1  <br> log $1 <br> log base e $1                   |  |
-| ⋮          | ⋮     | ⋮          | ⋮                                   |   ⋮                                     | More to be added |
-
+<table>
+<thead>
+<tr>
+<th>Concept</th>
+<th>Arity</th>
+<th>Property</th>
+<th>Condition</th>
+{%- for language in site.data.languages -%}
+<th class="{{language.language-code}}">Speech Template ({{language.language-code}})</th> 
+{%- endfor -%}
+<th>Comments</th>
+</tr>
+</thead>
+<tbody>
+{%- for c in site.data.core -%}
+{%- if c.conditions %}
+{%- assign r1 = true -%}
+{%- for cond in c.conditions -%}
+<tr id="{{c.concept}}{{c.arity}}{{c.property}}">
+{%- if r1 -%}<td rowspan="{{c.conditions.size}}"><a href="#{{c.concept}}{{c.arity}}{{c.property}}">{{c.concept}}</a></td>{%- endif -%}
+{%- if r1 -%}<td rowspan="{{c.conditions.size}}">{{c.arity}}</td>{%- endif -%}
+{%- if r1 -%}<td rowspan="{{c.conditions.size}}">{{c.property}}{%- if c.default -%}*{%- endif -%}</td>{%- endif -%}
+<td>{{cond.condition}}</td>
+{%- for language in site.data.languages -%}
+{%- if cond[language.language-code] -%}
+<td class="{{language.language-code}}">{{cond[language.language-code]}}</td>
+{%- else -%}
+<td class="{{language.language-code}}">{{cond.en}} ({{language.language-code}})</td>
+{% endif %}
+{%- endfor -%}
+{%- if r1 -%}<td rowspan="{{c.conditions.size}}">{{c.comment}}</td>{%- endif -%}
+</tr>
+{%- assign r1 = false -%}
+{%- endfor -%}
+{%- else -%}
+<tr id="{{c.concept}}{{c.arity}}{{c.property}}">
+<td><a href="#{{c.concept}}{{c.arity}}{{c.property}}">{{c.concept}}</a></td>
+<td>{{c.arity}}</td>
+<td>{{c.property}}{%- if c.default -%}*{%- endif -%}</td>
+<td>{{c.condition}}</td>
+{%- for language in site.data.languages -%}
+{%- if c[language.language-code] -%}
+<td class="{{language.language-code}}">{{c[language.language-code]}}</td>
+{%- else -%}
+<td class="{{language.language-code}}">{{c.en}} ({{language.language-code}})</td>
+{% endif %}
+{%- endfor -%}
+<td>{{c.comment}}</td>
+</tr>
+{%- endif -%}
+{%- endfor -%}
+</tbody>
+</table>
 
 
 ### Key
@@ -79,7 +137,7 @@ controlled by the context, or by system option settings such as "Verbosity".
     opt = LangSelect.options[i];
     if (opt.selected) {
     } else {
-	LangCss.textContent= LangCss.textContent + "tr > *:nth-child(" + opt.value + ") {display:none}";
+	LangCss.textContent= LangCss.textContent + "*." + opt.value + " {display:none}";
     }
      }
  }
