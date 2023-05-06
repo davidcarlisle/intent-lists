@@ -81,10 +81,10 @@ controlled by the context, or by system option settings such as "Verbosity".
 <td>{{c.arity}}</td>
 <td>{{c.property}}</td>
 {%- for language in site.data.languages -%}
-{%- if c[language.language-code] == "" -%}
-<td>{{c.en}} ({{language.language-code}})</td>
-{%- else -%}
+{%- if c[language.language-code] -%}
 <td>{{c[language.language-code]}}</td>
+{%- else -%}
+<td>{{c.en}} ({{language.language-code}})</td>
 {% endif %}
 {%- endfor -%}
 <td>{{c.comment}}</td>
