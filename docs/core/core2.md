@@ -53,10 +53,7 @@ controlled by the context, or by system option settings such as "Verbosity".
   </select>
 </div>
 
-<select id="LangSelect" multiple>
-  <option value="4" selected>English (en)</option>
-  <option value="5">French (fr)</option>
-</select>
+
 
 <style id="langcss">
   tr > *:nth-child(5) {display:none}
