@@ -51,7 +51,7 @@ controlled by the context, or by system option settings such as "Verbosity".
 </p>
 
 <style>
-span.cb {margin-right: 2em; whit-space;nowrap}
+span.cb {margin-right: 2em; white-space:nowrap}
 </style>
 
 <style a="2" id="langcss">
