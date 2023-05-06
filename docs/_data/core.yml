@@ -1,0 +1,43 @@
+
+- concept: power
+  arity: 2
+  property: infix
+  default: true
+  condition: "$2=2"
+  en: "41 squared"
+  fr: "carré"
+
+- concept: power
+  arity: 3
+  property: infix
+  default: true
+  condition: "$2=3"
+  en: "$1 cubed"
+  fr: "$1 cube"
+
+- concept: power
+  arity: 2
+  property: infix
+  default: true
+  en: "$1 to the $2<i>th</i. power"
+  fr: "$1 à la  $2"
+
+- concept: equals
+  arity: 2
+  property: infix
+  en: "$1 equals $2 <br> $1 is equal to $2"
+  fr: "$1 est égal à $2"
+
+- concept: equals
+  arity: 2
+  property: function
+  en: "equals $1 $2"
+  fr: "égal $1 $2"
+
+- concept: factorial
+  arity: 1
+  property: postix
+  default: true
+  en: "$1 factorial"
+  fr: "$1 factorial"
+
