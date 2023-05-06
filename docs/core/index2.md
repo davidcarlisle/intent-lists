@@ -31,7 +31,9 @@ controlled by the context, or by system option settings such as "Verbosity".
 
 ## Core List
 
-<div class="language-switch">
+### language choice
+
+<p class="language-switch">
      <!-- Loop over languages in _data/languages.yml -->
     {%- for language in site.data.languages -%}
         {% assign lang = language.language-code %}
