@@ -33,17 +33,18 @@ controlled by the context, or by system option settings such as "Verbosity".
 
 ### language choice
 
-<p class="language-switch">
+<p  id="langchoice" class="language-switch">
      <!-- Loop over languages in _data/languages.yml -->
     {%- for language in site.data.languages -%}
         {% assign lang = language.language-code %}
 	<span class="cb">
 	 <input
+	  onchange="updatelang(this)"
       type="checkbox"
 	  	  {% if lang == "en" %} checked {% endif %}
       id="cb-{{lang}}"
       name="language"
-      value="{{cb}}" />
+      value="{{lang}}" />
 	  <label for="cb-{{lang}}">{{lang}}: {{language.label-regional}} 
             {% if lang != "en" %}({{language.label-english}}){% endif %}</label>
 	</span>
@@ -131,17 +132,17 @@ span.cb {margin-right: 2em; white-space:nowrap}
 
 
 <script>
-      var LangSelect = document.getElementById('LangSelect');
       var LangCss = document.getElementById('langcss');
-      LangSelect.onchange = (event) => {
-	 LangCss.textContent='';
-     for (var i=0, iLen=LangSelect.options.length; i<iLen; i++) {
-    opt = LangSelect.options[i];
-    if (opt.selected) {
+  var langcb=document.getElementById('langchoice').getElementsByTagName('input');
+  function updatelang (e) {
+      LangCss.textContent='';
+     for (var i=0, iLen=langcb.length; i<iLen; i++) {
+	 opt = langcb[i];
+    if (opt.checked) {
     } else {
 	LangCss.textContent= LangCss.textContent + "*." + opt.value + " {display:none}";
     }
      }
- }
+  }
 </script>
 
