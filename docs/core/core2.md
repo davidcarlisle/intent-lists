@@ -57,10 +57,8 @@ controlled by the context, or by system option settings such as "Verbosity".
     {%- for language in site.data.languages -%}
         {% assign lang = language.language-code %}
 		{%- assign v = v | plus: 1 -%}
-	  {% if lang != "en" %}
-  tr > \*:nth-child({{v}}) {display:none}
-          {% endif %}
-		  {%- endfor -%}
+	  {%- if lang != "en" -%}  tr > *:nth-child({{v}}) {display:none} {%- endif -%}
+	  {%- endfor -%}
 </style>
 
 
