@@ -52,6 +52,7 @@ controlled by the context, or by system option settings such as "Verbosity".
 </p>
 
 <style>
+tr:target {border-left:solid thick black}
 span.cb {margin-right: 2em; white-space:nowrap}
 </style>
 
