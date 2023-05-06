@@ -43,14 +43,15 @@ controlled by the context, or by system option settings such as "Verbosity".
 	  	  {% if lang == "en" %} checked {% endif %}
       id="cb-{{lang}}"
       name="language"
-      value="{{cb}}" />&nbsp;<label for="cb-{{lang}}">{{lang}}: {{language.label-regional}} 
+      value="{{cb}}" />
+	  <label for="cb-{{lang}}">{{lang}}: {{language.label-regional}} 
             {% if lang != "en" %}({{language.label-english}}){% endif %}</label>
 	</span>
     {%- endfor -%}
-</div>
+</p>
 
 <style>
-span.cb {margin-right: 2em;}
+span.cb {margin-right: 2em; whit-space;nowrap}
 </style>
 
 <style a="2" id="langcss">
