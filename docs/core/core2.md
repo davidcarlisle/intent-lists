@@ -77,6 +77,26 @@ controlled by the context, or by system option settings such as "Verbosity".
 </thead>
 <tbody>
 {%- for c in site.data.core -%}
+{%- if c.conditions %}
+{%- assign r1 = true -%}
+{%- for cond in c.conditions -%}
+<tr>
+{%- if r1 -%}<td rowspan="{{c.conditions.size}}">{{c.concept}}</td>{%- endif -%}
+{%- if r1 -%}<td rowspan="{{c.conditions.size}}">{{c.arity}}</td>{%- endif -%}
+{%- if r1 -%}<td rowspan="{{c.conditions.size}}">{{c.property}}{%- if c.default -%}*{%- endif -%}</td>{%- endif -%}
+<td>{{cond.condition}}</td>
+{%- for language in site.data.languages -%}
+{%- if cond[language.language-code] -%}
+<td>{{cond[language.language-code]}}</td>
+{%- else -%}
+<td>{{cond.en}} ({{language.language-code}})</td>
+{% endif %}
+{%- assign r1 = false -%}
+{%- endfor -%}
+{%- if r1 -%}<td rowspan="{{c.conditions.size}}">{{c.comment}}</td>{%- endif -%}
+</tr>
+{%- endfor -%}
+{%- else -%}
 <tr>
 <td>{{c.concept}}</td>
 <td>{{c.arity}}</td>
@@ -91,6 +111,7 @@ controlled by the context, or by system option settings such as "Verbosity".
 {%- endfor -%}
 <td>{{c.comment}}</td>
 </tr>
+{%- endif -%}
 {%- endfor -%}
 </tbody>
 </table>
