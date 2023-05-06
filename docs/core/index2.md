@@ -55,12 +55,13 @@ tr:target >td:first-child {border-left:solid thick black}
 span.cb {margin-right: 2em; white-space:nowrap}
 </style>
 
-<style a="2" id="langcss">
+<style id="langcss">
 {%- for language in site.data.languages -%}
-{%- assign lang = language.language-code -%}
-	{% if lang != "en" %}  *.{{lang}} {display:none} {% endif %}
+  {%- assign lang = language.language-code -%}
+  {%- if lang != "en" -%}  *.{{lang}} {%- endif -%}
 {%- endfor -%}
-</style>
+ {display:none}
+ </style>
 
 
 <table>
