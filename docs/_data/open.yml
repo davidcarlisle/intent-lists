@@ -4653,7 +4653,7 @@
   form:  indexed 
   area:  real analysis 
   notation: "munder ¯ "
-  url:  "https://mathworld.wolfram.com/DarbouxIntegral.html<br/><https://en.wikipedia.org/wiki/Darboux_integral><br/><https://www.encyclopediaofmath.org/index.php/Darboux_integral"> 
+  url:  "https://mathworld.wolfram.com/DarbouxIntegral.html<br/><https://en.wikipedia.org/wiki/Darboux_integral><br/><https://www.encyclopediaofmath.org/index.php/Darboux_integral>"
   alias:   
  
 - concept:  lower-dini-derivative 
@@ -7621,7 +7621,7 @@
   form:  indexed 
   area:  real analysis 
   notation: "mover ¯ "
-  url:  "https://mathworld.wolfram.com/DarbouxIntegral.html<br/><https://en.wikipedia.org/wiki/Darboux_integral><br/><https://www.encyclopediaofmath.org/index.php/Darboux_integral"> 
+  url:  "https://mathworld.wolfram.com/DarbouxIntegral.html<br/><https://en.wikipedia.org/wiki/Darboux_integral><br/><https://www.encyclopediaofmath.org/index.php/Darboux_integral>"
   alias:   
  
 - concept:  upper-dini-derivative 
