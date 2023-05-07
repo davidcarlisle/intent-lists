@@ -1,7 +1,9 @@
 # LANGUAGES
-# Translates the languages
-#
-# (in preferred order)
+# (in display order)
+
+- language-code: en
+  label-regional: English
+  label-english: English
 
 - language-code: ca
   label-regional: Català
@@ -10,10 +12,6 @@
 - language-code: de
   label-regional: Deutsch
   label-english: German
-
-- language-code: en
-  label-regional: English
-  label-english: English
 
 - language-code: es
   label-regional: Español
@@ -39,9 +37,9 @@
   label-regional: Tiếng&nbsp;Việt
   label-english: Vietnamese
 
-# - language-code: tr
-#   label-regional: Türkçe
-#   label-english: Turkish
+- language-code: tr
+  label-regional: Türkçe
+  label-english: Turkish
 
 
 
