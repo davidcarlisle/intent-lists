@@ -45,7 +45,6 @@ span.cb {margin-right: 2em; white-space:nowrap}
 
 ## Core List
 
-### language choice
 
 <details>
 <summary>Available Languages</summary>
@@ -132,7 +131,7 @@ span.cb {margin-right: 2em; white-space:nowrap}
 
 ----
 
-# Sources
+### Sources
 
 Additional language contributions are welcome.
 
