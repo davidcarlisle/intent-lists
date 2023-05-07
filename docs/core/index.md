@@ -61,7 +61,7 @@ span.cb {margin-right: 2em; white-space:nowrap}
       name="language"
       value="{{lang}}" />
 	  <label for="cb-{{lang}}">{{lang}}: {{language.label-regional}} 
-            {%- if lang != "en" %}({{language.label-english}}){% endif %}</label></span>
+            {%- if lang != "en" %} ({{language.label-english}}){% endif %}</label></span>
 {% endfor %}
 </p>
 </details>
