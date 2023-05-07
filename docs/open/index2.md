@@ -28,7 +28,8 @@ concept terms and so has many entries that do not require custom speech rules.
 <th>Subject</th>
 <th>Known notation</th>
 <th>Sources</th>
-<th>Alias</tr>
+<th>Alias</th>
+</tr>
 </thead>
 <tbody>
 
