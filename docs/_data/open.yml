@@ -1205,7 +1205,7 @@
   area:  graph theory 
   notation: "msub K $1 "
   url: "<https://mathworld.wolfram.com/CompleteGraph.html><br/><https://en.wikipedia.org/wiki/Complete_graph><br/> "
-  alias:  Also complete bipartite graph: K_{n,m} 
+  alias:  "Also complete bipartite graph: K_{n,m}"
  
 - concept:  complex-conjugate 
   arity:  1 
