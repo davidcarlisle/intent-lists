@@ -450,7 +450,7 @@
   area: "special functions"
   notation: "mi agm<br/>mi AGM"
   urls:
-   - "https://mathworld.wolfram.com/Arithmetic-GeometricMean.html"ss
+   - "https://mathworld.wolfram.com/Arithmetic-GeometricMean.html"
    - "https://en.wikipedia.org/wiki/Arithmetic%E2%80%93geometric_mean"
    - "https://dlmf.nist.gov/19.8#i"
    - "https://dlmf.nist.gov/19.8#SS1.p1"
@@ -2560,8 +2560,7 @@
   notation: "$1 | $2<br/>$2 ⋮ $1<br/>$2 / $1"
   urls:
    - "https://youtu.be/9dyK_op-Ocw?t=251"
-   - "https://en.wikipedia.org/wiki/Divisor"<br/>
-   - "https://ru.wikipedia.org/wiki/%D0%94%D0%B5%D0%BB%D0%B8%D0%BC%D0%BE%D1%81%D1%82%D1%8C"
+   - "https://en.wikipedia.org/wiki/Divisor"
    - "https://ru.wikipedia.org/wiki/%D0%94%D0%B5%D0%BB%D0%B8%D0%BC%D0%BE%D1%81%D1%82%D1%8C"
    - "https://youtu.be/a3wyG2mkmxc?t=32"
   alias: divides
@@ -3161,7 +3160,7 @@
   area: "multilinear algebra"
   notation: "mo ∧"
   urls:
-   - "https://mathworld.wolfram.com/ExteriorProduct.html"<br/>
+   - "https://mathworld.wolfram.com/ExteriorProduct.html"
    - "https://www.encyclopediaofmath.org/index.php/Exterior_product"
   alias:  wedge-product
 
@@ -8285,7 +8284,7 @@
   notation: "mi o"
   urls:
    - "https://en.wikipedia.org/wiki/Big_O_notation"
-   - "https://mathworld.wolfram.com/o.html"<br/>"
+   - "https://mathworld.wolfram.com/o.html"
 
 - concept:  smith-number
   arity:  1
