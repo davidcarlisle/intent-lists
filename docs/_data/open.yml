@@ -3564,7 +3564,7 @@
   form:  indexed fenced
   area: "linear algebra"
   notation: "msub mrow | $1 F"
-  urls
+  urls:
    - "https://mathworld.wolfram.com/FrobeniusNorm.html"
    - "https://www.encyclopediaofmath.org/index.php/Frobenius_matrix_norm"
   alias: "euclidean-norm, frobenius-matrix-norm"
