@@ -2519,7 +2519,7 @@
   area: "geometry"
   notation: "|$1 $2|"
   urls:
-   - "https://en.wikipedia.org/wiki/Distance)"
+   - "https://en.wikipedia.org/wiki/Distance"
 
 - concept:  diverge
   arity:  1
@@ -6655,9 +6655,9 @@
   arity:  2
   form:  fenced
   area: "algebra"
-  notation: "mrow ( $1 . . $2"
+  notation: "mrow ($1 . . $2)"
   urls:
-   - "https://proofwiki.org/wiki/Definition:Real_Interval/Open)"
+   - "https://proofwiki.org/wiki/Definition:Real_Interval/Open"
 
 - concept:  opposite
   arity:  1
@@ -6692,7 +6692,7 @@
   arity:  1
   form:  "function<br/>fenced"
   area: "group theory"
-  notation: "mi ord<br/>mrow | $1"
+  notation: "mi ord<br/>mrow | $1 |"
   urls:
    - "https://en.wikipedia.org/wiki/Order_(group_theory))"
 
