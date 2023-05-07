@@ -41,7 +41,16 @@ concept terms and so has many entries that do not require custom speech rules.
 <td>{{c.form}}</td>
 <td>{{c.area}}</td>
 <td>{{c.notation}}</td>
+{%- if c.url -%}
 <td>{{c.url}}</td>
+{%-endif -%}
+{%- if c.urls -%}
+<td
+>{% for u un c.urls %}
+<a href="{{u}}">{{u}}</a><br/>
+{% endfor %}
+</td>
+{%-endif -%}
 </tr>
 
 {%- endfor -%}

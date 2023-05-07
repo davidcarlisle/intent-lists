@@ -4,7 +4,11 @@
   form:  symbol 
   area: "category theory "
   notation: "mi Ab "
-  url: "<https://mathworld.wolfram.com/AbelianCategory.html><br/>[https://en.wikipedia.org/wiki/Abelian_category](https://en.wikipedia.org/wiki/Abelian_category)<br/><https://ncatlab.org/nlab/show/abelian+category><br/><https://www.encyclopediaofmath.org/index.php/Abelian_category> "
+  urls:
+   - "https://mathworld.wolfram.com/AbelianCategory.html"
+   - "https://en.wikipedia.org/wiki/Abelian_category"
+   - "https://ncatlab.org/nlab/show/abelian+category"
+   - "https://www.encyclopediaofmath.org/index.php/Abelian_category"
  
 - concept:  abelian-integral 
   arity:  1 
