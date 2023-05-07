@@ -1351,7 +1351,7 @@
  
 - concept:  covariant-derivative 
   arity:  1 
-  form:  ""indexed operator"" 
+  form:  "indexed operator"
   area: "differential geometry "
   notation: "msub ∇ $1 "
   url: "<https://mathworld.wolfram.com/CovariantDerivative.html><br/><https://en.wikipedia.org/wiki/Covariant_derivative><br/><https://ncatlab.org/nlab/show/covariant+derivative><br/><https://www.encyclopediaofmath.org/index.php/Covariant_derivative> "
