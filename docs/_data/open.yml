@@ -4819,8 +4819,6 @@
   notation: "mi L "
   url: "<https://en.wikipedia.org/wiki/Onsager%E2%80%93Machlup_function><br/><https://www.encyclopediaofmath.org/index.php/Onsager-Machlup_function><br/> "
 
-# good
-
  
 - concept:  open-ball 
   arity:  2 
@@ -5117,3 +5115,140 @@
   area: "game theory "
   notation: "mo ♣<br/>mo ♠<br/>mo ♦<br/>mo ♥ "
   url: "[https://en.wikipedia.org/wiki/Playing_card_suit<br/>](https://en.wikipedia.org/wiki/Playing_card_suit)[https://en.wikipedia.org/wiki/Poker_probability](https://en.wikipedia.org/wiki/Poker_probability) "
+
+# good
+
+ 
+- concept:  plethysm 
+  arity:  2 
+  form:  mixfix 
+  area: " algebra "
+  notation: "mrow { $1 } ⊗ { $2 } "
+  url: "<https://mathworld.wolfram.com/Plethysm.html><br/><https://en.wikipedia.org/wiki/Plethysm><br/><https://ncatlab.org/nlab/show/plethysm> "
+ 
+- concept:  plucker-coordinate 
+  arity:  2 
+  form:  fenced 
+  area: " geometry "
+  notation: "mrow ( $1 : $2 : ... : $n ) "
+  url: "<https://mathworld.wolfram.com/PlueckerCoordinates.html><br/><https://en.wikipedia.org/wiki/Pl%C3%BCcker_coordinates><br/><https://www.encyclopediaofmath.org/index.php/PlÃ¼cker_coordinates> "
+ 
+- concept:  pointwise-convergent 
+  arity:  1 
+  form:  postfix 
+  area: " convergence "
+  notation: "mtext pointwise "
+  url: "<https://mathworld.wolfram.com/PointwiseConvergence.html><br/><https://en.wikipedia.org/wiki/Pointwise_convergence><br/><https://www.encyclopediaofmath.org/index.php/Pointwise_convergence> "
+ 
+- concept:  poisson-bracket 
+  arity:  2 
+  form:  fenced 
+  area: "classical mechanics "
+  notation: "mrow { $1, $2 } "
+  url: "<https://mathworld.wolfram.com/PoissonBracket.html><br/>[https://en.wikipedia.org/wiki/Poisson_bracket](https://en.wikipedia.org/wiki/Poisson_bracket)<br/><https://www.encyclopediaofmath.org/index.php/Poisson_brackets> "
+ 
+- concept:  poisson-distribution 
+  arity:  0 
+  form:  symbol 
+  area: "probability theory "
+  notation: "mi Pois "
+  url: "<https://mathworld.wolfram.com/PoissonDistribution.html><br/><https://en.wikipedia.org/wiki/Poisson_distribution><br/><https://en.wikipedia.org/wiki/Poisson_random_numbers><br/><https://www.encyclopediaofmath.org/index.php/Poisson_distribution> "
+ 
+- concept:  polar-set 
+  arity:  1 
+  form:  msup 
+  area: "functional analysis "
+  notation: "msup $1 ° "
+  url: "<https://en.wikipedia.org/wiki/Polar_set><br/><https://en.wikipedia.org/wiki/Polar_set_(potential_theory)><br/><https://www.encyclopediaofmath.org/index.php/Polar_set> "
+ 
+- concept:  pollaczek-polynomial 
+  arity:  1 
+  form:  "indexed function"
+  area: "orthogonal polynomials "
+  notation: "msubsup P n (λ) "
+  url: "<https://mathworld.wolfram.com/PollaczekPolynomial.html><br/><https://en.wikipedia.org/wiki/Meixner%E2%80%93Pollaczek_polynomials><br/><https://dlmf.nist.gov/18.35#E4> "
+ 
+- concept:  polygamma-function 
+  arity:  1 
+  form:  "indexed function"
+  area: "special functions "
+  notation: "mi ψ "
+  url: "<https://mathworld.wolfram.com/PolygammaFunction.html><br/>[https://en.wikipedia.org/wiki/Polygamma_function](https://en.wikipedia.org/wiki/Polygamma_function)<br/><https://dlmf.nist.gov/5.15><br/><https://dlmf.nist.gov/5.15> "
+ 
+- concept:  polynomial-ring 
+  arity:  2 
+  form:  mixfix 
+  area: "ring theory "
+  notation: "mrow $1 [ $2 ] "
+  url: "[https://en.wikipedia.org/wiki/Polynomial_ring#Definition_(univariate_case)](https://en.wikipedia.org/wiki/Polynomial_ring#Definition_(univariate_case)) "
+  alias:  polynomial-algebra 
+ 
+- concept:  polylogarithm 
+  arity:  1 
+  form:  "indexed function"
+  area: "special functions "
+  notation: "msub Li $1 "
+  url: "<https://mathworld.wolfram.com/Polylogarithm.html><br/><https://en.wikipedia.org/wiki/Polylogarithm><br/><https://dlmf.nist.gov/25.12#ii><br/><https://dlmf.nist.gov/25.12#E10><br/><https://ncatlab.org/nlab/show/polylogarithm> "
+ 
+- concept:  pontrjagin-dual 
+  arity:  1 
+  form:  mover 
+  area: "harmonic analysis "
+  notation: "mover $1 ^ "
+  url: "[https://ncatlab.org/nlab/show/Pontrjagin+dual<br/>](https://ncatlab.org/nlab/show/Pontrjagin+dual)[https://en.wikipedia.org/wiki/Pontryagin_duality#Definition](https://en.wikipedia.org/wiki/Pontryagin_duality#Definition) "
+ 
+- concept:  pontryagin-class 
+  arity:  1 
+  form:  "indexed symbol" 
+  area: "differential topology "
+  notation: "msub p $1 "
+  url: "<https://mathworld.wolfram.com/PontryaginClass.html><br/>[https://en.wikipedia.org/wiki/Pontryagin_class](https://en.wikipedia.org/wiki/Pontryagin_class)<br/><https://ncatlab.org/nlab/show/Pontryagin+class><br/><https://www.encyclopediaofmath.org/index.php/Pontryagin_class> "
+ 
+- concept:  positive-part 
+  arity:  1 
+  form:  msup<br/>msub 
+  area: "elementary mathematics "
+  notation: "msup $1 +<br/>msub $1 + "
+  url: "[https://mathworld.wolfram.com/PositiveElement.html](https://mathworld.wolfram.com/PositiveElement.html)<br/>[https://en.wikipedia.org/wiki/Positive_and_negative_parts](https://en.wikipedia.org/wiki/Positive_and_negative_parts)<br/><https://www.encyclopediaofmath.org/index.php/Positive_element> "
+ 
+- concept:  positivitiy-predicate 
+  arity:  1 
+  form:  prefix 
+  area: "predicative mathematics "
+  notation: "mo ◊ "
+  url: "[https://ncatlab.org/nlab/show/positive+element](https://ncatlab.org/nlab/show/positive+element) "
+ 
+- concept:  post-canonical-system 
+  arity:  1 
+  form:  fenced 
+  area: "formal languages "
+  notation: "mrow (A,I,R) "
+  url: "<https://en.wikipedia.org/wiki/Post_canonical_system><br/><https://en.wikipedia.org/wiki/Tag_system><br/><https://www.encyclopediaofmath.org/index.php/Post_canonical_system> "
+ 
+- concept:  power-set 
+  arity:  1 
+  form:  "function<br/>msup"
+  area: "set theory "
+  notation: "mi P<br/>mi 𝒫<br/>mi ℙ<br/>mi ℘<br/>msup 2 $1 "
+  url: "<https://mathworld.wolfram.com/PowerSet.html><br/>[https://en.wikipedia.org/wiki/Power_set](https://en.wikipedia.org/wiki/Power_set)<br/>[https://ncatlab.org/nlab/show/power+set](https://ncatlab.org/nlab/show/power+set) "
+ 
+- concept:  preregular-space 
+  arity:  0 
+  form:  constant 
+  area: " topology "
+  notation: "msub R 1 "
+  url: "[https://en.wikipedia.org/wiki/Separation_axiom#Main_definitions](https://en.wikipedia.org/wiki/Separation_axiom#Main_definitions)s "
+ 
+- concept:  present-value 
+  arity:  0 
+  form:  symbol 
+  area: " economics "
+  notation: "mi PV<br/>mi v "
+  url: "<https://mathworld.wolfram.com/PresentValue.html><br/><https://en.wikipedia.org/wiki/Present_value> "
+ 
+- concept:  prime-constant 
+  arity:  0 
+  form:  symbol 
+  area: "number theory "
+  notation: "mi P<br/>mi ρ "
+  url: "<https://mathworld.wolfram.com/PrimeConstant.html><br/><https://en.wikipedia.org/wiki/Prime_constant> "
