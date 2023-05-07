@@ -2660,7 +2660,7 @@
   arity:  2 
   form:  fenced 
   area:  boolean algebra 
-  notation: ""<br/><br/>⟨$1, $2⟩ ""
+  notation: "⟨$1, $2⟩"
   url: "<https://en.wikipedia.org/wiki/Field_of_sets><br/><https://www.encyclopediaofmath.org/index.php/Field_of_sets> "
   alias:   
  
@@ -3956,7 +3956,7 @@
   arity:  1 
   form:  fenced 
   area:  set theory 
-  notation: ""[ $1 ] ""
+  notation: "[ $1 ]"
   url: "[https://en.wikipedia.org/wiki/Iverson_bracket](https://en.wikipedia.org/wiki/Iverson_bracket) "
   alias:   
  
@@ -4868,7 +4868,7 @@
   arity:  1 
   form:   
   area:   
-  notation: ""
+  notation: 
   url: "<https://en.wikipedia.org/wiki/Meson><br/><https://en.wikipedia.org/wiki/List_of_mesons><br/><https://ncatlab.org/nlab/show/meson> "
   alias:   
  
@@ -5333,7 +5333,7 @@
   form:  fenced 
   area:  algebra 
   notation: "mrow ( $1 . . $2 ) "
-  url: "[https://proofwiki.org/wiki/Definition: "Real_Interval/Open](https://proofwiki.org/wiki/Definition:Real_Interval/Open) ""
+  url: "[https://proofwiki.org/wiki/Definition: Real_Interval/Open](https://proofwiki.org/wiki/Definition:Real_Interval/Open)"
   alias:   
  
 - concept:  opposite 
@@ -5460,7 +5460,7 @@
   arity:  2 
   form:  embellished infix 
   area:  category theory 
-  notation: ""<munderover><br/><mrow/><br/><munder><mo>⟶</mo> $1</munder><br/><mover><mo>⟶</mo> $2</mover><br/></munderover> ""
+  notation: "<munderover><br/><mrow/><br/><munder><mo>⟶</mo> $1</munder><br/><mover><mo>⟶</mo> $2</mover><br/></munderover>"
   url: "[https://ncatlab.org/nlab/show/parallel+morphisms](https://ncatlab.org/nlab/show/parallel+morphisms) "
   alias:   
  
@@ -7709,7 +7709,7 @@
   form:  infix 
   area:  category theory 
   notation: "mo ∘ "
-  url: "[https://ncatlab.org/nlab/show/vertical+composition<br/>](https://ncatlab.org/nlab/show/vertical+composition)[https://proofwiki.org/wiki/Definition: "Vertical_Composition_of_Natural_Transformations](https://proofwiki.org/wiki/Definition:Vertical_Composition_of_Natural_Transformations) ""
+  url: "[https://ncatlab.org/nlab/show/vertical+composition<br/>](https://ncatlab.org/nlab/show/vertical+composition)[https://proofwiki.org/wiki/Definition: "Vertical_Composition_of_Natural_Transformations](https://proofwiki.org/wiki/Definition:Vertical_Composition_of_Natural_Transformations)"
   alias:   
  
 - concept:  volterra-integral 
