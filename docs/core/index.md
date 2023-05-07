@@ -139,6 +139,7 @@ Languages can be listed by extending the YAML file
 [languages.yml](https://github.com/mathml-refresh/intent-lists/blob/main/docs/_data/languages.yml)
 
 Any concept that does not have a speech template in the specifed language will show the English text.
+
 Localised texts can be added to the YAML file  
 [core.yml](https://github.com/mathml-refresh/intent-lists/blob/main/docs/_data/core.yml)
 
