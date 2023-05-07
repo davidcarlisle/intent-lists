@@ -5116,8 +5116,6 @@
   notation: "mo ♣<br/>mo ♠<br/>mo ♦<br/>mo ♥ "
   url: "[https://en.wikipedia.org/wiki/Playing_card_suit<br/>](https://en.wikipedia.org/wiki/Playing_card_suit)[https://en.wikipedia.org/wiki/Poker_probability](https://en.wikipedia.org/wiki/Poker_probability) "
 
-# good
-
  
 - concept:  plethysm 
   arity:  2 
@@ -5252,3 +5250,734 @@
   area: "number theory "
   notation: "mi P<br/>mi ρ "
   url: "<https://mathworld.wolfram.com/PrimeConstant.html><br/><https://en.wikipedia.org/wiki/Prime_constant> "
+
+# good
+
+ 
+- concept:  prime-counting-function 
+  arity:  1 
+  form:  function 
+  area: "number theory "
+  notation: "mi π "
+  url: "[https://mathworld.wolfram.com/PrimeCountingFunction.html](https://mathworld.wolfram.com/PrimeCountingFunction.html) "
+ 
+- concept:  prime-difference-function 
+  arity:  1 
+  form:  "indexed function"
+  area: "number theory "
+  notation: "mi d "
+  url: "[https://mathworld.wolfram.com/PrimeDifferenceFunction.html](https://mathworld.wolfram.com/PrimeDifferenceFunction.html) "
+ 
+- concept:  prime-gap 
+  arity:  1 
+  form:  "indexed function"
+  area: "number theory "
+  notation: "mi G<br/>mi g "
+  url: "<https://mathworld.wolfram.com/PrimeGaps.html><br/><https://en.wikipedia.org/wiki/Prime_gap> "
+ 
+- concept:  primorial 
+  arity:  1 
+  form:  postfix 
+  area: "number theory "
+  notation: "mo # "
+  url: "[https://mathworld.wolfram.com/Primorial.html](https://mathworld.wolfram.com/Primorial.html)<br/>[https://en.wikipedia.org/wiki/Primorial](https://en.wikipedia.org/wiki/Primorial) "
+ 
+- concept:  principal-value 
+  arity:  1 
+  form:  function 
+  area: "complex analysis "
+  notation: "mi Log "
+  url: "[https://en.wikipedia.org/wiki/Complex_logarithm#Principal_value](https://en.wikipedia.org/wiki/Complex_logarithm#Principal_value) "
+ 
+- concept:  probability-limit 
+  arity:  1 
+  form:  "indexed function"
+  area: "probability theory "
+  notation: "mi plim "
+  url: "[https://en.wikipedia.org/wiki/Convergence_of_random_variables#Convergence_in_probability](https://en.wikipedia.org/wiki/Convergence_of_random_variables#Convergence_in_probability) "
+  alias:  convergence-in-probability 
+ 
+- concept:  product-integral 
+  arity:  1 
+  form:  indexed 
+  area: " calculus "
+  notation: "mo ∏ "
+  url: "<https://en.wikipedia.org/wiki/Continuous_product><br/>[https://en.wikipedia.org/wiki/Product_integral](https://en.wikipedia.org/wiki/Product_integral)<br/><https://www.encyclopediaofmath.org/index.php/Product_integral> "
+ 
+- concept:  product-measure 
+  arity:  2 
+  form:  function 
+  area: "measure theory "
+  notation: "mrow $1 × $2 "
+  url: "<https://mathworld.wolfram.com/ProductMeasure.html><br/>[https://en.wikipedia.org/wiki/Product_measure](https://en.wikipedia.org/wiki/Product_measure) "
+ 
+- concept:  projective-line 
+  arity:  1 
+  form:  function 
+  area: "projective geometry "
+  notation: "mi P "
+  url: "<https://en.wikipedia.org/wiki/Projective_line><br/><https://ncatlab.org/nlab/show/projective+line> "
+ 
+- concept:  projective-space 
+  arity:  0 
+  form:  symbol 
+  area: "projective geometry "
+  notation: "mi ℙ<br/>mi ℝ⁢ ℙ "
+  url: "<https://mathworld.wolfram.com/ProjectiveSpace.html><br/><https://en.wikipedia.org/wiki/Algebraic_geometry_of_projective_spaces><br/><https://en.wikipedia.org/wiki/Projective_space><br/><https://ncatlab.org/nlab/show/projective+space><br/><https://www.encyclopediaofmath.org/index.php/Projective_space> "
+  alias:  real-projective-space 
+ 
+- concept:  proper-subgroup 
+  arity:  2 
+  form:  infix 
+  area: "group theory "
+  notation: "mo < "
+  url: "[https://en.wikipedia.org/wiki/Subgroup](https://en.wikipedia.org/wiki/Subgroup) "
+ 
+- concept:  proportional 
+  arity:  2 
+  form:  infix 
+  area: " arithmetic "
+  notation: "mo ∝<br/>mo ~ "
+  url: "<https://mathworld.wolfram.com/Proportional.html><br/><https://en.wikipedia.org/wiki/Proportionality_(mathematics)><br/><https://en.wikipedia.org/wiki/Proportional_(fair_division)> "
+  alias:  directly-proportional 
+ 
+- concept:  prouhet-thue-morse-constant 
+  arity:  0 
+  form:  constant 
+  area: "number theory "
+  notation: "mi τ "
+  url: "[https://en.wikipedia.org/wiki/Prouhet%E2%80%93Thue%E2%80%93Morse_constant](https://en.wikipedia.org/wiki/Prouhet%E2%80%93Thue%E2%80%93Morse_constant) "
+ 
+- concept:  prufer-group 
+  arity:  1 
+  form:  mixfix 
+  area: "group theory "
+  notation: "mrow Z ( msup $1 ∞ /msup ) "
+  url: "[https://en.wikipedia.org/wiki/Pr%C3%BCfer_group](https://en.wikipedia.org/wiki/Pr%C3%BCfer_group) "
+  alias:  quasicyclic-group 
+ 
+- concept:  pseudovector 
+  arity:  2 
+  form:  mixfix 
+  area: "vector calculus "
+  notation: "mrow (det $1) ($1 $2) "
+  url: "<https://mathworld.wolfram.com/Pseudovector.html><br/><https://en.wikipedia.org/wiki/Pseudovector> "
+  alias:  axial-vector 
+ 
+- concept:  pseudo-inner-product 
+  arity:  2 
+  form:  fenced 
+  area: "lie algebra "
+  notation: "mrow ( $1, $2 ) "
+  url: "[https://youtu.be/mJ8ZDdA10GY?t=870](https://youtu.be/mJ8ZDdA10GY?t=870) "
+ 
+- concept:  pullback 
+  arity:  0 
+  form:  symbol 
+  area: "differential geometry "
+  notation: "msup φ * "
+  url: "[https://en.wikipedia.org/wiki/Pullback_(differential_geometry)<br/>](https://en.wikipedia.org/wiki/Pullback_(differential_geometry)) "
+ 
+- concept:  pushforward 
+  arity:  2 
+  form:  infix 
+  area: "differential geometry "
+  notation: "mo * "
+  url: "[https://youtu.be/mJ8ZDdA10GY?t=2555<br/>](https://youtu.be/mJ8ZDdA10GY?t=2555)[https://en.wikipedia.org/wiki/Pushforward_(differential)](https://en.wikipedia.org/wiki/Pushforward_(differential)) "
+ 
+- concept:  pythagoras-constant 
+  arity:  0 
+  form:  constant 
+  area: " geometry "
+  notation: "msqrt 2 "
+  url: "<https://mathworld.wolfram.com/PythagorassConstant.html><br/><https://en.wikipedia.org/wiki/Sqrt(2)><br/><https://en.wikipedia.org/wiki/%E2%88%9A2><br/><https://en.wikipedia.org/wiki/Square_root_of_2> "
+  alias:  pythagoras-number 
+ 
+- concept:  pythagorean-triple 
+  arity:  3 
+  form:  fenced 
+  area: " geometry "
+  notation: "mrow ($1, $2, $3 ) "
+  url: "<https://mathworld.wolfram.com/PythagoreanTriple.html><br/><https://en.wikipedia.org/wiki/Pythagorean_triple><br/> "
+ 
+- concept:  q-binomial-coefficient 
+  arity:  1 
+  form:  fenced-stacked 
+  area: " combinatorics "
+  notation: "msub mrow [ stacked mfrac ] q "
+  url: "[https://mathworld.wolfram.com/q-BinomialCoefficient.html](https://mathworld.wolfram.com/q-BinomialCoefficient.html) "
+ 
+- concept:  qed 
+  arity:  0 
+  form:  symbol 
+  area: "mathematical symbols "
+  notation: "mo □<br/>mo ∎ "
+  url: "[https://en.wikipedia.org/wiki/Tombstone_(typography)](https://en.wikipedia.org/wiki/Tombstone_(typography)) "
+  alias: " end-of-proof, quod-erat-demonstrandum "
+ 
+- concept:  quadratic-differential 
+  arity:  1 
+  form:  mixfix 
+  area: "complex manifolds "
+  notation: "mrow d $1 ⊗ d $1 "
+  url: "<https://en.wikipedia.org/wiki/Quadratic_differential><br/><https://ncatlab.org/nlab/show/quadratic+differential><br/><https://www.encyclopediaofmath.org/index.php/Quadratic_differential> "
+ 
+- concept:  quadratic-variation 
+  arity:  2 
+  form:  indexed fenced 
+  area: "stochastic processes "
+  notation: "msub mrow [ $1 ] /mrow $2 "
+  url: "[https://en.wikipedia.org/wiki/Quadratic_variation](https://en.wikipedia.org/wiki/Quadratic_variation) "
+ 
+- concept:  quadrilateral 
+  arity:  1 
+  form:  prefix 
+  area: " geometry "
+  notation: "mo ◻ "
+  url: "<https://mathworld.wolfram.com/Quadrangle.html><br/><https://en.wikipedia.org/wiki/Quadrilateral><br/><https://www.encyclopediaofmath.org/index.php/Quadrangle> "
+  alias:  quadrangle 
+ 
+- concept:  quotient-group 
+  arity:  2 
+  form:  infix 
+  area: "group theory "
+  notation: "mo / "
+  url: "<https://mathworld.wolfram.com/QuotientGroup.html><br/><https://ncatlab.org/nlab/show/quotient+group><br/><https://www.encyclopediaofmath.org/index.php/Quotient_group> "
+ 
+- concept:  quotient-space 
+  arity:  2 
+  form:  infix 
+  area: " topology "
+  notation: "mo / "
+  url: "<https://mathworld.wolfram.com/QuotientSpace.html><br/>[https://en.wikipedia.org/wiki/Quotient_space_(topology)](https://en.wikipedia.org/wiki/Quotient_space_(topology))<br/><https://en.wikipedia.org/wiki/Quotient_space_(linear_algebra)><br/><https://ncatlab.org/nlab/show/quotient+space><br/><https://www.encyclopediaofmath.org/index.php/Quotient_space> "
+  alias:  quotient-set 
+ 
+- concept:  r-complexity-class 
+  arity:  0 
+  form:  symbol 
+  area: "complexity theory "
+  notation: "mi R "
+  url: "<https://mathworld.wolfram.com/R.html><br/><https://en.wikipedia.org/wiki/R_(complexity)><br/><https://en.wikipedia.org/wiki/R_(cross_section_ratio)> "
+ 
+- concept:  racah-polynomial 
+  arity:  1 
+  form:  "indexed function"
+  area: "special functions "
+  notation: "msub R $1 "
+  url: "<https://mathworld.wolfram.com/RacahPolynomial.html><br/><https://en.wikipedia.org/wiki/Racah_polynomials><br/><https://dlmf.nist.gov/18.25#T1.t1.r4> "
+ 
+- concept:  radial-mathieu-function 
+  arity:  1 
+  form:  "indexed function"
+  area: "special functions "
+  notation: "mi Mc<br/>mi Ms "
+  url: "<https://dlmf.nist.gov/28.20#iv><br/><https://dlmf.nist.gov/28.20#E15><br/><https://dlmf.nist.gov/28.20#E16> "
+ 
+- concept:  radical 
+  arity:  1 
+  form:  function 
+  area: "number theory "
+  notation: "mi rad "
+  url: "[https://mathworld.wolfram.com/Radical.html](https://mathworld.wolfram.com/Radical.html)<br/><https://en.wikipedia.org/wiki/Radical_of_a_Lie_algebra><br/><https://en.wikipedia.org/wiki/Radical_of_an_integer><br/>[https://en.wikipedia.org/wiki/Radical_of_a_module](https://en.wikipedia.org/wiki/Radical_of_a_module)<br/><https://ncatlab.org/nlab/show/radical><br/><https://www.encyclopediaofmath.org/index.php/Radical> "
+ 
+- concept:  radius-vector 
+  arity:  0 
+  form:  symbol 
+  area: " geometry "
+  notation: "mix<br/>mir<br/>mis "
+  url: "<https://mathworld.wolfram.com/RadiusVector.html><br/><https://en.wikipedia.org/wiki/Position_(vector)><br/><https://www.encyclopediaofmath.org/index.php/Radius_vector> "
+  alias: " location-vector, position-vector, position "
+ 
+- concept:  ramanujan-sum 
+  arity:  1 
+  form:  "indexed function"
+  area: "number theory "
+  notation: "msub c $1 "
+  url: "<https://mathworld.wolfram.com/RamanujansSum.html><br/><https://dlmf.nist.gov/27.10#E4><br/><https://www.encyclopediaofmath.org/index.php/Ramanujan_sums> "
+ 
+- concept:  ramanujan-tau-function 
+  arity:  1 
+  form:  function 
+  area: "number theory "
+  notation: "mi τ "
+  url: "<https://mathworld.wolfram.com/RamanujansTauFunction.html><br/><https://en.wikipedia.org/wiki/Ramanujan_tau_function><br/><https://dlmf.nist.gov/27.14#E18> "
+ 
+- concept:  ramanujan-soldner-constant 
+  arity:  0 
+  form:  constant 
+  area: "special functions "
+  notation: "mi μ "
+  url: "[https://mathworld.wolfram.com/Ramanujan-SoldnerConstant.html](https://mathworld.wolfram.com/Ramanujan-SoldnerConstant.html)<br/>[https://en.wikipedia.org/wiki/Ramanujan%E2%80%93Soldner_constant](https://en.wikipedia.org/wiki/Ramanujan%E2%80%93Soldner_constant)<br/><https://mathworld.wolfram.com/SoldnersConstant.html> "
+  alias:  soldner-constant 
+ 
+- concept:  ramification-index 
+  arity:  1 
+  form:  msub 
+  area: "algebraic number theory "
+  notation: "msub e $1 "
+  url: "[https://mathworld.wolfram.com/RamificationIndex.html<br/>](https://mathworld.wolfram.com/RamificationIndex.html)[https://en.wikipedia.org/wiki/Ramification_(mathematics)#In_algebraic_number_theory](https://en.wikipedia.org/wiki/Ramification_(mathematics)#In_algebraic_number_theory) "
+ 
+- concept:  ramsey-number 
+  arity:  1 
+  form:  function 
+  area: "graph theory "
+  notation: "mi R "
+  url: "<https://mathworld.wolfram.com/RamseyNumber.html><br/>[https://www.encyclopediaofmath.org/index.php/Ramsey_number](https://www.encyclopediaofmath.org/index.php/Ramsey_number) "
+ 
+- concept:  rank 
+  arity:  1 
+  form:  function 
+  area: "graph theory<br/>linear algebra<br/> "
+  notation: "mi r<br/>mi rank<br/>mi rk "
+  url: "<https://mathworld.wolfram.com/Rank.html><br/><https://en.wikipedia.org/wiki/Rank_(graph_theory)><br/><https://en.wikipedia.org/wiki/Rank_(linear_algebra)><br/><https://en.wikipedia.org/wiki/Rank_(differential_topology)><br/><https://ncatlab.org/nlab/show/rank><br/><https://www.encyclopediaofmath.org/index.php/Rank> "
+ 
+- concept:  real-bipolar 
+  arity:  1 
+  form:  msup 
+  area: "functional analysis "
+  notation: "msup $1 r r "
+  url: "<https://en.wikipedia.org/wiki/Polar_set><br/><https://en.wikipedia.org/wiki/Polar_set_(potential_theory)><br/><https://www.encyclopediaofmath.org/index.php/Polar_set> "
+ 
+- concept:  real-part 
+  arity:  1 
+  form:  function 
+  area: "complex analysis "
+  notation: "mi ℜ<br/>mi Re<br/>mi ℛℯ "
+  url: "<https://mathworld.wolfram.com/RealPart.html><br/><https://dlmf.nist.gov/1.9#E2[><br/>](https://en.wikipedia.org/wiki/Complex_number#Notation)[https://en.wikipedia.org/wiki/Complex_number#Notatio](https://en.wikipedia.org/wiki/Complex_number#Notation)n "
+ 
+- concept:  real-prepolar 
+  arity:  1 
+  form:  prescript 
+  area: "functional analysis "
+  notation: "msup <mrow/> r /msup $1 "
+  url: "<https://en.wikipedia.org/wiki/Polar_set><br/><https://en.wikipedia.org/wiki/Polar_set_(potential_theory)><br/><https://www.encyclopediaofmath.org/index.php/Polar_set> "
+ 
+- concept:  real-polar 
+  arity:  1 
+  form:  msup 
+  area: "functional analysis "
+  notation: "msup $1 r "
+  url: "<https://en.wikipedia.org/wiki/Polar_set><br/><https://en.wikipedia.org/wiki/Polar_set_(potential_theory)><br/><https://www.encyclopediaofmath.org/index.php/Polar_set> "
+ 
+- concept:  recession-cone 
+  arity:  1 
+  form:  function 
+  area: "convex analysis "
+  notation: "mi recc "
+  url: "[https://en.wikipedia.org/wiki/Recession_cone](https://en.wikipedia.org/wiki/Recession_cone) "
+ 
+- concept:  reciprocal-polynomial 
+  arity:  1 
+  form:  msup 
+  area: " algebra "
+  notation: "msup $1 *<br/>msup $1 R "
+  url: "<https://mathworld.wolfram.com/ReciprocalPolynomial.html><br/><https://en.wikipedia.org/wiki/Reciprocal_polynomial> "
+  alias:  reflected-polynomial 
+ 
+- concept:  rectification 
+  arity:  1 
+  form:  function 
+  area: "euclidean geometry "
+  notation: "mi r "
+  url: "<https://mathworld.wolfram.com/Rectification.html><br/><https://en.wikipedia.org/wiki/Rectification_(geometry)><br/><https://ncatlab.org/nlab/show/rectification> "
+ 
+- concept:  reduced-suspension 
+  arity:  1 
+  form:  function 
+  area: " topology "
+  notation: "mi Σ "
+  url: "[https://en.wikipedia.org/wiki/Suspension_(topology)<br/>](https://en.wikipedia.org/wiki/Suspension_(topology)) "
+ 
+- concept:  relative-homology 
+  arity:  1 
+  form:  "indexed function"
+  area: "algebraic topology "
+  notation: "mi H "
+  url: "<https://en.wikipedia.org/wiki/Relative_homology><br/><https://ncatlab.org/nlab/show/relative+homology><br/><https://www.encyclopediaofmath.org/index.php/Relative_homology> "
+ 
+- concept:  repunit 
+  arity:  1 
+  form:  "indexed symbol" 
+  area: "number theory "
+  notation: "mi R "
+  url: "<https://mathworld.wolfram.com/Repunit.html><br/><https://en.wikipedia.org/wiki/Repunit><br/><https://en.wikipedia.org/wiki/Repunit_prime> "
+ 
+- concept:  residue 
+  arity:  1 
+  form:  function 
+  area: "complex analysis "
+  notation: "mi Res<br/>mi res "
+  url: "<https://mathworld.wolfram.com/Residue.html><br/><https://en.wikipedia.org/wiki/Residue_(complex_analysis)><br/><https://dlmf.nist.gov/1.10#SS3.p5> "
+ 
+- concept:  resolvent 
+  arity:  2 
+  form:  "indexed function"
+  area: "galois theory "
+  notation: "msubsup R $1 ($2) "
+  url: "<https://mathworld.wolfram.com/Resolvent.html><br/>[https://en.wikipedia.org/wiki/Resolvent_(Galois_theory)](https://en.wikipedia.org/wiki/Resolvent_(Galois_theory))<br/><https://www.encyclopediaofmath.org/index.php/Resolvent> "
+ 
+- concept:  resolvent-set 
+  arity:  1 
+  form:  function 
+  area: "set theory "
+  notation: "mi ρ "
+  url: "<https://en.wikipedia.org/wiki/Resolvent_set><br/><https://www.encyclopediaofmath.org/index.php/Resolvent_set> "
+ 
+- concept:  restricted-quantifier 
+  arity:  2 
+  form:  mixfix 
+  area: "formal logic "
+  notation: "msub mrow ( Ǝ $1 ) /mrow $2<br/>msub mrow ( ∀ $1 ) /mrow $2 "
+  url: "[https://www.encyclopediaofmath.org/index.php/Restricted_quantifier<br/>](https://www.encyclopediaofmath.org/index.php/Restricted_quantifier)[https://human.libretexts.org/Bookshelves/Philosophy/Book%3A_A_Modern_Formal_Logic_Primer_(Teller)/Volume_II%3A_Predicate_Logic/4%3A_Transcription/4.1%3A_Restricted_Quantifiers](https://human.libretexts.org/Bookshelves/Philosophy/Book%3A_A_Modern_Formal_Logic_Primer_(Teller)/Volume_II%3A_Predicate_Logic/4%3A_Transcription/4.1%3A_Restricted_Quantifiers) "
+ 
+- concept:  restricted-wreath-product 
+  arity:  2 
+  form:  infix 
+  area: "group theory "
+  notation: "mo wr<br/>msub wr $1 "
+  url: "<https://mathworld.wolfram.com/WreathProduct.html><br/>[https://en.wikipedia.org/wiki/Wreath_product](https://en.wikipedia.org/wiki/Wreath_product)<br/><https://ncatlab.org/nlab/show/wreath+product><br/><https://www.encyclopediaofmath.org/index.php/Wreath_product> "
+ 
+- concept:  restriction 
+  arity:  2 
+  form:  indexed postfix 
+  area: "elementary mathematics "
+  notation: "$1 mo msub ↾ $2 /mo<br/>$1 mo msub | $2 /mo "
+  url: "<https://en.wikipedia.org/wiki/Restricted_representation><br/><https://en.wikipedia.org/wiki/Restriction_(mathematics)><br/><https://en.wikipedia.org/wiki/Selection_(relational_algebra)><br/><https://ncatlab.org/nlab/show/restriction>" 
+  
+- concept:  resultant 
+  arity:  1 
+  form:  function 
+  area: " polynomials "
+  notation: "mi res<br/>mi Res "
+  url: "<https://mathworld.wolfram.com/Resultant.html><br/><https://en.wikipedia.org/wiki/Resultant><br/><https://ncatlab.org/nlab/show/resultant><br/><https://www.encyclopediaofmath.org/index.php/Resultant> "
+  alias:  eliminant 
+ 
+- concept:  rewrite-rule 
+  arity:  2 
+  form:  infix 
+  area: " logic "
+  notation: "mo → "
+  url: "[https://en.wikipedia.org/wiki/Semi-Thue_system<br/>](https://en.wikipedia.org/wiki/Semi-Thue_system) "
+  alias:  rewrite-relation 
+ 
+- concept:  reynolds-number 
+  arity:  0 
+  form:  symbol 
+  area: "fluid dynamics "
+  notation: "mi Re "
+  url: "[https://en.wikipedia.org/wiki/Reynolds_number](https://en.wikipedia.org/wiki/Reynolds_number) "
+ 
+- concept:  ricci-scalar 
+  arity:  0 
+  form:  symbol 
+  area: "riemannian geometry "
+  notation: "mi S<br/>mi R<br/>mi Sc "
+  url: "<https://mathworld.wolfram.com/RicciScalar.html><br/><https://en.wikipedia.org/wiki/Scalar_curvature> "
+  alias:  scalar-curvature 
+ 
+- concept:  ricci-tensor 
+  arity:  1 
+  form:  "indexed symbol" 
+  area: "riemannian geometry "
+  notation: "mi R "
+  url: "<https://mathworld.wolfram.com/RicciTensor.html><br/><https://www.encyclopediaofmath.org/index.php/Ricci_tensor> "
+ 
+- concept:  riemann-integral 
+  arity:  1 
+  form:  indexed 
+  area: " calculus "
+  notation: "mo ∫ "
+  url: "<https://mathworld.wolfram.com/RiemannIntegral.html><br/><https://en.wikipedia.org/wiki/Lebesgue_integrability_condition><br/><https://en.wikipedia.org/wiki/Riemann_integral><br/><https://www.encyclopediaofmath.org/index.php/Riemann_integral><br/> "
+ 
+- concept:  riemann-sphere 
+  arity:  1 
+  form:  scripted symbol 
+  area: "projective geometry "
+  notation: "mover ℂ ^<br/>mover ℂ ¯<br/>msub ℂ ∞ "
+  url: "<https://mathworld.wolfram.com/RiemannSphere.html><br/><https://en.wikipedia.org/wiki/Riemann_sphere><br/><https://ncatlab.org/nlab/show/Riemann+sphere><br/><https://www.encyclopediaofmath.org/index.php/Riemann_sphere> "
+  alias: " extended-complex-numbers, extended-complex-plane "
+ 
+- concept:  riemann-theta-function 
+  arity:  1 
+  form:  function 
+  area: "special functions "
+  notation: "mi θ⁡ "
+  url: "<https://mathworld.wolfram.com/RiemannThetaFunction.html><br/><https://dlmf.nist.gov/21.2#i><br/><https://dlmf.nist.gov/21.2#E1> "
+ 
+- concept:  riemann-zeta-function 
+  arity:  1 
+  form:  function 
+  area: "special functions "
+  notation: "mi ζ "
+  url: "<https://mathworld.wolfram.com/RiemannZetaFunction.html><br/><https://en.wikipedia.org/wiki/%CE%96(x)><br/><https://en.wikipedia.org/wiki/Riemann_zeta_function><br/>[https://dlmf.nist.gov/25.1](https://dlmf.nist.gov/25.1)<br/><https://dlmf.nist.gov/25.2#E1> "
+  alias:  euler-riemann-zeta-function 
+ 
+- concept:  riemann-christoffel-tensor 
+  arity:  1 
+  form:  "indexed function"
+  area: "riemannian geometry "
+  notation: "mi R "
+  url: "<https://mathworld.wolfram.com/Riemann-ChristoffelTensor.html><br/><https://en.wikipedia.org/wiki/Riemann_curvature_tensor><br/><https://www.encyclopediaofmath.org/index.php/Riemann-Christoffel_tensor><br/><https://www.encyclopediaofmath.org/index.php/RiemannâChristoffel_tensor> "
+  alias:  riemann-curvature-tensor 
+ 
+- concept:  riemann-stieltje-integral 
+  arity:  1 
+  form:  indexed 
+  area: "measure theory "
+  notation: "mo ∫ "
+  url: "<https://mathworld.wolfram.com/Riemann-StieltjesIntegral.html><br/><https://en.wikipedia.org/wiki/%E2%88%AB_f_d%CE%B1><br/><https://en.wikipedia.org/wiki/%E2%88%ABfd%CE%B1><br/><https://en.wikipedia.org/wiki/Riemann%E2%80%93Stieltjes_integral><br/><https://www.encyclopediaofmath.org/index.php/Riemann-Stieltjes_integral><br/><https://www.encyclopediaofmath.org/index.php/RiemannâStieltjes_integral> "
+  alias:  stieltje-integral 
+ 
+- concept:  right-angle 
+  arity:  1 
+  form:  prefix 
+  area: " geometry "
+  notation: "mo ∟<br/>mo ⊾<br/>mo ⦜<br/>mo ⦝ "
+  url: "<https://mathworld.wolfram.com/RightAngle.html><br/><https://en.wikipedia.org/wiki/Right_angle> "
+ 
+- concept:  right-derivative 
+  arity:  1 
+  form:  operator 
+  area: " calculus "
+  notation: "msub ∂ + "
+  url: "[https://en.wikipedia.org/wiki/Left_and_right_derivative](https://en.wikipedia.org/wiki/Left_and_right_derivative) "
+ 
+- concept:  right-quotient 
+  arity:  2 
+  form:  infix 
+  area: "formal languages "
+  notation: "mo \\ "
+  url: "[https://en.wikipedia.org/wiki/Quotient_of_a_formal_language](https://en.wikipedia.org/wiki/Quotient_of_a_formal_language) "
+ 
+- concept:  ring-of-formal-power-series 
+  arity:  2 
+  form:  mixfix 
+  area: "ring theory "
+  notation: "mrow $1 [[ $2 ]] "
+  url: "[https://en.wikipedia.org/wiki/Formal_power_series#The_ring_of_formal_power_series](https://en.wikipedia.org/wiki/Formal_power_series#The_ring_of_formal_power_series) "
+ 
+- concept:  rising-factorial 
+  arity:  2 
+  form:  mixfix 
+  area: " combinatorics "
+  notation: "msup $1 mover $2 ¯<br/>msup $1 mrow ( $2 ) /mrow "
+  url: "[https://en.wikipedia.org/wiki/Falling_and_rising_factorials](https://en.wikipedia.org/wiki/Falling_and_rising_factorials)<br/><https://mathworld.wolfram.com/RisingFactorial.html><br/><https://dlmf.nist.gov/26.1#P1.p1> "
+  alias: " pochhammer-function, pochhammer-polynomial, ascending-factorial, rising-sequential-product, upper-factorial "
+ 
+- concept:  roman-numeral 
+  arity:  0 
+  form:  symbol 
+  area: "number theory "
+  notation: "mi i<br/>mi ii<br/>mi iii<br/>mi iv<br/>mi v<br/>mi vi<br/>mi vii<br/>mi viii<br/>mi ix<br/>mi x "
+  url: "<https://mathworld.wolfram.com/RomanNumerals.html><br/><https://en.wikipedia.org/wiki/Roman_numerals><br/><https://www.encyclopediaofmath.org/index.php/Roman_numerals> "
+ 
+- concept:  roof 
+  arity:  3 
+  form:  mixfix 
+  area: "category theory "
+  notation: "mrow $1 ←$2 → $3 "
+  url: "<https://en.wikipedia.org/wiki/Span_(category_theory)><br/><https://ncatlab.org/nlab/show/span> "
+  alias: " span, correspondence "
+ 
+- concept:  root-of-unity 
+  arity:  0 
+  form:  symbol 
+  area: "complex numbers "
+  notation: "mi ω "
+  url: "<https://mathworld.wolfram.com/RootofUnity.html><br/>[https://en.wikipedia.org/wiki/Root_of_unity](https://en.wikipedia.org/wiki/Root_of_unity)<br/><https://ncatlab.org/nlab/show/root+of+unity> "
+ 
+- concept:  root-mean-square 
+  arity:  1 
+  form:  msub 
+  area: " means "
+  notation: "msub $1 RMS "
+  url: "[https://mathworld.wolfram.com/Root-Mean-Square.html](https://mathworld.wolfram.com/Root-Mean-Square.html) "
+  alias: " rms, quadratic-mean "
+ 
+- concept:  rooted-product-of-graphs 
+  arity:  2 
+  form:  infix 
+  area: "graph theory "
+  notation: "mo ∘ "
+  url: "[https://en.wikipedia.org/wiki/Rooted_product_of_graphs](https://en.wikipedia.org/wiki/Rooted_product_of_graphs) "
+ 
+- concept:  ruark-number 
+  arity:  0 
+  form:  symbol 
+  area: " physics "
+  notation: "mi Ru "
+  url: "[https://en.wikipedia.org/wiki/Euler_number_(physics)](https://en.wikipedia.org/wiki/Euler_number_(physics)) "
+ 
+- concept:  s-set-theory 
+  arity:  0 
+  form:  constant 
+  area: "set theory "
+  notation: "miS "
+  url: "[https://en.wikipedia.org/wiki/S_(set_theory)](https://en.wikipedia.org/wiki/S_(set_theory)) "
+ 
+- concept:  s5-modal-logic 
+  arity:  0 
+  form:  constant 
+  area: " logic "
+  notation: "miS5 "
+  url: "[https://en.wikipedia.org/wiki/S5_(modal_logic)](https://en.wikipedia.org/wiki/S5_(modal_logic)) "
+ 
+- concept:  sample-space 
+  arity:  0 
+  form:  symbol 
+  area: "probability theory "
+  notation: "mi S<br/>mi Ω<br/>mi U "
+  url: "<https://mathworld.wolfram.com/SampleSpace.html><br/>[https://en.wikipedia.org/wiki/Sample_space](https://en.wikipedia.org/wiki/Sample_space)<br/><https://www.encyclopediaofmath.org/index.php/Sample_space> "
+ 
+- concept:  sample-variance 
+  arity:  1 
+  form:  embellished symbol 
+  area: "probability theory "
+  notation: "msub m 2<br/>msup s 2<br/>msubsup s $1 2<br/>msubsup σ $1 2 "
+  url: "<https://mathworld.wolfram.com/SampleVariance.html><br/><https://www.encyclopediaofmath.org/index.php/Sample_variance[><br/>](https://en.wikipedia.org/wiki/Variance#Sample_variance)[https://en.wikipedia.org/wiki/Variance#Sample_varianc](https://en.wikipedia.org/wiki/Variance#Sample_variance)e "
+ 
+- concept:  scalar-triple-product 
+  arity:  3 
+  form:  mixfix<br/>fenced 
+  area: "vector algebra "
+  notation: "mrow $1 ⋅ ( $2 × $3 )<br/>mrow [ $1 , $2 , $3 ] "
+  url: "<https://mathworld.wolfram.com/ScalarTripleProduct.html><br/><https://en.wikipedia.org/wiki/Triple_product> "
+ 
+- concept:  scaled-riemann-theta-function 
+  arity:  1 
+  form:  mover 
+  area: "special functions "
+  notation: "mover θ⁡ ^ "
+  url: "<br/><https://dlmf.nist.gov/21.2#i><br/><https://dlmf.nist.gov/21.2#E1> "
+ 
+- concept:  schlaefli-symbol 
+  arity:  1 
+  form:  fenced 
+  area: " geometry "
+  notation: "mrow { $1 , ..., $n } "
+  url: "[https://en.wikipedia.org/wiki/Schl%C3%A4fli_symbol](https://en.wikipedia.org/wiki/Schl%C3%A4fli_symbol) "
+ 
+- concept:  schroder-number 
+  arity:  1 
+  form:  "indexed symbol" 
+  area: " combinatorics "
+  notation: "msub S $1 "
+  url: "<https://mathworld.wolfram.com/SchroederNumber.html><br/><https://en.wikipedia.org/wiki/Schr%C3%B6der_number><br/><https://dlmf.nist.gov/26.6#E4> "
+ 
+- concept:  schur-multiplier 
+  arity:  1 
+  form:  function 
+  area: "group theory "
+  notation: "mi M "
+  url: "<https://mathworld.wolfram.com/SchurMultiplier.html><br/><https://en.wikipedia.org/wiki/Schur_multiplier><br/><https://en.wikipedia.org/wiki/Schur_cover> "
+  alias:  schur-multiplicator 
+ 
+- concept:  schwartz-space 
+  arity:  0 
+  form:  symbol 
+  area: " topology "
+  notation: "mi𝒮<br/>mi S "
+  url: "<https://mathworld.wolfram.com/SchwartzSpace.html><br/>[https://en.wikipedia.org/wiki/Schwartz_space](https://en.wikipedia.org/wiki/Schwartz_space)<br/><https://ncatlab.org/nlab/show/Schwartz+space> "
+ 
+- concept:  schwarzian-derivative 
+  arity:  2 
+  form:  fenced<br/>mixfix 
+  area: "complex analysis "
+  notation: "mrow { $1, $2 }<br/>mrow ( S $1 ) ($2) "
+  url: "<https://mathworld.wolfram.com/SchwarzianDerivative.html><br/><https://en.wikipedia.org/wiki/Schwarzian_derivative><br/><https://dlmf.nist.gov/1.13#E20><br/><https://www.encyclopediaofmath.org/index.php/Schwarzian_derivative> "
+ 
+- concept:  second-carmichael-function 
+  arity:  1 
+  form:  function 
+  area: "number theory "
+  notation: "msup λ ' "
+  url: "<https://mathworld.wolfram.com/CarmichaelFunction.html><br/><https://en.wikipedia.org/wiki/Carmichael_function> "
+ 
+- concept:  sectional-curvature 
+  arity:  1 
+  form:  function 
+  area: "riemannian geometry "
+  notation: "mi K<br/>mi κ "
+  url: "<https://mathworld.wolfram.com/SectionalCurvature.html><br/><https://en.wikipedia.org/wiki/Sectional_curvature><br/><https://www.encyclopediaofmath.org/index.php/Sectional_curvature> "
+ 
+- concept:  sedenion 
+  arity:  0 
+  form:  symbol 
+  area: "abstract algebra "
+  notation: "mi 𝕊 "
+  url: "<https://en.wikipedia.org/wiki/Sedenion><br/><https://ncatlab.org/nlab/show/sedenion> "
+ 
+- concept:  selection 
+  arity:  3 
+  form:  "indexed function"
+  area: "relational algebra "
+  notation: "msub σ mrow $1 $2 $3 /mrow "
+  url: "[https://en.wikipedia.org/wiki/Selection_(relational_algebra)<br/>](https://en.wikipedia.org/wiki/Selection_(relational_algebra)) "
+ 
+- concept:  seminorm 
+  arity:  1 
+  form:  fenced 
+  area: "linear algebra "
+  notation: "mo ‖ $1 ‖<br/>mo | $1 "
+  url:  "<https://mathworld.wolfram.com/Seminorm.html><br/><https://en.wikipedia.org/wiki/Norm_(mathematics)>"
+  alias:  pseudonorm 
+
+- concept:  set-of-invertible-maps 
+  arity:  1 
+  form:  prefix 
+  area: "commutative algebra "
+  notation: "mo ! "
+  url: "[https://arxiv.org/abs/2009.015866](https://arxiv.org/abs/2009.015866) "
+ 
+- concept:  shannon-entropy 
+  arity:  0 
+  form:  symbol 
+  area: "information theory "
+  notation: "mi H "
+  url: "<https://mathworld.wolfram.com/ShannonEntropy.html><br/><https://en.wikipedia.org/wiki/Entropy_(information_theory[)><br/>](https://ncatlab.org/nlab/show/entropy)[https://ncatlab.org/nlab/show/entro](https://ncatlab.org/nlab/show/entropy)<br/><https://www.encyclopediaofmath.org/index.php/Entropy> "
+  alias:  entropy 
+ 
+- concept:  shift-operator 
+  arity:  1 
+  form:  oeprator 
+  area: "functional analysis "
+  notation: "msup T t "
+  url: "<https://mathworld.wolfram.com/ShiftOperator.html><br/><https://en.wikipedia.org/wiki/Shift_operator><br/><https://www.encyclopediaofmath.org/index.php/Shift_operator> "
+  alias: " translation-operator, lag-operator "
+ 
+- concept:  shimura-variety 
+  arity:  1 
+  form:  function 
+  area: "algebraic geometry "
+  notation: "mi Sh "
+  url: "<https://en.wikipedia.org/wiki/Shimura_variety><br/><https://ncatlab.org/nlab/show/Shimura+variety><br/><https://www.encyclopediaofmath.org/index.php/Shimura_variety> "
+ 
+- concept:  short-exact-sequence 
+  arity:  3 
+  form:  mixfix 
+  area: "group theory "
+  notation: "mrow 0 →$1 → $2 → $3 → 0 "
+  url: "[https://mathworld.wolfram.com/ShortExactSequence.html<br/>](https://mathworld.wolfram.com/ShortExactSequence.html)[https://en.wikipedia.org/wiki/Exact_sequence](https://en.wikipedia.org/wiki/Exact_sequence) "
+ 
+- concept:  short-rate 
+  arity:  0 
+  form:  symbol 
+  area: "mathematical finance "
+  notation: "msub r t "
+  url: "<https://en.wikipedia.org/wiki/Short_rate><br/><https://en.wikipedia.org/wiki/Short-rate_model><br/><https://en.wikipedia.org/wiki/Kalotay%E2%80%93Williams%E2%80%93Fabozzi_model><br/><https://en.wikipedia.org/wiki/Longstaff%E2%80%93Schwartz_model> "
+ 
+- concept:  sidon-sequence 
+  arity:  0 
+  form:  symbol 
+  area: " combinatorics "
+  notation: "mi A "
+  url: "<https://mathworld.wolfram.com/SidonSequence.html><br/><https://en.wikipedia.org/wiki/Sidon_sequence> "
+  alias:  sidon-set 
+ 
+- concept:  sign-function 
+  arity:  1 
+  form:  function 
+  area: " special-functions "
+  notation: "mi sgn "
+  url: "[https://en.wikipedia.org/wiki/Sign_function](https://en.wikipedia.org/wiki/Sign_function) "
+  alias:  signum-function 
