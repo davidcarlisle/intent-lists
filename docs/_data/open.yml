@@ -1027,10 +1027,10 @@
   arity:  8 
   form:  fenced 
   area:  special functions 
-  notation: "mrow ( $1 $2 $3 $4 \"
-  url:  $5 $6 $7 $8 )<br/>mrow ⟨ $1 $2 $3 $4 \
-  alias:  $5 $6 $7 $8 ⟩ 
- <https://mathworld.wolfram.com/Clebsch-GordanCoefficient.html><br/><https://en.wikipedia.org/wiki/Clebsch%E2%80%93Gordan_coefficients><br/><https://dlmf.nist.gov/34.1#p4><br/><https://ncatlab.org/nlab/show/Clebsch-Gordan+coefficient> |  | 
+  notation: "mrow ( $1 $2 $3 $4 | $5 $6 $7 $8 )<br/>mrow ⟨ $1 $2 $3 $4 |  $5 $6 $7 $8 ⟩"
+  url:  "<https://mathworld.wolfram.com/Clebsch-GordanCoefficient.html><br/><https://en.wikipedia.org/wiki/Clebsch%E2%80%93Gordan_coefficients><br/><https://dlmf.nist.gov/34.1#p4><br/><https://ncatlab.org/nlab/show/Clebsch-Gordan+coefficient>"
+  alias: 
+ 
 - concept:  clifford-algebra 
   arity:  1 
   form:  function 
