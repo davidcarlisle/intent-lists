@@ -3504,7 +3504,7 @@
  
 - concept:  interior-product 
   arity:  1 
-  form:  infix<br/>"indexed function"
+  form:  "infix<br/>indexed function"
   area: "differential forms "
   notation: "mo ⨼<br/>msub ι $1 "
   url: "<https://mathworld.wolfram.com/InteriorProduct.html><br/><https://en.wikipedia.org/wiki/Interior_product> "
