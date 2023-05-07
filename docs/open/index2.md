@@ -41,19 +41,27 @@ concept terms and so has many entries that do not require custom speech rules.
 <td>{{c.form}}</td>
 <td>{{c.area}}</td>
 <td>{{c.notation}}</td>
-{%- if c.url -%}
-<td>{{c.url}}</td>
-{%-endif -%}
+<td>
 {%- if c.urls -%}
-<td
->{% for u in c.urls %}
+{% for u in c.urls %}
 <a href="{{u}}">{{u}}</a><br/>
 {% endfor %}
-</td>
 {%-endif -%}
+</td>
+<td>{{c.alias}}</td>
 </tr>
 
 {%- endfor -%}
 
 </tbody>
 </table>
+
+
+----
+
+### Sources
+
+Additional contributions are welcome.
+
+
+[open.yml](https://github.com/mathml-refresh/intent-lists/blob/main/docs/_data/open.yml)
