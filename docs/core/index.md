@@ -29,37 +29,43 @@ controlled by the context, or by system option settings such as "Verbosity".
 
 ----
 
+<style>
+p.langs {margin:1em; padding:1em;background-color: #EEE}
+tr:target >td:first-child {border-left:solid thick black}
+span.cb {margin-right: 2em; white-space:nowrap}
+</style>
+
+<style id="langcss">
+{%- for language in site.data.languages -%}
+  {%- assign lang = language.language-code -%}
+  {%- if lang != "en" %}{{comma}}{%- assign comma = ", " -%}  *.{{lang}} {%- endif -%}
+{%- endfor -%}
+ {display:none}
+</style>
+
 ## Core List
 
-<div class="language-switch">
-  <select id="LangSelect" multiple>
-     <!-- Loop over languages in _data/languages.yml -->
-	 {%- assign v = 4 -%}
-    {%- for language in site.data.languages -%}
-        {% assign lang = language.language-code %}
-		{%- assign v = v | plus: 1 -%}
-        <option
-	  {% if lang == "en" %}
-          selected
-          {% endif %}
-          value="{{lang}}">
-		    {{lang}}: {{language.label-regional}} 
-            {% if lang != "en" %}({{language.label-english}}){% endif %}
-        </option>
-    {%- endfor -%}
-  </select>
-</div>
+### language choice
 
-
-
-<style a="2" id="langcss">
-	 {%- assign v = 4 -%}
-    {%- for language in site.data.languages -%}
-        {% assign lang = language.language-code %}
-		{%- assign v = v | plus: 1 -%}
-	  {%- if lang != "en" -%}  *.{{lang}} {display:none} {%- endif -%}
-	  {%- endfor -%}
-</style>
+<details>
+<summary>Available Languages</summary>
+<p id="langchoice" class="langs">
+<!-- Loop over languages in _data/languages.yml -->
+{%- for language in site.data.languages -%}
+{% assign lang = language.language-code %}
+<span class="cb">
+ <input
+	onchange="updatelang(this)"
+	type="checkbox"
+	{% if lang == "en" %} checked {% endif %}
+      id="cb-{{lang}}"
+      name="language"
+      value="{{lang}}" />
+	  <label for="cb-{{lang}}">{{lang}}: {{language.label-regional}} 
+            {%- if lang != "en" %}({{language.label-english}}){% endif %}</label></span>
+{% endfor %}
+</p>
+</details>
 
 
 <table>
@@ -126,20 +132,29 @@ controlled by the context, or by system option settings such as "Verbosity".
 
 ----
 
+# Sources
+
+Additional language contributions are welcome.
+
+Languages can be listed by extending the YAML file  
+[languages.yml](https://github.com/mathml-refresh/intent-lists/blob/main/docs/_data/languages.yml)
+
+Any concept that does not have a speech template in the specifed language will show the English text.
+Localised texts can be added to the YAML file  
+[core.yml](https://github.com/mathml-refresh/intent-lists/blob/main/docs/_data/core.yml)
 
 
 <script>
-      var LangSelect = document.getElementById('LangSelect');
-      var LangCss = document.getElementById('langcss');
-      LangSelect.onchange = (event) => {
-	 LangCss.textContent='';
-     for (var i=0, iLen=LangSelect.options.length; i<iLen; i++) {
-    opt = LangSelect.options[i];
-    if (opt.selected) {
-    } else {
-	LangCss.textContent= LangCss.textContent + "*." + opt.value + " {display:none}";
+var LangCss = document.getElementById('langcss');
+var langcb=document.getElementById('langchoice').getElementsByTagName('input');
+function updatelang (e) {
+  LangCss.textContent='';
+  for (var i=0, iLen=langcb.length; i<iLen; i++) {
+    opt = langcb[i];
+    if (!(opt.checked)) {
+      LangCss.textContent= LangCss.textContent + "*." + opt.value + " {display:none}";
     }
-     }
- }
+  }
+}
 </script>
 

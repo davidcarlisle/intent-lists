@@ -31,37 +31,35 @@ controlled by the context, or by system option settings such as "Verbosity".
 
 ## Core List
 
-### language choice
-
-<p  id="langchoice" class="language-switch">
+<div class="language-switch">
+  <select id="LangSelect" multiple>
      <!-- Loop over languages in _data/languages.yml -->
+	 {%- assign v = 4 -%}
     {%- for language in site.data.languages -%}
         {% assign lang = language.language-code %}
-	<span class="cb">
-	 <input
-	  onchange="updatelang(this)"
-      type="checkbox"
-	  	  {% if lang == "en" %} checked {% endif %}
-      id="cb-{{lang}}"
-      name="language"
-      value="{{lang}}" />
-	  <label for="cb-{{lang}}">{{lang}}: {{language.label-regional}} 
-            {%- if lang != "en" %}({{language.label-english}}){% endif %}</label></span>
+		{%- assign v = v | plus: 1 -%}
+        <option
+	  {% if lang == "en" %}
+          selected
+          {% endif %}
+          value="{{lang}}">
+		    {{lang}}: {{language.label-regional}} 
+            {% if lang != "en" %}({{language.label-english}}){% endif %}
+        </option>
     {%- endfor -%}
-</p>
+  </select>
+</div>
 
-<style>
-tr:target >td:first-child {border-left:solid thick black}
-span.cb {margin-right: 2em; white-space:nowrap}
+
+
+<style a="2" id="langcss">
+	 {%- assign v = 4 -%}
+    {%- for language in site.data.languages -%}
+        {% assign lang = language.language-code %}
+		{%- assign v = v | plus: 1 -%}
+	  {%- if lang != "en" -%}  *.{{lang}} {display:none} {%- endif -%}
+	  {%- endfor -%}
 </style>
-
-<style id="langcss">
-{%- for language in site.data.languages -%}
-  {%- assign lang = language.language-code -%}
-  {%- if lang != "en" %}{{comma}}{%- assign comma = ", " -%}  *.{{lang}} {%- endif -%}
-{%- endfor -%}
- {display:none}
- </style>
 
 
 <table>
@@ -131,16 +129,17 @@ span.cb {margin-right: 2em; white-space:nowrap}
 
 
 <script>
-var LangCss = document.getElementById('langcss');
-var langcb=document.getElementById('langchoice').getElementsByTagName('input');
-function updatelang (e) {
-  LangCss.textContent='';
-  for (var i=0, iLen=langcb.length; i<iLen; i++) {
-    opt = langcb[i];
-    if (!(opt.checked)) {
-      LangCss.textContent= LangCss.textContent + "*." + opt.value + " {display:none}";
+      var LangSelect = document.getElementById('LangSelect');
+      var LangCss = document.getElementById('langcss');
+      LangSelect.onchange = (event) => {
+	 LangCss.textContent='';
+     for (var i=0, iLen=LangSelect.options.length; i<iLen; i++) {
+    opt = LangSelect.options[i];
+    if (opt.selected) {
+    } else {
+	LangCss.textContent= LangCss.textContent + "*." + opt.value + " {display:none}";
     }
-  }
-}
+     }
+ }
 </script>
 
