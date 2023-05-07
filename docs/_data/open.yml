@@ -9259,7 +9259,7 @@
   form:  unit
   area: "geometry"
   notation: "mi cyc<br/>mi rev<br/>mi tr<br/>mi pla"
-  urls:<br/>[https://en.wikipedia.org/wiki/Turn_(geometry)]
+  urls:
    - "https://en.wikipedia.org/wiki/Turn_(geometry)"
   alias: "cycle, revolution, plenus angulus"
 
