@@ -747,10 +747,10 @@
   arity:  1 
   form:  many 
   area:  set theory 
-  notation: "mrow \"
-  url:  $1 \
-  alias:  mo #<br/>mi card<br/>mi n 
- <https://mathworld.wolfram.com/Cardinality.html><br/><https://en.wikipedia.org/wiki/Cardinality><br/>[https://www.encyclopediaofmath.org/index.php/Cardinality](https://www.encyclopediaofmath.org/index.php/Cardinality) | size | 
+  notation: "mrow | mo #<br/>mi card<br/>mi n"
+  url:  "<https://mathworld.wolfram.com/Cardinality.html><br/><https://en.wikipedia.org/wiki/Cardinality><br/>[https://www.encyclopediaofmath.org/index.php/Cardinality](https://www.encyclopediaofmath.org/index.php/Cardinality)"
+  alias: size
+ 
 - concept:  carmichael-function 
   arity:  1 
   form:  function 
