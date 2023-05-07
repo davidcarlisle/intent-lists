@@ -31,7 +31,9 @@ concept terms and so has many entries that do not require custom speech rules.
 <th>Alias</tr>
 </thead>
 <tbody>
+
 {%- for c in site.data.open -%}
+
 <tr id="{{c.concept}}{{c.arity}}{{c.form}}">
 <td><a href="#{{c.concept}}{{c.arity}}{{c.form}}">{{c.concept}}</a></td>
 <td>{{c.arity}}</td>
@@ -40,6 +42,8 @@ concept terms and so has many entries that do not require custom speech rules.
 <td>{{c.notation}}</td>
 <td>{{c.url}}</td>
 </tr>
+
 {%- endfor -%}
+
 </tbody>
 </table>
