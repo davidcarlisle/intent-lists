@@ -6983,7 +6983,7 @@
   form:  infix 
   area: "category theory "
   notation: "mo ∘ "
-  url: "[https://ncatlab.org/nlab/show/vertical+composition<br/>](https://ncatlab.org/nlab/show/vertical+composition)[https://proofwiki.org/wiki/Definition: "Vertical_Composition_of_Natural_Transformations](https://proofwiki.org/wiki/Definition:Vertical_Composition_of_Natural_Transformations)"
+  url: "[https://ncatlab.org/nlab/show/vertical+composition<br/>](https://ncatlab.org/nlab/show/vertical+composition)[https://proofwiki.org/wiki/Definition: Vertical_Composition_of_Natural_Transformations](https://proofwiki.org/wiki/Definition:Vertical_Composition_of_Natural_Transformations)"
  
 - concept:  volterra-integral 
   arity:  1 
