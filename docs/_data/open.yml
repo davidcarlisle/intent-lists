@@ -1275,18 +1275,18 @@
   arity:  2 
   form:  mixfix 
   area:  probability theory 
-  notation: "mrow E ( $1 \"
-  url:  $2 ) 
-  alias: "<https://en.wikipedia.org/wiki/Conditional_expectation><br/><https://ncatlab.org/nlab/show/conditional+expectation> "
-  | 
+  notation: "mrow E ( $1 | $2 )"
+  url: "<https://en.wikipedia.org/wiki/Conditional_expectation><br/><https://ncatlab.org/nlab/show/conditional+expectation> " 
+  alias: 
+ 
 - concept:  conditional-probability 
   arity:  2 
   form:  mixfix 
   area:  probability theory 
-  notation: "mrow P ( $1 \"
-  url:  $2 ) 
-  alias: "[https://mathworld.wolfram.com/ConditionalProbability.html](https://mathworld.wolfram.com/ConditionalProbability.html)<br/><https://en.wikipedia.org/wiki/Conditional_probability><br/><https://www.encyclopediaofmath.org/index.php/Conditional_probability> "
-  | 
+  notation: "mrow P ( $1 | $2 )"
+  url:  "[https://mathworld.wolfram.com/ConditionalProbability.html](https://mathworld.wolfram.com/ConditionalProbability.html)<br/><https://en.wikipedia.org/wiki/Conditional_probability><br/><https://www.encyclopediaofmath.org/index.php/Conditional_probability> "
+  alias: 
+  
 - concept:  conductor 
   arity:  1 
   form:  function 
@@ -1307,10 +1307,10 @@
   arity:  2 
   form:  mixfix 
   area:  statistics 
-  notation: "D ( $1 \"
-  url: "\"
-  alias:  $2 ) 
- [https://en.wikipedia.org/wiki/Divergence_(statistics)](https://en.wikipedia.org/wiki/Divergence_(statistics)) | divergence | 
+  notation: "D ( $1 | $2)"
+  url: "[https://en.wikipedia.org/wiki/Divergence_(statistics)](https://en.wikipedia.org/wiki/Divergence_(statistics)) "
+  alias: divergence  
+ 
 - concept:  configuration 
   arity:  4 
   form:  mixfix 
@@ -2027,10 +2027,10 @@
   arity:  2 
   form:  fenced 
   area:  geometry 
-  notation: ""\""
-  url: $1 $2\
+  notation: "|$1 $2|"
+  url: "[https://en.wikipedia.org/wiki/Distance<br/>](https://en.wikipedia.org/wiki/Distance)"
   alias:  
- [https://en.wikipedia.org/wiki/Distance<br/>](https://en.wikipedia.org/wiki/Distance) |  | 
+ 
 - concept:  diverge 
   arity:  1 
   form:  postfix 
@@ -2059,10 +2059,11 @@
   arity:  2 
   form:  infix 
   area:  number theory 
-  notation: "$1 \"
-  url:  $2<br/>$2 ⋮ $1<br/>$2 / $1 
-  alias: "<https://youtu.be/9dyK_op-Ocw?t=251><br/><https://en.wikipedia.org/wiki/Divisor><br/><br/><https://ru.wikipedia.org/wiki/%D0%94%D0%B5%D0%BB%D0%B8%D0%BC%D0%BE%D1%81%D1%82%D1%8C><br/><https://ru.wikipedia.org/wiki/%D0%94%D0%B5%D0%BB%D0%B8%D0%BC%D0%BE%D1%81%D1%82%D1%8C><br/><https://youtu.be/a3wyG2mkmxc?t=32> "
- divides | 
+  notation: "$1 | $2<br/>$2 ⋮ $1<br/>$2 / $1 "
+  url: "<https://youtu.be/9dyK_op-Ocw?t=251><br/><https://en.wikipedia.org/wiki/Divisor><br/><br/><https://ru.wikipedia.org/wiki/%D0%94%D0%B5%D0%BB%D0%B8%D0%BC%D0%BE%D1%81%D1%82%D1%8C><br/><https://ru.wikipedia.org/wiki/%D0%94%D0%B5%D0%BB%D0%B8%D0%BC%D0%BE%D1%81%D1%82%D1%8C><br/><https://youtu.be/a3wyG2mkmxc?t=32> " 
+  alias: divides
+  
+ 
 - concept:  divisor-function 
   arity:  1 
   form:  indexed 
@@ -2859,10 +2860,10 @@
   arity:  1 
   form:  indexed fenced 
   area:  linear algebra 
-  notation: "msub mrow \"
-  url: "\"
-  alias:  $1 \
-\| /mrow F | [https://mathworld.wolfram.com/FrobeniusNorm.html<br/>](https://mathworld.wolfram.com/FrobeniusNorm.html)[https://www.encyclopediaofmath.org/index.php/Frobenius_matrix_norm](https://www.encyclopediaofmath.org/index.php/Frobenius_matrix_norm) | <br/>euclidean-norm, frobenius-matrix-norm | 
+  notation: "msub mrow | $1 F"
+  url: "[https://mathworld.wolfram.com/FrobeniusNorm.html<br/>](https://mathworld.wolfram.com/FrobeniusNorm.html)[https://www.encyclopediaofmath.org/index.php/Frobenius_matrix_norm](https://www.encyclopediaofmath.org/index.php/Frobenius_matrix_norm)"
+  alias: " | euclidean-norm, frobenius-matrix-norm "
+
 - concept:  frolicher-nijenhuis-bracket 
   arity:  2 
   form:  fenced 
@@ -3459,10 +3460,10 @@
   arity:  1 
   form:  fenced 
   area:  matrix norms 
-  notation: "msub mrow \"
-  url: "\"
-  alias:  $1 \
-\| /mrow HS | <https://mathworld.wolfram.com/Hilbert-SchmidtNorm.html><br/><https://en.wikipedia.org/wiki/Hilbert%E2%80%93Schmidt_operator> |  | 
+  notation: "msub mrow | $1 | HS"
+  url: " <https://mathworld.wolfram.com/Hilbert-SchmidtNorm.html><br/><https://en.wikipedia.org/wiki/Hilbert%E2%80%93Schmidt_operator>"
+  alias:
+  
 - concept:  hit-or-miss-transform 
   arity:  2 
   form:  infix 
@@ -3611,10 +3612,10 @@
   arity:  1 
   form:  function<br/>fenced 
   area:  multilinear algebra 
-  notation: "mi det<br/>mrow \"
-  url:  $1 \
+  notation: "mi det<br/>mrow | $1 |"
+  url: "<https://mathworld.wolfram.com/Hyperdeterminant.html><br/><https://en.wikipedia.org/wiki/Hyperdeterminant><br/><https://ncatlab.org/nlab/show/hyperdeterminant>"
   alias:  
- <https://mathworld.wolfram.com/Hyperdeterminant.html><br/><https://en.wikipedia.org/wiki/Hyperdeterminant><br/><https://ncatlab.org/nlab/show/hyperdeterminant> |  | 
+
 - concept:  hypertorus 
   arity:  1 
   form:  indexed symbol 
@@ -3763,10 +3764,10 @@
   arity:  2 
   form:  fenced 
   area:  group theory 
-  notation: "mrow [ $1 : $2 ]<br/>mrow ( $1 : $2 )<br/>mrow \"
-  url:  $1 : $2 \
+  notation: "mrow [ $1 : $2 ]<br/>mrow ( $1 : $2 )<br/>mrow |$1 : $2 |"
+  url: "[https://en.wikipedia.org/wiki/Index_of_a_subgroup<br/>](https://en.wikipedia.org/wiki/Index_of_a_subgroup)" 
   alias:  
- [https://en.wikipedia.org/wiki/Index_of_a_subgroup<br/>](https://en.wikipedia.org/wiki/Index_of_a_subgroup) |  | 
+ 
 - concept:  index-of-lie-algebra 
   arity:  1 
   form:  function 
@@ -3987,10 +3988,10 @@
   arity:  2 
   form:  mixfix 
   area:  number theory 
-  notation: "mrow ( $1 \"
-  url:  $2 ) 
-  alias: "<https://mathworld.wolfram.com/JacobiSymbol.html><br/><https://en.wikipedia.org/wiki/Jacobi_symbol><br/><https://dlmf.nist.gov/27.9#p3><br/><https://www.encyclopediaofmath.org/index.php/Jacobi_symbol> "
-  | 
+  notation: "mrow ( $1 | $2 ) "
+  url:  "<https://mathworld.wolfram.com/JacobiSymbol.html><br/><https://en.wikipedia.org/wiki/Jacobi_symbol><br/><https://dlmf.nist.gov/27.9#p3><br/><https://www.encyclopediaofmath.org/index.php/Jacobi_symbol> "
+  alias: 
+
 - concept:  jacobi-theta-function 
   arity:  1 
   form:  function 
@@ -4003,10 +4004,10 @@
   arity:  2 
   form:  function 
   area:  special-functions 
-  notation: "mrow Z⁡ ( $1 \"
-  url:  $2 ) 
-  alias: "<https://mathworld.wolfram.com/JacobiZetaFunction.html><br/><https://en.wikipedia.org/wiki/Jacobi_zeta_function><br/>[https://dlmf.nist.gov/22.16#iii](https://dlmf.nist.gov/22.16#iii)<br/><https://dlmf.nist.gov/22.16#E32> "
-  | 
+  notation: "mrow Z⁡ ( $1 |  $2 )"
+  url:  "<https://mathworld.wolfram.com/JacobiZetaFunction.html><br/><https://en.wikipedia.org/wiki/Jacobi_zeta_function><br/>[https://dlmf.nist.gov/22.16#iii](https://dlmf.nist.gov/22.16#iii)<br/><https://dlmf.nist.gov/22.16#E32> "
+  alias: 
+
 - concept:  jacobian-elliptic-function 
   arity:  1 
   form:  function 
@@ -4259,10 +4260,10 @@
   arity:  2 
   form:  fenced<br/>fenced stacked 
   area:  number theory 
-  notation: "mrow ( $1 \"
-  url:  $2 )<br/>( mfrac $1 $2 ) 
-  alias: "<https://mathworld.wolfram.com/KroneckerSymbol.html><br/><https://en.wikipedia.org/wiki/Kronecker_symbol><br/><https://www.encyclopediaofmath.org/index.php/Kronecker_symbol> "
-  | 
+  notation: "mrow ( $1 | $2 )<br/>( mfrac $1 $2 )"
+  url:  "<https://mathworld.wolfram.com/KroneckerSymbol.html><br/><https://en.wikipedia.org/wiki/Kronecker_symbol><br/><https://www.encyclopediaofmath.org/index.php/Kronecker_symbol> "
+  alias:
+
 - concept:  krull-dimension 
   arity:  1 
   form:  function 
@@ -4443,10 +4444,10 @@
   arity:  2 
   form:  fenced<br/>fenced stacked 
   area:  number theory 
-  notation: "mrow ( $1 \"
-  url:  $2 )<br/>mrow ( mfrac $1 $2 ) 
-  alias: "<https://mathworld.wolfram.com/LegendreSymbol.html><br/><https://en.wikipedia.org/wiki/Legendre_symbol><br/><https://dlmf.nist.gov/27.9> "
-  | 
+  notation: "mrow ( $1 | $2 )<br/>mrow ( mfrac $1 $2 )"
+  url:   "<https://mathworld.wolfram.com/LegendreSymbol.html><br/><https://en.wikipedia.org/wiki/Legendre_symbol><br/><https://dlmf.nist.gov/27.9> "
+  alias:
+
 - concept:  lehmer-mean 
   arity:  1 
   form:  indexed function 
@@ -5235,10 +5236,10 @@
   arity:  1 
   form:  fenced 
   area:  linear algebra 
-  notation: "mrow ‖ $1 ‖<br/>mrow \"
-  url:  $1 \
+  notation: "mrow ‖ $1 ‖<br/>mrow | $1"
+  url:  "<https://mathworld.wolfram.com/Norm.html><br/>[https://en.wikipedia.org/wiki/Norm_(mathematics)](https://en.wikipedia.org/wiki/Norm_(mathematics))<br/><https://en.wikipedia.org/wiki/Norm_(abelian_group)><br/><https://ncatlab.org/nlab/show/norm><br/><https://www.encyclopediaofmath.org/index.php/Norm>"
   alias:  
- <https://mathworld.wolfram.com/Norm.html><br/>[https://en.wikipedia.org/wiki/Norm_(mathematics)](https://en.wikipedia.org/wiki/Norm_(mathematics))<br/><https://en.wikipedia.org/wiki/Norm_(abelian_group)><br/><https://ncatlab.org/nlab/show/norm><br/><https://www.encyclopediaofmath.org/index.php/Norm> |  | 
+ 
 - concept:  normalizer 
   arity:  1 
   form:  function 
@@ -5363,10 +5364,10 @@
   arity:  1 
   form:  function<br/>fenced 
   area:  group theory 
-  notation: "mi ord<br/>mrow \"
-  url:  $1 \
+  notation: "mi ord<br/>mrow | $1"
+  url:  "[https://en.wikipedia.org/wiki/Order_(group_theory)<br/>](https://en.wikipedia.org/wiki/Order_(group_theory))"
   alias:  
- [https://en.wikipedia.org/wiki/Order_(group_theory)<br/>](https://en.wikipedia.org/wiki/Order_(group_theory)) |  | 
+ 
 - concept:  orthocomplement 
   arity:  1 
   form:  msup 
@@ -6219,10 +6220,10 @@
   arity:  2 
   form:  indexed postfix 
   area:  elementary mathematics 
-  notation: "$1 mo msub ↾ $2 /mo<br/>$1 mo msub \"
-  url:  $2 /mo 
-  alias: "<https://en.wikipedia.org/wiki/Restricted_representation><br/><https://en.wikipedia.org/wiki/Restriction_(mathematics)><br/><https://en.wikipedia.org/wiki/Selection_(relational_algebra)><br/><https://ncatlab.org/nlab/show/restriction><br/> "
-  | 
+  notation: "$1 mo msub ↾ $2 /mo<br/>$1 mo msub | $2 /mo "
+  url: "<https://en.wikipedia.org/wiki/Restricted_representation><br/><https://en.wikipedia.org/wiki/Restriction_(mathematics)><br/><https://en.wikipedia.org/wiki/Selection_(relational_algebra)><br/><https://ncatlab.org/nlab/show/restriction>" 
+  alias: 
+  
 - concept:  resultant 
   arity:  1 
   form:  function 
@@ -6523,10 +6524,10 @@
   arity:  1 
   form:  fenced 
   area:  linear algebra 
-  notation: "mo ‖ $1 ‖<br/>mo \"
-  url:  $1 \
-  alias:  
- <https://mathworld.wolfram.com/Seminorm.html><br/><https://en.wikipedia.org/wiki/Norm_(mathematics)> | pseudonorm | 
+  notation: "mo ‖ $1 ‖<br/>mo | $1 "
+  url:  "<https://mathworld.wolfram.com/Seminorm.html><br/><https://en.wikipedia.org/wiki/Norm_(mathematics)>"
+  alias:  pseudonorm 
+
 - concept:  set-of-invertible-maps 
   arity:  1 
   form:  prefix 
@@ -6883,10 +6884,10 @@
   arity:  0 
   form:  constant 
   area:  combinatorial game theory 
-  notation: "mo ∗<br/>mrow { 0 \"
-  url:  0 } 
-  alias: "[https://en.wikipedia.org/wiki/Star_(game_theory)<br/>](https://en.wikipedia.org/wiki/Star_(game_theory)) "
-  | 
+  notation: "mo ∗<br/>mrow { 0 | 0 } "
+  url:  "[https://en.wikipedia.org/wiki/Star_(game_theory)<br/>](https://en.wikipedia.org/wiki/Star_(game_theory)) "
+  alias: 
+ 
 - concept:  star-height 
   arity:  1 
   form:  function 
@@ -7027,10 +7028,10 @@
   arity:  2 
   form:  infix 
   area:  set theory 
-  notation: "$1 \"
-  url:  $2<br/>$1 : $2 
-  alias: "[https://en.wikipedia.org/wiki/Set_(mathematics)#Set-builder_notation](https://en.wikipedia.org/wiki/Set_(mathematics)#Set-builder_notation)<br/><br/> "
-  | 
+  notation: "$1 | $2<br/>$1 : $2 "
+  url:  "[https://en.wikipedia.org/wiki/Set_(mathematics)#Set-builder_notation](https://en.wikipedia.org/wiki/Set_(mathematics)#Set-builder_notation)"
+  alias: 
+ 
 - concept:  sumset 
   arity:  2 
   form:  infix 
@@ -7355,10 +7356,10 @@
   arity:  1 
   form:  fenced 
   area:  measure theory 
-  notation: "mrow \"
-  url:  $1 \
+  notation: "mrow |$1 |"
+  url:  "<https://mathworld.wolfram.com/TotalVariation.html><br/><https://en.wikipedia.org/wiki/Total_variation><br/><https://dlmf.nist.gov/1.4#E33>"
   alias:  
- <https://mathworld.wolfram.com/TotalVariation.html><br/><https://en.wikipedia.org/wiki/Total_variation><br/><https://dlmf.nist.gov/1.4#E33> |  | 
+ 
 - concept:  trace 
   arity:  1 
   form:  function 
