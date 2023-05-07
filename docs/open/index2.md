@@ -46,7 +46,7 @@ concept terms and so has many entries that do not require custom speech rules.
 {%-endif -%}
 {%- if c.urls -%}
 <td
->{% for u un c.urls %}
+>{% for u in c.urls %}
 <a href="{{u}}">{{u}}</a><br/>
 {% endfor %}
 </td>
