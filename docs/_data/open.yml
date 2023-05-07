@@ -2620,7 +2620,7 @@
   arity:  1 
   form:  menclose 
   area:  quantum field theory 
-  notation: "menclose notation="updiagonalstrike" $1 "
+  notation: "menclose notation=updiagonalstrike $1 "
   url: "[https://en.wikipedia.org/wiki/Feynman_slash_notation](https://en.wikipedia.org/wiki/Feynman_slash_notation) "
   alias:   
  
@@ -4276,7 +4276,7 @@
   arity:  1 
   form:  embellished infix 
   area:  differential geometry 
-  notation: "mo ∧ /mo mspace="negative..."/mspace mo ◯ /mo "
+  notation: "mo ∧ /mo mspace=negative.../mspace mo ◯ /mo "
   url: "[https://en.wikipedia.org/wiki/Kulkarni%E2%80%93Nomizu_product](https://en.wikipedia.org/wiki/Kulkarni%E2%80%93Nomizu_product) "
   alias:   
  
