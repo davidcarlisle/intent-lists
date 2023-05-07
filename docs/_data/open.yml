@@ -3188,3 +3188,1635 @@
   area: "graph theory "
   notation: "mo ⋉ "
   url: "[https://en.wikipedia.org/wiki/Graph_product](https://en.wikipedia.org/wiki/Graph_product) "
+
+# good
+
+ 
+- concept:  homotopy-category 
+  arity:  1 
+  form:  function 
+  area: "category theory "
+  notation: "mi Ho "
+  url: "[https://ncatlab.org/nlab/show/homotopy+category](https://ncatlab.org/nlab/show/homotopy+category) "
+ 
+- concept:  horsepower-mechanical 
+  arity:  1 
+  form:  unit 
+  area: "imperial unit "
+  notation: "mi hp "
+  url: "[https://en.wikipedia.org/wiki/Horsepower<br/><br/><br/>](https://en.wikipedia.org/wiki/Horsepower) "
+  alias:  horsepower 
+ 
+- concept:  horsepower-metric 
+  arity:  1 
+  form:  unit 
+  area: "metric unit "
+  notation: "mi PS<br/>mi cv<br/>mi hk<br/>mi pk<br/>mi ks<br/>mi ch "
+  url: "<https://en.wikipedia.org/wiki/Metric_horsepower> "
+  alias:  horsepower 
+ 
+- concept:  hurwitz-zeta-function 
+  arity:  1 
+  form:  function 
+  area: "special functions "
+  notation: "mi ζ "
+  url: "<https://mathworld.wolfram.com/HurwitzZetaFunction.html><br/><https://en.wikipedia.org/wiki/Hurwitz_zeta_function><br/><https://dlmf.nist.gov/25.11><br/><https://dlmf.nist.gov/25.11#E1> "
+ 
+- concept:  hvat 
+  arity:  1 
+  form:  unit 
+  area: "customary units "
+  notation: "mi hvat "
+  url: "<https://en.wikipedia.org/wiki/Kubni_hvat><br/><https://en.wikipedia.org/wiki/%C4%8Cetvorni_hvat><br/><https://en.wikipedia.org/wiki/Hvat><br/><https://en.wikipedia.org/wiki/Kvadratni_hvat> "
+ 
+- concept:  hydrated-compound 
+  arity:  2 
+  form:  infix 
+  area: " chemistry "
+  notation: "mo ⋅<br/>mo • "
+  url: "[https://en.wikipedia.org/wiki/Hydrate<br/>](https://en.wikipedia.org/wiki/Hydrate)[https://en.wikipedia.org/wiki/Cobalt(II)_chloride<br/>](https://en.wikipedia.org/wiki/Cobalt(II)_chloride)[https://www.youtube.com/watch?v=PV_3WBTDyJc](https://www.youtube.com/watch?v=PV_3WBTDyJc) "
+ 
+- concept:  hyperbolic-cosine-integral 
+  arity:  1 
+  form:  function 
+  area: "special functions "
+  notation: "mi Chi "
+  url: "[https://mathworld.wolfram.com/HyperbolicCosineIntegral.html](https://mathworld.wolfram.com/HyperbolicCosineIntegral.html)<br/><https://dlmf.nist.gov/6.2#E16><br/> "
+ 
+- concept:  hyperbolic-plane 
+  arity:  0 
+  form:  symbol 
+  area: " non-euclidean geometry "
+  notation: "msup ℍ 2 "
+  url: "<https://mathworld.wolfram.com/HyperbolicPlane.html><br/><https://ncatlab.org/nlab/show/hyperbolic+plane> "
+ 
+- concept:  hyperbolic-sine-integral 
+  arity:  1 
+  form:  function 
+  area: "special functions "
+  notation: "mi Shi "
+  url: "<https://mathworld.wolfram.com/HyperbolicSineIntegral.html><br/><https://dlmf.nist.gov/6.2#E15><br/> "
+ 
+- concept:  hyperbolic-space 
+  arity:  0 
+  form:  symbol 
+  area: " non-euclidean geometry "
+  notation: "msupH$1 "
+  url: "<https://mathworld.wolfram.com/HyperbolicSpace.html><br/><https://en.wikipedia.org/wiki/Hyperbolic_space> "
+ 
+- concept:  hyperbolic-umbilic-canonical-integral-function 
+  arity:  1 
+  form:  function 
+  area: "special functions "
+  notation: "mrow Ψ sup (E) "
+  url: "<https://dlmf.nist.gov/36.2#E11><br/><https://dlmf.nist.gov/36.3#i><br/><https://dlmf.nist.gov/36.3#ii> "
+ 
+- concept:  hyperdeterminant 
+  arity:  1 
+  form:  "function<br/>fenced"
+  area: "multilinear algebra "
+  notation: "mi det<br/>mrow | $1 |"
+  url: "<https://mathworld.wolfram.com/Hyperdeterminant.html><br/><https://en.wikipedia.org/wiki/Hyperdeterminant><br/><https://ncatlab.org/nlab/show/hyperdeterminant>"
+
+- concept:  hypertorus 
+  arity:  1 
+  form:  "indexed symbol" 
+  area: " topology "
+  notation: "msupT$1 "
+  url: "[https://en.wikipedia.org/wiki/Torus$n-dimensional_torus](https://en.wikipedia.org/wiki/Torus#n-dimensional_torus)s "
+  alias: " n-torus, n-dimensional-torus "
+ 
+- concept:  identity-element 
+  arity:  0 
+  form:  symbol 
+  area: "group theory "
+  notation: "mi e<br/>mi I<br/>mi E<br/>mn 1 "
+  url: "<https://mathworld.wolfram.com/IdentityElement.html><br/><https://en.wikipedia.org/wiki/Identity_element><br/><https://ncatlab.org/nlab/show/identity+element> "
+  alias: " identity, two-sided-identity "
+ 
+- concept:  identity-function 
+  arity:  1 
+  form:  function 
+  area: " algebra "
+  notation: "mi id<br/>msub id $1<br/>msub I $1 "
+  url: "<https://mathworld.wolfram.com/IdentityFunction.html><br/><https://en.wikipedia.org/wiki/Identity_function><br/><https://ncatlab.org/nlab/show/identity+function><br/> "
+  alias: " identity-map, identity-relation, identity-transformation "
+ 
+- concept:  identity-functor 
+  arity:  1 
+  form:  function 
+  area: "category theory "
+  notation: "msub 1 $1<br/>msubI$1<br/>msub Id $1 "
+  url: "[https://ncatlab.org/nlab/show/identity+functor<br/>](https://ncatlab.org/nlab/show/identity+functor)[https://en.wikipedia.org/wiki/Functor](https://en.wikipedia.org/wiki/Functor) "
+ 
+- concept:  identity-matrix 
+  arity:  0 
+  form:  symbol 
+  area: "linear algebra "
+  notation: "mi I "
+  url: "<https://mathworld.wolfram.com/IdentityMatrix.html><br/><https://en.wikipedia.org/wiki/Identity_matrix> "
+  alias:  unit-matrix 
+ 
+- concept:  image 
+  arity:  2 
+  form:  mixfix 
+  area: "set theory "
+  notation: "$1 [ $2 ]<br/>msub $1 *<br/>msup $1 →<br/>$1 '' $2 "
+  url: "<https://mathworld.wolfram.com/Image.html><br/><https://en.wikipedia.org/wiki/Image_(mathematics)><br/><https://en.wikipedia.org/wiki/Range_(mathematics)><br/><https://en.wikipedia.org/wiki/Image_(category_theory)><br/><https://en.wikipedia.org/wiki/Image><br/><https://ncatlab.org/nlab/show/image> "
+ 
+- concept:  incenter 
+  arity:  0 
+  form:  symbol 
+  area: " geometry "
+  notation: "mi I "
+  url: "<https://mathworld.wolfram.com/Incenter.html><br/>[https://en.wikipedia.org/wiki/Incircle_and_excircles_of_a_triangle](https://en.wikipedia.org/wiki/Incircle_and_excircles_of_a_triangle)<br/><https://en.wikipedia.org/wiki/Gergonne_point><br/><https://en.wikipedia.org/wiki/Incentre> "
+ 
+- concept:  incidence-relation 
+  arity:  2 
+  form:  infix 
+  area: "projective geometry "
+  notation: "mi I "
+  url: "[https://en.wikipedia.org/wiki/Incidence_(geometry)](https://en.wikipedia.org/wiki/Incidence_(geometry))<br/><https://en.wikipedia.org/wiki/Incidence_(epidemiology)><br/><https://www.encyclopediaofmath.org/index.php/Incidence> "
+ 
+- concept:  incidence-structure 
+  arity:  3 
+  form:  fenced 
+  area: "incidence geometry "
+  notation: "mrow ( $1, $2, $3 ) "
+  url: "[https://en.wikipedia.org/wiki/Incidence_structure<br/>](https://en.wikipedia.org/wiki/Incidence_structure) "
+ 
+- concept:  inclusion-map 
+  arity:  1 
+  form:  function 
+  area: "set theory "
+  notation: "mi ι "
+  url: "[https://en.wikipedia.org/wiki/Inclusion_map](https://en.wikipedia.org/wiki/Inclusion_map) "
+  alias: " inclusion-function, insertion, canonical-injection "
+ 
+- concept:  incomparability 
+  arity:  2 
+  form:  infix 
+  area: "order theory "
+  notation: "menclose notation='updiagonalstrike' munderover = > < "
+  url: "[https://en.wikipedia.org/wiki/Comparability](https://en.wikipedia.org/wiki/Comparability) "
+  alias:  incomparable 
+ 
+- concept:  incomplete-beta-function 
+  arity:  1 
+  form:  function 
+  area: "special functions "
+  notation: "mi B "
+  url: "<https://mathworld.wolfram.com/IncompleteBetaFunction.html><br/><https://dlmf.nist.gov/8.17><br/><https://dlmf.nist.gov/8.17#E1><br/><https://dlmf.nist.gov/8.17#E2> "
+ 
+- concept:  incomplete-elliptic-integral-of-the-first-kind 
+  arity:  1 
+  form:  function 
+  area: "elliptic functions "
+  notation: "mi F "
+  url: "<https://mathworld.wolfram.com/EllipticIntegral.html><br/><https://en.wikipedia.org/wiki/Elliptic_integral><br/><https://www.encyclopediaofmath.org/index.php/Elliptic_integral> "
+ 
+- concept:  incomplete-elliptic-integral-of-the-second-kind 
+  arity:  1 
+  form:  function 
+  area: "elliptic functions "
+  notation: "mi E "
+  url: "<https://mathworld.wolfram.com/EllipticIntegral.html><br/>[https://en.wikipedia.org/wiki/Elliptic_integral](https://en.wikipedia.org/wiki/Elliptic_integral)<br/><https://www.encyclopediaofmath.org/index.php/Elliptic_integral> "
+ 
+- concept:  incomplete-gamma-function 
+  arity:  1 
+  form:  function 
+  area: "special functions "
+  notation: "mi Γ "
+  url: "<https://mathworld.wolfram.com/IncompleteGammaFunction.html><br/><https://en.wikipedia.org/wiki/Incomplete_gamma_function><br/><https://en.wikipedia.org/wiki/Regularized_Gamma_function><br/><https://dlmf.nist.gov/8#PT2><br/><https://dlmf.nist.gov/8.2#E2><br/><https://dlmf.nist.gov/8.2#E1><br/><https://dlmf.nist.gov/8.2#E6> "
+ 
+- concept:  increase 
+  arity:  1 
+  form:  postfix 
+  area: " physics "
+  notation: "mo ↑ "
+  url: "[https://youtu.be/HZ7a9YkF204?t=4606](https://youtu.be/HZ7a9YkF204?t=4606) "
+ 
+- concept:  increase-tends-to? 
+  arity:  2 
+  form:  infix 
+  area: " calculus "
+  notation: "mo ↗ "
+  url: "[https://math.stackexchange.com/questions/1886232/what-does-this-notation-mean-limes-from-left-right](https://math.stackexchange.com/questions/1886232/what-does-this-notation-mean-limes-from-left-right)<br/><br/>http://pi.math.cornell.edu/~web6720/MATH%206710%20notes.pdf "
+ 
+- concept:  independent 
+  arity:  2 
+  form:  infix 
+  area: "probability theory "
+  notation: "mo ⟂<br/>mo ⫫ "
+  url: "[https://en.wikipedia.org/wiki/Independence_(probability_theory)](https://en.wikipedia.org/wiki/Independence_(probability_theory))<br/><https://en.wikipedia.org/wiki/Independence_(mathematical_logic)><br/><https://www.encyclopediaofmath.org/index.php/Independence> "
+ 
+- concept:  index-of-subgroup 
+  arity:  2 
+  form:  fenced 
+  area: "group theory "
+  notation: "mrow [ $1 : $2 ]<br/>mrow ( $1 : $2 )<br/>mrow |$1 : $2 |"
+  url: "[https://en.wikipedia.org/wiki/Index_of_a_subgroup<br/>](https://en.wikipedia.org/wiki/Index_of_a_subgroup)" 
+ 
+- concept:  index-of-lie-algebra 
+  arity:  1 
+  form:  function 
+  area: "lie algebra "
+  notation: "mi ind "
+  url: "[https://en.wikipedia.org/wiki/Index_of_a_Lie_algebra](https://en.wikipedia.org/wiki/Index_of_a_Lie_algebra) "
+ 
+- concept:  infimum 
+  arity:  1 
+  form:  "function<br/>largeop"
+  area: "order theory "
+  notation: "mi inf<br/>mo ⋀ "
+  url: "<https://mathworld.wolfram.com/Infimum.html><br/><https://en.wikipedia.org/wiki/Infimum_and_supremum><br/> "
+  alias: " meet, greatest-lower-bound "
+ 
+- concept:  infimum-limit 
+  arity:  1 
+  form:  indexed 
+  area: " limits "
+  notation: "mi lim inf<br/>munder lim ¯ "
+  url: "<https://mathworld.wolfram.com/InfimumLimit.html><br/><https://en.wikipedia.org/wiki/Limit_superior_and_limit_inferior><br/> "
+  alias: " limit-inferior, limit-infimum, liminf, inferior-limit, lower-limit, inner-limit "
+ 
+- concept:  infinite-product 
+  arity:  1 
+  form:  indexed 
+  area: "mathematical analysis "
+  notation: "munderover Π $1∞ "
+  url: "<https://mathworld.wolfram.com/InfiniteProduct.html><br/><https://en.wikipedia.org/wiki/Infinite_product><br/><https://www.encyclopediaofmath.org/index.php/Infinite_product> "
+ 
+- concept:  infinitely-many-concurrently-active-copies 
+  arity:  1 
+  form:  prefix 
+  area: "formal languages "
+  notation: "mo ! "
+  url: "[https://arxiv.org/pdf/0903.3513.pdf](https://arxiv.org/pdf/0903.3513.pdf) "
+ 
+- concept:  injection 
+  arity:  3 
+  form:  mixfix<br/> 
+  area: "set theory "
+  notation: "mrow $1 : $2 ↣ $3 "
+  url: "[https://en.wikipedia.org/wiki/Bijection#Definition](https://en.wikipedia.org/wiki/Bijection#Definition) "
+ 
+- concept:  inner-automorphism-group 
+  arity:  1 
+  form:  function 
+  area: "abstract algebra "
+  notation: "mi Inn "
+  url: "<https://mathworld.wolfram.com/InnerAutomorphism.html><br/><https://en.wikipedia.org/wiki/Inner_automorphism><br/><https://ncatlab.org/nlab/show/inner+automorphism><br/><https://www.encyclopediaofmath.org/index.php/Inner_automorphism> "
+  alias:  inner-automorphism 
+ 
+- concept:  inner-jordan-measure 
+  arity:  1 
+  form:  function 
+  area: "measure theory "
+  notation: "msub m * "
+  url: "<https://mathworld.wolfram.com/JordanMeasure.html><br/><https://en.wikipedia.org/wiki/Jordan_measure><br/><https://www.encyclopediaofmath.org/index.php/Jordan_measure> "
+ 
+- concept:  inner-product 
+  arity:  2 
+  form:  infix<br/>fenced 
+  area: "linear algebra "
+  notation: "mo ⋅<br/>mrow [ $1, $2 ] "
+  url: "<https://mathworld.wolfram.com/InnerProduct.html><br/><https://en.wikipedia.org/wiki/Dot_product><br/><https://en.wikipedia.org/wiki/Inner_product_space><br/><https://www.encyclopediaofmath.org/index.php/Inner_product[><br/>](https://mathoverflow.net/a/366118)[https://mathoverflow.net/a/36611](https://mathoverflow.net/a/366118)8 "
+ 
+- concept:  instantaneous-activity 
+  arity:  2 
+  form:  mixfix 
+  area: " chemistry "
+  notation: "msub mrow { $1 } /mrow $2 "
+  url: "[https://en.wikipedia.org/wiki/Reaction_quotient](https://en.wikipedia.org/wiki/Reaction_quotient) "
+ 
+- concept:  integer-part 
+  arity:  1 
+  form:  "function<br/>fenced"
+  area: "number theory "
+  notation: "mi int<br/>[ $1 ] "
+  url: "[https://mathworld.wolfram.com/IntegerPart.html<br/>](https://mathworld.wolfram.com/IntegerPart.html)[https://en.wikipedia.org/wiki/Floor_and_ceiling_functions](https://en.wikipedia.org/wiki/Floor_and_ceiling_functions) "
+ 
+- concept:  interior 
+  arity:  1 
+  form:  msup 
+  area: " topology "
+  notation: "msup $1 o<br/>msup $1 ∘ "
+  url: "<https://mathworld.wolfram.com/Interior.html><br/><https://en.wikipedia.org/wiki/Interior_(topology)><br/><https://ncatlab.org/nlab/show/interior><br/><https://www.encyclopediaofmath.org/index.php/Interior> "
+ 
+- concept:  interior-product 
+  arity:  1 
+  form:  infix<br/>"indexed function"
+  area: "differential forms "
+  notation: "mo ⨼<br/>msub ι $1 "
+  url: "<https://mathworld.wolfram.com/InteriorProduct.html><br/><https://en.wikipedia.org/wiki/Interior_product> "
+ 
+- concept:  intersection-number 
+  arity:  2 
+  form:  infix 
+  area: "algebraic geometry "
+  notation: "mo ⋅<br/> "
+  url: "[https://en.wikipedia.org/wiki/Intersection_number](https://en.wikipedia.org/wiki/Intersection_number)<br/> "
+ 
+- concept:  inverse-image 
+  arity:  2 
+  form:  mixfix 
+  area: "set theory "
+  notation: "mrow msup $1 -1 /msup [ $2 ] "
+  url: "<https://en.wikipedia.org/wiki/Image_(mathematics)><br/><https://ncatlab.org/nlab/show/inverse+image> "
+  alias:  preimage 
+ 
+- concept:  inverse-limit 
+  arity:  1 
+  form:  prefix 
+  area: "category theory "
+  notation: "munder lim ← "
+  url: "<https://mathworld.wolfram.com/InverseLimit.html><br/><https://en.wikipedia.org/wiki/Inverse_limit><br/><https://ncatlab.org/nlab/show/inverse+limit> "
+  alias:  projective limit 
+ 
+- concept:  inverse-moment-of-function 
+  arity:  2 
+  form: "<br/>msub<br/>mixfix "
+  area: " mathematics "
+  notation: "msub μ mrow - $1 /mrow<br/>mrow E [ msup $1 mrow - $2 /mrow ] "
+  url: "[https://en.wikipedia.org/wiki/Moment_(mathematics)](https://en.wikipedia.org/wiki/Moment_(mathematics)) "
+  alias:  inverse-moment 
+ 
+- concept:  inverse-tangent-integral 
+  arity:  1 
+  form:  "indexed function"
+  area: "special functions "
+  notation: "msub Ti $1 "
+  url: "[https://en.wikipedia.org/wiki/Polylogarithm](https://en.wikipedia.org/wiki/Polylogarithm) "
+ 
+- concept:  inverse-wishart-distribution 
+  arity:  0 
+  form:  symbol 
+  area: "probability theory "
+  notation: "msubsup W p -1 "
+  url: "<https://mathworld.wolfram.com/WishartDistribution.html><br/>[https://en.wikipedia.org/wiki/Wishart_distribution](https://en.wikipedia.org/wiki/Wishart_distribution)<br/><https://www.encyclopediaofmath.org/index.php/Wishart_distribution> "
+ 
+- concept:  ionic-charge 
+  arity:  2 
+  form:  msup 
+  area: " chemistry "
+  notation: "msup $1 $2<br/> "
+  url: "[https://en.wikipedia.org/wiki/Ion#Chemistry](https://en.wikipedia.org/wiki/Ion#Chemistry) "
+ 
+- concept:  isogonal-conjugate 
+  arity:  1 
+  form:  msup 
+  area: " geometry "
+  notation: "msup $1 -1 "
+  url: "<https://mathworld.wolfram.com/IsogonalConjugate.html><br/><https://en.wikipedia.org/wiki/Isogonal_conjugate> "
+ 
+- concept:  isomorphism 
+  arity:  2 
+  form:  infix 
+  area: "set theory "
+  notation: "mover ↦ ∼<br/>mo ≅ "
+  url: "<https://mathworld.wolfram.com/Isomorphism.html><br/><https://en.wikipedia.org/wiki/Isomorphism><br/><https://ncatlab.org/nlab/show/isomorphism><br/><https://www.encyclopediaofmath.org/index.php/Isomorphism> "
+  alias:  natural-isomorphism 
+ 
+- concept:  isotropy-group 
+  arity:  2 
+  form:  msub 
+  area: "group theory "
+  notation: "msub $1 $2 "
+  url: "<https://mathworld.wolfram.com/IsotropyGroup.html><br/><https://www.encyclopediaofmath.org/index.php/Isotropy_group> "
+  alias: " little-group, stabilizer-subgroup "
+ 
+- concept:  iverson-bracket 
+  arity:  1 
+  form:  fenced 
+  area: "set theory "
+  notation: "[ $1 ]"
+  url: "[https://en.wikipedia.org/wiki/Iverson_bracket](https://en.wikipedia.org/wiki/Iverson_bracket) "
+ 
+- concept:  j-invariant 
+  arity:  1 
+  form:  function 
+  area: "number theory "
+  notation: "mi j "
+  url: "<https://mathworld.wolfram.com/j-Invariant.html><br/><https://ncatlab.org/nlab/show/j-invariant> "
+ 
+- concept:  jacobi-matrix 
+  arity:  1 
+  form:  function 
+  area: "operator theory "
+  notation: "mi J "
+  url: "<https://mathworld.wolfram.com/JacobiMatrix.html><br/><https://en.wikipedia.org/wiki/Jacobi_operator><br/><https://www.encyclopediaofmath.org/index.php/Jacobi_matrix> "
+  alias:  jacobi-operator 
+ 
+- concept:  jacobi-polynomial 
+  arity:  1 
+  form:  function 
+  area: "orthogonal polynomials "
+  notation: "msubsup P "
+  url: "<https://mathworld.wolfram.com/JacobiPolynomial.html><br/><https://en.wikipedia.org/wiki/Heckman%E2%80%93Opdam_polynomials><br/><https://en.wikipedia.org/wiki/Jacobi_polynomials><br/><https://dlmf.nist.gov/18.3><br/><https://dlmf.nist.gov/18.3#T1.t1.r3><br/><https://www.encyclopediaofmath.org/index.php/Jacobi_polynomials> "
+ 
+- concept:  jacobi-symbol 
+  arity:  2 
+  form:  mixfix 
+  area: "number theory "
+  notation: "mrow ( $1 | $2 ) "
+  url:  "<https://mathworld.wolfram.com/JacobiSymbol.html><br/><https://en.wikipedia.org/wiki/Jacobi_symbol><br/><https://dlmf.nist.gov/27.9#p3><br/><https://www.encyclopediaofmath.org/index.php/Jacobi_symbol> "
+
+- concept:  jacobi-theta-function 
+  arity:  1 
+  form:  function 
+  area: " special-functions "
+  notation: "mi ϑ "
+  url: "<https://mathworld.wolfram.com/JacobiThetaFunctions.html><br/><https://en.wikipedia.org/wiki/Jacobi_theta_functions_(notational_variations)> "
+ 
+- concept:  jacobi-zeta-function 
+  arity:  2 
+  form:  function 
+  area: " special-functions "
+  notation: "mrow Z⁡ ( $1 |  $2 )"
+  url:  "<https://mathworld.wolfram.com/JacobiZetaFunction.html><br/><https://en.wikipedia.org/wiki/Jacobi_zeta_function><br/>[https://dlmf.nist.gov/22.16#iii](https://dlmf.nist.gov/22.16#iii)<br/><https://dlmf.nist.gov/22.16#E32> "
+
+- concept:  jacobian-elliptic-function 
+  arity:  1 
+  form:  function 
+  area: " special-functions "
+  notation: "mi sn<br/>mi cn<br/>mi dn<br/>mi sd<br/>mi cd<br/>mi sc "
+  url: "<https://dlmf.nist.gov/22.2><br/>[https://dlmf.nist.gov/22.2#E4<br/><https://dlmf.nist.gov/22.2#E5><br/><https://dlmf.nist.gov/22.2#E6><br/><https://dlmf.nist.gov/22.2#E7><br/><https://dlmf.nist.gov/22.2#E8](https://dlmf.nist.gov/22.2#E4)><br/><https://dlmf.nist.gov/22.2#E9><br/><br/> "
+ 
+- concept:  jacobson-radical 
+  arity:  1 
+  form:  function 
+  area: "ring theory "
+  notation: "mi J<br/>mi rad "
+  url: "<https://mathworld.wolfram.com/JacobsonRadical.html><br/><https://en.wikipedia.org/wiki/Jacobson_radical><br/><https://ncatlab.org/nlab/show/Jacobson+radical><br/><https://www.encyclopediaofmath.org/index.php/Jacobson_radical> "
+ 
+- concept:  jacobsthal-number 
+  arity:  0 
+  form:  symbol 
+  area: "number theory "
+  notation: "mi J "
+  url: "<https://mathworld.wolfram.com/JacobsthalNumber.html><br/><https://en.wikipedia.org/wiki/Jacobsthal_number><br/> "
+ 
+- concept:  janko-group 
+  arity:  0 
+  form:  symbol 
+  area: "group theory "
+  notation: "msub J 1<br/>msub J 2<br/>msub J 3<br/>msub J 4 "
+  url: "<https://mathworld.wolfram.com/JankoGroups.html><br/><https://en.wikipedia.org/wiki/Janko_group> "
+ 
+- concept:  jet 
+  arity:  1 
+  form:  function 
+  area: "differential geometry "
+  notation: "msubsup J "
+  url: "[https://en.wikipedia.org/wiki/Jet_(mathematics)](https://en.wikipedia.org/wiki/Jet_(mathematics))<br/><https://www.encyclopediaofmath.org/index.php/Jet> "
+ 
+- concept:  join 
+  arity:  1 
+  form:  indexed 
+  area: "measure theory "
+  notation: "mo ⋁ "
+  url: "<https://mathworld.wolfram.com/Join.html><br/><https://en.wikipedia.org/wiki/Join_(sigma_algebra)><br/><https://en.wikipedia.org/wiki/Join_(topology)><br/><https://ncatlab.org/nlab/show/join><br/><https://www.encyclopediaofmath.org/index.php/Join> "
+ 
+- concept:  jone-polynomial 
+  arity:  1 
+  form:  function 
+  area: "knot theory "
+  notation: "mi V "
+  url: "<https://mathworld.wolfram.com/JonesPolynomial.html><br/><https://en.wikipedia.org/wiki/Jones_polynomial><br/><https://ncatlab.org/nlab/show/Jones+polynomial> "
+ 
+- concept:  jordan-block 
+  arity:  2 
+  form:  "indexed symbol" 
+  area: "linear algebra "
+  notation: "msub J mrow $1, $2 "
+  url: "<https://mathworld.wolfram.com/JordanBlock.html><br/><https://en.wikipedia.org/wiki/Jordan_matrix> "
+  alias:  jordan-matrix 
+ 
+- concept:  jordan-measure 
+  arity:  1 
+  form:  function 
+  area: "measure theory "
+  notation: "mi m "
+  url: "<https://mathworld.wolfram.com/JordanMeasure.html><br/>[https://en.wikipedia.org/wiki/Jordan_measure](https://en.wikipedia.org/wiki/Jordan_measure)<br/><https://www.encyclopediaofmath.org/index.php/Jordan_measure> "
+ 
+- concept:  jordan-totient-function 
+  arity:  1 
+  form:  function 
+  area: "number theory "
+  notation: "msub J $1 "
+  url: "[https://en.wikipedia.org/wiki/Jordan%27s_totient_function](https://en.wikipedia.org/wiki/Jordan%27s_totient_function) "
+ 
+- concept:  julia-set 
+  arity:  1 
+  form:  function 
+  area: "complex dynamics "
+  notation: "mi J "
+  url: "<https://mathworld.wolfram.com/JuliaSet.html><br/><https://en.wikipedia.org/wiki/Julia_set><br/><https://www.encyclopediaofmath.org/index.php/Julia_set> "
+ 
+- concept:  kaprekar-constant 
+  arity:  0 
+  form:  symbol 
+  area: "number theory "
+  notation: "mn 6174 "
+  url: "<https://mathworld.wolfram.com/KaprekarConstant.html><br/><https://en.wikipedia.org/wiki/6174_(number)> "
+  alias:  kaprekar-number 
+ 
+- concept:  kauffman-bracket 
+  arity:  1 
+  form:  fenced 
+  area: "knot theory "
+  notation: "mrow ⟨ $1 ⟩ "
+  url: "[https://en.wikipedia.org/wiki/Bracket_polynomial](https://en.wikipedia.org/wiki/Bracket_polynomial) "
+  alias:  bracket-polynomial 
+ 
+- concept:  kelvin-function 
+  arity:  1 
+  form:  function 
+  area: "special functions "
+  notation: "msub ber ν⁡<br/>msub bei ν⁡ "
+  url: "<https://mathworld.wolfram.com/KelvinFunctions.html><br/><https://en.wikipedia.org/wiki/Kelvin_functions><br/><https://dlmf.nist.gov/10#PT5><br/><https://dlmf.nist.gov/10.61#E1><br/><https://dlmf.nist.gov/10.61#E1><br/><https://dlmf.nist.gov/10.61#E2><br/><https://dlmf.nist.gov/10.61#E2><br/><https://www.encyclopediaofmath.org/index.php/Kelvin_functions> "
+ 
+- concept:  kernel 
+  arity:  1 
+  form:  function 
+  area: "linear algebra "
+  notation: "mi ker "
+  url: "<https://mathworld.wolfram.com/Kernel.html><br/><https://en.wikipedia.org/wiki/Kernel_(algebra)><br/><https://en.wikipedia.org/wiki/Kernel_(set_theory)><br/><https://en.wikipedia.org/wiki/Sunflower_(mathematics)><br/><https://en.wikipedia.org/wiki/Kernel_(linear_algebra)><br/><https://en.wikipedia.org/wiki/Kernel_(category_theory)><br/><https://en.wikipedia.org/wiki/Kernel_(statistics)><br/><https://en.wikipedia.org/wiki/Covariance_function><br/><https://ncatlab.org/nlab/show/kernel> "
+  alias: " nullspace, null-space "
+ 
+- concept:  khinchin-constant 
+  arity:  0 
+  form:  constant 
+  area: "continued fractions "
+  notation: "mi K<br/>msub K 0 "
+  url: "<https://mathworld.wolfram.com/KhinchinsConstant.html><br/><https://en.wikipedia.org/wiki/Khinchin%27s_constant> "
+ 
+- concept:  killing-form 
+  arity:  1 
+  form:  function 
+  area: "lie algebra "
+  notation: "mi B "
+  url: "<https://mathworld.wolfram.com/KillingForm.html><br/><https://en.wikipedia.org/wiki/Killing_form><br/><https://ncatlab.org/nlab/show/Killing+form><br/><https://www.encyclopediaofmath.org/index.php/Killing_form> "
+ 
+- concept:  kleene-star 
+  arity:  1 
+  form:  msup 
+  area: "formal languages "
+  notation: "msup * "
+  url: "[https://en.wikipedia.org/wiki/Kleene_star](https://en.wikipedia.org/wiki/Kleene_star) "
+ 
+- concept:  kleene-plus 
+  arity:  1 
+  form:  msup 
+  area: "formal languages "
+  notation: "msup + "
+  url: "[https://en.wikipedia.org/wiki/Kleene_star](https://en.wikipedia.org/wiki/Kleene_star) "
+ 
+- concept:  klein-four-group 
+  arity:  0 
+  form:  symbol 
+  area: "group theory "
+  notation: "mi V<br/>msub K 4 "
+  url: "<https://mathworld.wolfram.com/KleinFour-Group.html><br/><https://en.wikipedia.org/wiki/Klein_four-group> "
+ 
+- concept:  kloosterman-sum 
+  arity:  1 
+  form:  function 
+  area: "analytic number theory "
+  notation: "mi S<br/>mi K "
+  url: "<https://mathworld.wolfram.com/KloostermansSum.html><br/>[https://en.wikipedia.org/wiki/Kloosterman_sum](https://en.wikipedia.org/wiki/Kloosterman_sum) "
+ 
+- concept:  kneser-graph 
+  arity:  2 
+  form:  "indexed symbol" 
+  area: "graph theory "
+  notation: "mrow K ( $1, $2 )<br/>msub mi KG /mi $1, $2 "
+  url: "<https://mathworld.wolfram.com/KneserGraph.html><br/>[https://en.wikipedia.org/wiki/Kneser_graph](https://en.wikipedia.org/wiki/Kneser_graph) "
+ 
+- concept:  knodel-number 
+  arity:  1 
+  form:  "indexed symbol" 
+  area: "number theory "
+  notation: "mi K "
+  url: "<https://mathworld.wolfram.com/KnoedelNumbers.html><br/><https://en.wikipedia.org/wiki/Kn%C3%B6del_number> "
+ 
+- concept:  kodaira-dimension 
+  arity:  1 
+  form:  function 
+  area: "algebraic geometry "
+  notation: "mi κ "
+  url: "<https://en.wikipedia.org/wiki/Kodaira_dimension><br/><https://www.encyclopediaofmath.org/index.php/Kodaira_dimension> "
+ 
+- concept:  kolmogorov-complexity 
+  arity:  1 
+  form:  function 
+  area: "information theory "
+  notation: "mi K "
+  url: "<https://mathworld.wolfram.com/KolmogorovComplexity.html><br/><https://en.wikipedia.org/wiki/Kolmogorov_complexity> "
+ 
+- concept:  kolmogorov-space 
+  arity:  0 
+  form:  constant 
+  area: " topology "
+  notation: "msub T 0 "
+  url: "[https://en.wikipedia.org/wiki/Separation_axiom#Main_definitions](https://en.wikipedia.org/wiki/Separation_axiom#Main_definitions)s "
+ 
+- concept:  kontsevich-integral 
+  arity:  1 
+  form:  function 
+  area: "knot theory "
+  notation: "mi Z "
+  url: "<https://mathworld.wolfram.com/KontsevichIntegral.html><br/><https://en.wikipedia.org/wiki/Kontsevich_invariant><br/><https://ncatlab.org/nlab/show/Kontsevich+integral><br/><https://www.encyclopediaofmath.org/index.php/Kontsevich_integral> "
+ 
+- concept:  krawtchouk-polynomial 
+  arity:  1 
+  form:  function 
+  area: "orthogonal polynomials "
+  notation: "msub K $1 "
+  url: "<https://mathworld.wolfram.com/KrawtchoukPolynomial.html><br/><https://en.wikipedia.org/wiki/Kravchuk_polynomials><br/><https://dlmf.nist.gov/18.19#T1.t1.r6><br/><https://www.encyclopediaofmath.org/index.php/Krawtchouk_polynomials> "
+ 
+- concept:  kripke-frame 
+  arity:  2 
+  form:  fenced 
+  area: "modal logic "
+  notation: "mrow ⟨ $1, $2 ⟩ "
+  url: "[https://ncatlab.org/nlab/show/Kripke+frame](https://ncatlab.org/nlab/show/Kripke+frame) "
+ 
+- concept:  kronecker-delta 
+  arity:  2 
+  form:  "indexed function"
+  area: "special functions "
+  notation: "msub δ mrow $1 $2 mrow "
+  url: "<https://mathworld.wolfram.com/KroneckerDelta.html><br/>[https://en.wikipedia.org/wiki/Kronecker_delta](https://en.wikipedia.org/wiki/Kronecker_delta)<br/><https://dlmf.nist.gov/front/introduction#Sx4.p1.t1.r4><br/><https://ncatlab.org/nlab/show/Kronecker+delta> "
+ 
+- concept:  kronecker-product 
+  arity:  2 
+  form:  infix 
+  area: "matrix theory "
+  notation: "mo ⊗ "
+  url: "<https://mathworld.wolfram.com/KroneckerProduct.html><br/><https://en.wikipedia.org/wiki/Khatri-Rao_product><br/><https://en.wikipedia.org/wiki/Kronecker_product><br/><https://en.wikipedia.org/wiki/Tracy-Singh_product><br/><https://www.encyclopediaofmath.org/index.php/Kronecker_product> "
+ 
+- concept:  kronecker-symbol 
+  arity:  2 
+  form:  fenced<br/>fenced stacked 
+  area: "number theory "
+  notation: "mrow ( $1 | $2 )<br/>( mfrac $1 $2 )"
+  url:  "<https://mathworld.wolfram.com/KroneckerSymbol.html><br/><https://en.wikipedia.org/wiki/Kronecker_symbol><br/><https://www.encyclopediaofmath.org/index.php/Kronecker_symbol> "
+  alias:
+
+- concept:  krull-dimension 
+  arity:  1 
+  form:  function 
+  area: "commutative algebra "
+  notation: "mi dim "
+  url: "<https://mathworld.wolfram.com/KrullDimension.html><br/><https://en.wikipedia.org/wiki/Krull_dimension><br/>[https://en.wikipedia.org/wiki/Height_(ring_theory)](https://en.wikipedia.org/wiki/Height_(ring_theory)) "
+ 
+- concept:  kulkarni-nomizu-product 
+  arity:  1 
+  form:  embellished infix 
+  area: "differential geometry "
+  notation: "mo ∧ /mo mspace=negative.../mspace mo ◯ /mo "
+  url: "[https://en.wikipedia.org/wiki/Kulkarni%E2%80%93Nomizu_product](https://en.wikipedia.org/wiki/Kulkarni%E2%80%93Nomizu_product) "
+ 
+- concept:  kullback-leibler-distance 
+  arity:  1 
+  form:  function 
+  area: "mathematical statistics "
+  notation: "mi KL<br/>msub D KL "
+  url: "[http://users.monash.edu/~lloyd/tildeMML/KL/<br/>](http://users.monash.edu/~lloyd/tildeMML/KL/)[https://en.wikipedia.org/wiki/Kullback%E2%80%93Leibler_divergence](https://en.wikipedia.org/wiki/Kullback%E2%80%93Leibler_divergence) "
+  alias: " kl-distance, kl-divergence, kullback-leibler-divergence<br/>relative-entropy "
+ 
+- concept:  lagrange-bracket 
+  arity:  4 
+  form:  indexed fenced 
+  area: "classical mechanics "
+  notation: "msub<br/>mrow [ $1, $2] /mrow<br/>mrow $3, $4 /mrow "
+  url: "<https://mathworld.wolfram.com/LagrangeBracket.html><br/><https://en.wikipedia.org/wiki/Lagrange_bracket><br/><https://www.encyclopediaofmath.org/index.php/Lagrange_bracket> "
+ 
+- concept:  lagrange-multiplier 
+  arity:  0 
+  form:  symbol 
+  area: "mathematical optimization "
+  notation: "mi λ "
+  url: "<https://mathworld.wolfram.com/LagrangeMultiplier.html><br/><https://en.wikipedia.org/wiki/Lagrange_multiplier><br/>[https://ncatlab.org/nlab/show/Lagrange+multiplier](https://ncatlab.org/nlab/show/Lagrange+multiplier)<br/><https://www.encyclopediaofmath.org/index.php/Lagrange_multipliers> "
+  alias:  lagrangian 
+ 
+- concept:  lagrange-point 
+  arity:  0 
+  form:  symbol 
+  area: "celestial mechanics "
+  notation: "msub L 1<br/>msub L 2<br/>msub L 3<br/>msub L 4<br/>msub L 5 "
+  url: "[https://en.wikipedia.org/wiki/Lagrange_point](https://en.wikipedia.org/wiki/Lagrange_point) "
+  alias: " lagrangian-point, l-point, libration-point "
+ 
+- concept:  laguerre-polynomial 
+  arity:  1 
+  form:  "indexed function"
+  area: "orthogonal polynomials "
+  notation: "mi L "
+  url: "<https://mathworld.wolfram.com/LaguerrePolynomial.html><br/><https://en.wikipedia.org/wiki/Laguerre_polynomials><br/><https://dlmf.nist.gov/18.3><br/><https://dlmf.nist.gov/18.1#I1.ix7.p1><br/><https://dlmf.nist.gov/18.3#T1.t1.r27><br/><https://www.encyclopediaofmath.org/index.php/Laguerre_polynomials> "
+ 
+- concept:  landau-constant 
+  arity:  0 
+  form:  constant 
+  area: "complex analysis "
+  notation: "mi A<br/>mi B<br/>mi L "
+  url: "<https://mathworld.wolfram.com/LandauConstant.html><br/><https://en.wikipedia.org/wiki/Landau%27s_constants> "
+ 
+- concept:  laplace-operator 
+  arity:  1 
+  form: "<br/>embellished operator<br/> "
+  area: "differential operators "
+  notation: "msup ∇ 2<br/>mrow ∇ · ∇<br/>mi Δ "
+  url: "<https://en.wikipedia.org/wiki/Laplace_operator><br/><https://ncatlab.org/nlab/show/Laplace+operator><br/><https://www.encyclopediaofmath.org/index.php/Laplace_operator> "
+ 
+- concept:  laplace-transform 
+  arity:  1 
+  form:  operator 
+  area: "integral transforms "
+  notation: "mi ℒ⁡ "
+  url: "<https://mathworld.wolfram.com/LaplaceTransform.html><br/><https://en.wikipedia.org/wiki/Laplace_transform><br/><https://dlmf.nist.gov/1.14#E17><br/><https://www.encyclopediaofmath.org/index.php/Laplace_transform> "
+ 
+- concept:  laplacian-matrix 
+  arity:  0 
+  form:  symbol 
+  area: "graph theory "
+  notation: "mi L "
+  url: "<https://mathworld.wolfram.com/LaplacianMatrix.html><br/><https://en.wikipedia.org/wiki/Laplacian_matrix> "
+ 
+- concept:  latin-rectangle 
+  arity:  1 
+  form:  mtable 
+  area: "combinatorial mathematics "
+  notation: "mtable "
+  url: "<https://mathworld.wolfram.com/LatinRectangle.html><br/><https://en.wikipedia.org/wiki/Latin_rectangle><br/><https://www.encyclopediaofmath.org/index.php/Latin_rectangle> "
+ 
+- concept:  latin-square 
+  arity:  1 
+  form:  mtable 
+  area: "combinatorial mathematics "
+  notation: "mtable "
+  url: "<https://mathworld.wolfram.com/LatinSquare.html><br/><https://en.wikipedia.org/wiki/Latin_square><br/><https://en.wikipedia.org/wiki/Small_Latin_squares_and_quasigroups><br/><https://ncatlab.org/nlab/show/Latin+square><br/><https://www.encyclopediaofmath.org/index.php/Latin_square> "
+ 
+- concept:  least-prime-factor 
+  arity:  1 
+  form:  function 
+  area: "number theory "
+  notation: "mi lpf "
+  url: "[https://mathworld.wolfram.com/LeastPrimeFactor.html](https://mathworld.wolfram.com/LeastPrimeFactor.html) "
+ 
+- concept:  lebesgue-constant 
+  arity:  1 
+  form:  indexed constant 
+  area: "fourier series "
+  notation: "msub L $1 "
+  url: "<https://mathworld.wolfram.com/LebesgueConstants.html><br/><https://en.wikipedia.org/wiki/Lebesgue_constant_(interpolation)><br/><https://dlmf.nist.gov/1.8#E8><br/><https://www.encyclopediaofmath.org/index.php/Lebesgue_constants> "
+ 
+- concept:  lebesgue-integral 
+  arity:  1 
+  form:  indexed 
+  area: "measure theory "
+  notation: "mo ∫ "
+  url: "<https://mathworld.wolfram.com/LebesgueIntegral.html><br/><https://www.encyclopediaofmath.org/index.php/Lebesgue_integral> "
+ 
+- concept:  leech-lattice 
+  arity:  0 
+  form:  symbol 
+  area: "group theory "
+  notation: "msub Λ 24 "
+  url: "<https://mathworld.wolfram.com/LeechLattice.html><br/><https://en.wikipedia.org/wiki/Leech_lattice><br/><https://ncatlab.org/nlab/show/Leech+lattice> "
+ 
+- concept:  left-adjoint 
+  arity:  2 
+  form:  infix 
+  area: "category theory "
+  notation: "mo ⊣ "
+  url: "[https://en.wikipedia.org/wiki/Adjoint_functors](https://en.wikipedia.org/wiki/Adjoint_functors) "
+ 
+- concept:  left-composition 
+  arity:  2 
+  form:  infix 
+  area: " algebra "
+  notation: "mo ; "
+  url: "[https://en.wikipedia.org/wiki/Composition_of_relations](https://en.wikipedia.org/wiki/Composition_of_relations) "
+  alias:  left-compose 
+ 
+- concept:  left-derivative 
+  arity:  1 
+  form:  operator 
+  area: " calculus "
+  notation: "msub ∂ – "
+  url: "[https://en.wikipedia.org/wiki/Left_and_right_derivative](https://en.wikipedia.org/wiki/Left_and_right_derivative) "
+ 
+- concept:  legendre-chi-function 
+  arity:  1 
+  form:  "indexed function"
+  area: "special functions "
+  notation: "msub χ $1 "
+  url: "[https://en.wikipedia.org/wiki/Legendre_chi_function<br/><br/>](https://en.wikipedia.org/wiki/Legendre_chi_function)[https://mathworld.wolfram.com/LegendresChi-Function.html](https://mathworld.wolfram.com/LegendresChi-Function.html) "
+ 
+- concept:  legendre-polynomial 
+  arity:  1 
+  form:  function 
+  area: "orthogonal polynomials "
+  notation: "msub P $1 "
+  url: "<https://mathworld.wolfram.com/LegendrePolynomial.html><br/><https://en.wikipedia.org/wiki/Legendre_polynomials><br/><https://dlmf.nist.gov/18.3><br/><https://dlmf.nist.gov/18.3#T1.t1.r25><br/>[https://ncatlab.org/nlab/show/Legendre+polynomial](https://ncatlab.org/nlab/show/Legendre+polynomial) "
+ 
+- concept:  legendre-symbol 
+  arity:  2 
+  form:  fenced<br/>fenced stacked 
+  area: "number theory "
+  notation: "mrow ( $1 | $2 )<br/>mrow ( mfrac $1 $2 )"
+  url:   "<https://mathworld.wolfram.com/LegendreSymbol.html><br/><https://en.wikipedia.org/wiki/Legendre_symbol><br/><https://dlmf.nist.gov/27.9> "
+  alias:
+
+- concept:  lehmer-mean 
+  arity:  1 
+  form:  "indexed function"
+  area: " means "
+  notation: "msub L $1 "
+  url: "<https://mathworld.wolfram.com/LehmerMean.html><br/><https://en.wikipedia.org/wiki/Lehmer_mean> "
+ 
+- concept:  lehmer-number 
+  arity:  1 
+  form:  "indexed function"
+  area: "number theory "
+  notation: "msub U $1 "
+  url: "<https://mathworld.wolfram.com/LehmerNumber.html><br/><https://mathworld.wolfram.com/LehmersNumber.html><br/><https://en.wikipedia.org/wiki/Lehmer_number> "
+ 
+- concept:  level 
+  arity:  1 
+  form:  function 
+  area: "scales of measurement "
+  notation: "msub L $1 "
+  url: "<https://en.wikipedia.org/wiki/Level_(logarithmic_quantity)><br/><https://en.wikipedia.org/wiki/Categorical_variable><br/><https://ncatlab.org/nlab/show/level> "
+ 
+- concept:  levi-civita-symbol 
+  arity:  3 
+  form:  "indexed symbol" 
+  area: " combinatorics "
+  notation: "msub ϵ mrow $1$2$3 /mrow "
+  url: "<https://mathworld.wolfram.com/Levi-CivitaSymbol.html><br/><https://en.wikipedia.org/wiki/Levi-Civita_symbol><br/><https://dlmf.nist.gov/1.6#E14> "
+  alias:  permutation-symbol 
+ 
+- concept:  levy-prokhorov-metric 
+  arity:  1 
+  form:  function 
+  area: "measure theory "
+  notation: "mi π "
+  url: "[https://en.wikipedia.org/wiki/L%C3%A9vy%E2%80%93Prokhorov_metric<br/><br/>](https://en.wikipedia.org/wiki/L%C3%A9vy%E2%80%93Prokhorov_metric)[https://encyclopediaofmath.org/wiki/L%C3%A9vy-Prokhorov_metric](https://encyclopediaofmath.org/wiki/L%C3%A9vy-Prokhorov_metric) "
+ 
+- concept:  lexicographic-product 
+  arity:  2 
+  form:  infix<br/>mixfix 
+  area: "graph theory "
+  notation: "mo ∙<br/>$1 [ $2 ] "
+  url: "[https://en.wikipedia.org/wiki/Lexicographic_product_of_graphs](https://en.wikipedia.org/wiki/Lexicographic_product_of_graphs) "
+  alias:  graph-composition 
+ 
+- concept:  lexicographic-order 
+  arity:  2 
+  form:  infix 
+  area: "discrete mathematics "
+  notation: "mo < "
+  url: "[https://en.wikipedia.org/wiki/Lexicographic_order](https://en.wikipedia.org/wiki/Lexicographic_order)<br/>[https://mathworld.wolfram.com/LexicographicOrder.html](https://mathworld.wolfram.com/LexicographicOrder.html)<br/><https://ncatlab.org/nlab/show/lexicographic+order> "
+  alias:  dictionary-order 
+ 
+- concept:  lie-derivative 
+  arity:  1 
+  form:  "indexed operator" 
+  area: "lie algebra "
+  notation: "msub ℒ $1 "
+  url: "<https://mathworld.wolfram.com/LieDerivative.html><br/>[https://en.wikipedia.org/wiki/Lie_derivative](https://en.wikipedia.org/wiki/Lie_derivative)<br/><https://ncatlab.org/nlab/show/Lie+derivative> "
+ 
+- concept:  lie-superbracket 
+  arity:  2 
+  form:  fenced 
+  area: "lie algebra "
+  notation: "mrow [ $1 , $2 ] "
+  url: "[https://en.wikipedia.org/wiki/Lie_superalgebra](https://en.wikipedia.org/wiki/Lie_superalgebra) "
+  alias:  supercommutator 
+ 
+- concept:  like-charge 
+  arity:  2 
+  form:  infix 
+  area: " physics "
+  notation: "mo ⇈ "
+  url: "[https://youtu.be/HZ7a9YkF204?t=4719](https://youtu.be/HZ7a9YkF204?t=4719) "
+ 
+- concept:  line-graph 
+  arity:  1 
+  form:  function 
+  area: "graph theory "
+  notation: "mi L "
+  url: "<https://mathworld.wolfram.com/LineGraph.html><br/><https://en.wikipedia.org/wiki/Line_graph><br/> "
+ 
+- concept:  line-integral 
+  arity:  1 
+  form:  indexed 
+  area: " analysis "
+  notation: "mo ∫ "
+  url: "<https://mathworld.wolfram.com/LineIntegral.html><br/><https://en.wikipedia.org/wiki/Line_integral><br/><https://ncatlab.org/nlab/show/line+integral> "
+  alias: " curve-integral, path-integral, curvilinear-integral, contour-integral "
+ 
+- concept:  linear-span 
+  arity:  1 
+  form:  function 
+  area: "linear algebra "
+  notation: "mi span "
+  url: "<https://mathworld.wolfram.com/LinearSpan.html><br/><https://en.wikipedia.org/wiki/Linear_span> "
+  alias: " span, linear-hull "
+ 
+- concept:  link 
+  arity:  1 
+  form:  function 
+  area: "graph theory "
+  notation: "mi Lk "
+  url: "[https://mathworld.wolfram.com/Link.html<br/><br/><br/>](https://mathworld.wolfram.com/Link.html) "
+ 
+- concept:  gunter-link 
+  arity:  1 
+  form:  unit 
+  area: " units "
+  notation: "mi l.<br/>mi li.<br/>mi lnk. "
+  url: "[https://en.wikipedia.org/wiki/Link_(unit)](https://en.wikipedia.org/wiki/Link_(unit)) "
+ 
+- concept:  liouville-constant 
+  arity:  0 
+  form:  constant 
+  area: "number theory "
+  notation: "mi L "
+  url: "[https://mathworld.wolfram.com/LiouvillesConstant.html<br/>](https://mathworld.wolfram.com/LiouvillesConstant.html) "
+  alias:  liouville-number 
+ 
+- concept:  liouville-function 
+  arity:  1 
+  form:  function 
+  area: "number theory "
+  notation: "mi λ "
+  url: "<https://mathworld.wolfram.com/LiouvilleFunction.html><br/><https://en.wikipedia.org/wiki/Liouville_function><br/><https://dlmf.nist.gov/27.2#E13> "
+ 
+- concept:  localization 
+  arity:  2 
+  form:  mixfix 
+  area: "module theory "
+  notation: "msup $1 -1 /msup $2 "
+  url: "<https://mathworld.wolfram.com/Localization.html><br/>[https://en.wikipedia.org/wiki/Localization_(algebra)](https://en.wikipedia.org/wiki/Localization_(algebra))<br/><https://en.wikipedia.org/wiki/Localization_of_a_ring><br/><https://ncatlab.org/nlab/show/localization[><br/>](https://ncatlab.org/nlab/show/localization+of+a+module)[https://ncatlab.org/nlab/show/localization+of+a+modul](https://ncatlab.org/nlab/show/localization+of+a+module)e "
+ 
+- concept:  logarithmic-integral 
+  arity:  1 
+  form:  function 
+  area: "special functions "
+  notation: "mi li "
+  url: "<https://mathworld.wolfram.com/LogarithmicIntegral.html><br/><https://dlmf.nist.gov/6.2#i><br/><https://dlmf.nist.gov/6.2#E8> "
+ 
+- concept:  logarithmic-moment-of-function 
+  arity:  2 
+  form: "<br/><br/>mixfix "
+  area: " mathematics "
+  notation: "E [ msup ln $1 /msup ( $2 ) ] "
+  url: "[https://en.wikipedia.org/wiki/Moment_(mathematics)](https://en.wikipedia.org/wiki/Moment_(mathematics)) "
+  alias:  logarithmic-moment 
+ 
+- concept:  logit 
+  arity:  1 
+  form:  function 
+  area: " statistics "
+  notation: "mi logit "
+  url: "[https://en.wikipedia.org/wiki/Logit](https://en.wikipedia.org/wiki/Logit) "
+ 
+- concept:  lommel-function 
+  arity:  2 
+  form:  "indexed function"
+  area: "special functions "
+  notation: "msub S mrow $1,$2 /mrow<br/>msub s mrow $1, $2 /mrow "
+  url: "<https://mathworld.wolfram.com/LommelFunction.html><br/><https://en.wikipedia.org/wiki/Lommel_function><br/>[https://dlmf.nist.gov/11.9](https://dlmf.nist.gov/11.9)<br/><https://dlmf.nist.gov/11.9#E5><br/><https://dlmf.nist.gov/11.9#E3> "
+ 
+- concept:  long-division 
+  arity:  1 
+  form:  mfrac 
+  area: " arithmetic "
+  notation: "mfrac? "
+  url: "<https://mathworld.wolfram.com/LongDivision.html><br/><https://en.wikipedia.org/wiki/Long_division> "
+ 
+- concept:  loop-space 
+  arity:  1 
+  form:  function 
+  area: " topology "
+  notation: "mi Ω "
+  url: "<https://mathworld.wolfram.com/LoopSpace.html><br/><https://en.wikipedia.org/wiki/Loop_space><br/><https://ncatlab.org/nlab/show/loop+space> "
+ 
+- concept:  lower-closure-poset 
+  arity:  1 
+  form:  prefix 
+  area: "order theory "
+  notation: "mo ↓ "
+  url: "[https://en.wikipedia.org/wiki/Upper_set#Upper_closure_and_lower_closure](https://en.wikipedia.org/wiki/Upper_set#Upper_closure_and_lower_closure) "
+ 
+- concept:  lower-darboux-integral 
+  arity:  1 
+  form:  indexed 
+  area: "real analysis "
+  notation: "munder ¯ "
+  url:  "https://mathworld.wolfram.com/DarbouxIntegral.html<br/><https://en.wikipedia.org/wiki/Darboux_integral><br/><https://www.encyclopediaofmath.org/index.php/Darboux_integral>"
+ 
+- concept:  lower-dini-derivative 
+  arity:  1 
+  form:  decorated function 
+  area: " analysis "
+  notation: "msubsup $1 - ' "
+  url: "<https://mathworld.wolfram.com/DiniDerivative.html><br/><https://en.wikipedia.org/wiki/Dini_derivative><br/><https://www.encyclopediaofmath.org/index.php/Dini_derivative> "
+ 
+- concept:  lower-shadow 
+  arity:  1 
+  form:  function 
+  area: " combinatorics "
+  notation: "mi 𝜕<br/>msub 𝜕 - "
+  url: "[http://qk206.user.srcf.net/notes/combinatorics.pdf](http://qk206.user.srcf.net/notes/combinatorics.pdf) "
+  alias:  shadow 
+ 
+- concept:  lucas-number 
+  arity:  1 
+  form:  "indexed symbol" 
+  area: "integer sequences "
+  notation: "msub L $1 "
+  url: "<https://mathworld.wolfram.com/LucasNumber.html><br/><https://en.wikipedia.org/wiki/Lucas_number><br/><https://en.wikipedia.org/wiki/Lucas_prime><br/> "
+ 
+- concept:  lucas-sequence 
+  arity:  1 
+  form:  "indexed function"
+  area: "integer sequences "
+  notation: "msub U $1<br/>msub V $1 "
+  url: "<https://mathworld.wolfram.com/LucasSequence.html><br/><https://en.wikipedia.org/wiki/Lucas_sequence> "
+ 
+- concept:  lyapunov-candidate-function 
+  arity:  1 
+  form:  function 
+  area: "stability theory "
+  notation: "mi V "
+  url: "<https://mathworld.wolfram.com/LyapunovFunction.html><br/><https://en.wikipedia.org/wiki/Lyapunov_function><br/><https://www.encyclopediaofmath.org/index.php/Lyapunov_function> "
+  alias:  lyapunov-function 
+ 
+- concept:  macdonald-polynomial 
+  arity:  1 
+  form:  function 
+  area: "orthogonal polynomials "
+  notation: "msub P λ "
+  url: "<https://en.wikipedia.org/wiki/Macdonald_polynomials><br/>[https://ncatlab.org/nlab/show/Macdonald+polynomial](https://ncatlab.org/nlab/show/Macdonald+polynomial) "
+ 
+- concept:  mahler-measure 
+  arity:  1 
+  form:  function 
+  area: "number theory "
+  notation: "mi M "
+  url: "<https://mathworld.wolfram.com/MahlerMeasure.html><br/><https://en.wikipedia.org/wiki/Mahler_measure><br/><https://www.encyclopediaofmath.org/index.php/Mahler_measure> "
+ 
+- concept:  mangoldt-function 
+  arity:  1 
+  form:  function 
+  area: "special functions "
+  notation: "mi Λ "
+  url: "<https://mathworld.wolfram.com/MangoldtFunction.html><br/><https://dlmf.nist.gov/27.2#E14><br/><https://www.encyclopediaofmath.org/index.php/Mangoldt_function> "
+  alias:  von-mangoldt-function 
+ 
+- concept:  mapping-class-group 
+  arity:  1 
+  form:  function 
+  area: "geometric topology "
+  notation: "mi MCG "
+  url: "<https://en.wikipedia.org/wiki/Mapping_class_group><br/><https://ncatlab.org/nlab/show/mapping+class+group> "
+ 
+- concept:  mapping-cone 
+  arity:  1 
+  form:  "indexed symbol" 
+  area: "homotopy theory "
+  notation: "msub C $1<br/>mrow C $1 "
+  url: "[https://en.wikipedia.org/wiki/Mapping_cone_(topology)](https://en.wikipedia.org/wiki/Mapping_cone_(topology))<br/><https://en.wikipedia.org/wiki/Mapping_cone_(homological_algebra)><br/><https://ncatlab.org/nlab/show/mapping+cone> "
+  alias:  homotopy-cofiber 
+ 
+- concept:  matching-polynomial 
+  arity:  1 
+  form:  "indexed function"
+  area: "graph theory "
+  notation: "msub m $1<br/>msub M $1<br/>msub μ $1 "
+  url: "[https://en.wikipedia.org/wiki/Matching_polynomial](https://en.wikipedia.org/wiki/Matching_polynomial) "
+ 
+- concept:  mathieu-function-of-first-kind 
+  arity:  1 
+  form:  "indexed function"
+  area: "special functions "
+  notation: "msub ce $1<br/>msub se $1 "
+  url: "<https://mathworld.wolfram.com/MathieuFunction.html><br/><https://en.wikipedia.org/wiki/Mathieu_function><br/><https://dlmf.nist.gov/28#PT2><br/><https://dlmf.nist.gov/28#PT3><br/><https://dlmf.nist.gov/28.2#SS6.p1><br/><https://dlmf.nist.gov/28.26#i><br/><https://dlmf.nist.gov/28.26#i><br/><https://dlmf.nist.gov/28.26#i><br/><https://dlmf.nist.gov/28.26#i><br/><https://dlmf.nist.gov/28.12#SS2.p2><br/><https://dlmf.nist.gov/28.2#SS6.p1><br/><https://www.encyclopediaofmath.org/index.php/Mathieu_functions> "
+  alias: " angular-mathieu-function, mathieu-function "
+ 
+- concept:  mathieu-function-of-second-kind 
+  arity:  1 
+  form:  "indexed function"
+  area: "special functions "
+  notation: "msub fe $1<br/>msub ge $1 "
+  url: "<https://mathworld.wolfram.com/MathieuFunction.html><br/><https://en.wikipedia.org/wiki/Mathieu_function><br/><https://dlmf.nist.gov/28#PT2><br/><https://dlmf.nist.gov/28#PT3><br/><https://dlmf.nist.gov/28.2#SS6.p1><br/><https://dlmf.nist.gov/28.26#i><br/><https://dlmf.nist.gov/28.26#i><br/><https://dlmf.nist.gov/28.26#i><br/><https://dlmf.nist.gov/28.26#i><br/><https://dlmf.nist.gov/28.12#SS2.p2><br/><https://dlmf.nist.gov/28.2#SS6.p1><br/><https://www.encyclopediaofmath.org/index.php/Mathieu_functions> "
+  alias: " angular-mathieu-function, mathieu-function "
+ 
+- concept:  mathieu-group 
+  arity:  1 
+  form:  "indexed symbol" 
+  area: "group theory "
+  notation: "msub M 11<br/>msub M 12<br/>msub M 22<br/>msub M 23<br/>msub M 24 "
+  url: "<https://mathworld.wolfram.com/MathieuGroups.html><br/><https://en.wikipedia.org/wiki/Multiply_transitive_group><br/><https://en.wikipedia.org/wiki/Mathieu_group><br/><https://en.wikipedia.org/wiki/Mathieu_group_M11><br/><https://en.wikipedia.org/wiki/Mathieu_group_M12><br/><https://en.wikipedia.org/wiki/Mathieu_group_M22><br/><https://en.wikipedia.org/wiki/Mathieu_group_M23><br/><https://en.wikipedia.org/wiki/Mathieu_group_M24><br/><https://ncatlab.org/nlab/show/Mathieu+group><br/><https://www.encyclopediaofmath.org/index.php/Mathieu_group> "
+ 
+- concept:  matrix 
+  arity:  1 
+  form:  mtable<br/>fenced 
+  area: " algebra "
+  notation: "mtable<br/>mrow [ $1 ]<br/>mrow ( $1 ) "
+  url: "<https://mathworld.wolfram.com/Matrix.html><br/><https://mathworld.wolfram.com/SquareBracket.html><br/><https://en.wikipedia.org/wiki/Matrix_(mathematics)><br/><https://en.wikipedia.org/wiki/List_of_matrices><br/><https://en.wikipedia.org/wiki/Skew-symmetric_matrix><br/><https://en.wikipedia.org/wiki/Prenex_normal_form><br/><https://en.wikipedia.org/wiki/Matrix_isolation><br/><https://ncatlab.org/nlab/show/matrix><br/>[https://www.encyclopediaofmath.org/index.php/Matrix](https://www.encyclopediaofmath.org/index.php/Matrix) "
+ 
+- concept:  matrix-ring 
+  arity:  1 
+  form:  function 
+  area: "abstract algebra "
+  notation: "msub M $1 "
+  url: "<https://en.wikipedia.org/wiki/Matrix_ring><br/><https://www.encyclopediaofmath.org/index.php/Matrix_ring> "
+ 
+- concept:  maximum-degree 
+  arity:  1 
+  form:  function 
+  area: "graph theory "
+  notation: "mi Δ "
+  url: "<https://mathworld.wolfram.com/MaximumDegree.html><br/><https://en.wikipedia.org/wiki/Degree_(graph_theory)><br/><https://en.wikipedia.org/wiki/Degree_sequence> "
+ 
+- concept:  mean-curvature 
+  arity:  1 
+  form:  function 
+  area: "differential geometry "
+  notation: "mi H "
+  url: "<https://mathworld.wolfram.com/MeanCurvature.html><br/><https://en.wikipedia.org/wiki/Mean_curvature><br/><https://www.encyclopediaofmath.org/index.php/Mean_curvature> "
+ 
+- concept:  mean-squared-error 
+  arity:  1 
+  form:  function 
+  area: " statistics "
+  notation: "mi MSE "
+  url: "[https://en.wikipedia.org/wiki/Mean_squared_error](https://en.wikipedia.org/wiki/Mean_squared_error) "
+ 
+- concept:  meixner-pollaczek-polynomial 
+  arity:  1 
+  form:  "indexed function"
+  area: "orthogonal polynomials "
+  notation: "mi P "
+  url: "<https://mathworld.wolfram.com/Meixner-PollaczekPolynomial.html><br/><https://en.wikipedia.org/wiki/Meixner%E2%80%93Pollaczek_polynomials><br/><https://dlmf.nist.gov/18.19#P3.p1> "
+ 
+- concept:  mellin-transform 
+  arity:  1 
+  form:  operator 
+  area: "integral transforms "
+  notation: "mi ℳ "
+  url: "<https://mathworld.wolfram.com/MellinTransform.html><br/><https://en.wikipedia.org/wiki/Mellin_transform><br/><https://dlmf.nist.gov/1.14#E32><br/><https://www.encyclopediaofmath.org/index.php/Mellin_transform> "
+ 
+- concept:  meridian-radius-of-curvature 
+  arity:  1 
+  form:  function 
+  area: " geodesy "
+  notation: "mi M "
+  url: "[https://mathworld.wolfram.com/Meridian.html<br/><https://en.wikipedia.org/wiki/Meridian_arc](https://en.wikipedia.org/wiki/Meridian_arc)> "
+ 
+- concept:  meridian-distance 
+  arity:  1 
+  form:  function 
+  area: " geodesy "
+  notation: "mi m "
+  url: "[https://en.wikipedia.org/wiki/Meridian_arc<br/><https://mathworld.wolfram.com/Meridian.html](https://mathworld.wolfram.com/Meridian.html)> "
+ 
+- concept:  mersenne-number 
+  arity:  1 
+  form:  "indexed symbol" 
+  area: "number theory "
+  notation: "msub M $1 "
+  url: "[https://mathworld.wolfram.com/MersenneNumber.html](https://mathworld.wolfram.com/MersenneNumber.html)<br/><https://www.encyclopediaofmath.org/index.php/Mersenne_number><br/> "
+ 
+- concept:  mersenne-prime 
+  arity:  1 
+  form:  "indexed symbol" 
+  area: "number theory "
+  notation: "msub M $1 "
+  url: "<https://mathworld.wolfram.com/MersennePrime.html><br/><https://en.wikipedia.org/wiki/Mersenne_number><br/><https://en.wikipedia.org/wiki/Mersenne_prime> "
+ 
+- concept:  merten-function 
+  arity:  1 
+  form:  function 
+  area: "number theory "
+  notation: "mi M "
+  url: "<https://mathworld.wolfram.com/MertensFunction.html><br/><https://en.wikipedia.org/wiki/Mertens_function><br/> "
+ 
+- concept:  meson 
+  arity:  1 
+  form:   
+  area: " notation: "
+  url: "<https://en.wikipedia.org/wiki/Meson><br/><https://en.wikipedia.org/wiki/List_of_mesons><br/><https://ncatlab.org/nlab/show/meson> "
+ 
+- concept:  metaplectic-group 
+  arity:  0 
+  form:  symbol 
+  area: "group theory "
+  notation: "msub Mp 2n "
+  url: "<https://mathworld.wolfram.com/MetaplecticGroup.html><br/><https://en.wikipedia.org/wiki/Metaplectic_group><br/><https://ncatlab.org/nlab/show/metaplectic+group> "
+ 
+- concept:  mills-constant 
+  arity:  0 
+  form:  symbol 
+  area: "number theory "
+  notation: "mi A "
+  url: "<https://mathworld.wolfram.com/MillsConstant.html><br/><https://en.wikipedia.org/wiki/Mills%27_constant><br/><https://en.wikipedia.org/wiki/Mills_prime> "
+ 
+- concept:  mills-ratio 
+  arity:  1 
+  form:  function 
+  area: "probability theory "
+  notation: "mi m<br/>mi M "
+  url: "<https://mathworld.wolfram.com/MillsRatio.html><br/><https://en.wikipedia.org/wiki/Mills_ratio><br/><https://dlmf.nist.gov/7.8#E1> "
+ 
+- concept:  minimum-degree 
+  arity:  1 
+  form:  function 
+  area: "graph theory "
+  notation: "mi δ<br/> "
+  url: "<https://mathworld.wolfram.com/MinimumDegree.html><br/><https://en.wikipedia.org/wiki/Degree_(graph_theory)><br/><https://en.wikipedia.org/wiki/Degree_sequence> "
+ 
+- concept:  minkowski-difference 
+  arity:  2 
+  form:  infix 
+  area: " geometry "
+  notation: "mo - "
+  url: "[https://en.wikipedia.org/wiki/Minkowski_addition](https://en.wikipedia.org/wiki/Minkowski_addition) "
+  alias:  geometric-difference 
+ 
+- concept:  minkowski-sum 
+  arity:  2 
+  form:  infix 
+  area: " geometry "
+  notation: "mo + "
+  url: "<https://mathworld.wolfram.com/MinkowskiSum.html><br/><https://en.wikipedia.org/wiki/Minkowski_addition> "
+  alias:  dilation 
+ 
+- concept:  mittag-leffler-function 
+  arity:  1 
+  form:  "indexed function"
+  area: "special functions "
+  notation: "msub E $1 "
+  url: "<https://mathworld.wolfram.com/Mittag-LefflerFunction.html><br/><https://en.wikipedia.org/wiki/Mittag-Leffler_function><br/><https://dlmf.nist.gov/10.46#E3><br/><https://www.encyclopediaofmath.org/index.php/Mittag-Leffler_function> "
+ 
+- concept:  mobius-function 
+  arity:  1 
+  form:  function 
+  area: "number theory "
+  notation: "mi μ "
+  url: "<https://mathworld.wolfram.com/MoebiusFunction.html><br/><https://en.wikipedia.org/wiki/%CE%9C(n)><br/><https://en.wikipedia.org/wiki/M%C3%B6bius_function><br/><https://dlmf.nist.gov/27.2#E12><br/><https://www.encyclopediaofmath.org/index.php/MÃ¶bius_function> "
+ 
+- concept:  modified-bessel-function-of-first-kind 
+  arity:  1 
+  form:  function 
+  area: "special functions "
+  notation: "msub I $1 "
+  url: "<https://dlmf.nist.gov/10#PT3><br/><https://dlmf.nist.gov/10.25#E2><br/><https://dlmf.nist.gov/10.25#E3> "
+ 
+- concept:  modified-bessel-function-of-second-kind 
+  arity:  1 
+  form:  function 
+  area: "special functions "
+  notation: "msub K $1 "
+  url: "<https://dlmf.nist.gov/10#PT3><br/><https://dlmf.nist.gov/10.25#E2><br/><https://dlmf.nist.gov/10.25#E3> "
+ 
+- concept:  modified-mathieu-function 
+  arity:  1 
+  form:  function 
+  area: "special functions "
+  notation: "msub Ce $1<br/>msub Se $1<br/>msub Me $1<br/>msub Fe $1<br/>msub Ge $1 "
+  url: "<https://dlmf.nist.gov/28#PT4><br/><https://dlmf.nist.gov/28.20#E3><br/><https://dlmf.nist.gov/28.20#E6><br/><https://dlmf.nist.gov/28.20#E7><br/><https://dlmf.nist.gov/28.20#E17><br/><https://dlmf.nist.gov/28.20#E18><br/><https://dlmf.nist.gov/28.20#E19><br/><https://dlmf.nist.gov/28.20#E20><br/><https://dlmf.nist.gov/28.20#SS3.p1><br/><https://dlmf.nist.gov/28.20#E5><br/><https://dlmf.nist.gov/28.20#E4> "
+ 
+- concept:  modified-spherical-bessel-function 
+  arity:  1 
+  form:  function 
+  area: "special functions "
+  notation: "msubsup i $1 (1)<br/>msubsup i $1 (2)<br/>msub k $1 "
+  url: "<https://mathworld.wolfram.com/ModifiedSphericalBesselFunction.html><br/><https://dlmf.nist.gov/10.47#E7><br/><https://dlmf.nist.gov/10.47#E8><br/><https://dlmf.nist.gov/10.47#E9> "
+ 
+- concept:  modified-struve-function 
+  arity:  1 
+  form:  function 
+  area: "special functions "
+  notation: "msub L $1 "
+  url: "<https://mathworld.wolfram.com/ModifiedStruveFunction.html><br/><https://dlmf.nist.gov/11.2#E2><br/><https://dlmf.nist.gov/11.2#E6> "
+ 
+- concept:  modular-discriminant 
+  arity:  1 
+  form:  operator 
+  area: "special functions "
+  notation: "mi Δ<br/> "
+  url: "[https://mathworld.wolfram.com/ModularDiscriminant.html<br/>](https://mathworld.wolfram.com/ModularDiscriminant.html)[https://en.wikipedia.org/wiki/Modular_form#The_modular_discriminant](https://en.wikipedia.org/wiki/Modular_form#The_modular_discriminant) "
+ 
+- concept:  modulo 
+  arity:  2 
+  form:  infix<br/>mixfix 
+  area: "modular arithmetic "
+  notation: "mo mod<br/>mrow $1 ( mod $2 ) "
+  url: "<https://mathworld.wolfram.com/Modulo.html><br/><https://en.wikipedia.org/wiki/Modulo_(jargon)><br/>[https://en.wikipedia.org/wiki/Modulo_operation](https://en.wikipedia.org/wiki/Modulo_operation)<br/><https://dlmf.nist.gov/front/introduction#Sx4.p2.t1.r10> "
+  alias:  mod 
+ 
+- concept:  moebius-function 
+  arity:  1 
+  form:  function 
+  area: "number theory "
+  notation: "mi μ "
+  url: "<https://www.encyclopediaofmath.org/index.php/Moebius_function[><br/>](https://en.wikipedia.org/wiki/M%C3%B6bius_function)[https://en.wikipedia.org/wiki/M%C3%B6bius_functio](https://en.wikipedia.org/wiki/M%C3%B6bius_function)n<br/> "
+ 
+- concept:  moment-of-function 
+  arity:  2 
+  form: "<br/>msub<br/>mixfix "
+  area: " mathematics "
+  notation: "msub μ $1<br/>mrow E [ msup $1 $2 ] "
+  url: "[https://en.wikipedia.org/wiki/Moment_(mathematics)](https://en.wikipedia.org/wiki/Moment_(mathematics)) "
+  alias:  moment 
+ 
+- concept:  moment 
+  arity:  0 
+  form:  symbol 
+  area: " mechanics "
+  notation: "mi M "
+  url: "<https://mathworld.wolfram.com/Moment.html><br/><https://en.wikipedia.org/wiki/Moment_(mathematics)><br/><https://en.wikipedia.org/wiki/Torque><br/><https://ncatlab.org/nlab/show/moment><br/><https://www.encyclopediaofmath.org/index.php/Moment> "
+ 
+- concept:  moment-of-inertia 
+  arity:  0 
+  form:  symbol 
+  area: " physics "
+  notation: "mi I "
+  url: "<https://mathworld.wolfram.com/MomentofInertia.html><br/><https://en.wikipedia.org/wiki/Moment_of_inertia><br/><https://ncatlab.org/nlab/show/moment+of+inertia> "
+  alias: " mass-moment-of-inertia, angular-mass, rotational-inertia "
+ 
+- concept:  momentum 
+  arity:  0 
+  form:  symbol 
+  area: " mechanics "
+  notation: "mi p<br/>mip "
+  url: "<https://en.wikipedia.org/wiki/Momentum><br/><https://ncatlab.org/nlab/show/momentum> "
+  alias: " linear-momentum, translational-momentum "
+ 
+- concept:  monster-group 
+  arity:  0 
+  form:  symbol 
+  area: "group theory "
+  notation: "mi M "
+  url: "<https://mathworld.wolfram.com/MonsterGroup.html><br/><https://en.wikipedia.org/wiki/Monster_group><br/><https://ncatlab.org/nlab/show/Monster+group> "
+  alias:  friendly-giant 
+ 
+- concept:  moore-penrose-inverse 
+  arity:  1 
+  form:  msup 
+  area: "linear algebra "
+  notation: "msup $1 + "
+  url: "[https://en.wikipedia.org/wiki/Moore%E2%80%93Penrose_inverse](https://en.wikipedia.org/wiki/Moore%E2%80%93Penrose_inverse) "
+  alias:  moore-penrose-pseudoinverse 
+ 
+- concept:  moore-smith-sequence 
+  arity:  1 
+  form:  fenced 
+  area: " topology "
+  notation: "mrow ( $1 ) "
+  url: "<https://en.wikipedia.org/wiki/Moore%E2%80%93Smith_limit><br/><https://en.wikipedia.org/wiki/Net_(mathematics)> "
+  alias:  net 
+ 
+- concept:  motzkin-number 
+  arity:  1 
+  form:  "indexed symbol" 
+  area: "combinatorial analysis "
+  notation: "msub M $1<br/>mi M "
+  url: "<https://mathworld.wolfram.com/MotzkinNumber.html><br/><https://en.wikipedia.org/wiki/Motzkin_number><br/><https://en.wikipedia.org/wiki/Motzkin_prime><br/><https://dlmf.nist.gov/26.6#E2><br/> "
+ 
+- concept:  multiple-integral 
+  arity:  1 
+  form:  indexed 
+  area: "multivariable calculus "
+  notation: "mo ∫ ⋯ ∫<br/>mo ∫ "
+  url: "<https://mathworld.wolfram.com/MultipleIntegral.html><br/><https://en.wikipedia.org/wiki/%E2%88%AB%E2%88%ABf(x,y)dxdy><br/><https://en.wikipedia.org/wiki/Multiple_integral><br/><https://www.encyclopediaofmath.org/index.php/Multiple_integral> "
+ 
+- concept:  multiplicative-inverse 
+  arity:  1 
+  form:  msup<br/>mixfix 
+  area: "abstract algebra "
+  notation: "msup $1 -1<br/>mrow 1 / $1 "
+  url: "<https://mathworld.wolfram.com/Inverse.html><br/>[https://en.wikipedia.org/wiki/Inverse_functio](https://en.wikipedia.org/wiki/Inverse_function)n<br/><https://en.wikipedia.org/wiki/Inverse_functions_and_differentiation><br/><https://ncatlab.org/nlab/show/inverse><br/><https://mathworld.wolfram.com/MultiplicativeInverse.html[><br/>](https://en.wikipedia.org/wiki/Multiplicative_inverse)[https://en.wikipedia.org/wiki/Multiplicative_invers](https://en.wikipedia.org/wiki/Multiplicative_inverse)e "
+  alias:  inverse 
+ 
+- concept:  multiplicative-order 
+  arity:  1 
+  form:  "indexed function"
+  area: "modular arithmetic "
+  notation: "msub O $1<br/>msub ord $1 "
+  url: "<https://mathworld.wolfram.com/MultiplicativeOrder.html><br/><https://en.wikipedia.org/wiki/Multiplicative_order> "
+ 
+- concept:  multiplier-algebra 
+  arity:  1 
+  form:  function 
+  area: "functional analysis "
+  notation: "mrow M($1) "
+  url: "<https://mathworld.wolfram.com/MultiplierAlgebra.html><br/>[https://en.wikipedia.org/wiki/Multiplier_algebra](https://en.wikipedia.org/wiki/Multiplier_algebra)<br/><https://ncatlab.org/nlab/show/multiplier+algebra> "
+ 
+- concept:  multichoose 
+  arity:  2 
+  form:  fenced-stacked 
+  area: " combinatorics "
+  notation: "mrow ( mfrac $1 $2 ) "
+  url: "[https://mathworld.wolfram.com/Multiset.html](https://mathworld.wolfram.com/Multiset.html) "
+ 
+- concept:  multiset-coefficient 
+  arity:  2 
+  form:  fenced-stacked 
+  area: " combinatorics "
+  notation: "mrow ( ( mfrac $1 $2 ) ) "
+  url: "<br/>[https://en.wikipedia.org/wiki/Multiset](https://en.wikipedia.org/wiki/Multiset)<br/><br/> "
+  alias:  multiset-number 
+ 
+- concept:  multivariate-gaussian-distribution 
+  arity:  0 
+  form:  symbol 
+  area: "probability theory "
+  notation: "msub 𝒩 $1 "
+  url: "[https://mathworld.wolfram.com/MultivariateNormalDistribution.html<br/><https://en.wikipedia.org/wiki/Multivariate_normal_distribution](https://en.wikipedia.org/wiki/Multivariate_normal_distribution)> "
+  alias: " multivariate-normal-distribution, joint-normal-distribution "
+ 
+- concept:  mutation 
+  arity:  2 
+  form:  msup 
+  area: "abstract algebra "
+  notation: "msup $1 $2 "
+  url: "<https://mathworld.wolfram.com/Mutation.html><br/><https://en.wikipedia.org/wiki/Mutation_(knot_theory)><br/><https://en.wikipedia.org/wiki/Mutation_(Jordan_algebra)><br/><https://en.wikipedia.org/wiki/Hua%27s_identity_(Jordan_algebra)><br/><https://en.wikipedia.org/wiki/Mutation_(algebra)><br/><https://en.wikipedia.org/wiki/Mutation_(genetic_algorithm)> "
+  alias:  homotope 
+ 
+- concept:  mutual-information 
+  arity:  1 
+  form:  function 
+  area: "information theory "
+  notation: "mi I "
+  url: "<https://mathworld.wolfram.com/MutualInformation.html><br/><https://en.wikipedia.org/wiki/Mutual_information> "
+ 
+- concept:  narayana-number 
+  arity:  2 
+  form:  function 
+  area: "combinatorial analysis "
+  notation: "mrow N ($1, $2) "
+  url: "<https://mathworld.wolfram.com/NarayanaNumber.html><br/><https://en.wikipedia.org/wiki/Narayana_number><br/><https://dlmf.nist.gov/26.6#E3> "
+ 
+- concept:  narrow-denjoy-integral 
+  arity:  1 
+  form:  indexed 
+  area: " calculus "
+  notation: "mo ∫ "
+  url: "<https://mathworld.wolfram.com/DenjoyIntegral.html><br/><https://en.wikipedia.org/wiki/Henstock%E2%80%93Kurzweil_integral><br/><https://www.encyclopediaofmath.org/index.php/Denjoy_integral> "
+  alias: " henstock-kurzweil-integral, luzin-integral, perron-integral "
+ 
+- concept:  negative-binomial-distribution 
+  arity:  0 
+  form:  symbol 
+  area: "probability theory "
+  notation: "mi NB "
+  url: "<https://mathworld.wolfram.com/NegativeBinomialDistribution.html><br/><https://en.wikipedia.org/wiki/Negative_binomial_distribution><br/><https://www.encyclopediaofmath.org/index.php/Negative_binomial_distribution> "
+ 
+- concept:  negative-hypergeometric-distribution 
+  arity:  1 
+  form:  "indexed symbol" 
+  area: "probability theory "
+  notation: "mi NHG "
+  url: "<https://en.wikipedia.org/wiki/Negative_hypergeometric_distribution><br/><https://www.encyclopediaofmath.org/index.php/Negative_hypergeometric_distribution> "
+ 
+- concept:  neighbourhood 
+  arity:  2 
+  form:  "indexed function<br/>function"
+  area: "graph theory "
+  notation: "msub N $1 ( $2 )<br/>mrow N ( $1 ) "
+  url: "[https://en.wikipedia.org/wiki/Neighbourhood_(graph_theory)<br/>](https://en.wikipedia.org/wiki/Neighbourhood_(graph_theory)) "
+  alias:  open-neighbourhood 
+ 
+- concept:  neighbourhood-filter 
+  arity:  1 
+  form:  function 
+  area: " topology "
+  notation: "mi 𝒩 "
+  url: "[https://en.wikipedia.org/wiki/Neighbourhood_system](https://en.wikipedia.org/wiki/Neighbourhood_system) "
+  alias: " neighbourhood-system, complete-system-of-neighbourhoods "
+ 
+- concept:  neron-severi-group 
+  arity:  1 
+  form:  function 
+  area: "group theory "
+  notation: "mi NS "
+  url: "<https://mathworld.wolfram.com/Neron-SeveriGroup.html><br/>[https://encyclopediaofmath.org/wiki/N%C3%A9ron-Severi_group](https://encyclopediaofmath.org/wiki/N%C3%A9ron-Severi_group) "
+ 
+- concept:  neron-tate-height 
+  arity:  0 
+  form:  symbol 
+  area: "number theory "
+  notation: "mover h ^ "
+  url: "[https://en.wikipedia.org/wiki/N%C3%A9ron%E2%80%93Tate_height](https://en.wikipedia.org/wiki/N%C3%A9ron%E2%80%93Tate_height) "
+  alias:  canonical-height 
+ 
+- concept:  nerve 
+  arity:  1 
+  form:  function 
+  area: "category theory "
+  notation: "mi N "
+  url: "<https://mathworld.wolfram.com/Nerve.html><br/><https://en.wikipedia.org/wiki/Nerve_(category_theory)><br/><https://ncatlab.org/nlab/show/nerve> "
+ 
+- concept:  nome 
+  arity:  1 
+  form:  function 
+  area: "special functions "
+  notation: "mi q "
+  url: "[https://mathworld.wolfram.com/Nome.html](https://mathworld.wolfram.com/Nome.html)<br/><https://en.wikipedia.org/wiki/Nome_(mathematics)> "
+ 
+- concept:  non-oriented-angle 
+  arity:  1 
+  form:  prefix 
+  area: " geometry "
+  notation: "mo ∠ "
+  url: "[https://en.wikipedia.org/wiki/Orientation_(vector_space)<br/>](https://en.wikipedia.org/wiki/Orientation_(vector_space))[https://en.wikipedia.org/wiki/Euclidean_space#Angle](https://en.wikipedia.org/wiki/Euclidean_space#Angle) "
+  alias:  angle 
+ 
+- concept:  nor 
+  arity:  2 
+  form:  infix 
+  area: " logic "
+  notation: "mo ↓ "
+  url: "<https://mathworld.wolfram.com/Nor.html><br/><https://mathworld.wolfram.com/NOR.html> "
+  alias:  joint-denial 
+ 
+- concept:  norm 
+  arity:  1 
+  form:  fenced 
+  area: "linear algebra "
+  notation: "mrow ‖ $1 ‖<br/>mrow | $1"
+  url:  "<https://mathworld.wolfram.com/Norm.html><br/>[https://en.wikipedia.org/wiki/Norm_(mathematics)](https://en.wikipedia.org/wiki/Norm_(mathematics))<br/><https://en.wikipedia.org/wiki/Norm_(abelian_group)><br/><https://ncatlab.org/nlab/show/norm><br/><https://www.encyclopediaofmath.org/index.php/Norm>"
+ 
+- concept:  normalizer 
+  arity:  1 
+  form:  function 
+  area: "group theory "
+  notation: "msub N $1 "
+  url: "<https://mathworld.wolfram.com/Normalizer.html><br/><https://en.wikipedia.org/wiki/Centralizer_and_normalizer><br/><https://ncatlab.org/nlab/show/normalizer> "
+ 
+- concept:  not-divisible-by 
+  arity:  2 
+  form:  infix 
+  area: "number theory "
+  notation: "mo ∤ "
+  url: "[https://en.wikipedia.org/wiki/Divisor](https://en.wikipedia.org/wiki/Divisor) "
+ 
+- concept:  null-graph 
+  arity:  0 
+  form:  symbol 
+  area: "graph theory "
+  notation: "msub mover K ¯ /mover $1 "
+  url: "<https://mathworld.wolfram.com/NullGraph.html><br/><https://en.wikipedia.org/wiki/Null_graph><br/><https://en.wikipedia.org/wiki/Order-zero_graph> "
+  alias:  edgeless-graph 
+ 
+- concept:  numerical-part 
+  arity:  1 
+  form:  fenced 
+  area: "SI units "
+  notation: "mrow { $1 } "
+  url: "[https://www.nist.gov/pml/special-publication-811/nist-guide-si-chapter-7-rules-and-style-conventions-expressing-values](https://www.nist.gov/pml/special-publication-811/nist-guide-si-chapter-7-rules-and-style-conventions-expressing-values) "
+ 
+- concept:  object 
+  arity:  1 
+  form:  prefix 
+  area: "category theory "
+  notation: "mi Obj "
+  url: "<https://mathworld.wolfram.com/Object.html><br/><https://en.wikipedia.org/wiki/Lattice-based_access_control><br/><https://ncatlab.org/nlab/show/object> "
+ 
+- concept:  octant 
+  arity:  3 
+  form:  fenced 
+  area: "euclidean solid geometry "
+  notation: "mrow (±,±,±)<br/>mrow (+,+,+)<br/>mrow ($1, $2, $3) "
+  url: "<https://mathworld.wolfram.com/Octant.html><br/><https://en.wikipedia.org/wiki/Octant_(plane_geometry)><br/><https://en.wikipedia.org/wiki/Octant_(solid_geometry)><br/><https://www.encyclopediaofmath.org/index.php/Octant> "
+ 
+- concept:  octonions 
+  arity:  0 
+  form:  symbol 
+  area: "compositional algebra "
+  notation: "mi 𝕆<br/>miO<br/>mi O "
+  url: "<https://mathworld.wolfram.com/Octonion.html><br/><https://en.wikipedia.org/wiki/Octonion><br/><https://ncatlab.org/nlab/show/octonion><br/><https://www.encyclopediaofmath.org/index.php/Octonion> "
+  alias:  cayley-numbers 
+ 
+- concept:  odds-ratio 
+  arity:  0 
+  form:  symbol 
+  area: " statistics "
+  notation: "mi OR "
+  url: "[https://en.wikipedia.org/wiki/Odds_ratio](https://en.wikipedia.org/wiki/Odds_ratio) "
+ 
+- concept:  onsager-machlup-function 
+  arity:  1 
+  form:  function 
+  area: "functional analysis "
+  notation: "mi L "
+  url: "<https://en.wikipedia.org/wiki/Onsager%E2%80%93Machlup_function><br/><https://www.encyclopediaofmath.org/index.php/Onsager-Machlup_function><br/> "
