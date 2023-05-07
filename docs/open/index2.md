@@ -1,7 +1,7 @@
 
 <style>
 tr:target >td:first-child {border-left:solid thick black}
-x</style>
+</style>
 
 # Open Concept List
  
@@ -35,7 +35,10 @@ concept terms and so has many entries that do not require custom speech rules.
 <tr id="{{c.concept}}{{c.arity}}{{c.form}}">
 <td><a href="#{{c.concept}}{{c.arity}}{{c.form}}">{{c.concept}}</a></td>
 <td>{{c.arity}}</td>
-<td>{{c.property}}{%- if c.default -%}*{%- endif -%}</td>
+<td>{{c.form}}</td>
+<td>{{c.area}}</td>
+<td>{{c.notation}}</td>
+<td>{{c.url}}</td>
 </tr>
 {%- endfor -%}
 </tbody>
