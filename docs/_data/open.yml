@@ -1759,7 +1759,7 @@
   form:  msup
   area: "graph theory"
   notation: "msup $1 '<br/>msup $1 T<br/>msup $1 R"
-  urls:<br/>[https://en.wikipedia.org/wiki/Transpose_graph]
+  urls:
    - "https://en.wikipedia.org/wiki/Transpose_graph"
   alias: "transpose-graph, reverse-graph"
 
@@ -2736,7 +2736,7 @@
   form:  function
   area: "graph theory"
   notation: "mi ρ"
-  urls:<br/>
+  urls:
    - "https://mathworld.wolfram.com/EdgeCoverNumber.html"
    - "https://en.wikipedia.org/wiki/Edge_covering_number"
 
@@ -2944,7 +2944,7 @@
   form:  symbol
   area: "symbols"
   notation: "mi ℮"
-  urls:<br/>
+  urls:
    - "https://en.wikipedia.org/wiki/Estimation"
   alias: "estimated-sign, e-mark"
 
@@ -8019,7 +8019,7 @@
   form:  mover
   area: "special functions"
   notation: "mover θ⁡ ^"
-  urls:<br/>
+  urls:
    - "https://dlmf.nist.gov/21.2#i"
    - "https://dlmf.nist.gov/21.2#E1"
 
@@ -9780,7 +9780,7 @@
   form:  "function<br/>symbol"
   area: "algebraic topology"
   notation: "mi 𝒩<br/>mi w"
-  urls:<br/>
+  urls:
    - "https://en.wikipedia.org/wiki/Winding_number"
    - "https://dlmf.nist.gov/1.9#E32"
    - "https://ncatlab.org/nlab/show/winding+number"
