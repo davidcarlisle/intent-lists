@@ -3189,8 +3189,6 @@
   notation: "mo ⋉ "
   url: "[https://en.wikipedia.org/wiki/Graph_product](https://en.wikipedia.org/wiki/Graph_product) "
 
-# good
-
  
 - concept:  homotopy-category 
   arity:  1 
@@ -4820,3 +4818,302 @@
   area: "functional analysis "
   notation: "mi L "
   url: "<https://en.wikipedia.org/wiki/Onsager%E2%80%93Machlup_function><br/><https://www.encyclopediaofmath.org/index.php/Onsager-Machlup_function><br/> "
+
+# good
+
+ 
+- concept:  open-ball 
+  arity:  2 
+  form:  mixfix 
+  area: " topology "
+  notation: "mrow msub B $1 /msub ( $2 ) "
+  url: "<https://mathworld.wolfram.com/OpenBall.html><br/><https://en.wikipedia.org/wiki/Ball_(mathematics)> "
+  alias:  open-metric-ball 
+ 
+- concept:  open-interval 
+  arity:  2 
+  form:  fenced 
+  area: " algebra "
+  notation: "mrow ( $1, $2 )<br/>mrow ] $1 , $2 [ "
+  url: "<https://mathworld.wolfram.com/OpenInterval.html><br/><https://dlmf.nist.gov/front/introduction#Sx4.p1.t1.r28> "
+ 
+- concept:  open-real-interval 
+  arity:  2 
+  form:  fenced 
+  area: " algebra "
+  notation: "mrow ( $1 . . $2 ) "
+  url: "[https://proofwiki.org/wiki/Definition: Real_Interval/Open](https://proofwiki.org/wiki/Definition:Real_Interval/Open)"
+ 
+- concept:  opposite 
+  arity:  1 
+  form:  msup 
+  area: "category theory,<br/>group theory "
+  notation: "msup $1 op "
+  url: "<https://en.wikipedia.org/wiki/Opposite_category><br/><https://ncatlab.org/nlab/show/opposite+category><br/><https://en.wikipedia.org/wiki/Opposite_group><br/><https://en.wikipedia.org/wiki/Opposite_ring> "
+  alias:  dual 
+ 
+- concept:  opposite-charge 
+  arity:  2 
+  form:  infix 
+  area: " physics "
+  notation: "mo ⇅ "
+  url: "[https://youtu.be/HZ7a9YkF204?t=4657](https://youtu.be/HZ7a9YkF204?t=4657) "
+ 
+- concept:  or-product 
+  arity:  2 
+  form:  infix 
+  area: "graph theory "
+  notation: "mo * "
+  url: "[https://en.wikipedia.org/wiki/Graph_product](https://en.wikipedia.org/w/index.php?title=Graph_product) "
+  alias: " disjunctive-product, co-normal-product "
+ 
+- concept:  order-of-group 
+  arity:  1 
+  form:  "function<br/>fenced"
+  area: "group theory "
+  notation: "mi ord<br/>mrow | $1"
+  url:  "[https://en.wikipedia.org/wiki/Order_(group_theory)<br/>](https://en.wikipedia.org/wiki/Order_(group_theory))"
+ 
+- concept:  orthocomplement 
+  arity:  1 
+  form:  msup 
+  area: "lattice theory "
+  notation: "msup $1 ⊥ "
+  url: "[https://en.wikipedia.org/wiki/Complemented_lattice](https://en.wikipedia.org/wiki/Complemented_lattice) "
+ 
+- concept:  orthogonal 
+  arity:  2 
+  form:  infix 
+  area: " geometry,<br/>algebra "
+  notation: "mo ⊥ "
+  url: "<https://mathworld.wolfram.com/Orthogonal.html><br/>[https://en.wikipedia.org/wiki/Orthogonal_functions<br/>](https://en.1wikipedia.org/wiki/Orthogonal_functions)https://en.wikipedia.org/wiki/Orthogonality_(term_rewriting)<br/><https://en.wikipedia.org/wiki/Orthogonality><br/><https://ncatlab.org/nlab/show/orthogonality><br/>[https://www.encyclopediaofmath.org/index.php/Orthogonality](https://www.encyclopediaofmath.org/index.php/Orthogonality) "
+  alias:  perpendicular 
+ 
+- concept:  orthogonal-group 
+  arity:  1 
+  form:  function 
+  area: "group theory "
+  notation: "mi O "
+  url: "<https://mathworld.wolfram.com/OrthogonalGroup.html><br/><https://en.wikipedia.org/wiki/Orthogonal_group><br/><https://en.wikipedia.org/wiki/Special_orthogonal_Lie_algebra><br/><https://ncatlab.org/nlab/show/orthogonal+group><br/><https://www.encyclopediaofmath.org/index.php/Orthogonal_group> "
+ 
+- concept:  outer-automorphism-group 
+  arity:  1 
+  form:  function 
+  area: "abstract algebra "
+  notation: "mi Out "
+  url: "<https://mathworld.wolfram.com/OuterAutomorphismGroup.html><br/><https://en.wikipedia.org/wiki/Outer_automorphism_group> "
+  alias:  outer-automorphism 
+ 
+- concept:  outer-jordan-measure 
+  arity:  1 
+  form:  function 
+  area: "measure theory "
+  notation: "msup m * "
+  url: "<https://mathworld.wolfram.com/JordanMeasure.html><br/><https://en.wikipedia.org/wiki/Jordan_measure><br/><https://www.encyclopediaofmath.org/index.php/Jordan_measure> "
+ 
+- concept:  outer-product 
+  arity:  2 
+  form:  infix 
+  area: "linear algebra "
+  notation: "mo ⊗ "
+  url: "<https://mathworld.wolfram.com/OuterProduct.html><br/>[https://en.wikipedia.org/wiki/Outer_product](https://en.wikipedia.org/wiki/Outer_product)<br/><https://en.wikipedia.org/wiki/Tensor_product> "
+ 
+- concept:  p-core 
+  arity:  1 
+  form:  function 
+  area: "group theory "
+  notation: "msub O p "
+  url: "<https://en.wikipedia.org/wiki/Core_(group)><br/><https://en.wikipedia.org/wiki/P-soluble_group><br/><https://en.wikipedia.org/wiki/P-core><br/><https://en.wikipedia.org/wiki/Upper_p-series> "
+ 
+- concept:  pade-approximant 
+  arity:  3 
+  form:  mixfix 
+  area: "numerical analysis "
+  notation: "msub mrow [ $1 / $2 ] /mrow $3 "
+  url: "[https://dlmf.nist.gov/3.11#SS4.p1](https://dlmf.nist.gov/3.11#SS4.p1)<br/><https://mathworld.wolfram.com/PadeApproximant.html><br/><https://en.wikipedia.org/wiki/Pad%C3%A9_approximant><br/> "
+ 
+- concept:  padovan-sequence 
+  arity:  1 
+  form:  function 
+  area: "number theory "
+  notation: "mi P "
+  url: "<https://mathworld.wolfram.com/PadovanSequence.html><br/><https://en.wikipedia.org/wiki/Padovan_sequence> "
+ 
+- concept:  paraboloidal-coordinate 
+  arity:  3 
+  form:  fenced 
+  area: " geometry "
+  notation: "mrow ( $1, $2 , $3 ) "
+  url: "<https://mathworld.wolfram.com/ParaboloidalCoordinates.html><br/><https://en.wikipedia.org/wiki/Paraboloidal_coordinates><br/><https://www.encyclopediaofmath.org/index.php/Paraboloidal_coordinates> "
+ 
+- concept:  parallel 
+  arity:  2 
+  form:  infix 
+  area: " geometry "
+  notation: "mo ∥ "
+  url: "<https://mathworld.wolfram.com/Parallel.html><br/><https://en.wikipedia.org/wiki/Parallel_(geometry)><br/><https://en.wikipedia.org/wiki/Parallel_curve> "
+ 
+- concept:  parallel-morphism 
+  arity:  2 
+  form:  embellished infix 
+  area: "category theory "
+  notation: "<munderover><br/><mrow/><br/><munder><mo>⟶</mo> $1</munder><br/><mover><mo>⟶</mo> $2</mover><br/></munderover>"
+  url: "[https://ncatlab.org/nlab/show/parallel+morphisms](https://ncatlab.org/nlab/show/parallel+morphisms) "
+ 
+- concept:  partial-charge 
+  arity:  0 
+  form:  symbol 
+  area: " chemistry "
+  notation: "msup δ $1<br/>mrow δ $1 "
+  url: "[https://en.wikipedia.org/wiki/Partial_charge<br/>](https://en.wikipedia.org/wiki/Partial_charge)[https://chem.libretexts.org/Bookshelves/General_Chemistry/Map%3A_Chemistry_-_The_Central_Science_(Brown_et_al.)/08._Basic_Concepts_of_Chemical_Bonding/8.S%3A_Basic_Concepts_of_Chemical_Bonding_(Summary)](https://chem.libretexts.org/Bookshelves/General_Chemistry/Map%3A_Chemistry_-_The_Central_Science_(Brown_et_al.)/08._Basic_Concepts_of_Chemical_Bonding/8.S%3A_Basic_Concepts_of_Chemical_Bonding_(Summary)) "
+  alias:  delta-sign 
+ 
+- concept:  partition 
+  arity:  2 
+  form:  infix 
+  area: "number theory "
+  notation: "mo ⊢ "
+  url: "[https://mathworld.wolfram.com/Partition.html](https://mathworld.wolfram.com/Partition.html)<br/><https://mathworld.wolfram.com/FrequencyRepresentation.html><br/><https://en.wikipedia.org/wiki/Partition_(number_theory)><br/><https://en.wikipedia.org/wiki/List_of_partition_topics> "
+ 
+- concept:  partition-frequency-representation 
+  arity:  4 
+  form:  mixfix 
+  area: "number theory "
+  notation: "mrow ( msup $1 $2 /msup msup $3 $4 /msup ... ) "
+  url: "[https://mathworld.wolfram.com/Partition.html<br/><https://mathworld.wolfram.com/FrequencyRepresentation.html](https://mathworld.wolfram.com/FrequencyRepresentation.html)> "
+ 
+- concept:  partition-function 
+  arity:  1 
+  form:  function 
+  area: "number theory "
+  notation: "mi p "
+  url: "[https://en.wikipedia.org/wiki/Partition_(number_theory)](https://en.wikipedia.org/wiki/Partition_(number_theory)) "
+ 
+- concept:  pauli-matrix 
+  arity:  1 
+  form:  "indexed symbol" 
+  area: "mathematical physics "
+  notation: "msub σ $1 "
+  url: "<https://mathworld.wolfram.com/PauliMatrices.html><br/><https://mathworld.wolfram.com/PauliMatrix.html><br/>[https://en.wikipedia.org/wiki/Pauli_matrices](https://en.wikipedia.org/wiki/Pauli_matrices)<br/><https://www.encyclopediaofmath.org/index.php/Pauli_matrices> "
+ 
+- concept:  peclet-number 
+  arity:  1 
+  form:  "indexed symbol" 
+  area: "fluid dynamics "
+  notation: "msub Pe $1 "
+  url: "<https://en.wikipedia.org/wiki/P%C3%A9clet_number><br/><https://www.encyclopediaofmath.org/index.php/Peclet_number><br/><https://www.encyclopediaofmath.org/index.php/PÃ©clet_number> "
+ 
+- concept:  peirce-arrow 
+  arity:  2 
+  form:  infix 
+  area: " logic "
+  notation: "mo ↓ "
+  url: "[https://www.encyclopediaofmath.org/index.php/Peirce_arrow](https://www.encyclopediaofmath.org/index.php/Peirce_arrow) "
+ 
+- concept:  pell-number 
+  arity:  0 
+  form:  symbol 
+  area: "number theory "
+  notation: "msub P $1 "
+  url: "<https://mathworld.wolfram.com/PellNumber.html><br/><https://en.wikipedia.org/wiki/Pell_number><br/> "
+ 
+- concept:  pell-luca-number 
+  arity:  0 
+  form:  symbol 
+  area: "number theory "
+  notation: "msub Q $1 "
+  url: "<https://mathworld.wolfram.com/Pell-LucasNumber.html><br/><https://en.wikipedia.org/wiki/Pell_number><br/> "
+ 
+- concept:  periodic-continued-fraction 
+  arity:  1 
+  form:  mfrac 
+  area: "mathematical analysis "
+  notation: "mfrac with ellipses "
+  url: "<https://mathworld.wolfram.com/PeriodicContinuedFraction.html><br/><https://en.wikipedia.org/wiki/Periodic_continued_fraction> "
+ 
+- concept:  permanent 
+  arity:  1 
+  form:  function 
+  area: "linear algebra "
+  notation: "mi perm "
+  url: "<https://mathworld.wolfram.com/Permanent.html><br/><https://en.wikipedia.org/wiki/Permanent><br/><https://www.encyclopediaofmath.org/index.php/Permanent> "
+ 
+- concept:  permutation 
+  arity:  1 
+  form:  fenced<br/>mtable<br/>mixfix 
+  area: " combinatorics "
+  notation: "mrow ($1, ... $n)<br/>mtable<br/>mrow (312)(54)(8)(976) "
+  url: "<https://mathworld.wolfram.com/Permutation.html><br/><https://en.wikipedia.org/wiki/Permutation><br/><https://en.wikipedia.org/wiki/Permutation_(music)><br/><https://ncatlab.org/nlab/show/permutation><br/><https://www.encyclopediaofmath.org/index.php/Permutation> "
+ 
+- concept:  perpendicular 
+  arity:  2 
+  form:  infix 
+  area: " geometry "
+  notation: "mo ⟂ "
+  url: "<https://en.wikipedia.org/wiki/Perpendicular><br/><https://www.encyclopediaofmath.org/index.php/Perpendicular> "
+ 
+- concept:  perrin-sequence 
+  arity:  1 
+  form:  function 
+  area: "number theory "
+  notation: "mi P "
+  url: "<https://mathworld.wolfram.com/PerrinNumber.html><br/><https://en.wikipedia.org/wiki/Perrin_number><br/> "
+ 
+- concept:  pfaffian 
+  arity:  1 
+  form:  function 
+  area: "multilinear algebra "
+  notation: "mi Pf<br/>mi pf "
+  url: "<https://mathworld.wolfram.com/Pfaffian.html><br/><https://en.wikipedia.org/wiki/Pfaffian><br/><https://ncatlab.org/nlab/show/Pfaffian><br/><https://ncatlab.org/nlab/show/Pfaffian><br/><https://www.encyclopediaofmath.org/index.php/Pfaffian> "
+ 
+- concept:  ph 
+  arity:  0 
+  form:  symbol 
+  area: " chemistry "
+  notation: "mi pH "
+  url: "[https://en.wikipedia.org/wiki/pH](https://en.wikipedia.org/wiki/PH) "
+  alias: " potential-of-hydrogen, power-of-hydrogen "
+ 
+- concept:  phase 
+  arity:  1 
+  form:  function 
+  area: " physics "
+  notation: "mi ϕ<br/>mi ph "
+  url: "<https://mathworld.wolfram.com/Phase.html><br/><https://en.wikipedia.org/wiki/Phase_(waves)><br/><https://dlmf.nist.gov/1.9#E7><br/><https://ncatlab.org/nlab/show/phase> "
+ 
+- concept:  phi-coefficient 
+  arity:  0 
+  form:  symbol 
+  area: " statistics "
+  notation: "mi φ<br/>msub r φ "
+  url: "<https://en.wikipedia.org/wiki/Phi_coefficient> "
+  alias:  mean-square-contingency-coefficient 
+ 
+- concept:  picard-group 
+  arity:  1 
+  form:  function 
+  area: "group theory "
+  notation: "mi Pic "
+  url: "<https://mathworld.wolfram.com/PicardGroup.html><br/><https://en.wikipedia.org/wiki/Picard_group><br/><https://ncatlab.org/nlab/show/Picard+group><br/><https://www.encyclopediaofmath.org/index.php/Picard_group> "
+ 
+- concept:  planck-constant 
+  arity:  0 
+  form:  constant 
+  area: " physics "
+  notation: "mi h<br/>mi ℎ "
+  url: "[https://en.wikipedia.org/wiki/Planck_constant](https://en.wikipedia.org/wiki/Planck_constant)<br/><https://ncatlab.org/nlab/show/Planck's+constant><br/><https://www.encyclopediaofmath.org/index.php/Planck_constant> "
+ 
+- concept:  plastic-constant 
+  arity:  0 
+  form:  constant 
+  area: " geometry "
+  notation: "mi P<br/>mi p "
+  url: "<https://mathworld.wolfram.com/PlasticConstant.html><br/><https://en.wikipedia.org/wiki/Plastic_number> "
+  alias: " plastic-number, platin-number, minimal-pisot-number, plastic-ratio, siegel-number, le-nombre-radiant "
+ 
+- concept:  playing-card-suit 
+  arity:  1 
+  form:  unit 
+  area: "game theory "
+  notation: "mo ♣<br/>mo ♠<br/>mo ♦<br/>mo ♥ "
+  url: "[https://en.wikipedia.org/wiki/Playing_card_suit<br/>](https://en.wikipedia.org/wiki/Playing_card_suit)[https://en.wikipedia.org/wiki/Poker_probability](https://en.wikipedia.org/wiki/Poker_probability) "
