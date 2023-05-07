@@ -86,7 +86,7 @@
   notation: ""
   url: "<https://mathworld.wolfram.com/Adjoint.html><br/>[https://en.wikipedia.org/wiki/Adjoint](https://en.wikipedia.org/wiki/Adjoint)<br/><https://ncatlab.org/nlab/show/adjoint> "
   alias:   
-1 
+ 
 - concept:  adjoint-action 
   arity:  1 
   form:  function<br/>msub 
@@ -154,7 +154,7 @@
 - concept:  aleph 
   arity:  0 
   form:  symbol 
-  area:  set theory<br/> 
+  area:  set theory
   notation: "mi ℵ "
   url: "<https://mathworld.wolfram.com/Aleph.html><br/><https://ncatlab.org/nlab/show/aleph><br/><https://www.encyclopediaofmath.org/index.php/Aleph> "
   alias:   
@@ -169,7 +169,7 @@
  
 - concept:  algebraic-closure 
   arity:  1 
-  form:  mover<br/>msup 
+  form:  mover/msup 
   area:  algebra 
   notation: "mover ¯<br/>msup alg "
   url: "[https://mathworld.wolfram.com/AlgebraicClosure.html](https://mathworld.wolfram.com/AlgebraicClosure.html)<br/>[https://en.wikipedia.org/wiki/Algebraic_closure](https://en.wikipedia.org/wiki/Algebraic_closure)<br/>[https://www.encyclopediaofmath.org/index.php/Algebraic_closure](https://www.encyclopediaofmath.org/index.php/Algebraic_closure) "
@@ -203,18 +203,18 @@
   arity:  2 
   form:  infix 
   area:  logic 
-  notation: "mo \"
-  url: 
-  alias: "\"
-<br/>mo or<br/>mo +<br/>mo ∨ | <https://en.wikipedia.org/wiki/Alternation_(formal_language_theory)><br/><https://en.wikipedia.org/wiki/%E2%88%A8><br/><https://en.wikipedia.org/wiki/Logical_disjunction><br/>[https://www.encyclopediaofmath.org/index.php/Alternation](https://www.encyclopediaofmath.org/index.php/Alternation) | disjunction, or | 
+  notation: "mo |"
+  url: "<https://en.wikipedia.org/wiki/Alternation_(formal_language_theory)><br/><https://en.wikipedia.org/wiki/%E2%88%A8><br/><https://en.wikipedia.org/wiki/Logical_disjunction><br/>[https://www.encyclopediaofmath.org/index.php/Alternation](https://www.encyclopediaofmath.org/index.php/Alternation)"
+  alias: disjunction, or
+  
 - concept:  alternative-denial 
   arity:  2 
   form:  infix<br/>prefix 
   area:  propositional calculus 
-  notation: "mo \"
-  url: "<br/>mo ↑<br/>mrow D $1 $2 "
-  alias: "[https://mathworld.wolfram.com/AlternativeDenial.html](https://mathworld.wolfram.com/AlternativeDenial.html)<br/>[https://en.wikipedia.org/wiki/Sheffer_stroke](https://en.wikipedia.org/wiki/Sheffer_stroke) "
- sheffer-stroke, nand | 
+  notation: "mo | <br/>mo ↑<br/>mrow D $1 $2 "
+  url: "[https://mathworld.wolfram.com/AlternativeDenial.html](https://mathworld.wolfram.com/AlternativeDenial.html)<br/>[https://en.wikipedia.org/wiki/Sheffer_stroke](https://en.wikipedia.org/wiki/Sheffer_stroke) "
+  alias:  sheffer-stroke, nand
+  
 - concept:  amalgam 
   arity:  1 
   form:  fenced, 5-tuple 
