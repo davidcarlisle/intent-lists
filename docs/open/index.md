@@ -26,9 +26,7 @@ concept terms and so has many entries that do not require custom speech rules.
 
 ### Sources
 
-Additional contributions are welcome.
-
-
+Additional contributions are welcome:
 [open.yml](https://github.com/mathml-refresh/intent-lists/blob/main/docs/_data/open.yml)
 
 ----
