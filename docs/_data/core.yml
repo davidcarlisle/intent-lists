@@ -18,11 +18,14 @@
   arity: 2
   property: function
   default: true
+  comment: even number of conditions to test zebra stripes
   conditions:
     - condition: "$2=2"
       en: "square root of $1"
     - condition: "$2=3"
       en: "cube root of $1"
+    - condition: "$2=3"
+      en: "fourth root of $1"
     - condition: ""
       en: "$2<i>th</i> root of $1"
 
