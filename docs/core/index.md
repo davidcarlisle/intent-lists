@@ -85,7 +85,7 @@ Localised texts can be added to the YAML file:
 
 <table>
 <thead>
-<tr class="row1">
+<tr class="row0">
 <th>Concept</th>
 <th>Arity</th>
 <th>Property</th>
