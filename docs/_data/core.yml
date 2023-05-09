@@ -14,6 +14,19 @@
       en: "$1 to the $2<i>th</i> power"
       fr: "$1 à la $2"
 
+- concept: root
+  arity: 2
+  property: function
+  default: true
+  conditions:
+    - condition: "$2=2"
+      en: "square root of $1"
+    - condition: "$2=3"
+      en: "cube root of $1"
+    - condition: ""
+      en: "$2<i>th</i> root of $1"
+
+
 - concept: equals
   arity: 2
   property: infix
@@ -29,14 +42,14 @@
 
 - concept: factorial
   arity: 1
-  property: postix
+  property: postfix
   default: true
   en: "$1 factorial"
   fr: "$1 factorial"
 
 - concept: transpose
   arity: 1
-  property: postix
+  property: postfix
   default: true
   en: "$1 transpose"
   fr: "$1 transposée"
