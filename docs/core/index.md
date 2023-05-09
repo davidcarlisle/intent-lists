@@ -36,9 +36,8 @@ span.cb {margin-right: 2em; white-space:nowrap}
 </style>
 
 <style id="langcss">
-{%- for language in site.data.languages -%}
-  {%- assign lang = language.language-code -%}
-  {%- unless forloop.first %},{% endunless%} *.{{lang}}
+{% for language in site.data.languages offset:1-%}
+  {%- unless forloop.first %},{% endunless%} *.{{language.language-code}}
 {%- endfor -%}
  {display:none}
 </style>
