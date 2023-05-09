@@ -5,6 +5,8 @@ title: Core Concept List
 p.langs {margin:1em; padding:1em;background-color: #EEE}
 tr:target >td:first-child {border-left:solid thick black}
 span.cb {margin-right: 2em; white-space:nowrap}
+tr.row0{background-color:#EEF}
+tr.row1{background-color:#EFE}
 </style>
 
 <style id="langcss">
@@ -96,10 +98,11 @@ Localised texts can be added to the YAML file:
 </thead>
 <tbody>
 {%- for c in site.data.core -%}
+{%- assign clss = forloop.index| modulo:2 -%}
 {%- if c.conditions %}
 {%- assign r1 = true -%}
 {%- for cond in c.conditions -%}
-<tr id="{{c.concept}}{{c.arity}}{{c.property}}">
+<tr {% if r1 %}id="{{c.concept}}{{c.arity}}{{c.property}}"{% endif %} class="row{{ clss }}">
 {%- if r1 -%}<td rowspan="{{c.conditions.size}}"><a href="#{{c.concept}}{{c.arity}}{{c.property}}">{{c.concept}}</a></td>{%- endif -%}
 {%- if r1 -%}<td rowspan="{{c.conditions.size}}">{{c.arity}}</td>{%- endif -%}
 {%- if r1 -%}<td rowspan="{{c.conditions.size}}">{{c.property}}{%- if c.default -%}*{%- endif -%}</td>{%- endif -%}
@@ -116,7 +119,7 @@ Localised texts can be added to the YAML file:
 {%- assign r1 = false -%}
 {%- endfor -%}
 {%- else -%}
-<tr id="{{c.concept}}{{c.arity}}{{c.property}}">
+<tr id="{{c.concept}}{{c.arity}}{{c.property}}" class="row{{ clss }}>
 <td><a href="#{{c.concept}}{{c.arity}}{{c.property}}">{{c.concept}}</a></td>
 <td>{{c.arity}}</td>
 <td>{{c.property}}{%- if c.default -%}*{%- endif -%}</td>
