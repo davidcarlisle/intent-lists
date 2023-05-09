@@ -1,11 +1,23 @@
 ---
 title: Core Concept List
 ---
+<style>
+p.langs {margin:1em; padding:1em;background-color: #EEE}
+tr:target >td:first-child {border-left:solid thick black}
+span.cb {margin-right: 2em; white-space:nowrap}
+</style>
+
+<style id="langcss">
+{% for language in site.data.languages offset:1-%}
+  {%- unless forloop.first %},{% endunless%} *.{{language.language-code}}
+{%- endfor -%}
+ {display:none}
+</style>
 
 # Core Concept List
 
 
-## Matching the List
+### Matching the List
 
 1. A intent processor should match a system-specifed list of known concept names.
 The list should include all the entries from the **core** list below.
@@ -29,18 +41,21 @@ controlled by the context, or by system option settings such as "Verbosity".
 
 ----
 
-<style>
-p.langs {margin:1em; padding:1em;background-color: #EEE}
-tr:target >td:first-child {border-left:solid thick black}
-span.cb {margin-right: 2em; white-space:nowrap}
-</style>
 
-<style id="langcss">
-{% for language in site.data.languages offset:1-%}
-  {%- unless forloop.first %},{% endunless%} *.{{language.language-code}}
-{%- endfor -%}
- {display:none}
-</style>
+### Sources
+
+Additional language contributions are welcome.
+
+Languages can be listed by extending the YAML file:
+[languages.yml](https://github.com/mathml-refresh/intent-lists/blob/main/docs/_data/languages.yml)
+
+Any concept that does not have a speech template in the specifed language will show the English text.
+
+Localised texts can be added to the YAML file:
+[core.yml](https://github.com/mathml-refresh/intent-lists/blob/main/docs/_data/core.yml)
+
+----
+
 
 ## Core List
 
@@ -129,18 +144,6 @@ span.cb {margin-right: 2em; white-space:nowrap}
 | _th_  | suitable ordinal indicator, so `st`  `nd` `rd` or `th` in English. |
 
 ----
-
-### Sources
-
-Additional language contributions are welcome.
-
-Languages can be listed by extending the YAML file  
-[languages.yml](https://github.com/mathml-refresh/intent-lists/blob/main/docs/_data/languages.yml)
-
-Any concept that does not have a speech template in the specifed language will show the English text.
-
-Localised texts can be added to the YAML file  
-[core.yml](https://github.com/mathml-refresh/intent-lists/blob/main/docs/_data/core.yml)
 
 
 <script>
