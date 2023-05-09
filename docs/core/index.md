@@ -119,7 +119,7 @@ Localised texts can be added to the YAML file:
 {%- assign r1 = false -%}
 {%- endfor -%}
 {%- else -%}
-<tr id="{{c.concept}}{{c.arity}}{{c.property}}" class="row{{ clss }}>
+<tr id="{{c.concept}}{{c.arity}}{{c.property}}" class="row{{ clss }}">
 <td><a href="#{{c.concept}}{{c.arity}}{{c.property}}">{{c.concept}}</a></td>
 <td>{{c.arity}}</td>
 <td>{{c.property}}{%- if c.default -%}*{%- endif -%}</td>
