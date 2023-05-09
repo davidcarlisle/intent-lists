@@ -38,7 +38,7 @@ span.cb {margin-right: 2em; white-space:nowrap}
 <style id="langcss">
 {%- for language in site.data.languages -%}
   {%- assign lang = language.language-code -%}
-  {%- if lang != "en" %}{{comma}}{%- assign comma = ", " -%}  *.{{lang}} {%- endif -%}
+  {%- unless forloop.first %},{% endunless%} *.{{lang}}
 {%- endfor -%}
  {display:none}
 </style>
@@ -47,7 +47,7 @@ span.cb {margin-right: 2em; white-space:nowrap}
 
 
 <details>
-<summary>Available Languages</summary>
+<summary>Available Template Languages</summary>
 <p id="langchoice" class="langs">
 <!-- Loop over languages in _data/languages.yml -->
 {%- for language in site.data.languages -%}
