@@ -100,12 +100,11 @@ Localised texts can be added to the YAML file:
 {%- for c in site.data.core -%}
 {%- assign clss = forloop.index| modulo:2 -%}
 {%- if c.conditions %}
-{%- assign r1 = true -%}
 {%- for cond in c.conditions -%}
-<tr {% if r1 %}id="{{c.concept}}{{c.arity}}{{c.property}}"{% endif %} class="row{{ clss }}">
-{%- if r1 -%}<td rowspan="{{c.conditions.size}}"><a href="#{{c.concept}}{{c.arity}}{{c.property}}">{{c.concept}}</a></td>{%- endif -%}
-{%- if r1 -%}<td rowspan="{{c.conditions.size}}">{{c.arity}}</td>{%- endif -%}
-{%- if r1 -%}<td rowspan="{{c.conditions.size}}">{{c.property}}{%- if c.default -%}*{%- endif -%}</td>{%- endif -%}
+<tr {% if forloop.first %}id="{{c.concept}}{{c.arity}}{{c.property}}"{% endif %} class="row{{ clss }}">
+{%- if forloop.first -%}<td rowspan="{{c.conditions.size}}"><a href="#{{c.concept}}{{c.arity}}{{c.property}}">{{c.concept}}</a></td>{%- endif -%}
+{%- if forloop.first -%}<td rowspan="{{c.conditions.size}}">{{c.arity}}</td>{%- endif -%}
+{%- if forloop.first -%}<td rowspan="{{c.conditions.size}}">{{c.property}}{%- if c.default -%}*{%- endif -%}</td>{%- endif -%}
 <td>{{cond.condition}}</td>
 {%- for language in site.data.languages -%}
 {%- if cond[language.language-code] -%}
@@ -114,9 +113,8 @@ Localised texts can be added to the YAML file:
 <td class="{{language.language-code}}">{{cond.en}} ({{language.language-code}})</td>
 {% endif %}
 {%- endfor -%}
-{%- if r1 -%}<td rowspan="{{c.conditions.size}}">{{c.comment}}</td>{%- endif -%}
+{%- if forloop.first-%}<td rowspan="{{c.conditions.size}}">{{c.comment}}</td>{%- endif -%}
 </tr>
-{%- assign r1 = false -%}
 {%- endfor -%}
 {%- else -%}
 <tr id="{{c.concept}}{{c.arity}}{{c.property}}" class="row{{ clss }}">
