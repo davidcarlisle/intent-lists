@@ -5,8 +5,8 @@ title: Core Concept List
 p.langs {margin:1em; padding:1em;background-color: #EEE}
 tr:target >td:first-child {border-left:solid thick black}
 span.cb {margin-right: 2em; white-space:nowrap}
-tr.row0{background-color:#EEF}
-tr.row1{background-color:#EFE}
+.markdown-body table tr.row0{background-color:#F8F8FA}
+.markdown-body table tr.row1{background-color:#FEFFFE}
 </style>
 
 <style id="langcss">
@@ -85,7 +85,7 @@ Localised texts can be added to the YAML file:
 
 <table>
 <thead>
-<tr>
+<tr class="row1">
 <th>Concept</th>
 <th>Arity</th>
 <th>Property</th>
