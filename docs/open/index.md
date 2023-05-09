@@ -1,3 +1,6 @@
+---
+title: Open Concept List
+---
 
 <style>
 tr:target >td:first-child {border-left:solid thick black}
